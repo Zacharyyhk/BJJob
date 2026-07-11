@@ -307,6 +307,107 @@ def jd_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[list[
     return found, "collected" if found else "collected-empty", endpoint
 
 
+BYTEDANCE_DESIGN_POSITIONS = [
+    "7400304703651678514", "7276023483208583480", "7339844053779286282",
+    "7469692088551016711", "7477923767672604935", "7397706339553970458",
+    "7397743491651209509", "7264956837563713852", "7273757075078121789",
+    "7227018005023099191", "7280819714477279543", "7428155393907820851",
+    "7290801720959371578",
+]
+
+
+def bytedance_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[list[dict[str, str]], str, str]:
+    """Verify official design/user-research pages without bypassing signed APIs."""
+    found = []
+    verified_at = now_iso()
+    for position_id in BYTEDANCE_DESIGN_POSITIONS:
+        url = f"https://jobs.bytedance.com/campus/position/{position_id}/detail"
+        response = session.get(url, timeout=30, headers={"Referer": source["url"]})
+        if not response.ok:
+            continue
+        response.encoding = response.apparent_encoding or "utf-8"
+        soup = BeautifulSoup(response.text, "html.parser")
+        page_title = clean(soup.title.get_text(" ", strip=True) if soup.title else "")
+        title = re.sub(r"\s*-\s*加入字节跳动\s*$", "", page_title)
+        if not title or title in ("校园招聘", "字节跳动校园招聘"):
+            continue
+        found.append(make_item(
+            source, title, url, organization="字节跳动", location="北京（投递前核对）",
+            recruitment_type="校园招聘/实习", last_verified_at=verified_at,
+            requirements="职位页面当前可访问；工作地点和完整任职条件请在官方投递页核对。",
+            data_quality="官方职位页在线，动态详情字段受签名接口限制",
+        ))
+        time.sleep(0.15)
+    return found, "collected" if found else "collected-empty", source["url"]
+
+
+def tencent_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[list[dict[str, str]], str, str]:
+    endpoint = "https://careers.tencent.com/tencentcareer/api/post/Query"
+    found = []
+    verified_at = now_iso()
+    for page_index in range(1, 4):
+        response = session.get(endpoint, timeout=40, params={
+            "timestamp": int(time.time() * 1000), "countryId": "", "cityId": "2",
+            "bgIds": "", "productId": "", "categoryId": "", "parentCategoryId": "",
+            "attrId": "", "keyword": "", "pageIndex": page_index, "pageSize": 100,
+            "language": "zh-cn", "area": "cn",
+        }, headers={"Referer": source["url"]})
+        response.raise_for_status()
+        rows = ((response.json().get("Data") or {}).get("Posts") or [])
+        for row in rows:
+            if clean(row.get("LocationName")) != "北京" or not row.get("IsValid", True):
+                continue
+            position_id = clean(row.get("PostId"))
+            title = clean(row.get("RecruitPostName"))
+            if not position_id or not title:
+                continue
+            requirements = clean(row.get("Responsibility"))
+            experience = clean(row.get("RequireWorkYearsName"))
+            found.append(make_item(
+                source, title, f"https://careers.tencent.com/jobdesc.html?postId={position_id}",
+                published_from(clean(row.get("LastUpdateTime"))), "腾讯",
+                location="北京", requirements=" ".join(filter(None, [experience, requirements])),
+                category_detail=row.get("CategoryName"), department=row.get("BGName"),
+                product=row.get("ProductName"), recruitment_type="社会招聘",
+                last_verified_at=verified_at, data_quality="腾讯官方职位接口",
+            ))
+        if len(rows) < 100:
+            break
+    return found, "collected" if found else "collected-empty", endpoint
+
+
+XIAOMI_DESIGN_POSITIONS = ["886", "887", "884-1254", "905", "951"]
+
+
+def xiaomi_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[list[dict[str, str]], str, str]:
+    found = []
+    verified_at = now_iso()
+    for position_id in XIAOMI_DESIGN_POSITIONS:
+        url = f"https://hr.xiaomi.com/campus/view/{position_id}"
+        response = session.get(url, timeout=30, headers={"Referer": source["url"]})
+        if not response.ok:
+            continue
+        response.encoding = response.apparent_encoding or "utf-8"
+        soup = BeautifulSoup(response.text, "html.parser")
+        page_title = clean(soup.title.get_text(" ", strip=True) if soup.title else "")
+        match = re.match(r"小米-北京-(.+?)-(.+?)-职位详情", page_title)
+        if not match:
+            continue
+        category, title = match.groups()
+        body = clean(soup.get_text(" ", strip=True))
+        duty = re.search(r"工作职责[：:]?(.{10,1600}?)(?=工作要求|申请职位|$)", body)
+        requirement = re.search(r"工作要求[：:]?(.{10,1600}?)(?=申请职位|热门|$)", body)
+        found.append(make_item(
+            source, title, url, organization="小米", location="北京",
+            requirements=duty.group(1) if duty else "",
+            responsibilities=requirement.group(1) if requirement else "",
+            category_detail=category, recruitment_type="校园招聘/实习",
+            last_verified_at=verified_at, data_quality="小米官方职位详情页",
+        ))
+        time.sleep(0.15)
+    return found, "collected" if found else "collected-empty", source["url"]
+
+
 def api_spa_adapter(session: requests.Session, source: dict[str, Any], endpoint: str) -> tuple[list[dict[str, str]], str, str]:
     """Probe a documented public SPA endpoint; keep failures distinct from empty data."""
     response = session.get(endpoint, timeout=30, headers={"Referer": source["url"]})
@@ -341,9 +442,12 @@ SPECIAL: dict[str, Callable[..., tuple[list[dict[str, str]], str, str]]] = {
     "iguopin": lambda s, x: api_spa_adapter(s, x, "https://www.iguopin.com/api/jobs/v3/list"),
     "ggj-notices": lambda s, x: static_adapter(s, x),
     "cnipa-personnel": lambda s, x: static_adapter(s, x, href_pattern=r"/art/\d{4}/.*art_74_"),
+    "bytedance-jobs": bytedance_adapter,
     "baidu-jobs": baidu_adapter,
     "jd-jobs": jd_adapter,
     "meituan-jobs": lambda s, x: api_spa_adapter(s, x, "https://zhaopin.meituan.com/api/official/job/getJobList"),
+    "tencent-jobs": tencent_adapter,
+    "xiaomi-jobs": xiaomi_adapter,
 }
 
 

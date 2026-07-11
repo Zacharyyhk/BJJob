@@ -22,6 +22,7 @@ type Position = {
   recruitment_type?: string;
   category_detail?: string;
   data_quality?: string;
+  last_verified_at?: string;
   contact?: string;
   sheet?: string;
   row?: number;
@@ -105,6 +106,7 @@ const otherJobs: Job[] = otherSources.items.map((item) => ({
   recruitment_type: item.recruitment_type,
   category_detail: item.category_detail,
   data_quality: item.data_quality,
+  last_verified_at: item.last_verified_at,
   education: item.education,
   headcount: item.headcount,
 }));
@@ -123,10 +125,11 @@ function daysUntil(value: string) {
 function isCurrentJob(job: Job) {
   const deadlineDays = daysUntil(job.deadline);
   if (deadlineDays !== null) return deadlineDays >= 0;
-  if (!job.publishedAt) return false;
   const publishedAt = new Date(job.publishedAt).getTime();
-  if (Number.isNaN(publishedAt)) return false;
-  return Date.now() - publishedAt <= 30 * 86400000;
+  const verifiedAt = job.last_verified_at ? new Date(job.last_verified_at).getTime() : Number.NaN;
+  const freshnessTime = Number.isNaN(publishedAt) ? verifiedAt : publishedAt;
+  if (Number.isNaN(freshnessTime)) return false;
+  return Date.now() - freshnessTime <= 30 * 86400000;
 }
 
 const currentJobs = allJobs.filter(isCurrentJob);

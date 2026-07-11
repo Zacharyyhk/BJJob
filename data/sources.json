@@ -186,5 +186,27 @@
     "schedule": "08:30,18:30",
     "scope": "已按北京城市过滤的社会招聘岗位",
     "mode": "职位接口"
+  },
+  {
+    "id": "tencent-jobs",
+    "name": "腾讯招聘",
+    "group": "互联网大厂",
+    "url": "https://careers.tencent.com/search.html",
+    "priority": "P1",
+    "status": "已确认",
+    "schedule": "08:30,18:30",
+    "scope": "腾讯北京社会招聘岗位",
+    "mode": "官方职位接口"
+  },
+  {
+    "id": "xiaomi-jobs",
+    "name": "小米招聘",
+    "group": "互联网大厂",
+    "url": "https://hr.xiaomi.com/campus",
+    "priority": "P1",
+    "status": "已确认",
+    "schedule": "08:30,18:30",
+    "scope": "小米北京校招、实习和设计相关岗位",
+    "mode": "官方职位详情页"
   }
 ]
