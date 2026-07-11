@@ -212,6 +212,8 @@ function matchForProfile(job: Job): MatchResult {
   return { level: "possible", label: "需确认", reasons };
 }
 
+const displayJobs = currentJobs.filter((job) => matchForProfile(job).level !== "no");
+
 export default function Home() {
   const [query, setQuery] = useState("");
   const [education, setEducation] = useState("全部学历");
@@ -234,7 +236,7 @@ export default function Home() {
   };
 
   const unitOptions = useMemo(() => {
-    const names = currentJobs
+    const names = displayJobs
       .filter((job) => sourceGroup === "全部来源" || job.sourceGroup === sourceGroup)
       .map(unitName)
       .filter((name) => name !== "单位未注明");
@@ -247,7 +249,7 @@ export default function Home() {
 
   const filtered = useMemo(() => {
     const keyword = query.trim().toLowerCase();
-    const result = currentJobs.filter((job) => {
+    const result = displayJobs.filter((job) => {
       const text = [job.title, job.organization, job.major, job.education, job.requirements, job.responsibilities, job.location, job.applicant_type, job.household, job.noticeTitle].join(" ").toLowerCase();
       const profileMatch = matchForProfile(job);
       return (!keyword || text.includes(keyword))
@@ -267,9 +269,9 @@ export default function Home() {
 
   useEffect(() => setVisibleCount(40), [query, education, sort, profileFilter, sourceGroup, unit, savedOnly]);
 
-  const activeCount = currentJobs.length;
-  const profileCount = currentJobs.filter((job) => matchForProfile(job).level !== "no").length;
-  const definiteCount = Object.values(aiResults).filter((item) => item.match_level === "match").length;
+  const activeCount = displayJobs.length;
+  const hiddenNoCount = currentJobs.length - displayJobs.length;
+  const definiteCount = displayJobs.filter((job) => matchForProfile(job).level === "match").length;
   const analyzedCount = Object.keys(aiResults).length;
   const updated = new Date(collected.generated_at);
 
@@ -278,7 +280,7 @@ export default function Home() {
       <header>
         <div>
           <h1>北京职位</h1>
-          <p>{activeCount} 个进行中 · Codex 已分析 {analyzedCount} 个 · 明确符合 {definiteCount} 个 · {profileCount} 个待关注 · 更新于 {updated.toLocaleString("zh-CN", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" })}</p>
+          <p>{activeCount} 个可关注 · 明确符合 {definiteCount} 个 · 已隐藏 {hiddenNoCount} 个不符合岗位 · Codex 已分析 {analyzedCount} 个 · 更新于 {updated.toLocaleString("zh-CN", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" })}</p>
         </div>
         <button className={savedOnly ? "saved active" : "saved"} onClick={() => setSavedOnly(!savedOnly)}>收藏 {saved.length}</button>
       </header>
