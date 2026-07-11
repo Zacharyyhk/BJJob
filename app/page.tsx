@@ -93,11 +93,59 @@ function statusLabel(deadline: string) {
   return `截止 ${shortDate(deadline)}`;
 }
 
+type MatchResult = { level: "match" | "possible" | "no"; label: string; reasons: string[] };
+
+function matchForProfile(job: Job): MatchResult {
+  const education = job.education || "";
+  const major = job.major || "";
+  const applicant = `${job.applicant_type || ""} ${job.requirements || ""} ${job.noticeTitle}`;
+  const deadlineYear = job.deadline ? new Date(job.deadline).getFullYear() : null;
+  const reasons: string[] = [];
+
+  if (deadlineYear && deadlineYear < 2027) {
+    return { level: "no", label: "不符合", reasons: ["报名截止早于2027年毕业"] };
+  }
+  if (/202[3-6]届|202[3-6]年毕业/.test(applicant) && !/2027/.test(applicant)) {
+    return { level: "no", label: "不符合", reasons: ["招聘毕业年份不包含2027届"] };
+  }
+  if (/仅限博士|博士研究生/.test(education) && !/硕士及以上|本科及以上/.test(education)) {
+    return { level: "no", label: "不符合", reasons: ["学历要求为博士"] };
+  }
+
+  const educationKnown = Boolean(education);
+  if (educationKnown && !/本科及以上|硕士|研究生|不限/.test(education)) {
+    return { level: "no", label: "不符合", reasons: ["学历要求不匹配"] };
+  }
+  if (educationKnown) reasons.push("硕士学历满足");
+  else reasons.push("学历需确认");
+
+  const designPattern = /设计学|艺术设计|视觉传达|环境设计|产品设计|工业设计|数字媒体艺术|服装与服饰设计|工艺美术|设计类/;
+  const majorUnlimited = !major || /不限|专业不限/.test(major);
+  if (!majorUnlimited && !designPattern.test(major)) {
+    return { level: "no", label: "不符合", reasons: ["专业要求不含设计类"] };
+  }
+  reasons.push(majorUnlimited ? "专业需确认" : "设计类专业匹配");
+
+  if (/男性|限男/.test(applicant) && !/女性/.test(applicant)) {
+    return { level: "no", label: "不符合", reasons: ["岗位限男性"] };
+  }
+  if (/中共党员/.test(applicant)) reasons.push("党员条件满足");
+  if (/985|双一流|重点大学/.test(applicant)) reasons.push("院校条件满足");
+
+  if (/2027/.test(applicant)) {
+    reasons.push("2027届匹配");
+    return { level: "match", label: "符合", reasons };
+  }
+  reasons.push("毕业年份需确认");
+  return { level: "possible", label: "需确认", reasons };
+}
+
 export default function Home() {
   const [query, setQuery] = useState("");
   const [status, setStatus] = useState("进行中");
   const [education, setEducation] = useState("全部学历");
   const [sort, setSort] = useState("即将截止");
+  const [profileFilter, setProfileFilter] = useState("全部岗位");
   const [savedOnly, setSavedOnly] = useState(false);
   const [saved, setSaved] = useState<string[]>([]);
   const [visibleCount, setVisibleCount] = useState(40);
@@ -117,9 +165,11 @@ export default function Home() {
     const result = jobs.filter((job) => {
       const text = [job.title, job.organization, job.major, job.education, job.requirements, job.applicant_type, job.household, job.noticeTitle].join(" ").toLowerCase();
       const expired = (daysUntil(job.deadline) ?? 1) < 0;
+      const profileMatch = matchForProfile(job);
       return (!keyword || text.includes(keyword))
         && (status === "全部" || (status === "进行中" ? !expired : expired))
         && (education === "全部学历" || (job.education || "").includes(education))
+        && (profileFilter === "全部岗位" || (profileFilter === "适合我" ? profileMatch.level !== "no" : profileMatch.level === "match"))
         && (!savedOnly || saved.includes(job.id));
     });
     return result.sort((a, b) => {
@@ -128,11 +178,12 @@ export default function Home() {
       const bTime = b.deadline ? new Date(b.deadline).getTime() : Number.MAX_SAFE_INTEGER;
       return aTime - bTime;
     });
-  }, [query, status, education, sort, savedOnly, saved]);
+  }, [query, status, education, sort, profileFilter, savedOnly, saved]);
 
-  useEffect(() => setVisibleCount(40), [query, status, education, sort, savedOnly]);
+  useEffect(() => setVisibleCount(40), [query, status, education, sort, profileFilter, savedOnly]);
 
   const activeCount = jobs.filter((job) => (daysUntil(job.deadline) ?? 1) >= 0).length;
+  const profileCount = jobs.filter((job) => matchForProfile(job).level !== "no").length;
   const updated = new Date(collected.generated_at);
 
   return (
@@ -140,15 +191,20 @@ export default function Home() {
       <header>
         <div>
           <h1>北京职位</h1>
-          <p>{activeCount} 个进行中 · {collected.notice_count} 份公告 · 更新于 {updated.toLocaleString("zh-CN", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" })}</p>
+          <p>{activeCount} 个进行中 · {profileCount} 个可能适合 · 更新于 {updated.toLocaleString("zh-CN", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" })}</p>
         </div>
         <button className={savedOnly ? "saved active" : "saved"} onClick={() => setSavedOnly(!savedOnly)}>收藏 {saved.length}</button>
       </header>
+
+      <div className="profile"><b>我的条件</b><span>女</span><span>2027届硕士</span><span>华东师大本硕</span><span>设计类</span><span>中共党员</span></div>
 
       <section className="toolbar" aria-label="职位筛选">
         <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="搜索单位、岗位、专业或要求" aria-label="搜索职位" />
         <select value={status} onChange={(event) => setStatus(event.target.value)} aria-label="截止状态">
           <option>进行中</option><option>已截止</option><option>全部</option>
+        </select>
+        <select value={profileFilter} onChange={(event) => setProfileFilter(event.target.value)} aria-label="个人条件匹配">
+          <option>全部岗位</option><option>适合我</option><option>明确符合</option>
         </select>
         <select value={education} onChange={(event) => setEducation(event.target.value)} aria-label="学历要求">
           <option>全部学历</option><option>本科</option><option>硕士</option><option>博士</option><option>大专</option>
@@ -163,14 +219,18 @@ export default function Home() {
       <section className="job-list">
         {filtered.slice(0, visibleCount).map((job) => {
           const days = daysUntil(job.deadline);
+          const match = matchForProfile(job);
           return <article className="job" key={job.id}>
             <div className="job-top">
               <div>
+                <span className={`match ${match.level}`}>{match.label}</span>
                 <h2>{job.title || job.noticeTitle}</h2>
                 <h3>{job.organization || job.publisher || "招聘单位见公告"}</h3>
               </div>
               <button className={saved.includes(job.id) ? "star on" : "star"} onClick={() => toggleSaved(job.id)} aria-label="收藏职位">★</button>
             </div>
+
+            <div className="match-reasons">{match.reasons.map((reason) => <span key={reason}>{reason}</span>)}</div>
 
             <div className="facts">
               {job.headcount && <span>招 {job.headcount} 人</span>}
