@@ -1,6 +1,7 @@
 {
-  "version": 1,
+  "version": 2,
   "gender": "女",
+  "household_registration": "非北京户口",
   "graduation_year": 2027,
   "education": "硕士研究生",
   "bachelor_school": "华东师范大学",
