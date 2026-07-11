@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T15:08:41+08:00",
+  "generated_at": "2026-07-11T15:14:28+08:00",
   "source_count": 17,
   "collected_source_count": 6,
   "needs_adapter_count": 9,
@@ -15,7 +15,7 @@
       "http_status": 200,
       "final_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/",
       "item_count": 23,
-      "duration_ms": 141,
+      "duration_ms": 6210,
       "items": [
         {
           "id": "e51be5b9a2b558ae",
@@ -258,7 +258,7 @@
       "http_status": 200,
       "final_url": "https://rsj.beijing.gov.cn/bm/ztzl/gwy/",
       "item_count": 0,
-      "duration_ms": 140,
+      "duration_ms": 2703,
       "items": []
     },
     {
@@ -270,7 +270,7 @@
       "http_status": 200,
       "final_url": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/",
       "item_count": 0,
-      "duration_ms": 94,
+      "duration_ms": 1057,
       "items": []
     },
     {
@@ -282,7 +282,7 @@
       "http_status": 200,
       "final_url": "http://bm.scs.gov.cn/kl2026",
       "item_count": 0,
-      "duration_ms": 47,
+      "duration_ms": 5633,
       "items": []
     },
     {
@@ -294,7 +294,7 @@
       "http_status": 200,
       "final_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html",
       "item_count": 26,
-      "duration_ms": 140,
+      "duration_ms": 328,
       "items": [
         {
           "id": "063457f0c0494f96",
@@ -567,7 +567,7 @@
       "http_status": 200,
       "final_url": "https://gzw.beijing.gov.cn/yggq/gqzp/",
       "item_count": 0,
-      "duration_ms": 94,
+      "duration_ms": 2774,
       "items": []
     },
     {
@@ -579,7 +579,7 @@
       "http_status": 200,
       "final_url": "https://www.iguopin.com/",
       "item_count": 0,
-      "duration_ms": 2312,
+      "duration_ms": 1743,
       "items": []
     },
     {
@@ -591,7 +591,7 @@
       "http_status": 200,
       "final_url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/",
       "item_count": 16,
-      "duration_ms": 203,
+      "duration_ms": 1008,
       "items": [
         {
           "id": "0766750ede5ee969",
@@ -763,7 +763,7 @@
       "status": "unavailable",
       "http_status": null,
       "item_count": 0,
-      "error": "HTTPSConnectionPool(host='www.sasac.gov.cn', port=443): Max retries exceeded with url: /n2588030/n2588964/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))",
+      "error": "HTTPSConnectionPool(host='www.sasac.gov.cn', port=443): Max retries exceeded with url: /n2588030/n2588964/ (Caused by NewConnectionError(\"HTTPSConnection(host='www.sasac.gov.cn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
       "items": []
     },
     {
@@ -775,7 +775,7 @@
       "http_status": 200,
       "final_url": "https://www.ggj.gov.cn/tzgg/",
       "item_count": 0,
-      "duration_ms": 625,
+      "duration_ms": 3241,
       "items": []
     },
     {
@@ -787,7 +787,7 @@
       "http_status": 200,
       "final_url": "http://www.moe.gov.cn/s78/A04/",
       "item_count": 5,
-      "duration_ms": 172,
+      "duration_ms": 2635,
       "items": [
         {
           "id": "3aae59ba4c35adc1",
@@ -850,7 +850,7 @@
       "http_status": 200,
       "final_url": "https://www.cnipa.gov.cn/col/col74/index.html",
       "item_count": 0,
-      "duration_ms": 94,
+      "duration_ms": 1015,
       "items": []
     },
     {
@@ -873,7 +873,7 @@
       "http_status": 200,
       "final_url": "https://jobs.bytedance.com/campus/",
       "item_count": 1,
-      "duration_ms": 438,
+      "duration_ms": 3173,
       "items": [
         {
           "id": "d685534536db8013",
@@ -896,7 +896,7 @@
       "http_status": 200,
       "final_url": "https://talent.baidu.com/jobs/",
       "item_count": 0,
-      "duration_ms": 93,
+      "duration_ms": 1857,
       "items": []
     },
     {
@@ -906,9 +906,9 @@
       "home": "https://zhaopin.jd.com/",
       "status": "collected",
       "http_status": 200,
-      "final_url": "https://zhaopin.jd.com/home;jsessionid=F2E9E3E4B0C30D7A3C0E7E2AB8ADB566.s1",
+      "final_url": "https://zhaopin.jd.com/home;jsessionid=8BC945FCDB73A49E0269289BD3F16A5C.s1",
       "item_count": 2,
-      "duration_ms": 188,
+      "duration_ms": 2413,
       "items": [
         {
           "id": "497b05be395a27a2",
@@ -941,7 +941,7 @@
       "http_status": 200,
       "final_url": "https://zhaopin.meituan.com/web/social?cityList=001001&pageNo=1",
       "item_count": 0,
-      "duration_ms": 78,
+      "duration_ms": 890,
       "items": []
     }
   ],
