@@ -307,38 +307,11 @@ def jd_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[list[
     return found, "collected" if found else "collected-empty", endpoint
 
 
-BYTEDANCE_DESIGN_POSITIONS = [
-    "7400304703651678514", "7276023483208583480", "7339844053779286282",
-    "7469692088551016711", "7477923767672604935", "7397706339553970458",
-    "7397743491651209509", "7264956837563713852", "7273757075078121789",
-    "7227018005023099191", "7280819714477279543", "7428155393907820851",
-    "7290801720959371578",
-]
-
-
 def bytedance_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[list[dict[str, str]], str, str]:
-    """Verify official design/user-research pages without bypassing signed APIs."""
-    found = []
-    verified_at = now_iso()
-    for position_id in BYTEDANCE_DESIGN_POSITIONS:
-        url = f"https://jobs.bytedance.com/campus/position/{position_id}/detail"
-        response = session.get(url, timeout=30, headers={"Referer": source["url"]})
-        if not response.ok:
-            continue
-        response.encoding = response.apparent_encoding or "utf-8"
-        soup = BeautifulSoup(response.text, "html.parser")
-        page_title = clean(soup.title.get_text(" ", strip=True) if soup.title else "")
-        title = re.sub(r"\s*-\s*加入字节跳动\s*$", "", page_title)
-        if not title or title in ("校园招聘", "字节跳动校园招聘"):
-            continue
-        found.append(make_item(
-            source, title, url, organization="字节跳动", location="北京（投递前核对）",
-            recruitment_type="校园招聘/实习", last_verified_at=verified_at,
-            requirements="职位页面当前可访问；工作地点和完整任职条件请在官方投递页核对。",
-            data_quality="官方职位页在线，动态详情字段受签名接口限制",
-        ))
-        time.sleep(0.15)
-    return found, "collected" if found else "collected-empty", source["url"]
+    """Do not expose search-indexed detail URLs without a live-job signal."""
+    response = session.get(source["url"], timeout=30)
+    response.raise_for_status()
+    return [], "adapter-blocked", response.url
 
 
 def tencent_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[list[dict[str, str]], str, str]:

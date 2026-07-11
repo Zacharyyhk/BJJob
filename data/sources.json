@@ -149,10 +149,10 @@
     "group": "互联网大厂",
     "url": "https://jobs.bytedance.com/campus/",
     "priority": "P1",
-    "status": "待接口验证",
+    "status": "接口受限",
     "schedule": "08:30,18:30",
     "scope": "北京校招、实习和社会招聘",
-    "mode": "职位接口"
+    "mode": "仅在可确认职位在线状态后展示"
   },
   {
     "id": "baidu-jobs",
