@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import collected from "../data/collected/bj-rsj.json";
 import otherSources from "../data/collected/other-sources.json";
+import aiAnalysisData from "../data/ai-analysis.json";
 
 type Position = {
   organization?: string;
@@ -136,7 +137,22 @@ function statusLabel(deadline: string) {
 
 type MatchResult = { level: "match" | "possible" | "no"; label: string; reasons: string[] };
 
+type AiMatch = {
+  match_level: "match" | "possible" | "no";
+  label?: string;
+  reasons?: string[];
+  conflicts?: string[];
+  needs_confirmation?: string[];
+};
+
+const aiResults = (aiAnalysisData as { results: Record<string, AiMatch> }).results;
+
 function matchForProfile(job: Job): MatchResult {
+  const ai = aiResults[job.id];
+  if (ai) {
+    const reasons = [...(ai.reasons || []), ...(ai.conflicts || []), ...(ai.needs_confirmation || [])].slice(0, 6);
+    return { level: ai.match_level, label: ai.label || (ai.match_level === "match" ? "符合" : ai.match_level === "no" ? "不符合" : "需确认"), reasons };
+  }
   const education = job.education || "";
   const major = job.major || "";
   const applicant = `${job.applicant_type || ""} ${job.requirements || ""} ${job.responsibilities || ""} ${job.noticeTitle}`;

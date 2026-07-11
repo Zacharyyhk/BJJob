@@ -1,0 +1,57 @@
+# Codex 岗位语义分析任务
+
+此文件是每日 Codex 自动任务的执行规范。模型只分析公开招聘数据，不修改个人档案。
+
+## 输入与增量规则
+
+1. 运行 `scripts/prepare_codex_analysis.py` 生成 `data/ai-pending.json`。
+2. 只分析 pending 中的记录；`content_hash` 未变化的结果必须复用。
+3. 每完成一批就合并写回 `data/ai-analysis.json`，不得清空既有结果。
+4. 原文没有说明的条件必须标记为“不明确”，禁止猜测。
+
+## 每条结果格式
+
+结果以岗位 `id` 为键，值必须包含：
+
+```json
+{
+  "content_hash": "原样复制pending中的值",
+  "match_level": "match | possible | no",
+  "label": "符合 | 需确认 | 不符合",
+  "score": 0,
+  "normalized": {
+    "organization": "",
+    "title": "",
+    "location": "",
+    "education": "",
+    "majors": [],
+    "graduation_years": [],
+    "fresh_graduate_required": null,
+    "political_status": "",
+    "gender_requirement": "",
+    "responsibilities": "",
+    "deadline": ""
+  },
+  "reasons": [],
+  "conflicts": [],
+  "needs_confirmation": [],
+  "evidence": [{"field": "专业", "quote": "支持该判断的简短原文"}],
+  "analyzed_at": "ISO 8601时间",
+  "analysis_version": 1
+}
+```
+
+## 匹配标准
+
+个人条件来自 `data/profile.json`。综合理解标题、公告正文、岗位要求、附件字段和职责：
+
+- 明确冲突（毕业年份、学历、专业、性别等）为 `no`。
+- 关键条件明确满足且没有冲突为 `match`。
+- 关键条件缺失、表述模糊或需要查专业代码为 `possible`。
+- “优先”不是硬性限制；“限”“仅限”“必须”才按硬条件处理。
+- 设计相关语义包括但不限于设计学、艺术设计、视觉传达、产品设计、交互设计、用户体验、数字媒体艺术、环境设计、工业设计等；仍需结合原文判断。
+- 必须给出简短原文证据，不得编造学校层次、专业归属或招聘条件。
+
+## 完成与发布
+
+更新顶层 `generated_at`、`profile_version` 和 `prompt_version`。重新运行准备脚本确认剩余数量，构建网站，提交并推送分析结果。若没有新增或变化岗位，不改文件、不创建空提交。

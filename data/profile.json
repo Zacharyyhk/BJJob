@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "gender": "女",
+  "graduation_year": 2027,
+  "education": "硕士研究生",
+  "bachelor_school": "华东师范大学",
+  "master_school": "华东师范大学",
+  "school_tags": ["985", "211", "双一流"],
+  "major_category": "设计类",
+  "political_status": "中共党员"
+}
