@@ -145,7 +145,8 @@ type AiMatch = {
   needs_confirmation?: string[];
 };
 
-const aiResults = (aiAnalysisData as { results: Record<string, AiMatch> }).results;
+const aiData = aiAnalysisData as { generated_at?: string; results: Record<string, AiMatch> };
+const aiResults = aiData.results;
 
 function matchForProfile(job: Job): MatchResult {
   const ai = aiResults[job.id];
@@ -257,6 +258,8 @@ export default function Home() {
 
   const activeCount = allJobs.filter((job) => (daysUntil(job.deadline) ?? 1) >= 0).length;
   const profileCount = allJobs.filter((job) => matchForProfile(job).level !== "no").length;
+  const definiteCount = Object.values(aiResults).filter((item) => item.match_level === "match").length;
+  const analyzedCount = Object.keys(aiResults).length;
   const updated = new Date(collected.generated_at);
 
   return (
@@ -264,7 +267,7 @@ export default function Home() {
       <header>
         <div>
           <h1>北京职位</h1>
-          <p>{activeCount} 个进行中 · {profileCount} 个可能适合 · 更新于 {updated.toLocaleString("zh-CN", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" })}</p>
+          <p>{activeCount} 个进行中 · Codex 已分析 {analyzedCount} 个 · 明确符合 {definiteCount} 个 · {profileCount} 个待关注 · 更新于 {updated.toLocaleString("zh-CN", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" })}</p>
         </div>
         <button className={savedOnly ? "saved active" : "saved"} onClick={() => setSavedOnly(!savedOnly)}>收藏 {saved.length}</button>
       </header>
