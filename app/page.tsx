@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import sourceData from "../data/sources.json";
 
 type Job = {
   id: string;
@@ -112,6 +113,7 @@ const jobs: Job[] = [
 ];
 
 const categories = ["全部", "互联网大厂", "央企国企", "事业单位", "公务员"] as const;
+const sourceGroups = ["事业单位", "公务员", "央企国企", "中央机关重点单位", "互联网大厂"];
 
 function daysLeft(date: string) {
   const end = new Date(`${date}T23:59:59`);
@@ -250,8 +252,13 @@ export default function Home() {
       </section>
 
       <section className="sources" id="sources">
-        <div><span className="eyebrow">TRUSTED SOURCES</span><h2>优先收录官方信息</h2><p>职位详情以原招聘单位和政府网站公告为准，本站只做检索、分类与提醒。</p></div>
-        <div className="source-list"><span>国家公务员局</span><span>北京市人社局</span><span>国聘平台</span><span>企业招聘官网</span></div>
+        <div className="source-intro"><span className="eyebrow">TRUSTED SOURCES</span><h2>已纳入 {sourceData.length} 个信息源</h2><p>优先采集政府与招聘单位官网，职位详情以原公告为准。国考使用年度专题和首都之窗稳定备份，不再依赖已不稳定的国家公务员局首页。</p><div className="source-legend"><span><i className="dot confirmed" />已确认</span><span><i className="dot seasonal" />季节性</span><span><i className="dot pending" />待技术验证</span></div></div>
+        <div className="source-groups">
+          {sourceGroups.map((group) => {
+            const items = sourceData.filter((source) => source.group === group);
+            return <div className="source-group" key={group}><div className="source-group-title"><h3>{group}</h3><span>{items.length} 个来源</span></div><div className="source-list">{items.map((source) => <a href={source.url} target="_blank" rel="noreferrer" key={source.id}><div><b>{source.name}</b><small>{source.scope}</small></div><span className={`source-status ${source.status === "已确认" ? "confirmed" : source.status === "季节性" ? "seasonal" : "pending"}`}>{source.status}</span></a>)}</div></div>;
+          })}
+        </div>
       </section>
 
       <footer><div className="brand"><span className="brand-mark">京</span><span>京职搜<small>个人招聘信息助手</small></span></div><p>当前内容为界面演示数据，请以来源网站实时公告为准。</p><a href="#top">回到顶部 ↑</a></footer>

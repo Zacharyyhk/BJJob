@@ -1,0 +1,201 @@
+[
+  {
+    "id": "bj-rsj-institutions",
+    "name": "北京市人社局事业单位公开招聘",
+    "group": "事业单位",
+    "url": "https://rsj.beijing.gov.cn/xxgk/gkzp/",
+    "priority": "P0",
+    "status": "已确认",
+    "schedule": "08:30,18:30",
+    "scope": "北京市、区属、医院、高校及其他事业单位公开招聘公告",
+    "mode": "列表页+详情页+附件"
+  },
+  {
+    "id": "beijing-gov-institutions",
+    "name": "首都之窗事业单位招聘",
+    "group": "事业单位",
+    "url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/",
+    "priority": "P1",
+    "status": "已确认",
+    "schedule": "08:30,18:30",
+    "scope": "北京市政府门户发布的事业单位招聘公告",
+    "mode": "列表页+详情页"
+  },
+  {
+    "id": "bj-civil-service",
+    "name": "北京市公务员招录专题",
+    "group": "公务员",
+    "url": "https://rsj.beijing.gov.cn/bm/ztzl/gwy/",
+    "priority": "P0",
+    "status": "已确认",
+    "schedule": "08:30,18:30",
+    "scope": "京考、补录、职位表、报名和成绩通知",
+    "mode": "专题页+附件"
+  },
+  {
+    "id": "bj-exam-notices",
+    "name": "北京人事考试重要通知",
+    "group": "公务员",
+    "url": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/",
+    "priority": "P1",
+    "status": "已确认",
+    "schedule": "08:30,18:30",
+    "scope": "京考、定向选调、优培计划及相关考试通知",
+    "mode": "列表页+关键词过滤"
+  },
+  {
+    "id": "national-civil-service-yearly",
+    "name": "2026年度国考专题",
+    "group": "公务员",
+    "url": "http://bm.scs.gov.cn/kl2026",
+    "priority": "P0",
+    "status": "季节性",
+    "schedule": "招录期每4小时",
+    "scope": "中央机关及其直属机构招考公告、职位表、调剂和补录",
+    "mode": "年度专题+附件",
+    "notes": "每年自动探测并切换 klYYYY 地址"
+  },
+  {
+    "id": "beijing-gov-civil-service",
+    "name": "首都之窗公务员招考",
+    "group": "公务员",
+    "url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html",
+    "priority": "P0",
+    "status": "已确认",
+    "schedule": "08:30,18:30",
+    "scope": "北京公务员及部分国考公告的稳定备份",
+    "mode": "列表页+详情页"
+  },
+  {
+    "id": "bj-sasac-jobs",
+    "name": "北京市国资委国企招聘",
+    "group": "央企国企",
+    "url": "https://gzw.beijing.gov.cn/yggq/gqzp/",
+    "priority": "P0",
+    "status": "已确认",
+    "schedule": "08:30,18:30",
+    "scope": "北京市属国企招聘公告",
+    "mode": "列表页+详情页"
+  },
+  {
+    "id": "iguopin",
+    "name": "国聘平台",
+    "group": "央企国企",
+    "url": "https://www.iguopin.com/",
+    "priority": "P1",
+    "status": "待接口验证",
+    "schedule": "08:30",
+    "scope": "央企、国企北京岗位补充",
+    "mode": "优先公开接口"
+  },
+  {
+    "id": "mfa-civil-service",
+    "name": "外交部公务员考试录用",
+    "group": "中央机关重点单位",
+    "url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/",
+    "priority": "P1",
+    "status": "已确认",
+    "schedule": "08:30,18:30",
+    "scope": "外交部考录计划、职位说明、面试和递补公告",
+    "mode": "栏目页+详情页"
+  },
+  {
+    "id": "sasac-civil-service",
+    "name": "国务院国资委人事招聘",
+    "group": "中央机关重点单位",
+    "url": "https://www.sasac.gov.cn/n2588030/n2588964/",
+    "priority": "P1",
+    "status": "已确认",
+    "schedule": "08:30,18:30",
+    "scope": "国务院国资委公务员考录及直属单位招聘",
+    "mode": "栏目页+详情页"
+  },
+  {
+    "id": "ggj-notices",
+    "name": "国家机关事务管理局通知公告",
+    "group": "中央机关重点单位",
+    "url": "https://www.ggj.gov.cn/tzgg/",
+    "priority": "P1",
+    "status": "已确认",
+    "schedule": "08:30,18:30",
+    "scope": "公务员考录、事业单位和直属单位招聘公告",
+    "mode": "栏目页+招聘关键词过滤"
+  },
+  {
+    "id": "moe-personnel",
+    "name": "教育部人事招聘通知",
+    "group": "中央机关重点单位",
+    "url": "https://www.moe.gov.cn/s78/A04/",
+    "priority": "P2",
+    "status": "待验证",
+    "schedule": "08:30",
+    "scope": "教育部公务员考录和直属事业单位人事通知",
+    "mode": "栏目页+关键词过滤"
+  },
+  {
+    "id": "cnipa-personnel",
+    "name": "国家知识产权局招考招聘",
+    "group": "中央机关重点单位",
+    "url": "https://www.cnipa.gov.cn/col/col74/index.html",
+    "priority": "P2",
+    "status": "待验证",
+    "schedule": "08:30",
+    "scope": "专利局等在京单位公务员和事业单位招聘",
+    "mode": "栏目页+关键词过滤"
+  },
+  {
+    "id": "spb-personnel",
+    "name": "国家邮政局人事信息",
+    "group": "中央机关重点单位",
+    "url": "https://www.spb.gov.cn/gjyzj/c100015/common_list.shtml",
+    "priority": "P2",
+    "status": "待验证",
+    "schedule": "08:30",
+    "scope": "北京邮政管理系统公务员招录和公示",
+    "mode": "栏目页+关键词过滤"
+  },
+  {
+    "id": "bytedance-jobs",
+    "name": "字节跳动招聘",
+    "group": "互联网大厂",
+    "url": "https://jobs.bytedance.com/campus/",
+    "priority": "P1",
+    "status": "待接口验证",
+    "schedule": "08:30,18:30",
+    "scope": "北京校招、实习和社会招聘",
+    "mode": "职位接口"
+  },
+  {
+    "id": "baidu-jobs",
+    "name": "百度招聘",
+    "group": "互联网大厂",
+    "url": "https://talent.baidu.com/jobs/",
+    "priority": "P1",
+    "status": "待接口验证",
+    "schedule": "08:30,18:30",
+    "scope": "北京校招、实习和社会招聘",
+    "mode": "职位接口"
+  },
+  {
+    "id": "jd-jobs",
+    "name": "京东招聘",
+    "group": "互联网大厂",
+    "url": "https://zhaopin.jd.com/",
+    "priority": "P1",
+    "status": "待接口验证",
+    "schedule": "08:30,18:30",
+    "scope": "北京校招和社会招聘",
+    "mode": "职位接口"
+  },
+  {
+    "id": "meituan-jobs",
+    "name": "美团北京社会招聘",
+    "group": "互联网大厂",
+    "url": "https://zhaopin.meituan.com/web/social?cityList=001001&pageNo=1",
+    "priority": "P1",
+    "status": "待接口验证",
+    "schedule": "08:30,18:30",
+    "scope": "已按北京城市过滤的社会招聘岗位",
+    "mode": "职位接口"
+  }
+]
