@@ -290,7 +290,7 @@ export default function Home() {
 
       <details className="source-report">
         <summary>数据源状态：已采集 {otherSources.collected_source_count} · 待专用适配 {otherSources.needs_adapter_count} · 暂不可用 {otherSources.unavailable_count}</summary>
-        <div>{otherSources.sources.map((source) => <span key={source.source_id}>{source.source_name}：{source.status === "collected" ? `${source.item_count}条` : source.status === "needs-adapter" ? "待适配" : "不可用"}</span>)}</div>
+        <div>{otherSources.sources.map((source) => <span key={source.source_id}>{source.source_name}：{source.status === "collected" ? `${source.item_count}条` : source.status === "collected-empty" ? "今日无结果" : source.status === "seasonal-inactive" ? "非招录期" : source.status === "adapter-blocked" ? "接口受限" : "不可用"}</span>)}</div>
       </details>
       <div className="data-note">自动整理公开招聘信息，最终条件以原公告和附件为准。</div>
     </main>

@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-07-11T15:14:28+08:00",
+  "generated_at": "2026-07-11T15:25:30+08:00",
   "source_count": 17,
-  "collected_source_count": 6,
-  "needs_adapter_count": 9,
-  "unavailable_count": 2,
-  "item_count": 73,
+  "collected_source_count": 11,
+  "needs_adapter_count": 0,
+  "unavailable_count": 6,
+  "item_count": 104,
   "sources": [
     {
       "source_id": "beijing-gov-institutions",
       "source_name": "首都之窗事业单位招聘",
       "group": "事业单位",
       "home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/",
+      "adapter": "static",
       "status": "collected",
-      "http_status": 200,
       "final_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/",
       "item_count": 23,
-      "duration_ms": 6210,
+      "duration_ms": 110,
       "items": [
         {
           "id": "e51be5b9a2b558ae",
@@ -254,11 +254,11 @@
       "source_name": "北京市公务员招录专题",
       "group": "公务员",
       "home": "https://rsj.beijing.gov.cn/bm/ztzl/gwy/",
-      "status": "needs-adapter",
-      "http_status": 200,
-      "final_url": "https://rsj.beijing.gov.cn/bm/ztzl/gwy/",
+      "adapter": "dedicated",
+      "status": "adapter-blocked",
+      "http_status": 403,
       "item_count": 0,
-      "duration_ms": 2703,
+      "error": "403 Client Error: Forbidden for url: https://rsj.beijing.gov.cn/bm/ztzl/gwy/",
       "items": []
     },
     {
@@ -266,11 +266,11 @@
       "source_name": "北京人事考试重要通知",
       "group": "公务员",
       "home": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/",
-      "status": "needs-adapter",
-      "http_status": 200,
-      "final_url": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/",
+      "adapter": "dedicated",
+      "status": "adapter-blocked",
+      "http_status": 403,
       "item_count": 0,
-      "duration_ms": 1057,
+      "error": "403 Client Error: Forbidden for url: https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/",
       "items": []
     },
     {
@@ -278,11 +278,11 @@
       "source_name": "2026年度国考专题",
       "group": "公务员",
       "home": "http://bm.scs.gov.cn/kl2026",
-      "status": "needs-adapter",
-      "http_status": 200,
+      "adapter": "dedicated",
+      "status": "seasonal-inactive",
       "final_url": "http://bm.scs.gov.cn/kl2026",
       "item_count": 0,
-      "duration_ms": 5633,
+      "duration_ms": 63,
       "items": []
     },
     {
@@ -290,11 +290,11 @@
       "source_name": "首都之窗公务员招考",
       "group": "公务员",
       "home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html",
+      "adapter": "static",
       "status": "collected",
-      "http_status": 200,
       "final_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html",
       "item_count": 26,
-      "duration_ms": 328,
+      "duration_ms": 32,
       "items": [
         {
           "id": "063457f0c0494f96",
@@ -563,11 +563,11 @@
       "source_name": "北京市国资委国企招聘",
       "group": "央企国企",
       "home": "https://gzw.beijing.gov.cn/yggq/gqzp/",
-      "status": "needs-adapter",
-      "http_status": 200,
-      "final_url": "https://gzw.beijing.gov.cn/yggq/gqzp/",
+      "adapter": "dedicated",
+      "status": "adapter-blocked",
+      "http_status": 403,
       "item_count": 0,
-      "duration_ms": 2774,
+      "error": "403 Client Error: Forbidden for url: https://gzw.beijing.gov.cn/yggq/gqzp/",
       "items": []
     },
     {
@@ -575,11 +575,11 @@
       "source_name": "国聘平台",
       "group": "央企国企",
       "home": "https://www.iguopin.com/",
-      "status": "needs-adapter",
-      "http_status": 200,
-      "final_url": "https://www.iguopin.com/",
+      "adapter": "dedicated",
+      "status": "adapter-blocked",
+      "final_url": "https://www.iguopin.com/api/jobs/v3/list",
       "item_count": 0,
-      "duration_ms": 1743,
+      "duration_ms": 2344,
       "items": []
     },
     {
@@ -587,11 +587,11 @@
       "source_name": "外交部公务员考试录用",
       "group": "中央机关重点单位",
       "home": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/",
+      "adapter": "static",
       "status": "collected",
-      "http_status": 200,
       "final_url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/",
       "item_count": 16,
-      "duration_ms": 1008,
+      "duration_ms": 94,
       "items": [
         {
           "id": "0766750ede5ee969",
@@ -760,10 +760,11 @@
       "source_name": "国务院国资委人事招聘",
       "group": "中央机关重点单位",
       "home": "https://www.sasac.gov.cn/n2588030/n2588964/",
+      "adapter": "static",
       "status": "unavailable",
       "http_status": null,
       "item_count": 0,
-      "error": "HTTPSConnectionPool(host='www.sasac.gov.cn', port=443): Max retries exceeded with url: /n2588030/n2588964/ (Caused by NewConnectionError(\"HTTPSConnection(host='www.sasac.gov.cn', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))",
+      "error": "HTTPSConnectionPool(host='www.sasac.gov.cn', port=443): Max retries exceeded with url: /n2588030/n2588964/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))",
       "items": []
     },
     {
@@ -771,11 +772,11 @@
       "source_name": "国家机关事务管理局通知公告",
       "group": "中央机关重点单位",
       "home": "https://www.ggj.gov.cn/tzgg/",
-      "status": "needs-adapter",
-      "http_status": 200,
+      "adapter": "dedicated",
+      "status": "collected-empty",
       "final_url": "https://www.ggj.gov.cn/tzgg/",
       "item_count": 0,
-      "duration_ms": 3241,
+      "duration_ms": 625,
       "items": []
     },
     {
@@ -783,11 +784,11 @@
       "source_name": "教育部人事招聘通知",
       "group": "中央机关重点单位",
       "home": "https://www.moe.gov.cn/s78/A04/",
+      "adapter": "static",
       "status": "collected",
-      "http_status": 200,
       "final_url": "http://www.moe.gov.cn/s78/A04/",
       "item_count": 5,
-      "duration_ms": 2635,
+      "duration_ms": 78,
       "items": [
         {
           "id": "3aae59ba4c35adc1",
@@ -846,11 +847,11 @@
       "source_name": "国家知识产权局招考招聘",
       "group": "中央机关重点单位",
       "home": "https://www.cnipa.gov.cn/col/col74/index.html",
-      "status": "needs-adapter",
-      "http_status": 200,
+      "adapter": "dedicated",
+      "status": "collected-empty",
       "final_url": "https://www.cnipa.gov.cn/col/col74/index.html",
       "item_count": 0,
-      "duration_ms": 1015,
+      "duration_ms": 78,
       "items": []
     },
     {
@@ -858,6 +859,7 @@
       "source_name": "国家邮政局人事信息",
       "group": "中央机关重点单位",
       "home": "https://www.spb.gov.cn/gjyzj/c100015/common_list.shtml",
+      "adapter": "static",
       "status": "unavailable",
       "http_status": 404,
       "item_count": 0,
@@ -869,11 +871,11 @@
       "source_name": "字节跳动招聘",
       "group": "互联网大厂",
       "home": "https://jobs.bytedance.com/campus/",
+      "adapter": "static",
       "status": "collected",
-      "http_status": 200,
       "final_url": "https://jobs.bytedance.com/campus/",
       "item_count": 1,
-      "duration_ms": 3173,
+      "duration_ms": 453,
       "items": [
         {
           "id": "d685534536db8013",
@@ -892,23 +894,334 @@
       "source_name": "百度招聘",
       "group": "互联网大厂",
       "home": "https://talent.baidu.com/jobs/",
-      "status": "needs-adapter",
-      "http_status": 200,
-      "final_url": "https://talent.baidu.com/jobs/",
-      "item_count": 0,
-      "duration_ms": 1857,
-      "items": []
+      "adapter": "dedicated",
+      "status": "collected",
+      "final_url": "https://talent.baidu.com/jobs/list?recruitType=SOCIAL",
+      "item_count": 31,
+      "duration_ms": 578,
+      "items": [
+        {
+          "id": "319f410a6575d4b3",
+          "title": "百度学术AI产品经理（J85590）",
+          "organization": "百度",
+          "category": "互联网大厂",
+          "published_at": "2025-06-19",
+          "source_name": "百度招聘",
+          "source_url": "https://talent.baidu.com/jobs/detail/0d6fad24-fe80-4c5e-8b2f-1fb45031de0c",
+          "source_home": "https://talent.baidu.com/jobs/"
+        },
+        {
+          "id": "1ef959fdfdac97b4",
+          "title": "北京-2027管培生(J101320)",
+          "organization": "百度",
+          "category": "互联网大厂",
+          "published_at": "2026-07-01",
+          "source_name": "百度招聘",
+          "source_url": "https://talent.baidu.com/jobs/detail/8a94c230-0d73-4064-bd9d-8072fc65ddeb",
+          "source_home": "https://talent.baidu.com/jobs/"
+        },
+        {
+          "id": "a8351e9b8a8d29e3",
+          "title": "2027AIDU-智能体算法研究员(J102506)",
+          "organization": "百度",
+          "category": "互联网大厂",
+          "published_at": "2026-07-10",
+          "source_name": "百度招聘",
+          "source_url": "https://talent.baidu.com/jobs/detail/2e389bc9-be6b-4dd3-981d-59c932558f19",
+          "source_home": "https://talent.baidu.com/jobs/"
+        },
+        {
+          "id": "4e204808508c321d",
+          "title": "北京-大模型训练Infra研发工程师（基座研发方向）(J101258)",
+          "organization": "百度",
+          "category": "互联网大厂",
+          "published_at": "2026-07-08",
+          "source_name": "百度招聘",
+          "source_url": "https://talent.baidu.com/jobs/detail/0342bef0-e8a3-45d8-9626-f43579412583",
+          "source_home": "https://talent.baidu.com/jobs/"
+        },
+        {
+          "id": "030e36a630a72efb",
+          "title": "献给爱尝试的你",
+          "organization": "百度",
+          "category": "互联网大厂",
+          "published_at": "",
+          "source_name": "百度招聘",
+          "source_url": "https://talent.baidu.com/jobs/detail/13",
+          "source_home": "https://talent.baidu.com/jobs/"
+        },
+        {
+          "id": "ea641f9532203cac",
+          "title": "「更新」的你，请来「更新」百度",
+          "organization": "百度",
+          "category": "互联网大厂",
+          "published_at": "",
+          "source_name": "百度招聘",
+          "source_url": "https://talent.baidu.com/jobs/detail/11",
+          "source_home": "https://talent.baidu.com/jobs/"
+        },
+        {
+          "id": "7e6e7b4817b79ede",
+          "title": "百度到底有啥啊",
+          "organization": "百度",
+          "category": "互联网大厂",
+          "published_at": "",
+          "source_name": "百度招聘",
+          "source_url": "https://talent.baidu.com/jobs/detail/12",
+          "source_home": "https://talent.baidu.com/jobs/"
+        },
+        {
+          "id": "2b85ae3518e37257",
+          "title": "如果人生第一份工作选百度",
+          "organization": "百度",
+          "category": "互联网大厂",
+          "published_at": "",
+          "source_name": "百度招聘",
+          "source_url": "https://talent.baidu.com/jobs/detail/1",
+          "source_home": "https://talent.baidu.com/jobs/"
+        },
+        {
+          "id": "9b8153038d9c5ee3",
+          "title": "同学，你有一份百度“芯”offer待签收！",
+          "organization": "百度",
+          "category": "互联网大厂",
+          "published_at": "",
+          "source_name": "百度招聘",
+          "source_url": "https://talent.baidu.com/jobs/detail/3",
+          "source_home": "https://talent.baidu.com/jobs/"
+        },
+        {
+          "id": "cd4a56c85a964565",
+          "title": "因为相信，所以坚定",
+          "organization": "百度",
+          "category": "互联网大厂",
+          "published_at": "",
+          "source_name": "百度招聘",
+          "source_url": "https://talent.baidu.com/jobs/detail/4",
+          "source_home": "https://talent.baidu.com/jobs/"
+        },
+        {
+          "id": "0c88916ac8ec5597",
+          "title": "四季下的百度，每一帧都是绝美壁纸！",
+          "organization": "百度",
+          "category": "互联网大厂",
+          "published_at": "",
+          "source_name": "百度招聘",
+          "source_url": "https://talent.baidu.com/jobs/detail/5",
+          "source_home": "https://talent.baidu.com/jobs/"
+        },
+        {
+          "id": "a30eec491ebb1127",
+          "title": "问诊医生运营实习生（J102244）",
+          "organization": "百度",
+          "category": "互联网大厂",
+          "published_at": "2026-07-10",
+          "source_name": "百度招聘",
+          "source_url": "https://talent.baidu.com/jobs/detail/5b179e0c-cd7b-4b55-95c7-5d3f625b4ab0",
+          "source_home": "https://talent.baidu.com/jobs/"
+        },
+        {
+          "id": "ab85d53759cbbdc4",
+          "title": "AI产品经理实习生（J102315）",
+          "organization": "百度",
+          "category": "互联网大厂",
+          "published_at": "2026-07-09",
+          "source_name": "百度招聘",
+          "source_url": "https://talent.baidu.com/jobs/detail/bc6af7fa-964b-4db2-819f-3f3a308b34d2",
+          "source_home": "https://talent.baidu.com/jobs/"
+        },
+        {
+          "id": "b44fefa81160af78",
+          "title": "流程管理实习生（J102241）",
+          "organization": "百度",
+          "category": "互联网大厂",
+          "published_at": "2026-07-08",
+          "source_name": "百度招聘",
+          "source_url": "https://talent.baidu.com/jobs/detail/83ffd844-3705-4bf4-b14d-f27905048e95",
+          "source_home": "https://talent.baidu.com/jobs/"
+        },
+        {
+          "id": "69443cf90f1d2490",
+          "title": "产品运营（J101400）",
+          "organization": "百度",
+          "category": "互联网大厂",
+          "published_at": "2026-07-08",
+          "source_name": "百度招聘",
+          "source_url": "https://talent.baidu.com/jobs/detail/f9516cd1-feb8-461b-a310-a59f4329e17c",
+          "source_home": "https://talent.baidu.com/jobs/"
+        },
+        {
+          "id": "a09fbaaa103480be",
+          "title": "计算与网络产品质量组（J101424）",
+          "organization": "百度",
+          "category": "互联网大厂",
+          "published_at": "2026-07-08",
+          "source_name": "百度招聘",
+          "source_url": "https://talent.baidu.com/jobs/detail/053b7d39-7b11-46aa-b1f5-874bb5662a52",
+          "source_home": "https://talent.baidu.com/jobs/"
+        },
+        {
+          "id": "25ed00f7c977446f",
+          "title": "业务助理（J102183）",
+          "organization": "百度",
+          "category": "互联网大厂",
+          "published_at": "2026-07-07",
+          "source_name": "百度招聘",
+          "source_url": "https://talent.baidu.com/jobs/detail/d1d74943-dc4c-41f1-8341-2e26aa549f81",
+          "source_home": "https://talent.baidu.com/jobs/"
+        },
+        {
+          "id": "392aab0957ecbc98",
+          "title": "HRBP实习生（J101431）",
+          "organization": "百度",
+          "category": "互联网大厂",
+          "published_at": "2026-07-06",
+          "source_name": "百度招聘",
+          "source_url": "https://talent.baidu.com/jobs/detail/d9440276-bcef-4bbc-b121-a1024a1ffcbe",
+          "source_home": "https://talent.baidu.com/jobs/"
+        },
+        {
+          "id": "e43eb7d4b9ef3da9",
+          "title": "测试开发实习生（J101426）",
+          "organization": "百度",
+          "category": "互联网大厂",
+          "published_at": "2026-07-06",
+          "source_name": "百度招聘",
+          "source_url": "https://talent.baidu.com/jobs/detail/67a5fc28-e6c5-4397-82fc-03cabf41aa95",
+          "source_home": "https://talent.baidu.com/jobs/"
+        },
+        {
+          "id": "008bce1c9d845765",
+          "title": "COE实习生（OD、TD）（J101423）",
+          "organization": "百度",
+          "category": "互联网大厂",
+          "published_at": "2026-07-06",
+          "source_name": "百度招聘",
+          "source_url": "https://talent.baidu.com/jobs/detail/cf39a9c1-ed2c-4521-bb63-94530c27a2a5",
+          "source_home": "https://talent.baidu.com/jobs/"
+        },
+        {
+          "id": "62b222d93d6fad41",
+          "title": "hr招聘实习生（J101200）",
+          "organization": "百度",
+          "category": "互联网大厂",
+          "published_at": "2026-07-06",
+          "source_name": "百度招聘",
+          "source_url": "https://talent.baidu.com/jobs/detail/7d212485-2c57-4196-8a15-fe43e6b3a31f",
+          "source_home": "https://talent.baidu.com/jobs/"
+        },
+        {
+          "id": "b3cdd393141c1de8",
+          "title": "北京-大模型算法工程师(J100728)",
+          "organization": "百度",
+          "category": "互联网大厂",
+          "published_at": "2026-07-08",
+          "source_name": "百度招聘",
+          "source_url": "https://talent.baidu.com/jobs/detail/8228ed01-5592-4f26-a406-c6581dfd8418",
+          "source_home": "https://talent.baidu.com/jobs/"
+        },
+        {
+          "id": "1e351580f904da5d",
+          "title": "搜索策略产品经理（医院决策方向）（J100597）",
+          "organization": "百度",
+          "category": "互联网大厂",
+          "published_at": "2026-07-09",
+          "source_name": "百度招聘",
+          "source_url": "https://talent.baidu.com/jobs/detail/ada28860-43fd-4acb-bfc1-57c060bb0250",
+          "source_home": "https://talent.baidu.com/jobs/"
+        },
+        {
+          "id": "1a82f400173bc8e6",
+          "title": "DuMate_全栈研发工程师（J102246）",
+          "organization": "百度",
+          "category": "互联网大厂",
+          "published_at": "2026-07-09",
+          "source_name": "百度招聘",
+          "source_url": "https://talent.baidu.com/jobs/detail/7e48fac0-e922-442a-964d-90488e4139e7",
+          "source_home": "https://talent.baidu.com/jobs/"
+        },
+        {
+          "id": "9633de3f1e7819da",
+          "title": "政企销售（J102258）",
+          "organization": "百度",
+          "category": "互联网大厂",
+          "published_at": "2026-07-09",
+          "source_name": "百度招聘",
+          "source_url": "https://talent.baidu.com/jobs/detail/334a865d-2542-408f-a90b-440b83edba19",
+          "source_home": "https://talent.baidu.com/jobs/"
+        },
+        {
+          "id": "6885b4ce4cf07ccc",
+          "title": "AI产品经理（企业效能方向）（J101407）",
+          "organization": "百度",
+          "category": "互联网大厂",
+          "published_at": "2026-07-08",
+          "source_name": "百度招聘",
+          "source_url": "https://talent.baidu.com/jobs/detail/37e09a7a-d77d-4e54-ac41-16552b4a7311",
+          "source_home": "https://talent.baidu.com/jobs/"
+        },
+        {
+          "id": "c77e58bbf4dd7a03",
+          "title": "医生Agent运营专家（J100604）",
+          "organization": "百度",
+          "category": "互联网大厂",
+          "published_at": "2026-07-09",
+          "source_name": "百度招聘",
+          "source_url": "https://talent.baidu.com/jobs/detail/8a8e7bb4-4806-4a06-896b-eed9186bc72f",
+          "source_home": "https://talent.baidu.com/jobs/"
+        },
+        {
+          "id": "71f817c860349fa9",
+          "title": "大客户销售经理（药企方向）（J100273）",
+          "organization": "百度",
+          "category": "互联网大厂",
+          "published_at": "2026-07-09",
+          "source_name": "百度招聘",
+          "source_url": "https://talent.baidu.com/jobs/detail/17beb1b3-304d-4b1d-a73f-ea9f6d21c383",
+          "source_home": "https://talent.baidu.com/jobs/"
+        },
+        {
+          "id": "9011ec7cbaea1b99",
+          "title": "大模型评测算法工程师（J100902）",
+          "organization": "百度",
+          "category": "互联网大厂",
+          "published_at": "2026-07-09",
+          "source_name": "百度招聘",
+          "source_url": "https://talent.baidu.com/jobs/detail/c0fb6b4c-c26f-4771-b18b-73109df3695e",
+          "source_home": "https://talent.baidu.com/jobs/"
+        },
+        {
+          "id": "5d13e9bcc169e8a7",
+          "title": "北京、河北销售（J101303）",
+          "organization": "百度",
+          "category": "互联网大厂",
+          "published_at": "2026-07-08",
+          "source_name": "百度招聘",
+          "source_url": "https://talent.baidu.com/jobs/detail/cb2ed629-d85d-4439-8c85-db5d91944bb8",
+          "source_home": "https://talent.baidu.com/jobs/"
+        },
+        {
+          "id": "f3570ab4db3f4a8f",
+          "title": "专业交付.医生.-..高级健康顾问（J100244）",
+          "organization": "百度",
+          "category": "互联网大厂",
+          "published_at": "2026-07-09",
+          "source_name": "百度招聘",
+          "source_url": "https://talent.baidu.com/jobs/detail/e5e76aa8-227b-46ef-823d-36b4612aa4a5",
+          "source_home": "https://talent.baidu.com/jobs/"
+        }
+      ]
     },
     {
       "source_id": "jd-jobs",
       "source_name": "京东招聘",
       "group": "互联网大厂",
       "home": "https://zhaopin.jd.com/",
+      "adapter": "static",
       "status": "collected",
-      "http_status": 200,
-      "final_url": "https://zhaopin.jd.com/home;jsessionid=8BC945FCDB73A49E0269289BD3F16A5C.s1",
+      "final_url": "https://zhaopin.jd.com/home;jsessionid=F44BF076113BEB6BD9951D2299B8F7ED.s1",
       "item_count": 2,
-      "duration_ms": 2413,
+      "duration_ms": 188,
       "items": [
         {
           "id": "497b05be395a27a2",
@@ -937,15 +1250,245 @@
       "source_name": "美团北京社会招聘",
       "group": "互联网大厂",
       "home": "https://zhaopin.meituan.com/web/social?cityList=001001&pageNo=1",
-      "status": "needs-adapter",
-      "http_status": 200,
-      "final_url": "https://zhaopin.meituan.com/web/social?cityList=001001&pageNo=1",
+      "adapter": "dedicated",
+      "status": "collected-empty",
+      "final_url": "https://zhaopin.meituan.com/api/official/job/getJobList",
       "item_count": 0,
-      "duration_ms": 890,
+      "duration_ms": 94,
       "items": []
     }
   ],
   "items": [
+    {
+      "id": "a30eec491ebb1127",
+      "title": "问诊医生运营实习生（J102244）",
+      "organization": "百度",
+      "category": "互联网大厂",
+      "published_at": "2026-07-10",
+      "source_name": "百度招聘",
+      "source_url": "https://talent.baidu.com/jobs/detail/5b179e0c-cd7b-4b55-95c7-5d3f625b4ab0",
+      "source_home": "https://talent.baidu.com/jobs/"
+    },
+    {
+      "id": "a8351e9b8a8d29e3",
+      "title": "2027AIDU-智能体算法研究员(J102506)",
+      "organization": "百度",
+      "category": "互联网大厂",
+      "published_at": "2026-07-10",
+      "source_name": "百度招聘",
+      "source_url": "https://talent.baidu.com/jobs/detail/2e389bc9-be6b-4dd3-981d-59c932558f19",
+      "source_home": "https://talent.baidu.com/jobs/"
+    },
+    {
+      "id": "9633de3f1e7819da",
+      "title": "政企销售（J102258）",
+      "organization": "百度",
+      "category": "互联网大厂",
+      "published_at": "2026-07-09",
+      "source_name": "百度招聘",
+      "source_url": "https://talent.baidu.com/jobs/detail/334a865d-2542-408f-a90b-440b83edba19",
+      "source_home": "https://talent.baidu.com/jobs/"
+    },
+    {
+      "id": "1e351580f904da5d",
+      "title": "搜索策略产品经理（医院决策方向）（J100597）",
+      "organization": "百度",
+      "category": "互联网大厂",
+      "published_at": "2026-07-09",
+      "source_name": "百度招聘",
+      "source_url": "https://talent.baidu.com/jobs/detail/ada28860-43fd-4acb-bfc1-57c060bb0250",
+      "source_home": "https://talent.baidu.com/jobs/"
+    },
+    {
+      "id": "9011ec7cbaea1b99",
+      "title": "大模型评测算法工程师（J100902）",
+      "organization": "百度",
+      "category": "互联网大厂",
+      "published_at": "2026-07-09",
+      "source_name": "百度招聘",
+      "source_url": "https://talent.baidu.com/jobs/detail/c0fb6b4c-c26f-4771-b18b-73109df3695e",
+      "source_home": "https://talent.baidu.com/jobs/"
+    },
+    {
+      "id": "71f817c860349fa9",
+      "title": "大客户销售经理（药企方向）（J100273）",
+      "organization": "百度",
+      "category": "互联网大厂",
+      "published_at": "2026-07-09",
+      "source_name": "百度招聘",
+      "source_url": "https://talent.baidu.com/jobs/detail/17beb1b3-304d-4b1d-a73f-ea9f6d21c383",
+      "source_home": "https://talent.baidu.com/jobs/"
+    },
+    {
+      "id": "c77e58bbf4dd7a03",
+      "title": "医生Agent运营专家（J100604）",
+      "organization": "百度",
+      "category": "互联网大厂",
+      "published_at": "2026-07-09",
+      "source_name": "百度招聘",
+      "source_url": "https://talent.baidu.com/jobs/detail/8a8e7bb4-4806-4a06-896b-eed9186bc72f",
+      "source_home": "https://talent.baidu.com/jobs/"
+    },
+    {
+      "id": "f3570ab4db3f4a8f",
+      "title": "专业交付.医生.-..高级健康顾问（J100244）",
+      "organization": "百度",
+      "category": "互联网大厂",
+      "published_at": "2026-07-09",
+      "source_name": "百度招聘",
+      "source_url": "https://talent.baidu.com/jobs/detail/e5e76aa8-227b-46ef-823d-36b4612aa4a5",
+      "source_home": "https://talent.baidu.com/jobs/"
+    },
+    {
+      "id": "1a82f400173bc8e6",
+      "title": "DuMate_全栈研发工程师（J102246）",
+      "organization": "百度",
+      "category": "互联网大厂",
+      "published_at": "2026-07-09",
+      "source_name": "百度招聘",
+      "source_url": "https://talent.baidu.com/jobs/detail/7e48fac0-e922-442a-964d-90488e4139e7",
+      "source_home": "https://talent.baidu.com/jobs/"
+    },
+    {
+      "id": "ab85d53759cbbdc4",
+      "title": "AI产品经理实习生（J102315）",
+      "organization": "百度",
+      "category": "互联网大厂",
+      "published_at": "2026-07-09",
+      "source_name": "百度招聘",
+      "source_url": "https://talent.baidu.com/jobs/detail/bc6af7fa-964b-4db2-819f-3f3a308b34d2",
+      "source_home": "https://talent.baidu.com/jobs/"
+    },
+    {
+      "id": "a09fbaaa103480be",
+      "title": "计算与网络产品质量组（J101424）",
+      "organization": "百度",
+      "category": "互联网大厂",
+      "published_at": "2026-07-08",
+      "source_name": "百度招聘",
+      "source_url": "https://talent.baidu.com/jobs/detail/053b7d39-7b11-46aa-b1f5-874bb5662a52",
+      "source_home": "https://talent.baidu.com/jobs/"
+    },
+    {
+      "id": "b44fefa81160af78",
+      "title": "流程管理实习生（J102241）",
+      "organization": "百度",
+      "category": "互联网大厂",
+      "published_at": "2026-07-08",
+      "source_name": "百度招聘",
+      "source_url": "https://talent.baidu.com/jobs/detail/83ffd844-3705-4bf4-b14d-f27905048e95",
+      "source_home": "https://talent.baidu.com/jobs/"
+    },
+    {
+      "id": "5d13e9bcc169e8a7",
+      "title": "北京、河北销售（J101303）",
+      "organization": "百度",
+      "category": "互联网大厂",
+      "published_at": "2026-07-08",
+      "source_name": "百度招聘",
+      "source_url": "https://talent.baidu.com/jobs/detail/cb2ed629-d85d-4439-8c85-db5d91944bb8",
+      "source_home": "https://talent.baidu.com/jobs/"
+    },
+    {
+      "id": "4e204808508c321d",
+      "title": "北京-大模型训练Infra研发工程师（基座研发方向）(J101258)",
+      "organization": "百度",
+      "category": "互联网大厂",
+      "published_at": "2026-07-08",
+      "source_name": "百度招聘",
+      "source_url": "https://talent.baidu.com/jobs/detail/0342bef0-e8a3-45d8-9626-f43579412583",
+      "source_home": "https://talent.baidu.com/jobs/"
+    },
+    {
+      "id": "b3cdd393141c1de8",
+      "title": "北京-大模型算法工程师(J100728)",
+      "organization": "百度",
+      "category": "互联网大厂",
+      "published_at": "2026-07-08",
+      "source_name": "百度招聘",
+      "source_url": "https://talent.baidu.com/jobs/detail/8228ed01-5592-4f26-a406-c6581dfd8418",
+      "source_home": "https://talent.baidu.com/jobs/"
+    },
+    {
+      "id": "69443cf90f1d2490",
+      "title": "产品运营（J101400）",
+      "organization": "百度",
+      "category": "互联网大厂",
+      "published_at": "2026-07-08",
+      "source_name": "百度招聘",
+      "source_url": "https://talent.baidu.com/jobs/detail/f9516cd1-feb8-461b-a310-a59f4329e17c",
+      "source_home": "https://talent.baidu.com/jobs/"
+    },
+    {
+      "id": "6885b4ce4cf07ccc",
+      "title": "AI产品经理（企业效能方向）（J101407）",
+      "organization": "百度",
+      "category": "互联网大厂",
+      "published_at": "2026-07-08",
+      "source_name": "百度招聘",
+      "source_url": "https://talent.baidu.com/jobs/detail/37e09a7a-d77d-4e54-ac41-16552b4a7311",
+      "source_home": "https://talent.baidu.com/jobs/"
+    },
+    {
+      "id": "25ed00f7c977446f",
+      "title": "业务助理（J102183）",
+      "organization": "百度",
+      "category": "互联网大厂",
+      "published_at": "2026-07-07",
+      "source_name": "百度招聘",
+      "source_url": "https://talent.baidu.com/jobs/detail/d1d74943-dc4c-41f1-8341-2e26aa549f81",
+      "source_home": "https://talent.baidu.com/jobs/"
+    },
+    {
+      "id": "e43eb7d4b9ef3da9",
+      "title": "测试开发实习生（J101426）",
+      "organization": "百度",
+      "category": "互联网大厂",
+      "published_at": "2026-07-06",
+      "source_name": "百度招聘",
+      "source_url": "https://talent.baidu.com/jobs/detail/67a5fc28-e6c5-4397-82fc-03cabf41aa95",
+      "source_home": "https://talent.baidu.com/jobs/"
+    },
+    {
+      "id": "62b222d93d6fad41",
+      "title": "hr招聘实习生（J101200）",
+      "organization": "百度",
+      "category": "互联网大厂",
+      "published_at": "2026-07-06",
+      "source_name": "百度招聘",
+      "source_url": "https://talent.baidu.com/jobs/detail/7d212485-2c57-4196-8a15-fe43e6b3a31f",
+      "source_home": "https://talent.baidu.com/jobs/"
+    },
+    {
+      "id": "392aab0957ecbc98",
+      "title": "HRBP实习生（J101431）",
+      "organization": "百度",
+      "category": "互联网大厂",
+      "published_at": "2026-07-06",
+      "source_name": "百度招聘",
+      "source_url": "https://talent.baidu.com/jobs/detail/d9440276-bcef-4bbc-b121-a1024a1ffcbe",
+      "source_home": "https://talent.baidu.com/jobs/"
+    },
+    {
+      "id": "008bce1c9d845765",
+      "title": "COE实习生（OD、TD）（J101423）",
+      "organization": "百度",
+      "category": "互联网大厂",
+      "published_at": "2026-07-06",
+      "source_name": "百度招聘",
+      "source_url": "https://talent.baidu.com/jobs/detail/cf39a9c1-ed2c-4521-bb63-94530c27a2a5",
+      "source_home": "https://talent.baidu.com/jobs/"
+    },
+    {
+      "id": "1ef959fdfdac97b4",
+      "title": "北京-2027管培生(J101320)",
+      "organization": "百度",
+      "category": "互联网大厂",
+      "published_at": "2026-07-01",
+      "source_name": "百度招聘",
+      "source_url": "https://talent.baidu.com/jobs/detail/8a94c230-0d73-4064-bd9d-8072fc65ddeb",
+      "source_home": "https://talent.baidu.com/jobs/"
+    },
     {
       "id": "c0d5afa12bb2b77a",
       "title": "北京急救中心2026年度第四批公开招聘公告",
@@ -1377,6 +1920,16 @@
       "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
     },
     {
+      "id": "319f410a6575d4b3",
+      "title": "百度学术AI产品经理（J85590）",
+      "organization": "百度",
+      "category": "互联网大厂",
+      "published_at": "2025-06-19",
+      "source_name": "百度招聘",
+      "source_url": "https://talent.baidu.com/jobs/detail/0d6fad24-fe80-4c5e-8b2f-1fb45031de0c",
+      "source_home": "https://talent.baidu.com/jobs/"
+    },
+    {
       "id": "22f54b6f51272ae8",
       "title": "关于北京市各级机关2025年度考试录用公务员资格复审、调剂和面试有关事项的通知",
       "organization": "首都之窗公务员招考",
@@ -1477,6 +2030,26 @@
       "source_home": "https://zhaopin.jd.com/"
     },
     {
+      "id": "7e6e7b4817b79ede",
+      "title": "百度到底有啥啊",
+      "organization": "百度",
+      "category": "互联网大厂",
+      "published_at": "",
+      "source_name": "百度招聘",
+      "source_url": "https://talent.baidu.com/jobs/detail/12",
+      "source_home": "https://talent.baidu.com/jobs/"
+    },
+    {
+      "id": "030e36a630a72efb",
+      "title": "献给爱尝试的你",
+      "organization": "百度",
+      "category": "互联网大厂",
+      "published_at": "",
+      "source_name": "百度招聘",
+      "source_url": "https://talent.baidu.com/jobs/detail/13",
+      "source_home": "https://talent.baidu.com/jobs/"
+    },
+    {
       "id": "72952f40b77bdfde",
       "title": "机关公务员招录",
       "organization": "教育部人事招聘通知",
@@ -1485,6 +2058,16 @@
       "source_name": "教育部人事招聘通知",
       "source_url": "http://www.moe.gov.cn/s78/A04/gongzuo/moe_450/",
       "source_home": "https://www.moe.gov.cn/s78/A04/"
+    },
+    {
+      "id": "2b85ae3518e37257",
+      "title": "如果人生第一份工作选百度",
+      "organization": "百度",
+      "category": "互联网大厂",
+      "published_at": "",
+      "source_name": "百度招聘",
+      "source_url": "https://talent.baidu.com/jobs/detail/1",
+      "source_home": "https://talent.baidu.com/jobs/"
     },
     {
       "id": "96b46c7a20469f69",
@@ -1607,6 +2190,36 @@
       "source_home": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/"
     },
     {
+      "id": "cd4a56c85a964565",
+      "title": "因为相信，所以坚定",
+      "organization": "百度",
+      "category": "互联网大厂",
+      "published_at": "",
+      "source_name": "百度招聘",
+      "source_url": "https://talent.baidu.com/jobs/detail/4",
+      "source_home": "https://talent.baidu.com/jobs/"
+    },
+    {
+      "id": "0c88916ac8ec5597",
+      "title": "四季下的百度，每一帧都是绝美壁纸！",
+      "organization": "百度",
+      "category": "互联网大厂",
+      "published_at": "",
+      "source_name": "百度招聘",
+      "source_url": "https://talent.baidu.com/jobs/detail/5",
+      "source_home": "https://talent.baidu.com/jobs/"
+    },
+    {
+      "id": "9b8153038d9c5ee3",
+      "title": "同学，你有一份百度“芯”offer待签收！",
+      "organization": "百度",
+      "category": "互联网大厂",
+      "published_at": "",
+      "source_name": "百度招聘",
+      "source_url": "https://talent.baidu.com/jobs/detail/3",
+      "source_home": "https://talent.baidu.com/jobs/"
+    },
+    {
       "id": "330ee0f0c571d0b2",
       "title": "关于进一步做好公务员录用考试管理工作的通知",
       "organization": "外交部公务员考试录用",
@@ -1675,6 +2288,16 @@
       "source_name": "外交部公务员考试录用",
       "source_url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/tzgg_660725/202510/t20251009_11724259.shtml",
       "source_home": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/"
+    },
+    {
+      "id": "ea641f9532203cac",
+      "title": "「更新」的你，请来「更新」百度",
+      "organization": "百度",
+      "category": "互联网大厂",
+      "published_at": "",
+      "source_name": "百度招聘",
+      "source_url": "https://talent.baidu.com/jobs/detail/11",
+      "source_home": "https://talent.baidu.com/jobs/"
     }
   ]
 }
