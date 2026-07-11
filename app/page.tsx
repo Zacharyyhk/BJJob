@@ -16,6 +16,11 @@ type Position = {
   household?: string;
   applicant_type?: string;
   requirements?: string;
+  responsibilities?: string;
+  location?: string;
+  recruitment_type?: string;
+  category_detail?: string;
+  data_quality?: string;
   contact?: string;
   sheet?: string;
   row?: number;
@@ -88,11 +93,19 @@ const otherJobs: Job[] = otherSources.items.map((item) => ({
   publisher: item.organization,
   publishedAt: item.published_at,
   applicationStartAt: "",
-  deadline: "",
+  deadline: item.deadline || "",
   sourceUrl: item.source_url,
   isNotice: true,
   sourceName: item.source_name,
   sourceGroup: item.category,
+  requirements: item.requirements,
+  responsibilities: item.responsibilities,
+  location: item.location,
+  recruitment_type: item.recruitment_type,
+  category_detail: item.category_detail,
+  data_quality: item.data_quality,
+  education: item.education,
+  headcount: item.headcount,
 }));
 
 const allJobs = [...jobs, ...otherJobs];
@@ -126,7 +139,7 @@ type MatchResult = { level: "match" | "possible" | "no"; label: string; reasons:
 function matchForProfile(job: Job): MatchResult {
   const education = job.education || "";
   const major = job.major || "";
-  const applicant = `${job.applicant_type || ""} ${job.requirements || ""} ${job.noticeTitle}`;
+  const applicant = `${job.applicant_type || ""} ${job.requirements || ""} ${job.responsibilities || ""} ${job.noticeTitle}`;
   const deadlineYear = job.deadline ? new Date(job.deadline).getFullYear() : null;
   const reasons: string[] = [];
 
@@ -205,7 +218,7 @@ export default function Home() {
   const filtered = useMemo(() => {
     const keyword = query.trim().toLowerCase();
     const result = allJobs.filter((job) => {
-      const text = [job.title, job.organization, job.major, job.education, job.requirements, job.applicant_type, job.household, job.noticeTitle].join(" ").toLowerCase();
+      const text = [job.title, job.organization, job.major, job.education, job.requirements, job.responsibilities, job.location, job.applicant_type, job.household, job.noticeTitle].join(" ").toLowerCase();
       const expired = (daysUntil(job.deadline) ?? 1) < 0;
       const profileMatch = matchForProfile(job);
       return (!keyword || text.includes(keyword))
@@ -291,17 +304,21 @@ export default function Home() {
               {job.applicant_type && <span>{job.applicant_type}</span>}
               {job.household && <span>{job.household}</span>}
               {job.age && <span>{job.age}</span>}
+              {job.location && <span>{job.location}</span>}
+              {job.recruitment_type && <span>{job.recruitment_type}</span>}
+              {job.category_detail && <span>{job.category_detail}</span>}
             </div>
 
             {job.major && <p><b>专业：</b>{job.major}</p>}
             {job.requirements && <p className="requirements"><b>要求：</b>{job.requirements}</p>}
+            {job.responsibilities && <p className="requirements"><b>职责：</b>{job.responsibilities}</p>}
 
             <footer>
               <div>
                 <span className={days !== null && days <= 7 && days >= 0 ? "deadline urgent" : days !== null && days < 0 ? "deadline expired" : "deadline"}>{statusLabel(job.deadline)}</span>
                 <span>发布 {job.publishedAt || "未注明"}</span>
               </div>
-              <a href={job.sourceUrl} target="_blank" rel="noreferrer">原公告 ↗</a>
+              <a href={job.sourceUrl} target="_blank" rel="noreferrer">{job.sourceGroup === "互联网大厂" ? "岗位详情" : "原公告"} ↗</a>
             </footer>
           </article>;
         })}
