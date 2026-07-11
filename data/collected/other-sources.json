@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-11T15:25:30+08:00",
-  "source_count": 17,
-  "collected_source_count": 11,
+  "generated_at": "2026-07-11T15:39:35+08:00",
+  "source_count": 16,
+  "collected_source_count": 15,
   "needs_adapter_count": 0,
-  "unavailable_count": 6,
-  "item_count": 104,
+  "unavailable_count": 1,
+  "item_count": 153,
   "sources": [
     {
       "source_id": "beijing-gov-institutions",
@@ -15,7 +15,7 @@
       "status": "collected",
       "final_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/",
       "item_count": 23,
-      "duration_ms": 110,
+      "duration_ms": 219,
       "items": [
         {
           "id": "e51be5b9a2b558ae",
@@ -255,11 +255,22 @@
       "group": "公务员",
       "home": "https://rsj.beijing.gov.cn/bm/ztzl/gwy/",
       "adapter": "dedicated",
-      "status": "adapter-blocked",
-      "http_status": 403,
-      "item_count": 0,
-      "error": "403 Client Error: Forbidden for url: https://rsj.beijing.gov.cn/bm/ztzl/gwy/",
-      "items": []
+      "status": "collected",
+      "final_url": "https://rsj.beijing.gov.cn/bm/ztzl/gwy/",
+      "item_count": 1,
+      "duration_ms": 109,
+      "items": [
+        {
+          "id": "88e837beac97d009",
+          "title": "查看下载职位",
+          "organization": "北京市公务员招录专题",
+          "category": "公务员",
+          "published_at": "",
+          "source_name": "北京市公务员招录专题",
+          "source_url": "https://ks3-cn-beijing.ksyun.com/zgw/article/3000209573/content/20260507091714_250.xls",
+          "source_home": "https://rsj.beijing.gov.cn/bm/ztzl/gwy/"
+        }
+      ]
     },
     {
       "source_id": "bj-exam-notices",
@@ -267,11 +278,92 @@
       "group": "公务员",
       "home": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/",
       "adapter": "dedicated",
-      "status": "adapter-blocked",
-      "http_status": 403,
-      "item_count": 0,
-      "error": "403 Client Error: Forbidden for url: https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/",
-      "items": []
+      "status": "collected",
+      "final_url": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/",
+      "item_count": 8,
+      "duration_ms": 94,
+      "items": [
+        {
+          "id": "daf303582cb41456",
+          "title": "北京市2026年度定向选调应届优秀大学毕业生补录公告",
+          "organization": "北京人事考试重要通知",
+          "category": "公务员",
+          "published_at": "2026-02-26",
+          "source_name": "北京人事考试重要通知",
+          "source_url": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/202602/t20260226_4541765.html",
+          "source_home": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/"
+        },
+        {
+          "id": "c8ee2025fc8e5871",
+          "title": "北京市各级机关2026年度考试录用公务员调剂职位表",
+          "organization": "北京人事考试重要通知",
+          "category": "公务员",
+          "published_at": "2026-01-10",
+          "source_name": "北京人事考试重要通知",
+          "source_url": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/202601/P020260110373221642371.xlsx",
+          "source_home": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/"
+        },
+        {
+          "id": "e2e76df9457cf636",
+          "title": "北京市各级机关2026年度考试录用公务员笔试成绩通知书",
+          "organization": "北京人事考试重要通知",
+          "category": "公务员",
+          "published_at": "2026-01-05",
+          "source_name": "北京人事考试重要通知",
+          "source_url": "http://fuwu.rsj.beijing.gov.cn/kwscore/login/gwy.htm?examId=6300",
+          "source_home": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/"
+        },
+        {
+          "id": "8047de06bb2082bc",
+          "title": "北京市2026年度定向选调和“优培计划”招聘应届优秀大学毕业生公告",
+          "organization": "北京人事考试重要通知",
+          "category": "公务员",
+          "published_at": "2025-09-12",
+          "source_name": "北京人事考试重要通知",
+          "source_url": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/202509/t20250912_4200440.html",
+          "source_home": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/"
+        },
+        {
+          "id": "e3f9d948afb5a1d8",
+          "title": "关于北京市公安局2025年度招聘文职辅警笔试延期举行的通知",
+          "organization": "北京人事考试重要通知",
+          "category": "公务员",
+          "published_at": "2025-04-15",
+          "source_name": "北京人事考试重要通知",
+          "source_url": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/202504/t20250415_4065679.html",
+          "source_home": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/"
+        },
+        {
+          "id": "cea5c9e8a8634516",
+          "title": "北京市2025年度定向选调应届优秀大学毕业生补录公告",
+          "organization": "北京人事考试重要通知",
+          "category": "公务员",
+          "published_at": "2025-02-27",
+          "source_name": "北京人事考试重要通知",
+          "source_url": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/202502/t20250227_4020461.html",
+          "source_home": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/"
+        },
+        {
+          "id": "b65efd47c43d40e3",
+          "title": "北京市各级机关2025年度考试录用公务员调剂职位表",
+          "organization": "北京人事考试重要通知",
+          "category": "公务员",
+          "published_at": "2025-01-15",
+          "source_name": "北京人事考试重要通知",
+          "source_url": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/202501/P020250115418375118466.xls",
+          "source_home": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/"
+        },
+        {
+          "id": "a17ae55d8fbc26da",
+          "title": "北京市2025年度定向选调和“优培计划”招聘应届优秀大学毕业生公告",
+          "organization": "北京人事考试重要通知",
+          "category": "公务员",
+          "published_at": "2024-09-19",
+          "source_name": "北京人事考试重要通知",
+          "source_url": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/202409/t20240919_3894681.html",
+          "source_home": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/"
+        }
+      ]
     },
     {
       "source_id": "national-civil-service-yearly",
@@ -282,7 +374,7 @@
       "status": "seasonal-inactive",
       "final_url": "http://bm.scs.gov.cn/kl2026",
       "item_count": 0,
-      "duration_ms": 63,
+      "duration_ms": 78,
       "items": []
     },
     {
@@ -294,7 +386,7 @@
       "status": "collected",
       "final_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html",
       "item_count": 26,
-      "duration_ms": 32,
+      "duration_ms": 156,
       "items": [
         {
           "id": "063457f0c0494f96",
@@ -564,11 +656,142 @@
       "group": "央企国企",
       "home": "https://gzw.beijing.gov.cn/yggq/gqzp/",
       "adapter": "dedicated",
-      "status": "adapter-blocked",
-      "http_status": 403,
-      "item_count": 0,
-      "error": "403 Client Error: Forbidden for url: https://gzw.beijing.gov.cn/yggq/gqzp/",
-      "items": []
+      "status": "collected",
+      "final_url": "https://gzw.beijing.gov.cn/yggq/gqzp/",
+      "item_count": 13,
+      "duration_ms": 94,
+      "items": [
+        {
+          "id": "bd4b31adbbb17578",
+          "title": "时尚控股丨北京光华时代纺织服装有限公司面向社会招聘总经理（职业经理人）",
+          "organization": "北京市国资委国企招聘",
+          "category": "央企国企",
+          "published_at": "2026-06-29",
+          "source_name": "北京市国资委国企招聘",
+          "source_url": "https://mp.weixin.qq.com/s/JNIFm5RB8KkiGutnS-XgeA",
+          "source_home": "https://gzw.beijing.gov.cn/yggq/gqzp/"
+        },
+        {
+          "id": "1b393536b4dc1383",
+          "title": "中关村发展集团丨公开招聘部分中层管理人员及专业人才、子公司副总经理岗位",
+          "organization": "北京市国资委国企招聘",
+          "category": "央企国企",
+          "published_at": "2026-05-13",
+          "source_name": "北京市国资委国企招聘",
+          "source_url": "https://mp.weixin.qq.com/s/HyQjq9SYDveud2L8IP2Rrg",
+          "source_home": "https://gzw.beijing.gov.cn/yggq/gqzp/"
+        },
+        {
+          "id": "db8dad85b9ad1caa",
+          "title": "首文科集团2026年校园招聘开启",
+          "organization": "北京市国资委国企招聘",
+          "category": "央企国企",
+          "published_at": "2026-04-27",
+          "source_name": "北京市国资委国企招聘",
+          "source_url": "https://mp.weixin.qq.com/s/bjsad9lx64jnzqYGf3r_Rg",
+          "source_home": "https://gzw.beijing.gov.cn/yggq/gqzp/"
+        },
+        {
+          "id": "5b79ea2e0d5a4dd4",
+          "title": "同仁堂集团丨公开招聘所属二级企业医养公司常务副总经理",
+          "organization": "北京市国资委国企招聘",
+          "category": "央企国企",
+          "published_at": "2026-04-09",
+          "source_name": "北京市国资委国企招聘",
+          "source_url": "https://mp.weixin.qq.com/s/OpZCk1xQILuLf8jJp3S4Sg",
+          "source_home": "https://gzw.beijing.gov.cn/yggq/gqzp/"
+        },
+        {
+          "id": "43402d1b20371ae7",
+          "title": "速冲3.25！春招最大综合场北京市管企业2026届毕业生春季校园招聘综合场双选会 诚邀您来!",
+          "organization": "北京市国资委国企招聘",
+          "category": "央企国企",
+          "published_at": "2026-03-23",
+          "source_name": "北京市国资委国企招聘",
+          "source_url": "https://mp.weixin.qq.com/s/eWIXQCKvA_6HvqgIVixtqg",
+          "source_home": "https://gzw.beijing.gov.cn/yggq/gqzp/"
+        },
+        {
+          "id": "d43a8fd3a1efd23e",
+          "title": "公交集团2026年校园招聘开启！",
+          "organization": "北京市国资委国企招聘",
+          "category": "央企国企",
+          "published_at": "2026-03-18",
+          "source_name": "北京市国资委国企招聘",
+          "source_url": "https://mp.weixin.qq.com/s/aAV6eNYoBo4ng02w4HuJZw",
+          "source_home": "https://gzw.beijing.gov.cn/yggq/gqzp/"
+        },
+        {
+          "id": "7c932b9d950bb0e8",
+          "title": "地铁公司2026届春季校园招聘启动！",
+          "organization": "北京市国资委国企招聘",
+          "category": "央企国企",
+          "published_at": "2026-03-12",
+          "source_name": "北京市国资委国企招聘",
+          "source_url": "https://mp.weixin.qq.com/s/UT23nMVC7fhBTGd2NVbBOw",
+          "source_home": "https://gzw.beijing.gov.cn/yggq/gqzp/"
+        },
+        {
+          "id": "0c190a10467e8577",
+          "title": "中建一局2026春季校园招聘全面开启",
+          "organization": "北京市国资委国企招聘",
+          "category": "央企国企",
+          "published_at": "2026-03-09",
+          "source_name": "北京市国资委国企招聘",
+          "source_url": "https://mp.weixin.qq.com/s/dQOtuV2ZGc1mRgyo_Ts-rA",
+          "source_home": "https://gzw.beijing.gov.cn/yggq/gqzp/"
+        },
+        {
+          "id": "bc8587ca1f01b118",
+          "title": "化工集团2026年度招聘公告",
+          "organization": "北京市国资委国企招聘",
+          "category": "央企国企",
+          "published_at": "2026-03-06",
+          "source_name": "北京市国资委国企招聘",
+          "source_url": "https://mp.weixin.qq.com/s/0XOlNwlz0EgdZ42HfMHJ1g",
+          "source_home": "https://gzw.beijing.gov.cn/yggq/gqzp/"
+        },
+        {
+          "id": "7945bd1557c5a10c",
+          "title": "北京农商银行丨2026年春季校园招聘正式启动！",
+          "organization": "北京市国资委国企招聘",
+          "category": "央企国企",
+          "published_at": "2026-03-04",
+          "source_name": "北京市国资委国企招聘",
+          "source_url": "https://mp.weixin.qq.com/s/WGQC4Us_x0LGVJejMXNNhw",
+          "source_home": "https://gzw.beijing.gov.cn/yggq/gqzp/"
+        },
+        {
+          "id": "c18381f31794d02a",
+          "title": "京能集团丨面向社会公开招聘总部部门副职及所属企业副总经理5个岗位",
+          "organization": "北京市国资委国企招聘",
+          "category": "央企国企",
+          "published_at": "2026-02-02",
+          "source_name": "北京市国资委国企招聘",
+          "source_url": "https://mp.weixin.qq.com/s/VLJuWYKzMVeQ-Z0YyJWpig",
+          "source_home": "https://gzw.beijing.gov.cn/yggq/gqzp/"
+        },
+        {
+          "id": "62c33840a3032108",
+          "title": "怀柔以“城”相待 国企“尚贤”揽才！怀柔区公开招聘21名怀柔区国有企业管培生",
+          "organization": "北京市国资委国企招聘",
+          "category": "央企国企",
+          "published_at": "2026-01-30",
+          "source_name": "北京市国资委国企招聘",
+          "source_url": "https://mp.weixin.qq.com/s/RoWiFDg0AGBrbTms2rGMwg",
+          "source_home": "https://gzw.beijing.gov.cn/yggq/gqzp/"
+        },
+        {
+          "id": "821bed443d712a00",
+          "title": "首文科集团面向社会招聘优秀人才",
+          "organization": "北京市国资委国企招聘",
+          "category": "央企国企",
+          "published_at": "2026-01-23",
+          "source_name": "北京市国资委国企招聘",
+          "source_url": "https://mp.weixin.qq.com/s/b8ervvTyeWdGTVTAEGzEaA",
+          "source_home": "https://gzw.beijing.gov.cn/yggq/gqzp/"
+        }
+      ]
     },
     {
       "source_id": "iguopin",
@@ -579,7 +802,7 @@
       "status": "adapter-blocked",
       "final_url": "https://www.iguopin.com/api/jobs/v3/list",
       "item_count": 0,
-      "duration_ms": 2344,
+      "duration_ms": 1234,
       "items": []
     },
     {
@@ -591,7 +814,7 @@
       "status": "collected",
       "final_url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/",
       "item_count": 16,
-      "duration_ms": 94,
+      "duration_ms": 63,
       "items": [
         {
           "id": "0766750ede5ee969",
@@ -759,13 +982,284 @@
       "source_id": "sasac-civil-service",
       "source_name": "国务院国资委人事招聘",
       "group": "中央机关重点单位",
-      "home": "https://www.sasac.gov.cn/n2588030/n2588964/",
+      "home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html",
       "adapter": "static",
-      "status": "unavailable",
-      "http_status": null,
-      "item_count": 0,
-      "error": "HTTPSConnectionPool(host='www.sasac.gov.cn', port=443): Max retries exceeded with url: /n2588030/n2588964/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))",
-      "items": []
+      "status": "collected",
+      "final_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html",
+      "item_count": 27,
+      "duration_ms": 672,
+      "items": [
+        {
+          "id": "189affe11554cae8",
+          "title": "国务院国资委委属事业单位2026年度公开招聘公告",
+          "organization": "国务院国资委人事招聘",
+          "category": "中央机关重点单位",
+          "published_at": "2026-05-14",
+          "source_name": "国务院国资委人事招聘",
+          "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35428690/content.html",
+          "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+        },
+        {
+          "id": "5ad82741dbfca09c",
+          "title": "中国电信天翼云2027届超级优才招聘正式启动！",
+          "organization": "国务院国资委人事招聘",
+          "category": "中央机关重点单位",
+          "published_at": "2026-07-09",
+          "source_name": "国务院国资委人事招聘",
+          "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35574598/content.html",
+          "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+        },
+        {
+          "id": "697ae1e1dc30cc95",
+          "title": "中国一重融资租赁有限公司面向社会公开招聘法务合规人员公告",
+          "organization": "国务院国资委人事招聘",
+          "category": "中央机关重点单位",
+          "published_at": "2026-07-08",
+          "source_name": "国务院国资委人事招聘",
+          "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35567440/content.html",
+          "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+        },
+        {
+          "id": "6bb731dac0726148",
+          "title": "中国电气装备科学技术研究院有限公司2026年社会招聘",
+          "organization": "国务院国资委人事招聘",
+          "category": "中央机关重点单位",
+          "published_at": "2026-07-08",
+          "source_name": "国务院国资委人事招聘",
+          "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35567377/content.html",
+          "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+        },
+        {
+          "id": "4dffe88e34ce0687",
+          "title": "航天通信本部部门副职岗位公开招聘启事",
+          "organization": "国务院国资委人事招聘",
+          "category": "中央机关重点单位",
+          "published_at": "2026-07-03",
+          "source_name": "国务院国资委人事招聘",
+          "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35533449/content.html",
+          "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+        },
+        {
+          "id": "3be0149dd609ce14",
+          "title": "航空工业成都飞机设计研究所启动2026年社会招聘",
+          "organization": "国务院国资委人事招聘",
+          "category": "中央机关重点单位",
+          "published_at": "2026-07-02",
+          "source_name": "国务院国资委人事招聘",
+          "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35528978/content.html",
+          "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+        },
+        {
+          "id": "347f95f4c924b9b3",
+          "title": "中国兵器工业第二〇八研究所中层管理人员招聘公告",
+          "organization": "国务院国资委人事招聘",
+          "category": "中央机关重点单位",
+          "published_at": "2026-07-02",
+          "source_name": "国务院国资委人事招聘",
+          "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35528950/content.html",
+          "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+        },
+        {
+          "id": "faf886011c090740",
+          "title": "航天科工2027届校园招聘全面启动",
+          "organization": "国务院国资委人事招聘",
+          "category": "中央机关重点单位",
+          "published_at": "2026-06-29",
+          "source_name": "国务院国资委人事招聘",
+          "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35503679/content.html",
+          "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+        },
+        {
+          "id": "991421024d8c50dd",
+          "title": "中国南方电网有限责任公司共享运营公司2026年第二批社会招聘公告",
+          "organization": "国务院国资委人事招聘",
+          "category": "中央机关重点单位",
+          "published_at": "2026-06-29",
+          "source_name": "国务院国资委人事招聘",
+          "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35503637/content.html",
+          "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+        },
+        {
+          "id": "caa4a8b6488892da",
+          "title": "航空工业通飞2026届及2027届校园招聘",
+          "organization": "国务院国资委人事招聘",
+          "category": "中央机关重点单位",
+          "published_at": "2026-06-22",
+          "source_name": "国务院国资委人事招聘",
+          "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35461352/content.html",
+          "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+        },
+        {
+          "id": "fd320a4b21f4c846",
+          "title": "中国东方航空技术有限公司2026年度夏季招聘",
+          "organization": "国务院国资委人事招聘",
+          "category": "中央机关重点单位",
+          "published_at": "2026-06-17",
+          "source_name": "国务院国资委人事招聘",
+          "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35453721/content.html",
+          "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+        },
+        {
+          "id": "ec4f8e72804645c1",
+          "title": "航天云网公司所属贵州公司、广东公司财务总监公开招聘启事",
+          "organization": "国务院国资委人事招聘",
+          "category": "中央机关重点单位",
+          "published_at": "2026-06-17",
+          "source_name": "国务院国资委人事招聘",
+          "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35453701/content.html",
+          "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+        },
+        {
+          "id": "3817b88a910c5549",
+          "title": "中国航空发动机集团总部招聘公告",
+          "organization": "国务院国资委人事招聘",
+          "category": "中央机关重点单位",
+          "published_at": "2026-06-16",
+          "source_name": "国务院国资委人事招聘",
+          "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35453046/content.html",
+          "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+        },
+        {
+          "id": "a727af63a27f3c3f",
+          "title": "中国机械科学研究总院集团有限公司总部社会招聘公告",
+          "organization": "国务院国资委人事招聘",
+          "category": "中央机关重点单位",
+          "published_at": "2026-06-15",
+          "source_name": "国务院国资委人事招聘",
+          "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35451970/content.html",
+          "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+        },
+        {
+          "id": "c89f27a3c00acff5",
+          "title": "中国建材集团有限公司成员企业招聘公告",
+          "organization": "国务院国资委人事招聘",
+          "category": "中央机关重点单位",
+          "published_at": "2026-06-08",
+          "source_name": "国务院国资委人事招聘",
+          "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35447531/content.html",
+          "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+        },
+        {
+          "id": "58185126a76a999b",
+          "title": "大唐环境产业集团股份有限公司新能源设计高层次专业人才公开招聘",
+          "organization": "国务院国资委人事招聘",
+          "category": "中央机关重点单位",
+          "published_at": "2026-06-05",
+          "source_name": "国务院国资委人事招聘",
+          "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35447003/content.html",
+          "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+        },
+        {
+          "id": "6c6adea71202c245",
+          "title": "中国铁建公开招聘公告",
+          "organization": "国务院国资委人事招聘",
+          "category": "中央机关重点单位",
+          "published_at": "2026-06-04",
+          "source_name": "国务院国资委人事招聘",
+          "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35446092/content.html",
+          "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+        },
+        {
+          "id": "a88a0b7664c93654",
+          "title": "中广核聚核体验营暨2027届提前批专场校园招聘正式启动！",
+          "organization": "国务院国资委人事招聘",
+          "category": "中央机关重点单位",
+          "published_at": "2026-06-02",
+          "source_name": "国务院国资委人事招聘",
+          "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35442247/content.html",
+          "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+        },
+        {
+          "id": "0c8bd7b0d31e5fa4",
+          "title": "航天科工资产管理有限公司公开招聘启事",
+          "organization": "国务院国资委人事招聘",
+          "category": "中央机关重点单位",
+          "published_at": "2026-06-01",
+          "source_name": "国务院国资委人事招聘",
+          "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35441351/content.html",
+          "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+        },
+        {
+          "id": "0bd6c55e2a9d96b8",
+          "title": "中国融通集团部分管理人员岗位公开招聘",
+          "organization": "国务院国资委人事招聘",
+          "category": "中央机关重点单位",
+          "published_at": "2026-05-29",
+          "source_name": "国务院国资委人事招聘",
+          "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35440494/content.html",
+          "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+        },
+        {
+          "id": "a0c21b71db626613",
+          "title": "国机集团2026年社会招聘公告",
+          "organization": "国务院国资委人事招聘",
+          "category": "中央机关重点单位",
+          "published_at": "2026-05-27",
+          "source_name": "国务院国资委人事招聘",
+          "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35438350/content.html",
+          "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+        },
+        {
+          "id": "1363e07e9eb8445d",
+          "title": "航天科工集团科技保障中心有限公司2026年招聘启事",
+          "organization": "国务院国资委人事招聘",
+          "category": "中央机关重点单位",
+          "published_at": "2026-05-27",
+          "source_name": "国务院国资委人事招聘",
+          "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35434499/content.html",
+          "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+        },
+        {
+          "id": "a1c1c0c3e6c87251",
+          "title": "航天科工集团数字技术有限公司部分岗位公开招聘启事",
+          "organization": "国务院国资委人事招聘",
+          "category": "中央机关重点单位",
+          "published_at": "2026-05-26",
+          "source_name": "国务院国资委人事招聘",
+          "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35434737/content.html",
+          "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+        },
+        {
+          "id": "b8eb0be5885f2884",
+          "title": "中国建科2026届春季校园招聘正式启动",
+          "organization": "国务院国资委人事招聘",
+          "category": "中央机关重点单位",
+          "published_at": "2026-05-26",
+          "source_name": "国务院国资委人事招聘",
+          "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35434518/content.html",
+          "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+        },
+        {
+          "id": "e826ca27f3acf222",
+          "title": "中国建研院总部公开招聘公告",
+          "organization": "国务院国资委人事招聘",
+          "category": "中央机关重点单位",
+          "published_at": "2026-05-25",
+          "source_name": "国务院国资委人事招聘",
+          "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35433683/content.html",
+          "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+        },
+        {
+          "id": "a6781cd200352319",
+          "title": "中国远洋海运集团2026年度战略性新兴产业紧缺急需人才专项招聘",
+          "organization": "国务院国资委人事招聘",
+          "category": "中央机关重点单位",
+          "published_at": "2026-05-22",
+          "source_name": "国务院国资委人事招聘",
+          "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35432576/content.html",
+          "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+        },
+        {
+          "id": "4f44eb33e6e6cb90",
+          "title": "中国电子所属中国长城2026年全球博士人才招聘启动",
+          "organization": "国务院国资委人事招聘",
+          "category": "中央机关重点单位",
+          "published_at": "2026-05-22",
+          "source_name": "国务院国资委人事招聘",
+          "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35432080/content.html",
+          "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+        }
+      ]
     },
     {
       "source_id": "ggj-notices",
@@ -776,7 +1270,7 @@
       "status": "collected-empty",
       "final_url": "https://www.ggj.gov.cn/tzgg/",
       "item_count": 0,
-      "duration_ms": 625,
+      "duration_ms": 812,
       "items": []
     },
     {
@@ -788,7 +1282,7 @@
       "status": "collected",
       "final_url": "http://www.moe.gov.cn/s78/A04/",
       "item_count": 5,
-      "duration_ms": 78,
+      "duration_ms": 125,
       "items": [
         {
           "id": "3aae59ba4c35adc1",
@@ -855,18 +1349,6 @@
       "items": []
     },
     {
-      "source_id": "spb-personnel",
-      "source_name": "国家邮政局人事信息",
-      "group": "中央机关重点单位",
-      "home": "https://www.spb.gov.cn/gjyzj/c100015/common_list.shtml",
-      "adapter": "static",
-      "status": "unavailable",
-      "http_status": 404,
-      "item_count": 0,
-      "error": "404 Client Error: Not Found for url: https://www.spb.gov.cn/gjyzj/c100015/common_list.shtml",
-      "items": []
-    },
-    {
       "source_id": "bytedance-jobs",
       "source_name": "字节跳动招聘",
       "group": "互联网大厂",
@@ -875,7 +1357,7 @@
       "status": "collected",
       "final_url": "https://jobs.bytedance.com/campus/",
       "item_count": 1,
-      "duration_ms": 453,
+      "duration_ms": 407,
       "items": [
         {
           "id": "d685534536db8013",
@@ -898,7 +1380,7 @@
       "status": "collected",
       "final_url": "https://talent.baidu.com/jobs/list?recruitType=SOCIAL",
       "item_count": 31,
-      "duration_ms": 578,
+      "duration_ms": 125,
       "items": [
         {
           "id": "319f410a6575d4b3",
@@ -1011,6 +1493,16 @@
           "source_home": "https://talent.baidu.com/jobs/"
         },
         {
+          "id": "ab25a0cd9a0a7c8e",
+          "title": "北京-内容生态运营(J101050)",
+          "organization": "百度",
+          "category": "互联网大厂",
+          "published_at": "2026-07-08",
+          "source_name": "百度招聘",
+          "source_url": "https://talent.baidu.com/jobs/detail/9e3bba68-f2ef-4488-ba86-94511f9e1561",
+          "source_home": "https://talent.baidu.com/jobs/"
+        },
+        {
           "id": "a30eec491ebb1127",
           "title": "问诊医生运营实习生（J102244）",
           "organization": "百度",
@@ -1108,16 +1600,6 @@
           "published_at": "2026-07-06",
           "source_name": "百度招聘",
           "source_url": "https://talent.baidu.com/jobs/detail/7d212485-2c57-4196-8a15-fe43e6b3a31f",
-          "source_home": "https://talent.baidu.com/jobs/"
-        },
-        {
-          "id": "b3cdd393141c1de8",
-          "title": "北京-大模型算法工程师(J100728)",
-          "organization": "百度",
-          "category": "互联网大厂",
-          "published_at": "2026-07-08",
-          "source_name": "百度招聘",
-          "source_url": "https://talent.baidu.com/jobs/detail/8228ed01-5592-4f26-a406-c6581dfd8418",
           "source_home": "https://talent.baidu.com/jobs/"
         },
         {
@@ -1219,9 +1701,9 @@
       "home": "https://zhaopin.jd.com/",
       "adapter": "static",
       "status": "collected",
-      "final_url": "https://zhaopin.jd.com/home;jsessionid=F44BF076113BEB6BD9951D2299B8F7ED.s1",
+      "final_url": "https://zhaopin.jd.com/home;jsessionid=84FD21A26543568E2D67296BA52D114A.s1",
       "item_count": 2,
-      "duration_ms": 188,
+      "duration_ms": 218,
       "items": [
         {
           "id": "497b05be395a27a2",
@@ -1254,7 +1736,7 @@
       "status": "collected-empty",
       "final_url": "https://zhaopin.meituan.com/api/official/job/getJobList",
       "item_count": 0,
-      "duration_ms": 94,
+      "duration_ms": 63,
       "items": []
     }
   ],
@@ -1330,6 +1812,16 @@
       "source_home": "https://talent.baidu.com/jobs/"
     },
     {
+      "id": "5ad82741dbfca09c",
+      "title": "中国电信天翼云2027届超级优才招聘正式启动！",
+      "organization": "国务院国资委人事招聘",
+      "category": "中央机关重点单位",
+      "published_at": "2026-07-09",
+      "source_name": "国务院国资委人事招聘",
+      "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35574598/content.html",
+      "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+    },
+    {
       "id": "f3570ab4db3f4a8f",
       "title": "专业交付.医生.-..高级健康顾问（J100244）",
       "organization": "百度",
@@ -1400,13 +1892,13 @@
       "source_home": "https://talent.baidu.com/jobs/"
     },
     {
-      "id": "b3cdd393141c1de8",
-      "title": "北京-大模型算法工程师(J100728)",
+      "id": "ab25a0cd9a0a7c8e",
+      "title": "北京-内容生态运营(J101050)",
       "organization": "百度",
       "category": "互联网大厂",
       "published_at": "2026-07-08",
       "source_name": "百度招聘",
-      "source_url": "https://talent.baidu.com/jobs/detail/8228ed01-5592-4f26-a406-c6581dfd8418",
+      "source_url": "https://talent.baidu.com/jobs/detail/9e3bba68-f2ef-4488-ba86-94511f9e1561",
       "source_home": "https://talent.baidu.com/jobs/"
     },
     {
@@ -1418,6 +1910,26 @@
       "source_name": "百度招聘",
       "source_url": "https://talent.baidu.com/jobs/detail/f9516cd1-feb8-461b-a310-a59f4329e17c",
       "source_home": "https://talent.baidu.com/jobs/"
+    },
+    {
+      "id": "6bb731dac0726148",
+      "title": "中国电气装备科学技术研究院有限公司2026年社会招聘",
+      "organization": "国务院国资委人事招聘",
+      "category": "中央机关重点单位",
+      "published_at": "2026-07-08",
+      "source_name": "国务院国资委人事招聘",
+      "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35567377/content.html",
+      "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+    },
+    {
+      "id": "697ae1e1dc30cc95",
+      "title": "中国一重融资租赁有限公司面向社会公开招聘法务合规人员公告",
+      "organization": "国务院国资委人事招聘",
+      "category": "中央机关重点单位",
+      "published_at": "2026-07-08",
+      "source_name": "国务院国资委人事招聘",
+      "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35567440/content.html",
+      "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
     },
     {
       "id": "6885b4ce4cf07ccc",
@@ -1480,6 +1992,36 @@
       "source_home": "https://talent.baidu.com/jobs/"
     },
     {
+      "id": "4dffe88e34ce0687",
+      "title": "航天通信本部部门副职岗位公开招聘启事",
+      "organization": "国务院国资委人事招聘",
+      "category": "中央机关重点单位",
+      "published_at": "2026-07-03",
+      "source_name": "国务院国资委人事招聘",
+      "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35533449/content.html",
+      "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+    },
+    {
+      "id": "3be0149dd609ce14",
+      "title": "航空工业成都飞机设计研究所启动2026年社会招聘",
+      "organization": "国务院国资委人事招聘",
+      "category": "中央机关重点单位",
+      "published_at": "2026-07-02",
+      "source_name": "国务院国资委人事招聘",
+      "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35528978/content.html",
+      "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+    },
+    {
+      "id": "347f95f4c924b9b3",
+      "title": "中国兵器工业第二〇八研究所中层管理人员招聘公告",
+      "organization": "国务院国资委人事招聘",
+      "category": "中央机关重点单位",
+      "published_at": "2026-07-02",
+      "source_name": "国务院国资委人事招聘",
+      "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35528950/content.html",
+      "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+    },
+    {
       "id": "1ef959fdfdac97b4",
       "title": "北京-2027管培生(J101320)",
       "organization": "百度",
@@ -1488,6 +2030,36 @@
       "source_name": "百度招聘",
       "source_url": "https://talent.baidu.com/jobs/detail/8a94c230-0d73-4064-bd9d-8072fc65ddeb",
       "source_home": "https://talent.baidu.com/jobs/"
+    },
+    {
+      "id": "faf886011c090740",
+      "title": "航天科工2027届校园招聘全面启动",
+      "organization": "国务院国资委人事招聘",
+      "category": "中央机关重点单位",
+      "published_at": "2026-06-29",
+      "source_name": "国务院国资委人事招聘",
+      "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35503679/content.html",
+      "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+    },
+    {
+      "id": "bd4b31adbbb17578",
+      "title": "时尚控股丨北京光华时代纺织服装有限公司面向社会招聘总经理（职业经理人）",
+      "organization": "北京市国资委国企招聘",
+      "category": "央企国企",
+      "published_at": "2026-06-29",
+      "source_name": "北京市国资委国企招聘",
+      "source_url": "https://mp.weixin.qq.com/s/JNIFm5RB8KkiGutnS-XgeA",
+      "source_home": "https://gzw.beijing.gov.cn/yggq/gqzp/"
+    },
+    {
+      "id": "991421024d8c50dd",
+      "title": "中国南方电网有限责任公司共享运营公司2026年第二批社会招聘公告",
+      "organization": "国务院国资委人事招聘",
+      "category": "中央机关重点单位",
+      "published_at": "2026-06-29",
+      "source_name": "国务院国资委人事招聘",
+      "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35503637/content.html",
+      "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
     },
     {
       "id": "c0d5afa12bb2b77a",
@@ -1510,6 +2082,16 @@
       "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
     },
     {
+      "id": "caa4a8b6488892da",
+      "title": "航空工业通飞2026届及2027届校园招聘",
+      "organization": "国务院国资委人事招聘",
+      "category": "中央机关重点单位",
+      "published_at": "2026-06-22",
+      "source_name": "国务院国资委人事招聘",
+      "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35461352/content.html",
+      "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+    },
+    {
       "id": "2c7174c239733a9e",
       "title": "通州区教委所属事业单位2026年第三次公开招聘工作人员公告",
       "organization": "首都之窗事业单位招聘",
@@ -1530,6 +2112,16 @@
       "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
     },
     {
+      "id": "ec4f8e72804645c1",
+      "title": "航天云网公司所属贵州公司、广东公司财务总监公开招聘启事",
+      "organization": "国务院国资委人事招聘",
+      "category": "中央机关重点单位",
+      "published_at": "2026-06-17",
+      "source_name": "国务院国资委人事招聘",
+      "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35453701/content.html",
+      "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+    },
+    {
       "id": "18b767d4386c7b9a",
       "title": "北京市丰台区教育委员会所属事业单位面向应届毕业生第三批公开招聘工作人员公告",
       "organization": "首都之窗事业单位招聘",
@@ -1538,6 +2130,26 @@
       "source_name": "首都之窗事业单位招聘",
       "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260618_4705626.html",
       "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+    },
+    {
+      "id": "fd320a4b21f4c846",
+      "title": "中国东方航空技术有限公司2026年度夏季招聘",
+      "organization": "国务院国资委人事招聘",
+      "category": "中央机关重点单位",
+      "published_at": "2026-06-17",
+      "source_name": "国务院国资委人事招聘",
+      "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35453721/content.html",
+      "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+    },
+    {
+      "id": "3817b88a910c5549",
+      "title": "中国航空发动机集团总部招聘公告",
+      "organization": "国务院国资委人事招聘",
+      "category": "中央机关重点单位",
+      "published_at": "2026-06-16",
+      "source_name": "国务院国资委人事招聘",
+      "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35453046/content.html",
+      "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
     },
     {
       "id": "6c6b40f2535e6bde",
@@ -1558,6 +2170,16 @@
       "source_name": "首都之窗事业单位招聘",
       "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260616_4702031.html",
       "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+    },
+    {
+      "id": "a727af63a27f3c3f",
+      "title": "中国机械科学研究总院集团有限公司总部社会招聘公告",
+      "organization": "国务院国资委人事招聘",
+      "category": "中央机关重点单位",
+      "published_at": "2026-06-15",
+      "source_name": "国务院国资委人事招聘",
+      "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35451970/content.html",
+      "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
     },
     {
       "id": "7e1f7cacdfd94288",
@@ -1680,6 +2302,26 @@
       "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
     },
     {
+      "id": "c89f27a3c00acff5",
+      "title": "中国建材集团有限公司成员企业招聘公告",
+      "organization": "国务院国资委人事招聘",
+      "category": "中央机关重点单位",
+      "published_at": "2026-06-08",
+      "source_name": "国务院国资委人事招聘",
+      "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35447531/content.html",
+      "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+    },
+    {
+      "id": "58185126a76a999b",
+      "title": "大唐环境产业集团股份有限公司新能源设计高层次专业人才公开招聘",
+      "organization": "国务院国资委人事招聘",
+      "category": "中央机关重点单位",
+      "published_at": "2026-06-05",
+      "source_name": "国务院国资委人事招聘",
+      "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35447003/content.html",
+      "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+    },
+    {
       "id": "45532c224026e8c1",
       "title": "首都医科大学脑重大疾病研究中心（北京脑重大疾病研究院）2026年度公开招聘公告（第一批）",
       "organization": "首都之窗事业单位招聘",
@@ -1688,6 +2330,16 @@
       "source_name": "首都之窗事业单位招聘",
       "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260605_4686910.html",
       "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+    },
+    {
+      "id": "6c6adea71202c245",
+      "title": "中国铁建公开招聘公告",
+      "organization": "国务院国资委人事招聘",
+      "category": "中央机关重点单位",
+      "published_at": "2026-06-04",
+      "source_name": "国务院国资委人事招聘",
+      "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35446092/content.html",
+      "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
     },
     {
       "id": "5480e9fdb707638b",
@@ -1710,6 +2362,126 @@
       "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
     },
     {
+      "id": "a88a0b7664c93654",
+      "title": "中广核聚核体验营暨2027届提前批专场校园招聘正式启动！",
+      "organization": "国务院国资委人事招聘",
+      "category": "中央机关重点单位",
+      "published_at": "2026-06-02",
+      "source_name": "国务院国资委人事招聘",
+      "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35442247/content.html",
+      "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+    },
+    {
+      "id": "0c8bd7b0d31e5fa4",
+      "title": "航天科工资产管理有限公司公开招聘启事",
+      "organization": "国务院国资委人事招聘",
+      "category": "中央机关重点单位",
+      "published_at": "2026-06-01",
+      "source_name": "国务院国资委人事招聘",
+      "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35441351/content.html",
+      "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+    },
+    {
+      "id": "0bd6c55e2a9d96b8",
+      "title": "中国融通集团部分管理人员岗位公开招聘",
+      "organization": "国务院国资委人事招聘",
+      "category": "中央机关重点单位",
+      "published_at": "2026-05-29",
+      "source_name": "国务院国资委人事招聘",
+      "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35440494/content.html",
+      "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+    },
+    {
+      "id": "1363e07e9eb8445d",
+      "title": "航天科工集团科技保障中心有限公司2026年招聘启事",
+      "organization": "国务院国资委人事招聘",
+      "category": "中央机关重点单位",
+      "published_at": "2026-05-27",
+      "source_name": "国务院国资委人事招聘",
+      "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35434499/content.html",
+      "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+    },
+    {
+      "id": "a0c21b71db626613",
+      "title": "国机集团2026年社会招聘公告",
+      "organization": "国务院国资委人事招聘",
+      "category": "中央机关重点单位",
+      "published_at": "2026-05-27",
+      "source_name": "国务院国资委人事招聘",
+      "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35438350/content.html",
+      "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+    },
+    {
+      "id": "a1c1c0c3e6c87251",
+      "title": "航天科工集团数字技术有限公司部分岗位公开招聘启事",
+      "organization": "国务院国资委人事招聘",
+      "category": "中央机关重点单位",
+      "published_at": "2026-05-26",
+      "source_name": "国务院国资委人事招聘",
+      "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35434737/content.html",
+      "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+    },
+    {
+      "id": "b8eb0be5885f2884",
+      "title": "中国建科2026届春季校园招聘正式启动",
+      "organization": "国务院国资委人事招聘",
+      "category": "中央机关重点单位",
+      "published_at": "2026-05-26",
+      "source_name": "国务院国资委人事招聘",
+      "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35434518/content.html",
+      "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+    },
+    {
+      "id": "e826ca27f3acf222",
+      "title": "中国建研院总部公开招聘公告",
+      "organization": "国务院国资委人事招聘",
+      "category": "中央机关重点单位",
+      "published_at": "2026-05-25",
+      "source_name": "国务院国资委人事招聘",
+      "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35433683/content.html",
+      "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+    },
+    {
+      "id": "a6781cd200352319",
+      "title": "中国远洋海运集团2026年度战略性新兴产业紧缺急需人才专项招聘",
+      "organization": "国务院国资委人事招聘",
+      "category": "中央机关重点单位",
+      "published_at": "2026-05-22",
+      "source_name": "国务院国资委人事招聘",
+      "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35432576/content.html",
+      "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+    },
+    {
+      "id": "4f44eb33e6e6cb90",
+      "title": "中国电子所属中国长城2026年全球博士人才招聘启动",
+      "organization": "国务院国资委人事招聘",
+      "category": "中央机关重点单位",
+      "published_at": "2026-05-22",
+      "source_name": "国务院国资委人事招聘",
+      "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35432080/content.html",
+      "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+    },
+    {
+      "id": "189affe11554cae8",
+      "title": "国务院国资委委属事业单位2026年度公开招聘公告",
+      "organization": "国务院国资委人事招聘",
+      "category": "中央机关重点单位",
+      "published_at": "2026-05-14",
+      "source_name": "国务院国资委人事招聘",
+      "source_url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/c35428690/content.html",
+      "source_home": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html"
+    },
+    {
+      "id": "1b393536b4dc1383",
+      "title": "中关村发展集团丨公开招聘部分中层管理人员及专业人才、子公司副总经理岗位",
+      "organization": "北京市国资委国企招聘",
+      "category": "央企国企",
+      "published_at": "2026-05-13",
+      "source_name": "北京市国资委国企招聘",
+      "source_url": "https://mp.weixin.qq.com/s/HyQjq9SYDveud2L8IP2Rrg",
+      "source_home": "https://gzw.beijing.gov.cn/yggq/gqzp/"
+    },
+    {
       "id": "afd5ac1b40a430fd",
       "title": "北京市各级机关2026年度补充录用公务员公告",
       "organization": "首都之窗公务员招考",
@@ -1718,6 +2490,16 @@
       "source_name": "首都之窗公务员招考",
       "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202605/t20260508_4641288.html",
       "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+    },
+    {
+      "id": "db8dad85b9ad1caa",
+      "title": "首文科集团2026年校园招聘开启",
+      "organization": "北京市国资委国企招聘",
+      "category": "央企国企",
+      "published_at": "2026-04-27",
+      "source_name": "北京市国资委国企招聘",
+      "source_url": "https://mp.weixin.qq.com/s/bjsad9lx64jnzqYGf3r_Rg",
+      "source_home": "https://gzw.beijing.gov.cn/yggq/gqzp/"
     },
     {
       "id": "4ab1e893fb29edc3",
@@ -1730,6 +2512,16 @@
       "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
     },
     {
+      "id": "5b79ea2e0d5a4dd4",
+      "title": "同仁堂集团丨公开招聘所属二级企业医养公司常务副总经理",
+      "organization": "北京市国资委国企招聘",
+      "category": "央企国企",
+      "published_at": "2026-04-09",
+      "source_name": "北京市国资委国企招聘",
+      "source_url": "https://mp.weixin.qq.com/s/OpZCk1xQILuLf8jJp3S4Sg",
+      "source_home": "https://gzw.beijing.gov.cn/yggq/gqzp/"
+    },
+    {
       "id": "6e7b8adb41ef1174",
       "title": "市委研究室关于2026年考试录用公务员拟录用人员公示公告",
       "organization": "首都之窗公务员招考",
@@ -1738,6 +2530,26 @@
       "source_name": "首都之窗公务员招考",
       "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202604/t20260403_4574494.html",
       "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+    },
+    {
+      "id": "43402d1b20371ae7",
+      "title": "速冲3.25！春招最大综合场北京市管企业2026届毕业生春季校园招聘综合场双选会 诚邀您来!",
+      "organization": "北京市国资委国企招聘",
+      "category": "央企国企",
+      "published_at": "2026-03-23",
+      "source_name": "北京市国资委国企招聘",
+      "source_url": "https://mp.weixin.qq.com/s/eWIXQCKvA_6HvqgIVixtqg",
+      "source_home": "https://gzw.beijing.gov.cn/yggq/gqzp/"
+    },
+    {
+      "id": "d43a8fd3a1efd23e",
+      "title": "公交集团2026年校园招聘开启！",
+      "organization": "北京市国资委国企招聘",
+      "category": "央企国企",
+      "published_at": "2026-03-18",
+      "source_name": "北京市国资委国企招聘",
+      "source_url": "https://mp.weixin.qq.com/s/aAV6eNYoBo4ng02w4HuJZw",
+      "source_home": "https://gzw.beijing.gov.cn/yggq/gqzp/"
     },
     {
       "id": "3aae59ba4c35adc1",
@@ -1750,6 +2562,46 @@
       "source_home": "https://www.moe.gov.cn/s78/A04/"
     },
     {
+      "id": "7c932b9d950bb0e8",
+      "title": "地铁公司2026届春季校园招聘启动！",
+      "organization": "北京市国资委国企招聘",
+      "category": "央企国企",
+      "published_at": "2026-03-12",
+      "source_name": "北京市国资委国企招聘",
+      "source_url": "https://mp.weixin.qq.com/s/UT23nMVC7fhBTGd2NVbBOw",
+      "source_home": "https://gzw.beijing.gov.cn/yggq/gqzp/"
+    },
+    {
+      "id": "0c190a10467e8577",
+      "title": "中建一局2026春季校园招聘全面开启",
+      "organization": "北京市国资委国企招聘",
+      "category": "央企国企",
+      "published_at": "2026-03-09",
+      "source_name": "北京市国资委国企招聘",
+      "source_url": "https://mp.weixin.qq.com/s/dQOtuV2ZGc1mRgyo_Ts-rA",
+      "source_home": "https://gzw.beijing.gov.cn/yggq/gqzp/"
+    },
+    {
+      "id": "bc8587ca1f01b118",
+      "title": "化工集团2026年度招聘公告",
+      "organization": "北京市国资委国企招聘",
+      "category": "央企国企",
+      "published_at": "2026-03-06",
+      "source_name": "北京市国资委国企招聘",
+      "source_url": "https://mp.weixin.qq.com/s/0XOlNwlz0EgdZ42HfMHJ1g",
+      "source_home": "https://gzw.beijing.gov.cn/yggq/gqzp/"
+    },
+    {
+      "id": "7945bd1557c5a10c",
+      "title": "北京农商银行丨2026年春季校园招聘正式启动！",
+      "organization": "北京市国资委国企招聘",
+      "category": "央企国企",
+      "published_at": "2026-03-04",
+      "source_name": "北京市国资委国企招聘",
+      "source_url": "https://mp.weixin.qq.com/s/WGQC4Us_x0LGVJejMXNNhw",
+      "source_home": "https://gzw.beijing.gov.cn/yggq/gqzp/"
+    },
+    {
       "id": "a53fcf2342027cd2",
       "title": "教育部2026年度考试录用公务员面试公告",
       "organization": "教育部人事招聘通知",
@@ -1760,6 +2612,16 @@
       "source_home": "https://www.moe.gov.cn/s78/A04/"
     },
     {
+      "id": "daf303582cb41456",
+      "title": "北京市2026年度定向选调应届优秀大学毕业生补录公告",
+      "organization": "北京人事考试重要通知",
+      "category": "公务员",
+      "published_at": "2026-02-26",
+      "source_name": "北京人事考试重要通知",
+      "source_url": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/202602/t20260226_4541765.html",
+      "source_home": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/"
+    },
+    {
       "id": "db08c94c5ec86df3",
       "title": "北京市2026年度定向选调应届优秀大学毕业生补录公告",
       "organization": "首都之窗公务员招考",
@@ -1768,6 +2630,36 @@
       "source_name": "首都之窗公务员招考",
       "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202602/t20260226_4541778.html",
       "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+    },
+    {
+      "id": "c18381f31794d02a",
+      "title": "京能集团丨面向社会公开招聘总部部门副职及所属企业副总经理5个岗位",
+      "organization": "北京市国资委国企招聘",
+      "category": "央企国企",
+      "published_at": "2026-02-02",
+      "source_name": "北京市国资委国企招聘",
+      "source_url": "https://mp.weixin.qq.com/s/VLJuWYKzMVeQ-Z0YyJWpig",
+      "source_home": "https://gzw.beijing.gov.cn/yggq/gqzp/"
+    },
+    {
+      "id": "62c33840a3032108",
+      "title": "怀柔以“城”相待 国企“尚贤”揽才！怀柔区公开招聘21名怀柔区国有企业管培生",
+      "organization": "北京市国资委国企招聘",
+      "category": "央企国企",
+      "published_at": "2026-01-30",
+      "source_name": "北京市国资委国企招聘",
+      "source_url": "https://mp.weixin.qq.com/s/RoWiFDg0AGBrbTms2rGMwg",
+      "source_home": "https://gzw.beijing.gov.cn/yggq/gqzp/"
+    },
+    {
+      "id": "821bed443d712a00",
+      "title": "首文科集团面向社会招聘优秀人才",
+      "organization": "北京市国资委国企招聘",
+      "category": "央企国企",
+      "published_at": "2026-01-23",
+      "source_name": "北京市国资委国企招聘",
+      "source_url": "https://mp.weixin.qq.com/s/b8ervvTyeWdGTVTAEGzEaA",
+      "source_home": "https://gzw.beijing.gov.cn/yggq/gqzp/"
     },
     {
       "id": "ae0cce3484d059c4",
@@ -1808,6 +2700,26 @@
       "source_name": "首都之窗公务员招考",
       "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202601/t20260112_4422239.html",
       "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+    },
+    {
+      "id": "c8ee2025fc8e5871",
+      "title": "北京市各级机关2026年度考试录用公务员调剂职位表",
+      "organization": "北京人事考试重要通知",
+      "category": "公务员",
+      "published_at": "2026-01-10",
+      "source_name": "北京人事考试重要通知",
+      "source_url": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/202601/P020260110373221642371.xlsx",
+      "source_home": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/"
+    },
+    {
+      "id": "e2e76df9457cf636",
+      "title": "北京市各级机关2026年度考试录用公务员笔试成绩通知书",
+      "organization": "北京人事考试重要通知",
+      "category": "公务员",
+      "published_at": "2026-01-05",
+      "source_name": "北京人事考试重要通知",
+      "source_url": "http://fuwu.rsj.beijing.gov.cn/kwscore/login/gwy.htm?examId=6300",
+      "source_home": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/"
     },
     {
       "id": "134b123f785f2441",
@@ -1920,6 +2832,16 @@
       "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
     },
     {
+      "id": "8047de06bb2082bc",
+      "title": "北京市2026年度定向选调和“优培计划”招聘应届优秀大学毕业生公告",
+      "organization": "北京人事考试重要通知",
+      "category": "公务员",
+      "published_at": "2025-09-12",
+      "source_name": "北京人事考试重要通知",
+      "source_url": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/202509/t20250912_4200440.html",
+      "source_home": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/"
+    },
+    {
       "id": "319f410a6575d4b3",
       "title": "百度学术AI产品经理（J85590）",
       "organization": "百度",
@@ -1928,6 +2850,36 @@
       "source_name": "百度招聘",
       "source_url": "https://talent.baidu.com/jobs/detail/0d6fad24-fe80-4c5e-8b2f-1fb45031de0c",
       "source_home": "https://talent.baidu.com/jobs/"
+    },
+    {
+      "id": "e3f9d948afb5a1d8",
+      "title": "关于北京市公安局2025年度招聘文职辅警笔试延期举行的通知",
+      "organization": "北京人事考试重要通知",
+      "category": "公务员",
+      "published_at": "2025-04-15",
+      "source_name": "北京人事考试重要通知",
+      "source_url": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/202504/t20250415_4065679.html",
+      "source_home": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/"
+    },
+    {
+      "id": "cea5c9e8a8634516",
+      "title": "北京市2025年度定向选调应届优秀大学毕业生补录公告",
+      "organization": "北京人事考试重要通知",
+      "category": "公务员",
+      "published_at": "2025-02-27",
+      "source_name": "北京人事考试重要通知",
+      "source_url": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/202502/t20250227_4020461.html",
+      "source_home": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/"
+    },
+    {
+      "id": "b65efd47c43d40e3",
+      "title": "北京市各级机关2025年度考试录用公务员调剂职位表",
+      "organization": "北京人事考试重要通知",
+      "category": "公务员",
+      "published_at": "2025-01-15",
+      "source_name": "北京人事考试重要通知",
+      "source_url": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/202501/P020250115418375118466.xls",
+      "source_home": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/"
     },
     {
       "id": "22f54b6f51272ae8",
@@ -2010,6 +2962,16 @@
       "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
     },
     {
+      "id": "a17ae55d8fbc26da",
+      "title": "北京市2025年度定向选调和“优培计划”招聘应届优秀大学毕业生公告",
+      "organization": "北京人事考试重要通知",
+      "category": "公务员",
+      "published_at": "2024-09-19",
+      "source_name": "北京人事考试重要通知",
+      "source_url": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/202409/t20240919_3894681.html",
+      "source_home": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/"
+    },
+    {
       "id": "d685534536db8013",
       "title": "社会招聘",
       "organization": "字节跳动招聘",
@@ -2048,6 +3010,16 @@
       "source_name": "百度招聘",
       "source_url": "https://talent.baidu.com/jobs/detail/13",
       "source_home": "https://talent.baidu.com/jobs/"
+    },
+    {
+      "id": "88e837beac97d009",
+      "title": "查看下载职位",
+      "organization": "北京市公务员招录专题",
+      "category": "公务员",
+      "published_at": "",
+      "source_name": "北京市公务员招录专题",
+      "source_url": "https://ks3-cn-beijing.ksyun.com/zgw/article/3000209573/content/20260507091714_250.xls",
+      "source_home": "https://rsj.beijing.gov.cn/bm/ztzl/gwy/"
     },
     {
       "id": "72952f40b77bdfde",

@@ -103,7 +103,7 @@
     "id": "sasac-civil-service",
     "name": "国务院国资委人事招聘",
     "group": "中央机关重点单位",
-    "url": "https://www.sasac.gov.cn/n2588030/n2588964/",
+    "url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html",
     "priority": "P1",
     "status": "已确认",
     "schedule": "08:30,18:30",
@@ -141,17 +141,6 @@
     "status": "待验证",
     "schedule": "08:30",
     "scope": "专利局等在京单位公务员和事业单位招聘",
-    "mode": "栏目页+关键词过滤"
-  },
-  {
-    "id": "spb-personnel",
-    "name": "国家邮政局人事信息",
-    "group": "中央机关重点单位",
-    "url": "https://www.spb.gov.cn/gjyzj/c100015/common_list.shtml",
-    "priority": "P2",
-    "status": "待验证",
-    "schedule": "08:30",
-    "scope": "北京邮政管理系统公务员招录和公示",
     "mode": "栏目页+关键词过滤"
   },
   {
