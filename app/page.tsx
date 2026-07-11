@@ -120,6 +120,17 @@ function daysUntil(value: string) {
   return Math.ceil((new Date(value).getTime() - Date.now()) / 86400000);
 }
 
+function isCurrentJob(job: Job) {
+  const deadlineDays = daysUntil(job.deadline);
+  if (deadlineDays !== null) return deadlineDays >= 0;
+  if (!job.publishedAt) return false;
+  const publishedAt = new Date(job.publishedAt).getTime();
+  if (Number.isNaN(publishedAt)) return false;
+  return Date.now() - publishedAt <= 30 * 86400000;
+}
+
+const currentJobs = allJobs.filter(isCurrentJob);
+
 function shortDate(value: string) {
   if (!value) return "未注明";
   const date = new Date(value);
@@ -200,7 +211,6 @@ function matchForProfile(job: Job): MatchResult {
 
 export default function Home() {
   const [query, setQuery] = useState("");
-  const [status, setStatus] = useState("进行中");
   const [education, setEducation] = useState("全部学历");
   const [sort, setSort] = useState("即将截止");
   const [profileFilter, setProfileFilter] = useState("全部岗位");
@@ -221,7 +231,7 @@ export default function Home() {
   };
 
   const unitOptions = useMemo(() => {
-    const names = allJobs
+    const names = currentJobs
       .filter((job) => sourceGroup === "全部来源" || job.sourceGroup === sourceGroup)
       .map(unitName)
       .filter((name) => name !== "单位未注明");
@@ -234,12 +244,10 @@ export default function Home() {
 
   const filtered = useMemo(() => {
     const keyword = query.trim().toLowerCase();
-    const result = allJobs.filter((job) => {
+    const result = currentJobs.filter((job) => {
       const text = [job.title, job.organization, job.major, job.education, job.requirements, job.responsibilities, job.location, job.applicant_type, job.household, job.noticeTitle].join(" ").toLowerCase();
-      const expired = (daysUntil(job.deadline) ?? 1) < 0;
       const profileMatch = matchForProfile(job);
       return (!keyword || text.includes(keyword))
-        && (status === "全部" || (status === "进行中" ? !expired : expired))
         && (education === "全部学历" || (job.education || "").includes(education))
         && (profileFilter === "全部岗位" || (profileFilter === "适合我" ? profileMatch.level !== "no" : profileMatch.level === "match"))
         && (sourceGroup === "全部来源" || job.sourceGroup === sourceGroup)
@@ -252,12 +260,12 @@ export default function Home() {
       const bTime = b.deadline ? new Date(b.deadline).getTime() : Number.MAX_SAFE_INTEGER;
       return aTime - bTime;
     });
-  }, [query, status, education, sort, profileFilter, sourceGroup, unit, savedOnly, saved]);
+  }, [query, education, sort, profileFilter, sourceGroup, unit, savedOnly, saved]);
 
-  useEffect(() => setVisibleCount(40), [query, status, education, sort, profileFilter, sourceGroup, unit, savedOnly]);
+  useEffect(() => setVisibleCount(40), [query, education, sort, profileFilter, sourceGroup, unit, savedOnly]);
 
-  const activeCount = allJobs.filter((job) => (daysUntil(job.deadline) ?? 1) >= 0).length;
-  const profileCount = allJobs.filter((job) => matchForProfile(job).level !== "no").length;
+  const activeCount = currentJobs.length;
+  const profileCount = currentJobs.filter((job) => matchForProfile(job).level !== "no").length;
   const definiteCount = Object.values(aiResults).filter((item) => item.match_level === "match").length;
   const analyzedCount = Object.keys(aiResults).length;
   const updated = new Date(collected.generated_at);
@@ -276,9 +284,6 @@ export default function Home() {
 
       <section className="toolbar" aria-label="职位筛选">
         <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="搜索单位、岗位、专业或要求" aria-label="搜索职位" />
-        <select value={status} onChange={(event) => setStatus(event.target.value)} aria-label="截止状态">
-          <option>进行中</option><option>已截止</option><option>全部</option>
-        </select>
         <select value={profileFilter} onChange={(event) => setProfileFilter(event.target.value)} aria-label="个人条件匹配">
           <option>全部岗位</option><option>适合我</option><option>明确符合</option>
         </select>
