@@ -1,0 +1,1680 @@
+{
+  "generated_at": "2026-07-11T15:08:41+08:00",
+  "source_count": 17,
+  "collected_source_count": 6,
+  "needs_adapter_count": 9,
+  "unavailable_count": 2,
+  "item_count": 73,
+  "sources": [
+    {
+      "source_id": "beijing-gov-institutions",
+      "source_name": "首都之窗事业单位招聘",
+      "group": "事业单位",
+      "home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/",
+      "status": "collected",
+      "http_status": 200,
+      "final_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/",
+      "item_count": 23,
+      "duration_ms": 141,
+      "items": [
+        {
+          "id": "e51be5b9a2b558ae",
+          "title": "事业单位招聘",
+          "organization": "首都之窗事业单位招聘",
+          "category": "事业单位",
+          "published_at": "",
+          "source_name": "首都之窗事业单位招聘",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+        },
+        {
+          "id": "c0d5afa12bb2b77a",
+          "title": "北京急救中心2026年度第四批公开招聘公告",
+          "organization": "首都之窗事业单位招聘",
+          "category": "事业单位",
+          "published_at": "2026-06-24",
+          "source_name": "首都之窗事业单位招聘",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260625_4714884.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+        },
+        {
+          "id": "d6b04d884439f3c9",
+          "title": "西城区卫生健康系统2026年第二批事业单位公开招聘工作人员公告",
+          "organization": "首都之窗事业单位招聘",
+          "category": "事业单位",
+          "published_at": "2026-06-22",
+          "source_name": "首都之窗事业单位招聘",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260623_4711104.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+        },
+        {
+          "id": "d0b13c4642f6eefd",
+          "title": "北京市商务局综合事务中心2026年度面向退役大学生士兵及残疾人招聘工作人员面试公告",
+          "organization": "首都之窗事业单位招聘",
+          "category": "事业单位",
+          "published_at": "2026-06-18",
+          "source_name": "首都之窗事业单位招聘",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260622_4709303.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+        },
+        {
+          "id": "2c7174c239733a9e",
+          "title": "通州区教委所属事业单位2026年第三次公开招聘工作人员公告",
+          "organization": "首都之窗事业单位招聘",
+          "category": "事业单位",
+          "published_at": "2026-06-18",
+          "source_name": "首都之窗事业单位招聘",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260622_4709201.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+        },
+        {
+          "id": "18b767d4386c7b9a",
+          "title": "北京市丰台区教育委员会所属事业单位面向应届毕业生第三批公开招聘工作人员公告",
+          "organization": "首都之窗事业单位招聘",
+          "category": "事业单位",
+          "published_at": "2026-06-17",
+          "source_name": "首都之窗事业单位招聘",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260618_4705626.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+        },
+        {
+          "id": "6c6b40f2535e6bde",
+          "title": "中共北京市通州区委党校2026年公开招聘专业技术人员公告",
+          "organization": "首都之窗事业单位招聘",
+          "category": "事业单位",
+          "published_at": "2026-06-16",
+          "source_name": "首都之窗事业单位招聘",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260617_4703481.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+        },
+        {
+          "id": "34dfa3594ac82b6f",
+          "title": "昌平区卫生健康委员会所属事业单位2026年第二批公开招聘事业单位工作人员公告",
+          "organization": "首都之窗事业单位招聘",
+          "category": "事业单位",
+          "published_at": "2026-06-15",
+          "source_name": "首都之窗事业单位招聘",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260616_4702031.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+        },
+        {
+          "id": "95a04e3a3fd37f1d",
+          "title": "北京第四实验学校2026年第二批公开招聘公告",
+          "organization": "首都之窗事业单位招聘",
+          "category": "事业单位",
+          "published_at": "2026-06-12",
+          "source_name": "首都之窗事业单位招聘",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260615_4700195.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+        },
+        {
+          "id": "7e1f7cacdfd94288",
+          "title": "首都医科大学附属北京安定医院2026年公开招聘公告（第三批）",
+          "organization": "首都之窗事业单位招聘",
+          "category": "事业单位",
+          "published_at": "2026-06-12",
+          "source_name": "首都之窗事业单位招聘",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260615_4700178.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+        },
+        {
+          "id": "2f990c6633b4a82e",
+          "title": "北京市平谷区教育委员会所属事业单位2026年第二批公开招聘教师公告",
+          "organization": "首都之窗事业单位招聘",
+          "category": "事业单位",
+          "published_at": "2026-06-12",
+          "source_name": "首都之窗事业单位招聘",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260615_4700176.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+        },
+        {
+          "id": "bdde82d644838dcb",
+          "title": "北京市职业病防治院公开招聘2026年出站博士后人员公告",
+          "organization": "首都之窗事业单位招聘",
+          "category": "事业单位",
+          "published_at": "2026-06-11",
+          "source_name": "首都之窗事业单位招聘",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260612_4697113.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+        },
+        {
+          "id": "898378fe8a3782c5",
+          "title": "首都医科大学附属北京朝阳医院2026年度公开招聘公告（第三批）",
+          "organization": "首都之窗事业单位招聘",
+          "category": "事业单位",
+          "published_at": "2026-06-11",
+          "source_name": "首都之窗事业单位招聘",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260612_4697090.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+        },
+        {
+          "id": "756e4ebe5aa1cfff",
+          "title": "北京老年医院2026年公开招聘公告（第三批）",
+          "organization": "首都之窗事业单位招聘",
+          "category": "事业单位",
+          "published_at": "2026-06-10",
+          "source_name": "首都之窗事业单位招聘",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260611_4695552.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+        },
+        {
+          "id": "c894314a1408c9b7",
+          "title": "首都医科大学附属北京儿童医院2026年公开招聘公告（第三批）",
+          "organization": "首都之窗事业单位招聘",
+          "category": "事业单位",
+          "published_at": "2026-06-10",
+          "source_name": "首都之窗事业单位招聘",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260611_4695543.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+        },
+        {
+          "id": "79b88d94af2dbb03",
+          "title": "北京市部分事业单位定向招聘2026年合同期满乡村振兴协理员公告",
+          "organization": "首都之窗事业单位招聘",
+          "category": "事业单位",
+          "published_at": "2026-06-10",
+          "source_name": "首都之窗事业单位招聘",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260611_4695531.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+        },
+        {
+          "id": "330f12e2256341c0",
+          "title": "北京市平谷区卫生健康委员会所属事业单位2026年第二次公开招聘工作人员公告",
+          "organization": "首都之窗事业单位招聘",
+          "category": "事业单位",
+          "published_at": "2026-06-09",
+          "source_name": "首都之窗事业单位招聘",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260610_4693645.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+        },
+        {
+          "id": "39dd9fc4be3ab2d4",
+          "title": "北京市园林绿化局所属事业单位公开招聘2026年出站博士后人员公告",
+          "organization": "首都之窗事业单位招聘",
+          "category": "事业单位",
+          "published_at": "2026-06-09",
+          "source_name": "首都之窗事业单位招聘",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260610_4693642.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+        },
+        {
+          "id": "515fde3683c3e5db",
+          "title": "北京经济技术开发区2026年教育领域第二批公开招聘事业单位工作人员公告",
+          "organization": "首都之窗事业单位招聘",
+          "category": "事业单位",
+          "published_at": "2026-06-08",
+          "source_name": "首都之窗事业单位招聘",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260609_4692112.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+        },
+        {
+          "id": "08b29e375b1f8125",
+          "title": "北京市海淀区卫生健康委所属事业单位2026年公开招聘医学定向生公告",
+          "organization": "首都之窗事业单位招聘",
+          "category": "事业单位",
+          "published_at": "2026-06-08",
+          "source_name": "首都之窗事业单位招聘",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260609_4692103.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+        },
+        {
+          "id": "45532c224026e8c1",
+          "title": "首都医科大学脑重大疾病研究中心（北京脑重大疾病研究院）2026年度公开招聘公告（第一批）",
+          "organization": "首都之窗事业单位招聘",
+          "category": "事业单位",
+          "published_at": "2026-06-04",
+          "source_name": "首都之窗事业单位招聘",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260605_4686910.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+        },
+        {
+          "id": "5480e9fdb707638b",
+          "title": "房山区教育委员会所属事业单位公开招聘专业技术人员的公告（三）",
+          "organization": "首都之窗事业单位招聘",
+          "category": "事业单位",
+          "published_at": "2026-06-03",
+          "source_name": "首都之窗事业单位招聘",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260604_4685248.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+        },
+        {
+          "id": "e2a35868fe0518b1",
+          "title": "北京清华长庚医院2026年度第三批公开招聘公告",
+          "organization": "首都之窗事业单位招聘",
+          "category": "事业单位",
+          "published_at": "2026-06-03",
+          "source_name": "首都之窗事业单位招聘",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260604_4685247.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+        }
+      ]
+    },
+    {
+      "source_id": "bj-civil-service",
+      "source_name": "北京市公务员招录专题",
+      "group": "公务员",
+      "home": "https://rsj.beijing.gov.cn/bm/ztzl/gwy/",
+      "status": "needs-adapter",
+      "http_status": 200,
+      "final_url": "https://rsj.beijing.gov.cn/bm/ztzl/gwy/",
+      "item_count": 0,
+      "duration_ms": 140,
+      "items": []
+    },
+    {
+      "source_id": "bj-exam-notices",
+      "source_name": "北京人事考试重要通知",
+      "group": "公务员",
+      "home": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/",
+      "status": "needs-adapter",
+      "http_status": 200,
+      "final_url": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/",
+      "item_count": 0,
+      "duration_ms": 94,
+      "items": []
+    },
+    {
+      "source_id": "national-civil-service-yearly",
+      "source_name": "2026年度国考专题",
+      "group": "公务员",
+      "home": "http://bm.scs.gov.cn/kl2026",
+      "status": "needs-adapter",
+      "http_status": 200,
+      "final_url": "http://bm.scs.gov.cn/kl2026",
+      "item_count": 0,
+      "duration_ms": 47,
+      "items": []
+    },
+    {
+      "source_id": "beijing-gov-civil-service",
+      "source_name": "首都之窗公务员招考",
+      "group": "公务员",
+      "home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html",
+      "status": "collected",
+      "http_status": 200,
+      "final_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html",
+      "item_count": 26,
+      "duration_ms": 140,
+      "items": [
+        {
+          "id": "063457f0c0494f96",
+          "title": "公务员招考",
+          "organization": "首都之窗公务员招考",
+          "category": "公务员",
+          "published_at": "",
+          "source_name": "首都之窗公务员招考",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+        },
+        {
+          "id": "afd5ac1b40a430fd",
+          "title": "北京市各级机关2026年度补充录用公务员公告",
+          "organization": "首都之窗公务员招考",
+          "category": "公务员",
+          "published_at": "2026-05-07",
+          "source_name": "首都之窗公务员招考",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202605/t20260508_4641288.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+        },
+        {
+          "id": "4ab1e893fb29edc3",
+          "title": "北京城市副中心党工委管委会关于2026年考试录用公务员拟录用人员公示公告",
+          "organization": "首都之窗公务员招考",
+          "category": "公务员",
+          "published_at": "2026-04-23",
+          "source_name": "首都之窗公务员招考",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202604/t20260423_4606333.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+        },
+        {
+          "id": "6e7b8adb41ef1174",
+          "title": "市委研究室关于2026年考试录用公务员拟录用人员公示公告",
+          "organization": "首都之窗公务员招考",
+          "category": "公务员",
+          "published_at": "2026-04-03",
+          "source_name": "首都之窗公务员招考",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202604/t20260403_4574494.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+        },
+        {
+          "id": "db08c94c5ec86df3",
+          "title": "北京市2026年度定向选调应届优秀大学毕业生补录公告",
+          "organization": "首都之窗公务员招考",
+          "category": "公务员",
+          "published_at": "2026-02-26",
+          "source_name": "首都之窗公务员招考",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202602/t20260226_4541778.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+        },
+        {
+          "id": "ae0cce3484d059c4",
+          "title": "中共北京市委城市副中心工作委员会、北京城市副中心管理委员会2026年度考试录用公务员面试公告",
+          "organization": "首都之窗公务员招考",
+          "category": "公务员",
+          "published_at": "2026-01-21",
+          "source_name": "首都之窗公务员招考",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202601/t20260122_4455477.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+        },
+        {
+          "id": "3b10305e3816f574",
+          "title": "北京市委研究室2026年度考试录用公务员面试公告",
+          "organization": "首都之窗公务员招考",
+          "category": "公务员",
+          "published_at": "2026-01-20",
+          "source_name": "首都之窗公务员招考",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202601/t20260120_4449839.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+        },
+        {
+          "id": "7720c089a93bea69",
+          "title": "北京市各级机关2026年度考试录用公务员调剂职位表",
+          "organization": "首都之窗公务员招考",
+          "category": "公务员",
+          "published_at": "2026-01-12",
+          "source_name": "首都之窗公务员招考",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202601/t20260112_4422239.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+        },
+        {
+          "id": "c02928d1aeef231f",
+          "title": "关于北京市各级机关2026年度考试录用公务员资格复审、调剂和面试有关事项的通知",
+          "organization": "首都之窗公务员招考",
+          "category": "公务员",
+          "published_at": "2026-01-05",
+          "source_name": "首都之窗公务员招考",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202601/t20260105_4400098.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+        },
+        {
+          "id": "134b123f785f2441",
+          "title": "北京市各级机关2026年度考试录用公务员笔试合格分数线",
+          "organization": "首都之窗公务员招考",
+          "category": "公务员",
+          "published_at": "2026-01-05",
+          "source_name": "首都之窗公务员招考",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202601/t20260105_4400092.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+        },
+        {
+          "id": "ce1a1efee9f78ae8",
+          "title": "中共北京市委城市副中心工作委员会、北京城市副中心管理委员会关于2025年公开选调公务员拟选调人员公示公告",
+          "organization": "首都之窗公务员招考",
+          "category": "公务员",
+          "published_at": "2025-12-23",
+          "source_name": "首都之窗公务员招考",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202512/t20251223_4358246.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+        },
+        {
+          "id": "05d54120e03ac8c3",
+          "title": "中共北京市委研究室2026年度定向选调应届优秀大学毕业生拟录用人员公示公告",
+          "organization": "首都之窗公务员招考",
+          "category": "公务员",
+          "published_at": "2025-12-12",
+          "source_name": "首都之窗公务员招考",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202512/t20251212_4338268.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+        },
+        {
+          "id": "16e4485016a26afe",
+          "title": "北京大兴国际机场临空经济区联合管理委员会“优培计划”招聘应届优秀大学毕业生拟录用人员公示公告",
+          "organization": "首都之窗公务员招考",
+          "category": "公务员",
+          "published_at": "2025-12-09",
+          "source_name": "首都之窗公务员招考",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202512/t20251209_4329588.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+        },
+        {
+          "id": "7ff7670e8428b846",
+          "title": "北京市人民政府参事室（北京市文史研究馆）2025年度公开遴选公务员面试公告",
+          "organization": "首都之窗公务员招考",
+          "category": "公务员",
+          "published_at": "2025-11-14",
+          "source_name": "首都之窗公务员招考",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202511/t20251114_4280950.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+        },
+        {
+          "id": "1600f6428b5bd976",
+          "title": "市委军民融合办2025年度公开遴选公务员面试公告",
+          "organization": "首都之窗公务员招考",
+          "category": "公务员",
+          "published_at": "2025-11-14",
+          "source_name": "首都之窗公务员招考",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202511/t20251114_4280584.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+        },
+        {
+          "id": "1e98e0221f570637",
+          "title": "北京市公安局2026年度面向社会招录人民警察公告",
+          "organization": "首都之窗公务员招考",
+          "category": "公务员",
+          "published_at": "2025-11-10",
+          "source_name": "首都之窗公务员招考",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202511/t20251111_4272377.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+        },
+        {
+          "id": "5da5ba9c79a16ccf",
+          "title": "北京市各级机关2026年度考试录用公务员公告",
+          "organization": "首都之窗公务员招考",
+          "category": "公务员",
+          "published_at": "2025-11-10",
+          "source_name": "首都之窗公务员招考",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202511/t20251110_4267508.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+        },
+        {
+          "id": "0b62f379338f9a72",
+          "title": "北京市2025年度公开遴选和公开选调公务员公告",
+          "organization": "首都之窗公务员招考",
+          "category": "公务员",
+          "published_at": "2025-10-11",
+          "source_name": "首都之窗公务员招考",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202510/t20251011_4220819.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+        },
+        {
+          "id": "22f54b6f51272ae8",
+          "title": "关于北京市各级机关2025年度考试录用公务员资格复审、调剂和面试有关事项的通知",
+          "organization": "首都之窗公务员招考",
+          "category": "公务员",
+          "published_at": "2025-01-08",
+          "source_name": "首都之窗公务员招考",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202501/t20250108_3983619.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+        },
+        {
+          "id": "ca11c57676cd1dd6",
+          "title": "北京市商务局关于2024年公开遴选公务员拟遴选人员公示公告",
+          "organization": "首都之窗公务员招考",
+          "category": "公务员",
+          "published_at": "2024-12-11",
+          "source_name": "首都之窗公务员招考",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202412/t20241213_3964919.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+        },
+        {
+          "id": "09197e13a659d82d",
+          "title": "北京市商务局2025年度定向选调招聘应届优秀大学毕业生拟录用人员公示公告",
+          "organization": "首都之窗公务员招考",
+          "category": "公务员",
+          "published_at": "2024-12-05",
+          "source_name": "首都之窗公务员招考",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202412/t20241205_3957744.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+        },
+        {
+          "id": "74f6205ddff2ffe4",
+          "title": "中共北京市委研究室2025年度定向选调应届优秀大学毕业生拟录用人员公示公告",
+          "organization": "首都之窗公务员招考",
+          "category": "公务员",
+          "published_at": "2024-12-03",
+          "source_name": "首都之窗公务员招考",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202412/t20241203_3955361.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+        },
+        {
+          "id": "2145f99dfe36e3fb",
+          "title": "北京市商务局2024年度公开遴选公务员面试公告",
+          "organization": "首都之窗公务员招考",
+          "category": "公务员",
+          "published_at": "2024-11-19",
+          "source_name": "首都之窗公务员招考",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202411/t20241121_3947130.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+        },
+        {
+          "id": "594369f4d2321e0d",
+          "title": "北京市各级机关2025年度考试录用公务员公告",
+          "organization": "首都之窗公务员招考",
+          "category": "公务员",
+          "published_at": "2024-11-12",
+          "source_name": "首都之窗公务员招考",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202411/t20241112_3939341.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+        },
+        {
+          "id": "bd2f276279a27a3f",
+          "title": "北京市2024年度公开遴选和公开选调公务员公告",
+          "organization": "首都之窗公务员招考",
+          "category": "公务员",
+          "published_at": "2024-10-18",
+          "source_name": "首都之窗公务员招考",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202410/t20241018_3923226.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+        },
+        {
+          "id": "b5f194a1bfaecf84",
+          "title": "中央机关及其直属机构2025年度考试录用公务员公告",
+          "organization": "首都之窗公务员招考",
+          "category": "公务员",
+          "published_at": "2024-10-14",
+          "source_name": "首都之窗公务员招考",
+          "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202410/t20241015_3920567.html",
+          "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+        }
+      ]
+    },
+    {
+      "source_id": "bj-sasac-jobs",
+      "source_name": "北京市国资委国企招聘",
+      "group": "央企国企",
+      "home": "https://gzw.beijing.gov.cn/yggq/gqzp/",
+      "status": "needs-adapter",
+      "http_status": 200,
+      "final_url": "https://gzw.beijing.gov.cn/yggq/gqzp/",
+      "item_count": 0,
+      "duration_ms": 94,
+      "items": []
+    },
+    {
+      "source_id": "iguopin",
+      "source_name": "国聘平台",
+      "group": "央企国企",
+      "home": "https://www.iguopin.com/",
+      "status": "needs-adapter",
+      "http_status": 200,
+      "final_url": "https://www.iguopin.com/",
+      "item_count": 0,
+      "duration_ms": 2312,
+      "items": []
+    },
+    {
+      "source_id": "mfa-civil-service",
+      "source_name": "外交部公务员考试录用",
+      "group": "中央机关重点单位",
+      "home": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/",
+      "status": "collected",
+      "http_status": 200,
+      "final_url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/",
+      "item_count": 16,
+      "duration_ms": 203,
+      "items": [
+        {
+          "id": "0766750ede5ee969",
+          "title": "外交部2026年度公开遴选和公开选调公务员职位业务水平测试和面试公告",
+          "organization": "外交部公务员考试录用",
+          "category": "中央机关重点单位",
+          "published_at": "",
+          "source_name": "外交部公务员考试录用",
+          "source_url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/tzgg_660725/202601/t20260123_11844576.shtml",
+          "source_home": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/"
+        },
+        {
+          "id": "e1e75a624cb1ad86",
+          "title": "关于外交部2026年度公开遴选和公开选调公务员职位业务水平测试和面试报名确认等事项的公告",
+          "organization": "外交部公务员考试录用",
+          "category": "中央机关重点单位",
+          "published_at": "",
+          "source_name": "外交部公务员考试录用",
+          "source_url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/tzgg_660725/202601/t20260119_11815349.shtml",
+          "source_home": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/"
+        },
+        {
+          "id": "96b46c7a20469f69",
+          "title": "外交部2026年度考试录用公务员专业能力测试和面试公告",
+          "organization": "外交部公务员考试录用",
+          "category": "中央机关重点单位",
+          "published_at": "",
+          "source_name": "外交部公务员考试录用",
+          "source_url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/tzgg_660725/202601/t20260114_11812712.shtml",
+          "source_home": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/"
+        },
+        {
+          "id": "4dc29e424326d42b",
+          "title": "外交部2026年度公务员考试录用工作有关说明及注意事项",
+          "organization": "外交部公务员考试录用",
+          "category": "中央机关重点单位",
+          "published_at": "",
+          "source_name": "外交部公务员考试录用",
+          "source_url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/tzgg_660725/202510/t20251014_11732434.shtml",
+          "source_home": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/"
+        },
+        {
+          "id": "073d719c3d792a1c",
+          "title": "外交部2026年度公务员录用计划表",
+          "organization": "外交部公务员考试录用",
+          "category": "中央机关重点单位",
+          "published_at": "",
+          "source_name": "外交部公务员考试录用",
+          "source_url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/tzgg_660725/202510/P020251014531383868103.pdf",
+          "source_home": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/"
+        },
+        {
+          "id": "21436f27308d6fcb",
+          "title": "中央机关及其直属机构2026年度考试录用公务员相关公告（转载）",
+          "organization": "外交部公务员考试录用",
+          "category": "中央机关重点单位",
+          "published_at": "",
+          "source_name": "外交部公务员考试录用",
+          "source_url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/tzgg_660725/202510/t20251009_11724259.shtml",
+          "source_home": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/"
+        },
+        {
+          "id": "9b1caaba50ab88d9",
+          "title": "外交部2026年公务员考试录用各用人司局考生咨询电话",
+          "organization": "外交部公务员考试录用",
+          "category": "中央机关重点单位",
+          "published_at": "",
+          "source_name": "外交部公务员考试录用",
+          "source_url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/tzgg_660725/202510/t20251009_11724245.shtml",
+          "source_home": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/"
+        },
+        {
+          "id": "d90c5acc08e6765d",
+          "title": "外交部2025年度国家公务员考试录用结果",
+          "organization": "外交部公务员考试录用",
+          "category": "中央机关重点单位",
+          "published_at": "",
+          "source_name": "外交部公务员考试录用",
+          "source_url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/tzgg_660725/202506/t20250623_11655302.shtml",
+          "source_home": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/"
+        },
+        {
+          "id": "16a0b8cfc31fd9aa",
+          "title": "外交部2026年度公务员考录常见问题解答",
+          "organization": "外交部公务员考试录用",
+          "category": "中央机关重点单位",
+          "published_at": "",
+          "source_name": "外交部公务员考试录用",
+          "source_url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/bkzn_660695/202510/t20251014_11732448.shtml",
+          "source_home": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/"
+        },
+        {
+          "id": "78de5ba81b38f9da",
+          "title": "外交部2025年度公务员考录常见问题解答",
+          "organization": "外交部公务员考试录用",
+          "category": "中央机关重点单位",
+          "published_at": "",
+          "source_name": "外交部公务员考试录用",
+          "source_url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/bkzn_660695/202501/t20250105_11527184.shtml",
+          "source_home": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/"
+        },
+        {
+          "id": "b9133e507669d207",
+          "title": "外交部2024年度公务员考录常见问题解答",
+          "organization": "外交部公务员考试录用",
+          "category": "中央机关重点单位",
+          "published_at": "",
+          "source_name": "外交部公务员考试录用",
+          "source_url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/bkzn_660695/202310/t20231013_11160617.shtml",
+          "source_home": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/"
+        },
+        {
+          "id": "0d6f47eab65e1cbf",
+          "title": "外交部2023年度公务员考录常见问题解答",
+          "organization": "外交部公务员考试录用",
+          "category": "中央机关重点单位",
+          "published_at": "",
+          "source_name": "外交部公务员考试录用",
+          "source_url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/bkzn_660695/202210/t20221022_10790411.shtml",
+          "source_home": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/"
+        },
+        {
+          "id": "b1b019e49e517669",
+          "title": "外交部2022年度公务员考录常见问题解答",
+          "organization": "外交部公务员考试录用",
+          "category": "中央机关重点单位",
+          "published_at": "",
+          "source_name": "外交部公务员考试录用",
+          "source_url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/bkzn_660695/202110/t20211014_9552884.shtml",
+          "source_home": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/"
+        },
+        {
+          "id": "5329946d8abbe515",
+          "title": "外交部2021年公务员考录常见问题解答",
+          "organization": "外交部公务员考试录用",
+          "category": "中央机关重点单位",
+          "published_at": "",
+          "source_name": "外交部公务员考试录用",
+          "source_url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/bkzn_660695/202010/t20201014_9277455.shtml",
+          "source_home": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/"
+        },
+        {
+          "id": "9f2d656451461a75",
+          "title": "关于印发公务员录用体检特殊标准（试行）的通知",
+          "organization": "外交部公务员考试录用",
+          "category": "中央机关重点单位",
+          "published_at": "",
+          "source_name": "外交部公务员考试录用",
+          "source_url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/zcfg_660729/202110/t20211025_9982490.shtml",
+          "source_home": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/"
+        },
+        {
+          "id": "330ee0f0c571d0b2",
+          "title": "关于进一步做好公务员录用考试管理工作的通知",
+          "organization": "外交部公务员考试录用",
+          "category": "中央机关重点单位",
+          "published_at": "",
+          "source_name": "外交部公务员考试录用",
+          "source_url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/zcfg_660729/202110/t20211025_9982491.shtml",
+          "source_home": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/"
+        }
+      ]
+    },
+    {
+      "source_id": "sasac-civil-service",
+      "source_name": "国务院国资委人事招聘",
+      "group": "中央机关重点单位",
+      "home": "https://www.sasac.gov.cn/n2588030/n2588964/",
+      "status": "unavailable",
+      "http_status": null,
+      "item_count": 0,
+      "error": "HTTPSConnectionPool(host='www.sasac.gov.cn', port=443): Max retries exceeded with url: /n2588030/n2588964/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))",
+      "items": []
+    },
+    {
+      "source_id": "ggj-notices",
+      "source_name": "国家机关事务管理局通知公告",
+      "group": "中央机关重点单位",
+      "home": "https://www.ggj.gov.cn/tzgg/",
+      "status": "needs-adapter",
+      "http_status": 200,
+      "final_url": "https://www.ggj.gov.cn/tzgg/",
+      "item_count": 0,
+      "duration_ms": 625,
+      "items": []
+    },
+    {
+      "source_id": "moe-personnel",
+      "source_name": "教育部人事招聘通知",
+      "group": "中央机关重点单位",
+      "home": "https://www.moe.gov.cn/s78/A04/",
+      "status": "collected",
+      "http_status": 200,
+      "final_url": "http://www.moe.gov.cn/s78/A04/",
+      "item_count": 5,
+      "duration_ms": 172,
+      "items": [
+        {
+          "id": "3aae59ba4c35adc1",
+          "title": "教育部2026年度考试录用公务员递补人员面试公告",
+          "organization": "教育部人事招聘通知",
+          "category": "中央机关重点单位",
+          "published_at": "2026-03-12",
+          "source_name": "教育部人事招聘通知",
+          "source_url": "http://www.moe.gov.cn/s78/A04/tongzhi/202603/t20260312_1430724.html",
+          "source_home": "https://www.moe.gov.cn/s78/A04/"
+        },
+        {
+          "id": "a53fcf2342027cd2",
+          "title": "教育部2026年度考试录用公务员面试公告",
+          "organization": "教育部人事招聘通知",
+          "category": "中央机关重点单位",
+          "published_at": "2026-02-26",
+          "source_name": "教育部人事招聘通知",
+          "source_url": "http://www.moe.gov.cn/s78/A04/tongzhi/202602/t20260226_1429256.html",
+          "source_home": "https://www.moe.gov.cn/s78/A04/"
+        },
+        {
+          "id": "9571e0a3421c937a",
+          "title": "关于教育部2026年度考试录用公务员笔试成绩入围考生材料审核的通知",
+          "organization": "教育部人事招聘通知",
+          "category": "中央机关重点单位",
+          "published_at": "2026-01-15",
+          "source_name": "教育部人事招聘通知",
+          "source_url": "http://www.moe.gov.cn/s78/A04/tongzhi/202601/t20260115_1426701.html",
+          "source_home": "https://www.moe.gov.cn/s78/A04/"
+        },
+        {
+          "id": "cd5202e706ab625f",
+          "title": "关于教育部2026年度公务员考录职位要求的说明",
+          "organization": "教育部人事招聘通知",
+          "category": "中央机关重点单位",
+          "published_at": "2025-10-15",
+          "source_name": "教育部人事招聘通知",
+          "source_url": "http://www.moe.gov.cn/s78/A04/tongzhi/202510/t20251015_1416829.html",
+          "source_home": "https://www.moe.gov.cn/s78/A04/"
+        },
+        {
+          "id": "72952f40b77bdfde",
+          "title": "机关公务员招录",
+          "organization": "教育部人事招聘通知",
+          "category": "中央机关重点单位",
+          "published_at": "",
+          "source_name": "教育部人事招聘通知",
+          "source_url": "http://www.moe.gov.cn/s78/A04/gongzuo/moe_450/",
+          "source_home": "https://www.moe.gov.cn/s78/A04/"
+        }
+      ]
+    },
+    {
+      "source_id": "cnipa-personnel",
+      "source_name": "国家知识产权局招考招聘",
+      "group": "中央机关重点单位",
+      "home": "https://www.cnipa.gov.cn/col/col74/index.html",
+      "status": "needs-adapter",
+      "http_status": 200,
+      "final_url": "https://www.cnipa.gov.cn/col/col74/index.html",
+      "item_count": 0,
+      "duration_ms": 94,
+      "items": []
+    },
+    {
+      "source_id": "spb-personnel",
+      "source_name": "国家邮政局人事信息",
+      "group": "中央机关重点单位",
+      "home": "https://www.spb.gov.cn/gjyzj/c100015/common_list.shtml",
+      "status": "unavailable",
+      "http_status": 404,
+      "item_count": 0,
+      "error": "404 Client Error: Not Found for url: https://www.spb.gov.cn/gjyzj/c100015/common_list.shtml",
+      "items": []
+    },
+    {
+      "source_id": "bytedance-jobs",
+      "source_name": "字节跳动招聘",
+      "group": "互联网大厂",
+      "home": "https://jobs.bytedance.com/campus/",
+      "status": "collected",
+      "http_status": 200,
+      "final_url": "https://jobs.bytedance.com/campus/",
+      "item_count": 1,
+      "duration_ms": 438,
+      "items": [
+        {
+          "id": "d685534536db8013",
+          "title": "社会招聘",
+          "organization": "字节跳动招聘",
+          "category": "互联网大厂",
+          "published_at": "",
+          "source_name": "字节跳动招聘",
+          "source_url": "https://jobs.bytedance.com/",
+          "source_home": "https://jobs.bytedance.com/campus/"
+        }
+      ]
+    },
+    {
+      "source_id": "baidu-jobs",
+      "source_name": "百度招聘",
+      "group": "互联网大厂",
+      "home": "https://talent.baidu.com/jobs/",
+      "status": "needs-adapter",
+      "http_status": 200,
+      "final_url": "https://talent.baidu.com/jobs/",
+      "item_count": 0,
+      "duration_ms": 93,
+      "items": []
+    },
+    {
+      "source_id": "jd-jobs",
+      "source_name": "京东招聘",
+      "group": "互联网大厂",
+      "home": "https://zhaopin.jd.com/",
+      "status": "collected",
+      "http_status": 200,
+      "final_url": "https://zhaopin.jd.com/home;jsessionid=F2E9E3E4B0C30D7A3C0E7E2AB8ADB566.s1",
+      "item_count": 2,
+      "duration_ms": 188,
+      "items": [
+        {
+          "id": "497b05be395a27a2",
+          "title": "京东招聘",
+          "organization": "京东招聘",
+          "category": "互联网大厂",
+          "published_at": "",
+          "source_name": "京东招聘",
+          "source_url": "https://zhaopin.jd.com/home",
+          "source_home": "https://zhaopin.jd.com/"
+        },
+        {
+          "id": "53cd7d65e6c6ad6c",
+          "title": "社会招聘",
+          "organization": "京东招聘",
+          "category": "互联网大厂",
+          "published_at": "",
+          "source_name": "京东招聘",
+          "source_url": "https://zhaopin.jd.com/web/job/job_info_list/3",
+          "source_home": "https://zhaopin.jd.com/"
+        }
+      ]
+    },
+    {
+      "source_id": "meituan-jobs",
+      "source_name": "美团北京社会招聘",
+      "group": "互联网大厂",
+      "home": "https://zhaopin.meituan.com/web/social?cityList=001001&pageNo=1",
+      "status": "needs-adapter",
+      "http_status": 200,
+      "final_url": "https://zhaopin.meituan.com/web/social?cityList=001001&pageNo=1",
+      "item_count": 0,
+      "duration_ms": 78,
+      "items": []
+    }
+  ],
+  "items": [
+    {
+      "id": "c0d5afa12bb2b77a",
+      "title": "北京急救中心2026年度第四批公开招聘公告",
+      "organization": "首都之窗事业单位招聘",
+      "category": "事业单位",
+      "published_at": "2026-06-24",
+      "source_name": "首都之窗事业单位招聘",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260625_4714884.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+    },
+    {
+      "id": "d6b04d884439f3c9",
+      "title": "西城区卫生健康系统2026年第二批事业单位公开招聘工作人员公告",
+      "organization": "首都之窗事业单位招聘",
+      "category": "事业单位",
+      "published_at": "2026-06-22",
+      "source_name": "首都之窗事业单位招聘",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260623_4711104.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+    },
+    {
+      "id": "2c7174c239733a9e",
+      "title": "通州区教委所属事业单位2026年第三次公开招聘工作人员公告",
+      "organization": "首都之窗事业单位招聘",
+      "category": "事业单位",
+      "published_at": "2026-06-18",
+      "source_name": "首都之窗事业单位招聘",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260622_4709201.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+    },
+    {
+      "id": "d0b13c4642f6eefd",
+      "title": "北京市商务局综合事务中心2026年度面向退役大学生士兵及残疾人招聘工作人员面试公告",
+      "organization": "首都之窗事业单位招聘",
+      "category": "事业单位",
+      "published_at": "2026-06-18",
+      "source_name": "首都之窗事业单位招聘",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260622_4709303.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+    },
+    {
+      "id": "18b767d4386c7b9a",
+      "title": "北京市丰台区教育委员会所属事业单位面向应届毕业生第三批公开招聘工作人员公告",
+      "organization": "首都之窗事业单位招聘",
+      "category": "事业单位",
+      "published_at": "2026-06-17",
+      "source_name": "首都之窗事业单位招聘",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260618_4705626.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+    },
+    {
+      "id": "6c6b40f2535e6bde",
+      "title": "中共北京市通州区委党校2026年公开招聘专业技术人员公告",
+      "organization": "首都之窗事业单位招聘",
+      "category": "事业单位",
+      "published_at": "2026-06-16",
+      "source_name": "首都之窗事业单位招聘",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260617_4703481.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+    },
+    {
+      "id": "34dfa3594ac82b6f",
+      "title": "昌平区卫生健康委员会所属事业单位2026年第二批公开招聘事业单位工作人员公告",
+      "organization": "首都之窗事业单位招聘",
+      "category": "事业单位",
+      "published_at": "2026-06-15",
+      "source_name": "首都之窗事业单位招聘",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260616_4702031.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+    },
+    {
+      "id": "7e1f7cacdfd94288",
+      "title": "首都医科大学附属北京安定医院2026年公开招聘公告（第三批）",
+      "organization": "首都之窗事业单位招聘",
+      "category": "事业单位",
+      "published_at": "2026-06-12",
+      "source_name": "首都之窗事业单位招聘",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260615_4700178.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+    },
+    {
+      "id": "95a04e3a3fd37f1d",
+      "title": "北京第四实验学校2026年第二批公开招聘公告",
+      "organization": "首都之窗事业单位招聘",
+      "category": "事业单位",
+      "published_at": "2026-06-12",
+      "source_name": "首都之窗事业单位招聘",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260615_4700195.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+    },
+    {
+      "id": "2f990c6633b4a82e",
+      "title": "北京市平谷区教育委员会所属事业单位2026年第二批公开招聘教师公告",
+      "organization": "首都之窗事业单位招聘",
+      "category": "事业单位",
+      "published_at": "2026-06-12",
+      "source_name": "首都之窗事业单位招聘",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260615_4700176.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+    },
+    {
+      "id": "898378fe8a3782c5",
+      "title": "首都医科大学附属北京朝阳医院2026年度公开招聘公告（第三批）",
+      "organization": "首都之窗事业单位招聘",
+      "category": "事业单位",
+      "published_at": "2026-06-11",
+      "source_name": "首都之窗事业单位招聘",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260612_4697090.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+    },
+    {
+      "id": "bdde82d644838dcb",
+      "title": "北京市职业病防治院公开招聘2026年出站博士后人员公告",
+      "organization": "首都之窗事业单位招聘",
+      "category": "事业单位",
+      "published_at": "2026-06-11",
+      "source_name": "首都之窗事业单位招聘",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260612_4697113.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+    },
+    {
+      "id": "c894314a1408c9b7",
+      "title": "首都医科大学附属北京儿童医院2026年公开招聘公告（第三批）",
+      "organization": "首都之窗事业单位招聘",
+      "category": "事业单位",
+      "published_at": "2026-06-10",
+      "source_name": "首都之窗事业单位招聘",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260611_4695543.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+    },
+    {
+      "id": "756e4ebe5aa1cfff",
+      "title": "北京老年医院2026年公开招聘公告（第三批）",
+      "organization": "首都之窗事业单位招聘",
+      "category": "事业单位",
+      "published_at": "2026-06-10",
+      "source_name": "首都之窗事业单位招聘",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260611_4695552.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+    },
+    {
+      "id": "79b88d94af2dbb03",
+      "title": "北京市部分事业单位定向招聘2026年合同期满乡村振兴协理员公告",
+      "organization": "首都之窗事业单位招聘",
+      "category": "事业单位",
+      "published_at": "2026-06-10",
+      "source_name": "首都之窗事业单位招聘",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260611_4695531.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+    },
+    {
+      "id": "330f12e2256341c0",
+      "title": "北京市平谷区卫生健康委员会所属事业单位2026年第二次公开招聘工作人员公告",
+      "organization": "首都之窗事业单位招聘",
+      "category": "事业单位",
+      "published_at": "2026-06-09",
+      "source_name": "首都之窗事业单位招聘",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260610_4693645.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+    },
+    {
+      "id": "39dd9fc4be3ab2d4",
+      "title": "北京市园林绿化局所属事业单位公开招聘2026年出站博士后人员公告",
+      "organization": "首都之窗事业单位招聘",
+      "category": "事业单位",
+      "published_at": "2026-06-09",
+      "source_name": "首都之窗事业单位招聘",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260610_4693642.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+    },
+    {
+      "id": "515fde3683c3e5db",
+      "title": "北京经济技术开发区2026年教育领域第二批公开招聘事业单位工作人员公告",
+      "organization": "首都之窗事业单位招聘",
+      "category": "事业单位",
+      "published_at": "2026-06-08",
+      "source_name": "首都之窗事业单位招聘",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260609_4692112.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+    },
+    {
+      "id": "08b29e375b1f8125",
+      "title": "北京市海淀区卫生健康委所属事业单位2026年公开招聘医学定向生公告",
+      "organization": "首都之窗事业单位招聘",
+      "category": "事业单位",
+      "published_at": "2026-06-08",
+      "source_name": "首都之窗事业单位招聘",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260609_4692103.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+    },
+    {
+      "id": "45532c224026e8c1",
+      "title": "首都医科大学脑重大疾病研究中心（北京脑重大疾病研究院）2026年度公开招聘公告（第一批）",
+      "organization": "首都之窗事业单位招聘",
+      "category": "事业单位",
+      "published_at": "2026-06-04",
+      "source_name": "首都之窗事业单位招聘",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260605_4686910.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+    },
+    {
+      "id": "5480e9fdb707638b",
+      "title": "房山区教育委员会所属事业单位公开招聘专业技术人员的公告（三）",
+      "organization": "首都之窗事业单位招聘",
+      "category": "事业单位",
+      "published_at": "2026-06-03",
+      "source_name": "首都之窗事业单位招聘",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260604_4685248.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+    },
+    {
+      "id": "e2a35868fe0518b1",
+      "title": "北京清华长庚医院2026年度第三批公开招聘公告",
+      "organization": "首都之窗事业单位招聘",
+      "category": "事业单位",
+      "published_at": "2026-06-03",
+      "source_name": "首都之窗事业单位招聘",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/202606/t20260604_4685247.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+    },
+    {
+      "id": "afd5ac1b40a430fd",
+      "title": "北京市各级机关2026年度补充录用公务员公告",
+      "organization": "首都之窗公务员招考",
+      "category": "公务员",
+      "published_at": "2026-05-07",
+      "source_name": "首都之窗公务员招考",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202605/t20260508_4641288.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+    },
+    {
+      "id": "4ab1e893fb29edc3",
+      "title": "北京城市副中心党工委管委会关于2026年考试录用公务员拟录用人员公示公告",
+      "organization": "首都之窗公务员招考",
+      "category": "公务员",
+      "published_at": "2026-04-23",
+      "source_name": "首都之窗公务员招考",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202604/t20260423_4606333.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+    },
+    {
+      "id": "6e7b8adb41ef1174",
+      "title": "市委研究室关于2026年考试录用公务员拟录用人员公示公告",
+      "organization": "首都之窗公务员招考",
+      "category": "公务员",
+      "published_at": "2026-04-03",
+      "source_name": "首都之窗公务员招考",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202604/t20260403_4574494.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+    },
+    {
+      "id": "3aae59ba4c35adc1",
+      "title": "教育部2026年度考试录用公务员递补人员面试公告",
+      "organization": "教育部人事招聘通知",
+      "category": "中央机关重点单位",
+      "published_at": "2026-03-12",
+      "source_name": "教育部人事招聘通知",
+      "source_url": "http://www.moe.gov.cn/s78/A04/tongzhi/202603/t20260312_1430724.html",
+      "source_home": "https://www.moe.gov.cn/s78/A04/"
+    },
+    {
+      "id": "a53fcf2342027cd2",
+      "title": "教育部2026年度考试录用公务员面试公告",
+      "organization": "教育部人事招聘通知",
+      "category": "中央机关重点单位",
+      "published_at": "2026-02-26",
+      "source_name": "教育部人事招聘通知",
+      "source_url": "http://www.moe.gov.cn/s78/A04/tongzhi/202602/t20260226_1429256.html",
+      "source_home": "https://www.moe.gov.cn/s78/A04/"
+    },
+    {
+      "id": "db08c94c5ec86df3",
+      "title": "北京市2026年度定向选调应届优秀大学毕业生补录公告",
+      "organization": "首都之窗公务员招考",
+      "category": "公务员",
+      "published_at": "2026-02-26",
+      "source_name": "首都之窗公务员招考",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202602/t20260226_4541778.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+    },
+    {
+      "id": "ae0cce3484d059c4",
+      "title": "中共北京市委城市副中心工作委员会、北京城市副中心管理委员会2026年度考试录用公务员面试公告",
+      "organization": "首都之窗公务员招考",
+      "category": "公务员",
+      "published_at": "2026-01-21",
+      "source_name": "首都之窗公务员招考",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202601/t20260122_4455477.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+    },
+    {
+      "id": "3b10305e3816f574",
+      "title": "北京市委研究室2026年度考试录用公务员面试公告",
+      "organization": "首都之窗公务员招考",
+      "category": "公务员",
+      "published_at": "2026-01-20",
+      "source_name": "首都之窗公务员招考",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202601/t20260120_4449839.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+    },
+    {
+      "id": "9571e0a3421c937a",
+      "title": "关于教育部2026年度考试录用公务员笔试成绩入围考生材料审核的通知",
+      "organization": "教育部人事招聘通知",
+      "category": "中央机关重点单位",
+      "published_at": "2026-01-15",
+      "source_name": "教育部人事招聘通知",
+      "source_url": "http://www.moe.gov.cn/s78/A04/tongzhi/202601/t20260115_1426701.html",
+      "source_home": "https://www.moe.gov.cn/s78/A04/"
+    },
+    {
+      "id": "7720c089a93bea69",
+      "title": "北京市各级机关2026年度考试录用公务员调剂职位表",
+      "organization": "首都之窗公务员招考",
+      "category": "公务员",
+      "published_at": "2026-01-12",
+      "source_name": "首都之窗公务员招考",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202601/t20260112_4422239.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+    },
+    {
+      "id": "134b123f785f2441",
+      "title": "北京市各级机关2026年度考试录用公务员笔试合格分数线",
+      "organization": "首都之窗公务员招考",
+      "category": "公务员",
+      "published_at": "2026-01-05",
+      "source_name": "首都之窗公务员招考",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202601/t20260105_4400092.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+    },
+    {
+      "id": "c02928d1aeef231f",
+      "title": "关于北京市各级机关2026年度考试录用公务员资格复审、调剂和面试有关事项的通知",
+      "organization": "首都之窗公务员招考",
+      "category": "公务员",
+      "published_at": "2026-01-05",
+      "source_name": "首都之窗公务员招考",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202601/t20260105_4400098.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+    },
+    {
+      "id": "ce1a1efee9f78ae8",
+      "title": "中共北京市委城市副中心工作委员会、北京城市副中心管理委员会关于2025年公开选调公务员拟选调人员公示公告",
+      "organization": "首都之窗公务员招考",
+      "category": "公务员",
+      "published_at": "2025-12-23",
+      "source_name": "首都之窗公务员招考",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202512/t20251223_4358246.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+    },
+    {
+      "id": "05d54120e03ac8c3",
+      "title": "中共北京市委研究室2026年度定向选调应届优秀大学毕业生拟录用人员公示公告",
+      "organization": "首都之窗公务员招考",
+      "category": "公务员",
+      "published_at": "2025-12-12",
+      "source_name": "首都之窗公务员招考",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202512/t20251212_4338268.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+    },
+    {
+      "id": "16e4485016a26afe",
+      "title": "北京大兴国际机场临空经济区联合管理委员会“优培计划”招聘应届优秀大学毕业生拟录用人员公示公告",
+      "organization": "首都之窗公务员招考",
+      "category": "公务员",
+      "published_at": "2025-12-09",
+      "source_name": "首都之窗公务员招考",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202512/t20251209_4329588.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+    },
+    {
+      "id": "1600f6428b5bd976",
+      "title": "市委军民融合办2025年度公开遴选公务员面试公告",
+      "organization": "首都之窗公务员招考",
+      "category": "公务员",
+      "published_at": "2025-11-14",
+      "source_name": "首都之窗公务员招考",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202511/t20251114_4280584.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+    },
+    {
+      "id": "7ff7670e8428b846",
+      "title": "北京市人民政府参事室（北京市文史研究馆）2025年度公开遴选公务员面试公告",
+      "organization": "首都之窗公务员招考",
+      "category": "公务员",
+      "published_at": "2025-11-14",
+      "source_name": "首都之窗公务员招考",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202511/t20251114_4280950.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+    },
+    {
+      "id": "5da5ba9c79a16ccf",
+      "title": "北京市各级机关2026年度考试录用公务员公告",
+      "organization": "首都之窗公务员招考",
+      "category": "公务员",
+      "published_at": "2025-11-10",
+      "source_name": "首都之窗公务员招考",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202511/t20251110_4267508.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+    },
+    {
+      "id": "1e98e0221f570637",
+      "title": "北京市公安局2026年度面向社会招录人民警察公告",
+      "organization": "首都之窗公务员招考",
+      "category": "公务员",
+      "published_at": "2025-11-10",
+      "source_name": "首都之窗公务员招考",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202511/t20251111_4272377.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+    },
+    {
+      "id": "cd5202e706ab625f",
+      "title": "关于教育部2026年度公务员考录职位要求的说明",
+      "organization": "教育部人事招聘通知",
+      "category": "中央机关重点单位",
+      "published_at": "2025-10-15",
+      "source_name": "教育部人事招聘通知",
+      "source_url": "http://www.moe.gov.cn/s78/A04/tongzhi/202510/t20251015_1416829.html",
+      "source_home": "https://www.moe.gov.cn/s78/A04/"
+    },
+    {
+      "id": "0b62f379338f9a72",
+      "title": "北京市2025年度公开遴选和公开选调公务员公告",
+      "organization": "首都之窗公务员招考",
+      "category": "公务员",
+      "published_at": "2025-10-11",
+      "source_name": "首都之窗公务员招考",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202510/t20251011_4220819.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+    },
+    {
+      "id": "22f54b6f51272ae8",
+      "title": "关于北京市各级机关2025年度考试录用公务员资格复审、调剂和面试有关事项的通知",
+      "organization": "首都之窗公务员招考",
+      "category": "公务员",
+      "published_at": "2025-01-08",
+      "source_name": "首都之窗公务员招考",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202501/t20250108_3983619.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+    },
+    {
+      "id": "ca11c57676cd1dd6",
+      "title": "北京市商务局关于2024年公开遴选公务员拟遴选人员公示公告",
+      "organization": "首都之窗公务员招考",
+      "category": "公务员",
+      "published_at": "2024-12-11",
+      "source_name": "首都之窗公务员招考",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202412/t20241213_3964919.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+    },
+    {
+      "id": "09197e13a659d82d",
+      "title": "北京市商务局2025年度定向选调招聘应届优秀大学毕业生拟录用人员公示公告",
+      "organization": "首都之窗公务员招考",
+      "category": "公务员",
+      "published_at": "2024-12-05",
+      "source_name": "首都之窗公务员招考",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202412/t20241205_3957744.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+    },
+    {
+      "id": "74f6205ddff2ffe4",
+      "title": "中共北京市委研究室2025年度定向选调应届优秀大学毕业生拟录用人员公示公告",
+      "organization": "首都之窗公务员招考",
+      "category": "公务员",
+      "published_at": "2024-12-03",
+      "source_name": "首都之窗公务员招考",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202412/t20241203_3955361.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+    },
+    {
+      "id": "2145f99dfe36e3fb",
+      "title": "北京市商务局2024年度公开遴选公务员面试公告",
+      "organization": "首都之窗公务员招考",
+      "category": "公务员",
+      "published_at": "2024-11-19",
+      "source_name": "首都之窗公务员招考",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202411/t20241121_3947130.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+    },
+    {
+      "id": "594369f4d2321e0d",
+      "title": "北京市各级机关2025年度考试录用公务员公告",
+      "organization": "首都之窗公务员招考",
+      "category": "公务员",
+      "published_at": "2024-11-12",
+      "source_name": "首都之窗公务员招考",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202411/t20241112_3939341.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+    },
+    {
+      "id": "bd2f276279a27a3f",
+      "title": "北京市2024年度公开遴选和公开选调公务员公告",
+      "organization": "首都之窗公务员招考",
+      "category": "公务员",
+      "published_at": "2024-10-18",
+      "source_name": "首都之窗公务员招考",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202410/t20241018_3923226.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+    },
+    {
+      "id": "b5f194a1bfaecf84",
+      "title": "中央机关及其直属机构2025年度考试录用公务员公告",
+      "organization": "首都之窗公务员招考",
+      "category": "公务员",
+      "published_at": "2024-10-14",
+      "source_name": "首都之窗公务员招考",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/202410/t20241015_3920567.html",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+    },
+    {
+      "id": "d685534536db8013",
+      "title": "社会招聘",
+      "organization": "字节跳动招聘",
+      "category": "互联网大厂",
+      "published_at": "",
+      "source_name": "字节跳动招聘",
+      "source_url": "https://jobs.bytedance.com/",
+      "source_home": "https://jobs.bytedance.com/campus/"
+    },
+    {
+      "id": "53cd7d65e6c6ad6c",
+      "title": "社会招聘",
+      "organization": "京东招聘",
+      "category": "互联网大厂",
+      "published_at": "",
+      "source_name": "京东招聘",
+      "source_url": "https://zhaopin.jd.com/web/job/job_info_list/3",
+      "source_home": "https://zhaopin.jd.com/"
+    },
+    {
+      "id": "72952f40b77bdfde",
+      "title": "机关公务员招录",
+      "organization": "教育部人事招聘通知",
+      "category": "中央机关重点单位",
+      "published_at": "",
+      "source_name": "教育部人事招聘通知",
+      "source_url": "http://www.moe.gov.cn/s78/A04/gongzuo/moe_450/",
+      "source_home": "https://www.moe.gov.cn/s78/A04/"
+    },
+    {
+      "id": "96b46c7a20469f69",
+      "title": "外交部2026年度考试录用公务员专业能力测试和面试公告",
+      "organization": "外交部公务员考试录用",
+      "category": "中央机关重点单位",
+      "published_at": "",
+      "source_name": "外交部公务员考试录用",
+      "source_url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/tzgg_660725/202601/t20260114_11812712.shtml",
+      "source_home": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/"
+    },
+    {
+      "id": "0766750ede5ee969",
+      "title": "外交部2026年度公开遴选和公开选调公务员职位业务水平测试和面试公告",
+      "organization": "外交部公务员考试录用",
+      "category": "中央机关重点单位",
+      "published_at": "",
+      "source_name": "外交部公务员考试录用",
+      "source_url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/tzgg_660725/202601/t20260123_11844576.shtml",
+      "source_home": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/"
+    },
+    {
+      "id": "4dc29e424326d42b",
+      "title": "外交部2026年度公务员考试录用工作有关说明及注意事项",
+      "organization": "外交部公务员考试录用",
+      "category": "中央机关重点单位",
+      "published_at": "",
+      "source_name": "外交部公务员考试录用",
+      "source_url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/tzgg_660725/202510/t20251014_11732434.shtml",
+      "source_home": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/"
+    },
+    {
+      "id": "16a0b8cfc31fd9aa",
+      "title": "外交部2026年度公务员考录常见问题解答",
+      "organization": "外交部公务员考试录用",
+      "category": "中央机关重点单位",
+      "published_at": "",
+      "source_name": "外交部公务员考试录用",
+      "source_url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/bkzn_660695/202510/t20251014_11732448.shtml",
+      "source_home": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/"
+    },
+    {
+      "id": "073d719c3d792a1c",
+      "title": "外交部2026年度公务员录用计划表",
+      "organization": "外交部公务员考试录用",
+      "category": "中央机关重点单位",
+      "published_at": "",
+      "source_name": "外交部公务员考试录用",
+      "source_url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/tzgg_660725/202510/P020251014531383868103.pdf",
+      "source_home": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/"
+    },
+    {
+      "id": "9b1caaba50ab88d9",
+      "title": "外交部2026年公务员考试录用各用人司局考生咨询电话",
+      "organization": "外交部公务员考试录用",
+      "category": "中央机关重点单位",
+      "published_at": "",
+      "source_name": "外交部公务员考试录用",
+      "source_url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/tzgg_660725/202510/t20251009_11724245.shtml",
+      "source_home": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/"
+    },
+    {
+      "id": "d90c5acc08e6765d",
+      "title": "外交部2025年度国家公务员考试录用结果",
+      "organization": "外交部公务员考试录用",
+      "category": "中央机关重点单位",
+      "published_at": "",
+      "source_name": "外交部公务员考试录用",
+      "source_url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/tzgg_660725/202506/t20250623_11655302.shtml",
+      "source_home": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/"
+    },
+    {
+      "id": "78de5ba81b38f9da",
+      "title": "外交部2025年度公务员考录常见问题解答",
+      "organization": "外交部公务员考试录用",
+      "category": "中央机关重点单位",
+      "published_at": "",
+      "source_name": "外交部公务员考试录用",
+      "source_url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/bkzn_660695/202501/t20250105_11527184.shtml",
+      "source_home": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/"
+    },
+    {
+      "id": "b9133e507669d207",
+      "title": "外交部2024年度公务员考录常见问题解答",
+      "organization": "外交部公务员考试录用",
+      "category": "中央机关重点单位",
+      "published_at": "",
+      "source_name": "外交部公务员考试录用",
+      "source_url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/bkzn_660695/202310/t20231013_11160617.shtml",
+      "source_home": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/"
+    },
+    {
+      "id": "0d6f47eab65e1cbf",
+      "title": "外交部2023年度公务员考录常见问题解答",
+      "organization": "外交部公务员考试录用",
+      "category": "中央机关重点单位",
+      "published_at": "",
+      "source_name": "外交部公务员考试录用",
+      "source_url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/bkzn_660695/202210/t20221022_10790411.shtml",
+      "source_home": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/"
+    },
+    {
+      "id": "b1b019e49e517669",
+      "title": "外交部2022年度公务员考录常见问题解答",
+      "organization": "外交部公务员考试录用",
+      "category": "中央机关重点单位",
+      "published_at": "",
+      "source_name": "外交部公务员考试录用",
+      "source_url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/bkzn_660695/202110/t20211014_9552884.shtml",
+      "source_home": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/"
+    },
+    {
+      "id": "5329946d8abbe515",
+      "title": "外交部2021年公务员考录常见问题解答",
+      "organization": "外交部公务员考试录用",
+      "category": "中央机关重点单位",
+      "published_at": "",
+      "source_name": "外交部公务员考试录用",
+      "source_url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/bkzn_660695/202010/t20201014_9277455.shtml",
+      "source_home": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/"
+    },
+    {
+      "id": "330ee0f0c571d0b2",
+      "title": "关于进一步做好公务员录用考试管理工作的通知",
+      "organization": "外交部公务员考试录用",
+      "category": "中央机关重点单位",
+      "published_at": "",
+      "source_name": "外交部公务员考试录用",
+      "source_url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/zcfg_660729/202110/t20211025_9982491.shtml",
+      "source_home": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/"
+    },
+    {
+      "id": "e1e75a624cb1ad86",
+      "title": "关于外交部2026年度公开遴选和公开选调公务员职位业务水平测试和面试报名确认等事项的公告",
+      "organization": "外交部公务员考试录用",
+      "category": "中央机关重点单位",
+      "published_at": "",
+      "source_name": "外交部公务员考试录用",
+      "source_url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/tzgg_660725/202601/t20260119_11815349.shtml",
+      "source_home": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/"
+    },
+    {
+      "id": "9f2d656451461a75",
+      "title": "关于印发公务员录用体检特殊标准（试行）的通知",
+      "organization": "外交部公务员考试录用",
+      "category": "中央机关重点单位",
+      "published_at": "",
+      "source_name": "外交部公务员考试录用",
+      "source_url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/zcfg_660729/202110/t20211025_9982490.shtml",
+      "source_home": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/"
+    },
+    {
+      "id": "063457f0c0494f96",
+      "title": "公务员招考",
+      "organization": "首都之窗公务员招考",
+      "category": "公务员",
+      "published_at": "",
+      "source_name": "首都之窗公务员招考",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html"
+    },
+    {
+      "id": "497b05be395a27a2",
+      "title": "京东招聘",
+      "organization": "京东招聘",
+      "category": "互联网大厂",
+      "published_at": "",
+      "source_name": "京东招聘",
+      "source_url": "https://zhaopin.jd.com/home",
+      "source_home": "https://zhaopin.jd.com/"
+    },
+    {
+      "id": "e51be5b9a2b558ae",
+      "title": "事业单位招聘",
+      "organization": "首都之窗事业单位招聘",
+      "category": "事业单位",
+      "published_at": "",
+      "source_name": "首都之窗事业单位招聘",
+      "source_url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/",
+      "source_home": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/"
+    },
+    {
+      "id": "21436f27308d6fcb",
+      "title": "中央机关及其直属机构2026年度考试录用公务员相关公告（转载）",
+      "organization": "外交部公务员考试录用",
+      "category": "中央机关重点单位",
+      "published_at": "",
+      "source_name": "外交部公务员考试录用",
+      "source_url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/tzgg_660725/202510/t20251009_11724259.shtml",
+      "source_home": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/"
+    }
+  ]
+}

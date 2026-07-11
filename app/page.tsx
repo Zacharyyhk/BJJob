@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import collected from "../data/collected/bj-rsj.json";
+import otherSources from "../data/collected/other-sources.json";
 
 type Position = {
   organization?: string;
@@ -41,6 +42,8 @@ type Job = Position & {
   deadline: string;
   sourceUrl: string;
   isNotice: boolean;
+  sourceName: string;
+  sourceGroup: string;
 };
 
 const notices = collected.notices as Notice[];
@@ -58,6 +61,8 @@ const jobs: Job[] = notices.flatMap<Job>((notice): Job[] => {
       deadline: notice.deadline,
       sourceUrl: notice.source_url,
       isNotice: true,
+      sourceName: "北京市人社局事业单位公开招聘",
+      sourceGroup: "事业单位",
     }];
   }
   return notice.positions.map((position, index) => ({
@@ -70,8 +75,27 @@ const jobs: Job[] = notices.flatMap<Job>((notice): Job[] => {
     deadline: notice.deadline,
     sourceUrl: notice.source_url,
     isNotice: false,
+    sourceName: "北京市人社局事业单位公开招聘",
+    sourceGroup: "事业单位",
   }));
 });
+
+const otherJobs: Job[] = otherSources.items.map((item) => ({
+  id: item.id,
+  title: item.title,
+  organization: item.organization,
+  noticeTitle: item.title,
+  publisher: item.organization,
+  publishedAt: item.published_at,
+  applicationStartAt: "",
+  deadline: "",
+  sourceUrl: item.source_url,
+  isNotice: true,
+  sourceName: item.source_name,
+  sourceGroup: item.category,
+}));
+
+const allJobs = [...jobs, ...otherJobs];
 
 function daysUntil(value: string) {
   if (!value) return null;
@@ -146,6 +170,7 @@ export default function Home() {
   const [education, setEducation] = useState("全部学历");
   const [sort, setSort] = useState("即将截止");
   const [profileFilter, setProfileFilter] = useState("全部岗位");
+  const [sourceGroup, setSourceGroup] = useState("全部来源");
   const [savedOnly, setSavedOnly] = useState(false);
   const [saved, setSaved] = useState<string[]>([]);
   const [visibleCount, setVisibleCount] = useState(40);
@@ -162,7 +187,7 @@ export default function Home() {
 
   const filtered = useMemo(() => {
     const keyword = query.trim().toLowerCase();
-    const result = jobs.filter((job) => {
+    const result = allJobs.filter((job) => {
       const text = [job.title, job.organization, job.major, job.education, job.requirements, job.applicant_type, job.household, job.noticeTitle].join(" ").toLowerCase();
       const expired = (daysUntil(job.deadline) ?? 1) < 0;
       const profileMatch = matchForProfile(job);
@@ -170,6 +195,7 @@ export default function Home() {
         && (status === "全部" || (status === "进行中" ? !expired : expired))
         && (education === "全部学历" || (job.education || "").includes(education))
         && (profileFilter === "全部岗位" || (profileFilter === "适合我" ? profileMatch.level !== "no" : profileMatch.level === "match"))
+        && (sourceGroup === "全部来源" || job.sourceGroup === sourceGroup)
         && (!savedOnly || saved.includes(job.id));
     });
     return result.sort((a, b) => {
@@ -178,12 +204,12 @@ export default function Home() {
       const bTime = b.deadline ? new Date(b.deadline).getTime() : Number.MAX_SAFE_INTEGER;
       return aTime - bTime;
     });
-  }, [query, status, education, sort, profileFilter, savedOnly, saved]);
+  }, [query, status, education, sort, profileFilter, sourceGroup, savedOnly, saved]);
 
-  useEffect(() => setVisibleCount(40), [query, status, education, sort, profileFilter, savedOnly]);
+  useEffect(() => setVisibleCount(40), [query, status, education, sort, profileFilter, sourceGroup, savedOnly]);
 
-  const activeCount = jobs.filter((job) => (daysUntil(job.deadline) ?? 1) >= 0).length;
-  const profileCount = jobs.filter((job) => matchForProfile(job).level !== "no").length;
+  const activeCount = allJobs.filter((job) => (daysUntil(job.deadline) ?? 1) >= 0).length;
+  const profileCount = allJobs.filter((job) => matchForProfile(job).level !== "no").length;
   const updated = new Date(collected.generated_at);
 
   return (
@@ -205,6 +231,9 @@ export default function Home() {
         </select>
         <select value={profileFilter} onChange={(event) => setProfileFilter(event.target.value)} aria-label="个人条件匹配">
           <option>全部岗位</option><option>适合我</option><option>明确符合</option>
+        </select>
+        <select value={sourceGroup} onChange={(event) => setSourceGroup(event.target.value)} aria-label="来源类别">
+          <option>全部来源</option><option>事业单位</option><option>公务员</option><option>央企国企</option><option>中央机关重点单位</option><option>互联网大厂</option>
         </select>
         <select value={education} onChange={(event) => setEducation(event.target.value)} aria-label="学历要求">
           <option>全部学历</option><option>本科</option><option>硕士</option><option>博士</option><option>大专</option>
@@ -231,6 +260,7 @@ export default function Home() {
             </div>
 
             <div className="match-reasons">{match.reasons.map((reason) => <span key={reason}>{reason}</span>)}</div>
+            <div className="source-name">{job.sourceName}</div>
 
             <div className="facts">
               {job.headcount && <span>招 {job.headcount} 人</span>}
@@ -258,7 +288,11 @@ export default function Home() {
       {!filtered.length && <div className="empty">没有符合条件的职位</div>}
       {visibleCount < filtered.length && <button className="more" onClick={() => setVisibleCount(visibleCount + 40)}>再显示 40 个</button>}
 
-      <div className="data-note">数据来自北京市人社局公开招聘公告，最终信息以原公告和附件为准。</div>
+      <details className="source-report">
+        <summary>数据源状态：已采集 {otherSources.collected_source_count} · 待专用适配 {otherSources.needs_adapter_count} · 暂不可用 {otherSources.unavailable_count}</summary>
+        <div>{otherSources.sources.map((source) => <span key={source.source_id}>{source.source_name}：{source.status === "collected" ? `${source.item_count}条` : source.status === "needs-adapter" ? "待适配" : "不可用"}</span>)}</div>
+      </details>
+      <div className="data-note">自动整理公开招聘信息，最终条件以原公告和附件为准。</div>
     </main>
   );
 }
