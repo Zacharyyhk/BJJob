@@ -49,7 +49,7 @@ def main() -> int:
     previous = analysis.get("results", {})
     pending = []
     for job in jobs():
-        content_hash = digest({"job": job, "profile": profile, "prompt_version": 1})
+        content_hash = digest({"job": job, "profile": profile, "prompt_version": 3})
         if previous.get(job["id"], {}).get("content_hash") == content_hash:
             continue
         pending.append({"id": job["id"], "content_hash": content_hash, "job": job})
