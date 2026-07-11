@@ -97,6 +97,10 @@ const otherJobs: Job[] = otherSources.items.map((item) => ({
 
 const allJobs = [...jobs, ...otherJobs];
 
+function unitName(job: Job) {
+  return (job.organization || job.publisher || job.sourceName || "单位未注明").trim();
+}
+
 function daysUntil(value: string) {
   if (!value) return null;
   return Math.ceil((new Date(value).getTime() - Date.now()) / 86400000);
@@ -171,6 +175,7 @@ export default function Home() {
   const [sort, setSort] = useState("即将截止");
   const [profileFilter, setProfileFilter] = useState("全部岗位");
   const [sourceGroup, setSourceGroup] = useState("全部来源");
+  const [unit, setUnit] = useState("全部单位");
   const [savedOnly, setSavedOnly] = useState(false);
   const [saved, setSaved] = useState<string[]>([]);
   const [visibleCount, setVisibleCount] = useState(40);
@@ -185,6 +190,18 @@ export default function Home() {
     localStorage.setItem("beijing-job-saved", JSON.stringify(next));
   };
 
+  const unitOptions = useMemo(() => {
+    const names = allJobs
+      .filter((job) => sourceGroup === "全部来源" || job.sourceGroup === sourceGroup)
+      .map(unitName)
+      .filter((name) => name !== "单位未注明");
+    return [...new Set(names)].sort((a, b) => a.localeCompare(b, "zh-CN"));
+  }, [sourceGroup]);
+
+  useEffect(() => {
+    if (unit !== "全部单位" && !unitOptions.includes(unit)) setUnit("全部单位");
+  }, [unit, unitOptions]);
+
   const filtered = useMemo(() => {
     const keyword = query.trim().toLowerCase();
     const result = allJobs.filter((job) => {
@@ -196,6 +213,7 @@ export default function Home() {
         && (education === "全部学历" || (job.education || "").includes(education))
         && (profileFilter === "全部岗位" || (profileFilter === "适合我" ? profileMatch.level !== "no" : profileMatch.level === "match"))
         && (sourceGroup === "全部来源" || job.sourceGroup === sourceGroup)
+        && (unit === "全部单位" || unitName(job) === unit)
         && (!savedOnly || saved.includes(job.id));
     });
     return result.sort((a, b) => {
@@ -204,9 +222,9 @@ export default function Home() {
       const bTime = b.deadline ? new Date(b.deadline).getTime() : Number.MAX_SAFE_INTEGER;
       return aTime - bTime;
     });
-  }, [query, status, education, sort, profileFilter, sourceGroup, savedOnly, saved]);
+  }, [query, status, education, sort, profileFilter, sourceGroup, unit, savedOnly, saved]);
 
-  useEffect(() => setVisibleCount(40), [query, status, education, sort, profileFilter, sourceGroup, savedOnly]);
+  useEffect(() => setVisibleCount(40), [query, status, education, sort, profileFilter, sourceGroup, unit, savedOnly]);
 
   const activeCount = allJobs.filter((job) => (daysUntil(job.deadline) ?? 1) >= 0).length;
   const profileCount = allJobs.filter((job) => matchForProfile(job).level !== "no").length;
@@ -234,6 +252,10 @@ export default function Home() {
         </select>
         <select value={sourceGroup} onChange={(event) => setSourceGroup(event.target.value)} aria-label="来源类别">
           <option>全部来源</option><option>事业单位</option><option>公务员</option><option>央企国企</option><option>中央机关重点单位</option><option>互联网大厂</option>
+        </select>
+        <select value={unit} onChange={(event) => setUnit(event.target.value)} aria-label="单位或公司">
+          <option>全部单位</option>
+          {unitOptions.map((name) => <option key={name} value={name}>{name}</option>)}
         </select>
         <select value={education} onChange={(event) => setEducation(event.target.value)} aria-label="学历要求">
           <option>全部学历</option><option>本科</option><option>硕士</option><option>博士</option><option>大专</option>
