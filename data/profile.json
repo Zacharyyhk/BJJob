@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "gender": "女",
   "household_registration": "非北京户口",
   "graduation_year": 2027,
@@ -8,5 +8,12 @@
   "master_school": "华东师范大学",
   "school_tags": ["985", "211", "双一流"],
   "major_category": "设计类",
+  "major_catalog_matches": [
+    {"catalog": "2018", "code": "1305", "name": "设计学"},
+    {"catalog": "2022", "code": "1357", "name": "设计"}
+  ],
+  "major_catalog_conditional": [
+    {"catalog": "2022", "code": "1301", "name": "艺术学", "condition": "招聘条件明确包含设计方向"}
+  ],
   "political_status": "中共党员"
 }
