@@ -3,70 +3,70 @@
   "notices": {
     "https://rsj.beijing.gov.cn/xxgk/gkzp/202607/t20260710_4756650.html": {
       "content_hash": "41618f2d024e5100b73a517cf8b75e5e40a1653a5c6343d4a8afd4ec1dd1c9d4",
-      "last_checked_at": "2026-07-12T17:48:55+08:00",
+      "last_checked_at": "2026-07-12T19:39:04+08:00",
       "published_at": "2026-07-10"
     },
     "https://rsj.beijing.gov.cn/xxgk/gkzp/202607/t20260710_4756640.html": {
       "content_hash": "5227e9fafb0f4f01b114d92f39fcae206f02fa28597b8f650c2920bb360ea35c",
-      "last_checked_at": "2026-07-12T17:48:55+08:00",
+      "last_checked_at": "2026-07-12T19:39:12+08:00",
       "published_at": "2026-07-10"
     },
     "https://rsj.beijing.gov.cn/xxgk/gkzp/202607/t20260710_4756608.html": {
       "content_hash": "2f1af7b2f65d823630af26bd9e77879be06370b3380390e576d045cc501b30ad",
-      "last_checked_at": "2026-07-12T17:48:56+08:00",
+      "last_checked_at": "2026-07-12T19:39:19+08:00",
       "published_at": "2026-07-10"
     },
     "https://rsj.beijing.gov.cn/xxgk/gkzp/202607/t20260710_4756592.html": {
       "content_hash": "2f9ec9b7ed2c005399bb8e216e806fff45315dbd31fe7b22696728db6cd8fb84",
-      "last_checked_at": "2026-07-12T17:48:57+08:00",
+      "last_checked_at": "2026-07-12T19:39:29+08:00",
       "published_at": "2026-07-10"
     },
     "https://rsj.beijing.gov.cn/xxgk/gkzp/202607/t20260709_4753959.html": {
       "content_hash": "5d8b9bc55508f040a72d00ebd13c29b53ac1b9d9548590a98feaf676d4bfaa1e",
-      "last_checked_at": "2026-07-12T17:48:58+08:00",
+      "last_checked_at": "2026-07-12T19:39:35+08:00",
       "published_at": "2026-07-09"
     },
     "https://rsj.beijing.gov.cn/xxgk/gkzp/202607/t20260709_4753938.html": {
       "content_hash": "fcad77a82b5230d8abcd601d7cd992c49419060eabd20e35c708207292ec47ac",
-      "last_checked_at": "2026-07-12T17:48:59+08:00",
+      "last_checked_at": "2026-07-12T19:39:42+08:00",
       "published_at": "2026-07-09"
     },
     "https://rsj.beijing.gov.cn/xxgk/gkzp/202607/t20260709_4753924.html": {
       "content_hash": "7ffff6e28e4fd411213cfb778eb1ba98882ced491ab26c17028cd694fa393b60",
-      "last_checked_at": "2026-07-12T17:48:59+08:00",
+      "last_checked_at": "2026-07-12T19:39:52+08:00",
       "published_at": "2026-07-09"
     },
     "https://rsj.beijing.gov.cn/xxgk/gkzp/202607/t20260709_4753869.html": {
       "content_hash": "f41555ef0bc06af0e4c9fa0ca97102d67260cc0e91d28c6108f51ae6f09a0a15",
-      "last_checked_at": "2026-07-12T17:49:00+08:00",
+      "last_checked_at": "2026-07-12T19:40:00+08:00",
       "published_at": "2026-07-09"
     },
     "https://rsj.beijing.gov.cn/xxgk/gkzp/202607/t20260709_4753753.html": {
       "content_hash": "e560bf9770bbf8353307aaf0f6a2d1ad6055c221d5b0bfb60ccfed6215c153d4",
-      "last_checked_at": "2026-07-12T17:49:01+08:00",
+      "last_checked_at": "2026-07-12T19:40:06+08:00",
       "published_at": "2026-07-09"
     },
     "https://rsj.beijing.gov.cn/xxgk/gkzp/202607/t20260707_4750512.html": {
       "content_hash": "4e5cfc952ab0155d636b55d2394aa3c09991c58b75b87daafa575ab8bca7e889",
-      "last_checked_at": "2026-07-12T17:49:02+08:00",
+      "last_checked_at": "2026-07-12T19:40:12+08:00",
       "published_at": "2026-07-07"
     },
     "https://rsj.beijing.gov.cn/xxgk/gkzp/202607/t20260707_4750496.html": {
       "content_hash": "77772c1e3952895ffa1f6a524d515be0fd66e94ed75549907e5ac31d8616b161",
-      "last_checked_at": "2026-07-12T17:49:03+08:00",
+      "last_checked_at": "2026-07-12T19:40:20+08:00",
       "published_at": "2026-07-07"
     },
     "https://rsj.beijing.gov.cn/xxgk/gkzp/202607/t20260706_4749371.html": {
       "content_hash": "280bf180a21b6df24b53999ce8b5435673e8e79f7472aa6d2174370184a68169",
-      "last_checked_at": "2026-07-12T17:49:04+08:00",
+      "last_checked_at": "2026-07-12T19:40:28+08:00",
       "published_at": "2026-07-06"
     }
   },
-  "last_run_at": "2026-07-12T17:49:04+08:00",
+  "last_run_at": "2026-07-12T19:40:28+08:00",
   "last_run_summary": {
-    "created": 12,
+    "created": 0,
     "updated": 0,
-    "unchanged": 0,
+    "unchanged": 12,
     "failed": 0
   }
 }
