@@ -55,7 +55,7 @@ type Job = Position & {
   establishmentType: string;
 };
 
-type MatchResult = { level: "match" | "possible" | "no"; label: string; reasons: string[] };
+type MatchResult = { level: "match" | "possible" | "no"; label: string; reasons: string[]; needsConfirmation: string[] };
 
 type AiMatch = {
   match_level: "match" | "possible" | "no";
@@ -202,10 +202,15 @@ function statusLabel(deadline: string) {
 function matchForProfile(job: Job): MatchResult {
   const ai = aiResults[job.id];
   if (ai) {
-    const reasons = [...(ai.reasons || []), ...(ai.conflicts || []), ...(ai.needs_confirmation || [])].slice(0, 6);
-    return { level: ai.match_level, label: ai.label || (ai.match_level === "match" ? "符合" : ai.match_level === "no" ? "不符合" : "需确认"), reasons };
+    const reasons = [...(ai.reasons || []), ...(ai.conflicts || [])].slice(0, 6);
+    return {
+      level: ai.match_level,
+      label: ai.label || (ai.match_level === "match" ? "符合" : ai.match_level === "no" ? "不符合" : "需确认"),
+      reasons,
+      needsConfirmation: (ai.needs_confirmation || []).slice(0, 3),
+    };
   }
-  return { level: "possible", label: "待分析", reasons: ["等待 Codex 语义分析"] };
+  return { level: "possible", label: "待分析", reasons: [], needsConfirmation: ["等待大模型读取原始招聘信息"] };
 }
 
 const displayJobs = currentJobs.filter((job) => matchForProfile(job).level !== "no");
@@ -215,13 +220,16 @@ export default function Home() {
   const [education, setEducation] = useState("全部学历");
   const [sort, setSort] = useState("即将截止");
   const [profileFilter, setProfileFilter] = useState("全部岗位");
-  const [sourceGroup, setSourceGroup] = useState("全部来源");
+  const [sourceGroup, setSourceGroup] = useState("机关单位");
   const [establishment, setEstablishment] = useState("全部编制");
   const [unit, setUnit] = useState("全部单位");
   const [savedOnly, setSavedOnly] = useState(false);
   const [saved, setSaved] = useState<string[]>([]);
   const [visibleCount, setVisibleCount] = useState(40);
-  const supportsEstablishment = sourceGroup === "北京市机关单位" || sourceGroup === "中央机关单位";
+  const supportsEstablishment = sourceGroup === "机关单位" || sourceGroup === "北京市机关单位" || sourceGroup === "中央机关单位";
+  const matchesSourceGroup = (job: Job) => sourceGroup === "全部来源"
+    || (sourceGroup === "机关单位" && (job.sourceGroup === "北京市机关单位" || job.sourceGroup === "中央机关单位"))
+    || job.sourceGroup === sourceGroup;
 
   useEffect(() => {
     try { setSaved(JSON.parse(localStorage.getItem("beijing-job-saved") || "[]")); } catch { setSaved([]); }
@@ -235,7 +243,7 @@ export default function Home() {
 
   const unitOptions = useMemo(() => {
     const names = displayJobs
-      .filter((job) => sourceGroup === "全部来源" || job.sourceGroup === sourceGroup)
+      .filter(matchesSourceGroup)
       .filter((job) => establishment === "全部编制" || job.establishmentType === establishment)
       .map(unitName)
       .filter((name) => name !== "单位未注明");
@@ -258,7 +266,7 @@ export default function Home() {
       return (!keyword || text.includes(keyword))
         && (education === "全部学历" || (job.education || "").includes(education))
         && (profileFilter === "全部岗位" || (profileFilter === "适合我" ? profileMatch.level !== "no" : profileMatch.level === "match"))
-        && (sourceGroup === "全部来源" || job.sourceGroup === sourceGroup)
+        && matchesSourceGroup(job)
         && (establishment === "全部编制" || job.establishmentType === establishment)
         && (unit === "全部单位" || unitName(job) === unit)
         && (!savedOnly || saved.includes(job.id));
@@ -297,7 +305,7 @@ export default function Home() {
           <option>全部岗位</option><option>适合我</option><option>明确符合</option>
         </select>
         <select value={sourceGroup} onChange={(event) => setSourceGroup(event.target.value)} aria-label="来源类别">
-          <option>全部来源</option><option>互联网大厂</option><option>北京市机关单位</option><option>中央机关单位</option><option>央国企</option>
+          <option value="机关单位">机关单位（默认）</option><option>北京市机关单位</option><option>中央机关单位</option><option>互联网大厂</option><option>央国企</option><option>全部来源</option>
         </select>
         {supportsEstablishment && <select value={establishment} onChange={(event) => setEstablishment(event.target.value)} aria-label="编制类型">
           <option>全部编制</option><option>事业编制</option><option>公务员编制</option>
@@ -323,7 +331,10 @@ export default function Home() {
           return <article className="job" key={job.id}>
             <div className="job-top">
               <div>
-                <span className={`match ${match.level}`}>{match.label}</span>
+                <div className="match-line">
+                  <span className={`match ${match.level}`}>{match.label}</span>
+                  {match.level === "possible" && <span className="confirm-note">需确认：{match.needsConfirmation.join("；") || "公开信息不足"}</span>}
+                </div>
                 <h2>{job.title || job.noticeTitle}</h2>
                 <h3>{job.organization || job.publisher || "招聘单位见公告"}</h3>
               </div>
