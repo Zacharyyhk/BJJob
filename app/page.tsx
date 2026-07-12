@@ -230,6 +230,7 @@ export default function Home() {
   const [savedOnly, setSavedOnly] = useState(false);
   const [saved, setSaved] = useState<string[]>([]);
   const [visibleCount, setVisibleCount] = useState(40);
+  const supportsEstablishment = sourceGroup === "北京市机关单位" || sourceGroup === "中央机关单位";
 
   useEffect(() => {
     try { setSaved(JSON.parse(localStorage.getItem("beijing-job-saved") || "[]")); } catch { setSaved([]); }
@@ -253,6 +254,10 @@ export default function Home() {
   useEffect(() => {
     if (unit !== "全部单位" && !unitOptions.includes(unit)) setUnit("全部单位");
   }, [unit, unitOptions]);
+
+  useEffect(() => {
+    if (!supportsEstablishment && establishment !== "全部编制") setEstablishment("全部编制");
+  }, [supportsEstablishment, establishment]);
 
   const filtered = useMemo(() => {
     const keyword = query.trim().toLowerCase();
@@ -303,9 +308,9 @@ export default function Home() {
         <select value={sourceGroup} onChange={(event) => setSourceGroup(event.target.value)} aria-label="来源类别">
           <option>全部来源</option><option>互联网大厂</option><option>北京市机关单位</option><option>中央机关单位</option><option>央国企</option>
         </select>
-        <select value={establishment} onChange={(event) => setEstablishment(event.target.value)} aria-label="编制类型">
+        {supportsEstablishment && <select value={establishment} onChange={(event) => setEstablishment(event.target.value)} aria-label="编制类型">
           <option>全部编制</option><option>事业编制</option><option>公务员编制</option>
-        </select>
+        </select>}
         <select value={unit} onChange={(event) => setUnit(event.target.value)} aria-label="单位或公司">
           <option>全部单位</option>
           {unitOptions.map((name) => <option key={name} value={name}>{name}</option>)}
