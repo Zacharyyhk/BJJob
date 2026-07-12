@@ -8,6 +8,11 @@ SPEC = importlib.util.spec_from_file_location("collector", SCRIPT)
 collector = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(collector)
 
+OTHER_SCRIPT = pathlib.Path(__file__).parents[1] / "scripts" / "collect_other_sources.py"
+OTHER_SPEC = importlib.util.spec_from_file_location("other_collector", OTHER_SCRIPT)
+other_collector = importlib.util.module_from_spec(OTHER_SPEC)
+OTHER_SPEC.loader.exec_module(other_collector)
+
 
 class CollectorParsingTests(unittest.TestCase):
     def test_listing_is_deduplicated(self):
@@ -32,6 +37,19 @@ class CollectorParsingTests(unittest.TestCase):
         self.assertEqual(collector.canonical_key("专业要求"), "major")
         self.assertIsNone(collector.canonical_key("拟招聘岗位等级"))
         self.assertIsNone(collector.canonical_key("计划聘用人数与面试人选的确定比例"))
+
+    def test_mohrss_cookie_challenge(self):
+        html = ("EO_Bot_Ssid WTKkN:2994459411,bOYDu:43269009,"
+                "wyeCN:1143439771 (t,3612672000)")
+        self.assertEqual(other_collector.mohrss_challenge_cookies(html), {
+            "__tst_status": "4181168191#",
+            "EO_Bot_Ssid": "3612672000",
+        })
+
+    def test_other_workbook_does_not_treat_responsibilities_as_title(self):
+        self.assertEqual(other_collector.canonical_workbook_field("岗位名称"), "title")
+        self.assertEqual(other_collector.canonical_workbook_field("岗位职责"), "responsibilities")
+        self.assertIsNone(other_collector.canonical_workbook_field("专业工作经历"))
 
 
 if __name__ == "__main__":

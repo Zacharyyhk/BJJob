@@ -100,6 +100,17 @@
     "mode": "栏目页+详情页"
   },
   {
+    "id": "mohrss-central-institutions",
+    "name": "人社部中央和国家机关所属事业单位公开招聘服务平台",
+    "group": "中央机关重点单位",
+    "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/fwyd/SYkaoshizhaopin/zyhgjjgsydwgkzp/",
+    "priority": "P0",
+    "status": "已确认",
+    "schedule": "08:30,18:30",
+    "scope": "中央和国家机关所属事业单位公开招聘公告及高校毕业生招聘专栏",
+    "mode": "专用栏目适配器+详情页+附件"
+  },
+  {
     "id": "sasac-civil-service",
     "name": "国务院国资委人事招聘",
     "group": "中央机关重点单位",

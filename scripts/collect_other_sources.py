@@ -40,6 +40,7 @@ WORKBOOK_FIELDS = {
     "major": ("专业要求", "所学专业", "专业"),
     "applicant_type": ("招聘对象", "人员类别", "应聘人员类别"),
     "requirements": ("其他条件", "其它条件", "资格条件", "岗位要求", "任职要求"),
+    "responsibilities": ("岗位职责", "工作职责", "主要职责", "职责描述"),
 }
 
 
@@ -79,6 +80,18 @@ def same_site(base: str, candidate: str) -> bool:
     a = urlparse(base).netloc.removeprefix("www.")
     b = urlparse(candidate).netloc.removeprefix("www.")
     return b == a or b.endswith("." + a)
+
+
+def canonical_workbook_field(value: Any) -> str | None:
+    header = re.sub(r"\s+", "", clean(value))
+    exact_only = {"岗位", "专业", "学历", "学位"}
+    for field, aliases in WORKBOOK_FIELDS.items():
+        if any(
+            header == alias or (alias not in exact_only and alias in header and len(header) <= len(alias) + 5)
+            for alias in aliases
+        ):
+            return field
+    return None
 
 
 def parse_links(source: dict[str, Any], response: requests.Response, allow_external: bool = False,
@@ -152,11 +165,9 @@ def workbook_positions(content: bytes, attachment_url: str, notice: dict[str, An
         for index, row in enumerate(rows[:20]):
             mapped = {}
             for column, value in enumerate(row):
-                header = re.sub(r"\s+", "", clean(value))
-                for field, aliases in WORKBOOK_FIELDS.items():
-                    if any(header == alias or (alias in header and len(header) <= len(alias) + 5) for alias in aliases):
-                        mapped[column] = field
-                        break
+                field = canonical_workbook_field(value)
+                if field:
+                    mapped[column] = field
             if len(set(mapped.values())) >= 3 and ("title" in mapped.values() or "organization" in mapped.values()):
                 header_index, header_map = index, mapped
                 break
@@ -225,6 +236,46 @@ def yearly_civil_service(session: requests.Session, source: dict[str, Any]) -> t
             if items:
                 return items, "collected", response.url
     return [], "seasonal-inactive", response.url
+
+
+def mohrss_challenge_cookies(html: str) -> dict[str, str]:
+    """Decode the small arithmetic cookie challenge used by www.mohrss.gov.cn."""
+    if "EO_Bot_Ssid" not in html:
+        return {}
+    status = re.search(r"WTKkN:(\d+),bOYDu:(\d+).*?wyeCN:(\d+)", html)
+    session_id = re.search(r"\(t,(\d{8,13})\)", html)
+    if not status or not session_id:
+        raise RuntimeError("Unsupported mohrss.gov.cn cookie challenge")
+    return {
+        "__tst_status": f"{sum(int(value) for value in status.groups())}#",
+        "EO_Bot_Ssid": session_id.group(1),
+    }
+
+
+def mohrss_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[list[dict[str, str]], str, str]:
+    """Collect the two recruitment columns after satisfying the site's cookie challenge."""
+    response = session.get(source["url"], timeout=30, allow_redirects=True)
+    response.raise_for_status()
+    cookies = mohrss_challenge_cookies(response.text)
+    if cookies:
+        domain = urlparse(response.url).hostname
+        for name, value in cookies.items():
+            session.cookies.set(name, value, domain=domain)
+
+    found: dict[str, dict[str, Any]] = {}
+    final_url = response.url
+    for section in ("zpgg/", "gxbyszpzl/"):
+        section_source = {**source, "url": urljoin(source["url"], section)}
+        items, _, final_url = static_adapter(session, section_source)
+        for item in items:
+            article = re.search(r"/t\d+_(\d+)\.html(?:#(.+))?$", item["source_url"])
+            if not article:
+                continue
+            key = f"{article.group(1)}#{article.group(2) or ''}"
+            found.setdefault(key, item)
+
+    values = list(found.values())
+    return values, "collected" if values else "collected-empty", final_url
 
 
 def baidu_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[list[dict[str, str]], str, str]:
@@ -411,6 +462,7 @@ SPECIAL: dict[str, Callable[..., tuple[list[dict[str, str]], str, str]]] = {
     "bj-civil-service": lambda s, x: static_adapter(s, x, allow_external=True),
     "bj-exam-notices": lambda s, x: static_adapter(s, x),
     "national-civil-service-yearly": yearly_civil_service,
+    "mohrss-central-institutions": mohrss_adapter,
     "bj-sasac-jobs": lambda s, x: static_adapter(s, x, allow_external=True),
     "iguopin": lambda s, x: api_spa_adapter(s, x, "https://www.iguopin.com/api/jobs/v3/list"),
     "ggj-notices": lambda s, x: static_adapter(s, x),
