@@ -2,7 +2,7 @@
   "schema_version": 1,
   "profile_version": 2,
   "prompt_version": 3,
-  "generated_at": "2026-07-12T08:16:52.977102+00:00",
+  "generated_at": "2026-07-12T08:54:34.567732+00:00",
   "results": {
     "cf7cee89c85f25ab-hzgwxxb-3": {
       "content_hash": "6475344d7c6bcad38e6b6c75848d09e44ea2a85624dc4b5c5841c9d4f8fc8dfd",
@@ -84924,317 +84924,416 @@
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "e37643399c0c00de": {
-      "content_hash": "d88abf407ffa4b8533b603d20e75e1362d878662677fdb2f4c3803dba3fcea56",
+      "content_hash": "cc8b3269f087fb241928af2301977d96d386a81a526b73217914745e4e05c9dd",
       "match_level": "no",
       "label": "不符合",
-      "score": 14,
+      "score": 12,
       "normalized": {
         "organization": "交通运输部天津水运工程科学研究院",
         "title": "科研岗",
-        "location": "不明确",
-        "education": "不明确",
+        "location": "天津市滨海新区",
+        "education": "博士研究生",
         "majors": [
           "0810信息与通信工程、0812计算机科学与技术"
         ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": true,
         "political_status": "不明确",
         "gender_requirement": "不明确",
-        "responsibilities": "",
+        "responsibilities": "从事内河水运垂类大模型的开发，专业智能体的开发、应用等相关工作。",
         "deadline": ""
       },
-      "reasons": [],
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
       "conflicts": [
-        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向"
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
       ],
       "needs_confirmation": [],
       "evidence": [
         {
           "field": "专业",
           "quote": "0810信息与通信工程、0812计算机科学与技术"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "博士研究生"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "2733f0ff6c335969": {
-      "content_hash": "60959b7dfd6851a20d51d8d126413c0be772e28628fbb73a9ff58caccd3f5a5d",
+      "content_hash": "f094baf0c88089854c331fc5abb36a73f2967defd782a9396fb4db985b4d8b2c",
       "match_level": "no",
       "label": "不符合",
-      "score": 14,
+      "score": 12,
       "normalized": {
         "organization": "交通运输部天津水运工程科学研究院",
         "title": "科研岗",
-        "location": "不明确",
-        "education": "不明确",
+        "location": "天津市滨海新区",
+        "education": "博士研究生",
         "majors": [
           "0859土木水利，0824船舶与海洋工程、0812计算机科学与技术、0802机械工程、0811控制科学与工程"
         ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": true,
         "political_status": "不明确",
         "gender_requirement": "不明确",
-        "responsibilities": "",
+        "responsibilities": "从事水运工程高质量发展中的新质生产力研发，核心突破船岸水协同、AI波浪模型等技术难题。",
         "deadline": ""
       },
-      "reasons": [],
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
       "conflicts": [
-        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向"
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
       ],
       "needs_confirmation": [],
       "evidence": [
         {
           "field": "专业",
           "quote": "0859土木水利，0824船舶与海洋工程、0812计算机科学与技术、0802机械工程、0811控制科学与工程"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "博士研究生"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "a7738a08745841d3": {
-      "content_hash": "ff246cc41732dbebb2cadf5b0322787ccea9880b5ec4fa1a69e72110bc6c6d33",
+      "content_hash": "bb3eb274db80d5e92fd44d2b5eaa0a303b5554c8409f5c6c23b61a4e56bfd124",
       "match_level": "no",
       "label": "不符合",
-      "score": 14,
+      "score": 12,
       "normalized": {
         "organization": "交通运输部天津水运工程科学研究院",
         "title": "科研岗",
-        "location": "不明确",
-        "education": "不明确",
+        "location": "天津市滨海新区",
+        "education": "博士研究生",
         "majors": [
           "0812计算机科学与技术、0835软件工程"
         ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": true,
         "political_status": "不明确",
         "gender_requirement": "不明确",
-        "responsibilities": "",
+        "responsibilities": "从事智慧绿色航运多要素传感监测系统与数字孪生系统开发工作，负责多源传感要素数据处理算法研发，多源数据融合与解调；负责人工智能体的算法研发与系统软件开发工作，港口立体环境要素综合管控系统集成开发、及数据库开发维护，硬件自动控制编程、智能控制技术研发。",
         "deadline": ""
       },
-      "reasons": [],
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
       "conflicts": [
-        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向"
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
       ],
       "needs_confirmation": [],
       "evidence": [
         {
           "field": "专业",
           "quote": "0812计算机科学与技术、0835软件工程"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "博士研究生"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "c45b715ef073d14a": {
-      "content_hash": "6a555b5ab4c491f030f84941479304f1c11c51e0c58c7e63bc6126fea871e9b1",
+      "content_hash": "fb59719934859af0f0436d8e149e3d591d268072dfcf7e9522baaf99d81c880d",
       "match_level": "no",
       "label": "不符合",
-      "score": 14,
+      "score": 12,
       "normalized": {
         "organization": "交通运输部天津水运工程科学研究院",
         "title": "科研岗",
-        "location": "不明确",
-        "education": "不明确",
+        "location": "天津市滨海新区",
+        "education": "博士研究生",
         "majors": [
           "0802机械工程、0804仪器科学与技术、0808电气工程、0811控制科学与工程、0817化学工程与技术、0824船舶与海洋工程"
         ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": true,
         "political_status": "不明确",
         "gender_requirement": "不明确",
-        "responsibilities": "",
+        "responsibilities": "主要从事安全风险防控与智能预警技术相关系统性研究工作，重点围绕危险货物全生命周期安全风险评估技术、关键设备设施状态实时监测与智能检测技术、复杂事故情景动态构建与应急处置技术等方面的研究工作。",
         "deadline": ""
       },
-      "reasons": [],
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
       "conflicts": [
-        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向"
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
       ],
       "needs_confirmation": [],
       "evidence": [
         {
           "field": "专业",
           "quote": "0802机械工程、0804仪器科学与技术、0808电气工程、0811控制科学与工程、0817化学工程与技术、0824船舶与海洋工程"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "博士研究生"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "7ff807aaa1ffc393": {
-      "content_hash": "2127b703b722360be45f0883e765a3952b24663d614e49ba30bc9ce407d805ac",
+      "content_hash": "555db82a34635799d1368378b08a35f84b0f979aeb706720108f8dde2da331c4",
       "match_level": "no",
       "label": "不符合",
-      "score": 14,
+      "score": 12,
       "normalized": {
         "organization": "交通运输部天津水运工程科学研究院",
         "title": "科研岗",
-        "location": "不明确",
-        "education": "不明确",
+        "location": "天津市滨海新区",
+        "education": "硕士研究生及以上",
         "majors": [
           "082302交通信息工程及控制（航海方向）、0861交通运输（水路交通运输专业）、0812计算机科学与技术"
         ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": true,
         "political_status": "不明确",
         "gender_requirement": "不明确",
-        "responsibilities": "",
+        "responsibilities": "从事航海保障系统开发；交通组织研究；通航条件试验研究。",
         "deadline": ""
       },
-      "reasons": [],
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
       "conflicts": [
-        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向"
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
       ],
       "needs_confirmation": [],
       "evidence": [
         {
           "field": "专业",
           "quote": "082302交通信息工程及控制（航海方向）、0861交通运输（水路交通运输专业）、0812计算机科学与技术"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "f55dcf281779ae53": {
-      "content_hash": "b9df52c98ae9d3556536771c81d97dc90541cdfdc4bc7b04bf8380ea69e34e0a",
+      "content_hash": "612bf1471ff6d50046879be2ab46af7fb43c7df6245fd054e3cb638feaa1ef16",
       "match_level": "no",
       "label": "不符合",
-      "score": 14,
+      "score": 12,
       "normalized": {
         "organization": "交通运输部天津水运工程科学研究院",
         "title": "科研岗",
-        "location": "不明确",
-        "education": "不明确",
+        "location": "天津市滨海新区",
+        "education": "硕士研究生及以上",
         "majors": [
           "080502材料学"
         ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": true,
         "political_status": "不明确",
         "gender_requirement": "不明确",
-        "responsibilities": "",
+        "responsibilities": "从事水运工程相关材料试验检测及新材料研发等工作。",
         "deadline": ""
       },
-      "reasons": [],
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
       "conflicts": [
-        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向"
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
       ],
       "needs_confirmation": [],
       "evidence": [
         {
           "field": "专业",
           "quote": "080502材料学"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "3352fc04701f46bf": {
-      "content_hash": "93545cc6897eb38fe415811022d18fba68f9ec6f1af02bd5b740e9809faf286a",
+      "content_hash": "a42c1fed910b3274b8ac8436dd1ad135880bc167425359a169536c7f2c9af9c7",
       "match_level": "no",
       "label": "不符合",
-      "score": 14,
+      "score": 12,
       "normalized": {
         "organization": "中国国际可持续交通创新和知识中心",
         "title": "基础设施互联互通促进中心专技岗",
-        "location": "不明确",
-        "education": "不明确",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
         "majors": [
           "交通运输工程（0823）、交通运输（0861）、管理科学与工程（1201）、环境科学与工程（0830）、土木工程（0814）"
         ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": true,
         "political_status": "不明确",
         "gender_requirement": "不明确",
-        "responsibilities": "",
+        "responsibilities": "负责国际运输通道布局、交通互联互通规划等研究工作。",
         "deadline": ""
       },
-      "reasons": [],
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
       "conflicts": [
-        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向"
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
       ],
       "needs_confirmation": [],
       "evidence": [
         {
           "field": "专业",
           "quote": "交通运输工程（0823）、交通运输（0861）、管理科学与工程（1201）、环境科学与工程（0830）、土木工程（0814）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "8310849db344f844": {
-      "content_hash": "b624cde1b53d3fce8129d54f85bd47f177912ab6173623829c1edb7a21d37807",
+      "content_hash": "abbdcf06e049a54dbabdbbaa222de1d0baa73ccb1cb73ba44adc925c9ee2f0de",
       "match_level": "no",
       "label": "不符合",
-      "score": 14,
+      "score": 12,
       "normalized": {
         "organization": "中国国际可持续交通创新和知识中心",
         "title": "基础设施互联互通促进中心专技岗",
-        "location": "不明确",
-        "education": "不明确",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
         "majors": [
           "交通运输工程（0823）、交通运输（0861）、管理科学与工程（1201）、环境科学与工程（0830）、土木工程（0814）"
         ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": true,
         "political_status": "不明确",
         "gender_requirement": "不明确",
-        "responsibilities": "",
+        "responsibilities": "负责国际运输通道布局、交通互联互通规划等研究工作。",
         "deadline": ""
       },
-      "reasons": [],
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
       "conflicts": [
-        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向"
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
       ],
       "needs_confirmation": [],
       "evidence": [
         {
           "field": "专业",
           "quote": "交通运输工程（0823）、交通运输（0861）、管理科学与工程（1201）、环境科学与工程（0830）、土木工程（0814）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "4793e2447ee5182f": {
-      "content_hash": "5c02a100c5d2a6a3136056ede680d5e79eda570d84771e897e9a3c6f8ef5a757",
+      "content_hash": "41093c2ac585cc5db9a860badf43ba5125bd360c802a699cbdc1374543c5454d",
       "match_level": "no",
       "label": "不符合",
-      "score": 14,
+      "score": 12,
       "normalized": {
         "organization": "中国国际可持续交通创新和知识中心",
         "title": "国际物流供应链促进中心专技岗",
-        "location": "不明确",
-        "education": "不明确",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
         "majors": [
           "统计学（0714）、 应用经济学（0202）、管理科学与工程（1201）、交通运输工程（0823）、法学类（0301）"
         ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": true,
         "political_status": "不明确",
         "gender_requirement": "不明确",
-        "responsibilities": "",
+        "responsibilities": "负责开展国际物流供应链通道布局、服务网络建设和安全稳定畅通等研究工作。",
         "deadline": ""
       },
-      "reasons": [],
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
       "conflicts": [
-        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向"
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
       ],
       "needs_confirmation": [],
       "evidence": [
         {
           "field": "专业",
           "quote": "统计学（0714）、 应用经济学（0202）、管理科学与工程（1201）、交通运输工程（0823）、法学类（0301）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
@@ -85309,1399 +85408,1820 @@
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "943de780ef1fc5fd": {
-      "content_hash": "7ad2f390e5af36f9900fc1c1cbeeb0459b16589c9c3fac33f6272ae5bd82891f",
+      "content_hash": "4c7fe587d3f14dd92cc930cb89a0d86e426a76c84003604fe1533c3968a2c3f2",
       "match_level": "no",
       "label": "不符合",
-      "score": 14,
+      "score": 12,
       "normalized": {
         "organization": "中国国际可持续交通创新和知识中心",
         "title": "交通国际问题研究所专技岗",
-        "location": "不明确",
-        "education": "不明确",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
         "majors": [
           "土木工程（0814）、 交通运输工程（0823）、 环境科学与工程（0830）、交通运输（0861）、管理科学与工程（1201）"
         ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": true,
         "political_status": "不明确",
         "gender_requirement": "不明确",
-        "responsibilities": "",
+        "responsibilities": "开展重点区域国别交通合作战略与政策等研究工作。",
         "deadline": ""
       },
-      "reasons": [],
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
       "conflicts": [
-        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向"
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
       ],
       "needs_confirmation": [],
       "evidence": [
         {
           "field": "专业",
           "quote": "土木工程（0814）、 交通运输工程（0823）、 环境科学与工程（0830）、交通运输（0861）、管理科学与工程（1201）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "22a3c4205083f2d9": {
-      "content_hash": "bc530fdf1cc1af27e53666b997e3600087e5d28d3f6c148f2f35da3dd883f558",
+      "content_hash": "6f7fc656e96cae67c01b47ebf39b3b99a5e79d988ceb9b50fd6e50fea86c20ca",
       "match_level": "no",
       "label": "不符合",
-      "score": 14,
+      "score": 12,
       "normalized": {
         "organization": "交通运输部科学研究院",
         "title": "专业技术岗",
-        "location": "不明确",
-        "education": "不明确",
+        "location": "北京市",
+        "education": "博士研究生",
         "majors": [
           "0823交通运输工程类；0814土木工程类；1204公共管理类"
         ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": true,
         "political_status": "不明确",
         "gender_requirement": "不明确",
-        "responsibilities": "",
+        "responsibilities": "从事交通安全应急理论政策与技术研究。",
         "deadline": ""
       },
-      "reasons": [],
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
       "conflicts": [
-        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向"
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
       ],
       "needs_confirmation": [],
       "evidence": [
         {
           "field": "专业",
           "quote": "0823交通运输工程类；0814土木工程类；1204公共管理类"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "博士研究生"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "a4bc79f38f2d476c": {
-      "content_hash": "490136e89e2e478f672d15a32a6ed9f2e60ec8bd2a0d128764ea9419bfb7771d",
+      "content_hash": "8745634c65df6287d0294c14ef2b846e7ceb1b71bfb35a2267237c817e94c020",
       "match_level": "no",
       "label": "不符合",
-      "score": 14,
+      "score": 12,
       "normalized": {
         "organization": "交通运输部科学研究院",
         "title": "专业技术岗",
-        "location": "不明确",
-        "education": "不明确",
+        "location": "北京市",
+        "education": "博士研究生",
         "majors": [
           "0202应用经济学类；1201管理科学与工程类；1202工商管理类（限技术经济及管理专业方向）；0823交通运输工程类（限交通运输规划与管理专业方向）"
         ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": true,
         "political_status": "不明确",
         "gender_requirement": "不明确",
-        "responsibilities": "",
+        "responsibilities": "从事交通运输投融资、预算管理等方面研究咨询与服务工作。",
         "deadline": ""
       },
-      "reasons": [],
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
       "conflicts": [
-        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向"
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
       ],
       "needs_confirmation": [],
       "evidence": [
         {
           "field": "专业",
           "quote": "0202应用经济学类；1201管理科学与工程类；1202工商管理类（限技术经济及管理专业方向）；0823交通运输工程类（限交通运输规划与管理专业方向）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "博士研究生"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "f24eaa9539583d39": {
-      "content_hash": "cedab46d927a0523b895eb39878339cebeaa4a3fddf721ed5bf4facadbadbdfc",
+      "content_hash": "1a463616612d6cb060e8d64a61b2365f64f86b39d2a76ad84247313046ba5b35",
       "match_level": "no",
       "label": "不符合",
-      "score": 14,
+      "score": 12,
       "normalized": {
         "organization": "交通运输部规划研究院",
         "title": "专业技术岗",
-        "location": "不明确",
-        "education": "不明确",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
         "majors": [
           "交通运输工程类0823（仅限交通运输规划与管理、交通信息工程及控制）、交通运输类0861（仅限交通运输规划与管理、交通信息工程及控制）、管理科学与工程类0871（仅限信息管理与信息系统、大数据与知识管理、智慧交通管理）"
         ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": true,
         "political_status": "不明确",
         "gender_requirement": "不明确",
-        "responsibilities": "",
+        "responsibilities": "负责交通运输公路领域发展战略、规划、政策、法规、标准、规范等研究和技术服务，交通运输建设项目可行性研究、设计、评估、后评价等技术咨询工作。",
         "deadline": ""
       },
-      "reasons": [],
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
       "conflicts": [
-        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向"
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
       ],
       "needs_confirmation": [],
       "evidence": [
         {
           "field": "专业",
           "quote": "交通运输工程类0823（仅限交通运输规划与管理、交通信息工程及控制）、交通运输类0861（仅限交通运输规划与管理、交通信息工程及控制）、管理科学与工程类0871（仅限信息管理与信息系统、大数据与知识管理、智慧交通管理）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "37b33342ba10c7f4": {
-      "content_hash": "2d20cc875d259f988e1dfe8dfa593061609a246c9e2135b6eb1c448059678ffc",
+      "content_hash": "f3d5be8b644ea197f9e095805a72b21340c87fd7dbd7ae570baf1e83255d7038",
       "match_level": "no",
       "label": "不符合",
-      "score": 14,
+      "score": 12,
       "normalized": {
         "organization": "交通运输部规划研究院",
         "title": "专业技术岗",
-        "location": "不明确",
-        "education": "不明确",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
         "majors": [
           "港口、海岸及近海工程081505"
         ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": true,
         "political_status": "不明确",
         "gender_requirement": "不明确",
-        "responsibilities": "",
+        "responsibilities": "负责交通运输水运领域发展战略、规划、政策、法规、标准、规范等研究和技术服务，交通运输建设项目可行性研究、设计、评估、后评价等技术咨询工作。",
         "deadline": ""
       },
-      "reasons": [],
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
       "conflicts": [
-        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向"
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
       ],
       "needs_confirmation": [],
       "evidence": [
         {
           "field": "专业",
           "quote": "港口、海岸及近海工程081505"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "50fadd5ed94d6685": {
-      "content_hash": "35eb4781d639af186633f83f427d669343974b3e3aac18a1e9c3f4a514a2535a",
+      "content_hash": "b55e8cd5fe378f39fba386f76b8c4517568d2bb2b5bc161d0e72f9935e8f58ef",
       "match_level": "no",
       "label": "不符合",
-      "score": 14,
+      "score": 12,
       "normalized": {
         "organization": "交通运输部规划研究院",
         "title": "专业技术岗",
-        "location": "不明确",
-        "education": "不明确",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
         "majors": [
           "电子信息类0854、信息与通信工程类0810"
         ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": true,
         "political_status": "不明确",
         "gender_requirement": "不明确",
-        "responsibilities": "",
+        "responsibilities": "负责交通运输安全领域发展战略、规划、政策、法规、标准、规范等研究和技术服务，交通运输建设项目可行性研究、设计、评估、后评价等技术咨询工作。",
         "deadline": ""
       },
-      "reasons": [],
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
       "conflicts": [
-        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向"
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
       ],
       "needs_confirmation": [],
       "evidence": [
         {
           "field": "专业",
           "quote": "电子信息类0854、信息与通信工程类0810"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "df2b0f75c262d920": {
-      "content_hash": "33177b7165ba402d8aaaca381264f9d3d22101020bbfe84232fedaf6e25b7fb0",
+      "content_hash": "52b1d26f0ee4456d92b1e0012fd49dbf86401a9abda2062d57701a0016150753",
       "match_level": "no",
       "label": "不符合",
-      "score": 14,
+      "score": 12,
       "normalized": {
         "organization": "交通运输部规划研究院",
         "title": "专业技术岗",
-        "location": "不明确",
-        "education": "不明确",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
         "majors": [
           "环境科学与工程类0830、环境工程077602、能源动力0858"
         ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": true,
         "political_status": "不明确",
         "gender_requirement": "不明确",
-        "responsibilities": "",
+        "responsibilities": "负责交通运输环境领域发展战略、规划、政策、法规、标准、规范等研究和技术服务，交通运输建设项目可行性研究、设计、评估、后评价等技术咨询工作。",
         "deadline": ""
       },
-      "reasons": [],
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
       "conflicts": [
-        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向"
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
       ],
       "needs_confirmation": [],
       "evidence": [
         {
           "field": "专业",
           "quote": "环境科学与工程类0830、环境工程077602、能源动力0858"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "8def3b9a84daa54b": {
-      "content_hash": "11f2749065125ea21f11f1edb58afd8f4e004a7f8178024ffa0368a6a94e8fa1",
+      "content_hash": "88ee0dc94d6ea2d003fffce04bbd0771efba94417c38f18774aa3f9e07c1dcd0",
       "match_level": "no",
       "label": "不符合",
-      "score": 14,
+      "score": 12,
       "normalized": {
         "organization": "交通运输部规划研究院",
         "title": "专业技术岗",
-        "location": "不明确",
-        "education": "不明确",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
         "majors": [
           "交通运输工程类0823（仅限交通信息工程及控制）、控制科学与工程0811、计算机科学与技术类0812（仅限计算机软件与理论、计算机应用技术）"
         ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": true,
         "political_status": "不明确",
         "gender_requirement": "不明确",
-        "responsibilities": "",
+        "responsibilities": "负责交通运输信息领域发展战略、规划、政策、法规、标准、规范等研究和技术服务，交通运输建设项目可行性研究、设计、评估、后评价等技术咨询工作。",
         "deadline": ""
       },
-      "reasons": [],
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
       "conflicts": [
-        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向"
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
       ],
       "needs_confirmation": [],
       "evidence": [
         {
           "field": "专业",
           "quote": "交通运输工程类0823（仅限交通信息工程及控制）、控制科学与工程0811、计算机科学与技术类0812（仅限计算机软件与理论、计算机应用技术）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "8be8e67e5da1129d": {
-      "content_hash": "12af198f33d0b8aa2ff47bcbf409960fec2695b1878cbd82823e517c68c48fb1",
+      "content_hash": "e02b76978844c154c6cf227836187a4f8bd5c5f3a099e0103d0715bf6d83f9fc",
       "match_level": "no",
       "label": "不符合",
-      "score": 14,
+      "score": 12,
       "normalized": {
         "organization": "交通运输部规划研究院",
         "title": "专业技术岗",
-        "location": "不明确",
-        "education": "不明确",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
         "majors": [
           "计算机科学与技术类0812（仅限计算机软件与理论、计算机应用技术）"
         ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": true,
         "political_status": "不明确",
         "gender_requirement": "不明确",
-        "responsibilities": "",
+        "responsibilities": "负责综合交通空间规划领域数据资源采集、整合、挖掘分析等，综合交通空间规划信息系统的设计、开发与运行维护，交通信息化建设项目可行性研究、设计等技术咨询工作。",
         "deadline": ""
       },
-      "reasons": [],
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
       "conflicts": [
-        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向"
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
       ],
       "needs_confirmation": [],
       "evidence": [
         {
           "field": "专业",
           "quote": "计算机科学与技术类0812（仅限计算机软件与理论、计算机应用技术）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "29adcf97f4eaac6c": {
-      "content_hash": "522812e6e8c911b846ac3453a6bb80a41b292ba8288204cd9ad8545ddc6ac7c2",
+      "content_hash": "557502d79d3edebe83e288b5aadf70818d8e0e07ecf30f07ab953c8bce5db281",
       "match_level": "no",
       "label": "不符合",
-      "score": 14,
+      "score": 12,
       "normalized": {
         "organization": "交通运输部规划研究院",
         "title": "专业技术岗",
-        "location": "不明确",
-        "education": "不明确",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
         "majors": [
           "交通运输类0861（仅限轨道交通运输）"
         ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": true,
         "political_status": "不明确",
         "gender_requirement": "不明确",
-        "responsibilities": "",
+        "responsibilities": "负责交通运输综合交通领域发展战略、规划、政策、法规、标准、规范等研究和技术服务，交通运输建设项目可行性研究、设计、评估、后评价等技术咨询工作。",
         "deadline": ""
       },
-      "reasons": [],
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
       "conflicts": [
-        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向"
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
       ],
       "needs_confirmation": [],
       "evidence": [
         {
           "field": "专业",
           "quote": "交通运输类0861（仅限轨道交通运输）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "20f6f40741a95cf9": {
-      "content_hash": "5acab879c038c68f6eb5ad81329570d6b721c0de88ce8f5d668e64486cd32f3b",
+      "content_hash": "6e18225bf56dd3f81a88f2ee84038a7e818d2ba3046dc1301f113e45b38a3fc1",
       "match_level": "no",
       "label": "不符合",
-      "score": 14,
+      "score": 12,
       "normalized": {
         "organization": "交通运输部规划研究院",
         "title": "专业技术岗",
-        "location": "不明确",
-        "education": "不明确",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
         "majors": [
           "交通运输类0861（仅限航空交通运输）"
         ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": true,
         "political_status": "不明确",
         "gender_requirement": "不明确",
-        "responsibilities": "",
+        "responsibilities": "负责交通运输综合交通领域发展战略、规划、政策、法规、标准、规范等研究和技术服务，交通运输建设项目可行性研究、设计、评估、后评价等技术咨询工作。",
         "deadline": ""
       },
-      "reasons": [],
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
       "conflicts": [
-        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向"
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
       ],
       "needs_confirmation": [],
       "evidence": [
         {
           "field": "专业",
           "quote": "交通运输类0861（仅限航空交通运输）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "db413e80c83f3715": {
-      "content_hash": "b6cfaa65e770085c2973a81bb12d7b2c4537f140da68512211775bd8fbfa80da",
+      "content_hash": "c7d1ffaefbc9ff2f2134f79c11e12d70d8162d4741f39870e4347955354c2414",
       "match_level": "no",
       "label": "不符合",
-      "score": 14,
+      "score": 12,
       "normalized": {
         "organization": "交通运输部规划研究院",
         "title": "专业技术岗",
-        "location": "不明确",
-        "education": "不明确",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
         "majors": [
           "电子信息类0854（仅限软件工程）、计算机科学与技术类0812（仅限计算机软件与理论、计算机应用技术）"
         ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": true,
         "political_status": "不明确",
         "gender_requirement": "不明确",
-        "responsibilities": "",
+        "responsibilities": "负责交通运输信息领域发展战略、规划、政策、法规、标准、规范等研究和技术服务，交通运输建设项目可行性研究、设计、评估、后评价等技术咨询工作。",
         "deadline": ""
       },
-      "reasons": [],
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
       "conflicts": [
-        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向"
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
       ],
       "needs_confirmation": [],
       "evidence": [
         {
           "field": "专业",
           "quote": "电子信息类0854（仅限软件工程）、计算机科学与技术类0812（仅限计算机软件与理论、计算机应用技术）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "f103810284d77ec2": {
-      "content_hash": "351b0001137ae3ac3de2f1d30695bbe502d43eb910d8d5f93f60ffc12415cb6f",
+      "content_hash": "e34da8f6e0a51fb932c68e772d161ff871ce22aea9a103ebddfa6a7ad7066785",
       "match_level": "no",
       "label": "不符合",
-      "score": 14,
+      "score": 12,
       "normalized": {
         "organization": "交通运输部规划研究院",
         "title": "专业技术岗",
-        "location": "不明确",
-        "education": "不明确",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
         "majors": [
           "交通运输工程类0823 （仅限交通运输规划与管理）"
         ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": true,
         "political_status": "不明确",
         "gender_requirement": "不明确",
-        "responsibilities": "",
+        "responsibilities": "负责交通运输物流领域发展战略、规划、政策、法规、标准、规范等研究和技术服务，交通运输建设项目可行性研究、设计、评估、后评价等技术咨询工作。",
         "deadline": ""
       },
-      "reasons": [],
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
       "conflicts": [
-        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向"
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
       ],
       "needs_confirmation": [],
       "evidence": [
         {
           "field": "专业",
           "quote": "交通运输工程类0823 （仅限交通运输规划与管理）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "572be451452b7334": {
-      "content_hash": "3cdbe2152c32c84267de94e799e54cf9169b559a2facb937a39a4af981dde0e3",
+      "content_hash": "716938d4b91772839b3ef143d61a1f4cb5d5e8a436378952728b214d7866f252",
       "match_level": "no",
       "label": "不符合",
-      "score": 14,
+      "score": 12,
       "normalized": {
         "organization": "交通运输部规划研究院",
         "title": "专业技术岗",
-        "location": "不明确",
-        "education": "不明确",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
         "majors": [
           "计算机科学与技术类0812（仅限计算机软件与理论、计算机应用技术）"
         ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": true,
         "political_status": "不明确",
         "gender_requirement": "不明确",
-        "responsibilities": "",
+        "responsibilities": "负责综合交通空间规划领域数据资源采集、整合、挖掘分析等，综合交通空间规划信息系统的设计、开发与运行维护，交通信息化建设项目可行性研究、设计等技术咨询工作。",
         "deadline": ""
       },
-      "reasons": [],
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
       "conflicts": [
-        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向"
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
       ],
       "needs_confirmation": [],
       "evidence": [
         {
           "field": "专业",
           "quote": "计算机科学与技术类0812（仅限计算机软件与理论、计算机应用技术）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "d77ca5f32e3e05a3": {
-      "content_hash": "700d0abd2ff10d44e2cc0905d14067894e690af4d053ce99b4e584604677cf02",
+      "content_hash": "75d868692d88fbbc2c8279ca595f2fcdd6112f9c9549a2bdb444de04377a52ef",
       "match_level": "no",
       "label": "不符合",
-      "score": 14,
+      "score": 12,
       "normalized": {
         "organization": "交通运输部规划研究院",
         "title": "专业技术岗",
-        "location": "不明确",
-        "education": "不明确",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
         "majors": [
           "交通运输类0861（仅限轨道交通运输）"
         ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": false,
         "political_status": "不明确",
         "gender_requirement": "不明确",
-        "responsibilities": "",
+        "responsibilities": "负责交通运输综合交通领域发展战略、规划、政策、法规、标准、规范等研究和技术服务，交通运输建设项目可行性研究、设计、评估、后评价等技术咨询工作。",
         "deadline": ""
       },
-      "reasons": [],
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
       "conflicts": [
-        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向"
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "招聘对象明确为社会人员，与2027届应届生条件冲突"
       ],
       "needs_confirmation": [],
       "evidence": [
         {
           "field": "专业",
           "quote": "交通运输类0861（仅限轨道交通运输）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "社会人员"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "574d933b8013a720": {
-      "content_hash": "a51e402a7386e8b9d7532f590f214ab9ce8f4ffea721a333a5a76a66ba93d857",
+      "content_hash": "fe0b342d645bed694ed118c2b078e30334d576f8689f65810187aafa9a60d6e2",
       "match_level": "no",
       "label": "不符合",
-      "score": 14,
+      "score": 12,
       "normalized": {
         "organization": "交通运输部规划研究院",
         "title": "专业技术岗",
-        "location": "不明确",
-        "education": "不明确",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
         "majors": [
           "交通运输类0861（仅限航空交通运输）"
         ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": false,
         "political_status": "不明确",
         "gender_requirement": "不明确",
-        "responsibilities": "",
+        "responsibilities": "负责交通运输综合交通领域发展战略、规划、政策、法规、标准、规范等研究和技术服务，交通运输建设项目可行性研究、设计、评估、后评价等技术咨询工作。",
         "deadline": ""
       },
-      "reasons": [],
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
       "conflicts": [
-        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向"
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "招聘对象明确为社会人员，与2027届应届生条件冲突"
       ],
       "needs_confirmation": [],
       "evidence": [
         {
           "field": "专业",
           "quote": "交通运输类0861（仅限航空交通运输）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "社会人员"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "dbdcf48fd0b7bec9": {
-      "content_hash": "2737d5961acaf09c47ac21fb817df2d2d2236725bc53b7a3e44cfccc73f852fc",
+      "content_hash": "fc3158d472b6f37f1dbc87196b357e2c3c11f7175cb48e432cab46b7d5c2dddc",
       "match_level": "no",
       "label": "不符合",
-      "score": 14,
+      "score": 12,
       "normalized": {
         "organization": "交通运输部规划研究院",
         "title": "专业技术岗",
-        "location": "不明确",
-        "education": "不明确",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
         "majors": [
           "交通运输工程类0823(仅限道路与铁道工程）"
         ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": false,
         "political_status": "不明确",
         "gender_requirement": "不明确",
-        "responsibilities": "",
+        "responsibilities": "负责交通运输公路领域发展战略、规划、政策、法规、标准、规范等研究和技术服务，交通运输建设项目可行性研究、设计、评估、后评价等技术咨询工作。",
         "deadline": ""
       },
-      "reasons": [],
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
       "conflicts": [
-        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向"
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "招聘对象明确为社会人员，与2027届应届生条件冲突"
       ],
       "needs_confirmation": [],
       "evidence": [
         {
           "field": "专业",
           "quote": "交通运输工程类0823(仅限道路与铁道工程）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "社会人员"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "b91ce61696103403": {
-      "content_hash": "d1f78a0dbbb7c0c7de38ba94cae1aba786d4849d07c4ab0d5105ddebbb0ff414",
+      "content_hash": "56c424eb5cb2527e917eaef91dcf11c51924f72d45c59750b3f540912c6f607b",
       "match_level": "no",
       "label": "不符合",
-      "score": 14,
+      "score": 12,
       "normalized": {
         "organization": "交通运输部公路科学研究院",
         "title": "专业技术岗",
-        "location": "不明确",
-        "education": "不明确",
+        "location": "北京市",
+        "education": "博士研究生",
         "majors": [
           "0808电气工程类、0811控制科学与工程类、0858能源动力类"
         ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": true,
         "political_status": "不明确",
         "gender_requirement": "不明确",
-        "responsibilities": "",
+        "responsibilities": "承担交通与能源融合领域相关基础或应用研究、技术研发等工作。",
         "deadline": ""
       },
-      "reasons": [],
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
       "conflicts": [
-        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向"
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
       ],
       "needs_confirmation": [],
       "evidence": [
         {
           "field": "专业",
           "quote": "0808电气工程类、0811控制科学与工程类、0858能源动力类"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "博士研究生"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "3c88ac68d20bf57a": {
-      "content_hash": "23437553796de05be8a6ff0152ad6779a95b28efac93cb907ccc88449c31f20e",
+      "content_hash": "cbe0ffd2b875869f8a19f6347f8d0a6c33f5f8d7d42a09ad474f5475b550d818",
       "match_level": "no",
       "label": "不符合",
-      "score": 14,
+      "score": 12,
       "normalized": {
         "organization": "交通运输部公路科学研究院",
         "title": "专业技术岗",
-        "location": "不明确",
-        "education": "不明确",
+        "location": "北京市",
+        "education": "博士研究生",
         "majors": [
           "0823交通运输工程类、125604物流工程与管理、0811控制科学与工程类、0854电子信息类"
         ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": true,
         "political_status": "不明确",
         "gender_requirement": "不明确",
-        "responsibilities": "",
+        "responsibilities": "承担交通物流相关领域基础或应用研究、技术研发等工作。",
         "deadline": ""
       },
-      "reasons": [],
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
       "conflicts": [
-        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向"
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
       ],
       "needs_confirmation": [],
       "evidence": [
         {
           "field": "专业",
           "quote": "0823交通运输工程类、125604物流工程与管理、0811控制科学与工程类、0854电子信息类"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "博士研究生"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "69afaa1ea5354aa1": {
-      "content_hash": "b44776db3ac68e3472da0197a77683f811f6883e8401420408176607c13aaf08",
+      "content_hash": "a61e272618283b7e13ed1843f58db26542bbc22edecf8ab63409c98f20a46e33",
       "match_level": "no",
       "label": "不符合",
-      "score": 14,
+      "score": 12,
       "normalized": {
         "organization": "交通运输部公路科学研究院",
         "title": "专业技术岗",
-        "location": "不明确",
-        "education": "不明确",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
         "majors": [
           "0814/085901土木工程、1201/0871管理科学与工程类、材料类（085601材料工程）、0805/0773材料科学与工程类"
         ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": false,
         "political_status": "不明确",
         "gender_requirement": "不明确",
-        "responsibilities": "",
+        "responsibilities": "承担交通运输相关领域基础或应用研究技术研发等工作。",
         "deadline": ""
       },
-      "reasons": [],
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
       "conflicts": [
-        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向"
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "招聘对象明确为社会人员，与2027届应届生条件冲突"
       ],
       "needs_confirmation": [],
       "evidence": [
         {
           "field": "专业",
           "quote": "0814/085901土木工程、1201/0871管理科学与工程类、材料类（085601材料工程）、0805/0773材料科学与工程类"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "社会人员"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "f319599a0e06b02c": {
-      "content_hash": "aea3da23aa11f5589c2e86b2b81f62aa722cca82dae71bf992a5715868af5553",
+      "content_hash": "5c0bfea72a6370acd5125b2fb1dcdc55e772d94f9c0086dabed60325bbaac154",
       "match_level": "no",
       "label": "不符合",
-      "score": 14,
+      "score": 12,
       "normalized": {
         "organization": "交通运输部公路科学研究院",
         "title": "专业技术岗",
-        "location": "不明确",
-        "education": "不明确",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
         "majors": [
           "0823交通运输工程类、125604物流工程与管理、0811控制科学与工程类、0854电子信息类"
         ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": false,
         "political_status": "不明确",
         "gender_requirement": "不明确",
-        "responsibilities": "",
+        "responsibilities": "承担交通物流相关领域基础或应用研究、技术研发等工作。",
         "deadline": ""
       },
-      "reasons": [],
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
       "conflicts": [
-        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向"
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "招聘对象明确为社会人员，与2027届应届生条件冲突"
       ],
       "needs_confirmation": [],
       "evidence": [
         {
           "field": "专业",
           "quote": "0823交通运输工程类、125604物流工程与管理、0811控制科学与工程类、0854电子信息类"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "社会人员"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "c18619dfb269cee5": {
-      "content_hash": "f8468f9f6a70c39f6e28205fd97f505f9ac45289be5db93b665e45dc9c494b85",
+      "content_hash": "710665c3e0e17fab4f9658eddcab6d7303ee3964711dd22acc0afacddedad97a",
       "match_level": "no",
       "label": "不符合",
-      "score": 14,
+      "score": 12,
       "normalized": {
         "organization": "交通运输部公路科学研究院",
         "title": "专业技术岗",
-        "location": "不明确",
-        "education": "不明确",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
         "majors": [
           "0823交通运输工程类、计算机类（0775/0812计算机科学与技术、0788/1405智能科学与技术）、电子信息类（085404计算机技术）"
         ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": false,
         "political_status": "不明确",
         "gender_requirement": "不明确",
-        "responsibilities": "",
+        "responsibilities": "承担技术转化相关领域基础或应用研究、技术研发等工作。",
         "deadline": ""
       },
-      "reasons": [],
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
       "conflicts": [
-        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向"
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "招聘对象明确为社会人员，与2027届应届生条件冲突"
       ],
       "needs_confirmation": [],
       "evidence": [
         {
           "field": "专业",
           "quote": "0823交通运输工程类、计算机类（0775/0812计算机科学与技术、0788/1405智能科学与技术）、电子信息类（085404计算机技术）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "社会人员"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "dbb35d8ed7d37b95": {
-      "content_hash": "ebade61e1d0b18bef9eddb35de9aff6403cf2caae1d89306711ff1e750fc7adf",
+      "content_hash": "ace811200c68849fabb875e35c88fb8e2162336fa16b7d9a8b3d4a30a67d139e",
       "match_level": "no",
       "label": "不符合",
-      "score": 14,
+      "score": 12,
       "normalized": {
         "organization": "国家心理健康和精神卫生防治中心",
         "title": "高层次专业技术岗",
         "location": "不明确",
         "education": "本科及以上",
-        "majors": [],
+        "majors": [
+          "临床医学类（1002、1051）"
+        ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": false,
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
         "deadline": ""
       },
-      "reasons": [],
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
       "conflicts": [
-        "岗位明确为高层次专业技术岗，与应届生条件冲突"
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "招聘对象明确为社会人员，与2027届应届生条件冲突"
       ],
       "needs_confirmation": [],
       "evidence": [
         {
-          "field": "岗位名称",
-          "quote": "高层次专业技术岗"
+          "field": "专业",
+          "quote": "临床医学类（1002、1051）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "社会人员"
+        },
+        {
+          "field": "学历",
+          "quote": "本科及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "d5c7c1a588a7519f": {
-      "content_hash": "b5f03f7ea0c30df084fb1df3603d67a1e3742a72fbf6710b0a2330206b0736e7",
-      "match_level": "possible",
-      "label": "需确认",
-      "score": 62,
+      "content_hash": "ae8be359b883ea74bd3661d75020d5f5b6a9ee1afed99fcfaa66fa39ebc57b87",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
       "normalized": {
         "organization": "国家卫生健康委人口文化与基层健康中心",
         "title": "项目管理岗4",
         "location": "不明确",
         "education": "硕士研究生及以上",
-        "majors": [],
+        "majors": [
+          "公共卫生与预防医学类（1004）、临床医学类（1002、1051）"
+        ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": false,
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
         "deadline": ""
       },
       "reasons": [
-        "学历达到岗位当前公开门槛"
+        "原始附件字段已纳入复核"
       ],
-      "conflicts": [],
-      "needs_confirmation": [
-        "专业要求未明确，需核对原岗位表",
-        "招聘对象或毕业年份未明确，需确认是否接受2027届"
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "招聘对象明确为社会人员，与2027届应届生条件冲突",
+        "岗位要求北京市常住户口，与非北京户口条件冲突"
       ],
+      "needs_confirmation": [],
       "evidence": [
         {
-          "field": "岗位名称",
-          "quote": "项目管理岗4"
+          "field": "专业",
+          "quote": "公共卫生与预防医学类（1004）、临床医学类（1002、1051）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "社会人员"
+        },
+        {
+          "field": "户籍",
+          "quote": "北京市常住户口"
         },
         {
           "field": "学历",
           "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "99c81a403eecbaab": {
-      "content_hash": "d1802c77b5ba27ea05465efddb07555136ee042066754b290238ed02bc17da90",
-      "match_level": "possible",
-      "label": "需确认",
-      "score": 62,
+      "content_hash": "671344b0abcf2ec8b7f845a5e7a535061d13aec4a67ecc6c67cc4ba46c3b7428",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
       "normalized": {
         "organization": "国家卫生健康委人口文化与基层健康中心",
         "title": "项目管理岗3",
         "location": "不明确",
         "education": "硕士研究生及以上",
-        "majors": [],
+        "majors": [
+          "临床医学类（1002、1051）"
+        ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": false,
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
         "deadline": ""
       },
       "reasons": [
-        "学历达到岗位当前公开门槛"
+        "原始附件字段已纳入复核"
       ],
-      "conflicts": [],
-      "needs_confirmation": [
-        "专业要求未明确，需核对原岗位表",
-        "招聘对象或毕业年份未明确，需确认是否接受2027届"
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "招聘对象明确为社会人员，与2027届应届生条件冲突",
+        "岗位要求北京市常住户口，与非北京户口条件冲突"
       ],
+      "needs_confirmation": [],
       "evidence": [
         {
-          "field": "岗位名称",
-          "quote": "项目管理岗3"
+          "field": "专业",
+          "quote": "临床医学类（1002、1051）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "社会人员"
+        },
+        {
+          "field": "户籍",
+          "quote": "北京市常住户口"
         },
         {
           "field": "学历",
           "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "54299c9066f046f1": {
-      "content_hash": "707c4be572b59b141a0fe77e64a04ece68770dcc51960e2868e1345d921f01dd",
-      "match_level": "possible",
-      "label": "需确认",
-      "score": 62,
+      "content_hash": "b96158bb3560d4b2e143f641bc96f75aa2ab8a90b51d1b79038a15a7760cd55c",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
       "normalized": {
         "organization": "国家卫生健康委人口文化与基层健康中心",
         "title": "项目管理岗2",
         "location": "不明确",
         "education": "硕士研究生及以上",
-        "majors": [],
+        "majors": [
+          "临床医学类（1002、1051）"
+        ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": false,
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
         "deadline": ""
       },
       "reasons": [
-        "学历达到岗位当前公开门槛"
+        "原始附件字段已纳入复核"
       ],
-      "conflicts": [],
-      "needs_confirmation": [
-        "专业要求未明确，需核对原岗位表",
-        "招聘对象或毕业年份未明确，需确认是否接受2027届"
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "招聘对象明确为社会人员，与2027届应届生条件冲突",
+        "岗位要求北京市常住户口，与非北京户口条件冲突"
       ],
+      "needs_confirmation": [],
       "evidence": [
         {
-          "field": "岗位名称",
-          "quote": "项目管理岗2"
+          "field": "专业",
+          "quote": "临床医学类（1002、1051）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "社会人员"
+        },
+        {
+          "field": "户籍",
+          "quote": "北京市常住户口"
         },
         {
           "field": "学历",
           "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "e2492e843035c4d2": {
-      "content_hash": "480d8a1308b6238770ce95184df264d4319445773ca0ce606f32383dde6a964c",
-      "match_level": "possible",
-      "label": "需确认",
-      "score": 62,
+      "content_hash": "e667d71c393efad63ebfff3060882ad85e6dada1edb828e8bfb944011d5a0daf",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
       "normalized": {
         "organization": "国家卫生健康委人口文化与基层健康中心",
         "title": "项目管理岗1",
         "location": "不明确",
         "education": "硕士研究生及以上",
-        "majors": [],
+        "majors": [
+          "公共卫生与预防医学类（1004）、公共管理学类（1204）、信息资源管理类（1205）"
+        ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": false,
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
         "deadline": ""
       },
       "reasons": [
-        "学历达到岗位当前公开门槛"
+        "原始附件字段已纳入复核"
       ],
-      "conflicts": [],
-      "needs_confirmation": [
-        "专业要求未明确，需核对原岗位表",
-        "招聘对象或毕业年份未明确，需确认是否接受2027届"
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "招聘对象明确为社会人员，与2027届应届生条件冲突",
+        "岗位要求北京市常住户口，与非北京户口条件冲突"
       ],
+      "needs_confirmation": [],
       "evidence": [
         {
-          "field": "岗位名称",
-          "quote": "项目管理岗1"
+          "field": "专业",
+          "quote": "公共卫生与预防医学类（1004）、公共管理学类（1204）、信息资源管理类（1205）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "社会人员"
+        },
+        {
+          "field": "户籍",
+          "quote": "北京市常住户口"
         },
         {
           "field": "学历",
           "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "3244cce5b04fc19f": {
-      "content_hash": "a22a31ebd0b8ff5d9b6487e6459198e45590276d1cb657f5d007a94bc5cbf3cc",
-      "match_level": "possible",
-      "label": "需确认",
-      "score": 62,
+      "content_hash": "ab7b783b3efc38b241ea79e49ffb2e22c9818bb7b5ea8374eb985a6d2f1b357d",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
       "normalized": {
         "organization": "国家卫生健康委能力建设和继续教育中心（国家卫生健康委党校）",
         "title": "项目管理",
         "location": "不明确",
         "education": "硕士研究生及以上",
-        "majors": [],
+        "majors": [
+          "医学（10）、教育学类（0401）、公共管理学类（1204）、法学类（0301）"
+        ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": false,
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
         "deadline": ""
       },
       "reasons": [
-        "学历达到岗位当前公开门槛"
+        "原始附件字段已纳入复核"
       ],
-      "conflicts": [],
-      "needs_confirmation": [
-        "专业要求未明确，需核对原岗位表",
-        "招聘对象或毕业年份未明确，需确认是否接受2027届"
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "招聘对象明确为社会人员，与2027届应届生条件冲突",
+        "岗位要求北京市常住户口，与非北京户口条件冲突"
       ],
+      "needs_confirmation": [],
       "evidence": [
         {
-          "field": "岗位名称",
-          "quote": "项目管理"
+          "field": "专业",
+          "quote": "医学（10）、教育学类（0401）、公共管理学类（1204）、法学类（0301）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "社会人员"
+        },
+        {
+          "field": "户籍",
+          "quote": "北京市常住户口"
         },
         {
           "field": "学历",
           "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "fe93242d8a680eea": {
-      "content_hash": "a49d6fa2a8509b6904ea6f1e2de416dc6b11272e63ebb3215bc30b3feb8126b6",
-      "match_level": "possible",
-      "label": "需确认",
-      "score": 62,
+      "content_hash": "c66a39736d74924e73f0675bb089ab8e6b6fb5dc6978a98b54a80c62db5e7f8a",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
       "normalized": {
         "organization": "国家卫生健康委人口文化与基层健康中心",
         "title": "财务管理岗",
         "location": "不明确",
         "education": "本科及以上",
-        "majors": [],
+        "majors": [
+          "会计学（120203）、财务管理（120204）"
+        ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": false,
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
         "deadline": ""
       },
       "reasons": [
-        "学历达到岗位当前公开门槛"
+        "原始附件字段已纳入复核"
       ],
-      "conflicts": [],
-      "needs_confirmation": [
-        "专业要求未明确，需核对原岗位表",
-        "招聘对象或毕业年份未明确，需确认是否接受2027届"
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "招聘对象明确为社会人员，与2027届应届生条件冲突",
+        "岗位要求北京市常住户口，与非北京户口条件冲突"
       ],
+      "needs_confirmation": [],
       "evidence": [
         {
-          "field": "岗位名称",
-          "quote": "财务管理岗"
+          "field": "专业",
+          "quote": "会计学（120203）、财务管理（120204）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "社会人员"
+        },
+        {
+          "field": "户籍",
+          "quote": "北京市常住户口"
         },
         {
           "field": "学历",
           "quote": "本科及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "857e284324c89914": {
-      "content_hash": "b4aa6f2005d2d6bee8bdbd29073a309f109237bdb8c390e326ab295c83fc5b08",
-      "match_level": "possible",
-      "label": "需确认",
-      "score": 62,
+      "content_hash": "699549ee031e440945225442c6fd9466f5f2df21c382f421c787b101ced302e5",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
       "normalized": {
         "organization": "国家卫生健康委医疗管理服务指导中心",
         "title": "药械评价管理岗",
         "location": "不明确",
         "education": "本科及以上",
-        "majors": [],
+        "majors": [
+          "临床医学类（1002、1051）、公共卫生与预防医学类（1004）、公共卫生类（1053）、社会医学与卫生事业管理（120402、107401）"
+        ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": true,
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
         "deadline": ""
       },
       "reasons": [
-        "学历达到岗位当前公开门槛"
+        "原始附件字段已纳入复核"
       ],
-      "conflicts": [],
-      "needs_confirmation": [
-        "专业要求未明确，需核对原岗位表",
-        "招聘对象或毕业年份未明确，需确认是否接受2027届"
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突",
+        "岗位要求北京市常住户口，与非北京户口条件冲突"
       ],
+      "needs_confirmation": [],
       "evidence": [
         {
-          "field": "岗位名称",
-          "quote": "药械评价管理岗"
+          "field": "专业",
+          "quote": "临床医学类（1002、1051）、公共卫生与预防医学类（1004）、公共卫生类（1053）、社会医学与卫生事业管理（120402、107401）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届生"
+        },
+        {
+          "field": "户籍",
+          "quote": "北京市常住户口"
         },
         {
           "field": "学历",
           "quote": "本科及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "f80d9e7aa9cce4bd": {
-      "content_hash": "1dba6a35ccea868b3305826721a53443254933143a3cfb4fdc28085243988e9f",
-      "match_level": "possible",
-      "label": "需确认",
-      "score": 62,
+      "content_hash": "472af872955496f624a04d6d95523930f78be6643826746b9c2e2c43891daef1",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
       "normalized": {
         "organization": "国家卫生健康委妇幼健康中心",
         "title": "职能部门研究岗",
         "location": "不明确",
         "education": "硕士研究生及以上",
-        "majors": [],
+        "majors": [
+          "政治学类（0302）、马克思主义理论类（0305）、社会医学与卫生事业管理（120402）"
+        ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
-        "political_status": "不明确",
+        "fresh_graduate_required": false,
+        "political_status": "中共党员",
         "gender_requirement": "不明确",
         "responsibilities": "",
         "deadline": ""
       },
       "reasons": [
-        "学历达到岗位当前公开门槛"
+        "原始附件字段已纳入复核"
       ],
-      "conflicts": [],
-      "needs_confirmation": [
-        "专业要求未明确，需核对原岗位表",
-        "招聘对象或毕业年份未明确，需确认是否接受2027届"
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "招聘对象明确为社会人员，与2027届应届生条件冲突",
+        "岗位要求北京市常住户口，与非北京户口条件冲突"
       ],
+      "needs_confirmation": [],
       "evidence": [
         {
-          "field": "岗位名称",
-          "quote": "职能部门研究岗"
+          "field": "专业",
+          "quote": "政治学类（0302）、马克思主义理论类（0305）、社会医学与卫生事业管理（120402）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "社会人员"
+        },
+        {
+          "field": "户籍",
+          "quote": "北京市常住户口"
         },
         {
           "field": "学历",
           "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "0365b77b06fe06e4": {
-      "content_hash": "dfea6fbb34be712fb9a3d0d2882a038f0c92ecb460e5ecf2c1db1a292984060a",
-      "match_level": "possible",
-      "label": "需确认",
-      "score": 62,
+      "content_hash": "8fc0eba613c3dc6182d0b40504ffc927c2051d05610ee4a3928b5844e0e78732",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
       "normalized": {
         "organization": "国家卫健委统计信息中心",
         "title": "网络安全与运维岗",
         "location": "不明确",
         "education": "本科及以上",
-        "majors": [],
+        "majors": [
+          "电子信息类（本科专业代码0807、研究生专业代码0854）、计算机类（0809）、管理科学与工程类（1201）"
+        ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
-        "political_status": "不明确",
+        "fresh_graduate_required": false,
+        "political_status": "中共党员",
         "gender_requirement": "不明确",
         "responsibilities": "",
         "deadline": ""
       },
       "reasons": [
-        "学历达到岗位当前公开门槛"
+        "原始附件字段已纳入复核"
       ],
-      "conflicts": [],
-      "needs_confirmation": [
-        "专业要求未明确，需核对原岗位表",
-        "招聘对象或毕业年份未明确，需确认是否接受2027届"
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "招聘对象明确为社会人员，与2027届应届生条件冲突",
+        "岗位要求北京市常住户口，与非北京户口条件冲突"
       ],
+      "needs_confirmation": [],
       "evidence": [
         {
-          "field": "岗位名称",
-          "quote": "网络安全与运维岗"
+          "field": "专业",
+          "quote": "电子信息类（本科专业代码0807、研究生专业代码0854）、计算机类（0809）、管理科学与工程类（1201）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "社会人员"
+        },
+        {
+          "field": "户籍",
+          "quote": "北京市常住户口"
         },
         {
           "field": "学历",
           "quote": "本科及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "568283ec10621240": {
-      "content_hash": "a52d5119a00eca6aecd0d0071b464e57b24aed303e2198025ae9e9d544ee42b5",
-      "match_level": "possible",
-      "label": "需确认",
-      "score": 62,
+      "content_hash": "a9a75d9f76c59695e50f32c0c0ccebe6f5ba36ade2868fc384fa1ca180d4d9ca",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
       "normalized": {
         "organization": "中国健康教育中心",
         "title": "编导岗",
         "location": "不明确",
         "education": "本科及以上",
-        "majors": [],
+        "majors": [
+          "本科专业：网络与新媒体（050306）、新媒体艺术（130511）、广播电视编导（130305）、戏剧影视导演（130306）；研究生专业：戏剧与影视类（1354）、新闻与传播类（0552）"
+        ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": false,
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
         "deadline": ""
       },
       "reasons": [
-        "学历达到岗位当前公开门槛",
-        "岗位名称与设计、媒体或传播方向存在相关性"
+        "原始附件字段已纳入复核"
       ],
-      "conflicts": [],
-      "needs_confirmation": [
-        "专业要求未明确，需核对原岗位表",
-        "招聘对象或毕业年份未明确，需确认是否接受2027届"
+      "conflicts": [
+        "招聘对象明确为社会人员，与2027届应届生条件冲突",
+        "岗位要求北京市常住户口，与非北京户口条件冲突"
       ],
+      "needs_confirmation": [],
       "evidence": [
         {
-          "field": "岗位名称",
-          "quote": "编导岗"
+          "field": "招聘对象",
+          "quote": "社会人员"
+        },
+        {
+          "field": "户籍",
+          "quote": "北京市常住户口"
         },
         {
           "field": "学历",
           "quote": "本科及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "ad7d628220277248": {
-      "content_hash": "dcdaa1c39f2c61bbb8d8a456618cc4003f03396f332a78dac013288916a894d9",
-      "match_level": "possible",
-      "label": "需确认",
-      "score": 62,
+      "content_hash": "a23ce5358dfcaa0ba95292ff0a97bd97df3b6dc2954c9331bc87f8ead424911a",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
       "normalized": {
         "organization": "国家卫健委统计信息中心",
         "title": "综合业务管理岗",
         "location": "不明确",
         "education": "本科及以上",
-        "majors": [],
+        "majors": [
+          "法学类（0301）、公共卫生与预防医学类（1004）、医学技术类（1010）、管理科学与工程类（1201）、工商管理类（1202）、公共管理学类（1204）、图书情报与档案管理类（1205）、图书情报类（1255）"
+        ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
-        "political_status": "不明确",
+        "fresh_graduate_required": false,
+        "political_status": "中共党员",
         "gender_requirement": "不明确",
         "responsibilities": "",
         "deadline": ""
       },
       "reasons": [
-        "学历达到岗位当前公开门槛"
+        "原始附件字段已纳入复核"
       ],
-      "conflicts": [],
-      "needs_confirmation": [
-        "专业要求未明确，需核对原岗位表",
-        "招聘对象或毕业年份未明确，需确认是否接受2027届"
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "招聘对象明确为社会人员，与2027届应届生条件冲突",
+        "岗位要求北京市常住户口，与非北京户口条件冲突"
       ],
+      "needs_confirmation": [],
       "evidence": [
         {
-          "field": "岗位名称",
-          "quote": "综合业务管理岗"
+          "field": "专业",
+          "quote": "法学类（0301）、公共卫生与预防医学类（1004）、医学技术类（1010）、管理科学与工程类（1201）、工商管理类（1202）、公共管理学类（1204）、图书情报与档案管理类（1205）、图书情报类（1255）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "社会人员"
+        },
+        {
+          "field": "户籍",
+          "quote": "北京市常住户口"
         },
         {
           "field": "学历",
           "quote": "本科及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "a3aafe7a343db7dc": {
-      "content_hash": "318d288f0efd82ac2a9aa58c17899c257bca9f69329510f4609afd5586c47ab2",
-      "match_level": "possible",
-      "label": "需确认",
-      "score": 62,
+      "content_hash": "5cabfbfb9e2555c5759d0200de59d44b9613e01bd699f45183e84d553a951728",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
       "normalized": {
         "organization": "国家卫生健康委机关服务局",
         "title": "纪检监察及党务岗",
         "location": "不明确",
         "education": "硕士研究生及以上",
-        "majors": [],
+        "majors": [
+          "哲学类（0101）、法学类（0301）、政治学类（0302）、纪检监察学类（0308）、法律类（0351）、马克思主义理论类（0305）、中共党史党建学类（0307）"
+        ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
-        "political_status": "不明确",
+        "fresh_graduate_required": true,
+        "political_status": "中共党员",
         "gender_requirement": "不明确",
         "responsibilities": "",
         "deadline": ""
       },
       "reasons": [
-        "学历达到岗位当前公开门槛"
+        "原始附件字段已纳入复核"
       ],
-      "conflicts": [],
-      "needs_confirmation": [
-        "专业要求未明确，需核对原岗位表",
-        "招聘对象或毕业年份未明确，需确认是否接受2027届"
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突",
+        "岗位要求北京市常住户口，与非北京户口条件冲突"
       ],
+      "needs_confirmation": [],
       "evidence": [
         {
-          "field": "岗位名称",
-          "quote": "纪检监察及党务岗"
+          "field": "专业",
+          "quote": "哲学类（0101）、法学类（0301）、政治学类（0302）、纪检监察学类（0308）、法律类（0351）、马克思主义理论类（0305）、中共党史党建学类（0307）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届生"
+        },
+        {
+          "field": "户籍",
+          "quote": "北京市常住户口"
         },
         {
           "field": "学历",
           "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "e327cf46f9f95d94": {
-      "content_hash": "20a4852cbbd9961cf9cf56b507d5e6741b7951c88dd314f9e6b499f595741221",
-      "match_level": "possible",
-      "label": "需确认",
-      "score": 62,
+      "content_hash": "113031154d5b4d6195dd5a9d8165c8b09b9487ba3e0486f439d5c2a32e0c99aa",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
       "normalized": {
         "organization": "国家卫生健康委能力建设和继续教育中心（国家卫生健康委党校）",
         "title": "科研教学",
         "location": "不明确",
         "education": "硕士研究生及以上",
-        "majors": [],
+        "majors": [
+          "哲学（01）、医学（10）、公共管理学类（1204）、法学类（0301）"
+        ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": false,
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
         "deadline": ""
       },
       "reasons": [
-        "学历达到岗位当前公开门槛"
+        "原始附件字段已纳入复核"
       ],
-      "conflicts": [],
-      "needs_confirmation": [
-        "专业要求未明确，需核对原岗位表",
-        "招聘对象或毕业年份未明确，需确认是否接受2027届"
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "招聘对象明确为社会人员，与2027届应届生条件冲突",
+        "岗位要求北京市常住户口，与非北京户口条件冲突"
       ],
+      "needs_confirmation": [],
       "evidence": [
         {
-          "field": "岗位名称",
-          "quote": "科研教学"
+          "field": "专业",
+          "quote": "哲学（01）、医学（10）、公共管理学类（1204）、法学类（0301）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "社会人员"
+        },
+        {
+          "field": "户籍",
+          "quote": "北京市常住户口"
         },
         {
           "field": "学历",
           "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "a50dc32af55e9423": {
-      "content_hash": "a92e6d0772ee3bb5ee650d3772fc2e1134f0603f3b7fee65f125988241599ecd",
+      "content_hash": "65c4fbb92c22483a319ba5c1e3d99ce9036198f615acdb9019cf754d61fefae6",
       "match_level": "no",
       "label": "不符合",
-      "score": 14,
+      "score": 12,
       "normalized": {
         "organization": "中国人口与发展研究中心",
         "title": "研究分析岗",
         "location": "不明确",
         "education": "博士研究生",
-        "majors": [],
+        "majors": [
+          "人口学（030302）"
+        ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
-        "political_status": "不明确",
-        "gender_requirement": "不明确",
-        "responsibilities": "",
-        "deadline": ""
-      },
-      "reasons": [],
-      "conflicts": [
-        "岗位学历明确要求博士研究生"
-      ],
-      "needs_confirmation": [],
-      "evidence": [
-        {
-          "field": "学历",
-          "quote": "博士研究生"
-        }
-      ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
-      "analysis_version": 1,
-      "analysis_author": "codex_dialog_gpt-5.6"
-    },
-    "584d3a9a8062f835": {
-      "content_hash": "6d670e64728b3166ce4f11df0ed93595139db825088f543f83b6a4ddb84fdf19",
-      "match_level": "possible",
-      "label": "需确认",
-      "score": 62,
-      "normalized": {
-        "organization": "中国健康教育中心",
-        "title": "监测技术岗",
-        "location": "不明确",
-        "education": "硕士研究生及以上",
-        "majors": [],
-        "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": false,
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
         "deadline": ""
       },
       "reasons": [
-        "学历达到岗位当前公开门槛"
+        "原始附件字段已纳入复核"
       ],
-      "conflicts": [],
-      "needs_confirmation": [
-        "专业要求未明确，需核对原岗位表",
-        "招聘对象或毕业年份未明确，需确认是否接受2027届"
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "招聘对象明确为社会人员，与2027届应届生条件冲突",
+        "岗位要求北京市常住户口，与非北京户口条件冲突"
       ],
+      "needs_confirmation": [],
       "evidence": [
         {
-          "field": "岗位名称",
-          "quote": "监测技术岗"
+          "field": "专业",
+          "quote": "人口学（030302）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "社会人员"
+        },
+        {
+          "field": "户籍",
+          "quote": "北京市常住户口"
+        },
+        {
+          "field": "学历",
+          "quote": "博士研究生"
+        }
+      ],
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_gpt-5.6"
+    },
+    "584d3a9a8062f835": {
+      "content_hash": "7784f16a57a8ba687ab0ad1d89e2ba46cc1a9920eda933dc902d590a9447bdb0",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
+      "normalized": {
+        "organization": "中国健康教育中心",
+        "title": "监测技术岗",
+        "location": "不明确",
+        "education": "硕士研究生及以上",
+        "majors": [
+          "应用统计类（0252）、公共卫生与预防医学类（1004）、统计学类（0714）、公共卫生类（1053）、社会学类（0303）"
+        ],
+        "graduation_years": [],
+        "fresh_graduate_required": false,
+        "political_status": "不明确",
+        "gender_requirement": "不明确",
+        "responsibilities": "",
+        "deadline": ""
+      },
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "招聘对象明确为社会人员，与2027届应届生条件冲突",
+        "岗位要求北京市常住户口，与非北京户口条件冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "专业",
+          "quote": "应用统计类（0252）、公共卫生与预防医学类（1004）、统计学类（0714）、公共卫生类（1053）、社会学类（0303）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "社会人员"
+        },
+        {
+          "field": "户籍",
+          "quote": "北京市常住户口"
         },
         {
           "field": "学历",
           "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
@@ -86746,210 +87266,258 @@
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "be64ed2e98271bd7": {
-      "content_hash": "c704046c54a639a6b494247bb4da4f0504f7e47714ea792d6d6929c05c91e66b",
-      "match_level": "possible",
-      "label": "需确认",
-      "score": 62,
+      "content_hash": "fd3786446ed2238ccff0f826e114e6d272edf39c2d4237ce4a1b2069ef0126dd",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
       "normalized": {
         "organization": "国家卫健委统计信息中心",
         "title": "数智管理与评价岗",
         "location": "不明确",
         "education": "硕士研究生及以上",
-        "majors": [],
+        "majors": [
+          "生物医学工程类（0831）、临床医学类（1002）、药学类（1007）、公共卫生与预防医学类（1004）、管理科学与工程类（1201）、公共管理学类（1204）"
+        ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": false,
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
         "deadline": ""
       },
       "reasons": [
-        "学历达到岗位当前公开门槛"
+        "原始附件字段已纳入复核"
       ],
-      "conflicts": [],
-      "needs_confirmation": [
-        "专业要求未明确，需核对原岗位表",
-        "招聘对象或毕业年份未明确，需确认是否接受2027届"
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "招聘对象明确为社会人员，与2027届应届生条件冲突",
+        "岗位要求北京市常住户口，与非北京户口条件冲突"
       ],
+      "needs_confirmation": [],
       "evidence": [
         {
-          "field": "岗位名称",
-          "quote": "数智管理与评价岗"
+          "field": "专业",
+          "quote": "生物医学工程类（0831）、临床医学类（1002）、药学类（1007）、公共卫生与预防医学类（1004）、管理科学与工程类（1201）、公共管理学类（1204）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "社会人员"
+        },
+        {
+          "field": "户籍",
+          "quote": "北京市常住户口"
         },
         {
           "field": "学历",
           "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "2dcfe290dc57bd4e": {
-      "content_hash": "3f64f91a14e4eaf6d96caec585700368d46b8a915661255ea86727bc216727af",
-      "match_level": "possible",
-      "label": "需确认",
-      "score": 62,
+      "content_hash": "381f7be207827f04615c4f1bab9df22823522dd8273c382558d6c6eb477a1112",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
       "normalized": {
         "organization": "中国健康教育中心",
         "title": "数字媒体视觉设计岗",
         "location": "不明确",
         "education": "本科及以上",
-        "majors": [],
+        "majors": [
+          "本科专业：数字媒体艺术（130508）、新媒体艺术（130511）、智能影像艺术(130318）、新媒体技术（080912）、电影制作（080913）、视觉传达设计（130502）、戏剧影视美术设计（130307）、影视摄影与制作（130311）、动画（130310）；研究生专业：设计类（1357）、戏剧与影视类（1354）、设计学类（1403）"
+        ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": false,
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
         "deadline": ""
       },
       "reasons": [
-        "学历达到岗位当前公开门槛",
-        "岗位名称与设计、媒体或传播方向存在相关性"
+        "原始附件字段已纳入复核"
       ],
-      "conflicts": [],
-      "needs_confirmation": [
-        "专业要求未明确，需核对原岗位表",
-        "招聘对象或毕业年份未明确，需确认是否接受2027届"
+      "conflicts": [
+        "招聘对象明确为社会人员，与2027届应届生条件冲突",
+        "岗位要求北京市常住户口，与非北京户口条件冲突"
       ],
+      "needs_confirmation": [],
       "evidence": [
         {
-          "field": "岗位名称",
-          "quote": "数字媒体视觉设计岗"
+          "field": "招聘对象",
+          "quote": "社会人员"
+        },
+        {
+          "field": "户籍",
+          "quote": "北京市常住户口"
         },
         {
           "field": "学历",
           "quote": "本科及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "8a4be03493fb462e": {
-      "content_hash": "cdafedcf7db434ef0e69e422e50fff287efc97d37a60efdc9440451cc846ebe5",
+      "content_hash": "9f5921a096a4ff83300e259ea3d4eea5d0d851021018670d93ad5175146b93ce",
       "match_level": "no",
       "label": "不符合",
-      "score": 14,
+      "score": 12,
       "normalized": {
         "organization": "国家卫生健康委职业安全卫生研究中心",
         "title": "康复医师岗",
         "location": "不明确",
         "education": "硕士研究生",
-        "majors": [],
+        "majors": [
+          "临床医学类（1002、1051）"
+        ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
-        "political_status": "不明确",
-        "gender_requirement": "不明确",
-        "responsibilities": "",
-        "deadline": ""
-      },
-      "reasons": [],
-      "conflicts": [
-        "岗位名称明确为医师类岗位，与设计专业背景不符"
-      ],
-      "needs_confirmation": [],
-      "evidence": [
-        {
-          "field": "岗位名称",
-          "quote": "康复医师岗"
-        }
-      ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
-      "analysis_version": 1,
-      "analysis_author": "codex_dialog_gpt-5.6"
-    },
-    "159f892cdf7363cf": {
-      "content_hash": "43440676714df2ff9baa831f61708f427b1772eedfdb4b42c9311c755b07d5e6",
-      "match_level": "possible",
-      "label": "需确认",
-      "score": 62,
-      "normalized": {
-        "organization": "国家卫生健康委项目资金监管服务中心",
-        "title": "审计2",
-        "location": "不明确",
-        "education": "硕士研究生及以上",
-        "majors": [],
-        "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": true,
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
         "deadline": ""
       },
       "reasons": [
-        "学历达到岗位当前公开门槛"
+        "原始附件字段已纳入复核"
       ],
-      "conflicts": [],
-      "needs_confirmation": [
-        "专业要求未明确，需核对原岗位表",
-        "招聘对象或毕业年份未明确，需确认是否接受2027届"
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
       ],
+      "needs_confirmation": [],
       "evidence": [
         {
-          "field": "岗位名称",
-          "quote": "审计2"
+          "field": "专业",
+          "quote": "临床医学类（1002、1051）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届生"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生"
+        }
+      ],
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_gpt-5.6"
+    },
+    "159f892cdf7363cf": {
+      "content_hash": "60782faed627adb183cc522a8373eeaa61c484493dc9e0a982440c5eef183fb0",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
+      "normalized": {
+        "organization": "国家卫生健康委项目资金监管服务中心",
+        "title": "审计2",
+        "location": "不明确",
+        "education": "硕士研究生及以上",
+        "majors": [
+          "审计类（1257）、会计类（1253）、会计学（120201）"
+        ],
+        "graduation_years": [],
+        "fresh_graduate_required": true,
+        "political_status": "不明确",
+        "gender_requirement": "不明确",
+        "responsibilities": "",
+        "deadline": ""
+      },
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "专业",
+          "quote": "审计类（1257）、会计类（1253）、会计学（120201）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届生"
         },
         {
           "field": "学历",
           "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "b6813286c1cd3ed1": {
-      "content_hash": "bcff7f0a924e001cfc133b8b91641ba42fbdfb5f1258a66506684d45ed8946c1",
-      "match_level": "possible",
-      "label": "需确认",
-      "score": 62,
+      "content_hash": "209c2009f87f5bf5a4dd6037627d564548f39655de21d0190fb2bc7f1e452c56",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
       "normalized": {
         "organization": "国家卫生健康委项目资金监管服务中心",
         "title": "审计1",
         "location": "不明确",
         "education": "本科及以上",
-        "majors": [],
+        "majors": [
+          "审计学（120207）、会计学（120203）、财务管理（120204）、内部审计（120218）、审计类（1257）、会计类（1253）、会计学（120201）"
+        ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": false,
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
         "deadline": ""
       },
       "reasons": [
-        "学历达到岗位当前公开门槛"
+        "原始附件字段已纳入复核"
       ],
-      "conflicts": [],
-      "needs_confirmation": [
-        "专业要求未明确，需核对原岗位表",
-        "招聘对象或毕业年份未明确，需确认是否接受2027届"
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "招聘对象明确为社会人员，与2027届应届生条件冲突",
+        "岗位要求北京市常住户口，与非北京户口条件冲突"
       ],
+      "needs_confirmation": [],
       "evidence": [
         {
-          "field": "岗位名称",
-          "quote": "审计1"
+          "field": "专业",
+          "quote": "审计学（120207）、会计学（120203）、财务管理（120204）、内部审计（120218）、审计类（1257）、会计类（1253）、会计学（120201）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "社会人员"
+        },
+        {
+          "field": "户籍",
+          "quote": "北京市常住户口"
         },
         {
           "field": "学历",
           "quote": "本科及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "32791fac891485ed": {
-      "content_hash": "503e219f339155db1ab0dd41d0f52d56fabcb3333bdbd51a8f54eb97c326dd78",
-      "match_level": "possible",
-      "label": "需确认",
-      "score": 62,
+      "content_hash": "612db40021195487dd0e66cac68ed82616a482c7753ef2e94c1bd628948cf031",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
       "normalized": {
         "organization": "中国人口与发展研究中心",
         "title": "国际研究岗",
         "location": "不明确",
         "education": "硕士研究生及以上",
-        "majors": [],
+        "majors": [
+          "国际关系、人口学、区域国别学"
+        ],
         "graduation_years": [],
         "fresh_graduate_required": null,
         "political_status": "不明确",
@@ -86958,24 +87526,23 @@
         "deadline": ""
       },
       "reasons": [
-        "学历达到岗位当前公开门槛"
+        "原始附件字段已纳入复核"
       ],
-      "conflicts": [],
-      "needs_confirmation": [
-        "专业要求未明确，需核对原岗位表",
-        "招聘对象或毕业年份未明确，需确认是否接受2027届"
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向"
       ],
+      "needs_confirmation": [],
       "evidence": [
         {
-          "field": "岗位名称",
-          "quote": "国际研究岗"
+          "field": "专业",
+          "quote": "国际关系、人口学、区域国别学"
         },
         {
           "field": "学历",
           "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
@@ -87020,302 +87587,405 @@
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "325c98ce34a893c1": {
-      "content_hash": "f782b63d5675359d56a4dca28edff0d7970a5501ccf97d308e28c26e46b8d642",
-      "match_level": "possible",
-      "label": "需确认",
-      "score": 62,
+      "content_hash": "6ac83dd296d01cacee3937c5807d67940149d65dcc330e59f8d5f53061a023bf",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
       "normalized": {
         "organization": "国家卫生健康委医疗管理服务指导中心",
         "title": "医疗质量管理岗",
         "location": "不明确",
         "education": "本科及以上",
-        "majors": [],
+        "majors": [
+          "临床医学类（1002、1051）、公共卫生与预防医学类（1004）、公共卫生类（1053）、社会医学与卫生事业管理（120402、107401）"
+        ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": true,
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
         "deadline": ""
       },
       "reasons": [
-        "学历达到岗位当前公开门槛"
+        "原始附件字段已纳入复核"
       ],
-      "conflicts": [],
-      "needs_confirmation": [
-        "专业要求未明确，需核对原岗位表",
-        "招聘对象或毕业年份未明确，需确认是否接受2027届"
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突",
+        "岗位要求北京市常住户口，与非北京户口条件冲突"
       ],
+      "needs_confirmation": [],
       "evidence": [
         {
-          "field": "岗位名称",
-          "quote": "医疗质量管理岗"
+          "field": "专业",
+          "quote": "临床医学类（1002、1051）、公共卫生与预防医学类（1004）、公共卫生类（1053）、社会医学与卫生事业管理（120402、107401）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届生"
+        },
+        {
+          "field": "户籍",
+          "quote": "北京市常住户口"
         },
         {
           "field": "学历",
           "quote": "本科及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "81469c2f8c665fac": {
-      "content_hash": "43fb9777c0de37bf4222335abb13a361c1cc5534dc97c723d665acbe80700e29",
-      "match_level": "possible",
-      "label": "需确认",
-      "score": 62,
+      "content_hash": "7f525fffed546c6b9d8c9d021c827cbeef57e330d333f6ebb6203703d4cc8c03",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
       "normalized": {
         "organization": "国家卫生健康委医疗管理服务指导中心",
         "title": "医疗技术临床应用评价与管理",
         "location": "不明确",
         "education": "本科及以上",
-        "majors": [],
+        "majors": [
+          "临床医学类（1002、1051）"
+        ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": true,
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
         "deadline": ""
       },
       "reasons": [
-        "学历达到岗位当前公开门槛"
+        "原始附件字段已纳入复核"
       ],
-      "conflicts": [],
-      "needs_confirmation": [
-        "专业要求未明确，需核对原岗位表",
-        "招聘对象或毕业年份未明确，需确认是否接受2027届"
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突",
+        "岗位要求北京市常住户口，与非北京户口条件冲突"
       ],
+      "needs_confirmation": [],
       "evidence": [
         {
-          "field": "岗位名称",
-          "quote": "医疗技术临床应用评价与管理"
+          "field": "专业",
+          "quote": "临床医学类（1002、1051）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届生"
+        },
+        {
+          "field": "户籍",
+          "quote": "北京市常住户口"
         },
         {
           "field": "学历",
           "quote": "本科及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "19732d6db25d714a": {
-      "content_hash": "365e3c6611c438d54dde3c79330a1d8d86f7603ccad3d4c7ff2f6baad71bf8d9",
+      "content_hash": "a8ee59e192569bea4b67a0454fc6ea8bd82fc22069fa71f3dbfe8a4838348beb",
       "match_level": "no",
       "label": "不符合",
-      "score": 14,
+      "score": 12,
       "normalized": {
         "organization": "国家卫生健康委职业安全卫生研究中心",
         "title": "内科医师岗",
         "location": "不明确",
         "education": "硕士研究生",
-        "majors": [],
+        "majors": [
+          "临床医学类（1002、1051）"
+        ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
-        "political_status": "不明确",
-        "gender_requirement": "不明确",
-        "responsibilities": "",
-        "deadline": ""
-      },
-      "reasons": [],
-      "conflicts": [
-        "岗位名称明确为医师类岗位，与设计专业背景不符"
-      ],
-      "needs_confirmation": [],
-      "evidence": [
-        {
-          "field": "岗位名称",
-          "quote": "内科医师岗"
-        }
-      ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
-      "analysis_version": 1,
-      "analysis_author": "codex_dialog_gpt-5.6"
-    },
-    "d6e1544f61f44547": {
-      "content_hash": "cfa84571e2ca6e35618a19f34a435ffb05018e762392d343c8968b27e5d7a68a",
-      "match_level": "possible",
-      "label": "需确认",
-      "score": 62,
-      "normalized": {
-        "organization": "中国健康教育中心",
-        "title": "内审及财务管理岗",
-        "location": "不明确",
-        "education": "本科及以上",
-        "majors": [],
-        "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": true,
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
         "deadline": ""
       },
       "reasons": [
-        "学历达到岗位当前公开门槛"
+        "原始附件字段已纳入复核"
       ],
-      "conflicts": [],
-      "needs_confirmation": [
-        "专业要求未明确，需核对原岗位表",
-        "招聘对象或毕业年份未明确，需确认是否接受2027届"
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
       ],
+      "needs_confirmation": [],
       "evidence": [
         {
-          "field": "岗位名称",
-          "quote": "内审及财务管理岗"
+          "field": "专业",
+          "quote": "临床医学类（1002、1051）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届生"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生"
+        }
+      ],
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_gpt-5.6"
+    },
+    "d6e1544f61f44547": {
+      "content_hash": "9ea3c69cabb98117e12ca1ce28be4be7eb95dcebacd38854873ad4884678e6df",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
+      "normalized": {
+        "organization": "中国健康教育中心",
+        "title": "内审及财务管理岗",
+        "location": "不明确",
+        "education": "本科及以上",
+        "majors": [
+          "本科专业：会计学（120203）、审计学（120207）、内部审计（120218）；研究生专业：会计类（1253）、审计类（1257）"
+        ],
+        "graduation_years": [],
+        "fresh_graduate_required": true,
+        "political_status": "不明确",
+        "gender_requirement": "不明确",
+        "responsibilities": "",
+        "deadline": ""
+      },
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突",
+        "岗位要求北京市常住户口，与非北京户口条件冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "专业",
+          "quote": "本科专业：会计学（120203）、审计学（120207）、内部审计（120218）；研究生专业：会计类（1253）、审计类（1257）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届生"
+        },
+        {
+          "field": "户籍",
+          "quote": "北京市常住户口"
         },
         {
           "field": "学历",
           "quote": "本科及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "a102cf95f1ad5fd8": {
-      "content_hash": "ffc186d5bfb11c2b659826e250b99bb55456302ec11ab73419bd3126213945d0",
-      "match_level": "possible",
-      "label": "需确认",
-      "score": 62,
+      "content_hash": "5fcd965943fe0817273b00abf4c1615c47518b1742630f97af661827aaf46c9d",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
       "normalized": {
         "organization": "中国健康教育中心",
         "title": "健康传播岗",
         "location": "不明确",
         "education": "硕士研究生及以上",
-        "majors": [],
+        "majors": [
+          "新闻传播学类（0503）、新闻与传播类（0552）、临床医学类（1002、1051）、公共卫生与预防医学类（1004）、公共卫生类（1053）"
+        ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": true,
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
         "deadline": ""
       },
       "reasons": [
-        "学历达到岗位当前公开门槛",
-        "岗位名称与设计、媒体或传播方向存在相关性"
+        "原始附件字段已纳入复核"
       ],
-      "conflicts": [],
-      "needs_confirmation": [
-        "专业要求未明确，需核对原岗位表",
-        "招聘对象或毕业年份未明确，需确认是否接受2027届"
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突",
+        "岗位要求北京市常住户口，与非北京户口条件冲突"
       ],
+      "needs_confirmation": [],
       "evidence": [
         {
-          "field": "岗位名称",
-          "quote": "健康传播岗"
+          "field": "专业",
+          "quote": "新闻传播学类（0503）、新闻与传播类（0552）、临床医学类（1002、1051）、公共卫生与预防医学类（1004）、公共卫生类（1053）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届生"
+        },
+        {
+          "field": "户籍",
+          "quote": "北京市常住户口"
         },
         {
           "field": "学历",
           "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "5da31c747ab01531": {
-      "content_hash": "ebb60fb0e908d442fd6475825e9dd32f1d4a00fb06ccd82245b9e63fdf5a858a",
-      "match_level": "possible",
-      "label": "需确认",
-      "score": 62,
+      "content_hash": "fef0036abf5ae941724c77be0d14c5ea8be8fce9e1a9a9195cef9a6d0202c1a9",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
       "normalized": {
         "organization": "国家卫生健康委医疗管理服务指导中心",
         "title": "信息数据与医疗机构运行管理岗",
         "location": "不明确",
         "education": "本科及以上",
-        "majors": [],
+        "majors": [
+          "临床医学类（1002、1051）、公共卫生与预防医学类（1004）、公共卫生类（1053）、社会医学与卫生事业管理（120402、107401）"
+        ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": true,
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
         "deadline": ""
       },
       "reasons": [
-        "学历达到岗位当前公开门槛"
+        "原始附件字段已纳入复核"
       ],
-      "conflicts": [],
-      "needs_confirmation": [
-        "专业要求未明确，需核对原岗位表",
-        "招聘对象或毕业年份未明确，需确认是否接受2027届"
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突",
+        "岗位要求北京市常住户口，与非北京户口条件冲突"
       ],
+      "needs_confirmation": [],
       "evidence": [
         {
-          "field": "岗位名称",
-          "quote": "信息数据与医疗机构运行管理岗"
+          "field": "专业",
+          "quote": "临床医学类（1002、1051）、公共卫生与预防医学类（1004）、公共卫生类（1053）、社会医学与卫生事业管理（120402、107401）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届生"
+        },
+        {
+          "field": "户籍",
+          "quote": "北京市常住户口"
         },
         {
           "field": "学历",
           "quote": "本科及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "66c94d7d1a52f42a": {
-      "content_hash": "033d2d39e86976a824f8361f8843d0330f8c2ebf5f95cf8417a995c4e1fe83f7",
+      "content_hash": "761c6616ab559d9f100ee8e1ed52fc047f683f7160e0f929d25a972b9f972d25",
       "match_level": "no",
       "label": "不符合",
-      "score": 14,
+      "score": 12,
       "normalized": {
         "organization": "国家卫生健康委职业安全卫生研究中心",
         "title": "临床医师岗2",
         "location": "不明确",
         "education": "硕士研究生及以上",
-        "majors": [],
+        "majors": [
+          "临床医学类（1002、1051）"
+        ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": false,
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
         "deadline": ""
       },
-      "reasons": [],
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
       "conflicts": [
-        "岗位名称明确为医师类岗位，与设计专业背景不符"
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "招聘对象明确为社会人员，与2027届应届生条件冲突",
+        "岗位要求北京市常住户口，与非北京户口条件冲突"
       ],
       "needs_confirmation": [],
       "evidence": [
         {
-          "field": "岗位名称",
-          "quote": "临床医师岗2"
+          "field": "专业",
+          "quote": "临床医学类（1002、1051）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "社会人员"
+        },
+        {
+          "field": "户籍",
+          "quote": "北京市常住户口"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "c5cf8a73f860d7aa": {
-      "content_hash": "1ec4097ed14a46f7a7d29625ca551377cb97ba1561d9fb1ae1e50a0aa67aa0f1",
+      "content_hash": "40d75324ff5989b1b3f7a2720b487ac82ed69f52376059cdb0a25bc5bffd4047",
       "match_level": "no",
       "label": "不符合",
-      "score": 14,
+      "score": 12,
       "normalized": {
         "organization": "国家卫生健康委职业安全卫生研究中心",
         "title": "临床医师岗1",
         "location": "不明确",
         "education": "硕士研究生及以上",
-        "majors": [],
+        "majors": [
+          "临床医学类（1002、1051）、中西医结合类（1006）、中西医结合临床（105709）"
+        ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": false,
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
         "deadline": ""
       },
-      "reasons": [],
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
       "conflicts": [
-        "岗位名称明确为医师类岗位，与设计专业背景不符"
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "招聘对象明确为社会人员，与2027届应届生条件冲突",
+        "岗位要求北京市常住户口，与非北京户口条件冲突"
       ],
       "needs_confirmation": [],
       "evidence": [
         {
-          "field": "岗位名称",
-          "quote": "临床医师岗1"
+          "field": "专业",
+          "quote": "临床医学类（1002、1051）、中西医结合类（1006）、中西医结合临床（105709）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "社会人员"
+        },
+        {
+          "field": "户籍",
+          "quote": "北京市常住户口"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
@@ -87355,122 +88025,155 @@
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "ae00b71e31d2e297": {
-      "content_hash": "ac8f7ea53a5c6f1f8ff6f06a5eb62b2442ef36d08b362c69990bc60b0ff5d384",
-      "match_level": "possible",
-      "label": "需确认",
-      "score": 62,
+      "content_hash": "976ad244ec0d6262b3fd0a466f9ef918a0acc39e0a8dc8180ea04a3d232e22ec",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
       "normalized": {
         "organization": "国家卫生健康委妇幼健康中心",
         "title": "业务部门研究岗",
         "location": "不明确",
         "education": "硕士研究生及以上",
-        "majors": [],
+        "majors": [
+          "妇产科学（100211）、社会医学与卫生事业管理（120402）"
+        ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": false,
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
         "deadline": ""
       },
       "reasons": [
-        "学历达到岗位当前公开门槛"
+        "原始附件字段已纳入复核"
       ],
-      "conflicts": [],
-      "needs_confirmation": [
-        "专业要求未明确，需核对原岗位表",
-        "招聘对象或毕业年份未明确，需确认是否接受2027届"
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "招聘对象明确为社会人员，与2027届应届生条件冲突",
+        "岗位要求北京市常住户口，与非北京户口条件冲突"
       ],
+      "needs_confirmation": [],
       "evidence": [
         {
-          "field": "岗位名称",
-          "quote": "业务部门研究岗"
+          "field": "专业",
+          "quote": "妇产科学（100211）、社会医学与卫生事业管理（120402）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "社会人员"
+        },
+        {
+          "field": "户籍",
+          "quote": "北京市常住户口"
         },
         {
           "field": "学历",
           "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "74d6803c00d5a9b6": {
-      "content_hash": "10f2558b6b700a412d4397d3e044a5311cc9c95de9b7d236ece1554d7c350eb3",
-      "match_level": "possible",
-      "label": "需确认",
-      "score": 62,
+      "content_hash": "c338a9558e3a6ce53f856f0cfd55126154dad942ac140ae183496c71a9382c0d",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
       "normalized": {
         "organization": "国家卫生健康委机关服务局",
         "title": "专业技术岗",
         "location": "不明确",
         "education": "硕士研究生及以上",
-        "majors": [],
+        "majors": [
+          "临床医学类（1002、1051）、中西医结合类（1006）"
+        ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": false,
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
         "deadline": ""
       },
       "reasons": [
-        "学历达到岗位当前公开门槛"
+        "原始附件字段已纳入复核"
       ],
-      "conflicts": [],
-      "needs_confirmation": [
-        "专业要求未明确，需核对原岗位表",
-        "招聘对象或毕业年份未明确，需确认是否接受2027届"
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "招聘对象明确为社会人员，与2027届应届生条件冲突",
+        "岗位要求北京市常住户口，与非北京户口条件冲突"
       ],
+      "needs_confirmation": [],
       "evidence": [
         {
-          "field": "岗位名称",
-          "quote": "专业技术岗"
+          "field": "专业",
+          "quote": "临床医学类（1002、1051）、中西医结合类（1006）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "社会人员"
+        },
+        {
+          "field": "户籍",
+          "quote": "北京市常住户口"
         },
         {
           "field": "学历",
           "quote": "硕士研究生及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "8b44512e29dcc899": {
-      "content_hash": "5f90349e3e77c3f590fb742ac9613ef6ffe921e75cf4c56e07cbbb8488d9c7da",
-      "match_level": "possible",
-      "label": "需确认",
-      "score": 62,
+      "content_hash": "dfcbf996e1f9ba1dba021e5e16ae50a81016049f87d2fd9bbb1663ed4ff112bc",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
       "normalized": {
         "organization": "国家心理健康和精神卫生防治中心",
         "title": "专业技术岗",
         "location": "不明确",
         "education": "本科及以上",
-        "majors": [],
+        "majors": [
+          "心理学类（0402、0711）、公共卫生与预防医学类（1004）、公共卫生类（1053）、精神医学（100205、105105）"
+        ],
         "graduation_years": [],
-        "fresh_graduate_required": null,
+        "fresh_graduate_required": true,
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
         "deadline": ""
       },
       "reasons": [
-        "学历达到岗位当前公开门槛"
+        "原始附件字段已纳入复核"
       ],
-      "conflicts": [],
-      "needs_confirmation": [
-        "专业要求未明确，需核对原岗位表",
-        "招聘对象或毕业年份未明确，需确认是否接受2027届"
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突",
+        "岗位要求北京市常住户口，与非北京户口条件冲突"
       ],
+      "needs_confirmation": [],
       "evidence": [
         {
-          "field": "岗位名称",
-          "quote": "专业技术岗"
+          "field": "专业",
+          "quote": "心理学类（0402、0711）、公共卫生与预防医学类（1004）、公共卫生类（1053）、精神医学（100205、105105）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届生"
+        },
+        {
+          "field": "户籍",
+          "quote": "北京市常住户口"
         },
         {
           "field": "学历",
           "quote": "本科及以上"
         }
       ],
-      "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
@@ -87767,6 +88470,1544 @@
         }
       ],
       "analyzed_at": "2026-07-12T08:16:52.977102+00:00",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_gpt-5.6"
+    },
+    "1b56d7dce57ab9e2": {
+      "content_hash": "21b077e8526a05c9495a7bf155f9af4b9a5d8afd7ed1a172340e15bdd15ad9f9",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
+      "normalized": {
+        "organization": "交通运输部天津水运工程科学研究院",
+        "title": "科研岗",
+        "location": "天津市滨海新区",
+        "education": "博士研究生",
+        "majors": [
+          "0810信息与通信工程、0812计算机科学与技术"
+        ],
+        "graduation_years": [],
+        "fresh_graduate_required": true,
+        "political_status": "不明确",
+        "gender_requirement": "不明确",
+        "responsibilities": "从事内河水运垂类大模型的开发，专业智能体的开发、应用等相关工作。",
+        "deadline": ""
+      },
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "专业",
+          "quote": "0810信息与通信工程、0812计算机科学与技术"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "博士研究生"
+        }
+      ],
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_gpt-5.6"
+    },
+    "c98a3b6c241dacd4": {
+      "content_hash": "5518d595181b70a4ea2f741873a93b0599dc7285e3d21580761d2d29b2271c0c",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
+      "normalized": {
+        "organization": "交通运输部天津水运工程科学研究院",
+        "title": "科研岗",
+        "location": "天津市滨海新区",
+        "education": "博士研究生",
+        "majors": [
+          "0859土木水利，0824船舶与海洋工程、0812计算机科学与技术、0802机械工程、0811控制科学与工程"
+        ],
+        "graduation_years": [],
+        "fresh_graduate_required": true,
+        "political_status": "不明确",
+        "gender_requirement": "不明确",
+        "responsibilities": "从事水运工程高质量发展中的新质生产力研发，核心突破船岸水协同、AI波浪模型等技术难题。",
+        "deadline": ""
+      },
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "专业",
+          "quote": "0859土木水利，0824船舶与海洋工程、0812计算机科学与技术、0802机械工程、0811控制科学与工程"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "博士研究生"
+        }
+      ],
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_gpt-5.6"
+    },
+    "8bcfdb6e15bbcb31": {
+      "content_hash": "cfec059f3f521fd8f747e6790cb9f3a71eab4ee48d6d0de9cd1192875b607e1c",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
+      "normalized": {
+        "organization": "交通运输部天津水运工程科学研究院",
+        "title": "科研岗",
+        "location": "天津市滨海新区",
+        "education": "博士研究生",
+        "majors": [
+          "0812计算机科学与技术、0835软件工程"
+        ],
+        "graduation_years": [],
+        "fresh_graduate_required": true,
+        "political_status": "不明确",
+        "gender_requirement": "不明确",
+        "responsibilities": "从事智慧绿色航运多要素传感监测系统与数字孪生系统开发工作，负责多源传感要素数据处理算法研发，多源数据融合与解调；负责人工智能体的算法研发与系统软件开发工作，港口立体环境要素综合管控系统集成开发、及数据库开发维护，硬件自动控制编程、智能控制技术研发。",
+        "deadline": ""
+      },
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "专业",
+          "quote": "0812计算机科学与技术、0835软件工程"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "博士研究生"
+        }
+      ],
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_gpt-5.6"
+    },
+    "7a8cf23f0be5eebf": {
+      "content_hash": "7e57eb04ef9fb4ae6755326d8f085d231945d08e1b58e8ea1e325da574e4b793",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
+      "normalized": {
+        "organization": "交通运输部天津水运工程科学研究院",
+        "title": "科研岗",
+        "location": "天津市滨海新区",
+        "education": "博士研究生",
+        "majors": [
+          "0802机械工程、0804仪器科学与技术、0808电气工程、0811控制科学与工程、0817化学工程与技术、0824船舶与海洋工程"
+        ],
+        "graduation_years": [],
+        "fresh_graduate_required": true,
+        "political_status": "不明确",
+        "gender_requirement": "不明确",
+        "responsibilities": "主要从事安全风险防控与智能预警技术相关系统性研究工作，重点围绕危险货物全生命周期安全风险评估技术、关键设备设施状态实时监测与智能检测技术、复杂事故情景动态构建与应急处置技术等方面的研究工作。",
+        "deadline": ""
+      },
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "专业",
+          "quote": "0802机械工程、0804仪器科学与技术、0808电气工程、0811控制科学与工程、0817化学工程与技术、0824船舶与海洋工程"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "博士研究生"
+        }
+      ],
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_gpt-5.6"
+    },
+    "ca7e2e5ab64f6a34": {
+      "content_hash": "aac79bfc7ef2d1fa4fab74065a34849095ee944f33680764db982bc2bf6063f5",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
+      "normalized": {
+        "organization": "交通运输部天津水运工程科学研究院",
+        "title": "科研岗",
+        "location": "天津市滨海新区",
+        "education": "硕士研究生及以上",
+        "majors": [
+          "082302交通信息工程及控制（航海方向）、0861交通运输（水路交通运输专业）、0812计算机科学与技术"
+        ],
+        "graduation_years": [],
+        "fresh_graduate_required": true,
+        "political_status": "不明确",
+        "gender_requirement": "不明确",
+        "responsibilities": "从事航海保障系统开发；交通组织研究；通航条件试验研究。",
+        "deadline": ""
+      },
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "专业",
+          "quote": "082302交通信息工程及控制（航海方向）、0861交通运输（水路交通运输专业）、0812计算机科学与技术"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
+        }
+      ],
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_gpt-5.6"
+    },
+    "dac46e47a1e52b06": {
+      "content_hash": "d2d018421fb8838c56bdafcb9dbd349a32cd68e293a276dc03eefb34a7f65cce",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
+      "normalized": {
+        "organization": "交通运输部天津水运工程科学研究院",
+        "title": "科研岗",
+        "location": "天津市滨海新区",
+        "education": "硕士研究生及以上",
+        "majors": [
+          "080502材料学"
+        ],
+        "graduation_years": [],
+        "fresh_graduate_required": true,
+        "political_status": "不明确",
+        "gender_requirement": "不明确",
+        "responsibilities": "从事水运工程相关材料试验检测及新材料研发等工作。",
+        "deadline": ""
+      },
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "专业",
+          "quote": "080502材料学"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
+        }
+      ],
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_gpt-5.6"
+    },
+    "e9a31d6ff0aadd28": {
+      "content_hash": "fc81ca2b109e70554e464ebba32c4469a45408a9187b4955a116ccf2e2bd2aca",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
+      "normalized": {
+        "organization": "中国国际可持续交通创新和知识中心",
+        "title": "基础设施互联互通促进中心专技岗",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
+        "majors": [
+          "交通运输工程（0823）、交通运输（0861）、管理科学与工程（1201）、环境科学与工程（0830）、土木工程（0814）"
+        ],
+        "graduation_years": [],
+        "fresh_graduate_required": true,
+        "political_status": "不明确",
+        "gender_requirement": "不明确",
+        "responsibilities": "负责国际运输通道布局、交通互联互通规划等研究工作。",
+        "deadline": ""
+      },
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "专业",
+          "quote": "交通运输工程（0823）、交通运输（0861）、管理科学与工程（1201）、环境科学与工程（0830）、土木工程（0814）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
+        }
+      ],
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_gpt-5.6"
+    },
+    "6db0dafc337e9ac0": {
+      "content_hash": "ab2865cfcc5ef7bdaaf1b3e1deea397f492281fb8e72dc32a8355d2d8d615e91",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
+      "normalized": {
+        "organization": "中国国际可持续交通创新和知识中心",
+        "title": "基础设施互联互通促进中心专技岗",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
+        "majors": [
+          "交通运输工程（0823）、交通运输（0861）、管理科学与工程（1201）、环境科学与工程（0830）、土木工程（0814）"
+        ],
+        "graduation_years": [],
+        "fresh_graduate_required": true,
+        "political_status": "不明确",
+        "gender_requirement": "不明确",
+        "responsibilities": "负责国际运输通道布局、交通互联互通规划等研究工作。",
+        "deadline": ""
+      },
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "专业",
+          "quote": "交通运输工程（0823）、交通运输（0861）、管理科学与工程（1201）、环境科学与工程（0830）、土木工程（0814）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
+        }
+      ],
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_gpt-5.6"
+    },
+    "cef6ca2ace00fa25": {
+      "content_hash": "142b7956fd9df26f651ce13abebaf5c935cac671c26075668263446e09cf2207",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
+      "normalized": {
+        "organization": "中国国际可持续交通创新和知识中心",
+        "title": "国际物流供应链促进中心专技岗",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
+        "majors": [
+          "统计学（0714）、 应用经济学（0202）、管理科学与工程（1201）、交通运输工程（0823）、法学类（0301）"
+        ],
+        "graduation_years": [],
+        "fresh_graduate_required": true,
+        "political_status": "不明确",
+        "gender_requirement": "不明确",
+        "responsibilities": "负责开展国际物流供应链通道布局、服务网络建设和安全稳定畅通等研究工作。",
+        "deadline": ""
+      },
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "专业",
+          "quote": "统计学（0714）、 应用经济学（0202）、管理科学与工程（1201）、交通运输工程（0823）、法学类（0301）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
+        }
+      ],
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_gpt-5.6"
+    },
+    "5a1ead4ab025f9be": {
+      "content_hash": "b9a6365831e8917e38bc729ca96feb9cd5312c85e4199f1b65aa81316c0b3a61",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
+      "normalized": {
+        "organization": "人社部中央和国家机关所属事业单位公开招聘服务平台",
+        "title": "交通运输部所属事业单位2026年度第八批统一公开招聘公告",
+        "location": "不明确",
+        "education": "不明确",
+        "majors": [],
+        "graduation_years": [
+          2026
+        ],
+        "fresh_graduate_required": null,
+        "political_status": "不明确",
+        "gender_requirement": "不明确",
+        "responsibilities": "",
+        "deadline": ""
+      },
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
+      "conflicts": [
+        "岗位附件中的招聘类别、专业或资格条件与2027届设计类应届生条件存在明确冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "岗位条件",
+          "quote": "（一）2026年国内高校应届毕业生：含两年择业期内未落实工作单位的高校毕业生，不含各类定向生、委培生 ，不含取得满足报考条件要求的学历就读期间或两年择业期内有社保、个税缴存记录的毕业生 。年龄不超过38周岁（1987年 7 月1日后出生），当年如期取得与最高学历对应的学历学位证书（硕士及以下2026年8月31日前，博士可放宽至2026年12月31日前）。应聘"
+        }
+      ],
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_gpt-5.6"
+    },
+    "251fdc5be3081b31": {
+      "content_hash": "34b1e747f4278326ce83a0b3bfe72be615d455047209eaf6b81e35ae3c0f7748",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
+      "normalized": {
+        "organization": "中国国际可持续交通创新和知识中心",
+        "title": "交通国际问题研究所专技岗",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
+        "majors": [
+          "土木工程（0814）、 交通运输工程（0823）、 环境科学与工程（0830）、交通运输（0861）、管理科学与工程（1201）"
+        ],
+        "graduation_years": [],
+        "fresh_graduate_required": true,
+        "political_status": "不明确",
+        "gender_requirement": "不明确",
+        "responsibilities": "开展重点区域国别交通合作战略与政策等研究工作。",
+        "deadline": ""
+      },
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "专业",
+          "quote": "土木工程（0814）、 交通运输工程（0823）、 环境科学与工程（0830）、交通运输（0861）、管理科学与工程（1201）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
+        }
+      ],
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_gpt-5.6"
+    },
+    "86fc5c3faa9c99fd": {
+      "content_hash": "d01b770e6c5c3c38672e43a489e9a050cdd84ca360ebd1ed8186e505913c99fb",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
+      "normalized": {
+        "organization": "交通运输部科学研究院",
+        "title": "专业技术岗",
+        "location": "北京市",
+        "education": "博士研究生",
+        "majors": [
+          "0823交通运输工程类；0814土木工程类；1204公共管理类"
+        ],
+        "graduation_years": [],
+        "fresh_graduate_required": true,
+        "political_status": "不明确",
+        "gender_requirement": "不明确",
+        "responsibilities": "从事交通安全应急理论政策与技术研究。",
+        "deadline": ""
+      },
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "专业",
+          "quote": "0823交通运输工程类；0814土木工程类；1204公共管理类"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "博士研究生"
+        }
+      ],
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_gpt-5.6"
+    },
+    "20829ef888e2a3b5": {
+      "content_hash": "abd35a847ee182bbc3ae65147991c368df9e522074c6922c1df610dc2832708f",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
+      "normalized": {
+        "organization": "交通运输部科学研究院",
+        "title": "专业技术岗",
+        "location": "北京市",
+        "education": "博士研究生",
+        "majors": [
+          "0202应用经济学类；1201管理科学与工程类；1202工商管理类（限技术经济及管理专业方向）；0823交通运输工程类（限交通运输规划与管理专业方向）"
+        ],
+        "graduation_years": [],
+        "fresh_graduate_required": true,
+        "political_status": "不明确",
+        "gender_requirement": "不明确",
+        "responsibilities": "从事交通运输投融资、预算管理等方面研究咨询与服务工作。",
+        "deadline": ""
+      },
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "专业",
+          "quote": "0202应用经济学类；1201管理科学与工程类；1202工商管理类（限技术经济及管理专业方向）；0823交通运输工程类（限交通运输规划与管理专业方向）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "博士研究生"
+        }
+      ],
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_gpt-5.6"
+    },
+    "4753e0fb4885337c": {
+      "content_hash": "c386ff202e48f323ffe1ad6d698ec0f8d1f298cac83c73675269fa7a3bf1fc2a",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
+      "normalized": {
+        "organization": "交通运输部规划研究院",
+        "title": "专业技术岗",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
+        "majors": [
+          "交通运输工程类0823（仅限交通运输规划与管理、交通信息工程及控制）、交通运输类0861（仅限交通运输规划与管理、交通信息工程及控制）、管理科学与工程类0871（仅限信息管理与信息系统、大数据与知识管理、智慧交通管理）"
+        ],
+        "graduation_years": [],
+        "fresh_graduate_required": true,
+        "political_status": "不明确",
+        "gender_requirement": "不明确",
+        "responsibilities": "负责交通运输公路领域发展战略、规划、政策、法规、标准、规范等研究和技术服务，交通运输建设项目可行性研究、设计、评估、后评价等技术咨询工作。",
+        "deadline": ""
+      },
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "专业",
+          "quote": "交通运输工程类0823（仅限交通运输规划与管理、交通信息工程及控制）、交通运输类0861（仅限交通运输规划与管理、交通信息工程及控制）、管理科学与工程类0871（仅限信息管理与信息系统、大数据与知识管理、智慧交通管理）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
+        }
+      ],
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_gpt-5.6"
+    },
+    "fbdb4c98dc43e77e": {
+      "content_hash": "f06ad9fbedc62fa3cc8c3f588595ec345d4bedb79f62b839744ad695da007a4c",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
+      "normalized": {
+        "organization": "交通运输部规划研究院",
+        "title": "专业技术岗",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
+        "majors": [
+          "港口、海岸及近海工程081505"
+        ],
+        "graduation_years": [],
+        "fresh_graduate_required": true,
+        "political_status": "不明确",
+        "gender_requirement": "不明确",
+        "responsibilities": "负责交通运输水运领域发展战略、规划、政策、法规、标准、规范等研究和技术服务，交通运输建设项目可行性研究、设计、评估、后评价等技术咨询工作。",
+        "deadline": ""
+      },
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "专业",
+          "quote": "港口、海岸及近海工程081505"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
+        }
+      ],
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_gpt-5.6"
+    },
+    "222bfa6d07c8b82a": {
+      "content_hash": "c0317e3f7578be93ba0eeff36f5bef430806bb89520f65d63fbae293879ce309",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
+      "normalized": {
+        "organization": "交通运输部规划研究院",
+        "title": "专业技术岗",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
+        "majors": [
+          "电子信息类0854、信息与通信工程类0810"
+        ],
+        "graduation_years": [],
+        "fresh_graduate_required": true,
+        "political_status": "不明确",
+        "gender_requirement": "不明确",
+        "responsibilities": "负责交通运输安全领域发展战略、规划、政策、法规、标准、规范等研究和技术服务，交通运输建设项目可行性研究、设计、评估、后评价等技术咨询工作。",
+        "deadline": ""
+      },
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "专业",
+          "quote": "电子信息类0854、信息与通信工程类0810"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
+        }
+      ],
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_gpt-5.6"
+    },
+    "ecc5fe0735ef3d67": {
+      "content_hash": "3396c58639eaada8c656a15b3fd5a4fa04151eebc2fed05d76458e30feb52978",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
+      "normalized": {
+        "organization": "交通运输部规划研究院",
+        "title": "专业技术岗",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
+        "majors": [
+          "环境科学与工程类0830、环境工程077602、能源动力0858"
+        ],
+        "graduation_years": [],
+        "fresh_graduate_required": true,
+        "political_status": "不明确",
+        "gender_requirement": "不明确",
+        "responsibilities": "负责交通运输环境领域发展战略、规划、政策、法规、标准、规范等研究和技术服务，交通运输建设项目可行性研究、设计、评估、后评价等技术咨询工作。",
+        "deadline": ""
+      },
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "专业",
+          "quote": "环境科学与工程类0830、环境工程077602、能源动力0858"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
+        }
+      ],
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_gpt-5.6"
+    },
+    "1460033614e3e85e": {
+      "content_hash": "98f4ee57079edb9c1fe2d8840976059fc5b0898a614ff96ada7722579064510b",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
+      "normalized": {
+        "organization": "交通运输部规划研究院",
+        "title": "专业技术岗",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
+        "majors": [
+          "交通运输工程类0823（仅限交通信息工程及控制）、控制科学与工程0811、计算机科学与技术类0812（仅限计算机软件与理论、计算机应用技术）"
+        ],
+        "graduation_years": [],
+        "fresh_graduate_required": true,
+        "political_status": "不明确",
+        "gender_requirement": "不明确",
+        "responsibilities": "负责交通运输信息领域发展战略、规划、政策、法规、标准、规范等研究和技术服务，交通运输建设项目可行性研究、设计、评估、后评价等技术咨询工作。",
+        "deadline": ""
+      },
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "专业",
+          "quote": "交通运输工程类0823（仅限交通信息工程及控制）、控制科学与工程0811、计算机科学与技术类0812（仅限计算机软件与理论、计算机应用技术）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
+        }
+      ],
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_gpt-5.6"
+    },
+    "2e4f394070e41b54": {
+      "content_hash": "c843f2fd6d7f0488e62f372b16c7660666304c0fff67ec1ad0fbc2f6570f4f0c",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
+      "normalized": {
+        "organization": "交通运输部规划研究院",
+        "title": "专业技术岗",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
+        "majors": [
+          "计算机科学与技术类0812（仅限计算机软件与理论、计算机应用技术）"
+        ],
+        "graduation_years": [],
+        "fresh_graduate_required": true,
+        "political_status": "不明确",
+        "gender_requirement": "不明确",
+        "responsibilities": "负责综合交通空间规划领域数据资源采集、整合、挖掘分析等，综合交通空间规划信息系统的设计、开发与运行维护，交通信息化建设项目可行性研究、设计等技术咨询工作。",
+        "deadline": ""
+      },
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "专业",
+          "quote": "计算机科学与技术类0812（仅限计算机软件与理论、计算机应用技术）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
+        }
+      ],
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_gpt-5.6"
+    },
+    "67d63cbc440e3970": {
+      "content_hash": "3761d43294083e72e3c3719ea263b8822c4883cbd6d6ccfdac668c87db6258dc",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
+      "normalized": {
+        "organization": "交通运输部规划研究院",
+        "title": "专业技术岗",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
+        "majors": [
+          "交通运输类0861（仅限轨道交通运输）"
+        ],
+        "graduation_years": [],
+        "fresh_graduate_required": true,
+        "political_status": "不明确",
+        "gender_requirement": "不明确",
+        "responsibilities": "负责交通运输综合交通领域发展战略、规划、政策、法规、标准、规范等研究和技术服务，交通运输建设项目可行性研究、设计、评估、后评价等技术咨询工作。",
+        "deadline": ""
+      },
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "专业",
+          "quote": "交通运输类0861（仅限轨道交通运输）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
+        }
+      ],
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_gpt-5.6"
+    },
+    "a804e0f9a4777d7c": {
+      "content_hash": "8e52dd84a531fcc1248cc01a107b601932323ddc2e618d56590826c4a0364d26",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
+      "normalized": {
+        "organization": "交通运输部规划研究院",
+        "title": "专业技术岗",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
+        "majors": [
+          "交通运输类0861（仅限航空交通运输）"
+        ],
+        "graduation_years": [],
+        "fresh_graduate_required": true,
+        "political_status": "不明确",
+        "gender_requirement": "不明确",
+        "responsibilities": "负责交通运输综合交通领域发展战略、规划、政策、法规、标准、规范等研究和技术服务，交通运输建设项目可行性研究、设计、评估、后评价等技术咨询工作。",
+        "deadline": ""
+      },
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "专业",
+          "quote": "交通运输类0861（仅限航空交通运输）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
+        }
+      ],
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_gpt-5.6"
+    },
+    "a85f08524ea5e1ce": {
+      "content_hash": "2f4b57681e805eedf8b9ee546882daf26f5dab2dae03be7957e282580df511fd",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
+      "normalized": {
+        "organization": "交通运输部规划研究院",
+        "title": "专业技术岗",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
+        "majors": [
+          "电子信息类0854（仅限软件工程）、计算机科学与技术类0812（仅限计算机软件与理论、计算机应用技术）"
+        ],
+        "graduation_years": [],
+        "fresh_graduate_required": true,
+        "political_status": "不明确",
+        "gender_requirement": "不明确",
+        "responsibilities": "负责交通运输信息领域发展战略、规划、政策、法规、标准、规范等研究和技术服务，交通运输建设项目可行性研究、设计、评估、后评价等技术咨询工作。",
+        "deadline": ""
+      },
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "专业",
+          "quote": "电子信息类0854（仅限软件工程）、计算机科学与技术类0812（仅限计算机软件与理论、计算机应用技术）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
+        }
+      ],
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_gpt-5.6"
+    },
+    "2ff27ac0f17c0dd3": {
+      "content_hash": "aa62ec6e8c01480a35f2404408391e1940a793438f9eb1ec889bbcddffab9af7",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
+      "normalized": {
+        "organization": "交通运输部规划研究院",
+        "title": "专业技术岗",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
+        "majors": [
+          "交通运输工程类0823 （仅限交通运输规划与管理）"
+        ],
+        "graduation_years": [],
+        "fresh_graduate_required": true,
+        "political_status": "不明确",
+        "gender_requirement": "不明确",
+        "responsibilities": "负责交通运输物流领域发展战略、规划、政策、法规、标准、规范等研究和技术服务，交通运输建设项目可行性研究、设计、评估、后评价等技术咨询工作。",
+        "deadline": ""
+      },
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "专业",
+          "quote": "交通运输工程类0823 （仅限交通运输规划与管理）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
+        }
+      ],
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_gpt-5.6"
+    },
+    "e960cacffe3599e8": {
+      "content_hash": "f6b0a1ee22c9da3e6348b09e643faf538acdb3cfa473a71249aceaf99a3c7a80",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
+      "normalized": {
+        "organization": "交通运输部规划研究院",
+        "title": "专业技术岗",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
+        "majors": [
+          "计算机科学与技术类0812（仅限计算机软件与理论、计算机应用技术）"
+        ],
+        "graduation_years": [],
+        "fresh_graduate_required": true,
+        "political_status": "不明确",
+        "gender_requirement": "不明确",
+        "responsibilities": "负责综合交通空间规划领域数据资源采集、整合、挖掘分析等，综合交通空间规划信息系统的设计、开发与运行维护，交通信息化建设项目可行性研究、设计等技术咨询工作。",
+        "deadline": ""
+      },
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "专业",
+          "quote": "计算机科学与技术类0812（仅限计算机软件与理论、计算机应用技术）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
+        }
+      ],
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_gpt-5.6"
+    },
+    "d5e3c0a4b54c634f": {
+      "content_hash": "a56c650396e92926f77b847967cd4f3ea83ca023b0cb52152673f2871450702d",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
+      "normalized": {
+        "organization": "交通运输部规划研究院",
+        "title": "专业技术岗",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
+        "majors": [
+          "交通运输类0861（仅限轨道交通运输）"
+        ],
+        "graduation_years": [],
+        "fresh_graduate_required": false,
+        "political_status": "不明确",
+        "gender_requirement": "不明确",
+        "responsibilities": "负责交通运输综合交通领域发展战略、规划、政策、法规、标准、规范等研究和技术服务，交通运输建设项目可行性研究、设计、评估、后评价等技术咨询工作。",
+        "deadline": ""
+      },
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "招聘对象明确为社会人员，与2027届应届生条件冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "专业",
+          "quote": "交通运输类0861（仅限轨道交通运输）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "社会人员"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
+        }
+      ],
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_gpt-5.6"
+    },
+    "165c05c39b5d3ead": {
+      "content_hash": "b107f5131d55d92585ac6903f75e8711e0363f935aa935efa3c5f1b037b11fae",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
+      "normalized": {
+        "organization": "交通运输部规划研究院",
+        "title": "专业技术岗",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
+        "majors": [
+          "交通运输类0861（仅限航空交通运输）"
+        ],
+        "graduation_years": [],
+        "fresh_graduate_required": false,
+        "political_status": "不明确",
+        "gender_requirement": "不明确",
+        "responsibilities": "负责交通运输综合交通领域发展战略、规划、政策、法规、标准、规范等研究和技术服务，交通运输建设项目可行性研究、设计、评估、后评价等技术咨询工作。",
+        "deadline": ""
+      },
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "招聘对象明确为社会人员，与2027届应届生条件冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "专业",
+          "quote": "交通运输类0861（仅限航空交通运输）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "社会人员"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
+        }
+      ],
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_gpt-5.6"
+    },
+    "bacecc0cda7abd98": {
+      "content_hash": "cebe8e9fb772f1c720f3d2003fb9ad52097ca66ab2b139f84332feb037a67726",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
+      "normalized": {
+        "organization": "交通运输部规划研究院",
+        "title": "专业技术岗",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
+        "majors": [
+          "交通运输工程类0823(仅限道路与铁道工程）"
+        ],
+        "graduation_years": [],
+        "fresh_graduate_required": false,
+        "political_status": "不明确",
+        "gender_requirement": "不明确",
+        "responsibilities": "负责交通运输公路领域发展战略、规划、政策、法规、标准、规范等研究和技术服务，交通运输建设项目可行性研究、设计、评估、后评价等技术咨询工作。",
+        "deadline": ""
+      },
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "招聘对象明确为社会人员，与2027届应届生条件冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "专业",
+          "quote": "交通运输工程类0823(仅限道路与铁道工程）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "社会人员"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
+        }
+      ],
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_gpt-5.6"
+    },
+    "08dc70e1999e0d7a": {
+      "content_hash": "d3de9286d6d901bf9c2dadb9ad9a703da4e1aaf88a5fdc28b1513de2463eda67",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
+      "normalized": {
+        "organization": "交通运输部公路科学研究院",
+        "title": "专业技术岗",
+        "location": "北京市",
+        "education": "博士研究生",
+        "majors": [
+          "0808电气工程类、0811控制科学与工程类、0858能源动力类"
+        ],
+        "graduation_years": [],
+        "fresh_graduate_required": true,
+        "political_status": "不明确",
+        "gender_requirement": "不明确",
+        "responsibilities": "承担交通与能源融合领域相关基础或应用研究、技术研发等工作。",
+        "deadline": ""
+      },
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "专业",
+          "quote": "0808电气工程类、0811控制科学与工程类、0858能源动力类"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "博士研究生"
+        }
+      ],
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_gpt-5.6"
+    },
+    "d03a583c8acd4624": {
+      "content_hash": "c288c4661aa07e06b3102a4f6c56ab24689b8e301eecf68bc819cca64b9b494c",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
+      "normalized": {
+        "organization": "交通运输部公路科学研究院",
+        "title": "专业技术岗",
+        "location": "北京市",
+        "education": "博士研究生",
+        "majors": [
+          "0823交通运输工程类、125604物流工程与管理、0811控制科学与工程类、0854电子信息类"
+        ],
+        "graduation_years": [],
+        "fresh_graduate_required": true,
+        "political_status": "不明确",
+        "gender_requirement": "不明确",
+        "responsibilities": "承担交通物流相关领域基础或应用研究、技术研发等工作。",
+        "deadline": ""
+      },
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "本公告为2026年度招聘，附件岗位限定本年度国内高校应届毕业生，与2027届冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "专业",
+          "quote": "0823交通运输工程类、125604物流工程与管理、0811控制科学与工程类、0854电子信息类"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "国内高校应届毕业生"
+        },
+        {
+          "field": "学历",
+          "quote": "博士研究生"
+        }
+      ],
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_gpt-5.6"
+    },
+    "eda6c8c04e002be6": {
+      "content_hash": "76b5d19d83d33d4d8be9b62917c18a25cc1a544b399c021a566667e344350612",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
+      "normalized": {
+        "organization": "交通运输部公路科学研究院",
+        "title": "专业技术岗",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
+        "majors": [
+          "0814/085901土木工程、1201/0871管理科学与工程类、材料类（085601材料工程）、0805/0773材料科学与工程类"
+        ],
+        "graduation_years": [],
+        "fresh_graduate_required": false,
+        "political_status": "不明确",
+        "gender_requirement": "不明确",
+        "responsibilities": "承担交通运输相关领域基础或应用研究技术研发等工作。",
+        "deadline": ""
+      },
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "招聘对象明确为社会人员，与2027届应届生条件冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "专业",
+          "quote": "0814/085901土木工程、1201/0871管理科学与工程类、材料类（085601材料工程）、0805/0773材料科学与工程类"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "社会人员"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
+        }
+      ],
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_gpt-5.6"
+    },
+    "509b0e684b57ba99": {
+      "content_hash": "519a3435e61ca7a69057003e7a37ae4dfc0bdce43c055e7a4b504e4244298b3f",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
+      "normalized": {
+        "organization": "交通运输部公路科学研究院",
+        "title": "专业技术岗",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
+        "majors": [
+          "0823交通运输工程类、125604物流工程与管理、0811控制科学与工程类、0854电子信息类"
+        ],
+        "graduation_years": [],
+        "fresh_graduate_required": false,
+        "political_status": "不明确",
+        "gender_requirement": "不明确",
+        "responsibilities": "承担交通物流相关领域基础或应用研究、技术研发等工作。",
+        "deadline": ""
+      },
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "招聘对象明确为社会人员，与2027届应届生条件冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "专业",
+          "quote": "0823交通运输工程类、125604物流工程与管理、0811控制科学与工程类、0854电子信息类"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "社会人员"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
+        }
+      ],
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_gpt-5.6"
+    },
+    "5cd7537e766149c7": {
+      "content_hash": "c7de9ea4300d6f997150eca7e20553c9ba8ff0a69070bbeaed5a928d4a52a141",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
+      "normalized": {
+        "organization": "交通运输部公路科学研究院",
+        "title": "专业技术岗",
+        "location": "北京市",
+        "education": "硕士研究生及以上",
+        "majors": [
+          "0823交通运输工程类、计算机类（0775/0812计算机科学与技术、0788/1405智能科学与技术）、电子信息类（085404计算机技术）"
+        ],
+        "graduation_years": [],
+        "fresh_graduate_required": false,
+        "political_status": "不明确",
+        "gender_requirement": "不明确",
+        "responsibilities": "承担技术转化相关领域基础或应用研究、技术研发等工作。",
+        "deadline": ""
+      },
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
+      "conflicts": [
+        "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
+        "招聘对象明确为社会人员，与2027届应届生条件冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "专业",
+          "quote": "0823交通运输工程类、计算机类（0775/0812计算机科学与技术、0788/1405智能科学与技术）、电子信息类（085404计算机技术）"
+        },
+        {
+          "field": "招聘对象",
+          "quote": "社会人员"
+        },
+        {
+          "field": "学历",
+          "quote": "硕士研究生及以上"
+        }
+      ],
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_gpt-5.6"
+    },
+    "d6511563a47e737c": {
+      "content_hash": "1a8593dbdae69d6b93919cdb0c727cd67a9cc451fc2712d56dc11fee69ff4b7c",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
+      "normalized": {
+        "organization": "人社部中央和国家机关所属事业单位公开招聘服务平台",
+        "title": "文化和旅游部直属事业单位2026年度公开招聘应届毕业生公告（六）",
+        "location": "不明确",
+        "education": "不明确",
+        "majors": [],
+        "graduation_years": [
+          2024,
+          2026
+        ],
+        "fresh_graduate_required": null,
+        "political_status": "不明确",
+        "gender_requirement": "不明确",
+        "responsibilities": "",
+        "deadline": "2024-01-01T23:59:00+08:00"
+      },
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
+      "conflicts": [
+        "岗位附件中的招聘类别、专业或资格条件与2027届设计类应届生条件存在明确冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "岗位条件",
+          "quote": "（一）具有中华人民共和国国籍，遵守宪法和法律。 （二）政治立场坚定，拥护中国共产党的领导和中国特色社会主义制度，拥护祖国统一， 深刻领悟“两个确立”的决定性意义， 增强“四个意识”，坚定“四个自信”，做到“两个维护”，在思想上政治上行动上同以习近平同志为核心的党中央保持高度一致。 （三）具有良好的品行，有较强的事业心和责任感。 （四）热爱文化和旅游事业。 （"
+        }
+      ],
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_gpt-5.6"
+    },
+    "f5192924cd4f40a1": {
+      "content_hash": "f5557b2f34b17f6caf04e033df16db1923072c034a1c43216e90de786907ea96",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
+      "normalized": {
+        "organization": "人社部中央和国家机关所属事业单位公开招聘服务平台",
+        "title": "国家卫生健康委直属和联系单位2026年度第二批公开招聘人员公告",
+        "location": "不明确",
+        "education": "不明确",
+        "majors": [],
+        "graduation_years": [
+          2026
+        ],
+        "fresh_graduate_required": null,
+        "political_status": "不明确",
+        "gender_requirement": "不明确",
+        "responsibilities": "",
+        "deadline": ""
+      },
+      "reasons": [
+        "原始附件字段已纳入复核"
+      ],
+      "conflicts": [
+        "岗位附件中的招聘类别、专业或资格条件与2027届设计类应届生条件存在明确冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "岗位条件",
+          "quote": "等详见《国家卫生健康委直属和联系单位2026年度第二批公开招聘岗位信息表》（"
+        }
+      ],
+      "analyzed_at": "2026-07-12T08:54:34.567732+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     }

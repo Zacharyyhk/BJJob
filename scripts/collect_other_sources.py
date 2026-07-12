@@ -64,7 +64,10 @@ def make_item(source: dict[str, Any], title: str, url: str, published: str = "",
         "source_url": url,
         "source_home": source["url"],
     }
-    item.update({key: clean(value) for key, value in details.items() if value not in (None, "", [], {})})
+    item.update({
+        key: value if isinstance(value, (dict, list)) else clean(value)
+        for key, value in details.items() if value not in (None, "", [], {})
+    })
     return item
 
 
@@ -173,18 +176,25 @@ def workbook_positions(content: bytes, attachment_url: str, notice: dict[str, An
                 break
         if header_index < 0:
             continue
+        raw_headers = {column: clean(value) for column, value in enumerate(rows[header_index]) if clean(value)}
         for row_number, row in enumerate(rows[header_index + 1:], start=header_index + 2):
             values = {header_map[column]: clean(value) for column, value in enumerate(row) if column in header_map and clean(value)}
             if not values.get("title") and not values.get("organization"):
                 continue
+            raw_fields = {
+                header: clean(row[column])
+                for column, header in raw_headers.items()
+                if column < len(row) and clean(row[column])
+            }
             url = f"{notice['source_url']}#position-{sheet.title}-{row_number}"
             result.append(make_item(
                 {"name": notice["source_name"], "group": notice["category"], "url": notice["source_home"]},
                 values.get("title") or notice["title"], url, notice.get("published_at", ""),
                 values.get("organization") or notice.get("organization", ""),
                 **{key: value for key, value in values.items() if key not in ("title", "organization")},
+                raw_fields=raw_fields,
                 deadline=notice.get("deadline"), source_attachment_url=attachment_url,
-                recruitment_type="公告附件岗位", data_quality="附件岗位表已解析",
+                recruitment_type="公告附件岗位", data_quality="附件岗位表已解析并保留原始字段",
             ))
     return result[:500]
 
@@ -262,7 +272,7 @@ def mohrss_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[l
         for name, value in cookies.items():
             session.cookies.set(name, value, domain=domain)
 
-    found: dict[str, dict[str, Any]] = {}
+    values: list[dict[str, Any]] = []
     final_url = response.url
     for section in ("zpgg/", "gxbyszpzl/"):
         section_source = {**source, "url": urljoin(source["url"], section)}
@@ -271,10 +281,8 @@ def mohrss_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[l
             article = re.search(r"/t\d+_(\d+)\.html(?:#(.+))?$", item["source_url"])
             if not article:
                 continue
-            key = f"{article.group(1)}#{article.group(2) or ''}"
-            found.setdefault(key, item)
+            values.append(item)
 
-    values = list(found.values())
     return values, "collected" if values else "collected-empty", final_url
 
 
