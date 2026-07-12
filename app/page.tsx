@@ -27,6 +27,9 @@ type Position = {
   contact?: string;
   sheet?: string;
   row?: number;
+  sourceAttachmentUrl?: string;
+  source_attachment_url?: string;
+  position_code?: string;
 };
 
 type Notice = {
@@ -73,6 +76,7 @@ type AiMatch = {
     requirements?: string;
     headcount?: string;
     applicant_type?: string;
+    position_code?: string;
     deadline?: string;
   };
 };
@@ -113,6 +117,7 @@ const jobs: Job[] = notices.flatMap<Job>((notice): Job[] => {
     sourceName: "北京市人社局事业单位公开招聘",
     sourceGroup: "北京市机关单位",
     establishmentType: "事业编制",
+    sourceAttachmentUrl: position.source_attachment_url,
   }));
 });
 
@@ -141,6 +146,9 @@ const otherJobs: Job[] = otherSources.items.map((item) => {
     last_verified_at: item.last_verified_at,
     education: item.education,
     headcount: item.headcount,
+    sheet: "sheet" in item ? String(item.sheet || "") : "",
+    row: "row" in item ? Number(item.row) : undefined,
+    sourceAttachmentUrl: "source_attachment_url" in item ? String(item.source_attachment_url || "") : "",
   };
 });
 
@@ -155,6 +163,7 @@ const rawJobs = [...jobs, ...otherJobs].map((job) => ({
   requirements: aiResults[job.id]?.normalized?.requirements?.trim() || job.requirements,
   headcount: aiResults[job.id]?.normalized?.headcount?.trim() || job.headcount,
   applicant_type: aiResults[job.id]?.normalized?.applicant_type?.trim() || job.applicant_type,
+  position_code: aiResults[job.id]?.normalized?.position_code?.trim() || job.position_code,
   deadline: aiResults[job.id]?.normalized?.deadline?.trim() || job.deadline,
 }));
 
@@ -343,6 +352,10 @@ export default function Home() {
 
             <div className="match-reasons">{match.reasons.map((reason) => <span key={reason}>{reason}</span>)}</div>
             <div className="source-name">{job.sourceName}</div>
+            {job.sourceAttachmentUrl && <div className="attachment-ref">
+              <span><b>附件岗位：</b>{job.sheet ? `${job.sheet} · ` : ""}{job.row ? `第 ${job.row} 行` : "原始岗位行"}{job.position_code ? ` · 岗位代码 ${job.position_code}` : ""}</span>
+              <a href={job.sourceAttachmentUrl} target="_blank" rel="noreferrer">查看附件 ↗</a>
+            </div>}
 
             <div className="facts">
               {job.headcount && <span>招 {job.headcount} 人</span>}
