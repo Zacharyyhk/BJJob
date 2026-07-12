@@ -2,7 +2,7 @@
   "schema_version": 1,
   "profile_version": 3,
   "prompt_version": 5,
-  "generated_at": "2026-07-12T13:10:54.903204+00:00",
+  "generated_at": "2026-07-12T13:12:37.627076+00:00",
   "results": {
     "cf7cee89c85f25ab-hzgwxxb-3": {
       "content_hash": "a10829aa0669bc32c2af108731688a3a5f08df0231fbc74346da3baf60e85d85",
@@ -13103,7 +13103,7 @@
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "a0e556b07a8c1bb5": {
-      "content_hash": "a3f9621cc3dd8e76e6542d8cdcd336bf3b4ad2c0c4fb0e7bc4ec799643c3a684",
+      "content_hash": "4f07e8a0705e0673f729483b32bee27c13b40050acf7b77edc32d03c2cceaa9b",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -13135,12 +13135,12 @@
           "quote": "三年以上工作经验 1.参与SoC/IP 系统/子系统的设计和实现； 2.负责模块架构设计、RTL实现、时序分析优化以及模块的PPA优化； 3.支撑 SoC/IP 的系统集成，以及文档编写； 4.与性能分析团队一起进行芯片…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.870645+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.621074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "e803c404cc2ce520": {
-      "content_hash": "2bdb860e0cd0cb9475308a83875d9873779f7b8e1671a011b2ddce63d656bb2e",
+      "content_hash": "c0070f3912733b9b2f5ed91f794e732e554be48f315504da3d9054bcd0695ae2",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -13167,12 +13167,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.870645+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.621074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "9f8ba76ef3d5cb20": {
-      "content_hash": "6e07b744f2d40f8697ef7abef6e374d4cade934a04392a3136f13721efb9cadc",
+      "content_hash": "d04ee3fd84f5c8cca47e1b3f96f7760e52be4db3aec123717899a5d9fafa54ac",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -13204,12 +13204,12 @@
           "quote": "五年以上工作经验 1.头部PE/VC 5年及以上半导体赛道投资经验，且有良好的track records； 2.本科理工科背景（优先电子、计算机、工程学、物理等），顶尖院校理工博士学位加分； 3.有责任心、高度自驱、对半…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.870645+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.621074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "11a01bdf48b4bf27": {
-      "content_hash": "4677da8bae9cc644bdec10a88d26887826079cd2b0b58451a294fdf1026c5c63",
+      "content_hash": "d2330e7bc48e1725a1f461eaa163cdb8c8b56d5d254a05e24a803ec5c74b595a",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -13241,12 +13241,12 @@
           "quote": "五年以上工作经验 1.具备安全管理经验，熟悉红线、安全规范、安全度量、安全方案跟踪和落地； 2.需有良好的沟通能力和协调能力，能够深入产品线产研流程，理解安全需求，协调内外资源，解决安全风险，并具备一定的风险前瞻意识； …"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.870645+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.621074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "149a694db34253f5": {
-      "content_hash": "01415229c2476c6efc91831468590d55b92993a93cf5982bb2b50d0dca175b97",
+      "content_hash": "4e6c9d25597279c4cd842073092dcf76086d925b0d50b3532fdd22f599dc9dc4",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -13278,12 +13278,12 @@
           "quote": "一年以上工作经验 1.负责大模型 Agent 评估、强化学习和数据制造所需的大规模沙盒平台建设，面向大规模 CPU 集群提供稳定、可扩展的虚拟化运行环境； 2.设计虚拟机、容器等多类运行环境的统一接入、编排、调度和交付能…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.870645+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.621074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "65ba0cb096ceeed4": {
-      "content_hash": "8a71bd61e653555e1d2836cc2f53704defa38d5410da25513637c2488cd636fb",
+      "content_hash": "ad79daf828d91ae6eff96db87c1fc5a227bd47f41be95d711c9bc929340eaae4",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -13315,12 +13315,12 @@
           "quote": "三年以上工作经验 1.负责语音识别大模型研发，提高噪声/小声/远场/口音/方言等复杂声学条件下识别鲁棒性； 2.负责语音识别语音-文本多模态大模型的研发，融合领域知识，用户行为与实时信息，提高大模型的上下文建模与逻辑推理…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.871644+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.621074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "aedbaf1195eb479e": {
-      "content_hash": "bae35da412aa2d9e115f20180a6573593528a1c3fddedb5458131c359910e415",
+      "content_hash": "ac4149bb61b342857727f7ae893947fd7b68b438328b30ac7274fbfbd8809bed",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -13347,12 +13347,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.871644+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.621074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "52d1add689c03010": {
-      "content_hash": "c854d12124f9d7418eec7e1a5e83c2e317ff3d2114d6e61f2f58cc048f01653a",
+      "content_hash": "c81062b61b9cd838bdf348d612f86551c9aac677d5b57a7baf62033cfe14712c",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -13389,12 +13389,12 @@
           "quote": "五年以上工作经验 1.负责存储相关技术方向的系统架构设计及技术研发； 2.负责存储相关技术方向的规划、前瞻性探索、影响力建设等综合事务； 3.指导并培养相关技术方向团队成员，带领团队不断攻克技术难题，达成既定的业务目标；…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.871644+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.621074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "fcdecf1ae8750ae9": {
-      "content_hash": "d3ba57d4db7f27337ee25b16b4638b6b39ea1e82538d8b20c2af2fb6616fbfce",
+      "content_hash": "a71efff7eea627251d0f79e8d40015ec4794fce63f8eff2a7f0ded20b30491dc",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -13426,12 +13426,12 @@
           "quote": "五年以上工作经验 1.负责腾讯自研龙虾WorkBuddy/腾讯AI IDE CodeBuddy产品质量保障及AI评测工作，推动产品质量体系，生成效果提升； 2.负责大语言模型（LLM）及Agent系统的评测体系设计与持续…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.871644+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.621074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "0764cb46b3e2ad91": {
-      "content_hash": "09529f289274f73ceed1c3409b336f4c49a8b61b643fd6590f007b8a1ca2b414",
+      "content_hash": "508838f1c60a3b1070aa33bdc30bfb31eafa500715411b7009d4102459899c26",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -13463,12 +13463,12 @@
           "quote": "三年以上工作经验 1.参与或主导投放 Agent 技术架构与核心机制建设（运行时、编排、工具 / Skill、记忆等）； 2.攻坚核心业务难题：复杂任务可靠执行、多步操作的确定性与可控性、效果归因与决策质量； 3.将广告…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.871644+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.621074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "aed3d961da64a7d2": {
-      "content_hash": "afc11fdc0de9616a48d43c14e3e403e2aaf5cfa01d35d3875f5e95d9ea4e52f2",
+      "content_hash": "f2103534e4e30ae1ad93db044f32bfd83b29a2ae03a98bf8594d01287109b80d",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -13500,12 +13500,12 @@
           "quote": "五年以上工作经验 1.技术演进路线制定：持续跟进业界传输技术发展方向（包括但不限于传输系统，IPOD系统，相干模块），结合业务需求制定自研传输平台技术演进路线，明确短期产品研发与中长期技术布局方向，保持产品技术竞争力； …"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.871644+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.621074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "ae8187b6947aeec0": {
-      "content_hash": "ae042e30a6758b1166383a3a342c3ec822354163ed05e6cdd1b177fb708e6222",
+      "content_hash": "d2b2a4b042e411f2fd116a1f31b5a75e5285aed7cfdce7cee23b102c355354a4",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -13537,12 +13537,12 @@
           "quote": "三年以上工作经验 1.负责开展影视、节目、动画制作项目中供应商管理风险评估，下钻分析各环节供应商风险点和管控缺失点； 2.协助业务侧搭建制作项目过程中各环节供应商管理机制； 3.日常支持业务侧的风险咨询工作。"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.871644+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.621074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "4b45dbde8cf7af86": {
-      "content_hash": "0082371a562acd3b97c1db749a1b31febb7260e5b04efbcc0291c8dead956140",
+      "content_hash": "b3deaf71a50ef96811c735585c529af6ea3b591b573628e234f62b2975308e27",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -13574,12 +13574,12 @@
           "quote": "三年以上工作经验 1.负责长剧、中剧、短剧的付款类风险评估，下钻分析各环节交付物&供应商风险点，监管付款拦截率； 2.与服采、采购风控、风控、财管搭建制作全流程中各环节的供应商评价体系和淘汰； 3.日常支持业务侧验收付款…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.871644+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.621074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "fbe8a7de62fd0f8b": {
-      "content_hash": "0ee6bf73c44b74dd8f26bcbde4996a41bca919d80c0bde5c7c50501f7bff42e7",
+      "content_hash": "dd8e67170c6340dfff288369348f84e00992c28d8586d67894dcb27300477d66",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -13611,12 +13611,12 @@
           "quote": "两年以上工作经验 1.负责大模型训练/推理相关算子的设计、实现与优化（ CUDA/CUTLASS/Triton ）； 2.面向大模型训练和推理场景，对算子进行端到端性能分析与调优，持续挖掘吞吐、延迟、显存利用率等指标的优…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.871644+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.621074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "df976efacf4cd3d7": {
-      "content_hash": "a528cda956e9da1b3e4b75ee35d91d759e8c1d59e1d5a2149820ec422411cf6f",
+      "content_hash": "6f1d00b3b71cb5bbdcfc37840ff7d337c37b276707a7a6b0b3abd365c29c82f2",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -13648,12 +13648,12 @@
           "quote": "两年以上工作经验 1.负责深度参与大模型前沿方向的数据工作，重点负责视频生成模型的数据标注与管理、模型效果评估； 2.负责建设视频生成大模型的数据生产和质量提升流程，沉淀并建设起行业领先的数据生产标准； 3.负责建立科学…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.871644+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.621074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "87d0f398b91a5996": {
-      "content_hash": "d938ad63bc742a2aa66d6ec33276837c44839200d4e2421c3671c723233296e4",
+      "content_hash": "43afdf9148f172214b9f8cf1f80ed3608d85192ed66f751a9f7086560bddb8cd",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -13685,12 +13685,12 @@
           "quote": "两年以上工作经验 1.与大模型算法同学深度合作，联合优化，打造行业领先的高性能推理引擎，支持LLM/VLM/DiT等模型的高效部署； 2.推理性能极致优化、包括PD分离、低比特计算、并行优化、算子优化等，提升大规模分布式…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.871644+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.621074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "3fbb615ddab6d34b": {
-      "content_hash": "fd30c2df79dab88e3c457a077b6698e7d38954c359faba1669591d1e664666c8",
+      "content_hash": "617dde2822f212835fdb7d6872a38641557fe222146aa4e09aa32aa00bd6d2f1",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -13722,12 +13722,12 @@
           "quote": "两年以上工作经验 1.负责视频生成、世界模型模型与强化学习相结合的训练框架设计、开发与性能优化； 2.深入分析和优化视RL训练全链路流程，包括数据加载、显存管理、通信效率、并行优化等，显著提升训练效率； 3.与前沿算法团…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.871644+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.621074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "e2da15fdb48a90e2": {
-      "content_hash": "4491f6acb8e8f08d4d52c530ec27768f0071bc3f64d3d2379a0b0e1af050f686",
+      "content_hash": "4e0865a5b8ff3e611a8972864277fd46ba95b68b0d6c7c54b75f21bb661ff7d7",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -13759,12 +13759,12 @@
           "quote": "五年以上工作经验 1.负责WorkBuddy与CodeBuddy产品的商业化策划与售前技术支持，针对多行业客户需求定制化设计解决方案，并向客户清晰阐述方案的价值与优势，提供专业的技术咨询与建议； 2.与销售团队紧密协同，…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.871644+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.621074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "67bff44772d694ec": {
-      "content_hash": "85aae5d5f677f287ce721b9e8f774ce54401692f4fdc43c99140c6a1cd86b53b",
+      "content_hash": "5a0f8e84ed7e2cd44775442aad22fa951acd5eb30299d85f7da2e6895bd424ad",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -13796,12 +13796,12 @@
           "quote": "五年以上工作经验 1.负责支持商务建立客户技术线客情，进行前期业务需求分析，输出针对客户的打法策略； 2.负责互联网行业大客户技术对接，通过技术咨询拿到和分析客户业务需求，并且输出对应的解决方案； 3.负责客户技术方案咨…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.871644+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.621074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "0a7ff3b89c106496": {
-      "content_hash": "808d2c22b2f841b9b440b303adddda2689b75b5e72c3f100bf9d0142b409551d",
+      "content_hash": "f533257feaa545635c91f9d80fde594d796e6eed219d3d51734670fe0147f12b",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -13833,12 +13833,12 @@
           "quote": "三年以上工作经验 1.制定大模型后训练分Topic数据策略，搭建数据质量评估体系与数据生产标准，针对性优化数据短板，提升模型训练效果； 2.全面管理数据合成、数据质检、数据标注、数据运营小组，负责团队搭建、流程制定、任务…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.872643+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.621074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "2335dd1592f62313": {
-      "content_hash": "f951497e9d95be015f6730a056351cb1826ce16648bdc2ad568de4dea51ab8a8",
+      "content_hash": "abd15eb6426b26a7a843cb5877084d5a8cb243ab128068eaefe3f3a58228360b",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -13870,12 +13870,12 @@
           "quote": "一年以上工作经验 1.参与构建多模态大模型评测体系，覆盖万物识别、智能体（Agent）、图形用户界面（GUI）、STEM、代码、视频等多个方向，建立完整、科学的评测框架与全面的评测集，真实反映模型性能，推动形成行业评测标…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.872643+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.621074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "3323d5dadf3bd754": {
-      "content_hash": "040a7a800295f71a602a1842e9e6b250e626cfff42213cdf6aa948681ef969db",
+      "content_hash": "85d73d5516d329d4d501e3445dc9450527e64d2e5fcc040c2f935c0f1b576407",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -13902,12 +13902,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.872643+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.621074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "2558445125c29d7a": {
-      "content_hash": "6ffb6e03e3cb9c961d12a3d8802a9b3eb2bd884b84976f2eca52a0f7194bb70c",
+      "content_hash": "e5166e8f295ab81bbb4283d2a6facddc5f6538030327173933b63ee73ad2bd7d",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -13939,12 +13939,12 @@
           "quote": "五年以上工作经验 1.按照公司战略和部门规划，统筹资源安排，制定数据中心服务策略； 2.结合IDC实际情况均衡考虑服务质量、效率、成本及安全，以支撑部门的业务运营； 3.负责与运营商的后台团队建立密切、高效合作关系； 4…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.872643+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.621074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "4f999ed239151def": {
-      "content_hash": "f2b1f0651fa9143a27fef2b62171b67c1c1bcf3ece3d33f2c7632376ec68c378",
+      "content_hash": "28ca42cafb567b4478fa6c2fa96a041b7a901a16ce58e0839291980072ceab33",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -13971,12 +13971,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.872643+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.621074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "d82c0aa06d4ee5e6": {
-      "content_hash": "4a673966864eda197b222c034c00a8e670f4e6e8a7d45597298f22eb9f3a1847",
+      "content_hash": "3402d64f4ad6408a6dcfc6c514767724d6fecc4e9837ef8d4ccfccd6019e61a5",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -14013,12 +14013,12 @@
           "quote": "三年以上工作经验 1.面向AI应用场景的大模型微调，优化PostTraining (SFT/RM/RL) 算法的训练效率和实际用户体验效果； 2.研究各领域高质量数据的自动化合成方法，建设高效的线上数据飞轮链路； 3.配…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.872643+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.621074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "66035f5547498dc9": {
-      "content_hash": "ad42f1863fd8e7d4f6bbd62cdd41a16e6c5e8310c4d922a8cd6ecbe51ae633e5",
+      "content_hash": "048e3c90ba0b18c401e603105d607e66a23896dc8f93e02141d81b9fb8f8fb77",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -14055,12 +14055,12 @@
           "quote": "三年以上工作经验 1.负责腾讯元宝的动效设计，构建符合AI助手特性的情感化设计语言，通过动态视觉提升用户认知效率与交互愉悦感； 2.主导产品动效体系设计，包括智能反馈动效（如语音对话动态交互、AI生成状态、多模态交互响应…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.872643+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.621074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "b941a5f74fb3748e": {
-      "content_hash": "b1e7d328e0ae47aefc6f8d54a87273145e531f3699d2716085c858d6fadafed3",
+      "content_hash": "c6bdea33d4f7747a7b1227870e1a557919da51024e5fa8c290593aa5cb9b7a4e",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -14087,12 +14087,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.872643+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.621074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "e0a9e6920b925210": {
-      "content_hash": "81ff9ad8d0b3c907b9f0b406d93c6594a10c02dd2ff63feb288b39e703c5d1e5",
+      "content_hash": "82560cbdf3172ced7052db7434e89f28f00f59251901e1214750530798c000c4",
       "match_level": "possible",
       "label": "需确认",
       "score": 68,
@@ -14124,12 +14124,12 @@
           "quote": "用户体验"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.873645+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.621074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "a2c48d0dd6e50ff1": {
-      "content_hash": "2ca1c08d73387756ee4b50d2f6a19fe7aa6bb15f4463f448da989894128ce056",
+      "content_hash": "4551a265313a8f73f4928bc679fa974b773642c97bf7175562c1c23c45dcb347",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -14161,12 +14161,12 @@
           "quote": "三年以上工作经验 1.统筹动漫新热ip运营，负责ip全周期相关运营推广事宜。拉通外部营销和站内运营节奏、整合平台资源，结合内容核心亮点以及数据反馈进行创意宣传，积极探索变现方式； 2.用户运营，针对动漫用户进行专项运营。"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.873645+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.621074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "229a407d039b09da": {
-      "content_hash": "453fae568c74b1a4768480229dbe81fc53e5bcb5ed0006a0b1db011f1384719c",
+      "content_hash": "3d511a9f87f91ff2e76e11cb3d0941c64230b403d71f5c005b52dca89c191779",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -14193,12 +14193,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.873645+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "903cc25a88196e36": {
-      "content_hash": "83a4b2e5c0369a38c03c723c4807c6c08d7e807e8adc9e15539b3b26e9cca185",
+      "content_hash": "f04c66e03df40b2522cb512e225cd0c31c04151a81ba2a0e0f09b01678f565b5",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -14230,12 +14230,12 @@
           "quote": "三年以上工作经验 1.专注于投资项目的退出，按部门退出策略和退出规划推动并完成退出工作； 2.深入了解项目情况，与被投企业建立和维护良好的关系，促进合作； 3.支持资产管理总监完成退出路径与方案的设计； 4.与内部财法税…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.873645+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "e5fa8e5f92c307c2": {
-      "content_hash": "9f4848df7e892346e450490a0cf135845b0253bbc1923459772bbfa363c6e7c7",
+      "content_hash": "c21de5f8cf549707af0a9963a8990332deabd9ba9e2171b4da03e559eb548ee7",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -14267,12 +14267,12 @@
           "quote": "一年以上工作经验 1.分析并深入洞察内容赛道的市场趋势、竞品动态及用户行为，挖掘潜在机会与增长空间； 2.持续追踪AI前沿技术与产品动态，为公司内部视频模型、视频类AI产品及AI应用提供策略支持； 3.针对业务与关键项目…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.873645+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "e0c7cda894efb8d6": {
-      "content_hash": "a5dfb1864614161e36afcccf637ea6853f0e9af6546585af7f65bf2f609b3718",
+      "content_hash": "00c79c80faaff069ec0be4381de315baf2f84a49c4fb1b1112d2cff3c3222ba7",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -14309,12 +14309,12 @@
           "quote": "五年以上工作经验 1.网赚与福利体系战略规划：负责微视网赚玩法与用户福利体系的整体架构设计，制定中长期发展路线图。结合短视频场景与用户行为，构建具有吸引力的任务激励、金币体系、现金提现、权益兑换等机制，持续提升用户活跃度…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.873645+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "311c4cf5ee456e43": {
-      "content_hash": "aee7eec3c10c0b54b045b2c79c9d03670fc0f860b286b8feba697d58a4510126",
+      "content_hash": "70ccd4b47ead5ff0589b2ba7d92dc98e804d8ddde3df2a5bacc0c107a55e8e29",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -14346,12 +14346,12 @@
           "quote": "一年以上工作经验 1.深度参与混元大模型后训练（包括 SFT、RL ）及模型合版的研发和相关算法策略研究，提升模型泛化性、能力边界和上限； 2.后训练策略和生产范式的研究，探索更加敏捷、普适和可扩展的训练范式，提升训练和…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.873645+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "a6c0f8ee47d6734d": {
-      "content_hash": "762b9c6eb8dad2d3614509e74e75fd744bf88ee9926285b98d31654895fd813a",
+      "content_hash": "07ba7f53bb302da362335c80b81a7091ce9149a27873e889c87fcf3025954133",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -14383,12 +14383,12 @@
           "quote": "三年以上工作经验 1.负责大模型研发项目的目标对齐、计划拟定、过程管理、风险控制；与算法、产品、工程、数据等多个团队深度合作，确保目标得到精准理解并高效实现； 2.建立和优化公共流程、机制、规范，提升内外协同效率，提供稳…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.873645+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "890f6ad8de821cdc": {
-      "content_hash": "6880e6dfd29374aa582f2af37a712d36737b87f7aa35d8b5e2b7aa0204c047ce",
+      "content_hash": "1875ff4cddb2a278271789e1fed06b64c78c44c697642fbece84960609fbcaa5",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -14420,12 +14420,12 @@
           "quote": "一年以上工作经验 1.负责生成式大模型预训练相关的工作，包括但不限于：大规模模型预训练，长文本预训练，线性模型结构探索； 2.探索与跟进前沿技术，寻求技术突破，推动机器在AIGC能力的提升和突破； 3.探索高效的模型知识…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.873645+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "659022453f456a2f": {
-      "content_hash": "b2d253d89e94134646d0b962b83bf20ec2e7456fcf2a681ed79bd984a89c77ff",
+      "content_hash": "a8dedf43d8d71ec148036291d03c8a4946b4e0e5284fcfadeb7abf5377c4fea2",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -14457,12 +14457,12 @@
           "quote": "一年以上工作经验 1.策略设计：负责大模型在AI Agent 及多个高价值专业垂类（金融、医疗、法律、科研等多元方向皆可）的后训练数据策略，制定针对行业深度、复杂推理与交互合成等核心能力的数据体系标准； 2.链路与协同：…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.873645+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "f42ed9aa3b647feb": {
-      "content_hash": "56e6d105f9297cd1940458c326f29f4ac77177d555a10b4c299c2d59f4ed5441",
+      "content_hash": "fd8a9bf0044707c9287eb35c29a4fb40e9b3e50d9073a87892122d88bb540906",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -14489,12 +14489,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.873645+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "4be4c6815afd393d": {
-      "content_hash": "ce8dc9449b54fff35e25ac8e86e0a086f57152619565a48bcce10c9f38899f05",
+      "content_hash": "28e85a5c0975fbcc7d704ea2b1de5739917797df2a9d9ee4a755eb2b86e6a2a5",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -14526,12 +14526,12 @@
           "quote": "三年以上工作经验 1.主导后训练研发体系：负责多模态大语言模型（VLM）的后训练（Post-training）全流程算法研发，深入探索 SFT 及强化学习对齐算法（如 RLHF、PPO、GRPO 等），持续逼近并提升视觉…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.873645+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "59da714d01bbf4a4": {
-      "content_hash": "05ee8e46bea962c9ed3fb8bdc3e9060ae5ded87d0446cd17c6156d17a381c200",
+      "content_hash": "178d0263d5d5c44479e598af4318a6badd820a35be6078ce33edf899ea85e4a5",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -14558,12 +14558,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.873645+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "7284593123e6425f": {
-      "content_hash": "4f5736b61d56b96ee038f8ee4647688d4676f36cf269fd74254db793f61edca3",
+      "content_hash": "5bbeb1b8355fa7a0bb658256a6d61e68ee5449507f87c3a5fa8635c3fc17dd6f",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -14595,12 +14595,12 @@
           "quote": "三年以上工作经验 1.负责研究多媒体领域的前沿AI算法模型，包括视频增强与处理、视觉多模型生成、编辑等方向； 2.负责模型推理加速研究和落地，包括但不限于模型量化、蒸馏、剪枝、算子优化等，持续优化推理性能； 3.深入研究…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.873645+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "0870236abe38f84e": {
-      "content_hash": "00eeec5c14024733d210a4133d57a457503393451cc34c8118b0ccf721904a07",
+      "content_hash": "095166e48fed38fe536a3bb0dfa07240188b1ba898c9e9673277b4100f691a0d",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -14632,12 +14632,12 @@
           "quote": "三年以上工作经验 1.支持算力引入评估，负责大模型训练、推理在新硬件上的评测及调优工作； 2.主导建设大模型训推稳定性体系，解决模型生产中的技术难题，提升大规模训推的稳定性和效率； 3.深入分析大模型训推特性，结合AI芯…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.873645+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "2db600aa5548487f": {
-      "content_hash": "63128842d556cc62557241be60da053bb901d96cf2fb06b3984e90a0ca69ba6a",
+      "content_hash": "820c9580242bf014601480ea50d05ea8247345f32d7f4bcb53742b3c06f72d19",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -14664,12 +14664,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.873645+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "4ec55ae8e350e517": {
-      "content_hash": "8cae77861a5ec93cb1aec567e5522189c10b38d43fb4f21f2470f8500860ff4e",
+      "content_hash": "81cea39951da4f2909a7a47a5b1d0701854cee7f96f7bcb6bfdbc2346d6fd8f5",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -14701,12 +14701,12 @@
           "quote": "三年以上工作经验 1.负责元宝业务数据分析，洞察业务机会，发现业务问题，为产品迭代提供决策依据； 2.负责用户增长相关数据科学工作，通过ab实验、因果推断等方法，构建科学严谨的评估体系，对业务收益进行评估，并提出优化建议…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.874645+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "d49ca1bd260d8d6c": {
-      "content_hash": "56e0dfb3d9d91c9f8ebbb7b574a2bf44258e573bf38bbcf3f0dca2c98f24d39c",
+      "content_hash": "f0a11bbfd238d86d794149aef9e80dfd3781288544b555b32369c131e9f31e38",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -14743,12 +14743,12 @@
           "quote": "一年以上工作经验 1.自动评估体系建设：设计并搭建大模型自动评估体系，覆盖通用能力及专项能力（如推理、写作、语音、VLM 等）；构建评测指标体系与自动化评测流程，推动评测体系标准化、模块化、可扩展化； 2.Benchma…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.874645+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "9a0eb81e08b4bd14": {
-      "content_hash": "2008ba0c343bb9609a7cec4090cab934e765b235caeda8272627d814fb0bdaff",
+      "content_hash": "0a1d5ac98d24e84cc8e7fdaf3f73267684cf8aa27154ef0d02d3c13306ebd343",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -14780,12 +14780,12 @@
           "quote": "三年以上工作经验 1.负责从模型策略、架构设计、交互逻辑等提升端到端的语音效果和影响力； 2.协同算法团队、工程团队、评测团队，从产品视角提出功能优化方向，确保产品体验和用户口碑在市场中处于领先位置； 3.深入挖掘用户需…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.874645+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "333e00df4ce8d856": {
-      "content_hash": "efa20ab00c5c369ba02e0407720c043eb1a3d33528885b42249384e1db408eef",
+      "content_hash": "6a413a347ddd9db7c0dc92282ef46f242bb3933c6fa2a8bd6a0c5736d03e6058",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -14812,12 +14812,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.874645+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "eca9616c3a1bbd22": {
-      "content_hash": "bae58a81268526e0068e3d70d53fcb3482de0ae77f0d587a4d7f18b39d366275",
+      "content_hash": "954b3010ac2f30d9921011ceca8fb3b2b6d2eae97b69209a9c032e2de8b85e19",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -14844,12 +14844,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.874645+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "247dae00fc67b379": {
-      "content_hash": "8d8f4baed471a1eb6a4de130702c7ddcdc96086ba37a0e1227f10884b0cb6f58",
+      "content_hash": "955d19a8aec00dfc8ccb93a2ea8046450806f129addc2d74eea8e352808817b4",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -14881,12 +14881,12 @@
           "quote": "三年以上工作经验 1.负责AI搜索中大模型后训练方向的核心技术研发、优化与创新，优化Post-training 算法的训练效率和回复效果； 2.研究各领域高质量数据的自动化合成方法，建设高效的线上数据飞轮链路； 3.跟踪…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.874645+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "74d98b45f6f12b07": {
-      "content_hash": "9c835568c3bf10b5ce3e4a8827a0c3091131185b6a60d274300cede6f36a8bc6",
+      "content_hash": "a1033f732121aef9b1a785910b9b32d2b0ed52a67576dbaef04a175eb8a1eb94",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -14918,12 +14918,12 @@
           "quote": "三年以上工作经验 1.AI技术与动画创意融合：深度结合动画制作需求，探索并引入前沿的AIGC技术与工具（如Runway、Midjourney、Stable Diffusion、可灵、即梦等），应用于IP的前期创意开发； …"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.874645+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "5625f79d2ee5267c": {
-      "content_hash": "fbef42f8cfa8e5578fb9b009f50d00a18badc2f863afb1a44dff54611a81e431",
+      "content_hash": "1dd7ce6dc610d060da4386747260a14ce3df06f023faa69e6280312cb6d1cfb8",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -14955,12 +14955,12 @@
           "quote": "三年以上工作经验 1.AI技术与动画创意融合：深度结合动画制作需求，探索并引入前沿的AIGC技术与工具（如Runway、Midjourney、Stable Diffusion、可灵、即梦等），应用于IP的前期创意开发； …"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.874645+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "7334418a7c3cc488": {
-      "content_hash": "74a67e3989349b5603db961b475a8ea3f08a3f83540a2978b09cdaf3f93fdafd",
+      "content_hash": "c47d5b94142461e7ad7fee1134e261041c18083f2f70b56ce5534a891507fe3e",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -14992,12 +14992,12 @@
           "quote": "三年以上工作经验 1.为客户提供专业的、全面的技术解决方案，包括咨询、规划、项目落地实施等； 2.拓展和维护传媒行业客户的关系，建立长期稳定的合作关系； 3.深入了解客户需求，总结行业需求特点，为团队提供有价值的客户和市…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.874645+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "7b3e435bc216a0d0": {
-      "content_hash": "f8c791993a750ea67c2463dc42858fb3f51230221f9fa391f77982c8935c464b",
+      "content_hash": "ef40635f00a2b71631ae9497c60ad907899cb5f605399b099c6881c26c4e31a5",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -15024,12 +15024,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.874645+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "3268cbcebd44e7f4": {
-      "content_hash": "f3d778d507b24a5546855bc67fdf46b49e52cf7990b70fdd4f1797d76497e4d3",
+      "content_hash": "9bd3246a3bb062edddaf24d24dab9445ea539ccea282756f9b7e9c8a892b4421",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -15061,12 +15061,12 @@
           "quote": "一年以上工作经验 1.研发及优化大模型推理引擎、PD分离推理调度系统； 2.支持主流GPU和异构AI芯片，优化大模型推理性能，打造极致性能成本优势。"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.874645+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "04f45cdc15ed54af": {
-      "content_hash": "325aeb325b993f9533b45a966aa0a0259f773348ae06eb6f30ea16aac717640c",
+      "content_hash": "06da873e85c3c4f23717bcd5d9111df1eb0ed4a1bb7e377f1ea2fb0c7c307608",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -15098,12 +15098,12 @@
           "quote": "五年以上工作经验 一、全球DCI网络架构规划与持续演进： 1.负责腾讯全球DCI网络整体架构设计与中长期演进规划； 2.结合业务发展需求、运营目标、外部资源特性及行业技术趋势，持续推动网络架构升级； 3.输出端到端DCI…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.875644+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "07bb161174416e56": {
-      "content_hash": "e91cf00f09ec89a3b05254dc9ef157f6d71fbd0c983979c5d6303e34452bf440",
+      "content_hash": "d8dd9d1c01e99c1bd0d872b1e408ef38e1b98b923716d43c0d735204c8e375c9",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -15135,12 +15135,12 @@
           "quote": "三年以上工作经验 1.负责算力（NVIDIA/昇腾/Intel/AMD等）的底层性能优化与调优，构建业界领先的高性能算力平台； 2.负责GPU、NPU等多卡型算力的硬件、驱动和计算库的疑难问题攻关，引领技术突破性进展； …"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.875644+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "5bcc42c88970bfab": {
-      "content_hash": "b758bb9198bbd054214d255954ebe97dff7c423c5145646c46d2d2d567638b73",
+      "content_hash": "dd82746d20643b6405ce9e4a437be01f9bf5977233b17cff415295379e0d6a58",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -15172,12 +15172,12 @@
           "quote": "五年以上工作经验 1.负责腾讯云AI Coding产品质量保障工作，深度参与产品质量体系建设，识别全链路上的质量风险，建立稳定性保障体系，推动稳定性建设落地； 2.腾讯云AI 产品相关的评测工作，包含AI算法的评测体系建…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.875644+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "cf5700cb3659ecef": {
-      "content_hash": "7fe2cc9f7ac55eab282d809f6e1f7d56ed8aad49662826956a56d5134cc8a3f2",
+      "content_hash": "06a0f5ce14d618b7f1fae7d8a8688253b83fc737d100379c0380242a05504da5",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -15214,12 +15214,12 @@
           "quote": "五年以上工作经验 1.通过对生成模型（图像/音视频/多模态/3D视觉等）的研究，解决目前算法在生成质量、多样性、可控性、生成效率等上的问题，探索生成模型的突破性技术； 2.从事图像/音视频/多模态/3D视觉领域算法模型的…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.875644+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "0640c096f958b1b7": {
-      "content_hash": "14bc89728fdac91cfca2f6beedeeabf304d2094bf583da7890fc86cd7e56a278",
+      "content_hash": "ea9ddbaee12b779dd4d7860b4637d24227c4fd6dec43f8a8fe0f4cb2a89ec806",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -15251,12 +15251,12 @@
           "quote": "三年以上工作经验 1.负责腾讯竞价投放 线索场景（金融/教育/大本地/车房家等行业）的需求洞察分析、竞品调研、逻辑梳理、策略制定、数据分析与上线推进，包括不限于企微投流的方案优化，利用出价策略等提升线索类客户后效指标等；…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.875644+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "3921cb02f2601b6e": {
-      "content_hash": "288978cbc8e866e818f277adea5bc21477b7ed89bfffbb8641cf037175ec4f70",
+      "content_hash": "9fc9580dc18b409ceaab3985b65a8bde884acf78d5b85e1df66dd6d9ed8bc539",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -15288,12 +15288,12 @@
           "quote": "三年以上工作经验 1.负责腾讯营销平台智能化投放、创意生态等核心产品能力的落地与迭代，优化使用体验，提升投放效率与效果； 2.聚焦和结合客户需求与行业特点，制定行业化产品运营策略，推进产品能力深度渗透，挖掘痛点并输出针对…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.875644+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "764c78194015e61c": {
-      "content_hash": "30ddc8ccedc20b434d976aa1ee9a8b15fb79194c14f5e8d5d34caae0b006c9f8",
+      "content_hash": "64550b9d91117c4fbebf050f2004795ebc1b4d1cd1eb7ecaf3b19191cc3cabb2",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -15325,12 +15325,12 @@
           "quote": "三年以上工作经验 1.研发基于视觉大模型的AIGC算法，实现地图要素（尤其是建筑）的模型超分、风格化生成、材质替换与色彩增强； 2.利用文生图/图生图大模型，结合地理信息，为批量建筑自动生成符合语义、光照一致性的风格化纹…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.875644+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "c330ff8bb3b1c68a": {
-      "content_hash": "8effa24e8507d9933e0775c351eb80226e8c919691e9aa98e2ebad113ecbac9c",
+      "content_hash": "e7b1fadb8634c39448ffdb2fa6b22b42f7b3f958673a7dc310b727cceb02942c",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -15362,12 +15362,12 @@
           "quote": "五年以上工作经验 1.作为出海专项架构师，为中国车企提供全球化业务布局的技术架构咨询，协助客户完成海外研发、生产、营销、智驾及车联网平台的平滑出海； 2.针对车企在不同海外大区（如欧洲、东南亚、美洲）的业务需求，基于腾讯…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.875644+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "56b228f89cb55883": {
-      "content_hash": "2871911255583d9072e71b93302a858f6653a5672e1e77ce36a205ec507ee3ef",
+      "content_hash": "e84ba9ab039190b677242f38c2162d82ed32f45456bcf19be0b71b3b478f93e2",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -15399,12 +15399,12 @@
           "quote": "五年以上工作经验 1.负责腾讯云在华北泛企业行业的销售工作，包括目标客户的开发与维护及跟进、市场策略制定、合作伙伴管理等； 2.聚焦销售，有坚定的执行力，达成公司制定的目标任务和KPI考核目标； 3.维护跟进现有客户的商…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.875644+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "1993b56dfd251a13": {
-      "content_hash": "c5c9d043e51cc9b7104778b8cb3bceb3aff653b07044fb293b89cb65a6c61d37",
+      "content_hash": "6624401245393d167bdeb7acf8f4f5fa20135a00055f2b8a1c5a3464debd3107",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -15436,12 +15436,12 @@
           "quote": "三年以上工作经验 1.主导万卡级GPU集群的全局资源调度，通过精细化管理和优化策略，显著提升资源利用率，确保离线和在线任务的高效稳定运行； 2.深入优化RDMA高速网络、分布式存储与计算资源的协同调度，有效解决大规模训练…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.875644+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "f654f5a19033f6db": {
-      "content_hash": "cd225afeb478f87017298688e0c69d68bd9159cbf09a309f13f50b141c1f08d4",
+      "content_hash": "773c3ffbccf6bef1629d0d82cf32f5200784a536701be652026a53cb6e9aa8d1",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -15473,12 +15473,12 @@
           "quote": "三年以上工作经验 1.负责机器学习平台核心模块的研发，包括特征平台、训练平台、模型评测、任务编排等系统的设计与实现； 2.持续优化平台稳定性、性能和易用性，升级关键模块的架构，保障大规模任务稳定高效运行； 3.持续关注业…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.875644+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "c1aaf20f0d014eab": {
-      "content_hash": "341608fee0f0bab8f76dd246f260ff1d8c16a26543a3613a39dc633a6e038ec0",
+      "content_hash": "d4f27c5ec2fd08b238e08e9fc02e1ba5e3d69d97398062d56c9e4a7f5385f3df",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -15510,12 +15510,12 @@
           "quote": "五年以上工作经验 1.系统设计与研发： 负责设计、实现并运维支撑智能运维智能体平台的大规模、高可用分布式系统，处理PB级的实时日志&监控等数据； 2.核心功能开发： 端到端地负责AI Agent核心功能的研发，包括异常检…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.875644+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "67c3356f89821ba9": {
-      "content_hash": "aad66c26ae662b9f6f138c3f8625feedef2d3220ba8b9ed8ade14ec8822628a5",
+      "content_hash": "25fbe20491437b53b526d7eebc15fb33d9c8a0b0196541a0ce09a053975e114d",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -15547,12 +15547,12 @@
           "quote": "三年以上工作经验 1.AI搜索核心技术研发与落地； 2.研发基于大模型 Agent 的搜索问答技术，包括复杂搜索任务规划、多轮探索策略、工具调用及多 Agent 协作、答案生成等； 3.解决大模型可信评估、幻觉控制、整合…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.875644+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "404bef1df04358b3": {
-      "content_hash": "37e6a0e3349af5a59094de97b2443fb6e322b47c59082555f3e2f140651eb2f3",
+      "content_hash": "270267321df5f4b1d43634f676c62edc383e758ebbeaeb23eb634fa98e83ed2a",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -15584,12 +15584,12 @@
           "quote": "一年以上工作经验 1.参与微信大规模语言模型（WeLM）的建设，涵盖基座模型训练、模型价值对齐、推理模型研发、智能体研发等环节； 2.设计、实现、优化大规模分布式模型训练各环节的效率； 3.独立或与其他研究员合作进行前沿…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.875644+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "eba268f126146979": {
-      "content_hash": "cd2d75a1eac4f9bfb26633186c7fcccf1bdbad766d87c38906920203f7a76fcb",
+      "content_hash": "a5412d85511d8b013d6e8993e55de613248dbe95b1421b90700dfc18b03a424b",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -15616,12 +15616,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.875644+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "46f520ca44004829": {
-      "content_hash": "008c8b44c245b37bf923e32df72be83f51a31222f6d9e241043a3fd01c273861",
+      "content_hash": "9f765cf36d5e2775e85e6f608ca3d488ae13bfc470dc8ee1ed686fe4b1870b74",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -15653,12 +15653,12 @@
           "quote": "一年以上工作经验 1.端到端效果负责： 全面负责元宝各核心场景下 AIGC 的端到端效果优化，定义并持续提升生成内容的准确性、丰富度及逻辑性； 2.策略驱动与协同： 深入业务细节，通过精细化的数据分析定位模型短板；与算法…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.875644+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "7e9fd4944cf4a0b8": {
-      "content_hash": "e2a3e0f47213cd30c76740f51fcb8fa3c9a7c473f400c954bc9f1e50742e57d0",
+      "content_hash": "e1e687355772c2c00d8d2fd1fa2337317120606270dec516477f95b1b6bb7388",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -15690,12 +15690,12 @@
           "quote": "三年以上工作经验 1.负责交换机软件的设计、开发、测试和维护工作； 2.根据网络产品及运营需求定义技术规格，并推动需求交付； 3.编写技术文档，包括设计文档、用户手册和维护指南； 4.跟踪业界趋势，推动关键网络技术落地部…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.875644+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "1b71bf6f46918a7a": {
-      "content_hash": "777c3a57ce771456b271d69d228805a15bc35a3f56ddfd40d21a31f688adb812",
+      "content_hash": "702555f627d409df5d9597fb4d08ac4af1f52d8c6ac9299bed9d77f3df251830",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -15727,12 +15727,12 @@
           "quote": "三年以上工作经验 1.负责AI Agent 工作流的设计与研发，落地生图、生视频等业务场景的端到端自动化流程； 2.基于 LLM（GPT/Claude/DeepSeek/混元等）构建Agent的任务规划、工具调用、记忆管…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.875644+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "105d118318e19fe6": {
-      "content_hash": "786e658f144790f98e4dd436ef2c9668bf4054580f8349dce86ebbaa9f8b748b",
+      "content_hash": "99c849493e8a3761725c994ab4c4424be9ea985df59519cd481237d374598996",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -15764,12 +15764,12 @@
           "quote": "八年以上工作经验 1.岗位职责：； 2.负责腾讯营销在教育行业/大健康行业的销售策略制定与执行，完成区域或全国范围内的销售目标； 3.深入挖掘行业客户需求，提供定制化的解决方案，推动客户合作落地； 4.维护并深化与行业头…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.875644+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "90f41e2b30586f2a": {
-      "content_hash": "e45a423aa6bcc66eeccd321830f177985ab0e41e76e4a092faa313bbd69ea232",
+      "content_hash": "dd98aeae5bacdf4893a77dbdc7ebb737830b2fcdd863ae299a96ac8416642043",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -15801,12 +15801,12 @@
           "quote": "三年以上工作经验 1.负责元宝的稳定运行，支持开源Deepseek等模型服务训练与部署的多个环节； 2.优化模型的部署流程，包括持续集成、持续部署（ CI / CD ）和自动化工具； 3.负责集群管理和服务治理，设计容灾…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.875644+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.622073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "d057ab6faafa4126": {
-      "content_hash": "ec3a235c198aa4653376d8a11d63aa64f8a40a8919da1839fcfb4ed9a6c8589d",
+      "content_hash": "6663367df33532e233c928f436111b1f60ddf7df62bf16666d016a0ee2f26839",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -15838,12 +15838,12 @@
           "quote": "五年以上工作经验 1.负责公司国内、海外数据中心项目建设管理工作，协助相关团队制订数据中心规划、选址、建设、运营计划、标准、管理规范； 2.能够与相关团队协作，共同制订 自建/合建租赁 项目的招采技术文件，对项目建设期间…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.875644+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "0167cea7c319a434": {
-      "content_hash": "2f859a2c792ef995d80b67c33b00e3ccad7d6576da90344e3529de8c3a8f45cf",
+      "content_hash": "f313cc6fb1fac7e2e2881b2b06284fb6648d6735b7f2e797ab53289b24f6f4c1",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -15870,12 +15870,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.875644+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "21d345adb570d04d": {
-      "content_hash": "7391a6244c6910a4269fcc83a4f40870652a4e6cf40e576246a7d3cf5ce91793",
+      "content_hash": "ef1a32bfae5ebe572e10a554b626ee6388d096a55d661d068ef4e70d8a9483b7",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -15907,12 +15907,12 @@
           "quote": "五年以上工作经验 1.负责国内头部公立医院/卫健委等大客户的关系维护及产品销售工作 ； 2.洞察相关客户需求，把握市场及行业发展态势，制定有效的客户经营策略、市场竞争策略； 3.负责相关客户的关系拓展、维护和管理工作。熟…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.875644+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "ead33e082bc9ba93": {
-      "content_hash": "cb44b269108a23114755c186adaf679174dbe1cde5f6a41407316bfdbaabe234",
+      "content_hash": "9eb2eb4eeaae358cffb7e6d66ea4ec749c78cc05ca0c6337ba881e14e76a1eac",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -15949,12 +15949,12 @@
           "quote": "三年以上工作经验 1.作为玩法共创伙伴，与运营一起从零搭建活动的概念、故事线与交互节奏，将灵感打磨成真正可玩、可传播、可转化的运营内容； 2.主导活动视觉方向，从主题视觉、KV、页面结构到组件体系，创造具有鲜明风格与高记…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.876652+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "6f2cc9b5a89484ad": {
-      "content_hash": "5f90a6a169b485c1134400ea9a3bef58351264cf2f4b53c6d9b6c34eecb4f366",
+      "content_hash": "b283736556c657fca95a64c57c92354be7f5fa8a44971be0a048119fa16e0305",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -15986,12 +15986,12 @@
           "quote": "三年以上工作经验 1.方案设计：负责腾讯云TIONE产品解决方案设计，基于对企业模型迭代及maas底座演进的深刻理解，通过技术洞察和方案设计能力，为客户提供AI开发效能提升的整体解决方案，推动客户技术决策； 2.端到端交…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.876652+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "233112fca2064837": {
-      "content_hash": "d4c4a14415dbdd9a5599ba3d3f13b887fde77c77bb2782577c97c0dfff724118",
+      "content_hash": "7a6e13cdba6e6e96ee7dede2083f276b80ed16da6d1a4d3852bcb0d9ee43b0ec",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -16023,12 +16023,12 @@
           "quote": "五年以上工作经验 1.负责政务政法行业客户的商务拓展工作； 2、负责大客户关系管理、合作伙伴关系管理，市场策略制定； 3、整合公司及合作伙伴资源，为客户提供行业解决方案； 4、聚焦在政务政法信息化领域，制定行业打法，并跟…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.876652+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "7f09a6ba7249a65d": {
-      "content_hash": "6f0deb30546265bbb1cca5f5f5976a2ad4601128e8440df4272e4665c72377a3",
+      "content_hash": "3d41dc6aba2dd2157caca9c573f73ad42cf41ccff71b15ca6fb134836cd35edf",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -16060,12 +16060,12 @@
           "quote": "五年以上工作经验 1.AI 搜索架构升级：负责大模型驱动的 AI 搜索（AI Search）体系建设，利用 Agentic RAG 架构实现从简单问答到深度调研（DeepResearch）的演进； 2.深度推理与规划：针…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.876652+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "1552949319e17278": {
-      "content_hash": "7eeeb5bde2c888374092082d2e8089538d6e45e57cc003e2410a5d7fca654df1",
+      "content_hash": "8d305d437e843614686ccab9c22632ef8d2576bb743fc49ac390f8cb9cc0f00a",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -16092,12 +16092,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.876652+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "c1e1322eb9d6e430": {
-      "content_hash": "0dc57f12ef0abaa9a7ba2e3df53e58220247b1005c4047ee38d9aae05c3c9f4a",
+      "content_hash": "dcc3c793aefc9215d10624ca56cf1542837b53096217b985f40af4c404c3f649",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -16129,12 +16129,12 @@
           "quote": "三年以上工作经验 1.负责游戏美术 Pipeline 相关工具、流程系统及配套服务的设计、开发和维护，覆盖资产生产、流转、校验、发布等核心环节，通过工具和流程优化提升项目美术生产效率与品质； 2.对接项目需求，结合项目管…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.876652+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "3b22771be1b0c457": {
-      "content_hash": "9649f53081ec91826cad42eb30a5e112086d470f6e35acf2a8fe00444e9fff81",
+      "content_hash": "efd724982840e5748e303cd4c40f12d6620ccf38e217a0a0f6233bafd319eaf7",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -16166,12 +16166,12 @@
           "quote": "五年以上工作经验 1.负责腾讯云北京泛互市场的销售工作，包括目标行业客户的开发与维护及跟进，市场策略制定、合作伙伴管理等； 2.聚焦销售，有坚定的执行力，达成公司制定的目标任务和KPI考核目标； 3.独立开拓华北区域泛互…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.876652+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "92d7de9d73df10b1": {
-      "content_hash": "915e2017fb86b7528196a289e2e79c6eef617993844a5ff147edc8f2adda36c9",
+      "content_hash": "deb2d6d74ad574113e2e4c0ad1e3267a6af736a769e41df221ee1bc732b99695",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -16203,12 +16203,12 @@
           "quote": "三年以上工作经验 1.负责视频号短视频业务的推荐技术优化，包括但不限于召回、粗排、精排、重排、视频冷启动等； 2.负责视频号短视频业务的业务策略优化，包含但不限于人群优化、社交推荐、内容生态等； 3.负责若干前瞻方向的探…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.876652+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "b4f630611b9481ed": {
-      "content_hash": "83def4c4a1cbd11ec03b3fb5710426221a1b0f417ccd4039bde2da3c73bf6dfa",
+      "content_hash": "057ca68054e20ce3cee8199c998b083855e5bd391dec23c3dc0c2625fe648157",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -16235,12 +16235,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.877653+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "efd6875a6c3a8911": {
-      "content_hash": "1770a97eb011deb5ebf382c0236f65a8964d7e4406cfbacfeee4d5a19f8e9bc1",
+      "content_hash": "21b5510077ae37f66a1456a087ef9c3a52df7b9d4943c21d5a2107e27c605e13",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -16277,12 +16277,12 @@
           "quote": "五年以上工作经验 1.负责AI驱动的产品全链路设计，参与制定和落地设计战略，推动产品设计创新； 2.定义产品的设计语言和设计风格，确保设计能够体现产品的智能化、前沿性和创新性； 3.与产品、技术和数据团队密切合作，确保设…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.877653+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "53372062c750e838": {
-      "content_hash": "442cb47924753be57c705311d6d1bccfdd331791b4bd0bb027ca49b59ad9182a",
+      "content_hash": "a8210219d78202acf6439eec4fbad53bc2701b61ccd3f52c2e54381c09bf0e9d",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -16314,12 +16314,12 @@
           "quote": "两年以上工作经验 1.负责分布式存储相关方向的技术研发以及运营，打造业界领先的超大规模存储系统 ； 2.不断丰富产品功能，提升产品竞争力，满足不同行业客户的业务诉求； 3.持续优化系统服务质量，提升系统性能，降低运营成本…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.877653+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "2cb095f2e8d0f8af": {
-      "content_hash": "a6596160975cdf9379065010bcb2ca0cc5e0f465e49d45f991fe2cbcd4367fe7",
+      "content_hash": "860df13eb5458ad32fa8c591c34f4c6116c5db862ffed329b72d232b0a4f6c1f",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -16346,12 +16346,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.877653+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "4e84e71a704960b8": {
-      "content_hash": "945744ffb91ee8f653dd1438a8d589849e614bf85c6e517f95152a131ea07503",
+      "content_hash": "b739574a9dace0221d326eaa6cadf722008d578b8391a444adad15e397567c27",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -16383,12 +16383,12 @@
           "quote": "三年以上工作经验 1.基于行业洞察与用户需求理解，在业务场景上 探索与孵化符合行业特色的智能化产品服务，辅助客户双效提升； 2.负责客户生意模式的梳理，有效定义/驱动全链路优化目标准确表达与核心节点的数据对接，提升投放效…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.877653+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "147076a21de68cca": {
-      "content_hash": "546724b6f71e30c5b4e14591746d29af6e148ba9b663633928b43ab461664d47",
+      "content_hash": "895b082410cafcb0628ad5b0478a02e971ea1561dda3d750ebbeb67ee3ff1704",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -16425,12 +16425,12 @@
           "quote": "五年以上工作经验 1.负责腾讯专有云产品的战略目标规划、产品设计、落地跟进及其商业化工作； 2.负责腾讯专有云产品的市场趋势及业界竞品分析、客户口碑工作，结合市场需求和效能，将公有云成熟的产品引入到专有云中，并持续提升产…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.877653+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "f4aa042fbc8dda34": {
-      "content_hash": "424720ea393dda91f0adb4a3a0eb93e4569deeb1b592df435903dfc38764e3f3",
+      "content_hash": "74191bfa1e4bb05f1d749de651e9918b01c2478a419ad48961aa0cb6c94516e5",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -16457,12 +16457,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.877653+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "5cf4a4c1cba48f5a": {
-      "content_hash": "879699fcbb09881ec076442b563e879ae5710383aa499b887a33f678651158ab",
+      "content_hash": "acf34fd24847c4a09269b38c4866b2fcf1c01f6d61fc03eb2057bc4845526361",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -16494,12 +16494,12 @@
           "quote": "一年以上工作经验 1.配合算法工程师，推动大模型相关算法的落地，打造高吞吐、低延迟的推理系统，在产品上实现快与准的交互体验； 2.探索面向高并发场景下（千万量级）的高性能推理服务架构，针对NVIDIA GPU、NPU等国…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.877653+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "5a6c5fdcb3cdd297": {
-      "content_hash": "2448b490ef34ae9024c0662ce08626d431b478aa18d8ed1a975c1b2450e1ce59",
+      "content_hash": "a41b4c4a39817b045677b718c5631dcd9b37179cebbe0b5987cd53f734b31194",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -16531,12 +16531,12 @@
           "quote": "三年以上工作经验 1.负责研发具有多任务能力的语音合成（TTS）大模型； 2.负责TTS大模型的预训练及后训练相关的数据和算法工作； 3.推动TTS大模型在产品中应用落地（如朗读/对话/配音等场景），及针对这些场景进行模…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.877653+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "d96a91303dc5121b": {
-      "content_hash": "0a5fbb9df1124e2319ef009c81f3b97f86ebb796f75cc8db5a91787b0cca46ce",
+      "content_hash": "f25d21efeafa5c87a34f66618e0b9e83e754b85229e0c1e7598987f9bb73b4d8",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -16568,12 +16568,12 @@
           "quote": "一年以上工作经验 1.评测体系建设：负责大语言模型（LLM）及多模态模型（语音/视频/图片）的评测体系设计与搭建； 2.评测方案设计与执行: 构建自动化、可扩展的评测工具链，支持模型快速迭代验证。探索前沿评测方法，包括但…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.877653+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "d683c4b678cd0f5c": {
-      "content_hash": "5c3138725406a9821c13897970aebc321c15b044030d81c1109dd558c71142e1",
+      "content_hash": "dd8fc34f5803cebab5f1c3fc2c47d25236e72175239f16d28854e2e698f240d2",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -16605,12 +16605,12 @@
           "quote": "三年以上工作经验 1.负责微信读书、微信输入法、微信秒剪等产品的大模型相关技术的研究与开发，包括但不限于 Agent、RL、跨模态对齐、LongContext 等，研发业界领先的垂类大模型； 2.持续跟进业界最新的大模型…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.877653+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "617220a6ff01e737": {
-      "content_hash": "647caae003192d19914afa0c58d7aa69173660071269445d2772002a83953b58",
+      "content_hash": "b58625e2d64a5e6a53c5ff61e05698f71d161638e83e65647ccbe57dc4059767",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -16642,12 +16642,12 @@
           "quote": "一年以上工作经验 1.负责微信输入法 NLP 大模型的 SFT、RL 等核心训练数据集的构建与策略优化，持续提升数据质量； 2.负责微信秒剪多模态理解和多模态生成大模型数据构建，包括但不限于视频理解、文生图、视频生成等方…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.877653+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "624bf952bb79260e": {
-      "content_hash": "9a583507ce9603189cf2eb9ce9ba09033094d0ca043f0c49b13e8a9fb0d9c58b",
+      "content_hash": "850c94ae3089b786a44e6094e722ef034d7e3167be9d59feb3ad7d2ac1caa382",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -16679,12 +16679,12 @@
           "quote": "一年以上工作经验 1.依托微信读书海量内容与丰富的用户场景，主导大语言模型（LLM）在长内容领域的创新探索与业务落地； 2.负责基于LLM的长上下文（Long-Context）核心技术研究与迭代，深入探索 RAG、后训练…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.877653+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "40a0c7543fd21a8c": {
-      "content_hash": "3d1c623d3da44f5cb27104efc48590e3ddd321e348015512c255f817bccf3cc2",
+      "content_hash": "bc357502a1abef706f3bd9115853d2e933ba560bae73fda3ca05d6ae5b3793b3",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -16716,12 +16716,12 @@
           "quote": "一年以上工作经验 1.负责微信读书长文本理解场景下大模型（LLM）的部署与推理优化工作，聚焦系统吞吐量（Throughput）及服务性能的极致调优； 2.针对长文本理解的业务特性，开展大模型量化、推理加速等专项落地工作，…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.877653+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "9525895e5b82299f": {
-      "content_hash": "01bc72e8cb4d3f55dad9d020facf0496d92a673caadd296b482726b3caf94617",
+      "content_hash": "45cc5ab855f9359bb706e64f0a89cc1b5764b864ed7e024b92bf74c2ffe7d31f",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -16748,12 +16748,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.877653+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "ff2ba99a5e9b1643": {
-      "content_hash": "79fd47114b58941d3716e5a47390b52b9b4efb2ea2ee928c8309e04d8559de53",
+      "content_hash": "80f34e20280f8d95cc81638330dbe425f0f30376788729304b6160d213165770",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -16785,12 +16785,12 @@
           "quote": "一年以上工作经验 1.负责视频生成大模型（基于DiT/Flow Matching架构）的亿级训练数据管线搭建，设计并优化视频的自动化清洗、切片、去重、水印/字幕去除、质量打分及过滤策略，持续提升入库数据质量； 2.主导基…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.877653+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "0df7347e1f29ca1f": {
-      "content_hash": "90c4f6436a8fb5fde0df5dd52d13a9db2b58a45b6db389d23d19536e12429e29",
+      "content_hash": "bd79779fd38d3d2e777e34f20a511ccb9095563783158d1cdc26056c62cef0fc",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -16817,12 +16817,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.877653+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "78385fca7da4fe3e": {
-      "content_hash": "0c85e5aea1e6a9047ad75a26f1e3cdbbf0d6ecdab332dd750e8d9080a72c3286",
+      "content_hash": "3d1d3af8cdedeb4e64b8287612f7d177254024a8a598c3405d3a0d751a094e2d",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -16854,12 +16854,12 @@
           "quote": "三年以上工作经验 1.基于 wine框架开发 Mac M 系芯片电脑上的 exe运行平台； 2.负责将Windows 游戏，应用，驱动很好的迁移到 Mac 平台上运行； 3.负责对迁移后游戏和应用的运行性能，功耗等技术指…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.877653+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "bab402390d4eae99": {
-      "content_hash": "81e4cbedd5e7b9afd04ab4a16e6af44c6c1210516787735d1bdccab4d4965fe9",
+      "content_hash": "922fb9f25f116945f9ec76744dc689bfa08303f1d5c4053b0554b399945c2511",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -16891,12 +16891,12 @@
           "quote": "三年以上工作经验 1.协助理解大模型业务需求、场景边界及变更诉求，参与梳理核心质量指标，配合完成需求拆解与测试范围界定，保障测试工作贴合业务目标； 2.参与大模型测试用例设计，覆盖正常 / 异常 / 边界 / 高并发场景…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.877653+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "b2a04764fbac778f": {
-      "content_hash": "70be6f624ca6efa3a2e2355a26ce6013503a793094f07c9bf8719a41f56f3e3f",
+      "content_hash": "1115506c8d7115fca69cdc4b2e5ecd3efcaeb84f47a8db3db1bfdba0ad0a34fa",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -16928,12 +16928,12 @@
           "quote": "一年以上工作经验 1.负责大模型专用存储系统的设计研发，围绕大模型训练/推理场景构建一体化分层存储架构，无缝对接大模型训推框架：； 2.架构设计与场景适配：通过系统性逻辑分析拆解大模型存储瓶颈，结合训推场景的数据流特征，…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.877653+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "1598c832860e48b2": {
-      "content_hash": "df0279604acbfa257c87a19de349483ff4ad8361710b040fd8e9b31a306456f8",
+      "content_hash": "e95ee6d54d2c3ed59b5a154c57d25cf5907aee2abac2eea97caeff9f65cf4fa3",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -16970,12 +16970,12 @@
           "quote": "三年以上工作经验 1.负责腾讯元宝App的架构和研发，提升团队的交付质量和交付效率，在保障质量的基础上快速交付业务需求； 2.具备iOS应用的稳定性和性能优化经验，并持续优化影响用户体验的稳定性、流畅度、资源占用等问题；…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.877653+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "c3eaea0546bca981": {
-      "content_hash": "e138bee9ec0cc53eee3a162ca3c79d17a27ba877f7f94d36b5848c482fa6b17a",
+      "content_hash": "ade69af6a25f28b49dc3b5590153531fd5eadf8c7317af32ef629d70fe1dc8d5",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -17012,12 +17012,12 @@
           "quote": "三年以上工作经验 1.负责元宝Android的架构和研发，包括迭代开发、技术预研工作； 2.负责元宝Android的稳定性和性能优化，持续优化影响用户体验的稳定性、流畅度、资源占用等问题； 3.编写技术文档，参与跨团队协…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.877653+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "9f90b9822d2a3b96": {
-      "content_hash": "8ffc9ea612600553dad1ad84fdc5ac4c146633fa6e345dccd7e3d2fc50e4c562",
+      "content_hash": "24c6ebeaa5d98af40e4cb0cb8ec92a6fa7d664900fdbbf714603536046e397ad",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -17044,12 +17044,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.877653+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "a33c21dcff8ff54c": {
-      "content_hash": "811ab03a3e2c106369cdb0af86d1e83535e9677f33ba592e5a17b77612b3fc04",
+      "content_hash": "3e242efea0bdaaa319165eef16ac57ca34095d303ce21d5be9443f893c72e392",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -17081,12 +17081,12 @@
           "quote": "两年以上工作经验 1.作为行业售前架构师，根据行业和腾讯云产品情况，为国有大行客户提供云服务业务及技术架构咨询服务； 2.针对国有大行IT数字化、智能化等特点，结合腾讯云技术和生态，制定新基建、云原生、数据智能等方向有竞…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.877653+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "07680c95e0f30531": {
-      "content_hash": "dbd488c683fbd77d719ab41041c6ec204d71927e19372b92074dfef66080a112",
+      "content_hash": "9f493b42c319118a41bb5a0b54249a2f1fecc14de7ef8ff2df3d347a19770f08",
       "match_level": "possible",
       "label": "需确认",
       "score": 68,
@@ -17118,12 +17118,12 @@
           "quote": "产品设计"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.877653+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "a5a6c37b07a61c07": {
-      "content_hash": "e8a1c1738c0b8bd01e7e2039c171a001a57be9832cd73eed82e36e4d458f9a71",
+      "content_hash": "291edcf0ab48dfb394fb69b05753b8de02ca409603949848af27a4e1ef88f998",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -17150,12 +17150,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.877653+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "21fe982180568e4c": {
-      "content_hash": "a9b673d20e3a3652da540e8557507fe0e5c422f96fa82bf5efa9ab20df73e51f",
+      "content_hash": "aa2a11297b523d68f105028e709ab81d445290e83cfdd26300585b4c219bd490",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -17187,12 +17187,12 @@
           "quote": "三年以上工作经验 1.负责腾讯混元大模型数据飞轮整体规划与落地，设计自动化、可自生长的数据迭代闭环，形成模型数据正向增长飞轮； 2.负责大模型数据平台、智能采样、难例挖掘、数据质检、正负样本管理等数据基建产品的需求设计与…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.877653+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "b98919efa2de0008": {
-      "content_hash": "65dbbfa145241c79e1d24591eef3fc52413618b134b4a406dbd7d8cdbf248917",
+      "content_hash": "2a897e8cdf11483ffbc0e8926af75324087d5beae3f09aea9b299aaab2da0cc9",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -17224,12 +17224,12 @@
           "quote": "五年以上工作经验 1.参与开发优化大模型训练框架，支持单任务万卡以上规模高效稳定训练； 2.参与NLP、多模态大模型结构设计，并联合业务进行模型训练效率和效果验证； 3.参与文生图、文生视频、文生3D等业务的训练性能加速…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.877653+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "eb94dbc505675daa": {
-      "content_hash": "d3860b29e5738e6ab7e872bb137f71fe79efd01cb4ea4cc84c3163758e6f2c84",
+      "content_hash": "38768d7ca7cabafd56429d66d4899b743180e2e1c8d67227c519b7713cd3c3ee",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -17256,12 +17256,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.877653+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "c008896dedab5143": {
-      "content_hash": "51e6478e3f132d485d6dd0f534487890c0126e989698258de3f01db95a311612",
+      "content_hash": "29604f74607c791335b66e2222a18926f3a2dd96631b3f9a5e0c2d53b598c80e",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -17298,12 +17298,12 @@
           "quote": "三年以上工作经验 1.一站式AI Infra底座体系建设：围绕混元大模型全链路研发流程，统筹设计模型训练、效果评测、服务部署、底层调度、版本迭代的一站式平台产品能力，构建标准化、可复用、高效率的模型研发基础设施，支撑内部…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.877653+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "12e7e028e24bb559": {
-      "content_hash": "25d2bf1d2408117ce238a2b23082deb2df66e7ff53dc6e452dd58336f696d43e",
+      "content_hash": "b2b187a5c0f4d19d1faf2cb21f577a00e81807c38472e03c4cb916e98312d92c",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -17335,12 +17335,12 @@
           "quote": "一年以上工作经验 1.负责数据采集/蒸馏及相关系统和平台的开发迭代和运维； 2.负责数据接入/质检自动化Pipeline的设计，建设和维护； 3.负责团队内AI智能体、Skills、Mcp等工具开发，为团队业务及系统提升…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.877653+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "079cd40d4af80af0": {
-      "content_hash": "a039412b4aebb26c9bf7cd0fcaea82543d117763e73408d4ad56993797b5050d",
+      "content_hash": "0c6f6f5c6707fc13ff135e965861048fb92fe27f19d9f5ce9250e6c4cf727f4c",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -17372,12 +17372,12 @@
           "quote": "三年以上工作经验 1.数据生产全流程管理 — 包括项目规划、需求拆解、进度管控、资源协调、风险预警及交付验收，确保项目按时、按质、按量达成目标； 2.多模态数据需求管理和交付 — 能够深度理解大模型算法团队的数据需求，并…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.878651+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "c6b025fec09dd86c": {
-      "content_hash": "c36ed1cc8af40b98053a5effd02d112fd957a862e60c442856e765cfddf3fddc",
+      "content_hash": "8049eba06c062c931d146b15ef1017ac38b2ce859b92069dbe141bae3f476722",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -17409,12 +17409,12 @@
           "quote": "三年以上工作经验 1.从事多模态生成大模型基础模型算法训练和优化，包括图像生成、视频生成、多模态迭代生成、多模态编辑等； 2.从事基础大模型的组建研发，如Diffusion Models、Autoregressive M…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.878651+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.623074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "39060228898d110f": {
-      "content_hash": "fa52f547c68dcf29f1ac4380c5b9134fc0b88ec77e5294f66c4f063947f64156",
+      "content_hash": "ebf4e537ee24a52af5c0bc116a1d33a0cf17a2c4e3d06231c56b652ecd5cbc72",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -17446,12 +17446,12 @@
           "quote": "五年以上工作经验 1.作为大客户销售，负责智慧零售行业客户（商超百货、购物免税、鞋服美妆、家居家电、食品饮料等）的拓展和深耕，负责目标客户的开发、维护、跟进，并达成制定的销售指标； 2.根据零售行业业务场景，结合腾讯云产…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.878651+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "4b029fd3f525f121": {
-      "content_hash": "179b3d299e2ee9520710fed86a4d34de379f76e7d37a9db95ed35feb882b8b60",
+      "content_hash": "a1b9a5cd5cb09d5742b57f3699d0d8cec61b95d5deb9a92533422b5820b4b55e",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -17478,12 +17478,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.878651+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "15c5e3f62c3ad0c9": {
-      "content_hash": "56027900f51a84a6f7f442930f4db5bb59b2bacbde5a6c01a1949ee9fa7897ba",
+      "content_hash": "b66e1d38ebe7588a83fc1efa7a91eee405bf6626970290f731354101ad39f532",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -17510,12 +17510,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.878651+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "049f7915278d366c": {
-      "content_hash": "0b7534a7066b415b1612cf50ffb8635ba58cc3d1362662c0e675bf0163484082",
+      "content_hash": "d497dd1f8a7230280afe433a4a67afbcdb6da60e7752da7a2e5bd80c351a1ad8",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -17542,12 +17542,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.878651+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "6a6f97718a3d1a41": {
-      "content_hash": "af7d0018e5ca05ad461f666e0c8af52eda14565697aee3b359200e7cd255af11",
+      "content_hash": "abcdbabc9f97087b53681f4e022fde6a3f17477fec90ca263746e6797ffe3676",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -17574,12 +17574,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.878651+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "7d0b8d0b85cd9de7": {
-      "content_hash": "65ec485801371687d4f082277ca07c7a9f5c968724c9323e139b0beb08f91280",
+      "content_hash": "c91d2f67fdaee46a798f01a5d7a5eb38bdbd422da60e6e88df7cf7f1d7e47492",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -17606,12 +17606,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.878651+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "201faaadde1c8c1e": {
-      "content_hash": "0a30a59f9ecc4b2dbb5bad3895adf90e16e8f1e272571b2f08044bcd93398fde",
+      "content_hash": "af3135d24e52451ef7295d2d95ebf8f07a5c624901c1373c1aa8bdfd637d16f5",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -17638,12 +17638,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.878651+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "03f1479b91b55dc2": {
-      "content_hash": "d923e4003da27288df7d67d1f6107cb1b94a2ffc088a9d8dd03905c537d9a3a7",
+      "content_hash": "37e3e815e8355c07eadcc7b5cde27e4ab3ed5e78a46af0624fbd95953412d62e",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -17675,12 +17675,12 @@
           "quote": "三年以上工作经验 1.分析海内外 AI 领域的发展方向，产品机会和探索商业模式，输出深入的分析报告； 2.监测市场行业数据、竞争对手动态，对重点产品情况进行深入分析，结合腾讯业务现状协助业务寻找提升的潜在机会点； 3.统…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.878651+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "117f20213ca2b788": {
-      "content_hash": "1b8b77a9566e65159c85ce13bb9a23d24bb4cd0c22fdf2f556affaa41ff413ea",
+      "content_hash": "09b7db37451cef5caa224d9c9aefb3ec3bf853120571e4ff24ba064acbddb9e8",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -17712,12 +17712,12 @@
           "quote": "五年以上工作经验 1.深耕汽车行业全链路业务，聚焦营销运营、智能网联、智能驾驶等核心业务领域，依托大模型、智能 Agent、多模态、知识图谱等AI技术，设计业务的端到端解决方案； 2.统筹行业AI产品整体规划与落地实施，…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.878651+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "96f78b7cb42b1736": {
-      "content_hash": "f03ab043e617a02336431f920a90b61300b7810a069dc76f24205e18226db124",
+      "content_hash": "feaba60007a9cfa031b9b9babd0615a99b557d72df24ee4a04d125c1a33d9b11",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -17749,12 +17749,12 @@
           "quote": "五年以上工作经验 1.负责腾讯云消息队列的架构设计、核心代码开发、系统稳定性开发、性能优化、上下游生态建设等工作； 2.根据云计算平台的业务需求，完成腾讯云中间件产品的架构设计和优化工作； 3.帮助业务方解决技术难题，用…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.878651+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "fa80d1750ce1e813": {
-      "content_hash": "d62ccd1c3ad01f65ec96f5dfee24a7ef928e53a4ffd6e2c3dd27d4d4c6f0981f",
+      "content_hash": "77c564152eda415cc97aa5a6701ed67341010aca64894d23acedb0d15385e3c9",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -17781,12 +17781,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.878651+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "ac06e20f79def75d": {
-      "content_hash": "3496951eae493939fd94dc8a33ad140a8f69f809c39944b51b69de9dc1f7b7a4",
+      "content_hash": "b53903605021a7c76e207b6b889598886d8621a67dda3404eb4aab2456d1e184",
       "match_level": "possible",
       "label": "需确认",
       "score": 68,
@@ -17818,12 +17818,12 @@
           "quote": "用户体验"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.878651+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "fba97edb5a4e792c": {
-      "content_hash": "a73fdfef40898d2cdc52acb105d1c6e5f2b68bc0749a9962120dc35ad66a535c",
+      "content_hash": "7bffb27947f1ea49e01fa9040afc8e0ef25d67083eaec05eeef25741694c5b02",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -17850,12 +17850,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.878651+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "6e282eba63790bd7": {
-      "content_hash": "8d238a15e644899861a2994f15b59a45bb225031eef1db29ad608229c81ba007",
+      "content_hash": "c865517d1fe0ec7b3ead6764e55f73af59e27b601f5ad3a04bfe336b7807b69b",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -17887,12 +17887,12 @@
           "quote": "三年以上工作经验 1.框架开发与优化：负责强化学习、模型精调、知识蒸馏等核心模块的设计与开发，提升框架的训练效率与易用性； 2.分布式训练支持：基于Megatron-LM、DeepSpeed等工具，优化大模型分布式训练策…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.878651+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "f10df77bd05915b4": {
-      "content_hash": "78d5a658ca89790bfbe74afd1f6eedd914693a9e2e72920cf1ac8b6b9b016d23",
+      "content_hash": "78c8b8443b72b488b4bcf977a329366ed598cd873573bf08cb604b06e41759b5",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -17924,12 +17924,12 @@
           "quote": "三年以上工作经验 1.研发及优化大模型推理引擎、PD分离推理调度系统，提升大规模分布式推理系统的整体效率； 2.支持主流GPU和异构AI芯片，优化大模型推理性能，打造极致性能成本优势。"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.878651+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "bfa48bf1c75db964": {
-      "content_hash": "fef5f6e3feed86081ce663ac5e094ba6c267865f06b9a631e757e59b48f63291",
+      "content_hash": "64f8c0786c1ac12d01d9f5794582ed07d718e11ef14fdaa5d3f62f5aa75c43bd",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -17961,12 +17961,12 @@
           "quote": "三年以上工作经验 1.负责VLM Agent核心能力研发，包括但不限于多模态理解（图像/视频+文本）、指令遵循、自主规划、工具调用、记忆机制设计，实现Agent在特定场景的端到端自主决策与执行能力； 2.参与VLM模型的…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.879654+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "c97b91c785285707": {
-      "content_hash": "5c4172a1d8ab5ace3deb129ccb121b3e2a13aeeea2b674ae796369c45b82525b",
+      "content_hash": "64395879042e9a9c3633aaa7b526ec373688588d48690b80dac74bd9028a86bf",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -17998,12 +17998,12 @@
           "quote": "五年以上工作经验 1、负责腾讯元宝达人营销工作，在各大内容及社交平台通过与达人做深度内容定制、内容植入，助力业务实现增长目标； 2、深入理解腾讯元宝产品价值，结合产品迭代节奏以及市场洞察，打磨营销内容范式，并基于效果的分…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.879654+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "5e82038fb34af509": {
-      "content_hash": "955991a2bd3bf66e9e5d65a64c456b41a839b35b766b334dd06d2999a667b072",
+      "content_hash": "74572668ae65782eed5c6eb7672e44fa45d451a6c19c449716e3b1b14d64e27c",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -18035,12 +18035,12 @@
           "quote": "三年以上工作经验 1.负责腾讯云公网接入网关的架构设计和优化； 2.负责云网关数据面的软件设计和开发； 3.负责前沿技术预研和实现，引入业内先进的软硬件技术，提升网关产品的产品体验。"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.879654+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "dda1a1a3c7d37168": {
-      "content_hash": "0431bf5cef8862534f3c890a20f0cfb04ab580e4abd4deeb9cfc58e304d24a57",
+      "content_hash": "6aca8669a0ce38256212dcf7272c7ab80443a2fd7449c56d92ccaa6eb0895684",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -18072,12 +18072,12 @@
           "quote": "三年以上工作经验 1.基于自研 AI 芯片软件栈以及架构特点，研发和优化高性能算子，设计高效的数据流与计算流方案； 2.结合芯片计算单元和存储层次，构建可维护、可扩展的算子实现； 3.参与测试框架和性能分析体系的建设，提…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.879654+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "c86644d82e4e3691": {
-      "content_hash": "07d00b0b0a146b847c86963e3033b35296fcda9d496ac2d1bed24fd0e36c66db",
+      "content_hash": "64c946f8638f5f6b89ed28cc8d46c7105d817e226fd4454c14a77252278612ac",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -18109,12 +18109,12 @@
           "quote": "三年以上工作经验 1.基于自研芯片，研发高性能图和算子编译器，解决芯片落地过程中编译相关性能、易用性等问题； 2.探索和研发自动生成算子解决方案，提升生成算子效率； 3.不断迭代编译器功能、性能和易用性，和业务一起构建A…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.879654+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "f63c4623c3a0cf8b": {
-      "content_hash": "356aba4015053d45099e433ff42d5d141858739bd0cbd809a1b1d4877b4e0db9",
+      "content_hash": "ac8883d7701e0a32003970cce269ddaebe968ef689eba645f292dc37376db023",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -18146,12 +18146,12 @@
           "quote": "三年以上工作经验 1.基于自研芯片，研发高性能推理与训练框架，解决芯片落地过程中的全链路问题； 2.能根据硬件特性和AI模型特点，不断迭代和完善框架性能和易用性、持续提升推理模型整网性能，和业务一起构建自研芯片软件生态。"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.879654+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "0578abd174c00aa3": {
-      "content_hash": "1c98a5ad7b3f44fa9640d1efd0f05737743d849703c12e219bcd351a0ffa29de",
+      "content_hash": "9c836763659468a92f0a33e737ac6cea5a5503d772f60380f0c514f5333a224c",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -18188,12 +18188,12 @@
           "quote": "三年以上工作经验 1.负责腾讯视频业务的推荐与搜索技术研发（包含但不限于传统搜推、LLM4Rec、AI搜索、生成式推荐等），提升用户体验，用户消费与时长，用户转化与留存等核心业务指标； 2.根据场景特点和产品定位，对全链…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.879654+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "3cf42c278a71d513": {
-      "content_hash": "79d759e9807ae7066ae725aa66622c1ac2521cf73990a19df96469c1074b8e4d",
+      "content_hash": "bb9ed312ed436c8b46145adbd5d019b7c8ef5c8678b40ef31e3853c8ac828b26",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -18220,12 +18220,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.879654+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "55f875a339e500b3": {
-      "content_hash": "1e2594bb3d330d9b1c089b43f5833da6e1c623427e829c7452d2d67c023b62d1",
+      "content_hash": "8cc7b7bf0d6cafa0338bc659b20d1da55012f83525707b6cdaceeca3ac9dde61",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -18257,12 +18257,12 @@
           "quote": "两年以上工作经验 1.Analyze investment opportunities in the AI sector by conducting industry research, company research…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.879654+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "0d75b389b32a689b": {
-      "content_hash": "4a8bef651a69e6d0103a822e4e8ac6713e171f179b33197533bacf9a5025a38a",
+      "content_hash": "ffb8a5c12f81361df0fd5fedbb23e165aece5a87a7298287c2dcc24c1b8c1c4e",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -18294,12 +18294,12 @@
           "quote": "五年以上工作经验 1.根据客户大数据迁移上云场景，提炼并明确迁移工具产品需求，主导迁移工具产品架构设计及落地； 2.深度参与迁移工具模块的需求调研工作，负责技术方案的设计以及开发落地实现，确保产品功能按时交付； 3.对迁…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.879654+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "acfaa43f0d1143f1": {
-      "content_hash": "a450aa0aefc2a7ffce071bede96cafd88e686e0829f88d1bc1754b19945c640a",
+      "content_hash": "ae7223a43b062d250a3d732d6ba9c814a56d5b184358808b274de3acbfa0d15c",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -18331,12 +18331,12 @@
           "quote": "五年以上工作经验 1.深入分析客户业务场景与技术需求，基于腾讯云全栈产品与综合优势，构建具有竞争力的行业解决方案，并推动内部产品持续优化与演进； 2.协同销售团队拓展与维护企业客户，为客户的全球化业务布局提供架构咨询，支…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.879654+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "34bf653e214bbe99": {
-      "content_hash": "3832618e3ee2f23afefb3b0f870be7d539fb1facb610a0b3c6acbc8ba995d57f",
+      "content_hash": "7c68cfcfe0a5dfa9445464f8979e917e0b02350d258906f304f238909940935d",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -18363,12 +18363,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.879654+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "60802ead16eb7538": {
-      "content_hash": "fc02b81d8b6d31a8e7693087b4d5635fbd0af3befc64038d60a67516f3d5fbf1",
+      "content_hash": "f877b68dfffb72ba2019ebe78763dfcc43d6b6171a920afe23155f732325d40f",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -18400,12 +18400,12 @@
           "quote": "两年以上工作经验 1.协同算法团队co-desgin，针对AI推理构建GPU/AI芯片底层性能优化与调优； 2.机器学习框架层架构创新，核心模块优化和扩展，提升计算效率与资源利用率； 3.深入分析GPU/AI芯片的硬件架…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.879654+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "9848e9e737cbf756": {
-      "content_hash": "e75b650bb7fce18044a50e6086ee4baa1eca03979fa7deb3ebdd452b0eb10cb7",
+      "content_hash": "3bf68a071ff644f1bb4b656738a45c885182f2fa61d1314497b6ebdba80bab45",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -18442,12 +18442,12 @@
           "quote": "三年以上工作经验 1.负责企鹅号内容平台的产品服务建设，聚焦于内容的生产、审核、分发及创作者服务，利用 AIGC 等前沿技术提升平台效率与用户体验，构建健康、活跃、可持续的内容服务； 2.负责内容生态产品规划，包括负责创…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.879654+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "f51a75f9d105c3d8": {
-      "content_hash": "0e052a19417e19e3c3f732f52cc8f0e99960b14543dbb4bf07674545d0937976",
+      "content_hash": "46b821bec456267e85620477a11829bd80f8d2e16d41f05dd51a3c1048e9e0ba",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -18479,12 +18479,12 @@
           "quote": "五年以上工作经验 1.5年以上公有云项目管理经验，具备独立负责行业公有云项目全流程管理能力，熟悉主流云服务商产品体系和交付模式； 2.具备较强的公有云技术理解能力，掌握云主机、容器、微服务、网络安全、数据库等核心技术架构…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.879654+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "2561d55c466e691b": {
-      "content_hash": "969c1efbf19ecec36c52706e26fa89f5cbedcd506c04685caa5af7580de46164",
+      "content_hash": "76c59d8b6546e956d757a412eae239930381d890d26e6c033ead8181187a2f2f",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -18511,12 +18511,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.879654+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "e157ddccd04b7742": {
-      "content_hash": "7d7da19818f855136bf465fbd1ba778787924c34c8f51945777cdce87960f8f2",
+      "content_hash": "958ce9e82724865d4a7f41afeef661bccf3735b3a858c36382e645ddd98e1c13",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -18553,12 +18553,12 @@
           "quote": "三年以上工作经验 1.基于周边市场趋势，用户需求洞察，充分了解并挖掘IP潜力，制定重点IP的衍生品产品规划，明确产品线布局与商业目标，持续打造有竞争力的商品； 2.统筹商品开发全流程，推动商品企划、设计协同、产品设计、打…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.879654+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "53f32721ce9b5000": {
-      "content_hash": "340be5f320188551af2816e9e3c2be6bd1a4fe8a6456d3e0deaf3d228dd167bc",
+      "content_hash": "55be766ac258a40a2a5bba56b23f34d79cf932ade778b4027072fb4cf6f3c31e",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -18590,12 +18590,12 @@
           "quote": "三年以上工作经验 1.负责腾讯体育、腾讯视频海外版、腾讯视频AI影视表达工作室等业务的推荐算法、AI agent 等工作； 2.推荐场景算法持续优化，助力业务体验升级； 3.开发和优化业务场景内AI agent基础设施，…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.879654+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "603a13c03b93a5e5": {
-      "content_hash": "cf1c8e7166f8bc71cd3a6691157a5613dc6347cefb9bc1377e577f54dff58aee",
+      "content_hash": "a35064525d3ee170a54b9aaac15d963c0f761db85aa4e6742f4109ecdb96449d",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -18627,12 +18627,12 @@
           "quote": "五年以上工作经验 1.与运营商建立和维护良好的合作关系，拓展业务渠道； 2.负责腾讯云与电信总部及其子公司的整体业务合作； 3.根据腾讯云与运营商集团总部达成的合作模式与产品库，推动在各省侧运营商以及对应渠道的业务落地；…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.879654+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "f9340413585c87c3": {
-      "content_hash": "cc8c1e0d0e324bcd61984a84764be01c2bd62ef9c007ee4018305beda701dae6",
+      "content_hash": "f27680b18af0a7f0031590868f9228acf08e59e1dd54b3129b4585972615b668",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -18669,12 +18669,12 @@
           "quote": "三年以上工作经验 1.负责火龙漫剧/视频业务的推荐与搜索技术研发（包含但不限于传统搜推、LLM4Rec、AI搜索、生成式推荐等），提升用户体验，用户消费与时长，用户转化与留存等核心业务指标； 2.根据场景特点和产品定位，…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.879654+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "fc55f280add347d4": {
-      "content_hash": "191c3c1dc628892295ed3c3f9a2854e6258562d801c43741d50d231129cd95c5",
+      "content_hash": "576670b362e0b7824da2a2722742a727dc030f20b50ea44f2377013c822e8661",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -18706,12 +18706,12 @@
           "quote": "三年以上工作经验 1.负责腾讯云AI产品质量保障和测试开发相关工作，参与AI产品（Prompt/Chain等）质量体系建设； 2.牵头推进传统测试与AI融合，探索建设前沿AI测试领域能力（包括但不限于AI测试工具开发、A…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.879654+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "244bd66dd9c0ce80": {
-      "content_hash": "0221745a302f2d9b927ce094d257dcdf887eb775e51159f689a418ca5d6e6ab9",
+      "content_hash": "3e60fa868dbfe3630ad58849845b89a68ab2e5ba617ae61b1c3039762a48af5e",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -18743,12 +18743,12 @@
           "quote": "三年以上工作经验 1.通信算子开发：设计和实现大模型训练/推理场景下的高效集合通信算子（AllReduce、AllGather、ReduceScatter、AllToAll等）； 2.通信计算融合：设计通信与计算的ove…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.879654+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "868d76df36912735": {
-      "content_hash": "ea2282985d65a550bb4da85e86b905eae732e062ffb19b6b30d561be919777b9",
+      "content_hash": "d1138f49e526c76f1d842b0862198b4df44546073add7a4fdb4ebed77cbba271",
       "match_level": "possible",
       "label": "需确认",
       "score": 68,
@@ -18780,12 +18780,12 @@
           "quote": "用户体验"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.879654+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "83d076e0b305929a": {
-      "content_hash": "44f5ff8d5cdc57b85125f876e0530f5322cad14bb7e8651a2ffe50c4f3389d60",
+      "content_hash": "5fcea6fe398e37d5ae8355539abbe4da8a19cab1b52789694a682120004bee16",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -18817,12 +18817,12 @@
           "quote": "三年以上工作经验 1.负责芯片的验证工作，包括：芯片验证的全流程，负责模块级、系统级芯片验证； 2.负责制定验证方案和验证计划，分解测试点，搭建验证环境； 3.负责根据测试点编写验证用例，开展功能测试、性能测试、功耗测试…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.879654+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "01aa0c28e7ab5456": {
-      "content_hash": "11cb828b6fe561266798f89f7bd996cb579f2d4eaa6eb8b20bf2b1630d33e42e",
+      "content_hash": "f91e1429f49b6cd80cab2a7a27632d1fface0e9405ddc0bb9c30abf03e1221d1",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -18854,12 +18854,12 @@
           "quote": "三年以上工作经验 1.负责芯片的详细设计、实现及综合等设计工作； 2.负责芯片的性能分析及优化； 3.支撑验证团队完成UT/IT/ST验证计划的制定和执行、覆盖率收集、原型验证问题定位； 4.支撑后端团队完成floorp…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.879654+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "0f1cd4cc0b03188d": {
-      "content_hash": "ee8061a4d5b91baf72c9644323c8227235678e7f184d4d70017b2bec27a7ea48",
+      "content_hash": "795d43201667a636cde0ac4276faa63d421c2320338c6d0f3f0ae58704f39aaa",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -18891,12 +18891,12 @@
           "quote": "五年以上工作经验 1.负责腾讯视频原创节目的策划制作：包括前期策划、制作及上线推广等； 2.控制节目制作成本，流程、进度、商业执行，并确保节目质量； 3.根据节目运营情况，进行综合分析，及时调整节目制作策略； 4.研究节…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.880652+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "080407f6dfc617b3": {
-      "content_hash": "1dd79ce56699ef876d404605da837ced50870a6518587827c3d37a0fe7361e4f",
+      "content_hash": "12371cbe999fd1cfc7735e92fc05b79a7f90ab5c6ce81e17e75e8589233a8809",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -18928,12 +18928,12 @@
           "quote": "五年以上工作经验 1.负责腾讯视频影视AIGC方向（涵盖影视视频模型生成、后期编辑等场景）的长期技术路线规划、核心架构设计及模型研发； 2.主导前沿生成模型（如DiT、理解-生成统一架构等）在影视领域的研究与应用，构建具…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.880652+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "6a8324d380688820": {
-      "content_hash": "a47ac1dbff3cdc926885ca665842f09339591248aa6a250e08b55a7fc7078238",
+      "content_hash": "2f9229130620e9ccc658d7804d4e19881f8ff96553c1072bcddae8345507e3f4",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -18960,12 +18960,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.880652+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.624073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "75435bedea04060a": {
-      "content_hash": "094906683f3d7bb69065b3a8546604e30bc7c97d316d0e98d263779a5abfa12d",
+      "content_hash": "2c3cb45138560a8537888d508650672bd3ab1dcde8603cb55a17a07ac980102e",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -18997,12 +18997,12 @@
           "quote": "五年以上工作经验 1.分析投资业绩：负责跟踪并分析跨一二级市场的投资组合业绩以及价值变动，评估整体资金效率与回报； 2.跟踪投后数据：对被投企业的财务和运营数据进行跟踪，识别潜在风险点，从财务视角提出管理建议； 3.建立…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.880652+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "9c11cf3cb47b0e59": {
-      "content_hash": "5d022deba1cfc977c2ac1497c87fe47f450f95e4b3669dcb44be7376a57d7486",
+      "content_hash": "1859d827efef9fb1d85cae142a5cb5cad64485cef60a0581248f8aaedab2e34f",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -19034,12 +19034,12 @@
           "quote": "五年以上工作经验 1.负责大数据基础产品数据智能核心竞争力建设； 2.深度结合AI能力，建设AI驱动的自治系统，提高数据智能平台业务效率、运营效率和系统效率； 3.探索和落地GenAI+大数据的融合场景，让AI在数据驱动…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.880652+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "db18605ea0dda811": {
-      "content_hash": "d7138e36a146c0c05be2280c1d5efbcda68ae65c60384f424c75f751318e7adc",
+      "content_hash": "07d70e1fb7c58ad78da5a5aa863c4d7426f9089b99ddaccb6b83593ac7c1fe6f",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -19071,12 +19071,12 @@
           "quote": "三年以上工作经验 1.为泛互联网行业客户提供技术咨询服务，开拓和服务泛互联网客户群体，为客户提供技术咨询/PoC验证等技术支持服务，维系客户及支持客户的持续高速发展，协同商务团队数字目标达成； 2.深入理解互联网业务对云…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.880652+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "d4ef3e7cc9752c6d": {
-      "content_hash": "c53efa7cdb529e042290b5b920e3498cfde048729c4b2efa9a2a626ec0567975",
+      "content_hash": "f8d8ccd2ea5a512e3cf5432e2dc1b30aab6eab6d936754f3afbd14388bdb08ef",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -19108,12 +19108,12 @@
           "quote": "五年以上工作经验 1.整合内外部资源，制定整体用户增长策略；负责增长模型的搭建与拆解，对 DAU/MAU 及核心转化指标负责； 2.擅长各媒体投放策略，领导UG团队制定全渠道投放策略；管理广告素材的创意工业化流程，通过渠…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.880652+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "dc9c2d4e2f509ca0": {
-      "content_hash": "be9f119e8f06033895b81f8800465ed549dac3e5af44c9a47899d53a480f8568",
+      "content_hash": "9fc85cbe72fc225f9fb4d9e37d5bc8d9052bbf7bed424598cc998c2495ca1f1a",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -19145,12 +19145,12 @@
           "quote": "一年以上工作经验 1.多模态数据体系构建：设计并实现 VLM 预训练数据的采集、清洗、标注全流程方案，涵盖通用图文对、OCR 数据、Visual Grounding/Counting 数据、3D 空间理解数据及视频时序数…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.880652+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "4a79990a9df97ee5": {
-      "content_hash": "baed126ad676794f4c2e7f803f82f78dc64c9154d5f74421280734ce91adb928",
+      "content_hash": "cc65e3f8153c4f3d6c525c21ebe57ee4cb4a379b35edb91f29acbad06c7e2a13",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -19182,12 +19182,12 @@
           "quote": "一年以上工作经验 1.Agent 后训练算法设计与实现：主导基模大模型的 Agent 化后训练方案研发，包括指令微调（SFT）、奖励模型（RM）训练、强化学习（RLHF/RLAIF）优化，聚焦任务规划、记忆机制、工具调用…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.880652+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "ef2e1143df8da41a": {
-      "content_hash": "aa54af55c7940cf2a19da9c1839faca7efd2c46cd21a51c9e9518fe0dec62eda",
+      "content_hash": "33b0aa8cbaaa5d0e31a5c1e1bc6cabf4ae9dee219e9e39bb0121a324c9fba7d9",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -19219,12 +19219,12 @@
           "quote": "五年以上工作经验 1.负责操作系统基础软件源码维护，需求开发，上游反馈等； 2.负责操作系统核心组件设计和研发，腾讯自研软件开发和支持； 3.负责软件包分析，打包和编译，软件包依赖解决； 4.参与社区互动，协同开发，开发…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.880652+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "9a276abb95dee180": {
-      "content_hash": "e47980cdba08e681ec67006c0297e90c3492deb18ce65059b4fe80a7fbe0b485",
+      "content_hash": "9d56fd45b1695ef0896593e68473930690eeec0d8f774136204ec68780a496f6",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -19256,12 +19256,12 @@
           "quote": "一年以上工作经验 1.负责大语言模型（LLM）推理能力的核心技术研发，包括数学推理、逻辑推理、知识推理和通用任务（如问答、翻译等）的算法研发、优化与创新，提升大模型在复杂场景下的高阶推理能力； 2.跟踪推理领域的前沿技术…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.880652+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "6fd1c82f25a5bc91": {
-      "content_hash": "c3a7ab24603c69a83dd67112a7c724b574593c244c9579720552f48e926ece07",
+      "content_hash": "33d31e99149e7ce30eb962bfb79f96c7d165988e849a12031ac3a2ff6cc8231a",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -19293,12 +19293,12 @@
           "quote": "三年以上工作经验 1.熟悉用户运营框架搭建，能有效挖掘用户画像和平台行为数据，制定用户行为路径提升全生命周期LTV， 建立用户流失预警机制，制定分层触达和召回策略； 2.有内容运营经验，通过站内站外内容运营、活动推广运营…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.880652+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "28ac32d85721145a": {
-      "content_hash": "065e510d54e8630f7dad0bd5a41e65e57f3af9fd2529ca87f0d26ee342828635",
+      "content_hash": "6fd256ff8b8bde13d9f22f7c8bed0cc4e07397ef75b00d4619a825d65d478905",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -19335,12 +19335,12 @@
           "quote": "三年以上工作经验 1.面向AI应用场景的图文大模型微调，优化PostTraining (SFT/RM/RL) 算法的训练效率和实际用户体验效果； 2.研究各领域高质量数据的自动化合成方法，建设高效的线上数据飞轮链路； 3…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.880652+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "1239e72579971aae": {
-      "content_hash": "ba836cb1f60360e2230a8744327f3cdfa03647fce372b7f8979223a6ccb6ffa9",
+      "content_hash": "f7f0ffdea62dc31658890841af9acbc91c079436f1e2dac152c1c179d53dfb63",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -19372,12 +19372,12 @@
           "quote": "三年以上工作经验 1.需求梳理：负责与业务团队的需求对接，分解网络产品功能，联合上下游团队推动网络需求落地； 2.技术收益评估：负责关键网络技术的技术方案设计与PoC验证落地，与业务深度联合优化，完成业务收益的评估闭环；…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.880652+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "bf06f973793c8ec9": {
-      "content_hash": "94b4f602b908940e866404c55f646d4f84b26d2cd18edc2cbeb674193cd194f6",
+      "content_hash": "2ee098a9ff0242c403cc065baee434e40469af7c85513e142f310889d4c49d1b",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -19409,12 +19409,12 @@
           "quote": "三年以上工作经验 1.负责研发具有多任务能力的语音合成（TTS）大模型； 2.负责TTS大模型的预训练及后训练相关的数据和算法工作； 3.推动TTS大模型在产品中应用落地（如朗读/对话/配音等场景），及针对这些场景进行模…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.880652+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "a34b5f52fbfbe2e3": {
-      "content_hash": "711c3ec146720da434764a1b3a6181bf05a1a33550dcd65feee8c4c7688f7c95",
+      "content_hash": "1c14477861358619d6b68cd5e44cfa64b2dcd62c523fe378dff467821b6a0bbc",
       "match_level": "possible",
       "label": "需确认",
       "score": 68,
@@ -19446,12 +19446,12 @@
           "quote": "用户体验"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.880652+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "3f1a4adb9f921934": {
-      "content_hash": "c6f96210759cf93e6a927592542af64b9eba8dd76fceb93e5dad372d9e924fd2",
+      "content_hash": "2e93dba23e7be24405c40c4ab2547375582a2d10f091d4fc66d07c319debfe9b",
       "match_level": "possible",
       "label": "需确认",
       "score": 68,
@@ -19483,12 +19483,12 @@
           "quote": "用户体验"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.880652+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "dbca5b09e7ab8d04": {
-      "content_hash": "5538850022f08c6ded2c3ca8fad887da16bd39ee74ad70a3eb79a55f1072e352",
+      "content_hash": "3f96278f976504ea8d3052c1005360f2bb5d2fe4f5131ebcf0956977bb0c3a85",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -19520,12 +19520,12 @@
           "quote": "不限 1.负责音频理解、语音识别、语音对话大模型等方向的模型研发与落地，包括 ASR、S2TT/S2ST、音频问答、语音对话等核心能力建设； 2.参与大规模音频/语音数据建设、清洗、标注、合成与评测体系搭建，持续提升模型…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.880652+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "841e88a02677f0e2": {
-      "content_hash": "a39998d494e190f53e49ce7f0e37fccc4e55a65cd6062f5ecdb3aa2a753bb3b1",
+      "content_hash": "9d11fa010901ae2038786fcbb45ed95eb716892dde1317ad25b4662aa54978d6",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -19552,12 +19552,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.880652+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "ac1756757ade8c25": {
-      "content_hash": "0d0ff644ab2f7cfbff7e827692bd3c9bee2cb7d1d68710b6f1a3e81d9cc30ecc",
+      "content_hash": "79fc3b29ee4013f92ad63cbf83a8fda73ac41e5892581b015f478efdf4dc54eb",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -19584,12 +19584,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.880652+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "68368272c2c12ea2": {
-      "content_hash": "72ae26b8984ff6b49773d2264b7717d618ebd945043e481e8da0b12fa0db01aa",
+      "content_hash": "31b4602c40f96daedff4da0c30555a3121694f5165bd1af2679f2b732b5c1d82",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -19621,12 +19621,12 @@
           "quote": "五年以上工作经验 1.负责腾讯营销话题营销策略的制定与执行，结合热点和用户需求设计营销方案； 2.深度挖掘品牌客户需求，通过创意话题策划提升营销效果和用户参与度； 3.与产品、运营、设计等多部门协作，确保营销活动从策划到…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.885652+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "735a54e177d4091b": {
-      "content_hash": "5600a35932c404d357e97be51346775b8f1cb6f767aeb7dc6d13fe65c93a2b59",
+      "content_hash": "329ce33671a7cee5a4978ffe883bdc67265ca0d19ef4fb5c0dfa456803bb3472",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -19653,12 +19653,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.885652+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "de8321d0b3e4b8e1": {
-      "content_hash": "ce8936fa335c730e6f23e26e930357d0f73718429e062840a2e5f61f20fea532",
+      "content_hash": "351d9dd14dbac4aace6c7021aba1ad3462e92078cd0e416adddac211f3eff4c4",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -19690,12 +19690,12 @@
           "quote": "三年以上工作经验 参与微信大规模语言模型（WeLM）多模态基础模型的建设 1.探索研究基于 LLM 的多模态理解训练方案，从预训练开始建设高效智能多模态模型 2.探索研究基于 Long-Horizon 复杂多模场景的通用…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.885652+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "87162cb0d35d7ae6": {
-      "content_hash": "23396e2cabbd3ddebab5921efff228ad112add7c138b268c08d1060561d75e3a",
+      "content_hash": "b98106f316b82c3330a7d2e2dc7931b333a322d58ece9e8c6225654ee0bcff72",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -19727,12 +19727,12 @@
           "quote": "一年以上工作经验 1.对LLM训练的多方面场景的AI基础设施进行优化。包括但不限于GPU，RDMA，存储等硬件设备，RL/训练算法等技术方向。最终将硬件性能榨干，加速大语言模型落地； 2.一个人无法穷尽AI系统的各方面能…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.885652+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "95c9fc290ce9b4cb": {
-      "content_hash": "17f84868d5da80b972a7e1f98a5d47acc561823075d5979c7c3ce6ad8a921993",
+      "content_hash": "f37143d68512d6d153c80faa52ee8e2ef769e1af907fea2912905a95b7bb282f",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -19764,12 +19764,12 @@
           "quote": "三年以上工作经验 1.负责语音合成的算法研发与落地，包括但不限于TTS前端、声学模型、声码器的算法实现和改进； 2.推动语音合成技术在产品中落地，针对业务场景做算法调优和效果提升； 3.追踪业界前沿的语音合成及相关技术，…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.888656+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "7c1e9ed964b9055b": {
-      "content_hash": "f825a705a6adbf645a4fb990800ffc7c976c8cee2714a175c7aa2a2c1a02a922",
+      "content_hash": "355afb51646d33d8bd186a5cf770e9ed1054e3eaa925c13c1e50ce9317fb0566",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -19801,12 +19801,12 @@
           "quote": "三年以上工作经验 1.负责汽车行业客户的销售/客户管理工作； 2.面向汽车行业客户，包括：主机厂，TierTier2以及自动驾驶初创公司等进行业务拓展，拓展领域包括但不限于：智能汽车云，导航和地图服务以及车联网业务；完成…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.888656+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "a92f780ba7686443": {
-      "content_hash": "04b577c2a0c66328207c8a9e44f4f4200fbc23df090de3a068c55e1754b3df0e",
+      "content_hash": "17f7c841765c89f79e92219e059edb181a09ccbe88945b5b3927afc7f84ac71b",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -19838,12 +19838,12 @@
           "quote": "三年以上工作经验 1.负责构建数据驱动的智能体评测体系，基于WorkBuddy/Codebuddy使用场景，设计并开发自动化数据流水线，持续挖掘、清洗和生成高度贴合用户实际场景的高质量评测用例； 2.主导研发支持多模型、…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.888656+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "3eab16e360767a96": {
-      "content_hash": "e4d4faf8c4e25d529a078fe1aea3d36a99a149f4d4e73bc7bb1c6bcc6a656235",
+      "content_hash": "e47dcd0aa9f5310dc0580022099bd30e9ae44cd6db7cdae648590477518e6583",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -19875,12 +19875,12 @@
           "quote": "三年以上工作经验 1.基座大模型（LLM）推理能力和通用能力的核心技术研发，包括数学推理、代码、逻辑推理、知识推理、创作、多轮对话、问答、翻译等任务的算法研发、优化，突破模型智力上限； 2.提升基座大模型在复杂场景的高阶…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.888656+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "1ccecb5dd3e99bb6": {
-      "content_hash": "eba8476fc6b68e6adb34cc16f505c819b42719eec1d629966aeec46e8ab34df0",
+      "content_hash": "34f0a0a30b2fdd62d4f2c7137658d774a60ca841d396019c1603be26cb85ebad",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -19912,12 +19912,12 @@
           "quote": "三年以上工作经验 参与微信大规模语言模型（WeLM）的建设，涵盖训练流程的多个环节 1.探索大规模预训练模型的结构创新、优化器策略创新，提升单位算力下的智能获取效率 2.探索更高效全面的预训练数据建设方案、预训练数据使用…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.888656+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "9ef1289645b421c4": {
-      "content_hash": "c40752140ade35883ec7ebc5573d66e261e8961467bb0cb653ce956c75a19a03",
+      "content_hash": "fcde97756bd7893a22dab460c0cad21f021bd8ca77da6076c45b1c542610ec94",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -19944,12 +19944,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.888656+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "287217d2e637c48c": {
-      "content_hash": "28d0fc44fea06a2a1fe784c067da7c457b9502df38a03935a6ef67145c135b3b",
+      "content_hash": "ab1eedb762da7cd8c4367b7b8fab6d81abe9064e463b827bb2c00fe1af46ab1f",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -19981,12 +19981,12 @@
           "quote": "五年以上工作经验 1.研发新一代视频编解码算法； 2.参加国际国内多媒体技术领域标准会议和标准制定； 3.跟进行业前沿技术和标准发展动态。"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.888656+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "4b23b685bb8e2739": {
-      "content_hash": "1309f9be482c2457c95adfa3aba4aa4d0e9991ea8b97092b894224270aad2aba",
+      "content_hash": "923b7badd0bddc73cff0c9974ed485398b028ef1439ac6096b16db4b8e6d6bf7",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -20018,12 +20018,12 @@
           "quote": "五年以上工作经验 1.负责腾讯金融云资管行业的售前拓展支持，与销售团队配合共同完成资管行业的业绩KPI，并持续深耕资管行业，输出面向资管行业的行业解决方案，维护和逐步提升行业客户满意度； 2.为资管行业客户和合作伙伴提供…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.888656+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "016408e730024c52": {
-      "content_hash": "eed78ea86517ad4386f12e618f8e384becd8810260731f7435a1159ea21ca96e",
+      "content_hash": "197570d33d19cc20413dd247d5edbe0d2a3aa9c0c7a1c34452d571eb612ece51",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -20055,12 +20055,12 @@
           "quote": "不限 1.技术分析洞察:深入理解人工智能算法、及前沿技术发展趋势； 2.发掘投资机会:通过研究发掘人工智能领域投资机会，协助完成行业分析，尽职调查等工作； 3.体验AI产品：作为“玩家”深度使用和测评AI产品。"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.888656+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "91129efc5e164f58": {
-      "content_hash": "2ba87f6e45ff931316b0f351dfb80c3c7b8067fd0776582cce237e8018343d79",
+      "content_hash": "ba26183910f927805d6b07b4c9880c024a6a65cbadc0f23f1b992ebad9efacfb",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -20087,12 +20087,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.888656+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "25e00561b4dd87f6": {
-      "content_hash": "df3e32f19f6e2e8c41799dbee8d13976ef908c5d3872ed0fad9f06da57c38d14",
+      "content_hash": "592f598eeface6bc0a467a5704c8bcd9301414e9af5ad7c9de2bab2f6fe433b0",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -20124,12 +20124,12 @@
           "quote": "一年以上工作经验 基于多种异构芯片，GPGPU/NPU/XPU等，协同算法和业务团队，主导分布式异构推理系统的开发设计与落地实现，聚焦低延时、高吞吐目标，使能多种异构芯片算力和攻克大规模推理系统工程化落地关键技术，主要包…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.888656+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "05d32a30a9d286da": {
-      "content_hash": "6d4a0a778440cae80d325771f55577441b009de2a8bf019c52dc26650217d6ed",
+      "content_hash": "ae805ae5d362cae2e580d2fafb34200ef05a0113b89b2f1503fe5e390cfc2641",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -20161,12 +20161,12 @@
           "quote": "一年以上工作经验 1.核心议题策划：深度洞察财经、科技及AI行业趋势，负责传播主题的挖掘与策划；通过输出高质量的选题视角与逻辑架构，引导并驱动优质内容产出； 2.媒体共创与联动：重点拓展并维系自媒体矩阵及垂类媒体，通过内…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.888656+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "ea5de3a1a11d0dea": {
-      "content_hash": "2387a7d1a51ce0d674790acb695f829f44b00f37894c9b1dca06ede6359e47e7",
+      "content_hash": "f61dc2173f42d34104f2c6635e66cde169b27102e6d26664e7b0ffdcd41e03de",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -20198,12 +20198,12 @@
           "quote": "五年以上工作经验 1.参与地图自动化制图系统的核心算法研发，包括遥感/街景/轨迹等多源数据下的2D/3D目标检测、语义分割、矢量要素提取、拓扑关系建模等任务； 2.探索多模态大模型与AIGC技术在地图内容生成、编辑与更新…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.889656+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "06b846c933039b7f": {
-      "content_hash": "a70e38d5189f25be49d55ef15f3695ca1cbcd284163aac19128e5b16fdec4f73",
+      "content_hash": "2e1784987a7dbf6d74be676051d400b7b2588f571c061b16d0c71b8126ad46fa",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -20235,12 +20235,12 @@
           "quote": "五年以上工作经验 1.理解文化传媒行业对IaaS、PaaS、MaaS等技术及业务能力需求，结合行业政策及动向，基于腾讯自有产品及生态产品负责行业方案的售前支持，具体包括项目的咨询规划、方案编写、现场讲解及用户答疑等工作；…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.889656+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "99331bb2c006794c": {
-      "content_hash": "f443de4a907ebd37bc6623598395005afa7064e3d854ff3752e4fa532c782f6e",
+      "content_hash": "531309583dd3087aa79f71370a5842c71ae79e15f1628c9163f6ba4c41b54c44",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -20267,12 +20267,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.889656+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "b987d5748f0b0b93": {
-      "content_hash": "9095e05e540bf9b5ddfb05c1d98123d1b4347f2af4fca220835101799fa22cd7",
+      "content_hash": "1cf44f98513e14f5bc758f893f7fa1ac7b5ca4471e832422ded40e663627093f",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -20304,12 +20304,12 @@
           "quote": "三年以上工作经验 1.负责LLM和多模态大模型在教育领域能力提升，优化元宝教育应用效果，包括但不限于：CPT、SFT、Reward设计与RL训练等； 2.应用大模型技术，设计并优化教育场景AI Agent的核心能力，例如…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.889656+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "79171ecf22a5154f": {
-      "content_hash": "3d1579671cda45d2ff009b56cf92888b7709b348ed6f92dac49f17dc260d7aad",
+      "content_hash": "aaba6c0828bb37899e1bdc220da7e6b5c1135387149d5b134d2c366158b3aca4",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -20341,12 +20341,12 @@
           "quote": "三年以上工作经验 1.基于开源项目 Ray，打造业内领先的通用分布式计算引擎，包括但不限于以下方向：引擎内核（分布式Task调度与执行）、分布式数据处理框架、分布式在线服务编排框架等； 2.面向 Data + AI，支持…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.890665+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "c8cbcb74eedee07e": {
-      "content_hash": "28bff61c7d8924185ec495276faf510587bf3202e041aafde9478f0a3462f2d9",
+      "content_hash": "e330d6217796b1c67491ae56ed9ec7892211bd8b86fd9cabf9fd24b37ac9abc3",
       "match_level": "possible",
       "label": "需确认",
       "score": 68,
@@ -20378,12 +20378,12 @@
           "quote": "用户体验"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.891186+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "8c3295af2092048c": {
-      "content_hash": "6013e6b8aa0a83f457f465046aa41c416fc57ef67d3919bf3d984241ee816fa9",
+      "content_hash": "c800e16110436496a7c939e6149aa14cbf8f2fabfbb05db4b18572bf1bfab3cc",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -20415,12 +20415,12 @@
           "quote": "五年以上工作经验 1.架构咨询服务：作为行业架构师，深入自主品牌及合资车企一线，提供汽车行业数字化业务及底层技术架构的咨询与设计服务； 2.信任建立与拓展：通过深厚的技术实力赢得客户信任，负责深度合作项目的技术拓展与机会…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.891186+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "5a6330bd9de2f295": {
-      "content_hash": "2b453dbfa05b813417ae5b31ddd9a23e6414d4f5371665f8b2cbceb0d2c424ed",
+      "content_hash": "73ce7094876691867c58139dbcbbc436a8c3d9e8b2a90ccb5471b1d31f593a24",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -20452,12 +20452,12 @@
           "quote": "五年以上工作经验 1.根据重点行业（景区、文旅集团、酒店、农业、乐园）企业数字化转型需求，输出基于客户数字化升级及业务增长诉求的解决方案，推进相应解决方案在客户项目中落地； 2.对营销数字化、数字化转型、经营增长等方面，…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.891186+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "36d7e0df294def1c": {
-      "content_hash": "ac3386222565e4b853418e202441836157dffc60d92831c44615eac482b7a00a",
+      "content_hash": "b483476c910bc95ca50ac14cf2b9bfdd12fb7ee2837ed3ea46824a9ec7639070",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -20489,12 +20489,12 @@
           "quote": "三年以上工作经验 1.负责智慧出行部门车企、智驾、出行后市场等赛道的行业研究、客户策略打法及经营分析工作； 2.深入洞察行业及市场趋势，为业务决策提供高质量的战略分析与建议，提升决策科学性与前瞻性； 3.挖掘潜在新客户机…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.891186+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "06364f1fdfb8513c": {
-      "content_hash": "f3b103f664dadfac6d36f9d083c77da0922995c58228f11bbb2eb57922ecea2b",
+      "content_hash": "420da64c656ab7f03fbb3976ec5937d037f64fe328d06334a8280709fc80b2c4",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -20526,12 +20526,12 @@
           "quote": "一年以上工作经验 1.参与微信电商多模态大模型、音视频全模态大模型的建设； 2.持续跟进业界最新的多模态大模型算法，参与多模态大模型的设计、训练、调优及评测等； 3.推进多模态大模型在微信电商内容理解、短视频和音乐内容理…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.891186+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "a6d8d40acd137374": {
-      "content_hash": "20ac554878758e5ea462a06c9cf78b05c1cc060fceba3248759dfec1deb496a4",
+      "content_hash": "2f5faedd2f715e382a95eab6b9e4d67cbd9d5237536642f7abe50a60dd74821a",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -20563,12 +20563,12 @@
           "quote": "一年以上工作经验 1.负责多模态大模型的研发和应用，研究相关技术在应用领域的全新解决方案，包括而不限于多模态理解生成，视觉Agent等能力； 2.数据建设、指令微调、偏好对齐、模型优化； 3.相关应用落地，包括搜索、工具…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.891186+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "c55e4f0929c4470c": {
-      "content_hash": "efd2d345686dac65976603c31f171652f6ee9e0a6847d75277edcc0063ba401c",
+      "content_hash": "949d1e0b860f2e74b554cfd4b04292af20e4efa14e9000734b123d2634f4d44c",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -20600,12 +20600,12 @@
           "quote": "一年以上工作经验 1.参与微信搜索Agent能力优化，包括Search Agent（DeepSearch/DeepResearch）和真实世界复杂任务上的Agentic能力； 2.跟进前沿技术：Mid-Train、SFT…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.891186+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "0211d4704f21ed17": {
-      "content_hash": "a53226ceab202f1ad46b2269a6ab45b465e1238c00de97f8bd67616424d2d787",
+      "content_hash": "8838a7f035db19cdcf2f66864b39ae930db46755953b4b0a4ef27cc62de73224",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -20637,12 +20637,12 @@
           "quote": "一年以上工作经验 1.负责开发和优化LLM，VLM等大模型的推理引擎，构建适合AI Search,智能 Agent相关领域大规落地应用中的推理基础架构； 2.紧跟 LLM Infra 领域的前沿技术演进突破，将合适成果落…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.891186+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.625073+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "233ea840567afc90": {
-      "content_hash": "dcd6a763887de67b508006d39451f285b7f12be0f5cdb7092f37799fbf372a9e",
+      "content_hash": "fc145733a1332e6261d9e0b7cf240b99f190d46e5bea06e919574e7409c57988",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -20674,12 +20674,12 @@
           "quote": "一年以上工作经验 1.工作职责：； 2.负责开发和优化LLM，VLM等大模型的推理引擎，构建适合AI Search,智能 Agent相关领域大规落地应用中的推理基础架构； 3.紧跟 LLM Infra 领域的前沿技术演进…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.891186+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "7fbf52549110467a": {
-      "content_hash": "e44af9498e9d5105727dcc6ecfa595ac0922708d8c955eab8d719714e4482586",
+      "content_hash": "fb3cff2e2518ab85ea0b0407c8d6ea54c31698561734378d284f46dad262bbc7",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -20711,12 +20711,12 @@
           "quote": "两年以上工作经验 1.基座大模型（LLM）推理能力和通用能力的核心技术研发，包括数学推理、代码、逻辑推理、知识推理、创作、多轮对话、问答、翻译等任务的算法研发、优化，突破模型智力上限； 2.提升基座大模型在复杂场景的高阶…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.891186+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "3aa756ee4aaccb4f": {
-      "content_hash": "12074ae7430b4f41da1c18624088a8cb34b68e21f5bbf362f8db2cbb2c4470af",
+      "content_hash": "e9f475d06e2bee7a713299fedab7a528f27fb1bf86982ed23f1e96b794d1f7b4",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -20748,12 +20748,12 @@
           "quote": "一年以上工作经验 1.基座大模型的训练性能优化和高稳定性训练框架开发； 2.大模型应用的后台系统设计与开发、推理性能优化，确保系统高性能和高可用性； 3.大模型相关业务功能开发，基础框架与工具建设等； 4.跟踪前沿技术，…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.891186+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "752a8ad65fb8bfc0": {
-      "content_hash": "733e59111750cb23a68adb4c75447ca9b192d232af96af607e9caec63f4fbe57",
+      "content_hash": "3a4895fd52680619447d513d61f80b5c0a2ae8113b972cb5ac0d6dfa4e88a7c5",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -20785,12 +20785,12 @@
           "quote": "一年以上工作经验 1.分布式 Dataloader：多源数据加载框架研发，优化预处理流水线、IO 瓶颈与数据倾斜，对接对象存储 / 分布式文件系统，支持动态采样与增量更新；​； 2.Checkpoint 管理：设计高吞吐…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.894210+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "35319a0999ce8622": {
-      "content_hash": "565bfe536542f6bfc410d1dbec0ed4fcebed1c9eb1ad0068fbab9c40f9160463",
+      "content_hash": "1ce00f374411f8a2e689852df37c9bf0dbc1828c42c5e3a2de9c83eefcfee941",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -20822,12 +20822,12 @@
           "quote": "五年以上工作经验 1.负责动漫IP衍生品全供应链体系搭建与优化，制定供应链管理标准、流程及管控方案，统筹衍生品合作开发、生产制造、品质把控、交付落地全流程工作，保障业务高效推进； 2.拓展、筛选、评估市面上优质衍生品品牌…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.896204+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "95e6346087dccc71": {
-      "content_hash": "c671a5d34cfdeedad049ae3893f616c83fa000932ee0641986eae29eda6875ce",
+      "content_hash": "acb088a47c45708e79ad2c965c52804f3e3611114a4625958d869ad3233c3617",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -20859,12 +20859,12 @@
           "quote": "三年以上工作经验 1.负责AI Agent 工作流的设计与研发，落地生图、生视频等业务场景的端到端自动化流程； 2.基于 LLM（GPT/Claude/DeepSeek/混元等）构建Agent的任务规划、工具调用、记忆管…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.896204+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "e98e9545f793dc8e": {
-      "content_hash": "90d3e71788e999fd0ebc41a41b336369de4c9a1f894d03b5b3142582112f3239",
+      "content_hash": "8531f94c0723fe0f3e253f42bba5e6e564b1dc8907ab2460aecedf6aa8de4a4b",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -20891,12 +20891,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.899198+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "2871d8a52d049583": {
-      "content_hash": "95da58565af1afed3cb6bce6da5ef9b8386564aabca9e774eabcad06b6102ba9",
+      "content_hash": "1907051af04a983fd09a0ca8d3c4111798d4dd3026ba81348cd7ce05a963d1fc",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -20928,12 +20928,12 @@
           "quote": "五年以上工作经验 1.负责增长与推荐算法体系的设计与迭代，覆盖内容理解、召回、排序等核心链路，持续优化推荐效果与系统效率； 2.研究并落地业界前沿算法与大模型技术，包括但不限于大模型后训练（SFT / RLHF）、深度学…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.899198+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "fa950bc7d90693db": {
-      "content_hash": "1d67d8d55fa6e746364d3fcf05a35211c0a5d83f22097ffd45c711246f3bf2b7",
+      "content_hash": "12ad3175585844bed10bc82e228d38091d6d3e39a64bb269c2b436f513d9a57c",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -20965,12 +20965,12 @@
           "quote": "三年以上工作经验 1.负责投放素材策略与运营，深入了解信息流广告、达人广告等投放生态及素材策略，追踪行业素材动向与优质案例，持续优化素材投放效率； 2.结合漫剧/短剧内容行业特性，完善素材管理机制，整合AIGC工具、行业…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.899198+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "23f134270a9895ab": {
-      "content_hash": "3ecea1f835a5446200bb6d406e8302c551c7cf0827addac0df3dfb00586788d7",
+      "content_hash": "cc3d788e92e774d53086e86bd518492062b14ec8aac4a3a984371a07a2248707",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -21002,12 +21002,12 @@
           "quote": "三年以上工作经验 1.负责制定并执行市场的用户获取（UA）策略，结合不同市场特点策划买量素材，推动产品在目标地区的增长； 2.管理广告素材的制作与优化流程，持续提升投放效果与素材点击率； 3.负责外部合作对接，探索并测试…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.899198+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "6afb0274f9c9d437": {
-      "content_hash": "8a3ad7676c3f0b02850959377bebfe5d44d0bfc1d185eff6cd02d4c46f55ba76",
+      "content_hash": "1433656d758d19ca1f8844213652151e3706d7f575f391a490fb52897953fb51",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -21039,12 +21039,12 @@
           "quote": "三年以上工作经验 1.负责漫剧产业链上下游资源开拓，包括：漫剧内容制作公司、版权方、MCN、工作室、超级创作者、网文/漫画IP版权方等 ；建立并维护核心合作伙伴关系，推动优质内容引入与联合出品等合作； 2.负责内容赛道规…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.899198+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "6ec6024bcf762bb3": {
-      "content_hash": "eb4c511263355b214e84aaa6edea83ff2e57b392518492e93d356215e07725d0",
+      "content_hash": "7bdd087ec7e77db767cb1ad181bdc39e4a29730ab273bc93921975997ba08454",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -21076,12 +21076,12 @@
           "quote": "三年以上工作经验 1.主导 Agent Benchmark 的平台化落地：负责 SWE、Terminal、Claw、MCP 等多类 Agent Benchmark 在评测平台上的整体接入与工程化，沉淀标准化、可复用的接入…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.899198+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "520801b824eed3fb": {
-      "content_hash": "ee6add3c3b966c270879ae6f1652a170c28896a6f84617773a1346a5774d854b",
+      "content_hash": "84184a1c983de00c68149bd530238edeeae1f90b54a9e225ea7d8beb6c6b3e55",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -21113,12 +21113,12 @@
           "quote": "一年以上工作经验 1. 参与音频大模型的全流程研发，包括跨模态对齐、多模态理解及生成，涵盖文本和语音等训练数据的清洗和制作、基础模型算法选型与优化，聚焦预训练、监督微调及强化学习等关键环节的技术迭代； 2. 负责语音对话…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.899198+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "d3c9cf11c86ca0fc": {
-      "content_hash": "7aef568fcb341bf27d201d3b06a25e0a25272b07d8001cdf6a4baadc8fcbb8ef",
+      "content_hash": "eadf352e70851cb676826b6b7d2365f2f2a29455b2c7d998e9f3dead56c92f41",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -21145,12 +21145,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.899198+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "3fe04e171154912b": {
-      "content_hash": "aab408b3974b428fd93097e3b65d64bdaec99a6db9d85f54cdfe2cf8cbb003e1",
+      "content_hash": "10c6a0c7709381504e50745c6ab36db70eaaa90f64532b7a49609f7b18dda458",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -21182,12 +21182,12 @@
           "quote": "五年以上工作经验 1.负责腾讯营销云产品的渠道商业化工作，包括产品架构方案设计、解决方案以及业务咨询等前场相关工作内容，推动业务目标达成； 2.挖掘适合营销云产品的渠道生态伙伴，并组织伙伴赋能并开展相关市场活动，培育伙伴…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.899198+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "21f5f6dcd07f9201": {
-      "content_hash": "7a2e10088a7766caf862fd2ddfcb5cc4cfbd3a1a8e4f3a35652d24e772fc09c1",
+      "content_hash": "ed81ed1be9e1e8e2ecd36bbc0a9eea73352fa317626ee3c0980e98320a70afe2",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -21219,12 +21219,12 @@
           "quote": "五年以上工作经验 1.负责海外广告联盟的开发者变现合作，制定业务发展规划，搭建流量变现解决方案，开发各类型开发者变现合作，提升流量变现效率、规模和市场竞争力； 2.负责或协助相关团队的日常管理。"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.899198+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "fac4c830a8213dbc": {
-      "content_hash": "e44b0c44556e50f1dff9c922a04fc4e13e81ed4fe83c255faafea44fd480b34e",
+      "content_hash": "f327f18746a79db1ca7987bd4e85b51b2e49301171075a886929b167d70000f5",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -21251,12 +21251,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.899198+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "1c5f3db960d3d1ff": {
-      "content_hash": "df76d68ef42de66fae7f3d572c4004eaf736a69302834930303816be98521ae6",
+      "content_hash": "f8c1adf6665e5a3d3083bf8754b0b7f7e930eb7a22829492698a681547cbb492",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -21283,12 +21283,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.899198+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "65ad894bf1619f48": {
-      "content_hash": "07e2977219d261fdb29b9faa08a37003328f4a933928becced2f921590d35479",
+      "content_hash": "86b5f23bd7b97f3fa75141d43320abde8d2b2a279b7a7a51057c1fae52e8e2f5",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -21320,12 +21320,12 @@
           "quote": "八年以上工作经验 1.负责腾讯云 IaaS / PaaS 产品的稳定性与容灾演练测试，包括 Region / AZ 级故障、强弱依赖故障、高负载、混沌工程和长稳测试等场景； 2.设计并组织执行容灾演练方案、测试用例和集成…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.900204+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "b12b31d7e8de5027": {
-      "content_hash": "999a9c7f04e2e4989c12f357e0e5a456ab029e42ebd5447506a6dfbaf18c67ba",
+      "content_hash": "c3454612e8cdeb4b113bf250833fe8d59ff05d445590caae6be95848715386df",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -21357,12 +21357,12 @@
           "quote": "五年以上工作经验 1.负责腾讯云MaaS产品质量保障工作，深度参与产品质量体系建设，识别全链路上的质量风险，建立稳定性保障体系，推动稳定性建设落地； 2.腾讯云MaaS产品相关的模型评测工作，包含模型的评测体系建设、评测…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.902199+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "af6483589fc299af": {
-      "content_hash": "50ac435ba3947af5572b965f3a733d369a17fe7f25886fa6c72cfd1849445b31",
+      "content_hash": "06a741fab39c9d34c72326d8427b039f95e79b976307d922b857b67afd69ec15",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -21394,12 +21394,12 @@
           "quote": "三年以上工作经验 1.参与《狩》项目专属 DS 架构设计与核心系统研发，主导多人联机玩法的服务端落地、性能优化与安全体系建设； 2.从底层引擎到上层业务全流程把控，打造高可用、高并发、高安全的工业化 DS 服务端。"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.902199+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "df0720f072b10084": {
-      "content_hash": "53e2358c79dbd6628b9048426e10fc5c3065071646d87406f5dfb9d2656ad25f",
+      "content_hash": "0ad941484ec29d6dc38495a4aed8ed7b8edb98be95d0e5b830874d84cccf90a6",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -21431,12 +21431,12 @@
           "quote": "五年以上工作经验 1.负责多任务、多语种 TTS 大模型的研发，包括预训练、后训练 与效果优化； 2.负责语音合成核心算法研发，包括 声学模型、声码器、Voice Cloning 等； 3.推动语音合成技术在实时对话、客…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.902199+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "240747a806fc91ef": {
-      "content_hash": "f3122fde836a66193ce4046e51ff96485cb08df8e06f8dffdb3c5c3c55d81fe4",
+      "content_hash": "8244b458e6e1d66fab2a966d0ddd47c1152f699b936b2a4d8fa2507d01151b94",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -21468,12 +21468,12 @@
           "quote": "一年以上工作经验 1.参与Research场景下Agent框架的研发与维护，支持强化学习、数据生成及自动化评估等业务需求； 2.负责优化框架的易用性与稳定性，解决实际运行中的性能瓶颈，保障实验流程的高效执行； 3.支持各…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.902199+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "2e1f1f46f41247cc": {
-      "content_hash": "5b2a982acc93643dcfe3a4e77d476343f9c3adbdeb1be26768b29c919b326ea6",
+      "content_hash": "d4b1839d59da4ba366862ae15b616d46b997d2fb5e08a686db36c3eafe9722f6",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -21505,12 +21505,12 @@
           "quote": "一年以上工作经验 1.负责大语言模型训练与评测场景的智能体交互环境接入与平台化，对接自研、第三方和开源环境，制定接口与数据规范，建设验证与回归机制； 2.建设 Agent 框架的数据集能力，对 Pretrain / Po…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.902199+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "f2f4511f2a8d8469": {
-      "content_hash": "b17bedcbc7ef64e62b05fbcfcf332de2e3fd3b9df22157732c2ed6c7827d4bd8",
+      "content_hash": "77ebe1c066eb78db9105b115fc36f43cca660110aa6a3ed1d850775f0d041a2d",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -21542,12 +21542,12 @@
           "quote": "一年以上工作经验 1.参与 Research 场景下 Agent 框架的研发与维护，支持强化学习、数据生成、自动化评估和实验复现等业务需求； 2.统一封装模型调用、工具调用、任务执行、上下文管理、日志 Trace、结果收…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.902199+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "5514fe35ca8daf4c": {
-      "content_hash": "a74b3f33ab3d904291c05e43437c5dc7115eab9e0b256446ed9f3295d75d59f8",
+      "content_hash": "7754a534ae8f2602723bc37134e9910cbe61d17297f0a4a771ef6cfc5ebc94ff",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -21579,12 +21579,12 @@
           "quote": "三年以上工作经验 1.负责训练infra团队研发项目全流程管理，统筹跨团队协作拉通，打通各环节协作壁垒，高效推进项目落地； 2.搭建并落地项目质量监控体系，全程把控项目进度、交付质量与风险，保障项目按时、高质量交付； 3…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.902199+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "3e9c19a156269c07": {
-      "content_hash": "66a2bd11a6a618880c025ae8635845726766254e044cc75299826755f8199d88",
+      "content_hash": "7e73caa73a71b8ad3fbc945c2bcce2c45490c426ec2d9785e145de770c814c32",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -21616,12 +21616,12 @@
           "quote": "三年以上工作经验 1.负责腾讯视频动漫品类市场营销工作，宣发策略制定、事件策划、创意策划； 2.线下用户活动策划及执行、社交媒体官号运营等。"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.903204+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "f58683fe0f8710ed": {
-      "content_hash": "6f17cb48a8ea24c08c20e324cadf26f9edccf3d194b4cd1040da0776f20395e4",
+      "content_hash": "7510d4023f2bf28a15bb1d46c0d36d11a8d49554465382b354d71f581ffca4f0",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -21658,12 +21658,12 @@
           "quote": "三年以上工作经验 1.建设和完善大模型应用平台产品，通过平台迭代，提升业务效率； 2.了解最新的大模型能力提升和应用方案，并落地为业务实践； 3.抽象沉淀平台通用能力，成为易用组建，优化用户体验，降低使用门槛。"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.903204+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "a0d68ea859527291": {
-      "content_hash": "68cd5f92618427911264ff8210b49cada4d1041a4c462ad470e698bf133721c0",
+      "content_hash": "a2f8c507760c0543e968b463bd7107e09366feb78c4df2fbe304b7a8e68e6c85",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -21695,12 +21695,12 @@
           "quote": "三年以上工作经验 1.项目执行与流程管控：协助制片人将项目创意转化为可执行的制片计划，拆解目标，制定详尽的倒推时间表与任务清单。全面负责项目内外部审核流程的推进与保障。熟悉平台内部立项、绿灯、合规、版权、财务等审批环节，…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.903204+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "399bc69f771b1827": {
-      "content_hash": "13c0d1b6cfe3f7466d2be03be1be01ba1e51d5aa0d29aae376d84b9125cb1b23",
+      "content_hash": "e83374d7ca103aa54239062b4f8fd14d25a4b89d626ba0f8875f6e691987a03c",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -21732,12 +21732,12 @@
           "quote": "八年以上工作经验 1.Utilize proprietary and third-party data sources to conduct market analysis, investment research on…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.903204+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "43701ba7eeb5c9c0": {
-      "content_hash": "b1e87de9fa7a39ae65afecfbe64c75a4bc29185745aa95e2ff34dd321c36297d",
+      "content_hash": "5507441b7c35e9b98039eee1503ccef0388221408af8bc721252f454a254fb32",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -21769,12 +21769,12 @@
           "quote": "三年以上工作经验 1.参与架构演进与落地：利用高性能存储、分布式计算等技术手段，参与新一代参数服务器架构重构，协助构建适配超大规模稀疏特征的底层能力，并结合业务需求协助制定解决方案； 2.前沿技术跟踪与实践：跟踪行业内分…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.903204+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "8bb8805a7a29e26f": {
-      "content_hash": "ed61e2a6566927d08311fb11e831e9299893de4be76d84dd001c1d478d5d2849",
+      "content_hash": "718485d1cf293c92e2b06b822c301302cd0fa65f179bbe127ffbf9e2856081cb",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -21806,12 +21806,12 @@
           "quote": "三年以上工作经验 1.负责营销业务中Co-Scaling推理架构升级与性能优化，支持Seq Scaling 持续提升； 2.负责营销业务中GPU算子，计算图编译优化等业务开发，支撑业务迭代升级； 3.积极跟进GPU等异构…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.903204+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "17f6385ce9ac3933": {
-      "content_hash": "890977ac7e2001e5ab2fd227278f9c1efd731aad9c09fc5f0c07bce6c8e174fc",
+      "content_hash": "6a781c0e5875ffcc66bb49f4cfd686457e9cae3fc158a08ed56feaa900e04094",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -21843,12 +21843,12 @@
           "quote": "三年以上工作经验 1.负责营销业务中稀疏+稠密大模型的异构推理架构升级与性能优化，支持Dense Scaling 持续提升； 2.负责营销业务中GPU算子，计算图编译优化等业务开发，支撑业务迭代升级； 3.积极跟进GPU…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.903204+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "85fea67e7fe94a24": {
-      "content_hash": "07ac24649e2f137d2b1d87d155484b18b7bf0c6d32a09cffb4befd8ed71bcc83",
+      "content_hash": "cc8602598a65e40841a1119cd6f299470849804b900238dad0ec04862edc6b66",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -21880,12 +21880,12 @@
           "quote": "三年以上工作经验 1.负责腾讯云网络控制面的日常运维、需求沟通及架构设计等工作； 2.负责腾讯云网络控制面自动化运维体系的建设，依托运维经验提供有效的建议及支撑； 3.制定并实施系统可靠性提升方案，优化系统架构与部署，增…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.903204+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "e26336bdc569d020": {
-      "content_hash": "add5ee7089ea54fca1858973b4b434a2fa45aebbaf435713b810923b25af62d6",
+      "content_hash": "d2966dffeef29863b794d5a6167fe9ec12c6ec54d048cfc312a56c4cbd33559c",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -21922,12 +21922,12 @@
           "quote": "三年以上工作经验 1.负责智能审核平台产品体系建设，参与机审、人审、管理一个或多个方向的产品规划与落地，推动内容审核从向AI 驱动型演进； 2.深入理解审核全链路（事前机审拦截→事中人审研判→事后质检培训），完成需求分析…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.903204+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "c46c5d5fa82826fc": {
-      "content_hash": "66f520753cc1c9ee15f92a89e718abcbb4cf520f221aa029ccbfc006add87e9a",
+      "content_hash": "a85fba91f7803e98100ff6f1fbd351cccaa83ef9c21e6c4774c707990917de45",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -21959,12 +21959,12 @@
           "quote": "五年以上工作经验 1.负责智慧文旅行业大客户的拓展与深耕，覆盖酒店、景区乐园、文旅综合体及体育等领域，完成客户开发、跟进、维护及既定销售指标； 2.结合文旅客户出海业务场景，依托腾讯云AI大模型、云计算、大数据能力与内部…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.903204+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "73cbd341cee67395": {
-      "content_hash": "2e8ec389402e3d19c9f518727145ca4235e65764b0ffd9956cb9c4e9e5a4df82",
+      "content_hash": "5c920e4ab911e297308aa49a2962ad96a28a2685daf9203e89973bbee390dc5f",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -21996,12 +21996,12 @@
           "quote": "三年以上工作经验 1.负责知识号的PGC内容引入，丰富知识号内容供给，扩大生态影响力； 2.内容引入：拓展数据服务商合作，引入金融、教育、法律等领域的权威数据；建联机构、行业专家、知识博主等优质PGC内容创作者，拓展优质…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.903204+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "cc10326295cb3040": {
-      "content_hash": "1da7993920f7d6147608c0e3eb98b9904e37957f830eaae40a099b6637ccc4d5",
+      "content_hash": "e2defb206a614a9cc516bf937435e0781db40252b93330ae6ab80dbf39285219",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -22033,12 +22033,12 @@
           "quote": "三年以上工作经验 1. Agent 系统设计与研发： 参与智能体架构设计与后台核心代码研发，包括但不限于意图识别、多轮对话管理、复杂任务拆解与规划、上下文记忆机制以及外部工具链的接入与调用等（Tool Use/Funct…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.903204+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "f91cdba15c7c95b5": {
-      "content_hash": "c83d8af09e47acf221e477af292f51786f0023a63602ca3bbde4643da7299b94",
+      "content_hash": "b5adb521d602a649fbc7da275e21006a9ed81ec2cd2acdeb0fafdc25c83d5238",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -22070,12 +22070,12 @@
           "quote": "三年以上工作经验 1.负责构建面向腾讯营销业务的机器学习平台； 2.优化GPU训练平台的训练性能，打造高吞吐高性能的训练系统； 3.优化GPU训练框架，提高训练平台易用性。"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.903204+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "2bacd49c465aa767": {
-      "content_hash": "e26d50807d12e60d8633941c6f21559910b45dd2d3155886dc4295b52397081f",
+      "content_hash": "b69449590d324fc66673e3800341cbb932a15cb26649b8538a1c5f75d935471d",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -22107,12 +22107,12 @@
           "quote": "三年以上工作经验 1.负责跟进处理公司金融业务监管转办投诉举报案件，确保案件得到及时、准确、合规响应与办结； 2.参与相关投诉案件数据分析、案例复盘与根源研判，制定、优化投诉应对策略及整改方案； 3.优化投诉处理工作流程…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.903204+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "42401eb8a0124249": {
-      "content_hash": "8d55331120f8747419a5d96b555408f4f83ee24570a7e0ea2eeb716cb9682906",
+      "content_hash": "9d3d85a7710aab7e7d94d93f8d1983d9b3d5a896ba3b4d8aea370d612d627eb2",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -22139,12 +22139,12 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.903204+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "15f711cea9c78c32": {
-      "content_hash": "c6114481b74f6cad1610501cf8e803d1734760071909adee33ae4189f0d5ed4c",
+      "content_hash": "4ec54778b00e78c3d4d7ae9e4740977c322f7c843c2febacd8c5e06d1cde2f10",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -22176,12 +22176,12 @@
           "quote": "三年以上工作经验 1.负责引擎相关功能开发或修改； 2.负责图形渲染效果开发和协助提升美术制作工艺； 3.负责游戏专项技术攻坚和突破； 4.负责性能优化等相关工作。"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.903204+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "a62aa50d8e07f898": {
-      "content_hash": "73469d5ff5906f46fcac8e29ce313f17b947c933d6cc57675371a61ee847a6ff",
+      "content_hash": "a7681c37f96d83a38dc1ca2108df84658d6d22a3f250b8165225ca48c9320581",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -22213,12 +22213,12 @@
           "quote": "一年以上工作经验 1.专业领域智能体架构升级：负责面向金融、法务、医疗等专业领域的大模型智能体体系建设，利用 Agentic RAG 架构实现从基础检索问答到深度分析、专业研判与复杂任务执行的演进； 2.深度推理与规划：…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.903204+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "970344849d36d782": {
-      "content_hash": "85809bfed57a5000be096e20119a57cf649a8b23e112896edcc74bb5f44e176c",
+      "content_hash": "4bf6a3e2b90426bc45cc2868d6dcc429bb2be6a1678ab73179e99ec2e0ba967e",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -22250,12 +22250,12 @@
           "quote": "三年以上工作经验 1.负责TDSQL计算引擎的核心开发，专注于SQL逻辑/物理优化、分布式/并行执行框架的设计与优化，打造高性能、低延迟的SQL处理能力； 2.研发高效执行算子（如TableScan、HashJoin、A…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.903204+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "44e48ef98f092004": {
-      "content_hash": "b040466e1ca365215bbc23c862626f78beb131b9ab2c51f80daff908e0b0078b",
+      "content_hash": "d2993f643114b3d6e2cfb79d4279be24344efc697c2dd873659f1b8227baf4cf",
       "match_level": "no",
       "label": "不符合",
       "score": 30,
@@ -22287,12 +22287,12 @@
           "quote": "三年以上工作经验 1.负责开展影视、节目、动画制作环节风险评估工作，识别制作过程中潜在风险和流程管控缺失点； 2.协助业务搭建制作项目过程管控管理机制； 3.针对内容制作业务中高风险环节，定期开展独立抽验工作，包括但不限…"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.903204+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.626074+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "b5488035717fc1d7": {
-      "content_hash": "1208dec0963105da2309756de1f476fe848ac94d582500ad76e61bb216f80c2b",
+      "content_hash": "ab981da6ef25667fc882e7a9330c419727068bd85d288f5eaaf8c4cee70a50df",
       "match_level": "possible",
       "label": "需确认",
       "score": 52,
@@ -22319,7 +22319,7 @@
         "岗位未提供明确专业要求"
       ],
       "evidence": [],
-      "analyzed_at": "2026-07-12T13:10:54.903204+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.627076+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
@@ -76167,7 +76167,7 @@
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "3e5615f25146a7e5": {
-      "content_hash": "b40216a546818a4ecb344cd44f1aa7b4efe483a708000cbd2154aff6ad9a453d",
+      "content_hash": "0f6c1ec228c7ffa9ea81b1d93db61ccdcaf5b02a001d90741a6fe726249b7d4c",
       "match_level": "possible",
       "label": "需确认",
       "score": 60,
@@ -76200,12 +76200,12 @@
           "quote": "实习"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.903204+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.627076+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "ff7a72a1229a6894": {
-      "content_hash": "b2bf5af2090837b89837af14d844c212c80a4ad26538a494fe0c2a132713f5d0",
+      "content_hash": "a9589ae335a1346cfef968f7b53c973c7105dd684b32a8f18cba3c7530d5b9b0",
       "match_level": "match",
       "label": "符合",
       "score": 84,
@@ -76242,12 +76242,12 @@
           "quote": "平面设计"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.903204+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.627076+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "f92f359f266bd58b": {
-      "content_hash": "0c05d13cbca2d1121569e87c816e371da589fe69e16277091adc44e27c6c4fde",
+      "content_hash": "a41578767b123e6343309fa52221dc8d63eafe403d98da5bdeb5a507b82d11c3",
       "match_level": "match",
       "label": "符合",
       "score": 84,
@@ -76284,12 +76284,12 @@
           "quote": "工业设计"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.903204+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.627076+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "81276f61090564ff": {
-      "content_hash": "09b904e853cd80d4fcd767307d5ae0326723b4fd94ed60dceea2a6a50d94f2b6",
+      "content_hash": "040aa3df6ba3af2c61b2c0a45c21194037650f7426fb7bd71474dc26fdc3d575",
       "match_level": "match",
       "label": "符合",
       "score": 84,
@@ -76326,12 +76326,12 @@
           "quote": "产品设计"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.903204+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.627076+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "eb7c1cb220ce1bb4": {
-      "content_hash": "34eccfaad026db70b575c3c9a1708a47525c479ed29cc5b398a7e361821d1de3",
+      "content_hash": "2b7f26c92c0d985f6ca1e30e59548e9fa78f6de49ec4eba8b3fd67d66aea2e08",
       "match_level": "match",
       "label": "符合",
       "score": 84,
@@ -76368,7 +76368,7 @@
           "quote": "交互设计"
         }
       ],
-      "analyzed_at": "2026-07-12T13:10:54.903204+00:00",
+      "analyzed_at": "2026-07-12T13:12:37.627076+00:00",
       "analysis_version": 1,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
