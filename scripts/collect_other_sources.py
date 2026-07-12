@@ -124,7 +124,7 @@ def parse_links(source: dict[str, Any], response: requests.Response, allow_exter
 
 
 def extract_detail(session: requests.Session, item: dict[str, Any]) -> dict[str, Any]:
-    """Read one announcement body and extract conditions, dates and attachments."""
+    """Collect one announcement body and its attachment links without judging semantics."""
     response = session.get(item["source_url"], timeout=30, headers={"Referer": item["source_home"]})
     response.raise_for_status()
     response.encoding = response.apparent_encoding or "utf-8"
@@ -144,19 +144,13 @@ def extract_detail(session: requests.Session, item: dict[str, Any]) -> dict[str,
     elif len(text) <= 1800:
         condition = text
 
-    deadline = ""
-    date_candidates = DATE_RE.findall(" ".join(re.findall(r"[^。；]{0,20}(?:报名|申请|投递|截止)[^。；]{0,80}", text)))
-    if date_candidates:
-        year, month, day = date_candidates[-1]
-        deadline = f"{int(year):04d}-{int(month):02d}-{int(day):02d}T23:59:00+08:00"
-
     attachments = []
     for link in soup.find_all("a", href=True):
         url = urljoin(response.url, link["href"])
         if ATTACHMENT_RE.search(url):
             attachments.append({"name": clean(link.get_text(" ", strip=True)) or Path(urlparse(url).path).name, "url": url})
-    item.update({"requirements": condition, "deadline": deadline, "detail_parsed": True,
-                 "attachments": attachments[:20], "data_quality": "已读取公告正文"})
+    item.update({"requirements": condition, "body_text": text, "detail_parsed": True,
+                 "attachments": attachments[:20], "data_quality": "已读取并保留公告正文"})
     return item
 
 
@@ -201,6 +195,7 @@ def workbook_positions(content: bytes, attachment_url: str, notice: dict[str, An
                 **{key: value for key, value in values.items() if key not in ("title", "organization")},
                 raw_fields=raw_fields,
                 deadline=notice.get("deadline"), source_attachment_url=attachment_url,
+                body_text=notice.get("body_text"),
                 recruitment_type="公告附件岗位", data_quality="附件岗位表已解析并保留原始字段",
             ))
     return result[:500]

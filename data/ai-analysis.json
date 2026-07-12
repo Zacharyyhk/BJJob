@@ -2,7 +2,7 @@
   "schema_version": 1,
   "profile_version": 2,
   "prompt_version": 3,
-  "generated_at": "2026-07-12T09:14:02.874442+00:00",
+  "generated_at": "2026-07-12T17:31:55+08:00",
   "results": {
     "cf7cee89c85f25ab-hzgwxxb-3": {
       "content_hash": "7ac656b22ecd3c8f257f2452d7bd39c583ef5cfa5cec3255ac0b0a695e0c1c1f",
@@ -86420,7 +86420,7 @@
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "dbb35d8ed7d37b95": {
-      "content_hash": "b42827087cfe61094be2d27f34f7592a3b3db0ddf755c3a380f7d368f7700b23",
+      "content_hash": "1777f24d8af61d0ae975549690422602078f18056878b73c500aa188264caf51",
       "match_level": "no",
       "label": "不符合",
       "score": 12,
@@ -86437,10 +86437,11 @@
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
-        "deadline": ""
+        "deadline": "2026-07-07T18:00:00+08:00"
       },
       "reasons": [
-        "原始附件字段已纳入复核"
+        "原始附件字段已纳入复核",
+        "网上报名已于2026年7月7日18:00截止"
       ],
       "conflicts": [
         "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
@@ -86459,14 +86460,18 @@
         {
           "field": "学历",
           "quote": "本科及以上"
+        },
+        {
+          "field": "截止时间",
+          "quote": "自6月26日起至7月7日18:00"
         }
       ],
-      "analyzed_at": "2026-07-12T09:14:02.874442+00:00",
-      "analysis_version": 1,
+      "analyzed_at": "2026-07-12T17:31:55+08:00",
+      "analysis_version": 2,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "d5c7c1a588a7519f": {
-      "content_hash": "a4935d4acbc52f5be46ff4d06040ddaf3a8e1dc04c293ebbfb982af4e225f1f4",
+      "content_hash": "06e95bd3de22b71b8d118aa7011afcc937a4d377f0ce1ef019a6a906eed8c124",
       "match_level": "no",
       "label": "不符合",
       "score": 12,
@@ -86483,10 +86488,11 @@
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
-        "deadline": ""
+        "deadline": "2026-07-07T18:00:00+08:00"
       },
       "reasons": [
-        "原始附件字段已纳入复核"
+        "原始附件字段已纳入复核",
+        "网上报名已于2026年7月7日18:00截止"
       ],
       "conflicts": [
         "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
@@ -86510,14 +86516,18 @@
         {
           "field": "学历",
           "quote": "硕士研究生及以上"
+        },
+        {
+          "field": "截止时间",
+          "quote": "自6月26日起至7月7日18:00"
         }
       ],
-      "analyzed_at": "2026-07-12T09:14:02.874442+00:00",
-      "analysis_version": 1,
+      "analyzed_at": "2026-07-12T17:31:55+08:00",
+      "analysis_version": 2,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "99c81a403eecbaab": {
-      "content_hash": "9d86e80bb6fb92b2e3f4c8397119b2e85cbe0fe0a26ec36ce9d35bbc794ee801",
+      "content_hash": "ac5c8ece36fac02cacee3d6e648d811b67a64415369aa0bfe61b82a20654edd7",
       "match_level": "no",
       "label": "不符合",
       "score": 12,
@@ -86534,10 +86544,11 @@
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
-        "deadline": ""
+        "deadline": "2026-07-07T18:00:00+08:00"
       },
       "reasons": [
-        "原始附件字段已纳入复核"
+        "原始附件字段已纳入复核",
+        "网上报名已于2026年7月7日18:00截止"
       ],
       "conflicts": [
         "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
@@ -86561,14 +86572,18 @@
         {
           "field": "学历",
           "quote": "硕士研究生及以上"
+        },
+        {
+          "field": "截止时间",
+          "quote": "自6月26日起至7月7日18:00"
         }
       ],
-      "analyzed_at": "2026-07-12T09:14:02.874442+00:00",
-      "analysis_version": 1,
+      "analyzed_at": "2026-07-12T17:31:55+08:00",
+      "analysis_version": 2,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "54299c9066f046f1": {
-      "content_hash": "58cc986779fa76a543b7c737f2411d00283acc78e62e65e5209fcd7522dd4378",
+      "content_hash": "372d52ad928a6c452e01e1a993ef8f2bd949abe6a34d964184287e2214ac3aeb",
       "match_level": "no",
       "label": "不符合",
       "score": 12,
@@ -86585,10 +86600,11 @@
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
-        "deadline": ""
+        "deadline": "2026-07-07T18:00:00+08:00"
       },
       "reasons": [
-        "原始附件字段已纳入复核"
+        "原始附件字段已纳入复核",
+        "网上报名已于2026年7月7日18:00截止"
       ],
       "conflicts": [
         "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
@@ -86612,14 +86628,18 @@
         {
           "field": "学历",
           "quote": "硕士研究生及以上"
+        },
+        {
+          "field": "截止时间",
+          "quote": "自6月26日起至7月7日18:00"
         }
       ],
-      "analyzed_at": "2026-07-12T09:14:02.874442+00:00",
-      "analysis_version": 1,
+      "analyzed_at": "2026-07-12T17:31:55+08:00",
+      "analysis_version": 2,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "e2492e843035c4d2": {
-      "content_hash": "24bfe3ba53833c6e4208d6e8d5481e675287a932411dfd0519a23d1bc3c2e6bd",
+      "content_hash": "59468f05a3dcd37725290523355ddc8c44cc6a2dcb4132e3ebad3a7f044b475f",
       "match_level": "no",
       "label": "不符合",
       "score": 12,
@@ -86636,10 +86656,11 @@
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
-        "deadline": ""
+        "deadline": "2026-07-07T18:00:00+08:00"
       },
       "reasons": [
-        "原始附件字段已纳入复核"
+        "原始附件字段已纳入复核",
+        "网上报名已于2026年7月7日18:00截止"
       ],
       "conflicts": [
         "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
@@ -86663,14 +86684,18 @@
         {
           "field": "学历",
           "quote": "硕士研究生及以上"
+        },
+        {
+          "field": "截止时间",
+          "quote": "自6月26日起至7月7日18:00"
         }
       ],
-      "analyzed_at": "2026-07-12T09:14:02.874442+00:00",
-      "analysis_version": 1,
+      "analyzed_at": "2026-07-12T17:31:55+08:00",
+      "analysis_version": 2,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "3244cce5b04fc19f": {
-      "content_hash": "db34dfb67cd3cf33ac2f092999561c5da46b6e426cb5f54c509db4576e9569da",
+      "content_hash": "21076831a6f26e37146890897d5d161e47f073ff2b7f596765c7cdddd8f10053",
       "match_level": "no",
       "label": "不符合",
       "score": 12,
@@ -86687,10 +86712,11 @@
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
-        "deadline": ""
+        "deadline": "2026-07-07T18:00:00+08:00"
       },
       "reasons": [
-        "原始附件字段已纳入复核"
+        "原始附件字段已纳入复核",
+        "网上报名已于2026年7月7日18:00截止"
       ],
       "conflicts": [
         "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
@@ -86714,14 +86740,18 @@
         {
           "field": "学历",
           "quote": "硕士研究生及以上"
+        },
+        {
+          "field": "截止时间",
+          "quote": "自6月26日起至7月7日18:00"
         }
       ],
-      "analyzed_at": "2026-07-12T09:14:02.874442+00:00",
-      "analysis_version": 1,
+      "analyzed_at": "2026-07-12T17:31:55+08:00",
+      "analysis_version": 2,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "fe93242d8a680eea": {
-      "content_hash": "ab8fec5685d9e261d7df8726f466e95bf65ca207d11c2ded65be5c99f0cfa4af",
+      "content_hash": "23729764a46fa67223d390f422dbe4c9c6625b559a7dcdf13b14ad667e9d25ca",
       "match_level": "no",
       "label": "不符合",
       "score": 12,
@@ -86738,10 +86768,11 @@
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
-        "deadline": ""
+        "deadline": "2026-07-07T18:00:00+08:00"
       },
       "reasons": [
-        "原始附件字段已纳入复核"
+        "原始附件字段已纳入复核",
+        "网上报名已于2026年7月7日18:00截止"
       ],
       "conflicts": [
         "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
@@ -86765,14 +86796,18 @@
         {
           "field": "学历",
           "quote": "本科及以上"
+        },
+        {
+          "field": "截止时间",
+          "quote": "自6月26日起至7月7日18:00"
         }
       ],
-      "analyzed_at": "2026-07-12T09:14:02.874442+00:00",
-      "analysis_version": 1,
+      "analyzed_at": "2026-07-12T17:31:55+08:00",
+      "analysis_version": 2,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "857e284324c89914": {
-      "content_hash": "e74e328dc9b2220b3b798c0e8a42260e0afd41994bcae6da70247854dc57d268",
+      "content_hash": "b68ee8224a350174ae49efe99b285a23bfef2ca7223b98ba8dfc2fd867cd528b",
       "match_level": "no",
       "label": "不符合",
       "score": 12,
@@ -86789,10 +86824,11 @@
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
-        "deadline": ""
+        "deadline": "2026-07-07T18:00:00+08:00"
       },
       "reasons": [
-        "原始附件字段已纳入复核"
+        "原始附件字段已纳入复核",
+        "网上报名已于2026年7月7日18:00截止"
       ],
       "conflicts": [
         "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
@@ -86816,14 +86852,18 @@
         {
           "field": "学历",
           "quote": "本科及以上"
+        },
+        {
+          "field": "截止时间",
+          "quote": "自6月26日起至7月7日18:00"
         }
       ],
-      "analyzed_at": "2026-07-12T09:14:02.874442+00:00",
-      "analysis_version": 1,
+      "analyzed_at": "2026-07-12T17:31:55+08:00",
+      "analysis_version": 2,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "f80d9e7aa9cce4bd": {
-      "content_hash": "9704b146c2e48c27d4b2acb3b2cd89c454659294a3fd5425f9dd5c39490907ab",
+      "content_hash": "06d62d6514760dfc5d4b3adc230252282618c28e3f9334a1dbd1e54272824ce2",
       "match_level": "no",
       "label": "不符合",
       "score": 12,
@@ -86840,10 +86880,11 @@
         "political_status": "中共党员",
         "gender_requirement": "不明确",
         "responsibilities": "",
-        "deadline": ""
+        "deadline": "2026-07-07T18:00:00+08:00"
       },
       "reasons": [
-        "原始附件字段已纳入复核"
+        "原始附件字段已纳入复核",
+        "网上报名已于2026年7月7日18:00截止"
       ],
       "conflicts": [
         "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
@@ -86867,14 +86908,18 @@
         {
           "field": "学历",
           "quote": "硕士研究生及以上"
+        },
+        {
+          "field": "截止时间",
+          "quote": "自6月26日起至7月7日18:00"
         }
       ],
-      "analyzed_at": "2026-07-12T09:14:02.874442+00:00",
-      "analysis_version": 1,
+      "analyzed_at": "2026-07-12T17:31:55+08:00",
+      "analysis_version": 2,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "0365b77b06fe06e4": {
-      "content_hash": "2de830fa978b5486815355172f1e7cc04a2d221ad7dd2fbd24ff6e9be90523b6",
+      "content_hash": "4264ca48523eca3d3aed3b6f81f42ad624f39ec876c2cc3f1bbd2187d5c11023",
       "match_level": "no",
       "label": "不符合",
       "score": 12,
@@ -86891,10 +86936,11 @@
         "political_status": "中共党员",
         "gender_requirement": "不明确",
         "responsibilities": "",
-        "deadline": ""
+        "deadline": "2026-07-07T18:00:00+08:00"
       },
       "reasons": [
-        "原始附件字段已纳入复核"
+        "原始附件字段已纳入复核",
+        "网上报名已于2026年7月7日18:00截止"
       ],
       "conflicts": [
         "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
@@ -86918,14 +86964,18 @@
         {
           "field": "学历",
           "quote": "本科及以上"
+        },
+        {
+          "field": "截止时间",
+          "quote": "自6月26日起至7月7日18:00"
         }
       ],
-      "analyzed_at": "2026-07-12T09:14:02.874442+00:00",
-      "analysis_version": 1,
+      "analyzed_at": "2026-07-12T17:31:55+08:00",
+      "analysis_version": 2,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "568283ec10621240": {
-      "content_hash": "eb27d6644441eb03d570d4a000e1b24f4c340f5ea5a4c8446f66773954e6e2bb",
+      "content_hash": "d9b514b23c33a065b623a8db8520f50524271603a1009e7876ccb5a3164f27a4",
       "match_level": "no",
       "label": "不符合",
       "score": 12,
@@ -86942,10 +86992,11 @@
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
-        "deadline": ""
+        "deadline": "2026-07-07T18:00:00+08:00"
       },
       "reasons": [
-        "原始附件字段已纳入复核"
+        "原始附件字段已纳入复核",
+        "网上报名已于2026年7月7日18:00截止"
       ],
       "conflicts": [
         "招聘对象明确为社会人员，与2027届应届生条件冲突",
@@ -86964,14 +87015,18 @@
         {
           "field": "学历",
           "quote": "本科及以上"
+        },
+        {
+          "field": "截止时间",
+          "quote": "自6月26日起至7月7日18:00"
         }
       ],
-      "analyzed_at": "2026-07-12T09:14:02.874442+00:00",
-      "analysis_version": 1,
+      "analyzed_at": "2026-07-12T17:31:55+08:00",
+      "analysis_version": 2,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "ad7d628220277248": {
-      "content_hash": "9f2e1cf09989595d9b6ba7ffc767a83bf65956ad258670b813155912bf1d385c",
+      "content_hash": "60cacd49f7f63c1b58fbf45e7f5812254fb6372f346107d4f69bb0563e49afa2",
       "match_level": "no",
       "label": "不符合",
       "score": 12,
@@ -86988,10 +87043,11 @@
         "political_status": "中共党员",
         "gender_requirement": "不明确",
         "responsibilities": "",
-        "deadline": ""
+        "deadline": "2026-07-07T18:00:00+08:00"
       },
       "reasons": [
-        "原始附件字段已纳入复核"
+        "原始附件字段已纳入复核",
+        "网上报名已于2026年7月7日18:00截止"
       ],
       "conflicts": [
         "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
@@ -87015,14 +87071,18 @@
         {
           "field": "学历",
           "quote": "本科及以上"
+        },
+        {
+          "field": "截止时间",
+          "quote": "自6月26日起至7月7日18:00"
         }
       ],
-      "analyzed_at": "2026-07-12T09:14:02.874442+00:00",
-      "analysis_version": 1,
+      "analyzed_at": "2026-07-12T17:31:55+08:00",
+      "analysis_version": 2,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "a3aafe7a343db7dc": {
-      "content_hash": "2cee29b57f85b29645723f4d9b6851a2f733f2b21309399cc4b3e03c8242e5bb",
+      "content_hash": "7d1a6df8a7081f48b5a04cd4c996c3404198499c0d2aaa25a686c8768cd384ad",
       "match_level": "no",
       "label": "不符合",
       "score": 12,
@@ -87039,10 +87099,11 @@
         "political_status": "中共党员",
         "gender_requirement": "不明确",
         "responsibilities": "",
-        "deadline": ""
+        "deadline": "2026-07-07T18:00:00+08:00"
       },
       "reasons": [
-        "原始附件字段已纳入复核"
+        "原始附件字段已纳入复核",
+        "网上报名已于2026年7月7日18:00截止"
       ],
       "conflicts": [
         "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
@@ -87066,14 +87127,18 @@
         {
           "field": "学历",
           "quote": "硕士研究生及以上"
+        },
+        {
+          "field": "截止时间",
+          "quote": "自6月26日起至7月7日18:00"
         }
       ],
-      "analyzed_at": "2026-07-12T09:14:02.874442+00:00",
-      "analysis_version": 1,
+      "analyzed_at": "2026-07-12T17:31:55+08:00",
+      "analysis_version": 2,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "e327cf46f9f95d94": {
-      "content_hash": "3997502098d23f45e62688a50d3bb8e7ce8c05464b271279a3dcf3328fa3c27d",
+      "content_hash": "d23f7f3bc0fc630208b1302a5eb8aa7a3b9cfa473a0e9ceb796e6824389f78cc",
       "match_level": "no",
       "label": "不符合",
       "score": 12,
@@ -87090,10 +87155,11 @@
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
-        "deadline": ""
+        "deadline": "2026-07-07T18:00:00+08:00"
       },
       "reasons": [
-        "原始附件字段已纳入复核"
+        "原始附件字段已纳入复核",
+        "网上报名已于2026年7月7日18:00截止"
       ],
       "conflicts": [
         "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
@@ -87117,14 +87183,18 @@
         {
           "field": "学历",
           "quote": "硕士研究生及以上"
+        },
+        {
+          "field": "截止时间",
+          "quote": "自6月26日起至7月7日18:00"
         }
       ],
-      "analyzed_at": "2026-07-12T09:14:02.874442+00:00",
-      "analysis_version": 1,
+      "analyzed_at": "2026-07-12T17:31:55+08:00",
+      "analysis_version": 2,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "a50dc32af55e9423": {
-      "content_hash": "fb3b520bf98a59ffadce10a130188927dd894c51a51c435238f40944d7a51cb0",
+      "content_hash": "014028e550717ccd428e456dfdce47dfb77978bd78989ffd22edce4e6e6c2465",
       "match_level": "no",
       "label": "不符合",
       "score": 12,
@@ -87141,10 +87211,11 @@
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
-        "deadline": ""
+        "deadline": "2026-07-07T18:00:00+08:00"
       },
       "reasons": [
-        "原始附件字段已纳入复核"
+        "原始附件字段已纳入复核",
+        "网上报名已于2026年7月7日18:00截止"
       ],
       "conflicts": [
         "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
@@ -87168,14 +87239,18 @@
         {
           "field": "学历",
           "quote": "博士研究生"
+        },
+        {
+          "field": "截止时间",
+          "quote": "自6月26日起至7月7日18:00"
         }
       ],
-      "analyzed_at": "2026-07-12T09:14:02.874442+00:00",
-      "analysis_version": 1,
+      "analyzed_at": "2026-07-12T17:31:55+08:00",
+      "analysis_version": 2,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "584d3a9a8062f835": {
-      "content_hash": "c52149e8574208bfde16ca714d6f563ae9c5da94f3f601510c0463e94fadd529",
+      "content_hash": "237c949b12c47dc4e16b4157f8d82f78c8b69d1ed87f98600fb632fdd6dca2cc",
       "match_level": "no",
       "label": "不符合",
       "score": 12,
@@ -87192,10 +87267,11 @@
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
-        "deadline": ""
+        "deadline": "2026-07-07T18:00:00+08:00"
       },
       "reasons": [
-        "原始附件字段已纳入复核"
+        "原始附件字段已纳入复核",
+        "网上报名已于2026年7月7日18:00截止"
       ],
       "conflicts": [
         "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
@@ -87219,10 +87295,14 @@
         {
           "field": "学历",
           "quote": "硕士研究生及以上"
+        },
+        {
+          "field": "截止时间",
+          "quote": "自6月26日起至7月7日18:00"
         }
       ],
-      "analyzed_at": "2026-07-12T09:14:02.874442+00:00",
-      "analysis_version": 1,
+      "analyzed_at": "2026-07-12T17:31:55+08:00",
+      "analysis_version": 2,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "39c0a04a0e80472a": {
@@ -87266,7 +87346,7 @@
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "be64ed2e98271bd7": {
-      "content_hash": "6572429d54428706d812e2259e086f7b0b71970f329bcf12f14dd89ab7b665ec",
+      "content_hash": "21889ca4bd90894769272a10eb3b6fe96e6f84fb4f11daf5a697e10c218ce54f",
       "match_level": "no",
       "label": "不符合",
       "score": 12,
@@ -87283,10 +87363,11 @@
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
-        "deadline": ""
+        "deadline": "2026-07-07T18:00:00+08:00"
       },
       "reasons": [
-        "原始附件字段已纳入复核"
+        "原始附件字段已纳入复核",
+        "网上报名已于2026年7月7日18:00截止"
       ],
       "conflicts": [
         "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
@@ -87310,14 +87391,18 @@
         {
           "field": "学历",
           "quote": "硕士研究生及以上"
+        },
+        {
+          "field": "截止时间",
+          "quote": "自6月26日起至7月7日18:00"
         }
       ],
-      "analyzed_at": "2026-07-12T09:14:02.874442+00:00",
-      "analysis_version": 1,
+      "analyzed_at": "2026-07-12T17:31:55+08:00",
+      "analysis_version": 2,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "2dcfe290dc57bd4e": {
-      "content_hash": "bfd8a6941677f43745037d8d9775c49443a8d734e9ed1b89dfd71cd98e45bf69",
+      "content_hash": "77e7ec0c94705f202474e1dbfd2d60e82232e62bad18cdbfe2a1a230e38f4f9b",
       "match_level": "no",
       "label": "不符合",
       "score": 12,
@@ -87334,10 +87419,11 @@
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
-        "deadline": ""
+        "deadline": "2026-07-07T18:00:00+08:00"
       },
       "reasons": [
-        "原始附件字段已纳入复核"
+        "原始附件字段已纳入复核",
+        "网上报名已于2026年7月7日18:00截止"
       ],
       "conflicts": [
         "招聘对象明确为社会人员，与2027届应届生条件冲突",
@@ -87356,14 +87442,18 @@
         {
           "field": "学历",
           "quote": "本科及以上"
+        },
+        {
+          "field": "截止时间",
+          "quote": "自6月26日起至7月7日18:00"
         }
       ],
-      "analyzed_at": "2026-07-12T09:14:02.874442+00:00",
-      "analysis_version": 1,
+      "analyzed_at": "2026-07-12T17:31:55+08:00",
+      "analysis_version": 2,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "8a4be03493fb462e": {
-      "content_hash": "d6845a3a129018fd2e59e8506245f35289ef142340ae4d89e5732f2ae7135822",
+      "content_hash": "02d37ca5892a593679a8ebb9db3b9ab878baa2165058e719de3dee7c4ab11135",
       "match_level": "no",
       "label": "不符合",
       "score": 12,
@@ -87380,10 +87470,11 @@
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
-        "deadline": ""
+        "deadline": "2026-07-07T18:00:00+08:00"
       },
       "reasons": [
-        "原始附件字段已纳入复核"
+        "原始附件字段已纳入复核",
+        "网上报名已于2026年7月7日18:00截止"
       ],
       "conflicts": [
         "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
@@ -87402,14 +87493,18 @@
         {
           "field": "学历",
           "quote": "硕士研究生"
+        },
+        {
+          "field": "截止时间",
+          "quote": "自6月26日起至7月7日18:00"
         }
       ],
-      "analyzed_at": "2026-07-12T09:14:02.874442+00:00",
-      "analysis_version": 1,
+      "analyzed_at": "2026-07-12T17:31:55+08:00",
+      "analysis_version": 2,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "159f892cdf7363cf": {
-      "content_hash": "6aafea15a1ed00ac9fb1d8d7fc87811e32fa9b302597670327a02c8992d95dec",
+      "content_hash": "992247c39071c3a7346150961dcd52a9c99074b561c0bdd557731fc04f6d0b62",
       "match_level": "no",
       "label": "不符合",
       "score": 12,
@@ -87426,10 +87521,11 @@
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
-        "deadline": ""
+        "deadline": "2026-07-07T18:00:00+08:00"
       },
       "reasons": [
-        "原始附件字段已纳入复核"
+        "原始附件字段已纳入复核",
+        "网上报名已于2026年7月7日18:00截止"
       ],
       "conflicts": [
         "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
@@ -87448,14 +87544,18 @@
         {
           "field": "学历",
           "quote": "硕士研究生及以上"
+        },
+        {
+          "field": "截止时间",
+          "quote": "自6月26日起至7月7日18:00"
         }
       ],
-      "analyzed_at": "2026-07-12T09:14:02.874442+00:00",
-      "analysis_version": 1,
+      "analyzed_at": "2026-07-12T17:31:55+08:00",
+      "analysis_version": 2,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "b6813286c1cd3ed1": {
-      "content_hash": "90542b55b8bbf19076999e22c8c9e04e95d982b219756c88fe4117ed101a3c2a",
+      "content_hash": "fd6ca293a5e7b0a8f32b49b7acfffdb5e7529c00c5c756ba74701e9a095a7f6b",
       "match_level": "no",
       "label": "不符合",
       "score": 12,
@@ -87472,10 +87572,11 @@
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
-        "deadline": ""
+        "deadline": "2026-07-07T18:00:00+08:00"
       },
       "reasons": [
-        "原始附件字段已纳入复核"
+        "原始附件字段已纳入复核",
+        "网上报名已于2026年7月7日18:00截止"
       ],
       "conflicts": [
         "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
@@ -87499,14 +87600,18 @@
         {
           "field": "学历",
           "quote": "本科及以上"
+        },
+        {
+          "field": "截止时间",
+          "quote": "自6月26日起至7月7日18:00"
         }
       ],
-      "analyzed_at": "2026-07-12T09:14:02.874442+00:00",
-      "analysis_version": 1,
+      "analyzed_at": "2026-07-12T17:31:55+08:00",
+      "analysis_version": 2,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "32791fac891485ed": {
-      "content_hash": "2f4b94c4eedb1d4273fb1cecbe7cf9301b580467d93775715697a7e9a19eb316",
+      "content_hash": "e97803f9e3ffe57842b23a002a8d6206fce83e39339c37dfdfe0bb1cb7409aa7",
       "match_level": "no",
       "label": "不符合",
       "score": 12,
@@ -87523,10 +87628,11 @@
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
-        "deadline": ""
+        "deadline": "2026-07-07T18:00:00+08:00"
       },
       "reasons": [
-        "原始附件字段已纳入复核"
+        "原始附件字段已纳入复核",
+        "网上报名已于2026年7月7日18:00截止"
       ],
       "conflicts": [
         "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向"
@@ -87540,54 +87646,59 @@
         {
           "field": "学历",
           "quote": "硕士研究生及以上"
+        },
+        {
+          "field": "截止时间",
+          "quote": "自6月26日起至7月7日18:00"
         }
       ],
-      "analyzed_at": "2026-07-12T09:14:02.874442+00:00",
-      "analysis_version": 1,
+      "analyzed_at": "2026-07-12T17:31:55+08:00",
+      "analysis_version": 2,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "a268ff83e60c3d4c": {
-      "content_hash": "906c2a8afd4ae109a6036b54d8c207fa969a7f372e3a92bf67f74d0b5af20bb5",
-      "match_level": "possible",
-      "label": "需确认",
-      "score": 62,
+      "match_level": "no",
+      "label": "不符合",
+      "score": 12,
       "normalized": {
-        "organization": "人社部中央和国家机关所属事业单位公开招聘服务平台",
-        "title": "国家卫生健康委直属和联系单位2026年度第二批公开招聘人员公告",
-        "location": "不明确",
-        "education": "不明确",
+        "organization": "国家卫生健康委直属和联系单位",
+        "title": "2026年度第二批公开招聘人员公告",
+        "location": "北京",
+        "education": "按具体岗位",
         "majors": [],
         "graduation_years": [
           2026
         ],
         "fresh_graduate_required": null,
-        "political_status": "不明确",
-        "gender_requirement": "不明确",
-        "responsibilities": "",
-        "deadline": ""
+        "political_status": "",
+        "gender_requirement": "",
+        "responsibilities": "按附件岗位信息表",
+        "deadline": "2026-07-07T18:00:00+08:00"
       },
-      "reasons": [],
-      "conflicts": [],
-      "needs_confirmation": [
-        "专业要求未明确，需核对原岗位表",
-        "招聘对象或毕业年份未明确，需确认是否接受2027届"
+      "reasons": [
+        "公告仅面向2026年国内高校应届毕业生、符合条件的社会人员或留学回国人员，个人2027年毕业身份不在本次招聘对象范围内",
+        "网上报名已于2026年7月7日18:00截止"
       ],
+      "conflicts": [
+        "个人毕业年份为2027年，而公告应届毕业生对象明确为2026年国内高校应届毕业生"
+      ],
+      "needs_confirmation": [],
       "evidence": [
         {
-          "field": "岗位名称",
-          "quote": "国家卫生健康委直属和联系单位2026年度第二批公开招聘人员公告"
+          "field": "招聘对象",
+          "quote": "2026年国内高校应届毕业生"
         },
         {
-          "field": "条件",
-          "quote": "等详见《国家卫生健康委直属和联系单位2026年度第二批公开招聘岗位信息表》（"
+          "field": "截止时间",
+          "quote": "自6月26日起至7月7日18:00"
         }
       ],
-      "analyzed_at": "2026-07-12T09:14:02.874442+00:00",
-      "analysis_version": 1,
-      "analysis_author": "codex_dialog_gpt-5.6"
+      "content_hash": "c39057d44baf18b94ddf3af4f422c76db37d402f0ab9b7688856b88a19b4543a",
+      "analyzed_at": "2026-07-12T17:31:55+08:00",
+      "analysis_version": 2
     },
     "325c98ce34a893c1": {
-      "content_hash": "be8b46ff42d389fb359336351f18157ad9a6e31b3b7acaacdeb23bf135f82407",
+      "content_hash": "4a2a88a7411594489df5aaf49f34f15bd293c40e654cf56ec08534470b0361b1",
       "match_level": "no",
       "label": "不符合",
       "score": 12,
@@ -87604,10 +87715,11 @@
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
-        "deadline": ""
+        "deadline": "2026-07-07T18:00:00+08:00"
       },
       "reasons": [
-        "原始附件字段已纳入复核"
+        "原始附件字段已纳入复核",
+        "网上报名已于2026年7月7日18:00截止"
       ],
       "conflicts": [
         "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
@@ -87631,14 +87743,18 @@
         {
           "field": "学历",
           "quote": "本科及以上"
+        },
+        {
+          "field": "截止时间",
+          "quote": "自6月26日起至7月7日18:00"
         }
       ],
-      "analyzed_at": "2026-07-12T09:14:02.874442+00:00",
-      "analysis_version": 1,
+      "analyzed_at": "2026-07-12T17:31:55+08:00",
+      "analysis_version": 2,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "81469c2f8c665fac": {
-      "content_hash": "7113feb257ad9b54253aa96bb39e0c63c908dcb1a2c156b6d22c8238a9bd42dd",
+      "content_hash": "71140b931b3c8e368c33044f8a8510e0e83db7bfff5f2dd5e26473f3af91b484",
       "match_level": "no",
       "label": "不符合",
       "score": 12,
@@ -87655,10 +87771,11 @@
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
-        "deadline": ""
+        "deadline": "2026-07-07T18:00:00+08:00"
       },
       "reasons": [
-        "原始附件字段已纳入复核"
+        "原始附件字段已纳入复核",
+        "网上报名已于2026年7月7日18:00截止"
       ],
       "conflicts": [
         "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
@@ -87682,14 +87799,18 @@
         {
           "field": "学历",
           "quote": "本科及以上"
+        },
+        {
+          "field": "截止时间",
+          "quote": "自6月26日起至7月7日18:00"
         }
       ],
-      "analyzed_at": "2026-07-12T09:14:02.874442+00:00",
-      "analysis_version": 1,
+      "analyzed_at": "2026-07-12T17:31:55+08:00",
+      "analysis_version": 2,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "19732d6db25d714a": {
-      "content_hash": "7cd66efc1b9e2b129692bc4a1b8b597c88b28542bafd6206393b65061ad9ee9f",
+      "content_hash": "7453d1cc03bfe6e923285b134a129bc8230a7ffcc0189eb95e6eb5abaa65bd6d",
       "match_level": "no",
       "label": "不符合",
       "score": 12,
@@ -87706,10 +87827,11 @@
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
-        "deadline": ""
+        "deadline": "2026-07-07T18:00:00+08:00"
       },
       "reasons": [
-        "原始附件字段已纳入复核"
+        "原始附件字段已纳入复核",
+        "网上报名已于2026年7月7日18:00截止"
       ],
       "conflicts": [
         "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
@@ -87728,14 +87850,18 @@
         {
           "field": "学历",
           "quote": "硕士研究生"
+        },
+        {
+          "field": "截止时间",
+          "quote": "自6月26日起至7月7日18:00"
         }
       ],
-      "analyzed_at": "2026-07-12T09:14:02.874442+00:00",
-      "analysis_version": 1,
+      "analyzed_at": "2026-07-12T17:31:55+08:00",
+      "analysis_version": 2,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "d6e1544f61f44547": {
-      "content_hash": "45072b29aeb8b6a945141af4a47ce6197e7cf9c095d6dd23eb52cacd2337c20f",
+      "content_hash": "b3bafd178377b60d3ec73110569b72dde21c0cfa1baff72ff6a6ebb124a86017",
       "match_level": "no",
       "label": "不符合",
       "score": 12,
@@ -87752,10 +87878,11 @@
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
-        "deadline": ""
+        "deadline": "2026-07-07T18:00:00+08:00"
       },
       "reasons": [
-        "原始附件字段已纳入复核"
+        "原始附件字段已纳入复核",
+        "网上报名已于2026年7月7日18:00截止"
       ],
       "conflicts": [
         "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
@@ -87779,14 +87906,18 @@
         {
           "field": "学历",
           "quote": "本科及以上"
+        },
+        {
+          "field": "截止时间",
+          "quote": "自6月26日起至7月7日18:00"
         }
       ],
-      "analyzed_at": "2026-07-12T09:14:02.874442+00:00",
-      "analysis_version": 1,
+      "analyzed_at": "2026-07-12T17:31:55+08:00",
+      "analysis_version": 2,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "a102cf95f1ad5fd8": {
-      "content_hash": "c9004df3e673f12e0f48ceb6dd2879ac190a1d473e896a7c6acce3a72309f911",
+      "content_hash": "59ccb7e6c2f8ec2a5f452822c6c7b599f2e1d5471ac979e69bdfe7425e81cde3",
       "match_level": "no",
       "label": "不符合",
       "score": 12,
@@ -87803,10 +87934,11 @@
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
-        "deadline": ""
+        "deadline": "2026-07-07T18:00:00+08:00"
       },
       "reasons": [
-        "原始附件字段已纳入复核"
+        "原始附件字段已纳入复核",
+        "网上报名已于2026年7月7日18:00截止"
       ],
       "conflicts": [
         "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
@@ -87830,14 +87962,18 @@
         {
           "field": "学历",
           "quote": "硕士研究生及以上"
+        },
+        {
+          "field": "截止时间",
+          "quote": "自6月26日起至7月7日18:00"
         }
       ],
-      "analyzed_at": "2026-07-12T09:14:02.874442+00:00",
-      "analysis_version": 1,
+      "analyzed_at": "2026-07-12T17:31:55+08:00",
+      "analysis_version": 2,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "5da31c747ab01531": {
-      "content_hash": "629987412f693f8952951e4ef87f3f625513ce602eabee4a3308831eb731a4f8",
+      "content_hash": "38def17dfc4078f6bb2fcee3f5597aad9ffb0df556fb08b0a50cc428b544b886",
       "match_level": "no",
       "label": "不符合",
       "score": 12,
@@ -87854,10 +87990,11 @@
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
-        "deadline": ""
+        "deadline": "2026-07-07T18:00:00+08:00"
       },
       "reasons": [
-        "原始附件字段已纳入复核"
+        "原始附件字段已纳入复核",
+        "网上报名已于2026年7月7日18:00截止"
       ],
       "conflicts": [
         "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
@@ -87881,14 +88018,18 @@
         {
           "field": "学历",
           "quote": "本科及以上"
+        },
+        {
+          "field": "截止时间",
+          "quote": "自6月26日起至7月7日18:00"
         }
       ],
-      "analyzed_at": "2026-07-12T09:14:02.874442+00:00",
-      "analysis_version": 1,
+      "analyzed_at": "2026-07-12T17:31:55+08:00",
+      "analysis_version": 2,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "66c94d7d1a52f42a": {
-      "content_hash": "9b877e567bfd68053747c6b3eea8609698c659f71c261879a065620f187a6611",
+      "content_hash": "ed062f7147dd079f7c86194ba93eb83f5df1dcdb3a77ac7b3e5836d8546c7a5a",
       "match_level": "no",
       "label": "不符合",
       "score": 12,
@@ -87905,10 +88046,11 @@
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
-        "deadline": ""
+        "deadline": "2026-07-07T18:00:00+08:00"
       },
       "reasons": [
-        "原始附件字段已纳入复核"
+        "原始附件字段已纳入复核",
+        "网上报名已于2026年7月7日18:00截止"
       ],
       "conflicts": [
         "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
@@ -87932,14 +88074,18 @@
         {
           "field": "学历",
           "quote": "硕士研究生及以上"
+        },
+        {
+          "field": "截止时间",
+          "quote": "自6月26日起至7月7日18:00"
         }
       ],
-      "analyzed_at": "2026-07-12T09:14:02.874442+00:00",
-      "analysis_version": 1,
+      "analyzed_at": "2026-07-12T17:31:55+08:00",
+      "analysis_version": 2,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "c5cf8a73f860d7aa": {
-      "content_hash": "63f22404ec4aa2201c4a3f6d6ffcbcf78768d6dbea315d94e791ec26cf29b734",
+      "content_hash": "673fbdfb179f43a443998eaa604d90bee770b9d6571a3f132cba56f8d09c38d1",
       "match_level": "no",
       "label": "不符合",
       "score": 12,
@@ -87956,10 +88102,11 @@
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
-        "deadline": ""
+        "deadline": "2026-07-07T18:00:00+08:00"
       },
       "reasons": [
-        "原始附件字段已纳入复核"
+        "原始附件字段已纳入复核",
+        "网上报名已于2026年7月7日18:00截止"
       ],
       "conflicts": [
         "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
@@ -87983,10 +88130,14 @@
         {
           "field": "学历",
           "quote": "硕士研究生及以上"
+        },
+        {
+          "field": "截止时间",
+          "quote": "自6月26日起至7月7日18:00"
         }
       ],
-      "analyzed_at": "2026-07-12T09:14:02.874442+00:00",
-      "analysis_version": 1,
+      "analyzed_at": "2026-07-12T17:31:55+08:00",
+      "analysis_version": 2,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "aec2769d6b671059": {
@@ -88025,7 +88176,7 @@
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "ae00b71e31d2e297": {
-      "content_hash": "7fb11ad8aa40922e4cdcb2d6e0eb0a7c443d7c8dfd1412df8fe851dd33620ca2",
+      "content_hash": "76ecdee21e6ac6ded9ea22e59ae56f90210c8471674c4680c7601fc9743b09b7",
       "match_level": "no",
       "label": "不符合",
       "score": 12,
@@ -88042,10 +88193,11 @@
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
-        "deadline": ""
+        "deadline": "2026-07-07T18:00:00+08:00"
       },
       "reasons": [
-        "原始附件字段已纳入复核"
+        "原始附件字段已纳入复核",
+        "网上报名已于2026年7月7日18:00截止"
       ],
       "conflicts": [
         "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
@@ -88069,14 +88221,18 @@
         {
           "field": "学历",
           "quote": "硕士研究生及以上"
+        },
+        {
+          "field": "截止时间",
+          "quote": "自6月26日起至7月7日18:00"
         }
       ],
-      "analyzed_at": "2026-07-12T09:14:02.874442+00:00",
-      "analysis_version": 1,
+      "analyzed_at": "2026-07-12T17:31:55+08:00",
+      "analysis_version": 2,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "74d6803c00d5a9b6": {
-      "content_hash": "72da248efcc2a3f3b39dc694c0f75342158aeacf3785345831b4f7a1df111d45",
+      "content_hash": "c9560e7090d7c545c57ba9e00fb2bbbf9549e745883b9f30e006bf90fd5b347c",
       "match_level": "no",
       "label": "不符合",
       "score": 12,
@@ -88093,10 +88249,11 @@
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
-        "deadline": ""
+        "deadline": "2026-07-07T18:00:00+08:00"
       },
       "reasons": [
-        "原始附件字段已纳入复核"
+        "原始附件字段已纳入复核",
+        "网上报名已于2026年7月7日18:00截止"
       ],
       "conflicts": [
         "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
@@ -88120,14 +88277,18 @@
         {
           "field": "学历",
           "quote": "硕士研究生及以上"
+        },
+        {
+          "field": "截止时间",
+          "quote": "自6月26日起至7月7日18:00"
         }
       ],
-      "analyzed_at": "2026-07-12T09:14:02.874442+00:00",
-      "analysis_version": 1,
+      "analyzed_at": "2026-07-12T17:31:55+08:00",
+      "analysis_version": 2,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "8b44512e29dcc899": {
-      "content_hash": "a41a4ee4c6c5567ed2befe4f14b50f89bdd26559d4ba41f72eb4484e6f37ca5d",
+      "content_hash": "e7904d4ee995aa417d3a29eea84d2493a8f822ab16fc95aeb2ec97780f740491",
       "match_level": "no",
       "label": "不符合",
       "score": 12,
@@ -88144,10 +88305,11 @@
         "political_status": "不明确",
         "gender_requirement": "不明确",
         "responsibilities": "",
-        "deadline": ""
+        "deadline": "2026-07-07T18:00:00+08:00"
       },
       "reasons": [
-        "原始附件字段已纳入复核"
+        "原始附件字段已纳入复核",
+        "网上报名已于2026年7月7日18:00截止"
       ],
       "conflicts": [
         "岗位明确列出的专业不包含设计类或合理的艺术设计相邻方向",
@@ -88171,10 +88333,14 @@
         {
           "field": "学历",
           "quote": "本科及以上"
+        },
+        {
+          "field": "截止时间",
+          "quote": "自6月26日起至7月7日18:00"
         }
       ],
-      "analyzed_at": "2026-07-12T09:14:02.874442+00:00",
-      "analysis_version": 1,
+      "analyzed_at": "2026-07-12T17:31:55+08:00",
+      "analysis_version": 2,
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "040ab892be98cf09": {
@@ -89975,41 +90141,45 @@
       "analysis_author": "codex_dialog_gpt-5.6"
     },
     "f5192924cd4f40a1": {
-      "content_hash": "76c22433b14f88f6b80b297319961837c8778ebfba3b195327b792be7a4f44ce",
       "match_level": "no",
       "label": "不符合",
       "score": 12,
       "normalized": {
-        "organization": "人社部中央和国家机关所属事业单位公开招聘服务平台",
-        "title": "国家卫生健康委直属和联系单位2026年度第二批公开招聘人员公告",
-        "location": "不明确",
-        "education": "不明确",
+        "organization": "国家卫生健康委直属和联系单位",
+        "title": "2026年度第二批公开招聘人员公告",
+        "location": "北京",
+        "education": "按具体岗位",
         "majors": [],
         "graduation_years": [
           2026
         ],
         "fresh_graduate_required": null,
-        "political_status": "不明确",
-        "gender_requirement": "不明确",
-        "responsibilities": "",
-        "deadline": ""
+        "political_status": "",
+        "gender_requirement": "",
+        "responsibilities": "按附件岗位信息表",
+        "deadline": "2026-07-07T18:00:00+08:00"
       },
       "reasons": [
-        "原始附件字段已纳入复核"
+        "公告仅面向2026年国内高校应届毕业生、符合条件的社会人员或留学回国人员，个人2027年毕业身份不在本次招聘对象范围内",
+        "网上报名已于2026年7月7日18:00截止"
       ],
       "conflicts": [
-        "岗位附件中的招聘类别、专业或资格条件与2027届设计类应届生条件存在明确冲突"
+        "个人毕业年份为2027年，而公告应届毕业生对象明确为2026年国内高校应届毕业生"
       ],
       "needs_confirmation": [],
       "evidence": [
         {
-          "field": "岗位条件",
-          "quote": "等详见《国家卫生健康委直属和联系单位2026年度第二批公开招聘岗位信息表》（"
+          "field": "招聘对象",
+          "quote": "2026年国内高校应届毕业生"
+        },
+        {
+          "field": "截止时间",
+          "quote": "自6月26日起至7月7日18:00"
         }
       ],
-      "analyzed_at": "2026-07-12T09:14:02.874442+00:00",
-      "analysis_version": 1,
-      "analysis_author": "codex_dialog_gpt-5.6"
+      "content_hash": "d9d51ffcfe40d16530ee4cd0d2c8f0805880976242806323b293a8b58db6864f",
+      "analyzed_at": "2026-07-12T17:31:55+08:00",
+      "analysis_version": 2
     }
   }
 }

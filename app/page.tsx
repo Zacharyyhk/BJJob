@@ -55,6 +55,20 @@ type Job = Position & {
   establishmentType: string;
 };
 
+type MatchResult = { level: "match" | "possible" | "no"; label: string; reasons: string[] };
+
+type AiMatch = {
+  match_level: "match" | "possible" | "no";
+  label?: string;
+  reasons?: string[];
+  conflicts?: string[];
+  needs_confirmation?: string[];
+  normalized?: { deadline?: string };
+};
+
+const aiData = aiAnalysisData as { generated_at?: string; results: Record<string, AiMatch> };
+const aiResults = aiData.results;
+
 const notices = collected.notices as Notice[];
 
 const jobs: Job[] = notices.flatMap<Job>((notice): Job[] => {
@@ -116,7 +130,10 @@ const otherJobs: Job[] = otherSources.items.map((item) => ({
   headcount: item.headcount,
 }));
 
-const allJobs = [...jobs, ...otherJobs];
+const allJobs = [...jobs, ...otherJobs].map((job) => ({
+  ...job,
+  deadline: aiResults[job.id]?.normalized?.deadline?.trim() || job.deadline,
+}));
 
 function unitName(job: Job) {
   return (job.organization || job.publisher || job.sourceName || "单位未注明").trim();
@@ -154,67 +171,13 @@ function statusLabel(deadline: string) {
   return `截止 ${shortDate(deadline)}`;
 }
 
-type MatchResult = { level: "match" | "possible" | "no"; label: string; reasons: string[] };
-
-type AiMatch = {
-  match_level: "match" | "possible" | "no";
-  label?: string;
-  reasons?: string[];
-  conflicts?: string[];
-  needs_confirmation?: string[];
-};
-
-const aiData = aiAnalysisData as { generated_at?: string; results: Record<string, AiMatch> };
-const aiResults = aiData.results;
-
 function matchForProfile(job: Job): MatchResult {
   const ai = aiResults[job.id];
   if (ai) {
     const reasons = [...(ai.reasons || []), ...(ai.conflicts || []), ...(ai.needs_confirmation || [])].slice(0, 6);
     return { level: ai.match_level, label: ai.label || (ai.match_level === "match" ? "符合" : ai.match_level === "no" ? "不符合" : "需确认"), reasons };
   }
-  const education = job.education || "";
-  const major = job.major || "";
-  const applicant = `${job.applicant_type || ""} ${job.requirements || ""} ${job.responsibilities || ""} ${job.noticeTitle}`;
-  const deadlineYear = job.deadline ? new Date(job.deadline).getFullYear() : null;
-  const reasons: string[] = [];
-
-  if (deadlineYear && deadlineYear < 2027) {
-    return { level: "no", label: "不符合", reasons: ["报名截止早于2027年毕业"] };
-  }
-  if (/202[3-6]届|202[3-6]年毕业/.test(applicant) && !/2027/.test(applicant)) {
-    return { level: "no", label: "不符合", reasons: ["招聘毕业年份不包含2027届"] };
-  }
-  if (/仅限博士|博士研究生/.test(education) && !/硕士及以上|本科及以上/.test(education)) {
-    return { level: "no", label: "不符合", reasons: ["学历要求为博士"] };
-  }
-
-  const educationKnown = Boolean(education);
-  if (educationKnown && !/本科及以上|硕士|研究生|不限/.test(education)) {
-    return { level: "no", label: "不符合", reasons: ["学历要求不匹配"] };
-  }
-  if (educationKnown) reasons.push("硕士学历满足");
-  else reasons.push("学历需确认");
-
-  const designPattern = /设计学|艺术设计|视觉传达|环境设计|产品设计|工业设计|数字媒体艺术|服装与服饰设计|工艺美术|设计类/;
-  const majorUnlimited = !major || /不限|专业不限/.test(major);
-  if (!majorUnlimited && !designPattern.test(major)) {
-    return { level: "no", label: "不符合", reasons: ["专业要求不含设计类"] };
-  }
-  reasons.push(majorUnlimited ? "专业需确认" : "设计类专业匹配");
-
-  if (/男性|限男/.test(applicant) && !/女性/.test(applicant)) {
-    return { level: "no", label: "不符合", reasons: ["岗位限男性"] };
-  }
-  if (/中共党员/.test(applicant)) reasons.push("党员条件满足");
-  if (/985|双一流|重点大学/.test(applicant)) reasons.push("院校条件满足");
-
-  if (/2027/.test(applicant)) {
-    reasons.push("2027届匹配");
-    return { level: "match", label: "符合", reasons };
-  }
-  reasons.push("毕业年份需确认");
-  return { level: "possible", label: "需确认", reasons };
+  return { level: "possible", label: "待分析", reasons: ["等待 Codex 语义分析"] };
 }
 
 const displayJobs = currentJobs.filter((job) => matchForProfile(job).level !== "no");

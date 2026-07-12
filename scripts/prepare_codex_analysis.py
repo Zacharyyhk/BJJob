@@ -37,6 +37,12 @@ def jobs() -> list[dict[str, Any]]:
                 "source_url": notice.get("source_url", ""),
                 "source_group": "北京市机关单位", "establishment_type": "事业编制",
             })
+            if notice.get("body_text"):
+                item.update({
+                    "body_text": notice["body_text"],
+                    "notice_content_hash": notice.get("content_hash", ""),
+                    "notice_attachments": notice.get("attachments", []),
+                })
             result.append(item)
     other = json.loads(OTHER.read_text(encoding="utf-8"))
     for item in other.get("items", []):

@@ -228,6 +228,7 @@ def parse_notice(collector: Collector, item: dict[str, str], previous_hash: str 
         "application_start_at": start_at,
         "deadline": deadline,
         "summary": clean(summary_match.group(0)) if summary_match else "",
+        "body_text": page_text,
         "source_name": "北京市人社局事业单位公开招聘",
         "source_url": item["url"],
         "content_hash": digest,
