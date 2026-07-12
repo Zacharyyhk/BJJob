@@ -116,6 +116,26 @@ class CollectorParsingTests(unittest.TestCase):
         rows = other_collector.workbook_positions(content.getvalue(), "https://example.com/jobs.xlsx", notice)
         self.assertEqual(rows[0]["body_text"], notice["body_text"])
 
+    def test_other_listing_is_not_truncated_at_one_hundred_links(self):
+        links = "".join(
+            f"<a href='/notice-{index}.html'>测试招聘公告{index}</a>"
+            for index in range(120)
+        )
+
+        class Response:
+            text = links
+            url = "https://example.com/list/"
+
+        source = {"name": "测试来源", "group": "中央机关单位", "url": Response.url}
+        rows = other_collector.parse_links(source, Response())
+        self.assertEqual(len(rows), 120)
+
+    def test_xiaomi_labelled_sections_keep_their_meaning(self):
+        body = "工作职责 负责交互方案设计与原型制作。工作要求 设计类专业，熟练使用原型工具。申请职位"
+        responsibilities, requirements = other_collector.xiaomi_sections(body)
+        self.assertEqual(responsibilities, "负责交互方案设计与原型制作。")
+        self.assertEqual(requirements, "设计类专业，熟练使用原型工具。")
+
 
 if __name__ == "__main__":
     unittest.main()

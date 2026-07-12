@@ -120,7 +120,7 @@ def parse_links(source: dict[str, Any], response: requests.Response, allow_exter
             continue
         context = clean(link.parent.get_text(" ", strip=True)) if link.parent else title
         found[url] = make_item(source, title, url, published_from(context))
-    return list(found.values())[:100]
+    return list(found.values())
 
 
 def extract_detail(session: requests.Session, item: dict[str, Any]) -> dict[str, Any]:
@@ -207,7 +207,7 @@ def static_adapter(session: requests.Session, source: dict[str, Any], **kwargs: 
     response.encoding = response.apparent_encoding or "utf-8"
     items = parse_links(source, response, **kwargs)
     if source["group"] != "互联网大厂":
-        for index, item in enumerate(items[:10]):
+        for index, item in enumerate(items):
             if not same_site(response.url, item["source_url"]):
                 continue
             try:
@@ -215,14 +215,12 @@ def static_adapter(session: requests.Session, source: dict[str, Any], **kwargs: 
                 extract_detail(session, item)
             except Exception as exc:
                 item["detail_error"] = clean(exc)[:160]
-        attachment_budget = 3
         positions = []
-        for item in items[:10]:
+        for item in items:
             for attachment in item.get("attachments", []):
-                if attachment_budget <= 0 or not re.search(r"\.xlsx?(?:\?.*)?$", attachment["url"], re.I):
+                if not re.search(r"\.xlsx?(?:\?.*)?$", attachment["url"], re.I):
                     continue
                 try:
-                    attachment_budget -= 1
                     content = session.get(attachment["url"], timeout=40, headers={"Referer": item["source_url"]}).content
                     parsed = workbook_positions(content, attachment["url"], item)
                     attachment["position_count"] = len(parsed)
@@ -326,6 +324,7 @@ def baidu_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[li
                         recruitment_type={"GRADUATE": "校园招聘", "INTERN": "实习", "SOCIAL": "社会招聘"}.get(recruit_type, recruit_type),
                         headcount=value.get("recruitNum"),
                         updated_at=value.get("updateDate"),
+                        raw_fields={key: child for key, child in value.items() if not isinstance(child, (dict, list))},
                         data_quality="岗位详情完整",
                     )
                 for child in value.values():
@@ -364,6 +363,7 @@ def jd_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[list[
             location=row.get("workCity"), education=education_match.group(0) if education_match else "",
             category_detail=row.get("jobType"), recruitment_type="社会招聘",
             position_code=row.get("positionCode"), data_quality="岗位接口详情完整",
+            raw_fields=row,
         ))
     return found, "collected" if found else "collected-empty", endpoint
 
@@ -403,7 +403,7 @@ def tencent_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[
                 location="北京", requirements=" ".join(filter(None, [experience, requirements])),
                 category_detail=row.get("CategoryName"), department=row.get("BGName"),
                 product=row.get("ProductName"), recruitment_type="社会招聘",
-                last_verified_at=verified_at, data_quality="腾讯官方职位接口",
+                last_verified_at=verified_at, raw_fields=row, data_quality="腾讯官方职位接口",
             ))
         if len(rows) < 100:
             break
@@ -411,6 +411,13 @@ def tencent_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[
 
 
 XIAOMI_DESIGN_POSITIONS = ["886", "887", "884-1254", "905", "951"]
+
+
+def xiaomi_sections(body: str) -> tuple[str, str]:
+    """Mechanically split Xiaomi's labelled duty and requirement sections."""
+    duty = re.search(r"工作职责[：:]?(.{10,1600}?)(?=工作要求|申请职位|$)", body)
+    requirement = re.search(r"工作要求[：:]?(.{10,1600}?)(?=申请职位|热门|$)", body)
+    return clean(duty.group(1) if duty else ""), clean(requirement.group(1) if requirement else "")
 
 
 def xiaomi_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[list[dict[str, str]], str, str]:
@@ -429,12 +436,12 @@ def xiaomi_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[l
             continue
         category, title = match.groups()
         body = clean(soup.get_text(" ", strip=True))
-        duty = re.search(r"工作职责[：:]?(.{10,1600}?)(?=工作要求|申请职位|$)", body)
-        requirement = re.search(r"工作要求[：:]?(.{10,1600}?)(?=申请职位|热门|$)", body)
+        responsibilities, requirements = xiaomi_sections(body)
         found.append(make_item(
             source, title, url, organization="小米", location="北京",
-            requirements=duty.group(1) if duty else "",
-            responsibilities=requirement.group(1) if requirement else "",
+            requirements=requirements,
+            responsibilities=responsibilities,
+            body_text=body,
             category_detail=category, recruitment_type="校园招聘/实习",
             last_verified_at=verified_at, data_quality="小米官方职位详情页",
         ))

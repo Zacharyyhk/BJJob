@@ -113,7 +113,7 @@ const otherJobs: Job[] = otherSources.items.map((item) => ({
   publisher: item.organization,
   publishedAt: item.published_at,
   applicationStartAt: "",
-  deadline: item.deadline || "",
+  deadline: "deadline" in item ? String(item.deadline || "") : "",
   sourceUrl: item.source_url,
   isNotice: true,
   sourceName: item.source_name,
