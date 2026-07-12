@@ -63,7 +63,18 @@ type AiMatch = {
   reasons?: string[];
   conflicts?: string[];
   needs_confirmation?: string[];
-  normalized?: { deadline?: string };
+  normalized?: {
+    organization?: string;
+    title?: string;
+    location?: string;
+    education?: string;
+    majors?: string[];
+    responsibilities?: string;
+    requirements?: string;
+    headcount?: string;
+    applicant_type?: string;
+    deadline?: string;
+  };
 };
 
 const aiData = aiAnalysisData as { generated_at?: string; results: Record<string, AiMatch> };
@@ -106,7 +117,6 @@ const jobs: Job[] = notices.flatMap<Job>((notice): Job[] => {
 });
 
 const otherJobs: Job[] = otherSources.items.map((item) => {
-  const raw = ("raw_fields" in item ? item.raw_fields : {}) as Record<string, unknown>;
   return {
     id: item.id,
     title: item.title,
@@ -121,9 +131,9 @@ const otherJobs: Job[] = otherSources.items.map((item) => {
     sourceName: item.source_name,
     sourceGroup: item.category,
     establishmentType: "establishment_type" in item ? String(item.establishment_type || "") : "",
-    requirements: item.requirements || String(raw["其他条件"] || raw["岗位要求"] || ""),
+    requirements: item.requirements,
     responsibilities: item.responsibilities,
-    major: item.major || String(raw["专业要求"] || raw["对外发布公告专业要求"] || raw["所学专业"] || ""),
+    major: item.major,
     location: item.location,
     recruitment_type: item.recruitment_type,
     category_detail: item.category_detail,
@@ -136,6 +146,15 @@ const otherJobs: Job[] = otherSources.items.map((item) => {
 
 const rawJobs = [...jobs, ...otherJobs].map((job) => ({
   ...job,
+  organization: aiResults[job.id]?.normalized?.organization?.trim() || job.organization,
+  title: aiResults[job.id]?.normalized?.title?.trim() || job.title,
+  location: aiResults[job.id]?.normalized?.location?.trim() || job.location,
+  education: aiResults[job.id]?.normalized?.education?.trim() || job.education,
+  major: aiResults[job.id]?.normalized?.majors?.join("、") || job.major,
+  responsibilities: aiResults[job.id]?.normalized?.responsibilities?.trim() || job.responsibilities,
+  requirements: aiResults[job.id]?.normalized?.requirements?.trim() || job.requirements,
+  headcount: aiResults[job.id]?.normalized?.headcount?.trim() || job.headcount,
+  applicant_type: aiResults[job.id]?.normalized?.applicant_type?.trim() || job.applicant_type,
   deadline: aiResults[job.id]?.normalized?.deadline?.trim() || job.deadline,
 }));
 

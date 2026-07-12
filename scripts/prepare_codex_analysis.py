@@ -21,17 +21,6 @@ def digest(value: Any) -> str:
     return hashlib.sha256(encoded.encode("utf-8")).hexdigest()
 
 
-def normalize_workbook_fields(job: dict[str, Any]) -> dict[str, Any]:
-    """Promote known attachment columns so analysis never treats a parsed row as fieldless."""
-    item = dict(job)
-    raw = item.get("raw_fields") or {}
-    if not item.get("major"):
-        item["major"] = raw.get("专业要求") or raw.get("对外发布公告专业要求") or raw.get("所学专业") or ""
-    if not item.get("requirements"):
-        item["requirements"] = raw.get("其他条件") or raw.get("岗位要求") or raw.get("任职要求") or ""
-    return item
-
-
 def jobs() -> list[dict[str, Any]]:
     result: list[dict[str, Any]] = []
     rsj = json.loads(RSJ.read_text(encoding="utf-8"))
@@ -57,7 +46,6 @@ def jobs() -> list[dict[str, Any]]:
             result.append(item)
     other = json.loads(OTHER.read_text(encoding="utf-8"))
     for item in other.get("items", []):
-        item = normalize_workbook_fields(item)
         result.append({
             **item,
             "notice_title": item.get("title", ""),
@@ -73,7 +61,7 @@ def main() -> int:
     previous = analysis.get("results", {})
     pending = []
     for job in jobs():
-        content_hash = digest({"job": job, "profile": profile, "prompt_version": 6})
+        content_hash = digest({"job": job, "profile": profile, "prompt_version": 7})
         if previous.get(job["id"], {}).get("content_hash") == content_hash:
             continue
         pending.append({"id": job["id"], "content_hash": content_hash, "job": job})

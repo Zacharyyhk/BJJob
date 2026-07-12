@@ -37,22 +37,6 @@ NOTICE_LINK_RE = re.compile(r"/xxgk/gkzp/\d{6}/t\d+_\d+\.html$")
 ATTACHMENT_RE = re.compile(r"\.(xlsx?|docx?|pdf|zip|rar)(?:\?.*)?$", re.I)
 DATE_RE = re.compile(r"(20\d{2})[-年/.](\d{1,2})[-月/.](\d{1,2})日?")
 
-FIELD_ALIASES = {
-    "organization": ("招聘单位", "单位名称", "用人单位", "所属单位"),
-    "title": ("岗位名称", "招聘岗位", "职位名称"),
-    "category": ("岗位类别", "职位类别", "岗位类型"),
-    "headcount": ("招聘人数", "拟招聘人数", "计划人数"),
-    "education": ("学历要求", "学历", "最低学历"),
-    "degree": ("学位要求", "学位"),
-    "major": ("专业要求", "所学专业", "专业"),
-    "age": ("年龄要求", "年龄"),
-    "household": ("户籍要求", "生源要求", "户口要求"),
-    "applicant_type": ("招聘对象", "人员类别", "应聘人员类别"),
-    "requirements": ("其他条件", "其它条件", "资格条件", "岗位要求"),
-    "contact": ("联系电话", "咨询电话", "联系方式"),
-}
-
-
 def now_iso() -> str:
     return datetime.now(BEIJING_TZ).replace(microsecond=0).isoformat()
 
@@ -121,65 +105,23 @@ def content_hash(text: str) -> str:
     return hashlib.sha256(normalized.encode("utf-8")).hexdigest()
 
 
-def extract_period(text: str) -> tuple[str, str]:
-    pattern = re.compile(
-        r"(20\d{2})年(\d{1,2})月(\d{1,2})日"
-        r"(?:\s*(\d{1,2})[:：时](\d{1,2})?分?)?[^。；]{0,20}?(?:至|—|-|到)"
-        r"(?:(20\d{2})年)?(\d{1,2})月(\d{1,2})日"
-        r"(?:\s*(\d{1,2})[:：时](\d{1,2})?分?)?"
-    )
-    candidate_sentences = [
-        sentence for sentence in re.split(r"[。；]", text)
-        if re.search(r"报名|报考|申请|提交应聘", sentence) and re.search(r"至|—|到", sentence)
-    ]
-    candidate_sentences.sort(
-        key=lambda sentence: (
-            0 if re.search(r"报名|提交应聘|申请时间|报名时间", sentence) else 1,
-            len(sentence),
-        )
-    )
-    match = next((pattern.search(sentence) for sentence in candidate_sentences if pattern.search(sentence)), None)
-    if not match:
-        return "", ""
-    y1, m1, d1, h1, min1, y2, m2, d2, h2, min2 = match.groups()
-    y2 = y2 or y1
-    start = f"{int(y1):04d}-{int(m1):02d}-{int(d1):02d}T{int(h1 or 0):02d}:{int(min1 or 0):02d}:00+08:00"
-    end = f"{int(y2):04d}-{int(m2):02d}-{int(d2):02d}T{int(h2 or 23):02d}:{int(min2 or 59):02d}:00+08:00"
-    return start, end
-
-
-def canonical_key(header: str) -> str | None:
-    compact = re.sub(r"\s+", "", header)
-    for key, aliases in FIELD_ALIASES.items():
-        if any(compact == alias or (compact.endswith(alias) and len(compact) <= len(alias) + 4) for alias in aliases):
-            return key
-    return None
-
-
 def parse_workbook(content: bytes, source_url: str) -> list[dict[str, Any]]:
     workbook = load_workbook(io.BytesIO(content), read_only=True, data_only=True)
     positions: list[dict[str, Any]] = []
     for sheet in workbook.worksheets:
         rows = list(sheet.iter_rows(values_only=True))
-        header_index = -1
-        header_map: dict[int, str] = {}
-        for index, row in enumerate(rows[:20]):
-            candidate = {column: canonical_key(clean(value)) for column, value in enumerate(row)}
-            recognized = {column: key for column, key in candidate.items() if key}
-            if len(recognized) >= 3 and ("title" in recognized.values() or "organization" in recognized.values()):
-                header_index, header_map = index, recognized
-                break
-        if header_index < 0:
+        candidates = [(index, sum(bool(clean(value)) for value in row)) for index, row in enumerate(rows[:20])]
+        header_index, populated = max(candidates, key=lambda pair: pair[1], default=(-1, 0))
+        if header_index < 0 or populated < 3:
             continue
         raw_headers = {column: clean(value) for column, value in enumerate(rows[header_index]) if clean(value)}
         for row_number, row in enumerate(rows[header_index + 1 :], start=header_index + 2):
             values = {column: clean(value) for column, value in enumerate(row)}
             if not any(values.values()):
                 continue
-            item = {key: values.get(column, "") for column, key in header_map.items()}
-            if not item.get("title") and not item.get("organization"):
+            item = {"raw_fields": {header: values.get(column, "") for column, header in raw_headers.items() if values.get(column)}}
+            if not item["raw_fields"]:
                 continue
-            item["raw_fields"] = {header: values.get(column, "") for column, header in raw_headers.items() if values.get(column)}
             item["source_attachment_url"] = source_url
             item["sheet"] = sheet.title
             item["row"] = row_number
@@ -199,7 +141,6 @@ def parse_notice(collector: Collector, item: dict[str, str], previous_hash: str 
     metadata = re.search(r"日期[：:]\s*(20\d{2}-\d{2}-\d{2})\s+来源[：:]\s*([^字]+)", page_text)
     published = metadata.group(1) if metadata else item.get("published_at", "")
     publisher = clean(metadata.group(2)) if metadata else ""
-    start_at, deadline = extract_period(page_text)
 
     attachments = []
     positions: list[dict[str, Any]] = []
@@ -225,8 +166,8 @@ def parse_notice(collector: Collector, item: dict[str, str], previous_hash: str 
         "title": title,
         "publisher": publisher,
         "published_at": published,
-        "application_start_at": start_at,
-        "deadline": deadline,
+        "application_start_at": "",
+        "deadline": "",
         "summary": clean(summary_match.group(0)) if summary_match else "",
         "body_text": page_text,
         "source_name": "北京市人社局事业单位公开招聘",

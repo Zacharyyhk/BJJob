@@ -31,19 +31,6 @@ INCLUDE_RE = re.compile(r"招聘|招录|考录|公务员|事业单位|校园招�
 EXCLUDE_RE = re.compile(r"登录|注册|隐私|关于我们|网站地图|联系我们|帮助|政策法规|成绩查询|报名入口")
 DATE_RE = re.compile(r"(20\d{2})[-年./](\d{1,2})[-月./](\d{1,2})日?")
 ATTACHMENT_RE = re.compile(r"\.(xlsx?|docx?|pdf|zip|rar)(?:\?.*)?$", re.I)
-WORKBOOK_FIELDS = {
-    "organization": ("招聘单位", "单位名称", "用人单位", "所属单位"),
-    "title": ("岗位名称", "招聘岗位", "职位名称", "岗位"),
-    "headcount": ("招聘人数", "拟招聘人数", "计划人数"),
-    "education": ("学历要求", "学历", "最低学历"),
-    "degree": ("学位要求", "学位"),
-    "major": ("专业要求", "对外发布公告专业要求", "所学专业", "专业"),
-    "applicant_type": ("招聘对象", "人员类别", "应聘人员类别"),
-    "requirements": ("其他条件", "其它条件", "资格条件", "岗位要求", "任职要求"),
-    "responsibilities": ("岗位职责", "工作职责", "主要职责", "职责描述"),
-}
-
-
 def clean(value: Any) -> str:
     return re.sub(r"\s+", " ", str(value or "")).strip()
 
@@ -87,18 +74,6 @@ def same_site(base: str, candidate: str) -> bool:
     return b == a or b.endswith("." + a)
 
 
-def canonical_workbook_field(value: Any) -> str | None:
-    header = re.sub(r"\s+", "", clean(value))
-    exact_only = {"岗位", "专业", "学历", "学位"}
-    for field, aliases in WORKBOOK_FIELDS.items():
-        if any(
-            header == alias or (alias not in exact_only and alias in header and len(header) <= len(alias) + 5)
-            for alias in aliases
-        ):
-            return field
-    return None
-
-
 def parse_links(source: dict[str, Any], response: requests.Response, allow_external: bool = False,
                 href_pattern: str | None = None) -> list[dict[str, str]]:
     soup = BeautifulSoup(response.text, "html.parser")
@@ -136,52 +111,35 @@ def extract_detail(session: requests.Session, item: dict[str, Any]) -> dict[str,
     if len(text) < 30:
         return item
 
-    # Capture the most useful section without storing an entire mirrored article.
-    condition = ""
-    match = re.search(r"(?:招聘|报考|应聘|资格)(?:对象|范围|条件|要求)[：:]?(.{20,1600}?)(?=报名|招聘程序|考试|考核|薪酬|联系方式|附件|$)", text)
-    if match:
-        condition = clean(match.group(1))
-    elif len(text) <= 1800:
-        condition = text
-
     attachments = []
     for link in soup.find_all("a", href=True):
         url = urljoin(response.url, link["href"])
         if ATTACHMENT_RE.search(url):
             attachments.append({"name": clean(link.get_text(" ", strip=True)) or Path(urlparse(url).path).name, "url": url})
-    item.update({"requirements": condition, "body_text": text, "detail_parsed": True,
+    item.update({"body_text": text, "detail_parsed": True,
                  "attachments": attachments[:20], "data_quality": "已读取并保留公告正文"})
     return item
 
 
 def workbook_positions(content: bytes, attachment_url: str, notice: dict[str, Any]) -> list[dict[str, Any]]:
-    """Convert a conventional government position workbook into individual jobs."""
+    """Collect worksheet rows verbatim; semantic normalization belongs to Codex."""
     workbook = load_workbook(io.BytesIO(content), read_only=True, data_only=True)
     result = []
     for sheet in workbook.worksheets:
         rows = list(sheet.iter_rows(values_only=True))
-        header_index, header_map = -1, {}
-        for index, row in enumerate(rows[:20]):
-            mapped = {}
-            for column, value in enumerate(row):
-                field = canonical_workbook_field(value)
-                if field:
-                    mapped[column] = field
-            if len(set(mapped.values())) >= 3 and ("title" in mapped.values() or "organization" in mapped.values()):
-                header_index, header_map = index, mapped
-                break
-        if header_index < 0:
+        candidates = [(index, sum(bool(clean(value)) for value in row)) for index, row in enumerate(rows[:20])]
+        header_index, populated = max(candidates, key=lambda pair: pair[1], default=(-1, 0))
+        if header_index < 0 or populated < 3:
             continue
         raw_headers = {column: clean(value) for column, value in enumerate(rows[header_index]) if clean(value)}
         for row_number, row in enumerate(rows[header_index + 1:], start=header_index + 2):
-            values = {header_map[column]: clean(value) for column, value in enumerate(row) if column in header_map and clean(value)}
-            if not values.get("title") and not values.get("organization"):
-                continue
             raw_fields = {
                 header: clean(row[column])
                 for column, header in raw_headers.items()
                 if column < len(row) and clean(row[column])
             }
+            if not raw_fields:
+                continue
             url = f"{notice['source_url']}#position-{sheet.title}-{row_number}"
             result.append(make_item(
                 {
@@ -190,9 +148,8 @@ def workbook_positions(content: bytes, attachment_url: str, notice: dict[str, An
                     "establishment_type": notice.get("establishment_type", ""),
                     "url": notice["source_home"],
                 },
-                values.get("title") or notice["title"], url, notice.get("published_at", ""),
-                values.get("organization") or notice.get("organization", ""),
-                **{key: value for key, value in values.items() if key not in ("title", "organization")},
+                notice["title"], url, notice.get("published_at", ""),
+                notice.get("organization", ""),
                 raw_fields=raw_fields,
                 deadline=notice.get("deadline"), source_attachment_url=attachment_url,
                 body_text=notice.get("body_text"),
@@ -312,18 +269,8 @@ def baidu_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[li
                 is_job = bool(value.get("serviceCondition") or value.get("workContent"))
                 if title and code and is_job and ("北京" in place or not place):
                     detail = f"https://talent.baidu.com/jobs/detail/{recruit_type}/{code}"
-                    requirements = clean(value.get("serviceCondition"))
-                    education_match = re.search(r"(博士|硕士|本科|大专)(?:研究生)?(?:及以上)?", requirements)
                     found[detail] = make_item(
                         source, title, detail, clean(value.get("publishDate")), "百度",
-                        requirements=requirements,
-                        responsibilities=value.get("workContent"),
-                        location=place,
-                        education=education_match.group(0) if education_match else value.get("education"),
-                        category_detail=value.get("postType"),
-                        recruitment_type={"GRADUATE": "校园招聘", "INTERN": "实习", "SOCIAL": "社会招聘"}.get(recruit_type, recruit_type),
-                        headcount=value.get("recruitNum"),
-                        updated_at=value.get("updateDate"),
                         raw_fields={key: child for key, child in value.items() if not isinstance(child, (dict, list))},
                         data_quality="岗位详情完整",
                     )
@@ -353,16 +300,11 @@ def jd_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[list[
         ident = clean(row.get("requirementId") or row.get("positionId"))
         if not title or not ident:
             continue
-        requirements = clean(row.get("qualification"))
-        education_match = re.search(r"(博士|硕士|本科|大专)(?:研究生)?(?:及以上)?", requirements)
         detail = f"https://zhaopin.jd.com/web/job/job_info_list/3?jobSearch={quote_plus(title)}#job-{ident}"
         found.append(make_item(
             source, title, detail, clean(row.get("formatPublishTime")),
             clean(row.get("positionDeptName")) or "京东",
-            requirements=requirements, responsibilities=row.get("workContent"),
-            location=row.get("workCity"), education=education_match.group(0) if education_match else "",
-            category_detail=row.get("jobType"), recruitment_type="社会招聘",
-            position_code=row.get("positionCode"), data_quality="岗位接口详情完整",
+            data_quality="岗位接口原始数据",
             raw_fields=row,
         ))
     return found, "collected" if found else "collected-empty", endpoint
@@ -395,58 +337,14 @@ def tencent_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[
             title = clean(row.get("RecruitPostName"))
             if not position_id or not title:
                 continue
-            requirements = clean(row.get("Responsibility"))
-            experience = clean(row.get("RequireWorkYearsName"))
             found.append(make_item(
                 source, title, f"https://careers.tencent.com/jobdesc.html?postId={position_id}",
                 published_from(clean(row.get("LastUpdateTime"))), "腾讯",
-                location="北京", requirements=" ".join(filter(None, [experience, requirements])),
-                category_detail=row.get("CategoryName"), department=row.get("BGName"),
-                product=row.get("ProductName"), recruitment_type="社会招聘",
                 last_verified_at=verified_at, raw_fields=row, data_quality="腾讯官方职位接口",
             ))
         if len(rows) < 100:
             break
     return found, "collected" if found else "collected-empty", endpoint
-
-
-XIAOMI_DESIGN_POSITIONS = ["886", "887", "884-1254", "905", "951"]
-
-
-def xiaomi_sections(body: str) -> tuple[str, str]:
-    """Mechanically split Xiaomi's labelled duty and requirement sections."""
-    duty = re.search(r"工作职责[：:]?(.{10,1600}?)(?=工作要求|申请职位|$)", body)
-    requirement = re.search(r"工作要求[：:]?(.{10,1600}?)(?=申请职位|热门|$)", body)
-    return clean(duty.group(1) if duty else ""), clean(requirement.group(1) if requirement else "")
-
-
-def xiaomi_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[list[dict[str, str]], str, str]:
-    found = []
-    verified_at = now_iso()
-    for position_id in XIAOMI_DESIGN_POSITIONS:
-        url = f"https://hr.xiaomi.com/campus/view/{position_id}"
-        response = session.get(url, timeout=30, headers={"Referer": source["url"]})
-        if not response.ok:
-            continue
-        response.encoding = response.apparent_encoding or "utf-8"
-        soup = BeautifulSoup(response.text, "html.parser")
-        page_title = clean(soup.title.get_text(" ", strip=True) if soup.title else "")
-        match = re.match(r"小米-北京-(.+?)-(.+?)-职位详情", page_title)
-        if not match:
-            continue
-        category, title = match.groups()
-        body = clean(soup.get_text(" ", strip=True))
-        responsibilities, requirements = xiaomi_sections(body)
-        found.append(make_item(
-            source, title, url, organization="小米", location="北京",
-            requirements=requirements,
-            responsibilities=responsibilities,
-            body_text=body,
-            category_detail=category, recruitment_type="校园招聘/实习",
-            last_verified_at=verified_at, data_quality="小米官方职位详情页",
-        ))
-        time.sleep(0.15)
-    return found, "collected" if found else "collected-empty", source["url"]
 
 
 def api_spa_adapter(session: requests.Session, source: dict[str, Any], endpoint: str) -> tuple[list[dict[str, str]], str, str]:
@@ -466,7 +364,7 @@ def api_spa_adapter(session: requests.Session, source: dict[str, Any], endpoint:
             ident = clean(value.get("jobId") or value.get("id") or value.get("code"))
             if title and ident and (not city or "北京" in city):
                 url = source["url"].split("?")[0] + ("&" if "?" in source["url"] else "?") + "jobId=" + ident
-                found[url] = make_item(source, title, url)
+                found[url] = make_item(source, title, url, raw_fields=value, data_quality="官方接口原始数据")
             for child in value.values(): walk(child)
         elif isinstance(value, list):
             for child in value: walk(child)
@@ -475,37 +373,20 @@ def api_spa_adapter(session: requests.Session, source: dict[str, Any], endpoint:
     return values, "collected" if values else "collected-empty", response.url
 
 
-def sasac_mixed_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[list[dict[str, str]], str, str]:
-    """Classify the SASAC mixed column without treating all central-enterprise jobs as civil service."""
-    items, status, final_url = static_adapter(session, source)
-    for item in items:
-        title = item.get("title", "")
-        if "事业单位" in title:
-            item["category"] = "中央机关单位"
-            item["establishment_type"] = "事业编制"
-        elif re.search(r"公务员|考试录用|考录", title):
-            item["category"] = "中央机关单位"
-            item["establishment_type"] = "公务员编制"
-        else:
-            item["category"] = "央国企"
-            item.pop("establishment_type", None)
-    return items, status, final_url
-
-
 SPECIAL: dict[str, Callable[..., tuple[list[dict[str, str]], str, str]]] = {
     "bj-civil-service": lambda s, x: static_adapter(s, x, allow_external=True),
     "bj-exam-notices": lambda s, x: static_adapter(s, x),
     "national-civil-service-yearly": yearly_civil_service,
     "mohrss-central-institutions": mohrss_adapter,
     "bj-sasac-jobs": lambda s, x: static_adapter(s, x, allow_external=True),
-    "sasac-civil-service": sasac_mixed_adapter,
+    "sasac-civil-service": lambda s, x: static_adapter(s, x),
     "iguopin": lambda s, x: api_spa_adapter(s, x, "https://www.iguopin.com/api/jobs/v3/list"),
     "bytedance-jobs": bytedance_adapter,
     "baidu-jobs": baidu_adapter,
     "jd-jobs": jd_adapter,
     "meituan-jobs": lambda s, x: api_spa_adapter(s, x, "https://zhaopin.meituan.com/api/official/job/getJobList"),
     "tencent-jobs": tencent_adapter,
-    "xiaomi-jobs": xiaomi_adapter,
+    "xiaomi-jobs": lambda s, x: static_adapter(s, x),
 }
 
 

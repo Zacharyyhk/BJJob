@@ -27,20 +27,6 @@ class CollectorParsingTests(unittest.TestCase):
         self.assertEqual(len(rows), 1)
         self.assertEqual(rows[0]["published_at"], "2026-07-10")
 
-    def test_application_period(self):
-        text = ("2025年1月1日至2026年7月31日期间取得学位的人员可以报考。"
-                "报考人员须于2026年7月15日10:00至7月21日15:00期间登录并提交应聘申请。")
-        start, end = collector.extract_period(text)
-        self.assertEqual(start, "2026-07-15T10:00:00+08:00")
-        self.assertEqual(end, "2026-07-21T15:00:00+08:00")
-
-    def test_header_aliases(self):
-        self.assertEqual(collector.canonical_key("招聘岗位名称"), "title")
-        self.assertEqual(collector.canonical_key("拟招聘人数"), "headcount")
-        self.assertEqual(collector.canonical_key("专业要求"), "major")
-        self.assertIsNone(collector.canonical_key("拟招聘岗位等级"))
-        self.assertIsNone(collector.canonical_key("计划聘用人数与面试人选的确定比例"))
-
     def test_mohrss_cookie_challenge(self):
         html = ("EO_Bot_Ssid WTKkN:2994459411,bOYDu:43269009,"
                 "wyeCN:1143439771 (t,3612672000)")
@@ -48,11 +34,6 @@ class CollectorParsingTests(unittest.TestCase):
             "__tst_status": "4181168191#",
             "EO_Bot_Ssid": "3612672000",
         })
-
-    def test_other_workbook_does_not_treat_responsibilities_as_title(self):
-        self.assertEqual(other_collector.canonical_workbook_field("岗位名称"), "title")
-        self.assertEqual(other_collector.canonical_workbook_field("岗位职责"), "responsibilities")
-        self.assertIsNone(other_collector.canonical_workbook_field("专业工作经历"))
 
     def test_other_workbook_preserves_raw_fields(self):
         workbook = Workbook()
@@ -74,6 +55,9 @@ class CollectorParsingTests(unittest.TestCase):
         }
         rows = other_collector.workbook_positions(content.getvalue(), "https://example.com/jobs.xlsx", notice)
         self.assertEqual(rows[0]["raw_fields"]["自定义能力说明"], "须提交作品集")
+        self.assertNotIn("major", rows[0])
+        self.assertNotIn("education", rows[0])
+        self.assertNotIn("requirements", rows[0])
 
     def test_other_detail_preserves_deadline_sentence_for_codex(self):
         class Response:
@@ -129,12 +113,6 @@ class CollectorParsingTests(unittest.TestCase):
         source = {"name": "测试来源", "group": "中央机关单位", "url": Response.url}
         rows = other_collector.parse_links(source, Response())
         self.assertEqual(len(rows), 120)
-
-    def test_xiaomi_labelled_sections_keep_their_meaning(self):
-        body = "工作职责 负责交互方案设计与原型制作。工作要求 设计类专业，熟练使用原型工具。申请职位"
-        responsibilities, requirements = other_collector.xiaomi_sections(body)
-        self.assertEqual(responsibilities, "负责交互方案设计与原型制作。")
-        self.assertEqual(requirements, "设计类专业，熟练使用原型工具。")
 
 
 if __name__ == "__main__":
