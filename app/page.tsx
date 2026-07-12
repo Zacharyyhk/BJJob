@@ -105,35 +105,44 @@ const jobs: Job[] = notices.flatMap<Job>((notice): Job[] => {
   }));
 });
 
-const otherJobs: Job[] = otherSources.items.map((item) => ({
-  id: item.id,
-  title: item.title,
-  organization: item.organization,
-  noticeTitle: item.title,
-  publisher: item.organization,
-  publishedAt: item.published_at,
-  applicationStartAt: "",
-  deadline: "deadline" in item ? String(item.deadline || "") : "",
-  sourceUrl: item.source_url,
-  isNotice: true,
-  sourceName: item.source_name,
-  sourceGroup: item.category,
-  establishmentType: "establishment_type" in item ? String(item.establishment_type || "") : "",
-  requirements: item.requirements,
-  responsibilities: item.responsibilities,
-  location: item.location,
-  recruitment_type: item.recruitment_type,
-  category_detail: item.category_detail,
-  data_quality: item.data_quality,
-  last_verified_at: item.last_verified_at,
-  education: item.education,
-  headcount: item.headcount,
-}));
+const otherJobs: Job[] = otherSources.items.map((item) => {
+  const raw = ("raw_fields" in item ? item.raw_fields : {}) as Record<string, unknown>;
+  return {
+    id: item.id,
+    title: item.title,
+    organization: item.organization,
+    noticeTitle: item.title,
+    publisher: item.organization,
+    publishedAt: item.published_at,
+    applicationStartAt: "",
+    deadline: "deadline" in item ? String(item.deadline || "") : "",
+    sourceUrl: item.source_url,
+    isNotice: true,
+    sourceName: item.source_name,
+    sourceGroup: item.category,
+    establishmentType: "establishment_type" in item ? String(item.establishment_type || "") : "",
+    requirements: item.requirements || String(raw["其他条件"] || raw["岗位要求"] || ""),
+    responsibilities: item.responsibilities,
+    major: item.major || String(raw["专业要求"] || raw["对外发布公告专业要求"] || raw["所学专业"] || ""),
+    location: item.location,
+    recruitment_type: item.recruitment_type,
+    category_detail: item.category_detail,
+    data_quality: item.data_quality,
+    last_verified_at: item.last_verified_at,
+    education: item.education,
+    headcount: item.headcount,
+  };
+});
 
-const allJobs = [...jobs, ...otherJobs].map((job) => ({
+const rawJobs = [...jobs, ...otherJobs].map((job) => ({
   ...job,
   deadline: aiResults[job.id]?.normalized?.deadline?.trim() || job.deadline,
 }));
+
+const allJobs = [...new Map(rawJobs.map((job) => [
+  [job.organization, job.title, job.major, job.education, job.headcount, job.publishedAt].join("|"),
+  job,
+])).values()];
 
 function unitName(job: Job) {
   return (job.organization || job.publisher || job.sourceName || "单位未注明").trim();
