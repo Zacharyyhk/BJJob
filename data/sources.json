@@ -22,51 +22,6 @@
     "mode": "列表页+详情页"
   },
   {
-    "id": "bj-civil-service",
-    "name": "北京市公务员招录专题",
-    "group": "公务员",
-    "url": "https://rsj.beijing.gov.cn/bm/ztzl/gwy/",
-    "priority": "P0",
-    "status": "已确认",
-    "schedule": "08:30,18:30",
-    "scope": "京考、补录、职位表、报名和成绩通知",
-    "mode": "专题页+附件"
-  },
-  {
-    "id": "bj-exam-notices",
-    "name": "北京人事考试重要通知",
-    "group": "公务员",
-    "url": "https://rsj.beijing.gov.cn/ywsite/bjpta/xwzx/zytz/",
-    "priority": "P1",
-    "status": "已确认",
-    "schedule": "08:30,18:30",
-    "scope": "京考、定向选调、优培计划及相关考试通知",
-    "mode": "列表页+关键词过滤"
-  },
-  {
-    "id": "national-civil-service-yearly",
-    "name": "2026年度国考专题",
-    "group": "公务员",
-    "url": "http://bm.scs.gov.cn/kl2026",
-    "priority": "P0",
-    "status": "季节性",
-    "schedule": "招录期每4小时",
-    "scope": "中央机关及其直属机构招考公告、职位表、调剂和补录",
-    "mode": "年度专题+附件",
-    "notes": "每年自动探测并切换 klYYYY 地址"
-  },
-  {
-    "id": "beijing-gov-civil-service",
-    "name": "首都之窗公务员招考",
-    "group": "公务员",
-    "url": "https://www.beijing.gov.cn/gongkai/rsxx/gwyzk/index.html",
-    "priority": "P0",
-    "status": "已确认",
-    "schedule": "08:30,18:30",
-    "scope": "北京公务员及部分国考公告的稳定备份",
-    "mode": "列表页+详情页"
-  },
-  {
     "id": "bj-sasac-jobs",
     "name": "北京市国资委国企招聘",
     "group": "央企国企",
