@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "gender": "女",
   "household_registration": "非北京户口",
   "graduation_year": 2027,
@@ -13,7 +13,8 @@
     {"catalog": "2022", "code": "1357", "name": "设计"}
   ],
   "major_catalog_conditional": [
-    {"catalog": "2022", "code": "1301", "name": "艺术学", "condition": "招聘条件明确包含设计方向"}
+    {"catalog": "门类", "code": "13", "name": "艺术学", "condition": "上位门类代码，保留并人工确认"},
+    {"catalog": "2022", "code": "1301", "name": "艺术学", "condition": "明确包含设计方向时匹配；未写方向时保留并人工确认"}
   ],
   "political_status": "中共党员"
 }

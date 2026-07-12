@@ -261,7 +261,7 @@ export default function Home() {
         <button className={savedOnly ? "saved active" : "saved"} onClick={() => setSavedOnly(!savedOnly)}>收藏 {saved.length}</button>
       </header>
 
-      <div className="profile"><b>我的条件</b><span>女</span><span>非北京户口</span><span>2027届硕士</span><span>华东师大本硕</span><span>设计类（1305/1357）</span><span>中共党员</span></div>
+      <div className="profile"><b>我的条件</b><span>女</span><span>非北京户口</span><span>2027届硕士</span><span>华东师大本硕</span><span>设计类（兼容新旧目录）</span><span>中共党员</span></div>
 
       <section className="toolbar" aria-label="职位筛选">
         <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="搜索单位、岗位、专业或要求" aria-label="搜索职位" />
