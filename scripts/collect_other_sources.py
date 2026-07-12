@@ -151,6 +151,7 @@ def workbook_positions(content: bytes, attachment_url: str, notice: dict[str, An
                 notice["title"], url, notice.get("published_at", ""),
                 notice.get("organization", ""),
                 raw_fields=raw_fields,
+                sheet=sheet.title, row=row_number,
                 deadline=notice.get("deadline"), source_attachment_url=attachment_url,
                 body_text=notice.get("body_text"),
                 recruitment_type="公告附件岗位", data_quality="附件岗位表已解析并保留原始字段",

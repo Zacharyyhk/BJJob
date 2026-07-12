@@ -176,6 +176,14 @@ function unitName(job: Job) {
   return (job.organization || job.publisher || job.sourceName || "单位未注明").trim();
 }
 
+function attachmentPosition(job: Job) {
+  const fragment = job.sourceUrl.match(/#position-(.+)-(\d+)$/);
+  return {
+    sheet: job.sheet || (fragment ? decodeURIComponent(fragment[1]) : ""),
+    row: job.row || (fragment ? Number(fragment[2]) : undefined),
+  };
+}
+
 function daysUntil(value: string) {
   if (!value) return null;
   return Math.ceil((new Date(value).getTime() - Date.now()) / 86400000);
@@ -337,6 +345,7 @@ export default function Home() {
         {filtered.slice(0, visibleCount).map((job) => {
           const days = daysUntil(job.deadline);
           const match = matchForProfile(job);
+          const attachment = attachmentPosition(job);
           return <article className="job" key={job.id}>
             <div className="job-top">
               <div>
@@ -353,7 +362,7 @@ export default function Home() {
             <div className="match-reasons">{match.reasons.map((reason) => <span key={reason}>{reason}</span>)}</div>
             <div className="source-name">{job.sourceName}</div>
             {job.sourceAttachmentUrl && <div className="attachment-ref">
-              <span><b>附件岗位：</b>{job.sheet ? `${job.sheet} · ` : ""}{job.row ? `第 ${job.row} 行` : "原始岗位行"}{job.position_code ? ` · 岗位代码 ${job.position_code}` : ""}</span>
+              <span><b>附件岗位：</b>{attachment.sheet ? `${attachment.sheet} · ` : ""}{attachment.row ? `第 ${attachment.row} 行` : "原始岗位行"}{job.position_code ? ` · 岗位代码 ${job.position_code}` : ""}</span>
               <a href={job.sourceAttachmentUrl} target="_blank" rel="noreferrer">查看附件 ↗</a>
             </div>}
 
