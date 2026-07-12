@@ -77,39 +77,6 @@
     "mode": "栏目页+详情页"
   },
   {
-    "id": "ggj-notices",
-    "name": "国家机关事务管理局通知公告",
-    "group": "中央机关重点单位",
-    "url": "https://www.ggj.gov.cn/tzgg/",
-    "priority": "P1",
-    "status": "已确认",
-    "schedule": "08:30,18:30",
-    "scope": "公务员考录、事业单位和直属单位招聘公告",
-    "mode": "栏目页+招聘关键词过滤"
-  },
-  {
-    "id": "moe-personnel",
-    "name": "教育部人事招聘通知",
-    "group": "中央机关重点单位",
-    "url": "https://www.moe.gov.cn/s78/A04/",
-    "priority": "P2",
-    "status": "待验证",
-    "schedule": "08:30",
-    "scope": "教育部公务员考录和直属事业单位人事通知",
-    "mode": "栏目页+关键词过滤"
-  },
-  {
-    "id": "cnipa-personnel",
-    "name": "国家知识产权局招考招聘",
-    "group": "中央机关重点单位",
-    "url": "https://www.cnipa.gov.cn/col/col74/index.html",
-    "priority": "P2",
-    "status": "待验证",
-    "schedule": "08:30",
-    "scope": "专利局等在京单位公务员和事业单位招聘",
-    "mode": "栏目页+关键词过滤"
-  },
-  {
     "id": "bytedance-jobs",
     "name": "字节跳动招聘",
     "group": "互联网大厂",

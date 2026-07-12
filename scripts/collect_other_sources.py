@@ -473,8 +473,6 @@ SPECIAL: dict[str, Callable[..., tuple[list[dict[str, str]], str, str]]] = {
     "mohrss-central-institutions": mohrss_adapter,
     "bj-sasac-jobs": lambda s, x: static_adapter(s, x, allow_external=True),
     "iguopin": lambda s, x: api_spa_adapter(s, x, "https://www.iguopin.com/api/jobs/v3/list"),
-    "ggj-notices": lambda s, x: static_adapter(s, x),
-    "cnipa-personnel": lambda s, x: static_adapter(s, x, href_pattern=r"/art/\d{4}/.*art_74_"),
     "bytedance-jobs": bytedance_adapter,
     "baidu-jobs": baidu_adapter,
     "jd-jobs": jd_adapter,
