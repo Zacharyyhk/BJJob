@@ -9,6 +9,7 @@ type Position = {
   organization?: string;
   title?: string;
   category?: string;
+  establishment_type?: string;
   headcount?: string;
   education?: string;
   degree?: string;
@@ -51,6 +52,7 @@ type Job = Position & {
   isNotice: boolean;
   sourceName: string;
   sourceGroup: string;
+  establishmentType: string;
 };
 
 const notices = collected.notices as Notice[];
@@ -69,7 +71,8 @@ const jobs: Job[] = notices.flatMap<Job>((notice): Job[] => {
       sourceUrl: notice.source_url,
       isNotice: true,
       sourceName: "北京市人社局事业单位公开招聘",
-      sourceGroup: "事业单位",
+      sourceGroup: "北京市机关单位",
+      establishmentType: "事业编制",
     }];
   }
   return notice.positions.map((position, index) => ({
@@ -83,7 +86,8 @@ const jobs: Job[] = notices.flatMap<Job>((notice): Job[] => {
     sourceUrl: notice.source_url,
     isNotice: false,
     sourceName: "北京市人社局事业单位公开招聘",
-    sourceGroup: "事业单位",
+    sourceGroup: "北京市机关单位",
+    establishmentType: "事业编制",
   }));
 });
 
@@ -100,6 +104,7 @@ const otherJobs: Job[] = otherSources.items.map((item) => ({
   isNotice: true,
   sourceName: item.source_name,
   sourceGroup: item.category,
+  establishmentType: "establishment_type" in item ? String(item.establishment_type || "") : "",
   requirements: item.requirements,
   responsibilities: item.responsibilities,
   location: item.location,
@@ -220,6 +225,7 @@ export default function Home() {
   const [sort, setSort] = useState("即将截止");
   const [profileFilter, setProfileFilter] = useState("全部岗位");
   const [sourceGroup, setSourceGroup] = useState("全部来源");
+  const [establishment, setEstablishment] = useState("全部编制");
   const [unit, setUnit] = useState("全部单位");
   const [savedOnly, setSavedOnly] = useState(false);
   const [saved, setSaved] = useState<string[]>([]);
@@ -238,10 +244,11 @@ export default function Home() {
   const unitOptions = useMemo(() => {
     const names = displayJobs
       .filter((job) => sourceGroup === "全部来源" || job.sourceGroup === sourceGroup)
+      .filter((job) => establishment === "全部编制" || job.establishmentType === establishment)
       .map(unitName)
       .filter((name) => name !== "单位未注明");
     return [...new Set(names)].sort((a, b) => a.localeCompare(b, "zh-CN"));
-  }, [sourceGroup]);
+  }, [sourceGroup, establishment]);
 
   useEffect(() => {
     if (unit !== "全部单位" && !unitOptions.includes(unit)) setUnit("全部单位");
@@ -256,6 +263,7 @@ export default function Home() {
         && (education === "全部学历" || (job.education || "").includes(education))
         && (profileFilter === "全部岗位" || (profileFilter === "适合我" ? profileMatch.level !== "no" : profileMatch.level === "match"))
         && (sourceGroup === "全部来源" || job.sourceGroup === sourceGroup)
+        && (establishment === "全部编制" || job.establishmentType === establishment)
         && (unit === "全部单位" || unitName(job) === unit)
         && (!savedOnly || saved.includes(job.id));
     });
@@ -265,9 +273,9 @@ export default function Home() {
       const bTime = b.deadline ? new Date(b.deadline).getTime() : Number.MAX_SAFE_INTEGER;
       return aTime - bTime;
     });
-  }, [query, education, sort, profileFilter, sourceGroup, unit, savedOnly, saved]);
+  }, [query, education, sort, profileFilter, sourceGroup, establishment, unit, savedOnly, saved]);
 
-  useEffect(() => setVisibleCount(40), [query, education, sort, profileFilter, sourceGroup, unit, savedOnly]);
+  useEffect(() => setVisibleCount(40), [query, education, sort, profileFilter, sourceGroup, establishment, unit, savedOnly]);
 
   const activeCount = displayJobs.length;
   const hiddenNoCount = currentJobs.length - displayJobs.length;
@@ -293,7 +301,10 @@ export default function Home() {
           <option>全部岗位</option><option>适合我</option><option>明确符合</option>
         </select>
         <select value={sourceGroup} onChange={(event) => setSourceGroup(event.target.value)} aria-label="来源类别">
-          <option>全部来源</option><option>事业单位</option><option>公务员</option><option>央企国企</option><option>中央机关重点单位</option><option>互联网大厂</option>
+          <option>全部来源</option><option>互联网大厂</option><option>北京市机关单位</option><option>中央机关单位</option><option>央国企</option>
+        </select>
+        <select value={establishment} onChange={(event) => setEstablishment(event.target.value)} aria-label="编制类型">
+          <option>全部编制</option><option>事业编制</option><option>公务员编制</option>
         </select>
         <select value={unit} onChange={(event) => setUnit(event.target.value)} aria-label="单位或公司">
           <option>全部单位</option>
@@ -336,6 +347,7 @@ export default function Home() {
               {job.location && <span>{job.location}</span>}
               {job.recruitment_type && <span>{job.recruitment_type}</span>}
               {job.category_detail && <span>{job.category_detail}</span>}
+              {job.establishmentType && <span>{job.establishmentType}</span>}
             </div>
 
             {job.major && <p><b>专业：</b>{job.major}</p>}

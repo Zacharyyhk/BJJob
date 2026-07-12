@@ -34,12 +34,18 @@ def jobs() -> list[dict[str, Any]]:
                 "id": f"{notice['id']}-{position.get('sheet') or 'position'}-{position.get('row') or index}",
                 "notice_title": notice.get("title", ""), "publisher": notice.get("publisher", ""),
                 "published_at": notice.get("published_at", ""), "deadline": notice.get("deadline", ""),
-                "source_url": notice.get("source_url", ""), "source_group": "事业单位",
+                "source_url": notice.get("source_url", ""),
+                "source_group": "北京市机关单位", "establishment_type": "事业编制",
             })
             result.append(item)
     other = json.loads(OTHER.read_text(encoding="utf-8"))
     for item in other.get("items", []):
-        result.append({**item, "notice_title": item.get("title", ""), "source_group": item.get("category", "")})
+        result.append({
+            **item,
+            "notice_title": item.get("title", ""),
+            "source_group": item.get("category", ""),
+            "establishment_type": item.get("establishment_type", ""),
+        })
     return result
 
 

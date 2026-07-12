@@ -64,6 +64,8 @@ def make_item(source: dict[str, Any], title: str, url: str, published: str = "",
         "source_url": url,
         "source_home": source["url"],
     }
+    if source.get("establishment_type"):
+        item["establishment_type"] = source["establishment_type"]
     item.update({
         key: value if isinstance(value, (dict, list)) else clean(value)
         for key, value in details.items() if value not in (None, "", [], {})
@@ -188,7 +190,12 @@ def workbook_positions(content: bytes, attachment_url: str, notice: dict[str, An
             }
             url = f"{notice['source_url']}#position-{sheet.title}-{row_number}"
             result.append(make_item(
-                {"name": notice["source_name"], "group": notice["category"], "url": notice["source_home"]},
+                {
+                    "name": notice["source_name"],
+                    "group": notice["category"],
+                    "establishment_type": notice.get("establishment_type", ""),
+                    "url": notice["source_home"],
+                },
                 values.get("title") or notice["title"], url, notice.get("published_at", ""),
                 values.get("organization") or notice.get("organization", ""),
                 **{key: value for key, value in values.items() if key not in ("title", "organization")},
@@ -466,12 +473,30 @@ def api_spa_adapter(session: requests.Session, source: dict[str, Any], endpoint:
     return values, "collected" if values else "collected-empty", response.url
 
 
+def sasac_mixed_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[list[dict[str, str]], str, str]:
+    """Classify the SASAC mixed column without treating all central-enterprise jobs as civil service."""
+    items, status, final_url = static_adapter(session, source)
+    for item in items:
+        title = item.get("title", "")
+        if "事业单位" in title:
+            item["category"] = "中央机关单位"
+            item["establishment_type"] = "事业编制"
+        elif re.search(r"公务员|考试录用|考录", title):
+            item["category"] = "中央机关单位"
+            item["establishment_type"] = "公务员编制"
+        else:
+            item["category"] = "央国企"
+            item.pop("establishment_type", None)
+    return items, status, final_url
+
+
 SPECIAL: dict[str, Callable[..., tuple[list[dict[str, str]], str, str]]] = {
     "bj-civil-service": lambda s, x: static_adapter(s, x, allow_external=True),
     "bj-exam-notices": lambda s, x: static_adapter(s, x),
     "national-civil-service-yearly": yearly_civil_service,
     "mohrss-central-institutions": mohrss_adapter,
     "bj-sasac-jobs": lambda s, x: static_adapter(s, x, allow_external=True),
+    "sasac-civil-service": sasac_mixed_adapter,
     "iguopin": lambda s, x: api_spa_adapter(s, x, "https://www.iguopin.com/api/jobs/v3/list"),
     "bytedance-jobs": bytedance_adapter,
     "baidu-jobs": baidu_adapter,
@@ -488,12 +513,14 @@ def collect_source(session: requests.Session, source: dict[str, Any]) -> dict[st
         adapter = SPECIAL.get(source["id"], static_adapter)
         items, status, final_url = adapter(session, source)
         return {"source_id": source["id"], "source_name": source["name"], "group": source["group"],
+                "establishment_type": source.get("establishment_type", ""),
                 "home": source["url"], "adapter": "dedicated" if source["id"] in SPECIAL else "static",
                 "status": status, "final_url": final_url, "item_count": len(items),
                 "duration_ms": round((time.monotonic() - started) * 1000), "items": items}
     except Exception as exc:
         status_code = getattr(getattr(exc, "response", None), "status_code", None)
         return {"source_id": source["id"], "source_name": source["name"], "group": source["group"],
+                "establishment_type": source.get("establishment_type", ""),
                 "home": source["url"], "adapter": "dedicated" if source["id"] in SPECIAL else "static",
                 "status": "adapter-blocked" if source["id"] in SPECIAL else "unavailable",
                 "http_status": status_code, "item_count": 0, "error": clean(exc)[:300], "items": []}

@@ -2,7 +2,8 @@
   {
     "id": "bj-rsj-institutions",
     "name": "北京市人社局事业单位公开招聘",
-    "group": "事业单位",
+    "group": "北京市机关单位",
+    "establishment_type": "事业编制",
     "url": "https://rsj.beijing.gov.cn/xxgk/gkzp/",
     "priority": "P0",
     "status": "已确认",
@@ -13,7 +14,8 @@
   {
     "id": "beijing-gov-institutions",
     "name": "首都之窗事业单位招聘",
-    "group": "事业单位",
+    "group": "北京市机关单位",
+    "establishment_type": "事业编制",
     "url": "https://www.beijing.gov.cn/gongkai/rsxx/sydwzp/",
     "priority": "P1",
     "status": "已确认",
@@ -24,7 +26,7 @@
   {
     "id": "bj-sasac-jobs",
     "name": "北京市国资委国企招聘",
-    "group": "央企国企",
+    "group": "央国企",
     "url": "https://gzw.beijing.gov.cn/yggq/gqzp/",
     "priority": "P0",
     "status": "已确认",
@@ -35,7 +37,7 @@
   {
     "id": "iguopin",
     "name": "国聘平台",
-    "group": "央企国企",
+    "group": "央国企",
     "url": "https://www.iguopin.com/",
     "priority": "P1",
     "status": "待接口验证",
@@ -46,7 +48,8 @@
   {
     "id": "mfa-civil-service",
     "name": "外交部公务员考试录用",
-    "group": "中央机关重点单位",
+    "group": "中央机关单位",
+    "establishment_type": "公务员编制",
     "url": "https://www.fmprc.gov.cn/web/wjb_673085/gbclc_603848/",
     "priority": "P1",
     "status": "已确认",
@@ -57,7 +60,8 @@
   {
     "id": "mohrss-central-institutions",
     "name": "人社部中央和国家机关所属事业单位公开招聘服务平台",
-    "group": "中央机关重点单位",
+    "group": "中央机关单位",
+    "establishment_type": "事业编制",
     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/fwyd/SYkaoshizhaopin/zyhgjjgsydwgkzp/",
     "priority": "P0",
     "status": "已确认",
@@ -68,13 +72,13 @@
   {
     "id": "sasac-civil-service",
     "name": "国务院国资委人事招聘",
-    "group": "中央机关重点单位",
+    "group": "央国企",
     "url": "http://www.sasac.gov.cn/n2588035/n2588325/n2588350/index.html",
     "priority": "P1",
     "status": "已确认",
     "schedule": "08:30,18:30",
-    "scope": "国务院国资委公务员考录及直属单位招聘",
-    "mode": "栏目页+详情页"
+    "scope": "国务院国资委委属事业单位及中央企业招聘",
+    "mode": "混合栏目专用分类+详情页"
   },
   {
     "id": "bytedance-jobs",
