@@ -1,19 +1,17 @@
 #!/usr/bin/env python3
-"""Validate model analysis and bind explicit human approval to an exact release."""
+"""Validate that every current job has a complete, current model analysis."""
 
 from __future__ import annotations
 
 import argparse
 import importlib.util
 import json
-from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 ANALYSIS = ROOT / "data" / "ai-analysis.json"
 PROFILE = ROOT / "data" / "profile.json"
-APPROVAL = ROOT / "data" / "release-approval.json"
 PREPARE = ROOT / "scripts" / "prepare_codex_analysis.py"
 
 
@@ -95,41 +93,12 @@ def validate() -> tuple[list[str], dict[str, Any]]:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--approve", action="store_true", help="人工审核后写入与当前结果绑定的批准文件")
-    parser.add_argument("--approved-by", default="", help="批准人或批准方式说明")
-    parser.add_argument("--require-approval", action="store_true", help="发布时要求存在匹配的批准文件")
-    args = parser.parse_args()
+    parser.parse_args()
 
     errors, summary = validate()
     if errors:
         print(json.dumps({"status": "invalid", "summary": summary, "errors": errors[:100]}, ensure_ascii=False, indent=2))
         return 1
-
-    if args.approve:
-        if not args.approved_by.strip():
-            print("--approve 必须同时提供 --approved-by", flush=True)
-            return 2
-        approval = {
-            "schema_version": 1,
-            "fingerprint": summary["fingerprint"],
-            "approved_at": datetime.now(timezone.utc).isoformat(),
-            "approved_by": args.approved_by.strip(),
-            "job_count": summary["job_count"],
-            "profile_version": summary["profile_version"],
-            "prompt_version": summary["prompt_version"],
-        }
-        APPROVAL.write_text(json.dumps(approval, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        print(json.dumps({"status": "approved", **approval}, ensure_ascii=False, indent=2))
-        return 0
-
-    if args.require_approval:
-        if not APPROVAL.exists():
-            print("缺少 data/release-approval.json；请先完成人工审核并批准当前结果")
-            return 3
-        approval = load_json(APPROVAL)
-        if approval.get("fingerprint") != summary["fingerprint"]:
-            print("人工批准已失效：采集数据、个人档案、模型规则或分析结果发生了变化")
-            return 4
 
     print(json.dumps({"status": "valid", "summary": summary}, ensure_ascii=False, indent=2))
     return 0

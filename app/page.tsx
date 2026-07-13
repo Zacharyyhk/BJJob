@@ -282,7 +282,10 @@ export default function Home() {
       const profileMatch = matchForProfile(job);
       return (!keyword || text.includes(keyword))
         && (education === "全部学历" || (job.education || "").includes(education))
-        && (profileFilter === "全部岗位" || (profileFilter === "适合我" ? profileMatch.level !== "no" : profileMatch.level === "match"))
+        && (profileFilter === "全部岗位"
+          || (profileFilter === "适合我" && profileMatch.level !== "no")
+          || (profileFilter === "明确符合" && profileMatch.level === "match")
+          || (profileFilter === "需确认" && profileMatch.level === "possible"))
         && matchesSourceGroup(job)
         && (establishment === "全部编制" || job.establishmentType === establishment)
         && (unit === "全部单位" || unitName(job) === unit)
@@ -319,7 +322,7 @@ export default function Home() {
       <section className="toolbar" aria-label="职位筛选">
         <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="搜索单位、岗位、专业或要求" aria-label="搜索职位" />
         <select value={profileFilter} onChange={(event) => setProfileFilter(event.target.value)} aria-label="个人条件匹配">
-          <option>全部岗位</option><option>适合我</option><option>明确符合</option>
+          <option>全部岗位</option><option>适合我</option><option>明确符合</option><option>需确认</option>
         </select>
         <select value={sourceGroup} onChange={(event) => setSourceGroup(event.target.value)} aria-label="来源类别">
           <option value="机关单位">机关单位（默认）</option><option>北京市机关单位</option><option>中央机关单位</option><option>互联网大厂</option><option>央国企</option><option>全部来源</option>

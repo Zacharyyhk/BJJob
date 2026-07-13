@@ -1,34 +1,24 @@
 # Codex 招聘数据自动化运行规范
 
-当前不启用远端定时任务。本文件用于将来创建 Codex 自动化，或在当前 Codex 对话中手动运行完整流程。
+本项目使用本地 Codex 自动化完成“原始数据采集 → 大模型语义分析 → 完整性校验 → 自动提交推送 → GitHub Pages 自动发布”。不再设置人工批准文件或发布确认短语。
 
-## 自动化允许执行的阶段
+## 自动化执行流程
 
 1. 运行原始数据采集器：
    - `python scripts/collect_bj_rsj.py --weekly`
    - `python scripts/collect_other_sources.py`
-2. 运行 `python scripts/prepare_codex_analysis.py` 生成增量队列。
-3. 按 `CODEX_ANALYSIS.md` 直接理解原始正文、接口响应和附件行，分析全部 pending 记录并写回 `data/ai-analysis.json`。
+2. 运行 `python scripts/prepare_codex_analysis.py` 生成增量分析队列。
+3. 按 `CODEX_ANALYSIS.md` 由当前 Codex 模型直接理解原始正文、接口响应、职位描述和附件原始行，分析全部 pending 记录并写回 `data/ai-analysis.json`。
 4. 再次运行准备脚本，必须得到 `pending_count: 0`。
 5. 运行 `python scripts/validate_codex_analysis.py`，必须得到 `status: valid`。
-6. 构建页面并向用户报告结果数量、明确符合、需确认、不符合及校验状态。
+6. 运行 `pnpm build:pages`，确保页面可以生产构建。
+7. 仅在以上步骤全部成功后，提交本次采集数据和语义分析结果并推送 `main`。推送会自动触发 GitHub Pages 部署。
+8. 如果没有实质数据或分析变化，不创建空提交，也不重复发布。
 
-## 自动化禁止执行的阶段
+## 发布安全边界
 
-- 不得运行 `--approve`，不得自行生成人工批准文件。
-- 不得触发 GitHub Pages 部署。
-- 不得在存在 pending、校验错误或证据缺失时提交发布结果。
-- 不得使用 Python 或正则表达式替代大模型做专业、户籍、届别、经验、职责或截止时间语义判断。
-
-## 人工审核与发布
-
-审核者确认页面与分析结果后运行：
-
-```powershell
-python scripts/validate_codex_analysis.py --approve --approved-by "审核者说明"
-git add data/ai-analysis.json data/release-approval.json
-git commit -m "Approve reviewed recruitment analysis"
-git push origin main
-```
-
-随后在 GitHub Actions 中手动运行 `Deploy reviewed GitHub Pages`，并输入确认短语 `publish-reviewed-analysis`。部署工作流会重新校验批准指纹；数据或分析发生任何变化都会使旧批准失效。
+- 存在 pending、校验错误、证据缺失或构建失败时，不得提交或推送。
+- 不得使用 Python、关键词或正则表达式代替大模型做专业、户籍、届别、经验、职责或截止时间的语义判断。
+- Python 采集器只保留来源原始数据和必要的来源定位信息，不做岗位是否符合个人条件的预处理。
+- 自动化必须保留工作区中已有的无关用户改动，不得覆盖或一并提交。
+- 推送失败时应先安全同步远端变更，确认无冲突后再重试；禁止强制推送覆盖远端。
