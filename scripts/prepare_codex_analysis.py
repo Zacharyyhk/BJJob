@@ -14,6 +14,7 @@ OTHER = ROOT / "data/collected/other-sources.json"
 PROFILE = ROOT / "data/profile.json"
 ANALYSIS = ROOT / "data/ai-analysis.json"
 QUEUE = ROOT / "data/ai-pending.json"
+PROMPT_VERSION = 9
 
 
 def digest(value: Any) -> str:
@@ -61,7 +62,7 @@ def main() -> int:
     previous = analysis.get("results", {})
     pending = []
     for job in jobs():
-        content_hash = digest({"job": job, "profile": profile, "prompt_version": 9})
+        content_hash = digest({"job": job, "profile": profile, "prompt_version": PROMPT_VERSION})
         if previous.get(job["id"], {}).get("content_hash") == content_hash:
             continue
         pending.append({"id": job["id"], "content_hash": content_hash, "job": job})

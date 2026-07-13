@@ -1,9 +1,12 @@
-name: Deploy GitHub Pages
+name: Deploy reviewed GitHub Pages
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
+    inputs:
+      confirmation:
+        description: Type publish-reviewed-analysis after human review
+        required: true
+        type: string
 
 permissions:
   contents: read
@@ -20,6 +23,19 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Confirm reviewed release
+        shell: bash
+        run: |
+          if [[ "${{ inputs.confirmation }}" != "publish-reviewed-analysis" ]]; then
+            echo "Confirmation phrase does not match."
+            exit 1
+          fi
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate analysis and human approval
+        run: python scripts/validate_codex_analysis.py --require-approval
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
