@@ -5,7 +5,8 @@
 ## 自动化执行流程
 
 1. 运行原始数据采集器：
-   - `python scripts/collect_bj_rsj.py --weekly`
+   - 每日增量：`python scripts/collect_bj_rsj.py`
+   - 每周一复查历史公告：`python scripts/collect_bj_rsj.py --weekly`（当日不再重复运行增量命令）
    - `python scripts/collect_other_sources.py`
 2. 运行 `python scripts/prepare_codex_analysis.py` 生成增量分析队列。
 3. 按 `CODEX_ANALYSIS.md` 由当前 Codex 模型直接理解原始正文、接口响应、职位描述和附件原始行，分析全部 pending 记录并写回 `data/ai-analysis.json`。
@@ -18,7 +19,9 @@
 ## 发布安全边界
 
 - 存在 pending、校验错误、证据缺失或构建失败时，不得提交或推送。
+- 采集后的岗位或成功来源数量异常大幅下降时，视为来源故障，不得用不完整结果覆盖线上数据。
 - 不得使用 Python、关键词或正则表达式代替大模型做专业、户籍、届别、经验、职责或截止时间的语义判断。
 - Python 采集器只保留来源原始数据和必要的来源定位信息，不做岗位是否符合个人条件的预处理。
 - 自动化必须保留工作区中已有的无关用户改动，不得覆盖或一并提交。
 - 推送失败时应先安全同步远端变更，确认无冲突后再重试；禁止强制推送覆盖远端。
+- 推送后应核对对应 GitHub Actions 运行结果；只有部署成功且线上页面可访问，才报告本轮发布完成。
