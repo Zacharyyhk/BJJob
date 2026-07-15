@@ -3,27 +3,27 @@
   "notices": {
     "https://rsj.beijing.gov.cn/xxgk/gkzp/202607/t20260710_4756650.html": {
       "content_hash": "41618f2d024e5100b73a517cf8b75e5e40a1653a5c6343d4a8afd4ec1dd1c9d4",
-      "last_checked_at": "2026-07-14T22:27:11+08:00",
+      "last_checked_at": "2026-07-15T21:30:15+08:00",
       "published_at": "2026-07-10"
     },
     "https://rsj.beijing.gov.cn/xxgk/gkzp/202607/t20260710_4756640.html": {
       "content_hash": "5227e9fafb0f4f01b114d92f39fcae206f02fa28597b8f650c2920bb360ea35c",
-      "last_checked_at": "2026-07-14T22:27:16+08:00",
+      "last_checked_at": "2026-07-15T21:30:20+08:00",
       "published_at": "2026-07-10"
     },
     "https://rsj.beijing.gov.cn/xxgk/gkzp/202607/t20260710_4756608.html": {
       "content_hash": "2f1af7b2f65d823630af26bd9e77879be06370b3380390e576d045cc501b30ad",
-      "last_checked_at": "2026-07-14T22:27:24+08:00",
+      "last_checked_at": "2026-07-15T21:30:27+08:00",
       "published_at": "2026-07-10"
     },
     "https://rsj.beijing.gov.cn/xxgk/gkzp/202607/t20260710_4756592.html": {
       "content_hash": "2f9ec9b7ed2c005399bb8e216e806fff45315dbd31fe7b22696728db6cd8fb84",
-      "last_checked_at": "2026-07-14T22:27:29+08:00",
+      "last_checked_at": "2026-07-15T21:30:37+08:00",
       "published_at": "2026-07-10"
     },
     "https://rsj.beijing.gov.cn/xxgk/gkzp/202607/t20260709_4753959.html": {
       "content_hash": "5d8b9bc55508f040a72d00ebd13c29b53ac1b9d9548590a98feaf676d4bfaa1e",
-      "last_checked_at": "2026-07-14T22:27:36+08:00",
+      "last_checked_at": "2026-07-15T21:30:42+08:00",
       "published_at": "2026-07-09"
     },
     "https://rsj.beijing.gov.cn/xxgk/gkzp/202607/t20260709_4753938.html": {
@@ -63,20 +63,45 @@
     },
     "https://rsj.beijing.gov.cn/xxgk/gkzp/202607/t20260713_4759939.html": {
       "content_hash": "243c8ab916ea8a523bba1fef7c8415e78fdee431fc48f488aa3c0e9d8aceca7d",
-      "last_checked_at": "2026-07-14T22:26:58+08:00",
+      "last_checked_at": "2026-07-15T21:30:01+08:00",
       "published_at": "2026-07-13"
     },
     "https://rsj.beijing.gov.cn/xxgk/gkzp/202607/t20260713_4759831.html": {
       "content_hash": "13bf38c1ef67e2a913fa33a8e385d00d6f8eb6d8a144d8e0834c64a386ffcafd",
-      "last_checked_at": "2026-07-14T22:27:04+08:00",
+      "last_checked_at": "2026-07-15T21:30:07+08:00",
       "published_at": "2026-07-13"
+    },
+    "https://rsj.beijing.gov.cn/xxgk/gkzp/202607/t20260715_4764448.html": {
+      "content_hash": "886ed17124719f75fcac82f608cccaef99084cea06d9bcc698a796af6afd64a3",
+      "last_checked_at": "2026-07-15T21:29:25+08:00",
+      "published_at": "2026-07-15"
+    },
+    "https://rsj.beijing.gov.cn/xxgk/gkzp/202607/t20260715_4764364.html": {
+      "content_hash": "13276b39ed925084f19a88dfd9feb19f149dffbb75fe87abf5b18396d94345fc",
+      "last_checked_at": "2026-07-15T21:29:33+08:00",
+      "published_at": "2026-07-15"
+    },
+    "https://rsj.beijing.gov.cn/xxgk/gkzp/202607/t20260715_4764308.html": {
+      "content_hash": "535fa3797b614d4251cf33b2093bf7f524e76144c476eea2ce5136d9ade96789",
+      "last_checked_at": "2026-07-15T21:29:39+08:00",
+      "published_at": "2026-07-15"
+    },
+    "https://rsj.beijing.gov.cn/xxgk/gkzp/202607/t20260715_4764251.html": {
+      "content_hash": "3a3d637a6a47273904881f46e75de14fc1744816b3e3016c340fc3f715f52f2c",
+      "last_checked_at": "2026-07-15T21:29:47+08:00",
+      "published_at": "2026-07-15"
+    },
+    "https://rsj.beijing.gov.cn/xxgk/gkzp/202607/t20260715_4763528.html": {
+      "content_hash": "aa78972c06d8e1cbe99d79d07cad7c509676f00a8a4494aba255e36f6afdca3c",
+      "last_checked_at": "2026-07-15T21:29:54+08:00",
+      "published_at": "2026-07-15"
     }
   },
-  "last_run_at": "2026-07-14T22:28:12+08:00",
+  "last_run_at": "2026-07-15T21:30:42+08:00",
   "last_run_summary": {
-    "created": 2,
+    "created": 5,
     "updated": 0,
-    "unchanged": 10,
+    "unchanged": 7,
     "failed": 0
   }
 }
