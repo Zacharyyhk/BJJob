@@ -179,7 +179,9 @@ const rawJobs = [...jobs, ...otherJobs].map((job) => ({
 }));
 
 const allJobs = [...new Map(rawJobs.map((job) => [
-  [job.organization, job.title, job.major, job.education, job.headcount, job.publishedAt].join("|"),
+  job.sourceGroup === "互联网大厂"
+    ? job.id
+    : [job.organization, job.title, job.major, job.education, job.headcount, job.publishedAt].join("|"),
   job,
 ])).values()];
 
