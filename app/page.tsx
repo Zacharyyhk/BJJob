@@ -58,6 +58,17 @@ type Job = Position & {
   establishmentType: string;
 };
 
+type OtherSourceItem = Position & {
+  id: string;
+  title: string;
+  organization: string;
+  published_at: string;
+  source_url: string;
+  source_name: string;
+  category: string;
+  deadline?: string;
+};
+
 type MatchResult = { level: "match" | "possible" | "no"; label: string; reasons: string[]; needsConfirmation: string[] };
 
 type AiMatch = {
@@ -121,7 +132,7 @@ const jobs: Job[] = notices.flatMap<Job>((notice): Job[] => {
   }));
 });
 
-const otherJobs: Job[] = otherSources.items.map((item) => {
+const otherJobs: Job[] = (otherSources.items as OtherSourceItem[]).map((item) => {
   return {
     id: item.id,
     title: item.title,
