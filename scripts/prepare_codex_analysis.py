@@ -22,6 +22,27 @@ def digest(value: Any) -> str:
     return hashlib.sha256(encoded.encode("utf-8")).hexdigest()
 
 
+def position_ids(notice_id: str, positions: list[dict[str, Any]]) -> list[str]:
+    """Return stable IDs, including attachment identity when sheet/row collide."""
+    bases = [
+        f"{notice_id}-{position.get('sheet') or 'position'}-{position.get('row') or index}"
+        for index, position in enumerate(positions)
+    ]
+    counts = {base: bases.count(base) for base in set(bases)}
+    used: dict[str, int] = {}
+    result: list[str] = []
+    for index, (base, position) in enumerate(zip(bases, positions)):
+        if counts[base] == 1:
+            result.append(base)
+            continue
+        attachment_url = str(position.get("source_attachment_url", ""))
+        identity = attachment_url.split("?", 1)[0].rstrip("/").rsplit("/", 1)[-1] or f"position-{index}"
+        candidate = f"{base}-{identity}"
+        used[candidate] = used.get(candidate, 0) + 1
+        result.append(candidate if used[candidate] == 1 else f"{candidate}-{used[candidate]}")
+    return result
+
+
 def jobs() -> list[dict[str, Any]]:
     result: list[dict[str, Any]] = []
     rsj = json.loads(RSJ.read_text(encoding="utf-8"))
@@ -29,10 +50,11 @@ def jobs() -> list[dict[str, Any]]:
         positions = notice.get("positions", [])
         if not positions:
             positions = [{"title": notice.get("title"), "organization": notice.get("publisher"), "sheet": "notice", "row": 0}]
-        for index, position in enumerate(positions):
+        ids = position_ids(notice["id"], positions)
+        for position, job_id in zip(positions, ids):
             item = dict(position)
             item.update({
-                "id": f"{notice['id']}-{position.get('sheet') or 'position'}-{position.get('row') or index}",
+                "id": job_id,
                 "notice_title": notice.get("title", ""), "publisher": notice.get("publisher", ""),
                 "published_at": notice.get("published_at", ""), "deadline": notice.get("deadline", ""),
                 "source_url": notice.get("source_url", ""),

@@ -97,6 +97,23 @@ const aiResults = aiData.results;
 
 const notices = collected.notices as Notice[];
 
+function positionIds(noticeId: string, positions: Position[]) {
+  const bases = positions.map((position, index) => `${noticeId}-${position.sheet || "position"}-${position.row || index}`);
+  const counts = new Map<string, number>();
+  bases.forEach((base) => counts.set(base, (counts.get(base) || 0) + 1));
+  const used = new Map<string, number>();
+  return positions.map((position, index) => {
+    const base = bases[index];
+    if (counts.get(base) === 1) return base;
+    const attachmentUrl = position.source_attachment_url || "";
+    const identity = attachmentUrl.split("?", 1)[0].replace(/\/$/, "").split("/").pop() || `position-${index}`;
+    const candidate = `${base}-${identity}`;
+    const occurrence = (used.get(candidate) || 0) + 1;
+    used.set(candidate, occurrence);
+    return occurrence === 1 ? candidate : `${candidate}-${occurrence}`;
+  });
+}
+
 const jobs: Job[] = notices.flatMap<Job>((notice): Job[] => {
   if (!notice.positions.length) {
     return [{
@@ -115,9 +132,10 @@ const jobs: Job[] = notices.flatMap<Job>((notice): Job[] => {
       establishmentType: "事业编制",
     }];
   }
+  const ids = positionIds(notice.id, notice.positions);
   return notice.positions.map((position, index) => ({
     ...position,
-    id: `${notice.id}-${position.sheet || "position"}-${position.row || index}`,
+    id: ids[index],
     noticeTitle: notice.title,
     publisher: notice.publisher,
     publishedAt: notice.published_at,
@@ -240,7 +258,7 @@ function matchForProfile(job: Job): MatchResult {
       needsConfirmation: (ai.needs_confirmation || []).slice(0, 3),
     };
   }
-  return { level: "possible", label: "待分析", reasons: [], needsConfirmation: ["等待大模型读取原始招聘信息"] };
+  return { level: "possible", label: "待分析", reasons: [], needsConfirmation: ["等待 Codex 语义分析"] };
 }
 
 const displayJobs = currentJobs.filter((job) => matchForProfile(job).level !== "no");
