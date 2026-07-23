@@ -103,11 +103,25 @@ def extract_detail(session: requests.Session, item: dict[str, Any]) -> dict[str,
     response = session.get(item["source_url"], timeout=30, headers={"Referer": item["source_home"]})
     response.raise_for_status()
     response.encoding = response.apparent_encoding or "utf-8"
-    soup = BeautifulSoup(response.text, "html.parser")
-    for node in soup.select("script,style,nav,header,footer"):
-        node.decompose()
-    container = soup.select_one("article,.TRS_Editor,.article-content,.content,#zoom,#content") or soup.body or soup
-    text = clean(container.get_text(" ", strip=True))
+
+    def document(parsed_response: requests.Response) -> tuple[BeautifulSoup, str]:
+        parsed_soup = BeautifulSoup(parsed_response.text, "html.parser")
+        for node in parsed_soup.select("script,style,nav,header,footer"):
+            node.decompose()
+        container = parsed_soup.select_one("article,.TRS_Editor,.article-content,.content,#zoom,#content") or parsed_soup.body or parsed_soup
+        return parsed_soup, clean(container.get_text(" ", strip=True))
+
+    soup, text = document(response)
+    host = urlparse(item["source_url"]).netloc.removeprefix("www.")
+    if host == "sasac.gov.cn" and len(text) < 200:
+        mobile_url = item["source_url"].replace("www.sasac.gov.cn", "wap.sasac.gov.cn").replace("http://", "https://", 1)
+        mobile_response = session.get(mobile_url, timeout=30, headers={"Referer": item["source_home"]})
+        mobile_response.raise_for_status()
+        mobile_response.encoding = mobile_response.apparent_encoding or "utf-8"
+        mobile_soup, mobile_text = document(mobile_response)
+        if len(mobile_text) > len(text):
+            response, soup, text = mobile_response, mobile_soup, mobile_text
+
     if len(text) < 30:
         return item
 

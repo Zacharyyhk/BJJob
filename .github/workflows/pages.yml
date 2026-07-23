@@ -25,6 +25,11 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: pip
+      - name: Install collector dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Test collectors
+        run: python -m unittest discover -s tests -p "test_*.py"
       - name: Validate semantic analysis
         run: python scripts/validate_codex_analysis.py
       - name: Setup pnpm
@@ -38,6 +43,8 @@ jobs:
           cache: pnpm
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+      - name: Test data and page contracts
+        run: pnpm test:data
       - name: Build static site
         run: pnpm build:pages
       - name: Configure Pages

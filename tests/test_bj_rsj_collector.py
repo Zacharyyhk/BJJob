@@ -80,6 +80,35 @@ class CollectorParsingTests(unittest.TestCase):
         self.assertNotIn("deadline", item)
         self.assertEqual(item["attachments"][0]["url"], "https://example.com/jobs.xlsx")
 
+    def test_sasac_detail_falls_back_to_complete_official_mobile_page(self):
+        class Response:
+            apparent_encoding = "utf-8"
+
+            def __init__(self, url, text):
+                self.url = url
+                self.text = text
+
+            def raise_for_status(self):
+                return None
+
+        class Session:
+            def get(self, url, **_kwargs):
+                if "wap.sasac.gov.cn" in url:
+                    return Response(url, """<article><h1>设计岗位招募</h1>
+                        <p>工作地点：河北省保定市</p>
+                        <p>需求专业：力学类、航空航天类、机械类、自动化类、电气类、材料类相关专业</p>
+                        <p>这是移动页保留的完整公开招聘正文，用于模型后续语义分析。</p></article>""")
+                return Response(url, "<article><h1>设计岗位招募</h1></article>")
+
+        item = {
+            "source_url": "http://www.sasac.gov.cn/example/content.html",
+            "source_home": "http://www.sasac.gov.cn/example/",
+        }
+        other_collector.extract_detail(Session(), item)
+        self.assertIn("工作地点：河北省保定市", item["body_text"])
+        self.assertIn("需求专业：力学类", item["body_text"])
+        self.assertNotIn("major", item)
+
     def test_attachment_positions_inherit_announcement_body(self):
         workbook = Workbook()
         sheet = workbook.active

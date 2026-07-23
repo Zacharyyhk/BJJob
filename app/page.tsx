@@ -117,7 +117,7 @@ function positionIds(noticeId: string, positions: Position[]) {
 const jobs: Job[] = notices.flatMap<Job>((notice): Job[] => {
   if (!notice.positions.length) {
     return [{
-      id: `${notice.id}-notice`,
+      id: `${notice.id}-notice-0`,
       title: notice.title,
       organization: notice.publisher,
       noticeTitle: notice.title,
@@ -261,7 +261,7 @@ function matchForProfile(job: Job): MatchResult {
   return { level: "possible", label: "待分析", reasons: [], needsConfirmation: ["等待 Codex 语义分析"] };
 }
 
-const displayJobs = currentJobs.filter((job) => matchForProfile(job).level !== "no");
+const displayJobs = currentJobs.filter((job) => aiResults[job.id] && matchForProfile(job).level !== "no");
 
 export default function Home() {
   const [query, setQuery] = useState("");

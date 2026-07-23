@@ -5,6 +5,7 @@
 ## 自动化执行流程
 
 1. 运行原始数据采集器：
+   - 首次运行或依赖变化后：`python -m pip install -r requirements.txt`
    - 每日增量：`python scripts/collect_bj_rsj.py`
    - 每周一复查历史公告：`python scripts/collect_bj_rsj.py --weekly`（当日不再重复运行增量命令）
    - `python scripts/collect_other_sources.py`
@@ -12,7 +13,7 @@
 3. 按 `CODEX_ANALYSIS.md` 由当前 Codex 模型直接理解原始正文、接口响应、职位描述和附件原始行，分析全部 pending 记录并写回 `data/ai-analysis.json`。
 4. 再次运行准备脚本，必须得到 `pending_count: 0`。
 5. 运行 `python scripts/validate_codex_analysis.py`，必须得到 `status: valid`。
-6. 运行 `pnpm build:pages`，确保页面可以生产构建。
+6. 运行 Python 采集器测试、`pnpm test:data` 和 `pnpm build:pages`，确保采集、岗位 ID、页面规则与生产构建全部通过。
 7. 仅在以上步骤全部成功后，提交本次采集数据和语义分析结果并推送 `main`。推送会自动触发 GitHub Pages 部署。
 8. 如果没有实质数据或分析变化，不创建空提交，也不重复发布。
 
