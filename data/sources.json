@@ -82,68 +82,64 @@
   },
   {
     "id": "bytedance-jobs",
-    "name": "字节跳动招聘",
+    "name": "字节跳动校园招聘",
     "group": "互联网大厂",
-    "url": "https://jobs.bytedance.com/campus/",
+    "url": "https://jobs.bytedance.com/campus/position",
+    "ats_origin": "https://jobs.bytedance.com",
+    "portal_type": 3,
+    "portal_channel": "campus",
+    "recruitment_id_list": [
+      "201"
+    ],
+    "organization": "字节跳动",
     "priority": "P1",
-    "status": "接口受限",
+    "status": "已确认",
     "schedule": "08:30,18:30",
-    "scope": "北京校招、实习和社会招聘",
-    "mode": "仅在可确认职位在线状态后展示"
-  },
-  {
-    "id": "baidu-jobs",
-    "name": "百度招聘",
-    "group": "互联网大厂",
-    "url": "https://talent.baidu.com/jobs/",
-    "priority": "P1",
-    "status": "待接口验证",
-    "schedule": "08:30,18:30",
-    "scope": "北京校招、实习和社会招聘",
-    "mode": "职位接口"
-  },
-  {
-    "id": "jd-jobs",
-    "name": "京东招聘",
-    "group": "互联网大厂",
-    "url": "https://zhaopin.jd.com/",
-    "priority": "P1",
-    "status": "待接口验证",
-    "schedule": "08:30,18:30",
-    "scope": "北京校招和社会招聘",
-    "mode": "职位接口"
+    "scope": "北京校招正式岗位；社招与实习不采集",
+    "mode": "官方校园招聘岗位接口"
   },
   {
     "id": "meituan-jobs",
-    "name": "美团北京社会招聘",
+    "name": "美团校园招聘",
     "group": "互联网大厂",
-    "url": "https://zhaopin.meituan.com/web/social?cityList=001001&pageNo=1",
+    "url": "https://zhaopin.meituan.com/web/campus",
     "priority": "P1",
-    "status": "待接口验证",
+    "status": "已确认",
     "schedule": "08:30,18:30",
-    "scope": "已按北京城市过滤的社会招聘岗位",
-    "mode": "职位接口"
+    "scope": "北京校招正式岗位；社招与实习不采集",
+    "mode": "官方校园招聘岗位接口"
   },
   {
     "id": "tencent-jobs",
-    "name": "腾讯招聘",
+    "name": "腾讯校园招聘",
     "group": "互联网大厂",
-    "url": "https://careers.tencent.com/search.html",
+    "url": "https://join.qq.com/",
+    "project_mapping_ids": [
+      1,
+      14
+    ],
     "priority": "P1",
     "status": "已确认",
     "schedule": "08:30,18:30",
-    "scope": "腾讯北京社会招聘岗位",
-    "mode": "官方职位接口"
+    "scope": "北京正式应届与青云应届项目；社招与实习项目不采集",
+    "mode": "官方校园招聘项目、搜索与详情接口"
   },
   {
     "id": "xiaomi-jobs",
-    "name": "小米招聘",
+    "name": "小米校园招聘",
     "group": "互联网大厂",
-    "url": "https://hr.xiaomi.com/campus",
+    "url": "https://xiaomi.jobs.f.mioffice.cn/campus/?spread=J7NS6YR",
+    "ats_origin": "https://xiaomi.jobs.f.mioffice.cn",
+    "portal_type": 6,
+    "portal_channel": "saas-career",
+    "recruitment_id_list": [
+      "2"
+    ],
+    "organization": "小米",
     "priority": "P1",
     "status": "已确认",
     "schedule": "08:30,18:30",
-    "scope": "小米北京校招、实习和设计相关岗位",
-    "mode": "官方职位详情页"
+    "scope": "北京校招正式岗位；社招与实习不采集",
+    "mode": "官方校园招聘岗位接口"
   }
 ]

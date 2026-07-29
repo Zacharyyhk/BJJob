@@ -11,12 +11,15 @@ from __future__ import annotations
 import hashlib
 import io
 import json
+import os
 import re
+import shutil
+import subprocess
 import time
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from typing import Any, Callable
-from urllib.parse import quote_plus, urljoin, urlparse
+from urllib.parse import quote, quote_plus, urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
@@ -31,12 +34,165 @@ INCLUDE_RE = re.compile(r"招聘|招录|考录|公务员|事业单位|校园招�
 EXCLUDE_RE = re.compile(r"登录|注册|隐私|关于我们|网站地图|联系我们|帮助|政策法规|成绩查询|报名入口")
 DATE_RE = re.compile(r"(20\d{2})[-年./](\d{1,2})[-月./](\d{1,2})日?")
 ATTACHMENT_RE = re.compile(r"\.(xlsx?|docx?|pdf|zip|rar)(?:\?.*)?$", re.I)
+ATS_SIGNER_PATH = ROOT / "scripts" / "ats_signer.mjs"
+ATS_USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+)
+JS_QUOTE_SAFE = "~()*!.'-"
+_ATS_SIGNER: "AtsSigner | None" = None
+
+
 def clean(value: Any) -> str:
     return re.sub(r"\s+", " ", str(value or "")).strip()
 
 
 def now_iso() -> str:
     return datetime.now(BEIJING_TZ).replace(microsecond=0).isoformat()
+
+
+def date_from_milliseconds(value: Any) -> str:
+    try:
+        return datetime.fromtimestamp(int(value) / 1000, BEIJING_TZ).date().isoformat()
+    except (TypeError, ValueError, OSError):
+        return ""
+
+
+class AtsSigner:
+    """Keep the official ATS front-end signer loaded in one Node process."""
+
+    def __init__(self, node_binary: str | None = None) -> None:
+        node = node_binary or os.environ.get("CODEX_NODE_BINARY") or shutil.which("node")
+        if not node:
+            raise RuntimeError("Node.js is required for the official ATS request signer")
+        self.process = subprocess.Popen(
+            [node, str(ATS_SIGNER_PATH)],
+            stdin=subprocess.PIPE,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+            encoding="utf-8",
+            bufsize=1,
+        )
+
+    def sign(self, url: str, body: dict[str, Any] | None = None) -> str:
+        if not self.process.stdin or not self.process.stdout:
+            raise RuntimeError("ATS signer process streams are unavailable")
+        self.process.stdin.write(json.dumps({"url": url, "body": body or {}}, ensure_ascii=False) + "\n")
+        self.process.stdin.flush()
+        line = self.process.stdout.readline()
+        if not line:
+            error = self.process.stderr.read() if self.process.stderr else ""
+            raise RuntimeError(f"ATS signer stopped unexpectedly: {clean(error)[:240]}")
+        result = json.loads(line)
+        if result.get("error"):
+            raise RuntimeError(f"ATS signer failed: {result['error']}")
+        return clean(result.get("signature"))
+
+    def close(self) -> None:
+        if self.process.poll() is not None:
+            return
+        if self.process.stdin:
+            self.process.stdin.close()
+        try:
+            self.process.wait(timeout=5)
+        except subprocess.TimeoutExpired:
+            self.process.terminate()
+            self.process.wait(timeout=5)
+
+
+def get_ats_signer() -> AtsSigner:
+    global _ATS_SIGNER
+    if _ATS_SIGNER is None:
+        _ATS_SIGNER = AtsSigner()
+    return _ATS_SIGNER
+
+
+def close_ats_signer() -> None:
+    global _ATS_SIGNER
+    if _ATS_SIGNER is not None:
+        _ATS_SIGNER.close()
+        _ATS_SIGNER = None
+
+
+def js_query_value(value: Any) -> str:
+    if isinstance(value, list):
+        return ",".join(js_query_value(item) for item in value)
+    if value is None:
+        return "null"
+    if value is True:
+        return "true"
+    if value is False:
+        return "false"
+    return str(value)
+
+
+def ats_headers(source: dict[str, Any], csrf_token: str = "") -> dict[str, str]:
+    headers = {
+        "Content-Type": "application/json",
+        "Accept-Language": "zh-CN",
+        "Portal-Channel": source["portal_channel"],
+        "Portal-Platform": "pc",
+        "website-path": "campus",
+        "Referer": source["url"],
+        "User-Agent": ATS_USER_AGENT,
+    }
+    if csrf_token:
+        headers["x-csrf-token"] = csrf_token
+    return headers
+
+
+def ats_csrf_token(session: requests.Session, source: dict[str, Any]) -> str:
+    response = session.post(
+        source["ats_origin"] + "/api/v1/csrf/token",
+        timeout=30,
+        headers=ats_headers(source),
+        data="{}",
+    )
+    response.raise_for_status()
+    token = clean((response.json().get("data") or {}).get("token"))
+    if not token:
+        raise RuntimeError("official ATS CSRF endpoint returned no token")
+    return token
+
+
+def ats_signed_request(
+    session: requests.Session,
+    source: dict[str, Any],
+    method: str,
+    path: str,
+    body: dict[str, Any] | None,
+    csrf_token: str,
+    signer: AtsSigner | None = None,
+) -> requests.Response:
+    signer = signer or get_ats_signer()
+    signed_path = path
+    if method.upper() == "POST" and body:
+        query = "&".join(
+            f"{key}={quote(js_query_value(value), safe=JS_QUOTE_SAFE)}"
+            for key, value in body.items()
+        )
+        signed_path += ("&" if "?" in signed_path else "?") + query
+    signature = signer.sign(signed_path, body if method.upper() == "POST" else {})
+    request_url = (
+        source["ats_origin"]
+        + signed_path
+        + ("&" if "?" in signed_path else "?")
+        + "_signature="
+        + quote(signature, safe=JS_QUOTE_SAFE)
+    )
+    payload = None
+    if method.upper() == "POST":
+        payload = json.dumps(body or {}, ensure_ascii=False, separators=(",", ":"))
+    response = session.request(
+        method,
+        request_url,
+        timeout=40,
+        headers=ats_headers(source, csrf_token),
+        data=payload,
+    )
+    response.raise_for_status()
+    return response
 
 
 def make_item(source: dict[str, Any], title: str, url: str, published: str = "", organization: str = "",
@@ -66,6 +222,20 @@ def published_from(text: str) -> str:
         return ""
     year, month, day = match.groups()
     return f"{int(year):04d}-{int(month):02d}-{int(day):02d}"
+
+
+def set_text_encoding(response: requests.Response) -> None:
+    response.encoding = (
+        getattr(response, "apparent_encoding", None)
+        or getattr(response, "encoding", None)
+        or "utf-8"
+    )
+
+
+def official_tls_options(url: str) -> dict[str, bool]:
+    """Work around the official SASAC redirect chain's incomplete CA bundle."""
+    host = (urlparse(url).hostname or "").removeprefix("www.")
+    return {"verify": False} if host.endswith("sasac.gov.cn") else {}
 
 
 def same_site(base: str, candidate: str) -> bool:
@@ -100,9 +270,14 @@ def parse_links(source: dict[str, Any], response: requests.Response, allow_exter
 
 def extract_detail(session: requests.Session, item: dict[str, Any]) -> dict[str, Any]:
     """Collect one announcement body and its attachment links without judging semantics."""
-    response = session.get(item["source_url"], timeout=30, headers={"Referer": item["source_home"]})
+    response = session.get(
+        item["source_url"],
+        timeout=30,
+        headers={"Referer": item["source_home"]},
+        **official_tls_options(item["source_url"]),
+    )
     response.raise_for_status()
-    response.encoding = response.apparent_encoding or "utf-8"
+    set_text_encoding(response)
 
     def document(parsed_response: requests.Response) -> tuple[BeautifulSoup, str]:
         parsed_soup = BeautifulSoup(parsed_response.text, "html.parser")
@@ -115,9 +290,14 @@ def extract_detail(session: requests.Session, item: dict[str, Any]) -> dict[str,
     host = urlparse(item["source_url"]).netloc.removeprefix("www.")
     if host == "sasac.gov.cn" and len(text) < 200:
         mobile_url = item["source_url"].replace("www.sasac.gov.cn", "wap.sasac.gov.cn").replace("http://", "https://", 1)
-        mobile_response = session.get(mobile_url, timeout=30, headers={"Referer": item["source_home"]})
+        mobile_response = session.get(
+            mobile_url,
+            timeout=30,
+            headers={"Referer": item["source_home"]},
+            **official_tls_options(mobile_url),
+        )
         mobile_response.raise_for_status()
-        mobile_response.encoding = mobile_response.apparent_encoding or "utf-8"
+        set_text_encoding(mobile_response)
         mobile_soup, mobile_text = document(mobile_response)
         if len(mobile_text) > len(text):
             response, soup, text = mobile_response, mobile_soup, mobile_text
@@ -176,7 +356,7 @@ def workbook_positions(content: bytes, attachment_url: str, notice: dict[str, An
 def static_adapter(session: requests.Session, source: dict[str, Any], **kwargs: Any) -> tuple[list[dict[str, str]], str, str]:
     response = session.get(source["url"], timeout=30, allow_redirects=True)
     response.raise_for_status()
-    response.encoding = response.apparent_encoding or "utf-8"
+    set_text_encoding(response)
     items = parse_links(source, response, **kwargs)
     if source["group"] != "互联网大厂":
         for index, item in enumerate(items):
@@ -193,7 +373,12 @@ def static_adapter(session: requests.Session, source: dict[str, Any], **kwargs: 
                 if not re.search(r"\.xlsx?(?:\?.*)?$", attachment["url"], re.I):
                     continue
                 try:
-                    content = session.get(attachment["url"], timeout=40, headers={"Referer": item["source_url"]}).content
+                    content = session.get(
+                        attachment["url"],
+                        timeout=40,
+                        headers={"Referer": item["source_url"]},
+                        **official_tls_options(attachment["url"]),
+                    ).content
                     parsed = workbook_positions(content, attachment["url"], item)
                     attachment["position_count"] = len(parsed)
                     positions.extend(parsed)
@@ -211,7 +396,7 @@ def yearly_civil_service(session: requests.Session, source: dict[str, Any]) -> t
     for year in years:
         url = f"http://bm.scs.gov.cn/kl{year}"
         response = session.get(url, timeout=30, allow_redirects=True)
-        response.encoding = response.apparent_encoding or "utf-8"
+        set_text_encoding(response)
         if response.ok and len(response.text) > 1000:
             current = {**source, "url": url, "name": f"{year}年度国考专题"}
             items = parse_links(current, response, allow_external=True)
@@ -325,41 +510,243 @@ def jd_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[list[
     return found, "collected" if found else "collected-empty", endpoint
 
 
+def ats_campus_adapter(
+    session: requests.Session,
+    source: dict[str, Any],
+    signer: AtsSigner | None = None,
+) -> tuple[list[dict[str, str]], str, str]:
+    """Collect the official Beijing formal-campus scope from the shared ATS."""
+    signer = signer or get_ats_signer()
+    csrf_token = ats_csrf_token(session, source)
+    filter_path = f"/api/v1/config/job/filters/{source['portal_type']}"
+    filter_response = ats_signed_request(
+        session, source, "GET", filter_path, None, csrf_token, signer
+    )
+    filter_payload = filter_response.json()
+    if filter_payload.get("code") != 0:
+        raise RuntimeError(f"official ATS filters failed: {clean(filter_payload.get('message'))}")
+
+    found: list[dict[str, Any]] = []
+    offset = 0
+    count = 1
+    endpoint = "/api/v1/search/job/posts"
+    while offset < count:
+        body = {
+            "keyword": "",
+            "limit": 100,
+            "offset": offset,
+            "job_category_id_list": [],
+            "tag_id_list": [],
+            "location_code_list": ["CT_11"],
+            "subject_id_list": [],
+            "recruitment_id_list": source["recruitment_id_list"],
+            "portal_type": source["portal_type"],
+            "job_function_id_list": [],
+            "storefront_id_list": [],
+            "portal_entrance": 1,
+        }
+        response = ats_signed_request(
+            session, source, "POST", endpoint, body, csrf_token, signer
+        )
+        payload = response.json()
+        if payload.get("code") != 0:
+            raise RuntimeError(f"official ATS job search failed: {clean(payload.get('message'))}")
+        data = payload.get("data") or {}
+        rows = data.get("job_post_list") or []
+        count = int(data.get("count") or 0)
+        for row in rows:
+            position_id = clean(row.get("id"))
+            title = clean(row.get("title"))
+            if not position_id or not title:
+                continue
+            body_text = clean("\n".join(
+                value for value in (
+                    clean(row.get("description")),
+                    clean(row.get("requirement")),
+                ) if value
+            ))
+            detail_url = (
+                source["ats_origin"]
+                + f"/campus/position/{quote(position_id, safe='')}/detail"
+            )
+            found.append(make_item(
+                source, title, detail_url,
+                date_from_milliseconds(row.get("publish_time")),
+                source.get("organization", source["name"]),
+                body_text=body_text,
+                raw_fields=row,
+                collection_scope={
+                    "portal_type": source["portal_type"],
+                    "recruitment_id_list": source["recruitment_id_list"],
+                    "location_code_list": ["CT_11"],
+                },
+                data_quality="官方正式校招岗位接口原始数据",
+            ))
+        offset += len(rows)
+        if not rows:
+            break
+    return found, "collected" if found else "collected-empty", source["ats_origin"] + endpoint
+
+
 def bytedance_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[list[dict[str, str]], str, str]:
-    """Do not expose search-indexed detail URLs without a live-job signal."""
-    response = session.get(source["url"], timeout=30)
-    response.raise_for_status()
-    return [], "adapter-blocked", response.url
+    return ats_campus_adapter(session, source)
+
+
+def meituan_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[list[dict[str, str]], str, str]:
+    endpoint = "https://zhaopin.meituan.com/api/official/job/getJobList"
+    found: list[dict[str, Any]] = []
+    page_no = 1
+    total_pages = 1
+    while page_no <= total_pages:
+        body = {
+            "page": {"pageNo": page_no, "pageSize": 100},
+            "jobShareType": "1",
+            "keywords": "",
+            "cityList": [{"code": "001001"}],
+            "department": [],
+            "jfJgList": [],
+            "jobType": [{"code": "1", "subCode": []}],
+            "typeCode": [],
+            "specialCode": [],
+        }
+        response = session.post(
+            endpoint,
+            timeout=40,
+            headers={"Referer": source["url"], "Content-Type": "application/json"},
+            data=json.dumps(body, ensure_ascii=False, separators=(",", ":")),
+        )
+        response.raise_for_status()
+        payload = response.json()
+        if payload.get("status") != 1:
+            raise RuntimeError(f"Meituan official campus search failed: {clean(payload.get('message'))}")
+        data = payload.get("data") or {}
+        page = data.get("page") or {}
+        total_pages = int(page.get("totalPage") or 0)
+        for row in data.get("list") or []:
+            position_id = clean(row.get("jobUnionId"))
+            title = clean(row.get("name"))
+            if not position_id or not title:
+                continue
+            body_text = clean("\n".join(
+                value for value in (
+                    clean(row.get("desc")),
+                    clean(row.get("departmentIntro")),
+                    clean(row.get("jobDuty")),
+                    clean(row.get("jobRequirement")),
+                ) if value
+            ))
+            found.append(make_item(
+                source, title,
+                f"https://zhaopin.meituan.com/web/position/detail?jobUnionId={quote(position_id, safe='')}&jobShareType=1&highlightType=campus",
+                date_from_milliseconds(row.get("refreshTime")),
+                "美团",
+                body_text=body_text,
+                raw_fields=row,
+                collection_scope={
+                    "job_type_code": "1",
+                    "city_code": "001001",
+                },
+                data_quality="美团官方正式校招岗位接口原始数据",
+            ))
+        page_no += 1
+    return found, "collected" if found else "collected-empty", endpoint
 
 
 def tencent_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[list[dict[str, str]], str, str]:
-    endpoint = "https://careers.tencent.com/tencentcareer/api/post/Query"
+    mapping_endpoint = "https://join.qq.com/api/v1/position/getProjectMapping"
+    mapping_response = session.get(mapping_endpoint, timeout=40, headers={"Referer": source["url"]})
+    mapping_response.raise_for_status()
+    mapping_payload = mapping_response.json()
+    if mapping_payload.get("status") != 0:
+        raise RuntimeError(f"Tencent project mapping failed: {clean(mapping_payload.get('message'))}")
+    mappings = mapping_payload.get("data") or []
+    project_contexts: dict[str, dict[str, Any]] = {}
+    for recruit_type in mappings:
+        parent = {
+            key: value
+            for key, value in recruit_type.items()
+            if key != "subProjectList"
+        }
+        for project in recruit_type.get("subProjectList") or []:
+            project_contexts[clean(project.get("projectId"))] = {
+                "recruit_type": parent,
+                "project": project,
+            }
+
+    endpoint = "https://join.qq.com/api/v1/position/searchPosition"
     found = []
-    verified_at = now_iso()
-    for page_index in range(1, 4):
-        response = session.get(endpoint, timeout=40, params={
-            "timestamp": int(time.time() * 1000), "countryId": "", "cityId": "2",
-            "bgIds": "", "productId": "", "categoryId": "", "parentCategoryId": "",
-            "attrId": "", "keyword": "", "pageIndex": page_index, "pageSize": 100,
-            "language": "zh-cn", "area": "cn",
-        }, headers={"Referer": source["url"]})
+    page_index = 1
+    count = 1
+    while len(found) < count:
+        request_body = {
+            "projectIdList": [],
+            "projectMappingIdList": source["project_mapping_ids"],
+            "keyword": "",
+            "bgList": [],
+            "workCountryType": 1,
+            "workCityList": ["2"],
+            "recruitCityList": [],
+            "positionFidList": [],
+            "pageIndex": page_index,
+            "pageSize": 100,
+        }
+        response = session.post(
+            endpoint,
+            timeout=40,
+            headers={"Referer": source["url"], "Content-Type": "application/json"},
+            data=json.dumps(request_body, ensure_ascii=False, separators=(",", ":")),
+        )
         response.raise_for_status()
-        rows = ((response.json().get("Data") or {}).get("Posts") or [])
+        payload = response.json()
+        if payload.get("status") != 0:
+            raise RuntimeError(f"Tencent campus search failed: {clean(payload.get('message'))}")
+        data = payload.get("data") or {}
+        rows = data.get("positionList") or []
+        count = int(data.get("count") or 0)
         for row in rows:
-            if clean(row.get("LocationName")) != "北京" or not row.get("IsValid", True):
-                continue
-            position_id = clean(row.get("PostId"))
-            title = clean(row.get("RecruitPostName"))
+            position_id = clean(row.get("postId"))
+            detail_response = session.get(
+                "https://join.qq.com/api/v1/jobDetails/getJobDetailsByPostId",
+                timeout=40,
+                params={"postId": position_id},
+                headers={"Referer": source["url"]},
+            )
+            detail_response.raise_for_status()
+            detail_payload = detail_response.json()
+            detail = detail_payload.get("data") or {}
+            title = clean(detail.get("title") or row.get("positionTitle"))
             if not position_id or not title:
                 continue
-            found.append(make_item(
-                source, title, f"https://careers.tencent.com/jobdesc.html?postId={position_id}",
-                published_from(clean(row.get("LastUpdateTime"))), "腾讯",
-                last_verified_at=verified_at, raw_fields=row, data_quality="腾讯官方职位接口",
+            body_text = clean("\n".join(
+                value for value in (
+                    clean(detail.get("desc")),
+                    clean(detail.get("request")),
+                    clean(detail.get("graduateBonus")),
+                    clean(detail.get("introduction")),
+                ) if value
             ))
-        if len(rows) < 100:
+            found.append(make_item(
+                source, title,
+                f"https://join.qq.com/post_detail.html?postid={quote(position_id, safe='')}",
+                "", "腾讯",
+                body_text=body_text,
+                raw_fields=detail,
+                search_raw_fields=row,
+                project_context=project_contexts.get(clean(detail.get("projectId"))),
+                collection_scope={
+                    "project_mapping_ids": source["project_mapping_ids"],
+                    "work_city_code": "2",
+                },
+                data_quality="腾讯官方正式校园招聘岗位详情",
+            ))
+        page_index += 1
+        if not rows:
             break
     return found, "collected" if found else "collected-empty", endpoint
+
+
+def xiaomi_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[list[dict[str, str]], str, str]:
+    return ats_campus_adapter(session, source)
 
 
 def api_spa_adapter(session: requests.Session, source: dict[str, Any], endpoint: str) -> tuple[list[dict[str, str]], str, str]:
@@ -399,9 +786,9 @@ SPECIAL: dict[str, Callable[..., tuple[list[dict[str, str]], str, str]]] = {
     "bytedance-jobs": bytedance_adapter,
     "baidu-jobs": baidu_adapter,
     "jd-jobs": jd_adapter,
-    "meituan-jobs": lambda s, x: api_spa_adapter(s, x, "https://zhaopin.meituan.com/api/official/job/getJobList"),
+    "meituan-jobs": meituan_adapter,
     "tencent-jobs": tencent_adapter,
-    "xiaomi-jobs": lambda s, x: static_adapter(s, x),
+    "xiaomi-jobs": xiaomi_adapter,
 }
 
 
@@ -429,11 +816,14 @@ def main() -> int:
     session = requests.Session()
     session.headers.update({"User-Agent": USER_AGENT, "Accept-Language": "zh-CN,zh;q=0.9", "Accept": "text/html,application/json"})
     reports = []
-    for index, source in enumerate(sources):
-        if index: time.sleep(2)
-        report = collect_source(session, source)
-        reports.append(report)
-        print(f"{source['id']}: {report['status']} ({report['item_count']})")
+    try:
+        for index, source in enumerate(sources):
+            if index: time.sleep(2)
+            report = collect_source(session, source)
+            reports.append(report)
+            print(f"{source['id']}: {report['status']} ({report['item_count']})")
+    finally:
+        close_ats_signer()
     all_items = {item["source_url"]: item for report in reports for item in report["items"]}
     output = {"generated_at": now_iso(), "source_count": len(reports),
               "collected_source_count": sum(r["status"] in ("collected", "collected-empty", "seasonal-inactive") for r in reports),
