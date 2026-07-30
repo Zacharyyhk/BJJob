@@ -2,7 +2,7 @@
   "schema_version": 1,
   "profile_version": 4,
   "prompt_version": 9,
-  "generated_at": "2026-07-29T12:54:10.321Z",
+  "generated_at": "2026-07-30T13:25:38.911Z",
   "results": {
     "cf7cee89c85f25ab-hzgwxxb-3": {
       "content_hash": "91e8eeda6b90879ce38992491ca1e61ab660e5538856aa6c45c05537374f7b0e",
@@ -136298,6 +136298,603 @@
       "analyzed_at": "2026-07-29T12:54:10.321Z",
       "analysis_version": 1,
       "analysis_author": "codex_current_model_prompt9_20260729"
+    },
+    "c21c9795f1366ebb": {
+      "content_hash": "9506de5c6927faae80027ccb98cf85c59c72d5c7c129dc42e46536f465529fac",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 0,
+      "normalized": {
+        "organization": "航空工业直升机设计研究所",
+        "title": "2026年社会招聘",
+        "location": "景德镇、天津",
+        "education": "硕士研究生及以上",
+        "majors": [
+          "计算机",
+          "软件",
+          "控制",
+          "电子信息",
+          "人工智能",
+          "航空航天",
+          "电气",
+          "机械电子"
+        ],
+        "graduation_years": [],
+        "fresh_graduate_required": false,
+        "political_status": "",
+        "gender_requirement": "",
+        "responsibilities": "人工智能技术研究、飞控设计、数字系统设计、系统工程研究、新能源设计及法律顾问等社会招聘岗位。",
+        "requirements": "硕士研究生及以上学历；技术岗位通常要求2至5年以上相关经验，专业集中在计算机、控制、航空航天、电气等工程领域。",
+        "headcount": "",
+        "applicant_type": "社会招聘",
+        "position_code": "",
+        "deadline": ""
+      },
+      "reasons": [],
+      "conflicts": [
+        "官方移动页长图显示工作地点为景德镇、天津，不是北京",
+        "岗位专业和职责均为人工智能、飞控、数字系统、新能源等工程技术方向，不接受设计学或艺术设计背景",
+        "社会招聘岗位普遍要求2至5年以上相关工作经验，与2027届应届生身份冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "地点",
+          "quote": "直升机所地处景德镇、天津两地"
+        },
+        {
+          "field": "经验",
+          "quote": "具备2年以上脑机接口交互控制研究和系统设计项目经验"
+        },
+        {
+          "field": "专业",
+          "quote": "专业背景：计算机、软件、控制、电子信息、人工智能、脑机科学与技术、心理学、脑与认知科学等"
+        }
+      ],
+      "analyzed_at": "2026-07-30T13:25:38.911Z",
+      "analysis_version": 1,
+      "analysis_author": "codex_current_model_prompt9_20260730"
+    },
+    "fdb66c6f546d8d8f": {
+      "content_hash": "e2fb9b909d0ad48ef104b89e0e63fc5f2d544faa5d3205ddb13273b3a06c88cc",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 0,
+      "normalized": {
+        "organization": "字节跳动",
+        "title": "基于多模态大模型与用户行为理解的下一代分发与交互技术 - 抖音",
+        "location": "北京、上海、深圳",
+        "education": "博士",
+        "majors": [
+          "人工智能",
+          "计算机",
+          "数学"
+        ],
+        "graduation_years": [
+          2027
+        ],
+        "fresh_graduate_required": true,
+        "political_status": "",
+        "gender_requirement": "",
+        "responsibilities": "研究多模态大模型训练、用户行为建模、高并发推理及推荐系统对齐。",
+        "requirements": "2027届博士，具备算法、编程和机器学习研究能力。",
+        "headcount": "",
+        "applicant_type": "正式校园招聘",
+        "position_code": "A68507",
+        "deadline": ""
+      },
+      "reasons": [],
+      "conflicts": [
+        "明确要求2027届博士学位，与硕士研究生学历冲突",
+        "职责和技能以大模型、推荐算法及编程为核心，不属于设计产出岗位"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "学历专业",
+          "quote": "2027届毕业，获得博士学位；人工智能、计算机、数学相关专业优先"
+        },
+        {
+          "field": "职责",
+          "quote": "多模态大模型的完整流程的训练，以及与大规模用户行为深度理解和对齐"
+        }
+      ],
+      "analyzed_at": "2026-07-30T13:25:38.911Z",
+      "analysis_version": 1,
+      "analysis_author": "codex_current_model_prompt9_20260730"
+    },
+    "05cfbcca4192c2fb": {
+      "content_hash": "638e005ece7cd215d2f0e0f31506bafb1e62bdd538df6cb79562bc64a3bb17ff",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 0,
+      "normalized": {
+        "organization": "字节跳动",
+        "title": "面向大模型与AI Agent的AI云原生基础设施关键技术研究 - AI算力基础设施",
+        "location": "北京",
+        "education": "博士",
+        "majors": [
+          "人工智能",
+          "计算机科学",
+          "数学"
+        ],
+        "graduation_years": [
+          2027
+        ],
+        "fresh_graduate_required": true,
+        "political_status": "",
+        "gender_requirement": "",
+        "responsibilities": "研究AI云原生网络、存储、异构算力调度、向量检索和Agent基础设施。",
+        "requirements": "2027届博士，具备计算机网络、编程、算法及基础架构研究能力。",
+        "headcount": "",
+        "applicant_type": "正式校园招聘",
+        "position_code": "A202852",
+        "deadline": ""
+      },
+      "reasons": [],
+      "conflicts": [
+        "明确要求2027届博士学位，与硕士研究生学历冲突",
+        "岗位为云原生基础设施和系统工程研究，专业与职责均不接受设计学背景"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "学历专业",
+          "quote": "2027届毕业，获得博士学位，优先考虑人工智能、计算机科学、数学相关专业"
+        },
+        {
+          "field": "职责",
+          "quote": "构建支撑大模型与AI Agent落地的下一代AI原生基础设施"
+        }
+      ],
+      "analyzed_at": "2026-07-30T13:25:38.911Z",
+      "analysis_version": 1,
+      "analysis_author": "codex_current_model_prompt9_20260730"
+    },
+    "a52adfb91c891afa": {
+      "content_hash": "682630546f8a543c5cda083bf942d4fee05fc0aea878a914ecda3672dca792f1",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 0,
+      "normalized": {
+        "organization": "字节跳动",
+        "title": "面向AIDC的下一代高密度数据中心基础设施创新与AI智能运维研究 - AI算力基础设施",
+        "location": "北京",
+        "education": "博士",
+        "majors": [
+          "计算机",
+          "自动化",
+          "电气",
+          "能源"
+        ],
+        "graduation_years": [
+          2027
+        ],
+        "fresh_graduate_required": true,
+        "political_status": "",
+        "gender_requirement": "",
+        "responsibilities": "研究数据中心液冷、供配电储能、多Agent运维和PUE智能优化。",
+        "requirements": "2027届博士，具备大模型或Agent工程经验。",
+        "headcount": "",
+        "applicant_type": "正式校园招聘",
+        "position_code": "A170227",
+        "deadline": ""
+      },
+      "reasons": [],
+      "conflicts": [
+        "明确要求2027届博士学位，与硕士研究生学历冲突",
+        "专业限定为计算机、自动化、电气、能源等工程方向，职责不属于设计产出"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "学历专业",
+          "quote": "2027届毕业，获得博士学位，计算机、自动化、电气、能源等相关专业优先"
+        },
+        {
+          "field": "职责",
+          "quote": "构建数据中心运维AI Agent体系"
+        }
+      ],
+      "analyzed_at": "2026-07-30T13:25:38.911Z",
+      "analysis_version": 1,
+      "analysis_author": "codex_current_model_prompt9_20260730"
+    },
+    "b951d522dff0d745": {
+      "content_hash": "f6fcfd35c4318527cd72bb5366cb30d099aefbbf9abda2497b7466aa05ac2725",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 0,
+      "normalized": {
+        "organization": "字节跳动",
+        "title": "大模型赋能交易与商业场景的技术创新及落地实践研究 - Ads Core",
+        "location": "北京、上海",
+        "education": "博士",
+        "majors": [
+          "人工智能",
+          "计算机",
+          "自动化",
+          "数学"
+        ],
+        "graduation_years": [
+          2027
+        ],
+        "fresh_graduate_required": true,
+        "political_status": "",
+        "gender_requirement": "",
+        "responsibilities": "研究广告交易场景中的大模型、多模态、强化学习和智能决策系统。",
+        "requirements": "2027届博士，具备机器学习、NLP、强化学习和编程能力。",
+        "headcount": "",
+        "applicant_type": "正式校园招聘",
+        "position_code": "A140132B",
+        "deadline": ""
+      },
+      "reasons": [],
+      "conflicts": [
+        "明确要求2027届博士学位，与硕士研究生学历冲突",
+        "岗位核心是广告交易算法和大模型工程，不属于设计学或艺术设计岗位"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "学历专业",
+          "quote": "2027届毕业，获得博士学位，人工智能、计算机、自动化、数学相关专业优先"
+        },
+        {
+          "field": "职责",
+          "quote": "通过机器学习、因果推断、强化学习、机制设计和大规模工程系统"
+        }
+      ],
+      "analyzed_at": "2026-07-30T13:25:38.911Z",
+      "analysis_version": 1,
+      "analysis_author": "codex_current_model_prompt9_20260730"
+    },
+    "ce61f2e89b34d769": {
+      "content_hash": "8aeb507acc5f912bb29ebdbe0ba26f12d007a43026ad7c8631a88761a47ca66c",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 0,
+      "normalized": {
+        "organization": "字节跳动",
+        "title": "大模型驱动的内容生产与分发：IP跨体裁生成与LLM推荐 - 番茄",
+        "location": "上海、杭州、北京、深圳",
+        "education": "博士",
+        "majors": [
+          "计算机",
+          "软件",
+          "人工智能",
+          "数学"
+        ],
+        "graduation_years": [
+          2027
+        ],
+        "fresh_graduate_required": true,
+        "political_status": "",
+        "gender_requirement": "",
+        "responsibilities": "研究IP跨体裁生成、多模态内容理解、LLM推荐及推荐Agent。",
+        "requirements": "2027届博士，具备机器学习、多模态大模型和编码能力。",
+        "headcount": "",
+        "applicant_type": "正式校园招聘",
+        "position_code": "A146861A",
+        "deadline": ""
+      },
+      "reasons": [],
+      "conflicts": [
+        "明确要求2027届博士学位，与硕士研究生学历冲突",
+        "虽涉及内容生产，但核心职责和要求是大模型推荐算法及编码，不是设计产出岗位"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "学历专业",
+          "quote": "2027届毕业，获得博士学位，计算机、软件、人工智能、数学等相关专业优先"
+        },
+        {
+          "field": "职责",
+          "quote": "构建基于大模型的推荐Agent能力"
+        }
+      ],
+      "analyzed_at": "2026-07-30T13:25:38.911Z",
+      "analysis_version": 1,
+      "analysis_author": "codex_current_model_prompt9_20260730"
+    },
+    "f62e8ba7ec652e2f": {
+      "content_hash": "6259c0a66d735011f08b4dd5bd84181a5c36d6bfdd25034db934cca8daadbb95",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 0,
+      "normalized": {
+        "organization": "腾讯",
+        "title": "腾讯地图-空间语义大模型研究",
+        "location": "北京",
+        "education": "博士或优秀硕士",
+        "majors": [
+          "计算机科学",
+          "人工智能",
+          "自然语言处理",
+          "数据挖掘",
+          "地理信息系统",
+          "模式识别",
+          "应用数学",
+          "统计学"
+        ],
+        "graduation_years": [
+          2026,
+          2027
+        ],
+        "fresh_graduate_required": true,
+        "political_status": "",
+        "gender_requirement": "",
+        "responsibilities": "研究空间、视觉、文本原生融合的大模型预训练、Agent工具调用和模型蒸馏。",
+        "requirements": "计算机、人工智能、GIS等专业博士或优秀硕士，具备NLP、多模态大模型训练能力。",
+        "headcount": "",
+        "applicant_type": "青云计划应届生",
+        "position_code": "1280227308716025857",
+        "deadline": ""
+      },
+      "reasons": [],
+      "conflicts": [
+        "专业明确集中在计算机、人工智能、GIS、数学等技术方向，未接受设计学",
+        "职责以大模型预训练、信息抽取和Agent系统开发为核心，不属于设计产出岗位"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "专业",
+          "quote": "包含但不限于计算机科学、人工智能、自然语言处理、数据挖掘、地理信息系统（GIS）、模式识别、应用数学、统计学等相关专业"
+        },
+        {
+          "field": "职责",
+          "quote": "参与地图POI领域多模态基座模型的预训练方案设计"
+        }
+      ],
+      "analyzed_at": "2026-07-30T13:25:38.911Z",
+      "analysis_version": 1,
+      "analysis_author": "codex_current_model_prompt9_20260730"
+    },
+    "88fb52a6245b77a1": {
+      "content_hash": "ed65f8f1c34293679e0d7e2caa7e9c909218a5fd6870cff9c58fd040dcc1e8db",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 0,
+      "normalized": {
+        "organization": "腾讯",
+        "title": "腾讯地图-多模态大模型融合建图研究",
+        "location": "北京",
+        "education": "博士或优秀硕士",
+        "majors": [
+          "计算机科学与技术",
+          "人工智能",
+          "自动化",
+          "机器人",
+          "模式识别",
+          "遥感与地理信息工程",
+          "测绘工程",
+          "应用数学",
+          "统计学"
+        ],
+        "graduation_years": [
+          2026,
+          2027
+        ],
+        "fresh_graduate_required": true,
+        "political_status": "",
+        "gender_requirement": "",
+        "responsibilities": "研发多模态融合建图、SLAM、三维重建、语义分割和端侧部署系统。",
+        "requirements": "相关工程技术专业博士或优秀硕士，掌握多模态模型、SLAM和深度学习。",
+        "headcount": "",
+        "applicant_type": "青云计划应届生",
+        "position_code": "1280227308716025859",
+        "deadline": ""
+      },
+      "reasons": [],
+      "conflicts": [
+        "专业明确限定计算机、人工智能、自动化、机器人、测绘等工程方向，未接受设计学",
+        "“建图研究”职责为SLAM、三维重建和算法工程，不属于艺术或产品设计"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "专业",
+          "quote": "计算机科学与技术、人工智能、自动化、机器人、模式识别、遥感与地理信息工程（GIS）、测绘工程、应用数学、统计学等相关专业"
+        },
+        {
+          "field": "职责",
+          "quote": "视觉 - 激光融合定位、SLAM、里程计与后端优化算法研发"
+        }
+      ],
+      "analyzed_at": "2026-07-30T13:25:38.911Z",
+      "analysis_version": 1,
+      "analysis_author": "codex_current_model_prompt9_20260730"
+    },
+    "39b2cef04c49f8c3": {
+      "content_hash": "dff0ed1eae2b1832fa8fa202f4d4ceeb16cc3f906d57f1f661b470f796f6ca9d",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 0,
+      "normalized": {
+        "organization": "腾讯",
+        "title": "腾讯地图-多模态大模型时空轨迹挖掘研究",
+        "location": "北京",
+        "education": "博士或优秀硕士",
+        "majors": [
+          "计算机科学与技术",
+          "人工智能",
+          "机器学习",
+          "数据科学",
+          "软件工程",
+          "应用数学",
+          "统计学",
+          "地理信息科学",
+          "遥感测绘"
+        ],
+        "graduation_years": [
+          2026,
+          2027
+        ],
+        "fresh_graduate_required": true,
+        "political_status": "",
+        "gender_requirement": "",
+        "responsibilities": "研发多模态时空数据建模、轨迹预测、道路变化检测和地图更新系统。",
+        "requirements": "计算机、人工智能、数据科学、软件工程等专业博士或优秀硕士，精通Python及深度学习框架。",
+        "headcount": "",
+        "applicant_type": "青云计划应届生",
+        "position_code": "1280227308716025858",
+        "deadline": ""
+      },
+      "reasons": [],
+      "conflicts": [
+        "专业限定计算机、人工智能、软件工程、数学、GIS等技术方向，未接受设计学",
+        "职责为轨迹挖掘、算法建模和大数据系统研发，不属于设计产出"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "专业",
+          "quote": "包含但不限于计算机科学与技术、人工智能、机器学习、数据科学、软件工程、应用数学、统计学、地理信息科学、遥感测绘"
+        },
+        {
+          "field": "职责",
+          "quote": "基于Transformer、扩散模型等前沿架构，开发高效的轨迹预测和序列建模算法"
+        }
+      ],
+      "analyzed_at": "2026-07-30T13:25:38.911Z",
+      "analysis_version": 1,
+      "analysis_author": "codex_current_model_prompt9_20260730"
+    },
+    "559efbd0df874dbf": {
+      "content_hash": "06f40ffdc94f9b93a3f93e91b2cc404fdbe9488b7934c7d0abd9974354693b1b",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 0,
+      "normalized": {
+        "organization": "腾讯",
+        "title": "秘书",
+        "location": "深圳、北京、上海",
+        "education": "本科及以上",
+        "majors": [],
+        "graduation_years": [
+          2025,
+          2026
+        ],
+        "fresh_graduate_required": true,
+        "political_status": "",
+        "gender_requirement": "",
+        "responsibilities": "负责日程、会议、差旅、行政接口、制度流程和部门文化建设。",
+        "requirements": "本科及以上，具备执行、沟通、办公软件和活动组织能力。",
+        "headcount": "",
+        "applicant_type": "2026校园招聘",
+        "position_code": "1150119840607173632",
+        "deadline": ""
+      },
+      "reasons": [],
+      "conflicts": [
+        "官方项目毕业范围截至2026年12月31日，与2027届毕业年份冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "毕业届别",
+          "quote": "毕业时间：2025年1月1日-2026年12月31日"
+        },
+        {
+          "field": "职责",
+          "quote": "负责部门管理者的日程管理、会议支持、差旅支持等工作"
+        }
+      ],
+      "analyzed_at": "2026-07-30T13:25:38.911Z",
+      "analysis_version": 1,
+      "analysis_author": "codex_current_model_prompt9_20260730"
+    },
+    "4967cf9de5aae2a4": {
+      "content_hash": "c0f67c526b99d516dc6a4d160cba786e4582471cd2c6ca7a360edcd271301d93",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 0,
+      "normalized": {
+        "organization": "外交部",
+        "title": "外交部2026年度国家公务员考试录用结果",
+        "location": "北京",
+        "education": "",
+        "majors": [],
+        "graduation_years": [
+          2026
+        ],
+        "fresh_graduate_required": null,
+        "political_status": "",
+        "gender_requirement": "",
+        "responsibilities": "",
+        "requirements": "",
+        "headcount": "已录取76人",
+        "applicant_type": "录用结果公告",
+        "position_code": "",
+        "deadline": ""
+      },
+      "reasons": [],
+      "conflicts": [
+        "该页面是已完成的2026年度公务员录用结果公告，不是正在接受报名的招聘岗位"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "公告性质",
+          "quote": "在2026年度国家公务员考录中共录取公务员76人"
+        }
+      ],
+      "analyzed_at": "2026-07-30T13:25:38.911Z",
+      "analysis_version": 1,
+      "analysis_author": "codex_current_model_prompt9_20260730"
+    },
+    "3bcd27efe8888f4c": {
+      "content_hash": "74017c977d2934b9c0911019ecd52895624d123af86be1bab56b7eb1a7eb9f12",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 0,
+      "normalized": {
+        "organization": "腾讯",
+        "title": "元宝-基于多模态大模型的搜索关键技术研究",
+        "location": "北京",
+        "education": "博士或硕士",
+        "majors": [
+          "计算机",
+          "人工智能",
+          "自动化",
+          "电子信息",
+          "数学"
+        ],
+        "graduation_years": [
+          2026,
+          2027
+        ],
+        "fresh_graduate_required": true,
+        "political_status": "",
+        "gender_requirement": "",
+        "responsibilities": "研究多模态Agent、跨模态表征、生成式检索、排序和系统建设。",
+        "requirements": "计算机、人工智能、自动化、电子信息或数学专业博士/硕士，掌握多模态算法、Python和PyTorch。",
+        "headcount": "",
+        "applicant_type": "青云计划应届生",
+        "position_code": "1280227308716025860",
+        "deadline": ""
+      },
+      "reasons": [],
+      "conflicts": [
+        "专业明确限定计算机、人工智能、自动化、电子信息或数学，未接受设计学",
+        "职责及技能为多模态检索算法、大模型训练和工程系统建设，不属于设计产出"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "专业",
+          "quote": "来自计算机、人工智能、自动化、电子信息或数学等相关专业的博士/硕士同学"
+        },
+        {
+          "field": "职责",
+          "quote": "参与多模态Agent理解、跨模态表征、多模态检索能力和系统建设"
+        }
+      ],
+      "analyzed_at": "2026-07-30T13:25:38.911Z",
+      "analysis_version": 1,
+      "analysis_author": "codex_current_model_prompt9_20260730"
     }
   }
 }
