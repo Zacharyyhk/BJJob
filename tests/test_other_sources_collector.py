@@ -136,6 +136,53 @@ class TencentSession:
         }, url)
 
 
+class PddSession:
+    def __init__(self):
+        self.list_bodies = []
+        self.detail_bodies = []
+
+    def post(self, url, **kwargs):
+        body = json.loads(kwargs["data"])
+        if url.endswith("/position/list"):
+            self.list_bodies.append(body)
+            return FakeResponse({
+                "success": True,
+                "result": {
+                    "total": "2",
+                    "list": [
+                        {
+                            "id": "pdd-bj-1",
+                            "name": "用户运营管培生（北京）",
+                            "workLocationName": "北京",
+                            "graduationYear": "2027",
+                            "releaseTime": 1785000000000,
+                            "jobDuty": "负责用户研究与运营策略。",
+                        },
+                        {
+                            "id": "pdd-sh-1",
+                            "name": "运营管培生（上海）",
+                            "workLocationName": "上海",
+                            "graduationYear": "2027",
+                            "releaseTime": 1785000000000,
+                        },
+                    ],
+                },
+            }, url)
+        self.detail_bodies.append(body)
+        return FakeResponse({
+            "success": True,
+            "result": {
+                "id": "pdd-bj-1",
+                "name": "用户运营管培生（北京）",
+                "workLocationName": "北京",
+                "graduationYear": "2027",
+                "releaseTime": 1785000000000,
+                "jobDuty": "负责用户研究与运营策略。",
+                "serveRequirement": "2027届本科及以上，专业不限。",
+            },
+        }, url)
+
+
 class FormalCampusAdapterTests(unittest.TestCase):
     def test_ats_adapter_queries_only_beijing_formal_campus_scope(self):
         source = {
@@ -197,6 +244,25 @@ class FormalCampusAdapterTests(unittest.TestCase):
         self.assertEqual(session.body["workCityList"], ["2"])
         self.assertEqual(items[0]["raw_fields"]["recruitType"], 1)
         self.assertIn("交互", items[0]["body_text"])
+
+    def test_pdd_adapter_keeps_beijing_graduate_roles_and_fetches_details(self):
+        source = {
+            "id": "pdd-jobs",
+            "name": "拼多多校园招聘",
+            "group": "互联网大厂",
+            "url": "https://careers.pddglobalhr.com/campus/grad",
+        }
+        session = PddSession()
+
+        items, status, _ = COLLECTOR.pdd_adapter(session, source)
+
+        self.assertEqual(status, "collected")
+        self.assertEqual(session.list_bodies, [{"page": 1, "pageSize": 10}])
+        self.assertEqual(session.detail_bodies, [{"id": "pdd-bj-1"}])
+        self.assertEqual(len(items), 1)
+        self.assertEqual(items[0]["organization"], "拼多多")
+        self.assertIn("专业不限", items[0]["body_text"])
+        self.assertEqual(items[0]["collection_scope"]["work_location"], "北京")
 
 
 if __name__ == "__main__":

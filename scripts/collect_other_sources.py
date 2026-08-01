@@ -749,6 +749,87 @@ def xiaomi_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[l
     return ats_campus_adapter(session, source)
 
 
+def pdd_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[list[dict[str, str]], str, str]:
+    """Collect current Beijing graduate roles from PDD's official campus API."""
+    endpoint = "https://careers.pddglobalhr.com/api/careers/api/recruit/position/list"
+    detail_endpoint = "https://careers.pddglobalhr.com/api/careers/api/recruit/position/detail"
+    headers = {
+        "Referer": source["url"],
+        "Origin": "https://careers.pddglobalhr.com",
+        "Content-Type": "application/json",
+    }
+    found: list[dict[str, Any]] = []
+    page = 1
+    total = 1
+    seen = 0
+    while seen < total:
+        body = {"page": page, "pageSize": 10}
+        response = session.post(
+            endpoint,
+            timeout=40,
+            headers=headers,
+            data=json.dumps(body, ensure_ascii=False, separators=(",", ":")),
+        )
+        response.raise_for_status()
+        payload = response.json()
+        if not payload.get("success"):
+            raise RuntimeError(f"PDD official campus search failed: {clean(payload.get('errorMsg'))}")
+        result = payload.get("result") or {}
+        rows = result.get("list") or []
+        total = int(result.get("total") or 0)
+        seen += len(rows)
+        for row in rows:
+            location = clean(row.get("workLocationName") or row.get("workLocation"))
+            if "北京" not in location:
+                continue
+            position_id = clean(row.get("id"))
+            if not position_id:
+                continue
+            detail_response = session.post(
+                detail_endpoint,
+                timeout=40,
+                headers=headers,
+                data=json.dumps({"id": position_id}, ensure_ascii=False, separators=(",", ":")),
+            )
+            detail_response.raise_for_status()
+            detail_payload = detail_response.json()
+            if not detail_payload.get("success"):
+                raise RuntimeError(
+                    f"PDD official campus detail failed: {clean(detail_payload.get('errorMsg'))}"
+                )
+            detail = detail_payload.get("result") or {}
+            title = clean(detail.get("name") or row.get("name"))
+            if not title:
+                continue
+            body_text = clean("\n".join(
+                value for value in (
+                    clean(detail.get("jobDuty") or row.get("jobDuty")),
+                    clean(detail.get("serveRequirement")),
+                    clean(detail.get("bonus")),
+                ) if value
+            ))
+            found.append(make_item(
+                source,
+                title,
+                f"https://careers.pddglobalhr.com/campus/grad/detail?positionId={quote(position_id, safe='')}",
+                date_from_milliseconds(detail.get("releaseTime") or row.get("releaseTime")),
+                "拼多多",
+                body_text=body_text,
+                raw_fields=detail,
+                search_raw_fields=row,
+                collection_scope={
+                    "recruitment": "graduate",
+                    "graduation_year": clean(detail.get("graduationYear") or row.get("graduationYear")),
+                    "work_location": location,
+                },
+                data_quality="拼多多官方应届生岗位列表与详情接口原始数据",
+            ))
+        page += 1
+        if not rows:
+            break
+    return found, "collected" if found else "collected-empty", endpoint
+
+
 def api_spa_adapter(session: requests.Session, source: dict[str, Any], endpoint: str) -> tuple[list[dict[str, str]], str, str]:
     """Probe a documented public SPA endpoint; keep failures distinct from empty data."""
     response = session.get(endpoint, timeout=30, headers={"Referer": source["url"]})
@@ -787,6 +868,7 @@ SPECIAL: dict[str, Callable[..., tuple[list[dict[str, str]], str, str]]] = {
     "baidu-jobs": baidu_adapter,
     "jd-jobs": jd_adapter,
     "meituan-jobs": meituan_adapter,
+    "pdd-jobs": pdd_adapter,
     "tencent-jobs": tencent_adapter,
     "xiaomi-jobs": xiaomi_adapter,
 }
