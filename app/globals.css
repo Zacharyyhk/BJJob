@@ -14,7 +14,9 @@ h1 { font-size:30px; margin:0; letter-spacing:-.04em; }
 .toolbar input,.toolbar select { min-width:0; border:1px solid var(--line); background:#fff; border-radius:5px; color:var(--ink); padding:10px 11px; outline:none; font-size:13px; }
 .toolbar select { width:100%; }
 .toolbar input:focus,.toolbar select:focus { border-color:#80afd1; }
-.job-list { display:grid; gap:10px; margin-top:21px; }
+.result-line { color:var(--muted); font-size:12px; margin:21px 2px 11px; }
+.result-line b { color:var(--ink); }
+.job-list { display:grid; gap:10px; }
 .job { background:#fff; border:1px solid var(--line); border-radius:7px; padding:19px 20px 16px; }
 .job-top { display:flex; justify-content:space-between; gap:15px; align-items:flex-start; }
 .job h2 { font-size:17px; margin:0 0 7px; line-height:1.45; }.job h3 { font-size:13px; font-weight:500; color:#455c6e; margin:0; }
