@@ -301,7 +301,8 @@ export default function Home() {
   const [location, setLocation] = useState("全部地点");
   const [savedOnly, setSavedOnly] = useState(false);
   const [saved, setSaved] = useState<string[]>([]);
-  const [visibleCount, setVisibleCount] = useState(40);
+  const [expanded, setExpanded] = useState<string[]>([]);
+  const [visibleCount, setVisibleCount] = useState(100);
   const supportsEstablishment = sourceGroup === "机关单位" || sourceGroup === "北京市机关单位" || sourceGroup === "中央机关单位";
   const matchesSourceGroup = (job: Job) => sourceGroup === "全部来源"
     || (sourceGroup === "机关单位" && (job.sourceGroup === "北京市机关单位" || job.sourceGroup === "中央机关单位"))
@@ -315,6 +316,10 @@ export default function Home() {
     const next = saved.includes(id) ? saved.filter((item) => item !== id) : [...saved, id];
     setSaved(next);
     localStorage.setItem("beijing-job-saved", JSON.stringify(next));
+  };
+
+  const toggleExpanded = (id: string) => {
+    setExpanded((current) => current.includes(id) ? current.filter((item) => item !== id) : [...current, id]);
   };
 
   const unitOptions = useMemo(() => {
@@ -376,7 +381,10 @@ export default function Home() {
     });
   }, [query, education, majorRequirement, sort, profileFilter, sourceGroup, establishment, unit, location, savedOnly, saved]);
 
-  useEffect(() => setVisibleCount(40), [query, education, majorRequirement, sort, profileFilter, sourceGroup, establishment, unit, location, savedOnly]);
+  useEffect(() => {
+    setVisibleCount(100);
+    setExpanded([]);
+  }, [query, education, majorRequirement, sort, profileFilter, sourceGroup, establishment, unit, location, savedOnly]);
 
   return (
     <main className="workspace">
@@ -422,19 +430,29 @@ export default function Home() {
           const days = daysUntil(job.deadline);
           const match = matchForProfile(job);
           const attachment = attachmentPosition(job);
-          return <article className="job" key={job.id}>
-            <div className="job-top">
-              <div>
+          const isExpanded = expanded.includes(job.id);
+          return <article className={isExpanded ? "job expanded" : "job"} key={job.id}>
+            <div className="job-summary">
+              <div className="job-brief">
                 <div className="match-line">
                   <span className={`match ${match.level}`}>{match.label}</span>
-                  {match.level === "possible" && <span className="confirm-note">需确认：{match.needsConfirmation.join("；") || "公开信息不足"}</span>}
                 </div>
                 <h2>{job.title || job.noticeTitle}</h2>
                 <h3>{job.organization || job.publisher || "招聘单位见公告"}</h3>
+                <div className="brief-facts">
+                  {job.location && <span>{job.location}</span>}
+                  {job.education && <span>{job.education}</span>}
+                  <span className={days !== null && days <= 7 && days >= 0 ? "deadline urgent" : "deadline"}>{statusLabel(job.deadline)}</span>
+                </div>
               </div>
-              <button className={saved.includes(job.id) ? "star on" : "star"} onClick={() => toggleSaved(job.id)} aria-label="收藏职位">★</button>
+              <div className="job-actions">
+                <button className={saved.includes(job.id) ? "star on" : "star"} onClick={() => toggleSaved(job.id)} aria-label="收藏职位">★</button>
+                <button className="expand-button" onClick={() => toggleExpanded(job.id)} aria-expanded={isExpanded}>{isExpanded ? "收起" : "展开"}</button>
+              </div>
             </div>
 
+            {isExpanded && <div className="job-details">
+            {match.level === "possible" && <div className="confirm-note">需确认：{match.needsConfirmation.join("；") || "公开信息不足"}</div>}
             <div className="match-reasons">{match.reasons.map((reason) => <span key={reason}>{reason}</span>)}</div>
             <div className="source-name">{job.sourceName}</div>
             {job.sourceAttachmentUrl && <div className="attachment-ref">
@@ -466,12 +484,13 @@ export default function Home() {
               </div>
               <a href={job.sourceUrl} target="_blank" rel="noreferrer">{job.sourceGroup === "互联网大厂" ? "岗位详情" : "原公告"} ↗</a>
             </footer>
+            </div>}
           </article>;
         })}
       </section>
 
       {!filtered.length && <div className="empty">没有符合条件的职位</div>}
-      {visibleCount < filtered.length && <button className="more" onClick={() => setVisibleCount(visibleCount + 40)}>再显示 40 个</button>}
+      {visibleCount < filtered.length && <button className="more" onClick={() => setVisibleCount(visibleCount + 100)}>再显示 100 个</button>}
     </main>
   );
 }
