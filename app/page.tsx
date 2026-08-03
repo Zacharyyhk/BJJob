@@ -401,8 +401,6 @@ export default function Home() {
         </select>
       </section>
 
-      <div className="result-line"><b>{filtered.length}</b> 个结果{savedOnly && <button onClick={() => setSavedOnly(false)}>查看全部</button>}</div>
-
       <section className="job-list">
         {filtered.slice(0, visibleCount).map((job) => {
           const days = daysUntil(job.deadline);
