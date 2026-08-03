@@ -289,6 +289,26 @@ function locationLabels(value?: string) {
   return [...new Set(matched.length ? matched : ["其他地点"])];
 }
 
+function interleaveByUnit(items: Job[]) {
+  const buckets = new Map<string, Job[]>();
+  for (const job of items) {
+    const name = unitName(job);
+    const bucket = buckets.get(name) || [];
+    bucket.push(job);
+    buckets.set(name, bucket);
+  }
+
+  const result: Job[] = [];
+  let index = 0;
+  while (result.length < items.length) {
+    for (const bucket of buckets.values()) {
+      if (index < bucket.length) result.push(bucket[index]);
+    }
+    index += 1;
+  }
+  return result;
+}
+
 export default function Home() {
   const [query, setQuery] = useState("");
   const [education, setEducation] = useState("全部学历");
@@ -373,12 +393,15 @@ export default function Home() {
         && (location === "全部地点" || locationLabels(job.location).includes(location))
         && (!savedOnly || saved.includes(job.id));
     });
-    return result.sort((a, b) => {
+    const sorted = result.sort((a, b) => {
       if (sort === "最新发布") return b.publishedAt.localeCompare(a.publishedAt);
       const aTime = a.deadline ? new Date(a.deadline).getTime() : Number.MAX_SAFE_INTEGER;
       const bTime = b.deadline ? new Date(b.deadline).getTime() : Number.MAX_SAFE_INTEGER;
       return aTime - bTime;
     });
+    return sourceGroup === "互联网大厂" && unit === "全部单位"
+      ? interleaveByUnit(sorted)
+      : sorted;
   }, [query, education, majorRequirement, sort, profileFilter, sourceGroup, establishment, unit, location, savedOnly, saved]);
 
   useEffect(() => {
