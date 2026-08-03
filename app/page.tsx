@@ -446,6 +446,9 @@ export default function Home() {
                 </div>
               </div>
               <div className="job-actions">
+                <a className="detail-link" href={job.sourceUrl} target="_blank" rel="noreferrer">
+                  {job.sourceGroup === "互联网大厂" ? "岗位详情" : "原公告"} ↗
+                </a>
                 <button className={saved.includes(job.id) ? "star on" : "star"} onClick={() => toggleSaved(job.id)} aria-label="收藏职位">★</button>
                 <button className="expand-button" onClick={() => toggleExpanded(job.id)} aria-expanded={isExpanded}>{isExpanded ? "收起" : "展开"}</button>
               </div>
@@ -482,7 +485,6 @@ export default function Home() {
                 <span className={days !== null && days <= 7 && days >= 0 ? "deadline urgent" : days !== null && days < 0 ? "deadline expired" : "deadline"}>{statusLabel(job.deadline)}</span>
                 <span>发布 {job.publishedAt || "未注明"}</span>
               </div>
-              <a href={job.sourceUrl} target="_blank" rel="noreferrer">{job.sourceGroup === "互联网大厂" ? "岗位详情" : "原公告"} ↗</a>
             </footer>
             </div>}
           </article>;
