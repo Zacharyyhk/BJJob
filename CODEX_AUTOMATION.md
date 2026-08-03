@@ -10,18 +10,19 @@
    - 每周一复查历史公告：`python scripts/collect_bj_rsj.py --weekly`（当日不再重复运行增量命令）
    - `python scripts/collect_other_sources.py`
 2. 运行 `python scripts/prepare_codex_analysis.py` 生成增量分析队列。
-3. 按 `CODEX_ANALYSIS.md` 由当前 Codex 模型直接理解原始正文、接口响应、职位描述和附件原始行，分析全部 pending 记录并写回 `data/ai-analysis.json`。
-4. 再次运行准备脚本，必须得到 `pending_count: 0`。
-5. 运行 `python scripts/validate_codex_analysis.py`，必须得到 `status: valid`。
-6. 运行 Python 采集器测试、`pnpm test:data` 和 `pnpm build:pages`，确保采集、岗位 ID、页面规则与生产构建全部通过。
-7. 仅在以上步骤全部成功后，提交本次采集数据和语义分析结果并推送 `main`。推送会自动触发 GitHub Pages 部署。
-8. 如果没有实质数据或分析变化，不创建空提交，也不重复发布。
+3. 运行 `node scripts/apply_major_keyword_gate.mjs --apply`，仅把独立任职要求中明确限定非设计类专业的岗位标记为不符合；随后再次运行 prepare 刷新队列。
+4. 按 `CODEX_ANALYSIS.md` 由当前 Codex 模型直接理解剩余记录的原始正文、接口响应、职位描述和附件原始行；可将互不重叠的固定 ID 批次并行分析，再统一导入 `data/ai-analysis.json`。
+5. 再次运行准备脚本，必须得到 `pending_count: 0`。
+6. 运行 `python scripts/validate_codex_analysis.py`，必须得到 `status: valid`。
+7. 运行 Python 采集器测试、`pnpm test:data` 和 `pnpm build:pages`，确保采集、岗位 ID、页面规则与生产构建全部通过。
+8. 仅在以上步骤全部成功后，提交本次采集数据和语义分析结果并推送 `main`。推送会自动触发 GitHub Pages 部署。
+9. 如果没有实质数据或分析变化，不创建空提交，也不重复发布。
 
 ## 发布安全边界
 
 - 存在 pending、校验错误、证据缺失或构建失败时，不得提交或推送。
 - 采集后的岗位或成功来源数量异常大幅下降时，视为来源故障，不得用不完整结果覆盖线上数据。
-- 不得使用 Python、关键词或正则表达式代替大模型做专业、户籍、届别、经验、职责或截止时间的语义判断。
+- 除经过测试的 `apply_major_keyword_gate.mjs` 专业硬门槛外，不得使用 Python、关键词或正则表达式代替大模型做户籍、届别、经验、职责或截止时间的语义判断。该硬门槛只能生成带原文证据的 `no`，不能生成 `match` 或 `possible`。
 - Python 采集器只保留来源原始数据和必要的来源定位信息，不做岗位是否符合个人条件的预处理。
 - 自动化必须保留工作区中已有的无关用户改动，不得覆盖或一并提交。
 - 推送失败时应先安全同步远端变更，确认无冲突后再重试；禁止强制推送覆盖远端。
