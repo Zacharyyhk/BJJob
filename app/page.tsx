@@ -266,7 +266,7 @@ function matchesMajorRequirement(job: Job, filter: string) {
   const majors = aiResults[job.id]?.normalized?.majors || [];
   if (!majors.length) return true;
   const text = majors.join("、");
-  if (/专业不限|不限专业|不限制专业|无专业要求|优先/.test(text)) return true;
+  if (/专业不限|不限专业|不限制专业|无专业要求/.test(text)) return true;
   return /设计|艺术|美术|视觉|交互|1301|1305|1357|13类|艺术学/.test(text);
 }
 
@@ -414,6 +414,8 @@ export default function Home() {
           <option>即将截止</option><option>最新发布</option>
         </select>
       </section>
+
+      <div className="result-line"><b>{filtered.length}</b> 个岗位</div>
 
       <section className="job-list">
         {filtered.slice(0, visibleCount).map((job) => {
