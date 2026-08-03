@@ -143,6 +143,55 @@
     "mode": "官方校园招聘岗位接口"
   },
   {
+    "id": "baidu-jobs",
+    "name": "百度校园招聘",
+    "group": "互联网大厂",
+    "url": "https://talent.baidu.com/jobs/list?projectType=1",
+    "organization": "百度",
+    "priority": "P1",
+    "status": "已确认",
+    "schedule": "08:30,18:30",
+    "scope": "全国2027届应届生正式岗位；实习与社招不采集",
+    "mode": "官方校园招聘页面原始数据"
+  },
+  {
+    "id": "alibaba-jobs",
+    "name": "阿里巴巴校园招聘",
+    "group": "互联网大厂",
+    "url": "https://campus-talent.alibaba.com/campus/position",
+    "organization": "阿里巴巴",
+    "priority": "P1",
+    "status": "已确认",
+    "schedule": "08:30,18:30",
+    "scope": "阿里星2027届应届生正式岗位；实习与社招不采集",
+    "mode": "官方校园招聘批次与岗位接口"
+  },
+  {
+    "id": "oppo-jobs",
+    "name": "OPPO校园招聘",
+    "group": "互联网大厂",
+    "url": "https://careers.oppo.com/campus/post",
+    "organization": "OPPO",
+    "priority": "P1",
+    "status": "已确认",
+    "schedule": "08:30,18:30",
+    "scope": "全国2027届应届生及博士生正式岗位；实习与社招不采集",
+    "mode": "官方校园招聘岗位接口"
+  },
+  {
+    "id": "netease-games-jobs",
+    "name": "网易游戏校园招聘",
+    "group": "互联网大厂",
+    "url": "https://campus.game.163.com/app/job/position?id=102",
+    "organization": "网易游戏",
+    "project_id": 102,
+    "priority": "P1",
+    "status": "已确认",
+    "schedule": "08:30,18:30",
+    "scope": "网易互娱2027届校园招聘正式岗位；实习与社招不采集",
+    "mode": "官方校园招聘项目岗位接口"
+  },
+  {
     "id": "pdd-jobs",
     "name": "拼多多校园招聘",
     "group": "互联网大厂",

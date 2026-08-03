@@ -440,49 +440,163 @@ def mohrss_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[l
                 continue
             values.append(item)
 
-    return values, "collected" if values else "collected-empty", final_url
+    return values, "collected" if values else "collected-empty", response.url
 
 
 def baidu_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[list[dict[str, str]], str, str]:
     found: dict[str, dict[str, str]] = {}
-    final_url = source["url"]
-    for recruit_type in ("GRADUATE", "INTERN", "SOCIAL"):
-        url = f"https://talent.baidu.com/jobs/list?recruitType={recruit_type}"
-        response = session.get(url, timeout=40)
+    endpoint = "https://talent.baidu.com/httservice/getPostListNew"
+    page = 1
+    while True:
+        response = session.post(
+            endpoint, timeout=40,
+            headers={"Origin": "https://talent.baidu.com", "Referer": source["url"]},
+            data={
+                "recruitType": "GRADUATE", "pageSize": 10, "keyWord": "",
+                "curPage": page, "projectType": "1",
+            },
+        )
         response.raise_for_status()
-        final_url = response.url
-        marker = re.search(r"window\.__INITIAL_DATA__\s*=\s*", response.text)
-        if not marker:
-            continue
-        try:
-            # Baidu serializes JavaScript `undefined` in this otherwise-JSON object.
-            serialised = response.text[marker.end():].replace("undefined", "null")
-            payload, _ = json.JSONDecoder().raw_decode(serialised)
-        except json.JSONDecodeError:
-            continue
+        data = response.json().get("data") or {}
+        rows = data.get("list") or []
+        for row in rows:
+            title = clean(row.get("name"))
+            place = clean(row.get("workPlace"))
+            code = clean(row.get("jobId"))
+            if not title or not code:
+                continue
+            detail = f"https://talent.baidu.com/jobs/detail/GRADUATE/{code}"
+            found[detail] = make_item(
+                source, title, detail, clean(row.get("publishDate")), "百度",
+                location=place,
+                body_text=clean("\n".join(filter(None, (
+                    clean(row.get("workContent")), clean(row.get("serviceCondition")),
+                )))), raw_fields=row, data_quality="官方接口原始岗位数据",
+            )
+        pages = int(data.get("pages") or 0)
+        if not rows or page >= pages:
+            break
+        page += 1
+    values = list(found.values())
+    return values, "collected" if values else "collected-empty", endpoint
 
-        def walk(value: Any) -> None:
-            if isinstance(value, dict):
-                title = clean(value.get("name") or value.get("jobName") or value.get("title"))
-                place = clean(value.get("workPlace") or value.get("workplace") or value.get("city"))
-                code = clean(value.get("jobId") or value.get("postId") or value.get("jobCode") or value.get("code") or value.get("id"))
-                is_job = bool(value.get("serviceCondition") or value.get("workContent"))
-                if title and code and is_job:
-                    detail = f"https://talent.baidu.com/jobs/detail/{recruit_type}/{code}"
-                    found[detail] = make_item(
-                        source, title, detail, clean(value.get("publishDate")), "百度",
-                        location=place,
-                        raw_fields={key: child for key, child in value.items() if not isinstance(child, (dict, list))},
-                        data_quality="岗位详情完整",
-                    )
-                for child in value.values():
-                    walk(child)
-            elif isinstance(value, list):
-                for child in value:
-                    walk(child)
-        walk(payload)
-    values = list(found.values())[:200]
-    return values, "collected" if values else "collected-empty", final_url
+
+def alibaba_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[list[dict[str, str]], str, str]:
+    landing = session.get(source["url"], timeout=40)
+    landing.raise_for_status()
+    token_match = re.search(r'__token__\s*:\s*"([^"]+)"', landing.text)
+    if not token_match:
+        raise RuntimeError("Alibaba official campus page returned no CSRF token")
+    token = token_match.group(1)
+    endpoint = "https://campus-talent.alibaba.com"
+    headers = {"Referer": source["url"], "Content-Type": "application/json"}
+
+    conditions = session.post(
+        f"{endpoint}/searchCondition/listBatch?_csrf={token}",
+        timeout=40, headers=headers, json={},
+    )
+    conditions.raise_for_status()
+    graduate_batches = (conditions.json().get("content") or {}).get("graduate") or []
+    batch = next((row for row in graduate_batches if "2027" in clean(row.get("name"))), None)
+    if not batch:
+        return [], "seasonal-inactive", landing.url
+
+    found: list[dict[str, Any]] = []
+    page = 1
+    while True:
+        response = session.post(
+            f"{endpoint}/position/search?_csrf={token}", timeout=40, headers=headers,
+            json={
+                "batchId": batch["id"], "pageIndex": page, "pageSize": 100,
+                "channel": "new_campus_group_official_site", "language": "zh",
+                "circleCodes": ["1002"],
+            },
+        )
+        response.raise_for_status()
+        content = response.json().get("content") or {}
+        rows = content.get("datas") or []
+        for row in rows:
+            ident = clean(row.get("id"))
+            title = clean(row.get("name"))
+            if not ident or not title:
+                continue
+            detail = f"https://campus-talent.alibaba.com/campus/position/{ident}"
+            found.append(make_item(
+                source, title, detail,
+                date_from_milliseconds(row.get("publishTime") or row.get("modifyTime")),
+                "阿里巴巴", location="、".join(clean(place) for place in (row.get("workLocations") or [])),
+                body_text=clean("\n".join(filter(None, (
+                    clean(row.get("description")), clean(row.get("requirement")),
+                )))), raw_fields=row, data_quality="官方接口原始岗位数据",
+            ))
+        total = int(content.get("totalCount") or 0)
+        if not rows or page * 100 >= total:
+            break
+        page += 1
+    return found, "collected" if found else "collected-empty", response.url
+
+
+def oppo_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[list[dict[str, str]], str, str]:
+    endpoint = "https://careers.oppo.com/openapi/position/pageNew"
+    headers = {"Tenant-Id": "1000", "Content-Type": "application/json", "Referer": source["url"]}
+    found: list[dict[str, Any]] = []
+    page = 1
+    while True:
+        response = session.post(endpoint, timeout=40, headers=headers, json={
+            "pageNum": page, "pageSize": 100, "positionName": "",
+            "workCityCodeList": [], "positionTypeList": [], "projectTypeList": [], "shareId": "",
+        })
+        response.raise_for_status()
+        data = response.json().get("data") or {}
+        rows = data.get("records") or []
+        for row in rows:
+            project_name = clean(row.get("projectName"))
+            recruitment_type = clean(row.get("recruitmentType"))
+            if "2027" not in project_name or recruitment_type not in {"Graduate", "doctor"}:
+                continue
+            ident = clean(row.get("idProjPosition") or row.get("idRecruitPosition"))
+            title = clean(row.get("positionName"))
+            if not ident or not title:
+                continue
+            detail = f"https://careers.oppo.com/campus/post/{ident}"
+            found.append(make_item(
+                source, title, detail, clean(row.get("releaseTime")), "OPPO",
+                location=clean(row.get("workCityName")),
+                body_text=clean("\n".join(filter(None, (
+                    clean(row.get("positionDesc")), clean(row.get("positionRequire")),
+                )))), raw_fields=row, data_quality="官方接口原始岗位数据",
+            ))
+        pages = int(data.get("pages") or 0)
+        if not rows or page >= pages:
+            break
+        page += 1
+    return found, "collected" if found else "collected-empty", endpoint
+
+
+def netease_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[list[dict[str, str]], str, str]:
+    endpoint = "https://campus.163.com/api/campuspc/position/getJobList"
+    project_id = int(source.get("project_id") or 102)
+    response = session.get(endpoint, timeout=60, headers={"Referer": source["url"]}, params={
+        "pageSize": 100, "currentPage": 1, "projectId": project_id,
+        "timeStamp": int(time.time() * 1000),
+    })
+    response.raise_for_status()
+    rows = (response.json().get("data") or {}).get("list") or []
+    found = []
+    for row in rows:
+        ident = clean(row.get("id"))
+        title = clean(row.get("positionName"))
+        if not ident or not title:
+            continue
+        detail = f"https://campus.game.163.com/app/detail/index?id={ident}&projectId={project_id}"
+        found.append(make_item(
+            source, title, detail, date_from_milliseconds(row.get("updateTime")), "网易游戏",
+            location=clean(row.get("workPlaceName")),
+            body_text=clean("\n".join(filter(None, (
+                clean(row.get("positionDescription")), clean(row.get("positionRequirement")),
+            )))), raw_fields=row, data_quality="官方接口原始岗位数据",
+        ))
+    return found, "collected" if found else "collected-empty", response.url
 
 
 def jd_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[list[dict[str, str]], str, str]:
@@ -885,6 +999,9 @@ SPECIAL: dict[str, Callable[..., tuple[list[dict[str, str]], str, str]]] = {
     "iguopin": lambda s, x: api_spa_adapter(s, x, "https://www.iguopin.com/api/jobs/v3/list"),
     "bytedance-jobs": bytedance_adapter,
     "baidu-jobs": baidu_adapter,
+    "alibaba-jobs": alibaba_adapter,
+    "oppo-jobs": oppo_adapter,
+    "netease-games-jobs": netease_adapter,
     "jd-jobs": jd_adapter,
     "meituan-jobs": meituan_adapter,
     "pdd-jobs": pdd_adapter,

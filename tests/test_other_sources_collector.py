@@ -14,10 +14,11 @@ SPEC.loader.exec_module(COLLECTOR)
 
 
 class FakeResponse:
-    def __init__(self, payload, url="https://example.test/api", status_code=200):
+    def __init__(self, payload, url="https://example.test/api", status_code=200, text=""):
         self.payload = payload
         self.url = url
         self.status_code = status_code
+        self.text = text
         self.ok = 200 <= status_code < 400
         self.headers = {"Content-Type": "application/json"}
 
@@ -183,6 +184,31 @@ class PddSession:
         }, url)
 
 
+class OppoSession:
+    def post(self, url, **kwargs):
+        self.body = kwargs["json"]
+        return FakeResponse({"data": {"pages": 1, "records": [
+            {"idProjPosition": "oppo-grad", "positionName": "品牌视觉设计师",
+             "projectName": "2027届应届生校园招聘", "recruitmentType": "Graduate",
+             "workCityName": "深圳市", "positionDesc": "负责品牌视觉设计。",
+             "positionRequire": "设计类专业。", "releaseTime": "2026-08-01"},
+            {"idProjPosition": "oppo-intern", "positionName": "设计实习生",
+             "projectName": "2027届寻梦实习招聘", "recruitmentType": "Intern"},
+        ]}}, url)
+
+
+class NeteaseSession:
+    def get(self, url, **kwargs):
+        self.params = kwargs["params"]
+        return FakeResponse({"data": {"list": [{
+            "id": 4748, "projectId": 102, "positionName": "游戏项目管理",
+            "positionTypeName": "项目管理", "workPlaceName": "杭州,上海,广州",
+            "positionDescription": "参与产品研发和运营全生命周期管理。",
+            "positionRequirement": "2027届，游戏设计相关专业优先。",
+            "updateTime": 1785492979000,
+        }]}}, url)
+
+
 class FormalCampusAdapterTests(unittest.TestCase):
     def test_temporary_source_failure_retains_last_good_items(self):
         report = {
@@ -283,6 +309,31 @@ class FormalCampusAdapterTests(unittest.TestCase):
         self.assertIn("专业不限", items[0]["body_text"])
         self.assertEqual(items[0]["collection_scope"]["work_location"], "北京")
         self.assertEqual(items[1]["collection_scope"]["work_location"], "上海")
+
+    def test_oppo_adapter_keeps_2027_formal_projects_and_excludes_internships(self):
+        source = {"id": "oppo-jobs", "name": "OPPO校园招聘", "group": "互联网大厂",
+                  "url": "https://careers.oppo.com/campus/post"}
+        session = OppoSession()
+
+        items, status, _ = COLLECTOR.oppo_adapter(session, source)
+
+        self.assertEqual(status, "collected")
+        self.assertEqual([item["title"] for item in items], ["品牌视觉设计师"])
+        self.assertIn("设计类专业", items[0]["body_text"])
+        self.assertEqual(session.body["workCityCodeList"], [])
+
+    def test_netease_adapter_collects_full_2027_project_raw_fields(self):
+        source = {"id": "netease-games-jobs", "name": "网易游戏校园招聘",
+                  "group": "互联网大厂", "url": "https://campus.game.163.com/app/job/position?id=102",
+                  "project_id": 102}
+        session = NeteaseSession()
+
+        items, status, _ = COLLECTOR.netease_adapter(session, source)
+
+        self.assertEqual(status, "collected")
+        self.assertEqual(session.params["projectId"], 102)
+        self.assertEqual(items[0]["raw_fields"]["positionTypeName"], "项目管理")
+        self.assertIn("2027届", items[0]["body_text"])
 
 
 if __name__ == "__main__":
