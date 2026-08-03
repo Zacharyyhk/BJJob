@@ -88,7 +88,13 @@ def main() -> int:
         if previous.get(job["id"], {}).get("content_hash") == content_hash:
             continue
         pending.append({"id": job["id"], "content_hash": content_hash, "job": job})
-    output = {"schema_version": 1, "profile": profile, "pending_count": len(pending), "items": pending}
+    output = {
+        "schema_version": 1,
+        "profile": profile,
+        "prompt_version": PROMPT_VERSION,
+        "pending_count": len(pending),
+        "items": pending,
+    }
     QUEUE.write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"pending_count": len(pending)}, ensure_ascii=False))
     return 0

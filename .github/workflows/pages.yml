@@ -31,7 +31,7 @@ jobs:
       - name: Test collectors
         run: python -m unittest discover -s tests -p "test_*.py"
       - name: Validate semantic analysis
-        run: python scripts/validate_codex_analysis.py
+        run: python scripts/validate_codex_analysis.py --allow-pending
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:

@@ -44,7 +44,7 @@ def release_fingerprint(current: dict[str, dict[str, Any]], profile: dict[str, A
     return digest({"profile": profile, "prompt_version": prompt_version, "results": bound_results})
 
 
-def validate() -> tuple[list[str], dict[str, Any]]:
+def validate(*, allow_pending: bool = False) -> tuple[list[str], dict[str, Any]]:
     prepare = prepare_module()
     profile = load_json(PROFILE)
     analysis = load_json(ANALYSIS)
@@ -62,11 +62,14 @@ def validate() -> tuple[list[str], dict[str, Any]]:
         expected_hash = prepare.digest({"job": job, "profile": profile, "prompt_version": prepare.PROMPT_VERSION})
         result = results.get(job_id)
         if not isinstance(result, dict):
-            errors.append(f"{job_id}: 缺少分析结果")
+            if not allow_pending:
+                errors.append(f"{job_id}: 缺少分析结果")
+            continue
+        if result.get("content_hash") != expected_hash:
+            if not allow_pending:
+                errors.append(f"{job_id}: 原始数据或个人档案变化后尚未重新分析")
             continue
         current[job_id] = result
-        if result.get("content_hash") != expected_hash:
-            errors.append(f"{job_id}: 原始数据或个人档案变化后尚未重新分析")
         if result.get("match_level") not in {"match", "possible", "no"}:
             errors.append(f"{job_id}: match_level 无效")
         if not isinstance(result.get("normalized"), dict):
@@ -87,15 +90,21 @@ def validate() -> tuple[list[str], dict[str, Any]]:
         "profile_version": profile.get("version"),
         "prompt_version": prepare.PROMPT_VERSION,
         "fingerprint": fingerprint,
+        "allow_pending": allow_pending,
     }
     return errors, summary
 
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.parse_args()
+    parser.add_argument(
+        "--allow-pending",
+        action="store_true",
+        help="允许尚未分析的岗位不参与发布，但仍严格校验全部已分析岗位",
+    )
+    args = parser.parse_args()
 
-    errors, summary = validate()
+    errors, summary = validate(allow_pending=args.allow_pending)
     if errors:
         print(json.dumps({"status": "invalid", "summary": summary, "errors": errors[:100]}, ensure_ascii=False, indent=2))
         return 1
