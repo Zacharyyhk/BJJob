@@ -261,6 +261,15 @@ function matchForProfile(job: Job): MatchResult {
   return { level: "possible", label: "待分析", reasons: [], needsConfirmation: ["等待 Codex 语义分析"] };
 }
 
+function matchesMajorRequirement(job: Job, filter: string) {
+  if (filter === "全部专业要求") return true;
+  const majors = aiResults[job.id]?.normalized?.majors || [];
+  if (!majors.length) return true;
+  const text = majors.join("、");
+  if (/专业不限|不限专业|不限制专业|无专业要求|优先/.test(text)) return true;
+  return /设计|艺术|美术|视觉|交互|1301|1305|1357|13类|艺术学/.test(text);
+}
+
 const displayJobs = currentJobs.filter((job) => aiResults[job.id] && matchForProfile(job).level !== "no");
 
 const commonLocations = [
@@ -283,6 +292,7 @@ function locationLabels(value?: string) {
 export default function Home() {
   const [query, setQuery] = useState("");
   const [education, setEducation] = useState("全部学历");
+  const [majorRequirement, setMajorRequirement] = useState("设计类或不限");
   const [sort, setSort] = useState("即将截止");
   const [profileFilter, setProfileFilter] = useState("全部岗位");
   const [sourceGroup, setSourceGroup] = useState("机关单位");
@@ -347,6 +357,7 @@ export default function Home() {
       const profileMatch = matchForProfile(job);
       return (!keyword || text.includes(keyword))
         && (education === "全部学历" || (job.education || "").includes(education))
+        && matchesMajorRequirement(job, majorRequirement)
         && (profileFilter === "全部岗位"
           || (profileFilter === "适合我" && profileMatch.level !== "no")
           || (profileFilter === "明确符合" && profileMatch.level === "match")
@@ -363,9 +374,9 @@ export default function Home() {
       const bTime = b.deadline ? new Date(b.deadline).getTime() : Number.MAX_SAFE_INTEGER;
       return aTime - bTime;
     });
-  }, [query, education, sort, profileFilter, sourceGroup, establishment, unit, location, savedOnly, saved]);
+  }, [query, education, majorRequirement, sort, profileFilter, sourceGroup, establishment, unit, location, savedOnly, saved]);
 
-  useEffect(() => setVisibleCount(40), [query, education, sort, profileFilter, sourceGroup, establishment, unit, location, savedOnly]);
+  useEffect(() => setVisibleCount(40), [query, education, majorRequirement, sort, profileFilter, sourceGroup, establishment, unit, location, savedOnly]);
 
   return (
     <main className="workspace">
@@ -395,6 +406,9 @@ export default function Home() {
         </select>
         <select value={education} onChange={(event) => setEducation(event.target.value)} aria-label="学历要求">
           <option>全部学历</option><option>本科</option><option>硕士</option><option>博士</option><option>大专</option>
+        </select>
+        <select value={majorRequirement} onChange={(event) => setMajorRequirement(event.target.value)} aria-label="专业要求">
+          <option>设计类或不限</option><option>全部专业要求</option>
         </select>
         <select value={sort} onChange={(event) => setSort(event.target.value)} aria-label="排序方式">
           <option>即将截止</option><option>最新发布</option>
