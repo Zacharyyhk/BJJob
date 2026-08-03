@@ -367,23 +367,12 @@ export default function Home() {
 
   useEffect(() => setVisibleCount(40), [query, education, sort, profileFilter, sourceGroup, establishment, unit, location, savedOnly]);
 
-  const activeCount = displayJobs.length;
-  const hiddenNoCount = currentJobs.length - displayJobs.length;
-  const definiteCount = displayJobs.filter((job) => matchForProfile(job).level === "match").length;
-  const analyzedCount = Object.keys(aiResults).length;
-  const updated = new Date(collected.generated_at);
-
   return (
     <main className="workspace">
       <header>
-        <div>
-          <h1>招聘职位</h1>
-          <p>{activeCount} 个可关注 · 明确符合 {definiteCount} 个 · 已隐藏 {hiddenNoCount} 个不符合岗位 · Codex 已分析 {analyzedCount} 个 · 更新于 {updated.toLocaleString("zh-CN", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" })}</p>
-        </div>
+        <h1>招聘信息聚合</h1>
         <button className={savedOnly ? "saved active" : "saved"} onClick={() => setSavedOnly(!savedOnly)}>收藏 {saved.length}</button>
       </header>
-
-      <div className="profile"><b>我的条件</b><span>女</span><span>非北京户口</span><span>2027届硕士</span><span>华东师大本硕</span><span>设计类（兼容新旧目录）</span><span>中共党员</span></div>
 
       <section className="toolbar" aria-label="职位筛选">
         <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="搜索单位、岗位、专业或要求" aria-label="搜索职位" />
@@ -469,12 +458,6 @@ export default function Home() {
 
       {!filtered.length && <div className="empty">没有符合条件的职位</div>}
       {visibleCount < filtered.length && <button className="more" onClick={() => setVisibleCount(visibleCount + 40)}>再显示 40 个</button>}
-
-      <details className="source-report">
-        <summary>数据源状态：已采集 {otherSources.collected_source_count} · 待专用适配 {otherSources.needs_adapter_count} · 暂不可用 {otherSources.unavailable_count}</summary>
-        <div>{otherSources.sources.map((source) => <span key={source.source_id}>{source.source_name}：{source.status === "collected" ? `${source.item_count}条` : source.status === "collected-empty" ? "今日无结果" : source.status === "seasonal-inactive" ? "非招录期" : source.status === "adapter-blocked" ? "接口受限" : "不可用"}</span>)}</div>
-      </details>
-      <div className="data-note">自动整理公开招聘信息，最终条件以原公告和附件为准。</div>
     </main>
   );
 }
