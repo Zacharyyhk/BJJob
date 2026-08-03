@@ -2,7 +2,7 @@
   "schema_version": 1,
   "profile_version": 4,
   "prompt_version": 9,
-  "generated_at": "2026-07-30T13:25:38.911Z",
+  "generated_at": "2026-08-03T08:15:25.813Z",
   "results": {
     "cf7cee89c85f25ab-hzgwxxb-3": {
       "content_hash": "91e8eeda6b90879ce38992491ca1e61ab660e5538856aa6c45c05537374f7b0e",
@@ -132099,32 +132099,33 @@
       "analysis_author": "codex_current_model_prompt9_20260729"
     },
     "559efbd0df874dbf": {
-      "content_hash": "7c677b3155ec37473a76afee2205bb2a6034c0b2ac19f9aa65cb8eb33d6faf18",
+      "content_hash": "06f40ffdc94f9b93a3f93e91b2cc404fdbe9488b7934c7d0abd9974354693b1b",
       "match_level": "no",
       "label": "不符合",
       "score": 0,
       "normalized": {
         "organization": "腾讯",
         "title": "秘书",
-        "location": "深圳总部、北京、上海",
-        "education": "",
+        "location": "深圳、北京、上海",
+        "education": "本科及以上",
         "majors": [],
         "graduation_years": [
+          2025,
           2026
         ],
         "fresh_graduate_required": true,
         "political_status": "",
         "gender_requirement": "",
-        "responsibilities": "1、负责部门管理者的日程管理、会议支持、差旅支持等工作，并协助管理者做好部门管理及团队融合； 2、担任部门内各项职能类工作接口人，包括行政、人事、采购、资产、费用、合同、文档、资料管理等，统筹管理相关事务； 3、根据部门管理要求，协助制定并实施部门级管理规章制度及各项流程，并定期优化； 4、负责部门文化建设，结合组织需求，通过活动组织、氛围建设、荣誉激励等方式建立良好的组织氛围，提升组织活力； 5、及时传达公司下发的各类管理规定及要求，保障管理要求在部门的落地； 6、参与体系级活动组织，协助体系组织建设及文化落地。",
-        "requirements": "1、本科及以上学历； 2、热情开朗，为人正直，具备高效执行力，抗压性强，具备良好的时间管理、情绪管理及沟通能力； 3、具备优秀的服务意识、高度责任感及团队合作精神，能够与同事保持良好的工作关系； 4、工作例行化程度高，做事清晰有条理，具有全局观及项目预见性、前瞻意识； 5、熟练运用各种日常办公软件及办公设备，能独立组织大型团队活动并有创新意识。",
+        "responsibilities": "负责日程、会议、差旅、行政接口、制度流程和部门文化建设。",
+        "requirements": "本科及以上，具备执行、沟通、办公软件和活动组织能力。",
         "headcount": "",
-        "applicant_type": "正式校园招聘",
+        "applicant_type": "2026校园招聘",
         "position_code": "1150119840607173632",
         "deadline": ""
       },
       "reasons": [],
       "conflicts": [
-        "官方项目毕业范围最晚至2026年12月31日，与2027届毕业年份冲突"
+        "官方项目毕业范围截至2026年12月31日，与2027届毕业年份冲突"
       ],
       "needs_confirmation": [],
       "evidence": [
@@ -132133,13 +132134,13 @@
           "quote": "毕业时间：2025年1月1日-2026年12月31日"
         },
         {
-          "field": "任职要求",
-          "quote": "1、本科及以上学历； 2、热情开朗，为人正直，具备高效执行力，抗压性强，具备良好的时间管理、情绪管理及沟通能力； 3、具备优秀的服务意识、高度责任感及团队合作精神，能够与同事保持良好的工作关系； 4、工作例行化程度高，做事清晰有条理，具有全局观及项目预见性、前瞻意识； 5、熟练运用各种日常办公软件及办公设备，能独立组织大型团队活动并有创新意识。"
+          "field": "职责",
+          "quote": "负责部门管理者的日程管理、会议支持、差旅支持等工作"
         }
       ],
-      "analyzed_at": "2026-07-29T12:54:10.321Z",
+      "analyzed_at": "2026-07-30T13:25:38.911Z",
       "analysis_version": 1,
-      "analysis_author": "codex_current_model_prompt9_20260729"
+      "analysis_author": "codex_current_model_prompt9_20260730"
     },
     "2a71a512ebbf34d0": {
       "content_hash": "e15a27dfd117d712f9574010eae61a50ec8c98f88ff03b910ca2bfbd53a5aebe",
@@ -136762,50 +136763,6 @@
       "analysis_version": 1,
       "analysis_author": "codex_current_model_prompt9_20260730"
     },
-    "559efbd0df874dbf": {
-      "content_hash": "06f40ffdc94f9b93a3f93e91b2cc404fdbe9488b7934c7d0abd9974354693b1b",
-      "match_level": "no",
-      "label": "不符合",
-      "score": 0,
-      "normalized": {
-        "organization": "腾讯",
-        "title": "秘书",
-        "location": "深圳、北京、上海",
-        "education": "本科及以上",
-        "majors": [],
-        "graduation_years": [
-          2025,
-          2026
-        ],
-        "fresh_graduate_required": true,
-        "political_status": "",
-        "gender_requirement": "",
-        "responsibilities": "负责日程、会议、差旅、行政接口、制度流程和部门文化建设。",
-        "requirements": "本科及以上，具备执行、沟通、办公软件和活动组织能力。",
-        "headcount": "",
-        "applicant_type": "2026校园招聘",
-        "position_code": "1150119840607173632",
-        "deadline": ""
-      },
-      "reasons": [],
-      "conflicts": [
-        "官方项目毕业范围截至2026年12月31日，与2027届毕业年份冲突"
-      ],
-      "needs_confirmation": [],
-      "evidence": [
-        {
-          "field": "毕业届别",
-          "quote": "毕业时间：2025年1月1日-2026年12月31日"
-        },
-        {
-          "field": "职责",
-          "quote": "负责部门管理者的日程管理、会议支持、差旅支持等工作"
-        }
-      ],
-      "analyzed_at": "2026-07-30T13:25:38.911Z",
-      "analysis_version": 1,
-      "analysis_author": "codex_current_model_prompt9_20260730"
-    },
     "4967cf9de5aae2a4": {
       "content_hash": "c0f67c526b99d516dc6a4d160cba786e4582471cd2c6ca7a360edcd271301d93",
       "match_level": "no",
@@ -136895,6 +136852,968 @@
       "analyzed_at": "2026-07-30T13:25:38.911Z",
       "analysis_version": 1,
       "analysis_author": "codex_current_model_prompt9_20260730"
+    },
+    "e0adff6935b0bf66": {
+      "content_hash": "9bbf4df5e6c3b2d0211103ef2e8017041f0c9e5baaec701a0b51790abd5bde8b",
+      "match_level": "possible",
+      "label": "需确认",
+      "score": 62,
+      "normalized": {
+        "organization": "拼多多",
+        "title": "商家运营（多语种优势-上海）",
+        "location": "上海",
+        "education": "本科及以上学历",
+        "majors": [],
+        "graduation_years": [
+          "2027"
+        ],
+        "fresh_graduate_required": true,
+        "political_status": "未注明",
+        "gender_requirement": "不限或未注明",
+        "responsibilities": "1、参与或主导负责品类商家的引入、管理、考核、服务工作，帮助优质商家快速落地和发展，指导商家合规经营，扩大业务规模，持续优化商品品质，提升消费者购物体验；\n2、分析洞察行业趋势、行业资讯，并进行趋势分析，了解消费者喜好，对产品设计、选款提出开发指引，不断优化产品；\n3、根据业务需要，挖掘品类潜力，扩充品类商家，提升商品丰富度；\n4、参与品牌合作方日常对接，包括商品规划、品牌营销、运营策略等。",
+        "deadline": "",
+        "requirements": "1、2027届应届本科及以上学历，有商家运营相关实习经验优先；\n2、有数据及业务分析能力，善于通过数据分析挖掘问题定位原因；\n3、有良好的沟通表达能力跟自驱力，学习能力强，有责任感；\n4、有以下任一种语言优势（包括但不限于：日语、韩语、波兰语、荷兰语、西班牙语、葡萄牙语、法语、德语、意大利语、土耳其语、比利时语），听说读写流利，能直接作为工作生活语言。",
+        "headcount": "",
+        "applicant_type": "应届毕业生",
+        "position_code": "XZ0000609"
+      },
+      "reasons": [
+        "2027届本科及以上，运营职责包含消费者洞察、数据分析和品牌协同"
+      ],
+      "conflicts": [],
+      "needs_confirmation": [
+        "需确认是否至少熟练掌握岗位列出的任一种小语种"
+      ],
+      "evidence": [
+        {
+          "field": "任职要求",
+          "quote": "有以下任一种语言优势"
+        },
+        {
+          "field": "工作职责",
+          "quote": "1、参与或主导负责品类商家的引入、管理、考核、服务工作，帮助优质商家快速落地和发展，指导商家合规经营，扩大业务规模，持续优化商品品质，提升消费者购物体验"
+        }
+      ],
+      "analyzed_at": "2026-08-03T08:15:25.813Z",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_semantic_analysis_prompt9_location_scope"
+    },
+    "1988b0757177d81f": {
+      "content_hash": "27594db677f0918fc6572be9d0a46f67b913a39c76cc220785000427d48e21c2",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 8,
+      "normalized": {
+        "organization": "拼多多",
+        "title": "法务助理（上海）",
+        "location": "上海",
+        "education": "博士（JD）或法律硕士（LL",
+        "majors": [],
+        "graduation_years": [
+          "2027"
+        ],
+        "fresh_graduate_required": true,
+        "political_status": "未注明",
+        "gender_requirement": "不限或未注明",
+        "responsibilities": "1、协助处理与业务相关的全球合规工作；\n2、协助处理监管调查和其他监管合规事务；\n3、协助起草、审阅和修订合同，提供风险评估，并提供法律咨询以支持业务增长；\n4、协助执行上级指派的其他任务。",
+        "deadline": "",
+        "requirements": "1、拥有法学博士（JD）或法律硕士（LL.M.）学位者优先；\n2、热爱法律，具有出色的分析能力、较强的沟通能力和团队协作精神；\n3、具备良好的职业道德素养；\n4、英语口语能力佳，有能力处理全英法律事务。",
+        "headcount": "",
+        "applicant_type": "应届毕业生",
+        "position_code": "XZ0000613"
+      },
+      "reasons": [],
+      "conflicts": [
+        "核心职责是合同审阅、法律咨询与全球合规，要求能处理全英文法律事务，与设计类教育背景和能力方向明确不符"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "任职要求",
+          "quote": "有能力处理全英法律事务"
+        },
+        {
+          "field": "工作职责",
+          "quote": "1、协助处理与业务相关的全球合规工作"
+        }
+      ],
+      "analyzed_at": "2026-08-03T08:15:25.813Z",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_semantic_analysis_prompt9_location_scope"
+    },
+    "77bf4a127a716251": {
+      "content_hash": "062c173ecca0549dc605822cc2f60dbc2d0fa98ee05325db786ed6cb03fba93f",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 8,
+      "normalized": {
+        "organization": "拼多多",
+        "title": "AI Infra研发工程师",
+        "location": "上海",
+        "education": "博士/硕士学位的同学",
+        "majors": [],
+        "graduation_years": [
+          "2027"
+        ],
+        "fresh_graduate_required": true,
+        "political_status": "未注明",
+        "gender_requirement": "不限或未注明",
+        "responsibilities": "在本岗位，您将有机会深入基础设施技术本质，同时驱动大模型与业务高效落地，具体将参与：\n1. 大模型训练与推理基础设施研发：参与构建和优化面向大规模分布式训练/推理的Infra 平台，支持文本、图像、视频、语音等多模态大模型、扩散模型的训练与推理。涵盖集群资源调度、训练框架优化、高性能通信、混合精度训练、显存优化等关键环节，确保模型的训练效率与系统稳定性；\n2. 前沿Infra 技术探索与创新：持续跟踪并攻关大模型基础设施领域的前沿方向（如：超大规模异构集群管理、更高效的并行策略、MoE 训练/推理优化、量化与推理加速框架、多模态模型高效并行策略等），通过系统创新显著提升训练吞吐、降低推理成本、改善资源利用率；\n3. 大模型基础设施应用落地与赋能：将先进的Infra 能力与公司大模型业务场景深度结合，主导技术方案的设计与实现，具体支持方向包括但不限于：\n• 训练效率提升：支持Pretrain、SFT、RLHF 等全流程训练任务，优化端到端训练性能；\n• 推理服务优化：构建高并发、低延迟的在线推理平台，支持多模态大模型的实时服务；\n• 成本与弹性优化：实现智能资源调度、Spot 实例利用、自动扩缩容等，显著降低大模型训练与推理的算力成本；\n• 稳定性保障：打造高可用、故障自愈的分布式训练系统，确保7×24 小时稳定运行；\n4. 技术价值闭环：深度理解大模型训练与业务需求，利用平台海量算力与数据资源，推动Infra 技术创新落地，并通过性能指标、成本指标、实验验证等科学方法衡量技术价值，最终为大模型研发提效、降本，并支撑业务增长。",
+        "deadline": "",
+        "requirements": "1. 教育背景：2026.9-2027.8 期间已获得或即将获得博士/硕士学位的同学，计算机科学、软件工程、电子信息、自动化等相关专业优先；\n2. 技术根基：\n• 具备扎实的计算机系统基础（操作系统、计算机网络、分布式系统、编译原理等），出色的编程能力和工程实现能力（熟练掌握C/C++、Python，熟悉Go/Rust 者优先）；\n• 深入理解大规模分布式系统原理，熟悉至少一种主流大模型训练/推理框架（PyTorch、Megatron、DeepSpeed、vLLM、TVM 等）；\n• 有GPU/异构集群相关经验者优先，熟悉RDMA、NVLink、InfiniBand 等高性能网络者优先；\n3. 创新与问题解决能力：具备极强的学习能力、主动性和系统性思维，能够独立分析和解决复杂工程与性能问题，对将系统优化技术应用于大模型场景充满热情；\n4. 成果导向：在学术或工业项目中有突出表现者优先，例如但不限于：\n• 在系统/架构相关顶级会议/期刊发表过论文；\n• 在ACM/ICPC、知名编程或系统竞赛中获奖；\n• 主导或深度参与过高性能计算、分布式系统、大模型训练平台等具有较大技术影响力的项目。",
+        "headcount": "",
+        "applicant_type": "应届毕业生",
+        "position_code": "XZ0000586"
+      },
+      "reasons": [],
+      "conflicts": [
+        "岗位以分布式系统和大模型基础设施研发为核心，要求计算机相关专业及C/C++、Python工程能力，与设计背景不符"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "任职要求",
+          "quote": "熟练掌握C/C++、Python"
+        },
+        {
+          "field": "工作职责",
+          "quote": "在本岗位，您将有机会深入基础设施技术本质，同时驱动大模型与业务高效落地，具体将参与："
+        }
+      ],
+      "analyzed_at": "2026-08-03T08:15:25.813Z",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_semantic_analysis_prompt9_location_scope"
+    },
+    "af7acac439960570": {
+      "content_hash": "f028bff6f0d9bd0819503ef3a047934c5132fd3f135f68f7126058806659dd81",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 8,
+      "normalized": {
+        "organization": "拼多多",
+        "title": "大模型算法工程师",
+        "location": "上海",
+        "education": "博士/硕士学位的同学",
+        "majors": [],
+        "graduation_years": [
+          "2027"
+        ],
+        "fresh_graduate_required": true,
+        "political_status": "未注明",
+        "gender_requirement": "不限或未注明",
+        "responsibilities": "在本岗位，您将有机会同时深入技术本质并驱动业务落地，具体将参与：\n1. 大模型基座研发与优化：参与构建及优化面向电商领域的多语言、多模态（图/视频/语音等）大模型基座，全流程深入数据处理、样本标注、模型预训练（Pretrain）、有监督微调（SFT）/强化学习（RL）等关键环节；\n2. 前沿技术探索与创新：持续跟踪并攻关大模型领域的前沿方向(如：Long Context、Agent-RL、更高效的训练/推理框架等），通过算法创新持续提升模型的准确性、泛化性与性能；\n3. 大模型应用落地与赋能：将先进的模型能力与电商业务场景结合，主导技术方案的设计与实现，具体应用方向包括但不限于：\n• 体验革新：AI 交互式搜索、生成式推荐、智能导购、智能运营助手、智能客服机器人等；\n• 内容创造：高质量多语言、多模态（文字、图片、视频等）的商品信息生成、数字人互动等；\n• 效率提升：漏斗效率优化、实时翻译、智能代码助手等；\n4. 技术价值闭环：深度理解业务场景，利用平台丰富的数据资源，推动技术创新落地，并通过AB 实验等科学方法验证技术价值，最终提升用户、商家体验和商业效益。",
+        "deadline": "",
+        "requirements": "1. 教育背景：2026.9-2027.8 期间已获得或即将获得博士/硕士学位的同学，计算机科学、人工智能、数学、物理等相关专业优先；\n2. 技术根基：\n• 具备扎实的机器学习基础、出色的数据敏感度和优秀的编程能力；\n• 深入理解主流大模型（如：GPT、Deepseek 等）、多模态模型(如：Gemini、Qwen-VL 等）的技术原理；\n• 熟悉大模型训练全流程（Pretrain/SFT/RL/Agent 等）或生成式模型（Diffusion、Flux 等）者优先；\n3. 创新能力：具备极强的学习能力、主动性和创新思维，能够独立分析和解决复杂技术问题，对将前沿研究应用于实际挑战充满热情；\n4. 成果导向：在学术或工业项目中有突出表现者优先，例如但不限于：\n• 在CCF-A 类会议/期刊(如NeurlPS, ICML, CVPR, ACL 等）发表过论文；\n• 在ACM 编程竞赛、Kaggle 等知名算法竞赛中获奖；\n• 主导或深度参与过有较大技术影响力的大模型相关项目。",
+        "headcount": "",
+        "applicant_type": "应届毕业生",
+        "position_code": "XZ0000585"
+      },
+      "reasons": [],
+      "conflicts": [
+        "岗位要求机器学习、编程和大模型训练能力，并优先计算机、人工智能、数学或物理专业，与设计背景不符"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "任职要求",
+          "quote": "具备扎实的机器学习基础"
+        },
+        {
+          "field": "工作职责",
+          "quote": "在本岗位，您将有机会同时深入技术本质并驱动业务落地，具体将参与："
+        }
+      ],
+      "analyzed_at": "2026-08-03T08:15:25.813Z",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_semantic_analysis_prompt9_location_scope"
+    },
+    "041e7b904e7828fb": {
+      "content_hash": "010d3545a1ba6247396d657d93dee0b9055f906804712565b0882349b8adfe8f",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 8,
+      "normalized": {
+        "organization": "拼多多",
+        "title": "HR管培生（广东省）",
+        "location": "广东省",
+        "education": "本科及以上学历",
+        "majors": [],
+        "graduation_years": [
+          "2027"
+        ],
+        "fresh_graduate_required": true,
+        "political_status": "未注明",
+        "gender_requirement": "不限或未注明",
+        "responsibilities": "1、全面学习人力资源管理工作流程，紧跟公司工作发展需求；\n2、参与管理培训生培养，通过实践熟悉和掌握人力资源不同模块的工作；\n3、紧跟业务场景，在导师指导下参与问题诊断和解决方案落地，使用包括但不限于招聘、入离职管理、薪资和绩效、培训和员工关系等解决业务问题，回收结果；\n4、落地公司各项政策，与相关部门保持有效的日常沟通和紧密合作，提供有效帮助；协助支持人力资源各专项任务，以及其他工作事宜。",
+        "deadline": "",
+        "requirements": "1、2026届毕业生，本科及以上学历，人力资源管理、社会学、管理学、心理学、数据分析等相关专业优先； \n2、做事认真负责，细心谨慎，有良好的人际交往及沟通能力，有自主解决问题能力； \n3、积极主动好学，逻辑思维清晰，有成就愿望和进取精神； \n4、愿意接受挑战，能适应快节奏、多变化的仓储物流工作环境，认同公司企业文化。",
+        "headcount": "",
+        "applicant_type": "应届毕业生",
+        "position_code": "XZ0000618"
+      },
+      "reasons": [],
+      "conflicts": [
+        "岗位明确面向2026届毕业生，与2027届身份冲突"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "任职要求",
+          "quote": "2026届毕业生"
+        },
+        {
+          "field": "工作职责",
+          "quote": "1、全面学习人力资源管理工作流程，紧跟公司工作发展需求"
+        }
+      ],
+      "analyzed_at": "2026-08-03T08:15:25.813Z",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_semantic_analysis_prompt9_location_scope"
+    },
+    "1f3d79cee4dbfcbc": {
+      "content_hash": "d79dcaa7d2151fedcbab3a2c3a782ec3df77770edde0deacd6736a84daaaf513",
+      "match_level": "match",
+      "label": "符合",
+      "score": 90,
+      "normalized": {
+        "organization": "拼多多",
+        "title": "用户体验运营管培（多语种优势-上海）",
+        "location": "上海",
+        "education": "本科及以上学历",
+        "majors": [],
+        "graduation_years": [
+          "2027"
+        ],
+        "fresh_graduate_required": true,
+        "political_status": "未注明",
+        "gender_requirement": "不限或未注明",
+        "responsibilities": "围绕提升用户体验和满意度、进而提升用户粘性为目标，可以根据个人兴趣爱好和匹配度，提供以下三种发展方向和培养路径： \n1）项目管理类：基于扎实的语言能力，管理各国家供应商，通过制定和推动业务流程落地、管理项目进度、协调跨团队资源，来完成服务的稳定输出和质量的提升； \n2）策略类：负责目标市场的用户研究、数据洞察，设计服务接待流程，提高用户满意度、忠诚度； 根据不同国家情况，设计差异化的服务策略，构建多语言、多文化的服务体系；探索业内前沿的服务技术，设计智能化的服务体系；\n3）服务质量管理类：通过深度复盘用户投诉和数据分析，洞察用户体验全流程中的产品功能和服务瓶颈，协同多部门落实改进方案，推动用户体验与业务逻辑的持续迭代。",
+        "deadline": "",
+        "requirements": "1、2027届应届本科及以上学历，专业不限；\n2、热爱电子商务行业，靠谱的行动派，活跃的思想者，充满正能量； \n3、具备良好的逻辑性和沟通协调能力，且有良好的团队合作意识和创新能力； \n4、具备较好的自驱力，能适应快节奏、多变化、高速成长的互联网行业； \n5、具备用户同理心和体验敏感度。",
+        "headcount": "",
+        "applicant_type": "应届毕业生",
+        "position_code": "XZ0000610"
+      },
+      "reasons": [
+        "面向2027届且专业不限",
+        "核心职责包含用户研究、体验洞察、服务流程设计和跨部门改进，与设计研究和运营方向匹配"
+      ],
+      "conflicts": [],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "任职要求",
+          "quote": "2027届应届本科及以上学历，专业不限"
+        },
+        {
+          "field": "工作职责",
+          "quote": "围绕提升用户体验和满意度、进而提升用户粘性为目标，可以根据个人兴趣爱好和匹配度，提供以下三种发展方向和培养路径： "
+        }
+      ],
+      "analyzed_at": "2026-08-03T08:15:25.813Z",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_semantic_analysis_prompt9_location_scope"
+    },
+    "c96692a0274c6bf0": {
+      "content_hash": "9878941ed97918eb9e0e827cf1d3e0464c9c6f3d4aa81a056a0baf6ae4a1d5e3",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 8,
+      "normalized": {
+        "organization": "拼多多",
+        "title": "服务端研发工程师",
+        "location": "上海",
+        "education": "本科及以上学历",
+        "majors": [],
+        "graduation_years": [
+          "2027"
+        ],
+        "fresh_graduate_required": true,
+        "political_status": "未注明",
+        "gender_requirement": "不限或未注明",
+        "responsibilities": "1、负责业务和平台的架构设计和研发工作，解决各类有挑战的技术问题，为产品和业务的发展提供强有力的支撑；\n2、依照软件开发流程，根据产品和项目计划，完成所负责模块的架构设计、编码、测试和文档编写的全流程工作；\n3、持续优化系统架构，提高系统在高并发、高流量和分布式环境下的性能和稳定性，保持系统的高可用性、高可靠性和高扩展性；\n4、承担新技术预研和方案选型，参与关键技术点的攻坚工作，并进行技术推广，取得更大的业务收益。",
+        "deadline": "",
+        "requirements": "1、2027届毕业生，本科及以上学历，对计算机以及互联网技术有兴趣；\n2、扎实的数据结构和算法能力，熟悉常用的存储系统和中间件；\n3、精通至少一种开发语言，并能熟练应用解决具体问题；\n4、有较强的学习能力，有强烈的责任心和自我驱动力；\n5、及时关注并学习业界最新技术，具备良好的沟通能力和团队合作精神。",
+        "headcount": "",
+        "applicant_type": "应届毕业生",
+        "position_code": "XZ0000596"
+      },
+      "reasons": [],
+      "conflicts": [
+        "岗位以架构、编码、测试和分布式系统研发为核心，要求开发语言和数据结构算法能力，与设计背景不符"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "任职要求",
+          "quote": "精通至少一种开发语言"
+        },
+        {
+          "field": "工作职责",
+          "quote": "1、负责业务和平台的架构设计和研发工作，解决各类有挑战的技术问题，为产品和业务的发展提供强有力的支撑"
+        }
+      ],
+      "analyzed_at": "2026-08-03T08:15:25.813Z",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_semantic_analysis_prompt9_location_scope"
+    },
+    "22ffa5694492686f": {
+      "content_hash": "ca4c6b16e052ebd717d1e17c9762df2f81348c81759e439877375ce2b10f1ff9",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 8,
+      "normalized": {
+        "organization": "拼多多",
+        "title": "AI Agent研发工程师",
+        "location": "上海",
+        "education": "本科及以上学历",
+        "majors": [],
+        "graduation_years": [
+          "2027"
+        ],
+        "fresh_graduate_required": true,
+        "political_status": "未注明",
+        "gender_requirement": "不限或未注明",
+        "responsibilities": "1、Agent核心架构开发：负责Agent核心模块（任务规划、上下文管理、长期/短期记忆、工具调用）的设计与开发，构建高可靠、低延迟的智能体底层框架；\n2、应用效果调优：主导RAG知识库建设与交互环境构建，精通Prompt工程与工作流编排，持续优化大模型在复杂业务场景下的生成效果、稳定性与可控性；\n3、高性能工程链路建设：参与高并发、高可用分布式系统设计，优化Agent及RAG链路的系统性能，设计与落地缓存机制、消息队列、异步调度等核心组件，保障系统在海量请求下的稳定性；\n4、安全与可观测性体系：建设完善的Agent安全防护机制（意图识别、输出过滤、权限控制、沙箱执行）及全链路评估可观测体系（成功率、延迟、Token消耗、业务转化率等）；\n5、前沿技术探索：紧跟LLM及Agent前沿技术（如MCP协议、多智能体协同、长文本处理等），主导技术调研、复现与业务落地验证。",
+        "deadline": "",
+        "requirements": "1、2027届应届毕业生，本科及以上学历，计算机、软件、人工智能、数学等相关专业优先；\n2、编程底子厚：熟练使用 Python/Java/Go/C++ 中至少一门语言，编程基础扎实，熟悉常用数据结构与算法，具备优秀的代码编写与工程实践能力；\n3、AI工程能力：具备“AI原生”思维，熟练使用 Cursor、Claude Code 等AI编程工具提效；具备扎实的Prompt编写与调优能力，有结合多智能体、MCP、Function Calling等进行实际项目开发的经验；\n4、框架与原理：深入理解 LLM/Agent/RAG 核心原理，熟悉 LangChain、LlamaIndex、AutoGen、Dify 等主流大模型应用开发框架；\n5、极强的自驱力与好奇心，优秀的团队协作与沟通能力，能够拥抱快速迭代的业务节奏，对技术落地和业务结果具有双重责任感。",
+        "headcount": "",
+        "applicant_type": "应届毕业生",
+        "position_code": "XZ0000602"
+      },
+      "reasons": [],
+      "conflicts": [
+        "岗位要求编程、LLM/Agent/RAG框架和工程开发经验，与设计背景不符"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "任职要求",
+          "quote": "熟练使用 Python/Java/Go/C++ 中至少一门语言"
+        },
+        {
+          "field": "工作职责",
+          "quote": "1、Agent核心架构开发：负责Agent核心模块（任务规划、上下文管理、长期/短期记忆、工具调用）的设计与开发，构建高可靠、低延迟的智能体底层框架"
+        }
+      ],
+      "analyzed_at": "2026-08-03T08:15:25.813Z",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_semantic_analysis_prompt9_location_scope"
+    },
+    "58411a1e33e910dc": {
+      "content_hash": "9f0ed1d5a33e42f3aad8d5cbddb07a8fe89f935f442339737a6789abc51c42fc",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 8,
+      "normalized": {
+        "organization": "拼多多",
+        "title": "算法工程师",
+        "location": "上海",
+        "education": "硕士及以上学历",
+        "majors": [],
+        "graduation_years": [
+          "2027"
+        ],
+        "fresh_graduate_required": true,
+        "political_status": "未注明",
+        "gender_requirement": "不限或未注明",
+        "responsibilities": "1、利用机器学习/深度学习技术/图计算技术，优化app内外搜索、推荐、广告、图像、风控、智能客服、平台等效果，提升数亿用户的购物体验和平台的变现效率；\n2、深入产品和业务，发现算法和机制中的不足，提出改进方案并且推动实现；\n3、跟踪业界和学术界最新进展，将理论成果应用到业务场景，提升业务效果。",
+        "deadline": "",
+        "requirements": "1、2027届毕业生，硕士及以上学历，计算机相关专业，对算法有浓厚兴趣；\n2、具备强悍的编码能力，熟悉linux开发环境，熟悉TensorFlow、PyTorch、Hive优先；\n3、具备扎实的数据结构功底，熟悉机器学习、深度学习、图计算、自然语言处理、数据挖掘中一项或多项；\n4、对大语言模型、用户增长、搜索引擎、推荐系统、计算广告、图像、互联网风控、智能客服、平台等相关领域有经验者优先；\n5、具备较好的数理基础和逻辑分析能力，对解决具有挑战性的问题充满激情，具备较好的主动性和团队合作精神。",
+        "headcount": "",
+        "applicant_type": "应届毕业生",
+        "position_code": "XZ0000598"
+      },
+      "reasons": [],
+      "conflicts": [
+        "岗位明确要求计算机相关专业、编码以及机器学习算法能力，与设计背景不符"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "任职要求",
+          "quote": "计算机相关专业"
+        },
+        {
+          "field": "工作职责",
+          "quote": "1、利用机器学习/深度学习技术/图计算技术，优化app内外搜索、推荐、广告、图像、风控、智能客服、平台等效果，提升数亿用户的购物体验和平台的变现效率"
+        }
+      ],
+      "analyzed_at": "2026-08-03T08:15:25.813Z",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_semantic_analysis_prompt9_location_scope"
+    },
+    "ade9b2d4b530608e": {
+      "content_hash": "6e7605173a8983eae4164afc0c68103d5cd829245c2850c738121c2ae782b958",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 8,
+      "normalized": {
+        "organization": "拼多多",
+        "title": "客户端研发工程师",
+        "location": "上海",
+        "education": "本科及以上学历",
+        "majors": [],
+        "graduation_years": [
+          "2027"
+        ],
+        "fresh_graduate_required": true,
+        "political_status": "未注明",
+        "gender_requirement": "不限或未注明",
+        "responsibilities": "1、参与客户端日常需求分析与功能开发，持续优化用户体验与性能表现；\n2、参与客户端架构设计，包括多端统一架构、动态化技术建设、模块解耦与组件体系设计，提升系统的可维护性与研发效率；\n3、深度参与跨平台基础设施建设，如网络中间件、Native 容器、Hybrid 容器、音视频组件、动态化框架接入等；\n4、探索端侧智能（如 AIGC、端智能推荐、语音图像处理）相关能力的集成与优化，推动新技术在业务侧的落地。",
+        "deadline": "",
+        "requirements": "1、2027届毕业生，本科及以上学历，计算机相关专业，热爱技术与产品，有强烈的工程热情；\n2、具备扎实的计算机基础（数据结构、操作系统、计算机网络、编译原理等），熟练掌握至少一种主流编程语言，如Java、Kotlin、Swift、Objective-C 或C++；\n3、具备 iOS / Android 平台开发经验优先，理解系统底层运行机制，有良好的架构设计意识；\n4、熟悉多线程、异步编程、跨进程通信、组件化架构、染优化等关键技术，了解 Jetpack Compose / SwiftUI 等现代 UI 框架者优先；\n5、对 Flutter / React Native 等跨平台方案、边缘计算、端上 Al、低功耗与高性能优化等方向有一定了解或实践者优先；\n6、具备良好的学习能力、逻辑思维、沟通协作能力，乐于拥抱变化、追求技术突破。",
+        "headcount": "",
+        "applicant_type": "应届毕业生",
+        "position_code": "XZ0000599"
+      },
+      "reasons": [],
+      "conflicts": [
+        "岗位明确要求计算机相关专业及客户端编程、系统架构能力，与设计背景不符"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "任职要求",
+          "quote": "计算机相关专业"
+        },
+        {
+          "field": "工作职责",
+          "quote": "1、参与客户端日常需求分析与功能开发，持续优化用户体验与性能表现"
+        }
+      ],
+      "analyzed_at": "2026-08-03T08:15:25.813Z",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_semantic_analysis_prompt9_location_scope"
+    },
+    "f99716689082bfc0": {
+      "content_hash": "dc318d5378d1e018de15a81be49a5ad2b99a66f2ee6ccb7569559d06ced49ec7",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 8,
+      "normalized": {
+        "organization": "拼多多",
+        "title": "Web前端研发工程师",
+        "location": "上海",
+        "education": "本科及以上学历",
+        "majors": [],
+        "graduation_years": [
+          "2027"
+        ],
+        "fresh_graduate_required": true,
+        "political_status": "未注明",
+        "gender_requirement": "不限或未注明",
+        "responsibilities": "1、负责公司核心产品（H5/PC Web/微信小程序等）的前端开发，打造流畅、高性能的用户体验；\n2、与产品、设计、后端团队紧密协作，参与技术方案设计，推动前端技术落地；\n3、参与前端工程化建设（如组件库、工具链等），持续优化研发效率与代码质量。",
+        "deadline": "",
+        "requirements": "1、2027届毕业生，本科及以上学历，计算机相关专业，对前端技术有浓厚兴趣；\n2、扎实的计算机基础：熟悉数据结构、网络协议、操作系统等核心知识；\n3、技术能力：熟练掌握 HTML/CSS/JavaScript，了解主流框架（如Vue/React）者优先；\n4、综合素质：逻辑清晰、自驱力强，能快速学习新技术，具备良好的团队协作意识。",
+        "headcount": "",
+        "applicant_type": "应届毕业生",
+        "position_code": "XZ0000601"
+      },
+      "reasons": [],
+      "conflicts": [
+        "岗位明确要求计算机相关专业并熟练掌握HTML、CSS、JavaScript，与设计学背景不符"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "任职要求",
+          "quote": "熟练掌握 HTML/CSS/JavaScript"
+        },
+        {
+          "field": "工作职责",
+          "quote": "1、负责公司核心产品（H5/PC Web/微信小程序等）的前端开发，打造流畅、高性能的用户体验"
+        }
+      ],
+      "analyzed_at": "2026-08-03T08:15:25.813Z",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_semantic_analysis_prompt9_location_scope"
+    },
+    "2af2f386a2ebc977": {
+      "content_hash": "82c3e7744d49bff7d923313985f78ea6ffeed41fc9a9bf75edf92bd6255099a4",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 8,
+      "normalized": {
+        "organization": "拼多多",
+        "title": "数据分析师",
+        "location": "上海",
+        "education": "本科及以上学历",
+        "majors": [],
+        "graduation_years": [
+          "2027"
+        ],
+        "fresh_graduate_required": true,
+        "political_status": "未注明",
+        "gender_requirement": "不限或未注明",
+        "responsibilities": "1、分析业务数据，通过深度挖掘数据，帮助各部门发现、分析和解决问题、优化产品需求；\n2、监控和跟踪数据异常波动情况，进行探索分析和问题定位；\n3、设计实验方案，评估业务策略的效果，提出改进建议；\n4、负责业务相关日常报表的整理分析，对业务进行阶段性总结归纳；\n5、深入理解业务，发现业务特征和潜在机会给出有效的行动建议。",
+        "deadline": "",
+        "requirements": "1、2027届毕业生，本科及以上学历，计算机/数学/统计学等相关专业，热爱计算机科学和互联网技术；\n2、熟练使用 sql/python 语言等，掌握数理统计、数据挖掘等常用理论知识；\n3、对分析感兴趣，喜欢从数据中发现规律，探索本质；\n4、对 Hadoop，Spark 的原理熟练掌握，并有一定的使用经验者优先；\n5、善于沟通，逻辑思维能力较强，善于学习新知识。",
+        "headcount": "",
+        "applicant_type": "应届毕业生",
+        "position_code": "XZ0000600"
+      },
+      "reasons": [],
+      "conflicts": [
+        "岗位要求计算机、数学或统计专业以及SQL、Python和大数据技术，与设计背景不符"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "任职要求",
+          "quote": "熟练使用 sql/python"
+        },
+        {
+          "field": "工作职责",
+          "quote": "1、分析业务数据，通过深度挖掘数据，帮助各部门发现、分析和解决问题、优化产品需求"
+        }
+      ],
+      "analyzed_at": "2026-08-03T08:15:25.813Z",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_semantic_analysis_prompt9_location_scope"
+    },
+    "6d6907d7a3683377": {
+      "content_hash": "1916cfcbe8548ad67915e05f651da2f41495d15f47d3cf0b89d312f73bfb6b9e",
+      "match_level": "no",
+      "label": "不符合",
+      "score": 8,
+      "normalized": {
+        "organization": "拼多多",
+        "title": "安全工程师",
+        "location": "上海",
+        "education": "本科及以上学历",
+        "majors": [],
+        "graduation_years": [
+          "2027"
+        ],
+        "fresh_graduate_required": true,
+        "political_status": "未注明",
+        "gender_requirement": "不限或未注明",
+        "responsibilities": "1、持续推进公司安全体系建设，切实提升公司应用系统安全能力；\n2、设计并开发大规模高可用的安全应用、组件和系统，防止公司内主机遭受病毒、木马等攻击，避免通过网络攻击公司应用系统等；\n3、制定公司安全开发流程，并落地实施。按需针对内部架构实施安全评审，指导架构的安全优化；\n4、针对公司内部系统实施周期性的渗透测试、红蓝演练等工作，及时发现内部系统安全问题并推动整改；\n5、紧随各类前沿技术研究、情报等，及时预警当前体系的各种问题并推动整改；\n6、其他安全研究相关工作,包括但不限于：密码学研究，Web、二进制、移动系统的相关安全技术研究。",
+        "deadline": "",
+        "requirements": "1、2027届毕业生，本科及以上学历；\n2、熟悉信息安全领域的技术，有丰富实操经验；\n3、熟悉web安全、主机安全或者移动安全，深入理解相关框架和系统；\n4、熟悉安全原理和相关防御技术；\n5、积极向上，价值观正直，沟通合作能力强；\n6、对技术有热情，责任心强，自我驱动能力强。",
+        "headcount": "",
+        "applicant_type": "应届毕业生",
+        "position_code": "XZ0000597"
+      },
+      "reasons": [],
+      "conflicts": [
+        "岗位以安全系统开发、渗透测试和攻防技术为核心，要求信息安全实操能力，与设计背景不符"
+      ],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "任职要求",
+          "quote": "熟悉信息安全领域的技术"
+        },
+        {
+          "field": "工作职责",
+          "quote": "1、持续推进公司安全体系建设，切实提升公司应用系统安全能力"
+        }
+      ],
+      "analyzed_at": "2026-08-03T08:15:25.813Z",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_semantic_analysis_prompt9_location_scope"
+    },
+    "1cfbb92b95715b30": {
+      "content_hash": "a0eb36c3b72a3b7c6af7c6140e6abae2cfae3018ade0e2b94280df51fef2b9b3",
+      "match_level": "match",
+      "label": "符合",
+      "score": 90,
+      "normalized": {
+        "organization": "拼多多",
+        "title": "产品管培生（上海）",
+        "location": "上海",
+        "education": "本科及以上学历",
+        "majors": [],
+        "graduation_years": [
+          "2027"
+        ],
+        "fresh_graduate_required": true,
+        "political_status": "未注明",
+        "gender_requirement": "不限或未注明",
+        "responsibilities": "1、需要对B端/C端用户的需求进行分析和拆解，并能通过设计产品方案来满足用户的需求； \n2、和技术团队、设计团队等部门进行良好的沟通协作，可以有效执行任务并推动项目落地； \n3、日常需要通过对用户需求的洞察和数据分析，主动发现问题并提出有效的创新解决方案。",
+        "deadline": "",
+        "requirements": "1、2027届应届本科及以上学历，理工科背景（信息系统、数学、统计学、运筹学等）优先； \n2、有较强的好奇心，愿意主动学习，积极应对未知的挑战； \n3、对外沟通表达顺畅，表达和思考的逻辑能力强，可以和他人协作并有效解决问题； \n4、自驱力强，能够自主独立负责项目，按时完成任务；有成功项目者优先； \n5、对产品经理工作具备极大热情，愿意站在用户角度思考问题；有产品实习工作者优先。",
+        "headcount": "",
+        "applicant_type": "应届毕业生",
+        "position_code": "XZ0000604"
+      },
+      "reasons": [
+        "面向2027届本科及以上，理工科仅为优先项而非硬门槛",
+        "核心职责是用户需求洞察、产品方案设计和跨团队推进，与设计背景的用户研究和方案能力匹配"
+      ],
+      "conflicts": [],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "任职要求",
+          "quote": "理工科背景（信息系统、数学、统计学、运筹学等）优先"
+        },
+        {
+          "field": "工作职责",
+          "quote": "1、需要对B端/C端用户的需求进行分析和拆解，并能通过设计产品方案来满足用户的需求"
+        }
+      ],
+      "analyzed_at": "2026-08-03T08:15:25.813Z",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_semantic_analysis_prompt9_location_scope"
+    },
+    "fa2c5d2a84726a8a": {
+      "content_hash": "7854ba2b87fbda544adc1c193595a64c6ce9ddb19cebe4b92c53742c2939c219",
+      "match_level": "match",
+      "label": "符合",
+      "score": 90,
+      "normalized": {
+        "organization": "拼多多",
+        "title": "市场管培生（上海）",
+        "location": "上海",
+        "education": "本科及以上学历",
+        "majors": [],
+        "graduation_years": [
+          "2027"
+        ],
+        "fresh_graduate_required": true,
+        "political_status": "未注明",
+        "gender_requirement": "不限或未注明",
+        "responsibilities": "方向一：广告投放 \n1、负责App在主流媒体平台的广告投放策略制定工作，对广告投放的规模以及ROI负责； \n2、参与设计广告量化研究和自动化交易系统，探索投放策略的最佳实现方案； \n3、通过数据分析发现投放策略中存在的问题和亏损点，提升广告投放效果； \n4、管理项目进度，根据目标合理分配项目资源，积极主动推动拉齐项目各方进度和预期； \n5、关注市场信息，定期分析行业数据； \n6、与各媒体渠道进行对接合作，探索广告行业先进玩法。 \n方向二：数据分析 \n1、搭建各增长渠道的用户增长模型，通过数据积累及分析优化各渠道增长漏斗； \n2、对用户行为有强烈兴趣，喜欢从数据中发现规律与问题，从而理解用户，为用户创造更好的产品体验； \n3、根据业务发展情况，搭建能够准确反映业务运作健康状况的数据指标体系，围绕业务构建多维度数据模型，监控各业务线日常增长指标及进展； \n4、主导进行A/B实验与分析，挖掘数据结果背后的业务意义，让每一次增长迭代都有迹可循。 \n方向三：KOL运营\n1、负责短视频平台的达人营销投放，以高曝光、转化为目标，制定基于达人渠道的内容营销策略； \n2、以高曝光和高转化为目标，结合内容方法论制定达人内容营销策略，指导并提升达人投放的播放表现； \n3、进行投后数据效果分析和复盘，分析短视频、直播转化路径，优化内容产出效率和转化率； \n4、搭建并优化达人投放流程，进行创作者拉新和维护，持续提升达人合作效率和收益。 \n方向四：广告创意 \n1、以高曝光和高转化为目标，制定信息流短视频的风格并设计拍摄相关创意内容，把控合作方进行短视频的拍摄剪辑； \n2、负责对短视频的电商相关品类的内容生态进行分析，发现内容热点并总结内容运营经验，形成可复制的内容方法论； \n3、针对短视频特性进行分析和拆解，并开发创新的短视频表现形式； \n4、进行投后数据效果分析和复盘，分析短视频转化路径，优化内容产出效率和转化率。\n方向五：站内营销\n1、负责站内用户的营销，提升站内用户的GMV；\n2、思考各类型用户各自需要什么内容来提升转化率，策划并提供各类用户所需要的营销内容，复盘分析并持续迭代，为转化效果负责；\n3、对不同营销渠道、不同的语言，做差异化的探索；为营销内容的新鲜度、本地化负责；\n4、管理项目进度，根据目标合理分配项目资源，积极主动推动拉齐项目各方进度和预期。",
+        "deadline": "",
+        "requirements": "1、2027届应届本科及以上学历，数学、统计学、市场营销、新闻广告、影视传媒、数字媒体等相关专业优先； \n2、较强的数据及业务分析能力，逻辑思维能力强，善于通过数据分析挖掘问题，迭代运营动作；\n3、做事脚踏实地，上进且勤奋，靠谱的行动派，充满正能量； \n4、具有团队精神，良好的跨部门沟通协调能力，自我驱动力强，喜欢有挑战的工作； \n5、成熟地面对压力和挫折，能适应快节奏、多变化、高速成长的互联网行业。",
+        "headcount": "",
+        "applicant_type": "应届毕业生",
+        "position_code": "XZ0000603"
+      },
+      "reasons": [
+        "面向2027届，数字媒体等相关专业仅为优先项",
+        "包含KOL运营、广告创意、内容策划和用户数据分析方向，与设计及运营能力匹配"
+      ],
+      "conflicts": [],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "任职要求",
+          "quote": "数字媒体等相关专业优先"
+        },
+        {
+          "field": "工作职责",
+          "quote": "方向一：广告投放 "
+        }
+      ],
+      "analyzed_at": "2026-08-03T08:15:25.813Z",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_semantic_analysis_prompt9_location_scope"
+    },
+    "b9d01e10aed786ce": {
+      "content_hash": "43fb624f3b3ec6b376f82e2148534ac44a9a6df3ecc0ebe26916cba6bebd6dca",
+      "match_level": "match",
+      "label": "符合",
+      "score": 90,
+      "normalized": {
+        "organization": "拼多多",
+        "title": "运营管培生（上海）",
+        "location": "上海",
+        "education": "本科及以上学历",
+        "majors": [],
+        "graduation_years": [
+          "2027"
+        ],
+        "fresh_graduate_required": true,
+        "political_status": "未注明",
+        "gender_requirement": "不限或未注明",
+        "responsibilities": "1、准确把握消费者需求，捕捉时下消费热点，为平台业务发展添砖加瓦；\n2、通过大量业务数据分析、调研等手段，洞察用户需求和痛点；\n3、营造良好平台秩序，为商家和消费者创造更好的体验。",
+        "deadline": "",
+        "requirements": "1、2027届应届本科及以上学历，专业不限；\n2、做事脚踏实地，上进且勤奋，靠谱的行动派，充满正能量；\n3、具有团队精神，自我驱动力强，喜欢有挑战的工作；\n4、能成熟地面对压力和挫折，适应快节奏、多变化、高速成长的互联网行业。",
+        "headcount": "",
+        "applicant_type": "应届毕业生",
+        "position_code": "XZ0000608"
+      },
+      "reasons": [
+        "面向2027届且专业不限",
+        "核心工作是消费者洞察、业务数据分析和平台体验运营，符合新增运营方向"
+      ],
+      "conflicts": [],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "任职要求",
+          "quote": "2027届应届本科及以上学历，专业不限"
+        },
+        {
+          "field": "工作职责",
+          "quote": "1、准确把握消费者需求，捕捉时下消费热点，为平台业务发展添砖加瓦"
+        }
+      ],
+      "analyzed_at": "2026-08-03T08:15:25.813Z",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_semantic_analysis_prompt9_location_scope"
+    },
+    "baed533b759beda0": {
+      "content_hash": "638686c1a86e50b0f10838806f24bce950e9a0b656e018e150143e304062f9c5",
+      "match_level": "possible",
+      "label": "需确认",
+      "score": 62,
+      "normalized": {
+        "organization": "拼多多",
+        "title": "商务管培生（上海）",
+        "location": "上海",
+        "education": "本科及以上学历",
+        "majors": [],
+        "graduation_years": [
+          "2027"
+        ],
+        "fresh_graduate_required": true,
+        "political_status": "未注明",
+        "gender_requirement": "不限或未注明",
+        "responsibilities": "1、外部合作方拓展与管理：拓展合作渠道，谈判合作政策，完成日常工作对接； \n2、商务需求跟进：了解业务需求，整合内外资源，快速推动需求落地并及时提出优化建议，推动业务发展； \n3、关注商务产出；基于数据效果和业务进展，优化工作重点和策略，保证结果； \n4、关系维护：日常维护与合作方关系，实时了解整个行业和市场最新信息。",
+        "deadline": "",
+        "requirements": "1、2027届应届本科及以上学历，专业不限，市场/传播学/商科专业优先；\n2、具备良好的英语听说读写能力，具备良好的沟通技巧，亲和力佳；\n3、具有较强学习能力和逻辑思维能力，具备较强的自驱力和目标感，责任心强；\n4、热爱并愿意长期投身电商行业，认同公司企业文化及发展愿景。",
+        "headcount": "",
+        "applicant_type": "应届毕业生",
+        "position_code": "XZ0000607"
+      },
+      "reasons": [
+        "面向2027届且专业不限，职责侧重合作拓展、资源整合和项目推进"
+      ],
+      "conflicts": [],
+      "needs_confirmation": [
+        "需确认英语听说读写能力是否达到岗位要求"
+      ],
+      "evidence": [
+        {
+          "field": "任职要求",
+          "quote": "具备良好的英语听说读写能力"
+        },
+        {
+          "field": "工作职责",
+          "quote": "1、外部合作方拓展与管理：拓展合作渠道，谈判合作政策，完成日常工作对接"
+        }
+      ],
+      "analyzed_at": "2026-08-03T08:15:25.813Z",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_semantic_analysis_prompt9_location_scope"
+    },
+    "4ef87aadb992f99f": {
+      "content_hash": "261a9bfdd32376bab59b3d04a12ed121ca7c9b50d0d64a9b13e7e2a84350d572",
+      "match_level": "possible",
+      "label": "需确认",
+      "score": 62,
+      "normalized": {
+        "organization": "拼多多",
+        "title": "合规运营管培生（上海）",
+        "location": "上海",
+        "education": "本科及以上学历",
+        "majors": [],
+        "graduation_years": [
+          "2027"
+        ],
+        "fresh_graduate_required": true,
+        "political_status": "未注明",
+        "gender_requirement": "不限或未注明",
+        "responsibilities": "1、制定和完善商品发布的合规规则，并统筹各部门推进商品发布规则落地； \n2、审核商品合规准入资质，通过评价数据反哺优化商品合规准入规则，并推动规则标准化、流程化、产品化； \n3、不断优化规则，保障平台商品合规，推动解决商家合规经营问题，促进平台生态良性发展。",
+        "deadline": "",
+        "requirements": "1、2027届应届本科及以上学历，英语水平良好；\n2、具备项目协调能力，有社团活动协调类工作经历或有社团工作经验优先；\n3、学习能力强，在辅导培训后能够快速上手业务，并独立完成指派的工作。",
+        "headcount": "",
+        "applicant_type": "应届毕业生",
+        "position_code": "XZ0000605"
+      },
+      "reasons": [
+        "面向2027届，职责属于规则制定、流程推进和项目协调类运营"
+      ],
+      "conflicts": [],
+      "needs_confirmation": [
+        "需确认英语水平是否达到岗位所称“良好”要求"
+      ],
+      "evidence": [
+        {
+          "field": "任职要求",
+          "quote": "英语水平良好"
+        },
+        {
+          "field": "工作职责",
+          "quote": "1、制定和完善商品发布的合规规则，并统筹各部门推进商品发布规则落地"
+        }
+      ],
+      "analyzed_at": "2026-08-03T08:15:25.813Z",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_semantic_analysis_prompt9_location_scope"
+    },
+    "9169a083a9ab5efb": {
+      "content_hash": "db71d2413ce4a38a094942b4dfa6111649719120968b82ea7cc7679e49eb7ee9",
+      "match_level": "possible",
+      "label": "需确认",
+      "score": 62,
+      "normalized": {
+        "organization": "拼多多",
+        "title": "商品运营管培生（上海）",
+        "location": "上海",
+        "education": "本科及以上学历",
+        "majors": [],
+        "graduation_years": [
+          "2027"
+        ],
+        "fresh_graduate_required": true,
+        "political_status": "未注明",
+        "gender_requirement": "不限或未注明",
+        "responsibilities": "1、准确把握消费者需求，捕捉时下热销商品，为平台业务发展添砖加瓦；\n2、通过各品类数据分析、调研等手段，建立并维护商品价格数据库；\n3、监控商品价格，提升商品质价比；\n4、定期进行站内外商品多平台对比评测，为平台上品、定价等决策提供数据支持，给商家和消费者创造更好的体验。",
+        "deadline": "",
+        "requirements": "1、2027届应届本科及以上学历，具备良好的英语听说读写能力；\n2、具备一定的数据分析能力，表达和思考的逻辑能力强，可以和他人协作并有效解决问题；\n3、具有团队精神，自我驱动力强，喜欢有挑战的工作；\n4、有丰富的网络购物经验，对电商有热情，能适应快节奏、多变化、高速成长的互联网行业。",
+        "headcount": "",
+        "applicant_type": "应届毕业生",
+        "position_code": "XZ0000606"
+      },
+      "reasons": [
+        "面向2027届，职责是消费者需求、商品调研和价格数据分析，属于可考虑的运营方向"
+      ],
+      "conflicts": [],
+      "needs_confirmation": [
+        "需确认英语听说读写能力是否达到岗位要求"
+      ],
+      "evidence": [
+        {
+          "field": "任职要求",
+          "quote": "具备良好的英语听说读写能力"
+        },
+        {
+          "field": "工作职责",
+          "quote": "1、准确把握消费者需求，捕捉时下热销商品，为平台业务发展添砖加瓦"
+        }
+      ],
+      "analyzed_at": "2026-08-03T08:15:25.813Z",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_semantic_analysis_prompt9_location_scope"
+    },
+    "888386b5c7333191": {
+      "content_hash": "300c95102a8f53760442af5fde019d7bfe09edc6aef311067a553cca25d84f3b",
+      "match_level": "match",
+      "label": "符合",
+      "score": 90,
+      "normalized": {
+        "organization": "拼多多",
+        "title": "设计管培生（上海）",
+        "location": "上海",
+        "education": "本科及以上学历",
+        "majors": [],
+        "graduation_years": [
+          "2027"
+        ],
+        "fresh_graduate_required": true,
+        "political_status": "未注明",
+        "gender_requirement": "不限或未注明",
+        "responsibilities": "方向一：交互设计\n1、参与并负责公司产品和功能研发流程中的交互设计工作，业务类型包括但不限于市场增长、基础电商服务、消费者服务、商家服务等；\n2、以业务增长和高质量用户体验为目标，深入理解产品需求和活动玩法、回归场景分析用户诉求、使用恰当和专业的设计语言，输出业务和增长逻辑完整、流程及界面体验合理的交互方案；\n3、对功能数据和用户反馈进行分析复盘，提出迭代思路并输出交互方案，帮助产品功能获得更好的业务效果和用户体验；\n4、根据业务目标，结合调研和对业务的理解，提出对业务增量有效的自驱想法和需求，同时保证用户体验完整流畅。\n\n方向二：UI设计\n1、参与并负责公司产品和功能研发流程中的UI设计工作，业务类型包括但不限于市场增长、基础电商服务、消费者服务、商家服务等；\n2、以业务增长和高质量用户体验为目标，理解并总结目标用户的审美模型，负责视觉创意、页面风格定调、布局及细节把控、动效输出等工作，输出视觉调性恰当、信息结构清晰、动态效果流畅的UI方案；\n3、与开发密切配合保证页面还原度，能不断提高设计研发团队的配合效率，并对通用设计范式进行设计规范梳理；\n4、对产品功能逻辑理解清晰，辅助完善产品交互逻辑；能深入理解业务，提出辅助业务增量的需求。\n\n方向三：创意视觉设计\n1、参与并负责公司创意视觉工作，为渠道和场景的点击率和转化率等业务指标负责；\n2、以业务增长为目标，输出视觉调性恰当、动态效果流畅、创意风格丰富多样的视觉方案；\n3、分析复盘创意方案的业务效果，理解并总结目标用户的审美模型，归纳业务内创意视觉设计的有效思路；\n4、针对特定主题进行创意发散，不断尝试新的创意思路，持续探索高点击高转化的创意设计方案。",
+        "deadline": "",
+        "requirements": "2027届应届本科及以上学历。\n方向一：交互设计\n1、交互及用户体验基础扎实，敬畏细节，逻辑清晰，有体系化的设计思路和方法，能输出高质量的交互文档；\n2、有较强的调研和分析能力，能快速了解行业现状和用户需求，并提出有建设性的调研结论；\n3、有商业设计思路，创新活力好，能结合业务目标和用户需求，提出落地性强的创新需求；\n4、踏实认真，执行力强，责任感和主动性好，能成熟的面对压力和挫折，沟通协调能力良好，能够快速推进方案落地；\n5、工业设计、用户研究、心理学、理科、工科专业等相关专业优先。\n\n方向二：UI设计\n1、能熟练使用UI和动效设计软件和工具，视觉传达能力良好，有多样化的设计落地能力，能输出高质量的UI，高保真文档和动效方案；\n2、用户体验基础扎实，有体系化的设计思路和方法，逻辑良好，敬畏细节，能以业务增长为目标组织页面信息结构；\n3、设计审美良好，设计视野开阔，能时刻关注设计趋势，并主动提出对产品及功能的UI优化思路；\n4、踏实认真，执行力强，责任感和主动性好，能成熟的面对压力和挫折，沟通协调能力良好，能够快速推进方案落地；\n5、美院毕业，平面设计、艺术设计、工业设计、新媒体设计等专业优先；有美术及绘画功底优先。\n\n方向三：创意视觉设计\n1、熟练使用各类设计软件，能快速输出高质量的创意和动效方案，方案的视觉表现力强；\n2、设计审美良好，设计视野开阔，能时刻关注设计趋势，有多样化的设计落地能力，能灵活转换或敢于挑战各种视觉风格；\n3、创意活力强，有体系化的创意思维方式和方法，能针对不同主题快速提出落地性好的创意想法，勇于提出并不断尝试新的创意思路；\n4、踏实认真，执行力强，责任感和主动性好，能成熟的面对压力和挫折，沟通协调能力良好，能够快速推进方案落地。",
+        "headcount": "",
+        "applicant_type": "应届毕业生",
+        "position_code": "XZ0000611"
+      },
+      "reasons": [
+        "面向2027届本科及以上",
+        "交互、UI和创意视觉方向明确接收艺术设计、工业设计、新媒体设计等专业，职责与设计背景直接匹配"
+      ],
+      "conflicts": [],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "任职要求",
+          "quote": "平面设计、艺术设计、工业设计、新媒体设计等专业优先"
+        },
+        {
+          "field": "工作职责",
+          "quote": "方向一：交互设计"
+        }
+      ],
+      "analyzed_at": "2026-08-03T08:15:25.813Z",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_semantic_analysis_prompt9_location_scope"
+    },
+    "6c530a014a168aa7": {
+      "content_hash": "f58ededc103e22a7b11355786b157559f2cac6236fb3f0b5a2d9294b2dc7a68d",
+      "match_level": "match",
+      "label": "符合",
+      "score": 90,
+      "normalized": {
+        "organization": "拼多多",
+        "title": "视频创意制作（上海）",
+        "location": "上海",
+        "education": "本科及以上学历",
+        "majors": [],
+        "graduation_years": [
+          "2027"
+        ],
+        "fresh_graduate_required": true,
+        "political_status": "未注明",
+        "gender_requirement": "不限或未注明",
+        "responsibilities": "1、负责产品的各类广告素材、社媒短视频等后期制作工作；\n2、负责调研市场、研究用户，发掘新的创意视频方向，根据数据反馈及时更新迭代视频内容；\n3、公司安排的其他视频相关制作。",
+        "deadline": "",
+        "requirements": "1、2027届应届本科及以上学历，有留学经历的优先；\n2、有创意，脑洞大，善于调研和分析，沟通能力强，能和业务同学高效协作； \n3、关注国内外流行热点，了解各类广告渠道视频风格，能够独立完成视频制作，熟悉视频产出的流程； \n4、熟练使用相关剪辑、调色，后期以及文字图像处理软件；\n5、具备视频拍摄能力、MG动画制作能力加分。",
+        "headcount": "",
+        "applicant_type": "应届毕业生",
+        "position_code": "XZ0000612"
+      },
+      "reasons": [
+        "面向2027届本科及以上",
+        "职责包含短视频创意、拍摄、剪辑和视觉内容迭代，与数字媒体和视觉设计能力相关"
+      ],
+      "conflicts": [],
+      "needs_confirmation": [],
+      "evidence": [
+        {
+          "field": "任职要求",
+          "quote": "能够独立完成视频制作"
+        },
+        {
+          "field": "工作职责",
+          "quote": "1、负责产品的各类广告素材、社媒短视频等后期制作工作"
+        }
+      ],
+      "analyzed_at": "2026-08-03T08:15:25.813Z",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_semantic_analysis_prompt9_location_scope"
+    },
+    "24a710f26c8ea86d": {
+      "content_hash": "97592205b77494e47245bf5c5b59851afec638630fb31ea69e72f7c48fd6a3e0",
+      "match_level": "possible",
+      "label": "需确认",
+      "score": 62,
+      "normalized": {
+        "organization": "拼多多",
+        "title": "HR管培生（上海）",
+        "location": "上海",
+        "education": "本科及以上学历",
+        "majors": [],
+        "graduation_years": [
+          "2027"
+        ],
+        "fresh_graduate_required": true,
+        "political_status": "未注明",
+        "gender_requirement": "不限或未注明",
+        "responsibilities": "方向一：招聘配置 \n1、全面学习人力资源管理工作流程，紧跟公司工作发展需求；\n2、参与管理培训生培养，通过实践熟悉人力资源不同模块的工作；\n3、分析岗位需求，完成招聘交付计划，满足业务对人员的需求，包括但不限于人才库维护、简历搜索、面试组织、候选人入职落地跟进、各项招聘活动的组织执行、招聘数据的统计及分析等；\n4、与相关业务部门保持有效的日常沟通，提供有效帮助；\n5、协助支持人力资源各专项任务，以及其他工作事宜。\n\n方向二：人力流程和信息效率 \n1、学习人力资源管理体系与流程，了解员工生命周期全流程的运营逻辑，包括入职、绩效管理、薪酬管理、培训、员工关系及离职管理等模块；\n2、协助人力资源流程优化工作，在导师指导下参与流程诊断与优化，包括整理流程文档、设计标准化操作手册（SOP）、推动人力资源系统产品的功能设计和落地；\n3、通过项目调研、数据分析等方式，进行方案提出、报告输出、流程优化、专项开展等工作，协助推动流程效能分析和系统改造；\n4、与其他业务部门紧密合作，宣导新流程与工具，提供操作培训与落地支持，持续优化员工体验。\n\n方向三：员工关系 \n1、协助制定用工规则，确保各项用工政策符合法规和公司标准；监督合规标准的执行，确保员工和供应商能够遵守相关法规和公司政策；\n2、调研市场，结合当地人才市场情况迭代公司政策，确保内外部人才竞争力；整合人力资源流程，确保人事管理的高效、一致以及合规；\n3、负责员工入离调转等工作管理以及员工各项手续办理，包括但不限于协助公司新签/续签劳动合同，及时完成各类保险缴纳与更新工作， 协助其他员工关系工作；\n4、协调劳资关系，收集整理分析员工诉求，并及时反馈和解决；协助支持劳动关系，降低劳动用工风险；\n5、与全球人力资源团队紧密合作，共享最佳实践，推动人力资源管理的协调和整合。",
+        "deadline": "",
+        "requirements": "1、2027届毕业生，本科及以上学历，人力资源管理、心理学、法学、小语种等相关专业优先；\n2、做事认真负责，细心谨慎，具备良好的人际交往及沟通能力，具备多任务处理能力，具备自主解决问题能力；\n3、积极主动好学，逻辑思维清晰，洞察分析能力好，能快速理解和分析业务需求，形成有效的解决方案；\n4、具备较好的自驱力，愿意接受挑战，能适应快节奏、多变化、高速成长的互联网行业，认同公司企业文化。",
+        "headcount": "",
+        "applicant_type": "应届毕业生",
+        "position_code": "XZ0000614"
+      },
+      "reasons": [
+        "面向2027届，所列专业为优先而非硬限制，职责含流程设计、数据分析和员工体验优化"
+      ],
+      "conflicts": [],
+      "needs_confirmation": [
+        "需确认招聘方是否接受设计类专业申请HR管培方向"
+      ],
+      "evidence": [
+        {
+          "field": "任职要求",
+          "quote": "人力资源管理、心理学、法学、小语种等相关专业优先"
+        },
+        {
+          "field": "工作职责",
+          "quote": "方向一：招聘配置 "
+        }
+      ],
+      "analyzed_at": "2026-08-03T08:15:25.813Z",
+      "analysis_version": 1,
+      "analysis_author": "codex_dialog_semantic_analysis_prompt9_location_scope"
     }
   }
 }

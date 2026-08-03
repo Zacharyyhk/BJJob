@@ -263,6 +263,23 @@ function matchForProfile(job: Job): MatchResult {
 
 const displayJobs = currentJobs.filter((job) => aiResults[job.id] && matchForProfile(job).level !== "no");
 
+const commonLocations = [
+  "北京", "上海", "深圳", "广州", "杭州", "成都", "南京", "武汉", "西安", "苏州",
+  "天津", "重庆", "长沙", "厦门", "合肥", "郑州", "济南", "青岛", "东莞", "佛山",
+  "珠海", "无锡", "宁波", "福州", "沈阳", "大连", "昆明", "南昌", "南宁", "海口",
+  "贵阳", "石家庄", "太原", "哈尔滨", "长春", "兰州", "乌鲁木齐", "呼和浩特",
+];
+
+function locationLabels(value?: string) {
+  const text = (value || "").trim();
+  if (!text) return ["地点未注明"];
+  const matched = commonLocations.filter((name) => text.includes(name));
+  if (/全国|多地/.test(text)) matched.push("全国/多地");
+  if (/海外|国外|全球/.test(text)) matched.push("海外");
+  if (/远程/.test(text)) matched.push("远程");
+  return [...new Set(matched.length ? matched : ["其他地点"])];
+}
+
 export default function Home() {
   const [query, setQuery] = useState("");
   const [education, setEducation] = useState("全部学历");
@@ -271,6 +288,7 @@ export default function Home() {
   const [sourceGroup, setSourceGroup] = useState("机关单位");
   const [establishment, setEstablishment] = useState("全部编制");
   const [unit, setUnit] = useState("全部单位");
+  const [location, setLocation] = useState("全部地点");
   const [savedOnly, setSavedOnly] = useState(false);
   const [saved, setSaved] = useState<string[]>([]);
   const [visibleCount, setVisibleCount] = useState(40);
@@ -298,9 +316,25 @@ export default function Home() {
     return [...new Set(names)].sort((a, b) => a.localeCompare(b, "zh-CN"));
   }, [sourceGroup, establishment]);
 
+  const locationOptions = useMemo(() => {
+    const names = displayJobs
+      .filter(matchesSourceGroup)
+      .filter((job) => establishment === "全部编制" || job.establishmentType === establishment)
+      .flatMap((job) => locationLabels(job.location));
+    return [...new Set(names)].sort((a, b) => {
+      if (a === "北京") return -1;
+      if (b === "北京") return 1;
+      return a.localeCompare(b, "zh-CN");
+    });
+  }, [sourceGroup, establishment]);
+
   useEffect(() => {
     if (unit !== "全部单位" && !unitOptions.includes(unit)) setUnit("全部单位");
   }, [unit, unitOptions]);
+
+  useEffect(() => {
+    if (location !== "全部地点" && !locationOptions.includes(location)) setLocation("全部地点");
+  }, [location, locationOptions]);
 
   useEffect(() => {
     if (!supportsEstablishment && establishment !== "全部编制") setEstablishment("全部编制");
@@ -320,6 +354,7 @@ export default function Home() {
         && matchesSourceGroup(job)
         && (establishment === "全部编制" || job.establishmentType === establishment)
         && (unit === "全部单位" || unitName(job) === unit)
+        && (location === "全部地点" || locationLabels(job.location).includes(location))
         && (!savedOnly || saved.includes(job.id));
     });
     return result.sort((a, b) => {
@@ -328,9 +363,9 @@ export default function Home() {
       const bTime = b.deadline ? new Date(b.deadline).getTime() : Number.MAX_SAFE_INTEGER;
       return aTime - bTime;
     });
-  }, [query, education, sort, profileFilter, sourceGroup, establishment, unit, savedOnly, saved]);
+  }, [query, education, sort, profileFilter, sourceGroup, establishment, unit, location, savedOnly, saved]);
 
-  useEffect(() => setVisibleCount(40), [query, education, sort, profileFilter, sourceGroup, establishment, unit, savedOnly]);
+  useEffect(() => setVisibleCount(40), [query, education, sort, profileFilter, sourceGroup, establishment, unit, location, savedOnly]);
 
   const activeCount = displayJobs.length;
   const hiddenNoCount = currentJobs.length - displayJobs.length;
@@ -342,7 +377,7 @@ export default function Home() {
     <main className="workspace">
       <header>
         <div>
-          <h1>北京职位</h1>
+          <h1>招聘职位</h1>
           <p>{activeCount} 个可关注 · 明确符合 {definiteCount} 个 · 已隐藏 {hiddenNoCount} 个不符合岗位 · Codex 已分析 {analyzedCount} 个 · 更新于 {updated.toLocaleString("zh-CN", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" })}</p>
         </div>
         <button className={savedOnly ? "saved active" : "saved"} onClick={() => setSavedOnly(!savedOnly)}>收藏 {saved.length}</button>
@@ -364,6 +399,10 @@ export default function Home() {
         <select value={unit} onChange={(event) => setUnit(event.target.value)} aria-label="单位或公司">
           <option>全部单位</option>
           {unitOptions.map((name) => <option key={name} value={name}>{name}</option>)}
+        </select>
+        <select value={location} onChange={(event) => setLocation(event.target.value)} aria-label="工作地点">
+          <option>全部地点</option>
+          {locationOptions.map((name) => <option key={name} value={name}>{name}</option>)}
         </select>
         <select value={education} onChange={(event) => setEducation(event.target.value)} aria-label="学历要求">
           <option>全部学历</option><option>本科</option><option>硕士</option><option>博士</option><option>大专</option>

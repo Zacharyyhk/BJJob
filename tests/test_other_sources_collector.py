@@ -184,7 +184,23 @@ class PddSession:
 
 
 class FormalCampusAdapterTests(unittest.TestCase):
-    def test_ats_adapter_queries_only_beijing_formal_campus_scope(self):
+    def test_temporary_source_failure_retains_last_good_items(self):
+        report = {
+            "source_id": "example",
+            "status": "adapter-blocked",
+            "item_count": 0,
+            "items": [],
+        }
+        previous = {"source_id": "example", "items": [{"id": "old-job"}]}
+
+        result = COLLECTOR.retain_previous_items(report, previous, "2026-08-01T08:30:00+08:00")
+
+        self.assertEqual(result["item_count"], 1)
+        self.assertEqual(result["items"], [{"id": "old-job"}])
+        self.assertTrue(result["retained_from_previous"])
+        self.assertEqual(result["retained_snapshot_at"], "2026-08-01T08:30:00+08:00")
+
+    def test_ats_adapter_queries_all_locations_in_formal_campus_scope(self):
         source = {
             "id": "bytedance-jobs",
             "name": "字节跳动校园招聘",
@@ -203,11 +219,12 @@ class FormalCampusAdapterTests(unittest.TestCase):
 
         self.assertEqual(status, "collected")
         self.assertEqual(session.search_body["recruitment_id_list"], ["201"])
-        self.assertEqual(session.search_body["location_code_list"], ["CT_11"])
+        self.assertEqual(session.search_body["location_code_list"], [])
         self.assertNotIn("subject_id_list", {
             key: value for key, value in session.search_body.items() if value
         })
         self.assertEqual(items[0]["raw_fields"]["recruit_type"]["name"], "正式")
+        self.assertEqual(items[0]["location"], "北京")
         self.assertIn("2027届", items[0]["body_text"])
         self.assertGreaterEqual(len(signer.calls), 2)
 
@@ -224,8 +241,9 @@ class FormalCampusAdapterTests(unittest.TestCase):
 
         self.assertEqual(status, "collected")
         self.assertEqual(session.body["jobType"], [{"code": "1", "subCode": []}])
-        self.assertEqual(session.body["cityList"], [{"code": "001001"}])
+        self.assertEqual(session.body["cityList"], [])
         self.assertEqual(items[0]["raw_fields"]["jobType"], "1")
+        self.assertEqual(items[0]["location"], "北京市")
 
     def test_tencent_adapter_excludes_intern_project_ids(self):
         source = {
@@ -241,11 +259,12 @@ class FormalCampusAdapterTests(unittest.TestCase):
 
         self.assertEqual(status, "collected")
         self.assertEqual(session.body["projectMappingIdList"], [1, 14])
-        self.assertEqual(session.body["workCityList"], ["2"])
+        self.assertEqual(session.body["workCityList"], [])
         self.assertEqual(items[0]["raw_fields"]["recruitType"], 1)
         self.assertIn("交互", items[0]["body_text"])
+        self.assertEqual(items[0]["location"], "北京")
 
-    def test_pdd_adapter_keeps_beijing_graduate_roles_and_fetches_details(self):
+    def test_pdd_adapter_keeps_all_graduate_locations_and_fetches_details(self):
         source = {
             "id": "pdd-jobs",
             "name": "拼多多校园招聘",
@@ -258,11 +277,12 @@ class FormalCampusAdapterTests(unittest.TestCase):
 
         self.assertEqual(status, "collected")
         self.assertEqual(session.list_bodies, [{"page": 1, "pageSize": 10}])
-        self.assertEqual(session.detail_bodies, [{"id": "pdd-bj-1"}])
-        self.assertEqual(len(items), 1)
+        self.assertEqual(session.detail_bodies, [{"id": "pdd-bj-1"}, {"id": "pdd-sh-1"}])
+        self.assertEqual(len(items), 2)
         self.assertEqual(items[0]["organization"], "拼多多")
         self.assertIn("专业不限", items[0]["body_text"])
         self.assertEqual(items[0]["collection_scope"]["work_location"], "北京")
+        self.assertEqual(items[1]["collection_scope"]["work_location"], "上海")
 
 
 if __name__ == "__main__":

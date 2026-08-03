@@ -467,10 +467,11 @@ def baidu_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[li
                 place = clean(value.get("workPlace") or value.get("workplace") or value.get("city"))
                 code = clean(value.get("jobId") or value.get("postId") or value.get("jobCode") or value.get("code") or value.get("id"))
                 is_job = bool(value.get("serviceCondition") or value.get("workContent"))
-                if title and code and is_job and ("北京" in place or not place):
+                if title and code and is_job:
                     detail = f"https://talent.baidu.com/jobs/detail/{recruit_type}/{code}"
                     found[detail] = make_item(
                         source, title, detail, clean(value.get("publishDate")), "百度",
+                        location=place,
                         raw_fields={key: child for key, child in value.items() if not isinstance(child, (dict, list))},
                         data_quality="岗位详情完整",
                     )
@@ -487,15 +488,13 @@ def baidu_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[li
 def jd_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[list[dict[str, str]], str, str]:
     endpoint = "https://zhaopin.jd.com/web/job/job_list"
     response = session.post(endpoint, timeout=40, headers={"Referer": source["url"]}, data={
-        "pageIndex": 1, "pageSize": 100, "workCityJson": '["11"]',
+        "pageIndex": 1, "pageSize": 100, "workCityJson": "[]",
         "jobTypeJson": "[]", "jobSearch": "", "depTypeJson": "[]",
     })
     response.raise_for_status()
     rows = response.json()
     found = []
     for row in rows:
-        if "北京" not in clean(row.get("workCity")):
-            continue
         title = clean(row.get("positionNameOpen") or row.get("positionName"))
         ident = clean(row.get("requirementId") or row.get("positionId"))
         if not title or not ident:
@@ -504,6 +503,7 @@ def jd_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[list[
         found.append(make_item(
             source, title, detail, clean(row.get("formatPublishTime")),
             clean(row.get("positionDeptName")) or "京东",
+            location=clean(row.get("workCity")),
             data_quality="岗位接口原始数据",
             raw_fields=row,
         ))
@@ -515,7 +515,7 @@ def ats_campus_adapter(
     source: dict[str, Any],
     signer: AtsSigner | None = None,
 ) -> tuple[list[dict[str, str]], str, str]:
-    """Collect the official Beijing formal-campus scope from the shared ATS."""
+    """Collect the official formal-campus scope from the shared ATS."""
     signer = signer or get_ats_signer()
     csrf_token = ats_csrf_token(session, source)
     filter_path = f"/api/v1/config/job/filters/{source['portal_type']}"
@@ -537,7 +537,7 @@ def ats_campus_adapter(
             "offset": offset,
             "job_category_id_list": [],
             "tag_id_list": [],
-            "location_code_list": ["CT_11"],
+            "location_code_list": [],
             "subject_id_list": [],
             "recruitment_id_list": source["recruitment_id_list"],
             "portal_type": source["portal_type"],
@@ -565,6 +565,15 @@ def ats_campus_adapter(
                     clean(row.get("requirement")),
                 ) if value
             ))
+            city_info = row.get("city_info") or {}
+            city_list = row.get("city_list") or []
+            locations = [clean(city_info.get("name"))] if isinstance(city_info, dict) else []
+            locations.extend(
+                clean(city.get("name"))
+                for city in city_list
+                if isinstance(city, dict) and clean(city.get("name")) not in locations
+            )
+            location = "、".join(value for value in locations if value)
             detail_url = (
                 source["ats_origin"]
                 + f"/campus/position/{quote(position_id, safe='')}/detail"
@@ -573,12 +582,13 @@ def ats_campus_adapter(
                 source, title, detail_url,
                 date_from_milliseconds(row.get("publish_time")),
                 source.get("organization", source["name"]),
+                location=location,
                 body_text=body_text,
                 raw_fields=row,
                 collection_scope={
                     "portal_type": source["portal_type"],
                     "recruitment_id_list": source["recruitment_id_list"],
-                    "location_code_list": ["CT_11"],
+                    "location_code_list": [],
                 },
                 data_quality="官方正式校招岗位接口原始数据",
             ))
@@ -602,7 +612,7 @@ def meituan_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[
             "page": {"pageNo": page_no, "pageSize": 100},
             "jobShareType": "1",
             "keywords": "",
-            "cityList": [{"code": "001001"}],
+            "cityList": [],
             "department": [],
             "jfJgList": [],
             "jobType": [{"code": "1", "subCode": []}],
@@ -635,16 +645,22 @@ def meituan_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[
                     clean(row.get("jobRequirement")),
                 ) if value
             ))
+            location = "、".join(
+                clean(city.get("name"))
+                for city in (row.get("cityList") or [])
+                if isinstance(city, dict) and clean(city.get("name"))
+            )
             found.append(make_item(
                 source, title,
                 f"https://zhaopin.meituan.com/web/position/detail?jobUnionId={quote(position_id, safe='')}&jobShareType=1&highlightType=campus",
                 date_from_milliseconds(row.get("refreshTime")),
                 "美团",
+                location=location,
                 body_text=body_text,
                 raw_fields=row,
                 collection_scope={
                     "job_type_code": "1",
-                    "city_code": "001001",
+                    "city_scope": "all",
                 },
                 data_quality="美团官方正式校招岗位接口原始数据",
             ))
@@ -684,7 +700,7 @@ def tencent_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[
             "keyword": "",
             "bgList": [],
             "workCountryType": 1,
-            "workCityList": ["2"],
+            "workCityList": [],
             "recruitCityList": [],
             "positionFidList": [],
             "pageIndex": page_index,
@@ -725,17 +741,21 @@ def tencent_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[
                     clean(detail.get("introduction")),
                 ) if value
             ))
+            location = "、".join(
+                clean(city) for city in (detail.get("workCityList") or []) if clean(city)
+            ) or clean(row.get("workCities"))
             found.append(make_item(
                 source, title,
                 f"https://join.qq.com/post_detail.html?postid={quote(position_id, safe='')}",
                 "", "腾讯",
+                location=location,
                 body_text=body_text,
                 raw_fields=detail,
                 search_raw_fields=row,
                 project_context=project_contexts.get(clean(detail.get("projectId"))),
                 collection_scope={
                     "project_mapping_ids": source["project_mapping_ids"],
-                    "work_city_code": "2",
+                    "work_city_scope": "all_domestic",
                 },
                 data_quality="腾讯官方正式校园招聘岗位详情",
             ))
@@ -750,7 +770,7 @@ def xiaomi_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[l
 
 
 def pdd_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[list[dict[str, str]], str, str]:
-    """Collect current Beijing graduate roles from PDD's official campus API."""
+    """Collect current graduate roles from PDD's official campus API."""
     endpoint = "https://careers.pddglobalhr.com/api/careers/api/recruit/position/list"
     detail_endpoint = "https://careers.pddglobalhr.com/api/careers/api/recruit/position/detail"
     headers = {
@@ -780,8 +800,6 @@ def pdd_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[list
         seen += len(rows)
         for row in rows:
             location = clean(row.get("workLocationName") or row.get("workLocation"))
-            if "北京" not in location:
-                continue
             position_id = clean(row.get("id"))
             if not position_id:
                 continue
@@ -814,6 +832,7 @@ def pdd_adapter(session: requests.Session, source: dict[str, Any]) -> tuple[list
                 f"https://careers.pddglobalhr.com/campus/grad/detail?positionId={quote(position_id, safe='')}",
                 date_from_milliseconds(detail.get("releaseTime") or row.get("releaseTime")),
                 "拼多多",
+                location=location,
                 body_text=body_text,
                 raw_fields=detail,
                 search_raw_fields=row,
@@ -845,9 +864,9 @@ def api_spa_adapter(session: requests.Session, source: dict[str, Any], endpoint:
             title = clean(value.get("jobName") or value.get("name") or value.get("title"))
             city = clean(value.get("workCity") or value.get("cityName") or value.get("workPlace"))
             ident = clean(value.get("jobId") or value.get("id") or value.get("code"))
-            if title and ident and (not city or "北京" in city):
+            if title and ident:
                 url = source["url"].split("?")[0] + ("&" if "?" in source["url"] else "?") + "jobId=" + ident
-                found[url] = make_item(source, title, url, raw_fields=value, data_quality="官方接口原始数据")
+                found[url] = make_item(source, title, url, location=city, raw_fields=value, data_quality="官方接口原始数据")
             for child in value.values(): walk(child)
         elif isinstance(value, list):
             for child in value: walk(child)
@@ -893,8 +912,32 @@ def collect_source(session: requests.Session, source: dict[str, Any]) -> dict[st
                 "http_status": status_code, "item_count": 0, "error": clean(exc)[:300], "items": []}
 
 
+def retain_previous_items(report: dict[str, Any], previous: dict[str, Any] | None,
+                          previous_generated_at: str = "") -> dict[str, Any]:
+    """Keep the last good snapshot when a source is temporarily unreachable."""
+    if report.get("status") not in ("unavailable", "adapter-blocked") or not previous:
+        return report
+    items = previous.get("items") or []
+    if not items:
+        return report
+    report["items"] = items
+    report["item_count"] = len(items)
+    report["retained_from_previous"] = True
+    if previous_generated_at:
+        report["retained_snapshot_at"] = previous_generated_at
+    return report
+
+
 def main() -> int:
     sources = [s for s in json.loads(SOURCES_PATH.read_text(encoding="utf-8")) if s["id"] != "bj-rsj-institutions"]
+    previous_output = (
+        json.loads(OUTPUT_PATH.read_text(encoding="utf-8"))
+        if OUTPUT_PATH.exists() else {}
+    )
+    previous_reports = {
+        report.get("source_id"): report
+        for report in previous_output.get("sources", [])
+    }
     session = requests.Session()
     session.headers.update({"User-Agent": USER_AGENT, "Accept-Language": "zh-CN,zh;q=0.9", "Accept": "text/html,application/json"})
     reports = []
@@ -902,6 +945,11 @@ def main() -> int:
         for index, source in enumerate(sources):
             if index: time.sleep(2)
             report = collect_source(session, source)
+            report = retain_previous_items(
+                report,
+                previous_reports.get(source["id"]),
+                clean(previous_output.get("generated_at")),
+            )
             reports.append(report)
             print(f"{source['id']}: {report['status']} ({report['item_count']})")
     finally:
