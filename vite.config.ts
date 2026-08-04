@@ -11,6 +11,31 @@ const { d1, r2 } = hostingConfig;
 // macOS Seatbelt blocks FSEvents, so Codex previews need polling for HMR.
 const isCodexSeatbeltSandbox = process.env.CODEX_SANDBOX === "seatbelt";
 
+function skipLargeJsonCommonjs() {
+  return {
+    name: "skip-large-json-commonjs",
+    configResolved(config: { plugins: Array<Record<string, unknown>> }) {
+      const plugin = config.plugins.find((item) => item.name === "vite-plugin-commonjs") as {
+        transform?: ((code: string, id: string, ...args: unknown[]) => unknown) | { handler: (code: string, id: string, ...args: unknown[]) => unknown };
+      } | undefined;
+      if (!plugin?.transform) return;
+      if (typeof plugin.transform === "function") {
+        const transform = plugin.transform;
+        plugin.transform = function (code: string, id: string, ...args: unknown[]) {
+          if (id.split("?", 1)[0].endsWith(".json")) return null;
+          return transform.call(this, code, id, ...args);
+        };
+      } else {
+        const handler = plugin.transform.handler;
+        plugin.transform.handler = function (code: string, id: string, ...args: unknown[]) {
+          if (id.split("?", 1)[0].endsWith(".json")) return null;
+          return handler.call(this, code, id, ...args);
+        };
+      }
+    },
+  };
+}
+
 const localBindingConfig = {
   main: "./worker/index.ts",
   compatibility_flags: ["nodejs_compat"],
@@ -49,6 +74,7 @@ export default defineConfig(async () => {
       : undefined,
     plugins: [
       vinext(),
+      skipLargeJsonCommonjs(),
       sites(),
       cloudflare({
         viteEnvironment: { name: "rsc", childEnvironments: ["ssr"] },

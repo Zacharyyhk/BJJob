@@ -309,6 +309,14 @@ function interleaveByUnit(items: Job[]) {
   return result;
 }
 
+function matchesSource(job: Job, sourceGroup: string) {
+  return sourceGroup === "全部来源"
+    || (sourceGroup === "机关单位" && (job.sourceGroup === "北京市机关单位" || job.sourceGroup === "中央机关单位"))
+    || job.sourceGroup === sourceGroup;
+}
+
+const PAGE_SIZE = 30;
+
 export default function Home() {
   const [query, setQuery] = useState("");
   const [education, setEducation] = useState("全部学历");
@@ -321,15 +329,33 @@ export default function Home() {
   const [location, setLocation] = useState("全部地点");
   const [savedOnly, setSavedOnly] = useState(false);
   const [saved, setSaved] = useState<string[]>([]);
-  const [expanded, setExpanded] = useState<string[]>([]);
-  const [visibleCount, setVisibleCount] = useState(100);
+  const [page, setPage] = useState(1);
+  const [selectedJobId, setSelectedJobId] = useState("");
+  const [urlReady, setUrlReady] = useState(false);
   const supportsEstablishment = sourceGroup === "机关单位" || sourceGroup === "北京市机关单位" || sourceGroup === "中央机关单位";
-  const matchesSourceGroup = (job: Job) => sourceGroup === "全部来源"
-    || (sourceGroup === "机关单位" && (job.sourceGroup === "北京市机关单位" || job.sourceGroup === "中央机关单位"))
-    || job.sourceGroup === sourceGroup;
 
   useEffect(() => {
     try { setSaved(JSON.parse(localStorage.getItem("beijing-job-saved") || "[]")); } catch { setSaved([]); }
+    const params = new URLSearchParams(window.location.search);
+    const source = params.get("source");
+    const profile = params.get("profile");
+    const degree = params.get("education");
+    const major = params.get("major");
+    const order = params.get("sort");
+    const requestedPage = Number(params.get("page"));
+    setQuery(params.get("q") || "");
+    if (["机关单位", "北京市机关单位", "中央机关单位", "互联网大厂", "央国企", "全部来源"].includes(source || "")) setSourceGroup(source!);
+    if (["全部岗位", "适合我", "明确符合", "需确认"].includes(profile || "")) setProfileFilter(profile!);
+    if (["全部学历", "本科", "硕士", "博士", "大专"].includes(degree || "")) setEducation(degree!);
+    if (["设计类或不限", "全部专业要求"].includes(major || "")) setMajorRequirement(major!);
+    if (["即将截止", "最新发布"].includes(order || "")) setSort(order!);
+    setEstablishment(params.get("establishment") || "全部编制");
+    setUnit(params.get("unit") || "全部单位");
+    setLocation(params.get("location") || "全部地点");
+    setSavedOnly(params.get("saved") === "1");
+    setPage(Number.isInteger(requestedPage) && requestedPage > 0 ? requestedPage : 1);
+    setSelectedJobId(params.get("job") || "");
+    setUrlReady(true);
   }, []);
 
   const toggleSaved = (id: string) => {
@@ -338,13 +364,14 @@ export default function Home() {
     localStorage.setItem("beijing-job-saved", JSON.stringify(next));
   };
 
-  const toggleExpanded = (id: string) => {
-    setExpanded((current) => current.includes(id) ? current.filter((item) => item !== id) : [...current, id]);
+  const resetBrowse = () => {
+    setPage(1);
+    setSelectedJobId("");
   };
 
   const unitOptions = useMemo(() => {
     const names = displayJobs
-      .filter(matchesSourceGroup)
+      .filter((job) => matchesSource(job, sourceGroup))
       .filter((job) => establishment === "全部编制" || job.establishmentType === establishment)
       .map(unitName)
       .filter((name) => name !== "单位未注明");
@@ -353,7 +380,7 @@ export default function Home() {
 
   const locationOptions = useMemo(() => {
     const names = displayJobs
-      .filter(matchesSourceGroup)
+      .filter((job) => matchesSource(job, sourceGroup))
       .filter((job) => establishment === "全部编制" || job.establishmentType === establishment)
       .flatMap((job) => locationLabels(job.location));
     return [...new Set(names)].sort((a, b) => {
@@ -364,18 +391,24 @@ export default function Home() {
   }, [sourceGroup, establishment]);
 
   useEffect(() => {
-    if (unit !== "全部单位" && !unitOptions.includes(unit)) setUnit("全部单位");
+    if (urlReady && unit !== "全部单位" && !unitOptions.includes(unit)) {
+      setUnit("全部单位");
+      resetBrowse();
+    }
   }, [unit, unitOptions]);
 
   useEffect(() => {
-    if (location !== "全部地点" && !locationOptions.includes(location)) setLocation("全部地点");
+    if (urlReady && location !== "全部地点" && !locationOptions.includes(location)) {
+      setLocation("全部地点");
+      resetBrowse();
+    }
   }, [location, locationOptions]);
 
   useEffect(() => {
     if (!supportsEstablishment && establishment !== "全部编制") setEstablishment("全部编制");
   }, [supportsEstablishment, establishment]);
 
-  const filtered = useMemo(() => {
+  const filteredWithoutUnit = useMemo(() => {
     const keyword = query.trim().toLowerCase();
     const result = displayJobs.filter((job) => {
       const text = [job.title, job.organization, job.major, job.education, job.requirements, job.responsibilities, job.location, job.applicant_type, job.household, job.noticeTitle].join(" ").toLowerCase();
@@ -387,9 +420,8 @@ export default function Home() {
           || (profileFilter === "适合我" && profileMatch.level !== "no")
           || (profileFilter === "明确符合" && profileMatch.level === "match")
           || (profileFilter === "需确认" && profileMatch.level === "possible"))
-        && matchesSourceGroup(job)
+        && matchesSource(job, sourceGroup)
         && (establishment === "全部编制" || job.establishmentType === establishment)
-        && (unit === "全部单位" || unitName(job) === unit)
         && (location === "全部地点" || locationLabels(job.location).includes(location))
         && (!savedOnly || saved.includes(job.id));
     });
@@ -399,123 +431,170 @@ export default function Home() {
       const bTime = b.deadline ? new Date(b.deadline).getTime() : Number.MAX_SAFE_INTEGER;
       return aTime - bTime;
     });
-    return sourceGroup === "互联网大厂" && unit === "全部单位"
+    return sourceGroup === "互联网大厂"
       ? interleaveByUnit(sorted)
       : sorted;
-  }, [query, education, majorRequirement, sort, profileFilter, sourceGroup, establishment, unit, location, savedOnly, saved]);
+  }, [query, education, majorRequirement, sort, profileFilter, sourceGroup, establishment, location, savedOnly, saved]);
+
+  const filtered = useMemo(() => unit === "全部单位"
+    ? filteredWithoutUnit
+    : filteredWithoutUnit.filter((job) => unitName(job) === unit), [filteredWithoutUnit, unit]);
+
+  const companyCounts = useMemo(() => {
+    const counts = new Map<string, number>();
+    for (const job of filteredWithoutUnit) counts.set(unitName(job), (counts.get(unitName(job)) || 0) + 1);
+    return [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "zh-CN"));
+  }, [filteredWithoutUnit]);
+
+  const pageCount = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+  const currentPage = Math.min(page, pageCount);
+  const pagedJobs = filtered.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
+  const selectedJob = pagedJobs.find((job) => job.id === selectedJobId) || pagedJobs[0];
+  const selectedMatch = selectedJob ? matchForProfile(selectedJob) : null;
+  const selectedAttachment = selectedJob ? attachmentPosition(selectedJob) : null;
+
+  const pageNumbers = useMemo(() => {
+    const start = Math.max(1, Math.min(currentPage - 3, pageCount - 6));
+    return Array.from({ length: Math.min(7, pageCount) }, (_, index) => start + index);
+  }, [currentPage, pageCount]);
+
+  const summaryParts = [
+    sourceGroup,
+    unit !== "全部单位" ? unit : "",
+    location !== "全部地点" ? location : "",
+    profileFilter !== "全部岗位" ? profileFilter : "",
+    education !== "全部学历" ? education : "",
+    majorRequirement,
+  ].filter(Boolean);
+
+  const changePage = (nextPage: number) => {
+    setPage(Math.max(1, Math.min(nextPage, pageCount)));
+    setSelectedJobId("");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   useEffect(() => {
-    setVisibleCount(100);
-    setExpanded([]);
-  }, [query, education, majorRequirement, sort, profileFilter, sourceGroup, establishment, unit, location, savedOnly]);
+    if (page > pageCount) setPage(pageCount);
+  }, [page, pageCount]);
+
+  useEffect(() => {
+    if (pagedJobs.length && !pagedJobs.some((job) => job.id === selectedJobId)) setSelectedJobId(pagedJobs[0].id);
+    if (!pagedJobs.length && selectedJobId) setSelectedJobId("");
+  }, [pagedJobs, selectedJobId]);
+
+  useEffect(() => {
+    if (!urlReady) return;
+    const params = new URLSearchParams();
+    if (query) params.set("q", query);
+    if (sourceGroup !== "机关单位") params.set("source", sourceGroup);
+    if (profileFilter !== "全部岗位") params.set("profile", profileFilter);
+    if (establishment !== "全部编制") params.set("establishment", establishment);
+    if (unit !== "全部单位") params.set("unit", unit);
+    if (location !== "全部地点") params.set("location", location);
+    if (education !== "全部学历") params.set("education", education);
+    if (majorRequirement !== "设计类或不限") params.set("major", majorRequirement);
+    if (sort !== "即将截止") params.set("sort", sort);
+    if (savedOnly) params.set("saved", "1");
+    if (currentPage > 1) params.set("page", String(currentPage));
+    if (selectedJobId) params.set("job", selectedJobId);
+    const search = params.toString();
+    window.history.replaceState(null, "", `${window.location.pathname}${search ? `?${search}` : ""}#jobs`);
+  }, [urlReady, query, sourceGroup, profileFilter, establishment, unit, location, education, majorRequirement, sort, savedOnly, currentPage, selectedJobId]);
+
+  useEffect(() => {
+    if (!urlReady) return;
+    const savedScroll = Number(sessionStorage.getItem("job-list-scroll") || 0);
+    if (savedScroll > 0) requestAnimationFrame(() => window.scrollTo({ top: savedScroll }));
+    let timer = 0;
+    const rememberScroll = () => {
+      window.clearTimeout(timer);
+      timer = window.setTimeout(() => sessionStorage.setItem("job-list-scroll", String(window.scrollY)), 80);
+    };
+    window.addEventListener("scroll", rememberScroll, { passive: true });
+    return () => {
+      window.clearTimeout(timer);
+      window.removeEventListener("scroll", rememberScroll);
+    };
+  }, [urlReady]);
+
+  useEffect(() => {
+    const onKeyDown = (event: KeyboardEvent) => {
+      const target = event.target as HTMLElement;
+      if (["INPUT", "SELECT", "TEXTAREA"].includes(target.tagName) || target.isContentEditable) return;
+      if (!["j", "k", "ArrowDown", "ArrowUp"].includes(event.key)) return;
+      event.preventDefault();
+      const index = pagedJobs.findIndex((job) => job.id === selectedJobId);
+      const forward = event.key === "j" || event.key === "ArrowDown";
+      if (forward && index < pagedJobs.length - 1) setSelectedJobId(pagedJobs[index + 1].id);
+      else if (!forward && index > 0) setSelectedJobId(pagedJobs[index - 1].id);
+      else if (forward && currentPage < pageCount) changePage(currentPage + 1);
+      else if (!forward && currentPage > 1) changePage(currentPage - 1);
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [pagedJobs, selectedJobId, currentPage, pageCount]);
+
+  useEffect(() => {
+    if (selectedJobId) document.getElementById(`job-${selectedJobId}`)?.scrollIntoView({ block: "nearest" });
+  }, [selectedJobId]);
 
   return (
     <main className="workspace">
       <header>
         <h1>招聘信息聚合</h1>
-        <button className={savedOnly ? "saved active" : "saved"} onClick={() => setSavedOnly(!savedOnly)}>收藏 {saved.length}</button>
+        <button className={savedOnly ? "saved active" : "saved"} onClick={() => { setSavedOnly(!savedOnly); resetBrowse(); }}>收藏 {saved.length}</button>
       </header>
+      <div className="browse-grid" id="jobs">
+        <aside className="filter-panel" aria-label="职位筛选">
+          <div className="panel-title">筛选条件</div>
+          <input value={query} onChange={(event) => { setQuery(event.target.value); resetBrowse(); }} placeholder="搜索岗位、单位或要求" aria-label="搜索职位" />
+          <label>匹配程度<select value={profileFilter} onChange={(event) => { setProfileFilter(event.target.value); resetBrowse(); }}><option>全部岗位</option><option>适合我</option><option>明确符合</option><option>需确认</option></select></label>
+          <label>来源类别<select value={sourceGroup} onChange={(event) => { setSourceGroup(event.target.value); setUnit("全部单位"); resetBrowse(); }}><option value="机关单位">机关单位（默认）</option><option>北京市机关单位</option><option>中央机关单位</option><option>互联网大厂</option><option>央国企</option><option>全部来源</option></select></label>
+          {supportsEstablishment && <label>编制类型<select value={establishment} onChange={(event) => { setEstablishment(event.target.value); resetBrowse(); }}><option>全部编制</option><option>事业编制</option><option>公务员编制</option></select></label>}
+          <label>单位或公司<select value={unit} onChange={(event) => { setUnit(event.target.value); resetBrowse(); }}><option>全部单位</option>{unitOptions.map((name) => <option key={name}>{name}</option>)}</select></label>
+          <label>工作地点<select value={location} onChange={(event) => { setLocation(event.target.value); resetBrowse(); }}><option>全部地点</option>{locationOptions.map((name) => <option key={name}>{name}</option>)}</select></label>
+          <label>学历要求<select value={education} onChange={(event) => { setEducation(event.target.value); resetBrowse(); }}><option>全部学历</option><option>本科</option><option>硕士</option><option>博士</option><option>大专</option></select></label>
+          <label>专业要求<select value={majorRequirement} onChange={(event) => { setMajorRequirement(event.target.value); resetBrowse(); }}><option>设计类或不限</option><option>全部专业要求</option></select></label>
+          <label>排序方式<select value={sort} onChange={(event) => { setSort(event.target.value); resetBrowse(); }}><option>即将截止</option><option>最新发布</option></select></label>
+          {sourceGroup === "互联网大厂" && <div className="company-shortcuts"><div className="filter-caption">公司快捷筛选</div><button className={unit === "全部单位" ? "company-chip active" : "company-chip"} onClick={() => { setUnit("全部单位"); resetBrowse(); }}>全部 <b>{filteredWithoutUnit.length}</b></button>{companyCounts.map(([name, count]) => <button key={name} className={unit === name ? "company-chip active" : "company-chip"} onClick={() => { setUnit(name); resetBrowse(); }}>{name} <b>{count}</b></button>)}</div>}
+        </aside>
 
-      <section className="toolbar" aria-label="职位筛选">
-        <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="搜索单位、岗位、专业或要求" aria-label="搜索职位" />
-        <select value={profileFilter} onChange={(event) => setProfileFilter(event.target.value)} aria-label="个人条件匹配">
-          <option>全部岗位</option><option>适合我</option><option>明确符合</option><option>需确认</option>
-        </select>
-        <select value={sourceGroup} onChange={(event) => setSourceGroup(event.target.value)} aria-label="来源类别">
-          <option value="机关单位">机关单位（默认）</option><option>北京市机关单位</option><option>中央机关单位</option><option>互联网大厂</option><option>央国企</option><option>全部来源</option>
-        </select>
-        {supportsEstablishment && <select value={establishment} onChange={(event) => setEstablishment(event.target.value)} aria-label="编制类型">
-          <option>全部编制</option><option>事业编制</option><option>公务员编制</option>
-        </select>}
-        <select value={unit} onChange={(event) => setUnit(event.target.value)} aria-label="单位或公司">
-          <option>全部单位</option>
-          {unitOptions.map((name) => <option key={name} value={name}>{name}</option>)}
-        </select>
-        <select value={location} onChange={(event) => setLocation(event.target.value)} aria-label="工作地点">
-          <option>全部地点</option>
-          {locationOptions.map((name) => <option key={name} value={name}>{name}</option>)}
-        </select>
-        <select value={education} onChange={(event) => setEducation(event.target.value)} aria-label="学历要求">
-          <option>全部学历</option><option>本科</option><option>硕士</option><option>博士</option><option>大专</option>
-        </select>
-        <select value={majorRequirement} onChange={(event) => setMajorRequirement(event.target.value)} aria-label="专业要求">
-          <option>设计类或不限</option><option>全部专业要求</option>
-        </select>
-        <select value={sort} onChange={(event) => setSort(event.target.value)} aria-label="排序方式">
-          <option>即将截止</option><option>最新发布</option>
-        </select>
-      </section>
+        <section className="results-column" aria-label="岗位列表">
+          <div className="result-head">
+            <div><b>{filtered.length}</b> 个岗位</div>
+            <div className="filter-summary">{summaryParts.join(" · ")}</div>
+            <span>第 {currentPage}/{pageCount} 页</span>
+          </div>
+          <div className="compact-list">
+            {pagedJobs.map((job) => {
+              const days = daysUntil(job.deadline);
+              const match = matchForProfile(job);
+              return <article id={`job-${job.id}`} className={selectedJob?.id === job.id ? "compact-job selected" : "compact-job"} key={job.id} role="button" tabIndex={0} onClick={() => setSelectedJobId(job.id)} onKeyDown={(event) => { if (event.key === "Enter") setSelectedJobId(job.id); }}>
+                <div className="compact-main"><div className="compact-title-row"><span className={`match ${match.level}`}>{match.label}</span><h2>{job.title || job.noticeTitle}</h2></div><h3>{unitName(job)}</h3><div className="brief-facts">{job.location && <span>{job.location}</span>}{job.education && <span>{job.education}</span>}<span className={days !== null && days <= 7 && days >= 0 ? "deadline urgent" : "deadline"}>{statusLabel(job.deadline)}</span></div></div>
+                <div className="compact-actions"><a className="detail-link" href={job.sourceUrl} target="_blank" rel="noreferrer" onClick={(event) => event.stopPropagation()}>{job.sourceGroup === "互联网大厂" ? "岗位详情" : "原公告"} ↗</a><button className={saved.includes(job.id) ? "star on" : "star"} onClick={(event) => { event.stopPropagation(); toggleSaved(job.id); }} aria-label="收藏职位">★</button></div>
+              </article>;
+            })}
+          </div>
+          {!filtered.length && <div className="empty">没有符合条件的职位</div>}
+          {filtered.length > 0 && <nav className="pagination" aria-label="岗位分页"><button disabled={currentPage === 1} onClick={() => changePage(currentPage - 1)}>上一页</button>{pageNumbers.map((number) => <button key={number} className={number === currentPage ? "active" : ""} onClick={() => changePage(number)}>{number}</button>)}<button disabled={currentPage === pageCount} onClick={() => changePage(currentPage + 1)}>下一页</button></nav>}
+        </section>
 
-      <div className="result-line"><b>{filtered.length}</b> 个岗位</div>
-
-      <section className="job-list">
-        {filtered.slice(0, visibleCount).map((job) => {
-          const days = daysUntil(job.deadline);
-          const match = matchForProfile(job);
-          const attachment = attachmentPosition(job);
-          const isExpanded = expanded.includes(job.id);
-          return <article className={isExpanded ? "job expanded" : "job"} key={job.id}>
-            <div className="job-summary">
-              <div className="job-brief">
-                <div className="match-line">
-                  <span className={`match ${match.level}`}>{match.label}</span>
-                </div>
-                <h2>{job.title || job.noticeTitle}</h2>
-                <h3>{job.organization || job.publisher || "招聘单位见公告"}</h3>
-                <div className="brief-facts">
-                  {job.location && <span>{job.location}</span>}
-                  {job.education && <span>{job.education}</span>}
-                  <span className={days !== null && days <= 7 && days >= 0 ? "deadline urgent" : "deadline"}>{statusLabel(job.deadline)}</span>
-                </div>
-              </div>
-              <div className="job-actions">
-                <a className="detail-link" href={job.sourceUrl} target="_blank" rel="noreferrer">
-                  {job.sourceGroup === "互联网大厂" ? "岗位详情" : "原公告"} ↗
-                </a>
-                <button className={saved.includes(job.id) ? "star on" : "star"} onClick={() => toggleSaved(job.id)} aria-label="收藏职位">★</button>
-                <button className="expand-button" onClick={() => toggleExpanded(job.id)} aria-expanded={isExpanded}>{isExpanded ? "收起" : "展开"}</button>
-              </div>
-            </div>
-
-            {isExpanded && <div className="job-details">
-            {match.level === "possible" && <div className="confirm-note">需确认：{match.needsConfirmation.join("；") || "公开信息不足"}</div>}
-            <div className="match-reasons">{match.reasons.map((reason) => <span key={reason}>{reason}</span>)}</div>
-            <div className="source-name">{job.sourceName}</div>
-            {job.sourceAttachmentUrl && <div className="attachment-ref">
-              <span><b>附件岗位：</b>{attachment.sheet ? `${attachment.sheet} · ` : ""}{attachment.row ? `第 ${attachment.row} 行` : "原始岗位行"}{job.position_code ? ` · 岗位代码 ${job.position_code}` : ""}</span>
-              <a href={job.sourceAttachmentUrl} target="_blank" rel="noreferrer">查看附件 ↗</a>
-            </div>}
-
-            <div className="facts">
-              {job.headcount && <span>招 {job.headcount} 人</span>}
-              {job.education && <span>{job.education}</span>}
-              {job.degree && <span>{job.degree}</span>}
-              {job.applicant_type && <span>{job.applicant_type}</span>}
-              {job.household && <span>{job.household}</span>}
-              {job.age && <span>{job.age}</span>}
-              {job.location && <span>{job.location}</span>}
-              {job.recruitment_type && <span>{job.recruitment_type}</span>}
-              {job.category_detail && <span>{job.category_detail}</span>}
-              {job.establishmentType && <span>{job.establishmentType}</span>}
-            </div>
-
-            {job.major && <p><b>专业：</b>{job.major}</p>}
-            {job.requirements && <p className="requirements"><b>要求：</b>{job.requirements}</p>}
-            {job.responsibilities && <p className="requirements"><b>职责：</b>{job.responsibilities}</p>}
-
-            <footer>
-              <div>
-                <span className={days !== null && days <= 7 && days >= 0 ? "deadline urgent" : days !== null && days < 0 ? "deadline expired" : "deadline"}>{statusLabel(job.deadline)}</span>
-                <span>发布 {job.publishedAt || "未注明"}</span>
-              </div>
-            </footer>
-            </div>}
-          </article>;
-        })}
-      </section>
-
-      {!filtered.length && <div className="empty">没有符合条件的职位</div>}
-      {visibleCount < filtered.length && <button className="more" onClick={() => setVisibleCount(visibleCount + 100)}>再显示 100 个</button>}
+        <aside className="detail-panel" aria-label="岗位详情">
+          {selectedJob && selectedMatch && selectedAttachment ? <>
+            <div className="detail-heading"><div><span className={`match ${selectedMatch.level}`}>{selectedMatch.label}</span><h2>{selectedJob.title || selectedJob.noticeTitle}</h2><h3>{unitName(selectedJob)}</h3></div><button className={saved.includes(selectedJob.id) ? "star on" : "star"} onClick={() => toggleSaved(selectedJob.id)} aria-label="收藏职位">★</button></div>
+            {selectedMatch.level === "possible" && <div className="confirm-note">需确认：{selectedMatch.needsConfirmation.join("；") || "公开信息不足"}</div>}
+            <div className="match-reasons">{selectedMatch.reasons.map((reason) => <span key={reason}>{reason}</span>)}</div>
+            <div className="facts">{selectedJob.headcount && <span>招 {selectedJob.headcount} 人</span>}{selectedJob.education && <span>{selectedJob.education}</span>}{selectedJob.degree && <span>{selectedJob.degree}</span>}{selectedJob.applicant_type && <span>{selectedJob.applicant_type}</span>}{selectedJob.household && <span>{selectedJob.household}</span>}{selectedJob.age && <span>{selectedJob.age}</span>}{selectedJob.location && <span>{selectedJob.location}</span>}{selectedJob.establishmentType && <span>{selectedJob.establishmentType}</span>}</div>
+            {selectedJob.sourceAttachmentUrl && <div className="attachment-ref"><span><b>附件岗位：</b>{selectedAttachment.sheet ? `${selectedAttachment.sheet} · ` : ""}{selectedAttachment.row ? `第 ${selectedAttachment.row} 行` : "原始岗位行"}{selectedJob.position_code ? ` · 岗位代码 ${selectedJob.position_code}` : ""}</span><a href={selectedJob.sourceAttachmentUrl} target="_blank" rel="noreferrer">查看附件 ↗</a></div>}
+            {selectedJob.major && <div className="detail-section"><h4>专业要求</h4><p>{selectedJob.major}</p></div>}
+            {selectedJob.requirements && <div className="detail-section"><h4>任职要求</h4><p>{selectedJob.requirements}</p></div>}
+            {selectedJob.responsibilities && <div className="detail-section"><h4>岗位职责</h4><p>{selectedJob.responsibilities}</p></div>}
+            <div className="detail-meta"><span>{statusLabel(selectedJob.deadline)}</span><span>发布 {selectedJob.publishedAt || "未注明"}</span><span>{selectedJob.sourceName}</span></div>
+            <a className="primary-link" href={selectedJob.sourceUrl} target="_blank" rel="noreferrer">{selectedJob.sourceGroup === "互联网大厂" ? "打开岗位详情" : "打开原公告"} ↗</a>
+            <div className="keyboard-hint">使用 J / K 或 ↑ / ↓ 切换岗位</div>
+          </> : <div className="detail-empty">选择一个岗位查看详情</div>}
+        </aside>
+      </div>
     </main>
   );
 }
